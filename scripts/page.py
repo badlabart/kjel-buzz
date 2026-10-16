@@ -20,7 +20,7 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .title{font-weight:bold;font-size:20px}.meta{font-size:13px;color:#33445C}
 .stale{display:none;background:#D0101F;color:#FFFFFF;font-weight:bold;font-size:13px;padding:6px 18px}
 .board{white-space:nowrap;overflow-x:auto;padding:12px 6px}
-.col{display:inline-block;vertical-align:top;white-space:normal;box-sizing:border-box;width:32.4%;min-width:280px;margin:0 5px;background:#E6E9EE;border-radius:12px;padding:0 8px 4px}
+.col{display:inline-block;vertical-align:top;white-space:normal;box-sizing:border-box;width:24.2%;min-width:260px;margin:0 4px;background:#E6E9EE;border-radius:12px;padding:0 8px 4px}
 .col h2{margin:0;padding:10px 4px 2px;font-size:17px}
 .sub{font-size:12px;font-weight:bold;padding:0 4px 8px;color:#33445C}
 .sub.short{color:#D0101F}
@@ -37,9 +37,56 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .sig b{color:#D0101F}
 .link{display:inline-block;margin-top:6px;font-size:12px;font-weight:bold;color:#0A2A50}
 .empty{font-size:13px;color:#33445C;padding:4px 4px 10px}
+.punch{font-size:14px;margin-top:4px;font-style:italic}
+.search{margin:0 0 8px;padding:0 2px}
+.search input{font-size:14px;padding:5px 6px;border:1px solid #C9CFD8;border-radius:6px}
+.search .q{width:62%}
+.search .go{background:#D0101F;color:#FFFFFF;border-color:#D0101F;font-weight:bold;cursor:pointer}
+.results{display:none}
+.tag{font-size:10px;font-weight:bold;padding:1px 5px;border-radius:3px;margin-right:4px;vertical-align:middle}
+.tag.keep{background:#FDB913;color:#0A2A50}.tag.off{background:#D0101F;color:#FFFFFF}
 """
 
 # ES3 only: no let/const, arrow functions, classList, or dataset.
+SEARCH_JS = """
+var KJ_WANT=null, KJ_ASKED=false;
+function kjEsc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function kjLoad(cb){
+  if(window.KJEL_MUSIC){cb();return;}
+  KJ_WANT=cb; if(KJ_ASKED) return; KJ_ASKED=true;
+  var s=document.createElement('script'); s.src='music_search.js?v='+document.body.getAttribute('data-updated'); s.charset='utf-8';
+  s.onload=s.onreadystatechange=function(){
+    if(this.readyState && this.readyState!=='loaded' && this.readyState!=='complete') return;
+    s.onload=s.onreadystatechange=null; if(KJ_WANT){var f=KJ_WANT; KJ_WANT=null; f();}
+  };
+  document.getElementsByTagName('head')[0].appendChild(s);
+}
+function kjClear(){
+  document.getElementById('kjq').value=''; document.getElementById('kjres').style.display='none';
+  document.getElementById('kjcards').style.display='block'; return false;
+}
+function kjSearch(){
+  var q=document.getElementById('kjq').value.replace(/^\\s+|\\s+$/g,'').toLowerCase();
+  var box=document.getElementById('kjres'), cards=document.getElementById('kjcards');
+  if(!q) return kjClear();
+  box.style.display='block'; cards.style.display='none'; box.innerHTML='<div class="empty">Searching...</div>';
+  kjLoad(function(){
+    var all=window.KJEL_MUSIC||[], hits=[], i, h;
+    for(i=0;i<all.length;i++){ if((all[i].t+' '+all[i].a).toLowerCase().indexOf(q)>=0) hits.push(all[i]); }
+    h='<div class="sub">'+hits.length+(hits.length===1?' story':' stories')+' for &quot;'+kjEsc(q)+'&quot; &middot; <a href="#" onclick="return kjClear();">back to board</a></div>';
+    if(!hits.length) h+='<div class="empty">No news found. Try the last name only.</div>';
+    for(i=0;i<hits.length && i<60;i++){
+      var e=hits[i];
+      h+='<div class="card"><div class="when">'+kjEsc(e.d)+' <span class="src">&middot; '+kjEsc(e.s)+'</span></div>'
+        +'<div class="name">'+(e.k?'<span class="tag keep">TOP 40</span>':'')+(e.o?'<span class="tag off">NOT ON BOARD</span>':'')+kjEsc(e.t)+'</div>'
+        +'<a class="link" href="'+kjEsc(e.u)+'" target="_blank" rel="noopener">Read story &#8599;</a></div>';
+    }
+    box.innerHTML=h;
+  });
+  return false;
+}
+"""
+
 JS = """
 (function(){
   var now=new Date().getTime(), divs=document.getElementsByTagName('div');
@@ -76,12 +123,20 @@ def write(data):
                 town = f'<span class="town{" leb" if c.get("tier") == 0 else ""}">{esc(c["town"])}</span>'
             sig = f'<div class="sig"><b>BUZZ:</b> {esc(c["signal"])}</div>' if c.get("signal") else ""
             why = f'<div class="why">{esc(c["line"])}</div>' if c.get("line") else ""
+            joke = c.get("kind") == "joke"
+            punch = f'<div class="punch">{esc(c["punch"])}</div>' if joke and c.get("punch") else ""
             cards.append(
                 f'<div class="card" data-ts="{ts_ms(c["ts"])}">'
                 f'<div class="when"><span>{static_when(c["ts"])}</span> <span class="src">&middot; {esc(c["source"])}</span></div>'
-                f'<div class="name">{town}{esc(c["title"])}</div>{why}{sig}'
-                f'<a class="link" href="{esc(c["url"])}" target="_blank" rel="noopener">Read story &#8599;</a></div>')
+                f'<div class="name">{town}{esc(c["title"])}</div>{punch}{why}{sig}'
+                f'<a class="link" href="{esc(c["url"])}" target="_blank" rel="noopener">'
+                f'{"See post" if joke else "Read story"} &#8599;</a></div>')
         body = "".join(cards) or '<div class="empty">Nothing worth airing today.</div>'
+        if col["key"] == "music":
+            body = ('<form class="search" onsubmit="return kjSearch();">'
+                    '<input class="q" id="kjq" type="text" placeholder="Search artist or song">'
+                    ' <input class="go" type="submit" value="Search"></form>'
+                    f'<div class="results" id="kjres"></div><div id="kjcards">{body}</div>')
         sub = ""
         if col["key"] == "local":
             lb = data["lebanon"]
@@ -104,7 +159,7 @@ def write(data):
 <div class="meta">KJEL Buzz Report &middot; updated {esc(stamp)}</div></div></div>
 <div class="stale" id="stale">This report is more than a day old. The 6 AM refresh did not run.</div>
 <div class="board">{"".join(cols)}</div>
-<script>{JS}</script>
+<script>{SEARCH_JS}{JS}</script>
 </body></html>
 """
     (ROOT / "docs").mkdir(exist_ok=True)

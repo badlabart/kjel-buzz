@@ -1,0 +1,206 @@
+{
+ "pulled": "2026-10-16T18:52:03.798962+00:00",
+ "artists": {
+  "John Morgan": 1,
+  "Morgan Wallen": 2,
+  "Ella Langley": 3,
+  "Stella Lefty": 4,
+  "Lauren Alaina": 5,
+  "Chase Matthew": 5,
+  "Zach John King": 6,
+  "Luke Combs": 7,
+  "Dan + Shay": 8,
+  "Luke Bryan": 9,
+  "Kenny Chesney": 11,
+  "Riley Green": 12,
+  "Koe Wetzel": 13,
+  "Lainey Wilson": 14,
+  "John Mayer": 14,
+  "Zach Top": 15,
+  "Jelly Roll": 16,
+  "Hudson Westbrook": 17,
+  "Russell Dickerson": 18,
+  "Greylan James": 19,
+  "Megan Moroney": 20,
+  "Jason Aldean": 21,
+  "Corey Kent": 22,
+  "Blake Shelton": 23,
+  "Cody Johnson": 24,
+  "Kevin Powers": 26,
+  "Shaboozey": 26,
+  "Blake Whiten": 28,
+  "Parker McCollum": 29,
+  "Tucker Wetmore": 30,
+  "Miranda Lambert": 31,
+  "Flatland Cavalry": 32,
+  "Gavin Adcock": 34,
+  "Chris Young": 35,
+  "Jacob Hackworth": 36,
+  "Vincent Mason": 37,
+  "Kacey Musgraves": 38,
+  "Carly Pearce": 39,
+  "Brantley Gilbert": 40
+ },
+ "songs": {
+  "Kid Myself": [
+   1,
+   "John Morgan"
+  ],
+  "Been By Now": [
+   2,
+   "Morgan Wallen"
+  ],
+  "Loving Life Again": [
+   3,
+   "Ella Langley"
+  ],
+  "Boston": [
+   4,
+   "Stella Lefty"
+  ],
+  "All My Exes": [
+   5,
+   "Lauren Alaina Featuring Chase Matthew"
+  ],
+  "Get To Drinkin'": [
+   6,
+   "Zach John King"
+  ],
+  "Be By You": [
+   7,
+   "Luke Combs"
+  ],
+  "Say So": [
+   8,
+   "Dan + Shay"
+  ],
+  "Country And She Knows It": [
+   9,
+   "Luke Bryan"
+  ],
+  "Rethink Some Things": [
+   10,
+   "Luke Combs"
+  ],
+  "Carry On": [
+   11,
+   "Kenny Chesney"
+  ],
+  "Think As You Drunk": [
+   12,
+   "Riley Green"
+  ],
+  "Jaded": [
+   13,
+   "Koe Wetzel & Ella Langley"
+  ],
+  "Phone, Keys, Wallet": [
+   14,
+   "Lainey Wilson & John Mayer"
+  ],
+  "South Of Sanity": [
+   15,
+   "Zach Top"
+  ],
+  "Hands Up": [
+   16,
+   "Jelly Roll"
+  ],
+  "Painted You Pretty": [
+   17,
+   "Hudson Westbrook"
+  ],
+  "Worth Your Wild": [
+   18,
+   "Russell Dickerson"
+  ],
+  "Water At A Wedding": [
+   19,
+   "Greylan James"
+  ],
+  "Medicine": [
+   20,
+   "Megan Moroney"
+  ],
+  "Anytime Soon": [
+   21,
+   "Jason Aldean"
+  ],
+  "Empty Words": [
+   22,
+   "Corey Kent"
+  ],
+  "Let Him In Anyway": [
+   23,
+   "Blake Shelton"
+  ],
+  "Horseback": [
+   24,
+   "Cody Johnson"
+  ],
+  "Holdin' It Down": [
+   25,
+   "Chase Matthew"
+  ],
+  "Move On": [
+   26,
+   "Kevin Powers & Shaboozey"
+  ],
+  "Cowgirl": [
+   27,
+   "Shaboozey"
+  ],
+  "Bet On That": [
+   28,
+   "Blake Whiten"
+  ],
+  "Killin' Me": [
+   29,
+   "Parker McCollum"
+  ],
+  "Who Told You That": [
+   30,
+   "Tucker Wetmore"
+  ],
+  "Snakeskin Boots": [
+   31,
+   "Miranda Lambert & Ella Langley"
+  ],
+  "Never Comin' Back": [
+   32,
+   "Flatland Cavalry"
+  ],
+  "Remember Me That Way": [
+   33,
+   "Kenny Chesney"
+  ],
+  "Wannabe": [
+   34,
+   "Gavin Adcock"
+  ],
+  "I Didn't Come Here To Leave": [
+   35,
+   "Chris Young"
+  ],
+  "What Took You So Long": [
+   36,
+   "Jacob Hackworth"
+  ],
+  "Something To Lose": [
+   37,
+   "Stella Lefty With Vincent Mason"
+  ],
+  "Dry Spell": [
+   38,
+   "Kacey Musgraves"
+  ],
+  "If I Don't Leave I'm Gonna Stay": [
+   39,
+   "Carly Pearce & Riley Green"
+  ],
+  "Good Damn": [
+   40,
+   "Brantley Gilbert"
+  ]
+ }
+}

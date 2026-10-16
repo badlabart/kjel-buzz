@@ -9,6 +9,7 @@ import html
 import json
 import math
 import re
+import sys
 import time
 import urllib.error
 import urllib.parse
@@ -18,12 +19,14 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from hashlib import md5
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 CACHE = DATA / "url_cache.json"
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15"
 NOW = datetime.now(timezone.utc)
+CT = ZoneInfo("America/Chicago")
 FRESH_HOURS = {"national": 48, "music": 48, "local": 24 * 7}
 SHORT = {"national": 30, "music": 30, "local": 40}
 PER_SOURCE = {"national": 3, "music": 4, "local": 6}  # cap per outlet in the shortlist
@@ -234,6 +237,7 @@ def parse_feed(body, source, col, from_gn=False, days=None):
                 ts = datetime.fromisoformat(pub.replace("Z", "+00:00"))
             except Exception:
                 continue
+        ts = min(ts, NOW)  # some feeds post-date their items
         src = source
         desc = text(it.findtext("description") or "")
         if from_gn:
@@ -292,23 +296,70 @@ def wikipedia_top():
     return top
 
 
-def billboard_artists():
-    """Artist -> best rank on Billboard Hot Country Songs."""
+def country_airplay():
+    """Billboard Country Airplay top 40 -> (artist -> rank, song -> (rank, artists)). Falls back to the last saved chart."""
+    path = DATA / "chart.json"
     try:
-        b = get("https://www.billboard.com/charts/country-songs/", timeout=40)
+        b = get("https://www.billboard.com/charts/country-airplay/", timeout=40)
+        artists, songs = {}, {}
+        for rank, row in enumerate(b.split('class="o-chart-results-list-row-container"')[1:41], 1):
+            m = re.search(r'id="title-of-a-story"[^>]*>(.*?)</h3>\s*<span[^>]*>(.*?)</span>', row, re.S)
+            if not m:
+                continue
+            who = text(m.group(2))
+            songs.setdefault(text(m.group(1)), [rank, who])
+            for name in re.split(r"\s+(?:Featuring|&|And|With|x|X)\s+|,\s*", who):
+                name = name.strip()
+                if len(name) > 3:
+                    artists.setdefault(name, rank)
+        if len(songs) < 30:
+            raise ValueError(f"only {len(songs)} chart rows parsed")
+        path.write_text(json.dumps({"pulled": NOW.isoformat(), "artists": artists, "songs": songs}, indent=1))
     except Exception as e:
-        FAILED.append(f"Billboard chart ({str(e)[:40]})")
-        return {}
-    out = {}
-    for rank, row in enumerate(b.split('class="o-chart-results-list-row-container"')[1:51], 1):
-        a = re.search(r'id="title-of-a-story".*?</h3>\s*<span[^>]*>(.*?)</span>', row, re.S)
-        if not a:
-            continue
-        for name in re.split(r"\s+(?:Featuring|&|And|With|x|X)\s+|,\s*", text(a.group(1))):
-            name = name.strip()
-            if len(name) > 3 and name not in out:
-                out[name] = rank
-    return out
+        FAILED.append(f"Country Airplay chart ({str(e)[:40]}; using last saved)")
+        if not path.exists():
+            return {}, {}
+        d = json.loads(path.read_text())
+        artists, songs = d["artists"], d["songs"]
+    return artists, songs
+
+
+def top40_match(title, artists, songs):
+    """(artist, rank) when a headline names a top-40 artist or quotes a top-40 song title."""
+    hits = [(r, a) for a, r in artists.items() if re.search(r"\b" + re.escape(a) + r"\b", title)]
+    for song, (r, who) in songs.items():
+        if len(song) > 3 and re.search("[\u2018\u201c'\"]" + re.escape(song) + "[\u2019\u201d'\"]", title, re.I):
+            hits.append((r, who))
+    if not hits:
+        return None
+    r, a = min(hits)
+    return a, r
+
+
+def update_music_archive(stories, artists, songs):
+    """Keep every story tied to a top-40 song forever (data/music_archive.json).
+    All other music stories only live in data/music_recent.json, which each run replaces."""
+    path = DATA / "music_archive.json"
+    arch = json.loads(path.read_text()) if path.exists() else []
+    seen = {a["id"] for a in arch} | {a["u"] for a in arch}
+    recent, added = [], 0
+    for it in stories:
+        hit = top40_match(it["title"], artists, songs)
+        e = {"id": "A" + md5((it["title"] + it["source"]).encode()).hexdigest()[:8], "t": it["title"],
+             "s": it["source"], "d": it["ts"].astimezone(CT).date().isoformat(), "u": it["url"],
+             "a": hit[0] if hit else "",
+             "o": 1 if blocked("music", it["title"], it["desc"], it["source"]) else 0}
+        if not hit:
+            recent.append(e)
+        elif e["id"] not in seen and e["u"] not in seen:
+            e["k"] = 1
+            arch.append(e)
+            seen |= {e["id"], e["u"]}
+            added += 1
+    arch.sort(key=lambda e: e["d"], reverse=True)
+    path.write_text(json.dumps(arch, indent=0, ensure_ascii=False))
+    (DATA / "music_recent.json").write_text(json.dumps(recent, indent=0, ensure_ascii=False))
+    return added, len(arch), len(recent)
 
 
 # ---------------- clustering + scoring ----------------
@@ -369,11 +420,11 @@ def score(it, wiki, chart):
             signals.append(f"Wikipedia: {short_num(views)} reads yesterday ({name})")
             break
     if it["col"] == "music":
-        hits = [(r, a) for a, r in chart.items() if re.search(r"\b" + re.escape(a) + r"\b", it["title"])]
-        if hits:
-            r, a = min(hits)
-            s += 6 + (50 - r) / 10
-            signals.append(f"{a}: #{r} on Billboard Hot Country")
+        hit = top40_match(it["title"], *chart)
+        if hit:
+            a, r = hit
+            s += 6 + (40 - r) / 10
+            signals.append(f"{a}: #{r} on Country Airplay")
     s += min(9, 3 * len(set(m.group(0).lower() for m in FUN.finditer(blob))))
     s -= 6 * len(set(m.group(0).lower() for m in DOWNER.finditer(it["title"])))
     if it["source"] in ("UPI Odd News", "Good News Network", "Upworthy"):
@@ -461,7 +512,8 @@ def resolve_all(items, limit=None):
 
 
 def summaries(items):
-    todo = [i for i in items if not i["desc"] and not i["url"].startswith("https://news.google.com")]
+    todo = [i for i in items if not i["desc"] and i.get("kind") != "joke"
+            and not i["url"].startswith("https://news.google.com")]
     with ThreadPoolExecutor(6) as ex:
         for it, d in zip(todo, ex.map(lambda i: page_summary(i["url"]), todo)):
             it["desc"] = d
@@ -479,7 +531,13 @@ def main():
     with ThreadPoolExecutor(6) as ex:
         raw = [it for chunk in ex.map(pull, jobs) for it in chunk]
     raw += google_trends()
-    wiki, chart = wikipedia_top(), billboard_artists()
+    wiki, chart = wikipedia_top(), country_airplay()
+
+    # Music archive works from every music story, before the board's downer/gossip filters.
+    music_all = [dict(it) for it in raw if it["col"] == "music" and it["title"]
+                 and (NOW - it["ts"]).total_seconds() <= FRESH_HOURS["music"] * 3600
+                 and not JUNK.search(f'{it["title"]} | {it["source"]}') and not SPAM.search(it["title"])]
+    arch_added, arch_total, recent_n = update_music_archive(cluster(music_all), *chart)
 
     kept, dropped = [], {}
     for it in raw:
@@ -520,10 +578,16 @@ def main():
         if col == "local":  # every Lebanon item that survived the filters goes to Claude
             pick += [i for i in rows if i["tier"] == 0 and i not in pick]
         short += pick
+    sys.path.insert(0, str(Path(__file__).resolve().parent))  # -I leaves the script folder off the path
+    import humor
+    jokes, lists = humor.collect(sys.modules[__name__])
+    for it in jokes + lists:
+        it["id"] = "H" + md5((it["title"] + it["source"]).encode()).hexdigest()[:6]
+    short += jokes[:30] + lists[:10]
     for it in short:
         it["gn_url"] = it["url"] if it["gn"] else None
-    top_gn = [i for col in ("national", "local", "music")
-              for i in sorted((x for x in short if x["col"] == col and x["gn"]), key=lambda x: -x["score"])[:12]]
+    top_gn = [i for col, n in (("national", 12), ("local", 12), ("music", 12), ("humor", 4))
+              for i in sorted((x for x in short if x["col"] == col and x["gn"]), key=lambda x: -x["score"])[:n]]
     resolve_all(top_gn)
     summaries(short)
     # Second pass: a resolved summary can reveal a downer the headline hid.
@@ -532,18 +596,24 @@ def main():
     pool = []
     for i in short:
         pool.append({k: i.get(k) for k in ("id", "col", "title", "source", "url", "gn_url", "desc", "outlets", "also",
-                                           "signal", "score", "town", "tier")} | {"ts": i["ts"].isoformat()})
+                                           "signal", "score", "town", "tier", "kind", "punch")} | {"ts": i["ts"].isoformat()})
     (DATA / "pool.json").write_text(json.dumps({"collected": NOW.isoformat(), "items": pool}, indent=1, ensure_ascii=False))
 
     print(f"raw {len(raw)} | kept {len(kept)} | stories {len(items)} | shortlist {len(pool)} | dropped {dropped}")
+    print(f"music archive: +{arch_added} top-40 stories kept (total {arch_total}) | {recent_n} other music stories searchable until replaced")
+    print(f"humor: {len(jokes)} jokes pass the filters | {len(lists)} roundups")
     print("FAILED: " + (", ".join(FAILED) if FAILED else "none"))
-    for col in ("national", "local", "music"):
+    for col in ("national", "local", "music", "humor"):
         print(f"\n=== {col.upper()}")
         for i in sorted((p for p in pool if p["col"] == col), key=lambda x: -x["score"]):
             age = (NOW - datetime.fromisoformat(i["ts"])).total_seconds() / 3600
             age = f"{age:.0f}h" if age < 48 else f"{age / 24:.0f}d"
             where = f' [{i["town"]}{"*" if i["tier"] == 0 else ""}]' if col == "local" else ""
-            print(f'{i["id"]} | {age} | {i["source"][:22]}{where} | {i["signal"] or "-"} | {i["title"]} || {i["desc"][:220]}')
+            if i.get("kind") == "joke":
+                print(f'{i["id"]} | {age} | {i["source"]} | {i["signal"]} | JOKE: {i["title"]} / {i["punch"]}')
+            else:
+                tag = "LIST: " if col == "humor" else ""
+                print(f'{i["id"]} | {age} | {i["source"][:22]}{where} | {i["signal"] or "-"} | {tag}{i["title"]} || {i["desc"][:220]}')
 
 
 if __name__ == "__main__":
