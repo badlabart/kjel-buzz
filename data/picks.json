@@ -1,58 +1,50 @@
 {
- "made": "2026-10-16",
+ "made": "2026-10-17",
  "national": [
   {
    "id": "N450736",
-   "line": ""
-  },
-  {
-   "id": "Nded253",
-   "line": "Highway Patrol helped wrangle it on a Santa Cruz road."
+   "line": "Pumpkin weighs as much as a car."
   },
   {
    "id": "Nea53af",
-   "line": "Happened at a California library."
+   "line": "Bear grabs honey on Winnie-the-Pooh's 100th birthday."
   },
   {
-   "id": "N346514",
-   "line": "The dog's reply: \"I am very friendly and full of beans.\""
+   "id": "Nded253",
+   "line": "Highway Patrol helps wrangle a loose emu in Santa Cruz."
   },
   {
-   "id": "Ndff52a",
+   "id": "Nac6e46",
+   "line": "Dog statue gets dozens of sticks every day."
+  },
+  {
+   "id": "N2e85ea",
+   "line": "Rescued doodle Bentley now works for US Customs."
+  },
+  {
+   "id": "N06598b",
+   "line": "Animal collisions on I-25 down 91% since overpass opened."
+  },
+  {
+   "id": "N5d9798",
    "line": ""
   },
   {
-   "id": "Neb44f3",
-   "line": "Guinness record, set downhill in Canada."
+   "id": "Nc6abdb",
+   "line": "New fabric more than tripled strawberry yields in tests."
   },
   {
-   "id": "N1c7740",
-   "line": ""
+   "id": "N864f9c",
+   "line": "Original was a 1964 soul B-side."
   },
   {
-   "id": "N108d43",
-   "line": ""
-  },
-  {
-   "id": "N945800",
-   "line": ""
-  },
-  {
-   "id": "N764e26",
-   "line": ""
+   "id": "Na010db",
+   "line": "Halloween spending expected to hit a record $13.5 billion."
   }
  ],
  "local": [
   {
-   "id": "L604b7b",
-   "line": ""
-  },
-  {
    "id": "Lc00021",
-   "line": ""
-  },
-  {
-   "id": "L53d98a",
    "line": ""
   },
   {
@@ -60,62 +52,50 @@
    "line": ""
   },
   {
-   "id": "L79a120",
-   "line": ""
-  },
-  {
    "id": "L1c9cba",
    "line": ""
   },
   {
-   "id": "L8e0f69",
-   "line": ""
+   "id": "L5cd73f",
+   "line": "Angler lands a 164-pound paddlefish."
+  },
+  {
+   "id": "L604b7b",
+   "line": "His mom says so."
+  },
+  {
+   "id": "L79a120",
+   "line": "126-room Hyatt planned in Backwater Jacks' cove."
   },
   {
    "id": "L5b18b2",
    "line": ""
   },
   {
-   "id": "Leab520",
+   "id": "L25252f",
    "line": ""
   },
   {
-   "id": "L25252f",
+   "id": "L5f82b2",
+   "line": ""
+  },
+  {
+   "id": "L8e0f69",
    "line": ""
   }
  ],
  "music": [
   {
    "id": "M51715d",
-   "line": "Happened at her Greek Theater show."
+   "line": "Fan joins her onstage at the Greek Theater."
   },
   {
-   "id": "M065257",
-   "line": "Brendan McLoughlin turned 35. Her posts include one hilarious serenade."
+   "id": "M86bbfe",
+   "line": "Levine coached Wallen on The Voice in 2014."
   },
   {
-   "id": "Ma27cc8",
-   "line": ""
-  },
-  {
-   "id": "M1b85e2",
-   "line": "Reunited duo plays 12 major festival stops next year."
-  },
-  {
-   "id": "M7cda4e",
-   "line": ""
-  },
-  {
-   "id": "Ma031f2",
-   "line": ""
-  },
-  {
-   "id": "Mefe897",
-   "line": "She scored her first No. 1 album, Cloud 9, this year."
-  },
-  {
-   "id": "M3e1cfb",
-   "line": "Now open at Flamingo Las Vegas."
+   "id": "M011f50",
+   "line": "Luke Bryan on new Luke Combs collab 'Finders Keepers.'"
   },
   {
    "id": "M27ecef",
@@ -124,15 +104,31 @@
   {
    "id": "M4a6ffb",
    "line": ""
+  },
+  {
+   "id": "M9f720f",
+   "line": "Lambert on her bond with Lainey Wilson and Ella Langley."
+  },
+  {
+   "id": "M65331f",
+   "line": "'I'm literally working every single day.'"
+  },
+  {
+   "id": "Mdc01d9",
+   "line": ""
+  },
+  {
+   "id": "M80a1a4",
+   "line": ""
+  },
+  {
+   "id": "M783ced",
+   "line": "Zach Bryan plans a book to tell his own story."
   }
  ],
  "humor": [
   {
-   "id": "H0e2f8f",
-   "line": ""
-  },
-  {
-   "id": "H88c58f",
+   "id": "H939e06",
    "line": ""
   },
   {
@@ -140,11 +136,19 @@
    "line": ""
   },
   {
-   "id": "H2bdd70",
+   "id": "H1c487e",
    "line": ""
   },
   {
-   "id": "H1c5dd1",
+   "id": "H4d9764",
+   "line": ""
+  },
+  {
+   "id": "H9c1d12",
+   "line": ""
+  },
+  {
+   "id": "H265ed5",
    "line": ""
   },
   {
@@ -152,7 +156,7 @@
    "line": ""
   },
   {
-   "id": "Heca818",
+   "id": "H545446",
    "line": ""
   },
   {
@@ -160,7 +164,7 @@
    "line": ""
   },
   {
-   "id": "Hc0b821",
+   "id": "H2332be",
    "line": ""
   }
  ]
