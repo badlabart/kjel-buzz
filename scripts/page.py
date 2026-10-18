@@ -32,6 +32,7 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .name{font-weight:bold;font-size:15px;margin:3px 0 2px}
 .town{background:#0A2A50;color:#FFFFFF;font-size:11px;font-weight:bold;padding:1px 6px;border-radius:3px;margin-right:4px}
 .town.leb{background:#FDB913;color:#0A2A50}
+.city{color:#33445C;white-space:nowrap}.city.leb{background:#FDB913;color:#0A2A50;padding:0 3px;border-radius:3px}
 .why{font-size:13px;margin-top:4px}
 .sig{font-size:12px;margin-top:4px;color:#33445C}
 .sig b{color:#D0101F}
@@ -118,17 +119,18 @@ def write(data):
     for col in data["columns"]:
         cards = []
         for c in col["cards"]:
-            town = ""
-            if col["key"] == "local" and c.get("town"):
-                town = f'<span class="town{" leb" if c.get("tier") == 0 else ""}">{esc(c["town"])}</span>'
+            city = c.get("city") or (c.get("town") if col["key"] == "local" and c.get("town") != "Ozarks" else "")
+            leb = (city or "").lower() == "lebanon"
+            where = f' <span class="city{" leb" if leb else ""}">({esc(city)})</span>' if city else ""
             sig = f'<div class="sig"><b>BUZZ:</b> {esc(c["signal"])}</div>' if c.get("signal") else ""
-            why = f'<div class="why">{esc(c["line"])}</div>' if c.get("line") else ""
             joke = c.get("kind") == "joke"
             punch = f'<div class="punch">{esc(c["punch"])}</div>' if joke and c.get("punch") else ""
+            # On-air sentence replaces the headline. Jokes and roundups keep their own text.
+            main = esc(c["line"]) if c.get("line") and not joke else esc(c["title"])
             cards.append(
                 f'<div class="card" data-ts="{ts_ms(c["ts"])}">'
                 f'<div class="when"><span>{static_when(c["ts"])}</span> <span class="src">&middot; {esc(c["source"])}</span></div>'
-                f'<div class="name">{town}{esc(c["title"])}</div>{punch}{why}{sig}'
+                f'<div class="name">{main}{where}</div>{punch}{sig}'
                 f'<a class="link" href="{esc(c["url"])}" target="_blank" rel="noopener">'
                 f'{"See post" if joke else "Read story"} &#8599;</a></div>')
         body = "".join(cards) or '<div class="empty">Nothing worth airing today.</div>'

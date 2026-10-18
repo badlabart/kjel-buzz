@@ -41,15 +41,15 @@ def main():
             if not it:
                 missing.append(p["id"])
                 continue
-            cards.append(dict(it, line=p.get("line", "")))
+            cards.append(dict(it, line=p.get("line", ""), city=p.get("city", "")))
         cols.append({"key": key, "name": name, "cards": cards})
 
     every = [c for col in cols for c in col["cards"]]
-    collect.resolve_all(every)
+    collect.resolve_all(every, budget_s=120)
     unresolved = sum(1 for c in every if c["url"].startswith("https://news.google.com"))
 
     local = next(c for c in cols if c["key"] == "local")["cards"]
-    leb = sum(1 for c in local if c.get("tier") == 0)
+    leb = sum(1 for c in local if (c.get("city") or "").lower() == "lebanon" or (not c.get("city") and c.get("tier") == 0))
     data = {"updated": datetime.now(timezone.utc).isoformat(timespec="seconds"), "columns": cols,
             "lebanon": {"count": leb, "of": len(local), "goal": LEBANON_GOAL}}
     (DATA / "buzz.js").write_text("window.KJEL_BUZZ = " + json.dumps(data, indent=1, ensure_ascii=False) + ";\n")

@@ -28,8 +28,9 @@ UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTM
 NOW = datetime.now(timezone.utc)
 CT = ZoneInfo("America/Chicago")
 FRESH_HOURS = {"national": 48, "music": 48, "local": 24 * 7}
-SHORT = {"national": 30, "music": 30, "local": 40}
-PER_SOURCE = {"national": 3, "music": 4, "local": 6}  # cap per outlet in the shortlist
+LEBANON_FRESH_HOURS = 24 * 14  # Lebanon stories are scarce, so they get two weeks
+SHORT = {"national": 30, "music": 30, "local": 70}
+PER_SOURCE = {"national": 3, "music": 4, "local": 10}  # cap per outlet in the shortlist
 FAILED = []
 
 
@@ -77,22 +78,37 @@ NATIONAL_FEEDS = [
     ("Fox News Lifestyle", "https://moxie.foxnews.com/google-publisher/lifestyle.xml"),
 ]
 LOCAL_Q = [
-    '"Lebanon, Mo." OR "Lebanon, Missouri" OR "Lebanon, MO"',
-    '"Laclede County"',
-    'Lebanon Missouri "Route 66"',
-    '"Lebanon R-3" OR "Lebanon Yellowjackets" OR "Bennett Spring"',
-    'site:laclederecord.com',
-    '"Lake of the Ozarks" OR "Osage Beach" OR Camdenton OR "Lake Ozark"',
-    '"Camden County" Missouri',
-    '"Pulaski County" Missouri OR "Fort Leonard Wood" OR Waynesville OR "St. Robert"',
-    '"Webster County" Missouri OR "Marshfield, Mo." OR "Seymour, Mo."',
-    '"Dallas County" Missouri OR "Buffalo, Mo."',
-    '"Wright County" Missouri OR "Mountain Grove" OR "Hartville, Mo." OR "Mansfield, Mo."',
-    '"Miller County" Missouri OR "Eldon, Mo." OR "Iberia, Mo."',
-    'site:lakeexpo.com',
-    'Ozarks (heartwarming OR viral OR "first ever" OR record OR rescued OR celebrates OR surprise)',
-    '"Springfield, Mo." (heartwarming OR viral OR celebrates OR record OR "first ever" OR opens)',
-    'Branson (new OR record OR viral OR celebrates OR opens)',
+    # (query, days). Lebanon searches look back two weeks; everything else one.
+    ('"Lebanon, Mo." OR "Lebanon, Missouri" OR "Lebanon, MO"', 14),
+    ('"Laclede County"', 14),
+    ('Lebanon Missouri "Route 66"', 14),
+    ('"Lebanon R-3" OR "Lebanon Yellowjackets" OR "Bennett Spring"', 14),
+    ('site:laclederecord.com', 14),
+    ('site:myozarksonline.com', 14),
+    ('Lebanon Missouri (opens OR "grand opening" OR restaurant OR celebrates OR honored OR award OR record OR champion OR wins)', 14),
+    ('(Conway OR Phillipsburg OR Stoutland OR Falcon OR Eldridge) Missouri', 7),
+    ('(Richland OR Dixon OR Crocker OR Laquey) Missouri', 7),
+    ('"Sunrise Beach" OR Laurie OR "Linn Creek" OR "Climax Springs" OR "Macks Creek" OR "Gravois Mills"', 7),
+    ('(Seymour OR Rogersville OR Fordland OR Niangua) Missouri', 7),
+    ('(Louisburg OR Urbana OR "Long Lane") Missouri', 7),
+    ('(Hartville OR Mansfield OR Norwood) Missouri', 7),
+    ('(Tuscumbia OR Brumley OR "St. Elizabeth") Missouri', 7),
+    ('(Camdenton OR Waynesville OR Marshfield OR Buffalo OR "Mountain Grove" OR Eldon OR Richland OR Conway OR Hartville OR Iberia OR Seymour OR Dixon) '
+     '(win OR wins OR champions OR district OR state OR undefeated OR honored)', 7),
+    ('Ozarks Missouri (opens OR "grand opening" OR "new restaurant" OR celebrates OR honored OR award OR "first ever")', 7),
+    ('"Lake of the Ozarks" (celebrates OR record OR opens OR new OR honored OR rescued)', 7),
+    ('"Lake of the Ozarks" OR "Osage Beach" OR Camdenton OR "Lake Ozark"', 7),
+    ('"Camden County" Missouri', 7),
+    ('"Pulaski County" Missouri OR "Fort Leonard Wood" OR Waynesville OR "St. Robert"', 7),
+    ('"Webster County" Missouri OR "Marshfield, Mo." OR "Seymour, Mo."', 7),
+    ('"Dallas County" Missouri OR "Buffalo, Mo."', 7),
+    ('"Wright County" Missouri OR "Mountain Grove" OR "Hartville, Mo." OR "Mansfield, Mo."', 7),
+    ('"Miller County" Missouri OR "Eldon, Mo." OR "Iberia, Mo."', 7),
+    ('site:lakeexpo.com', 7),
+    ('site:krmsradio.com', 7),
+    ('Ozarks (heartwarming OR viral OR "first ever" OR record OR rescued OR celebrates OR surprise)', 7),
+    ('"Springfield, Mo." (heartwarming OR viral OR celebrates OR record OR "first ever" OR opens)', 7),
+    ('Branson (new OR record OR viral OR celebrates OR opens)', 7),
 ]
 LOCAL_FEEDS = [
     ("My Ozarks Online", "https://www.myozarksonline.com/feed/"),
@@ -100,6 +116,9 @@ LOCAL_FEEDS = [
     ("Downtown Lebanon", "https://www.downtownlebanonmo.com/feed/"),
     ("KY3", "https://www.ky3.com/arc/outboundfeeds/rss/?outputType=xml"),
     ("OzarksFirst", "https://www.ozarksfirst.com/feed/"),
+    ("OzarksFirst", "https://www.ozarksfirst.com/news/local-news/feed/"),
+    ("KSPR", "https://www.kspr.com/arc/outboundfeeds/rss/?outputType=xml"),
+    ("KRMS", "https://www.krmsradio.com/feed/"),
 ]
 MUSIC_Q = ['"country music" OR "country singer" OR "country star"']
 MUSIC_FEEDS = [
@@ -116,11 +135,12 @@ MUSIC_FEEDS = [
 LEBANON = re.compile(r"\bLebanon\b|\bLaclede\b|Bennett Spring|Yellowjackets", re.I)
 NOT_MO_LEBANON = re.compile(r"Lebanon,? (Ohio|OH|Pa\.?|Pennsylvania|Tenn\.?|Tennessee|TN|N\.?H\.?|New Hampshire|Ind\.?|Indiana|Ky\.?|Kentucky|Ore\.?|Oregon|Ill\.?|Illinois|Conn\.?|Va\.?|Virginia)|\bBeirut\b|\bLebanese\b|Israel|Hezbollah", re.I)
 LEBANON_SOURCES = {"Laclede County Record", "My Ozarks Online", "City of Lebanon", "Downtown Lebanon"}
+# "KRMS" is a Lake radio station, so it is a local outlet but not a Lebanon one.
 MO_MARK = re.compile(r"\b(Mo\.|MO|Missouri|Ozarks?)\b")
 LOCAL_OUTLET = re.compile(
     r"laclede|ozark|ky3|kolr|kspr|lakeexpo|lake sun|lake news|news-leader|branson globe|reflex|webster county citizen|"
     r"marshfield mail|komu|krcg|kmzu|ksmu|krms|kttn|sgf|springfield daily|sedalia|daily guide|missouri|lebanon|"
-    r"myozarks|guidon|houston herald|eldon", re.I)
+    r"myozarks|guidon|houston herald|eldon|kspr|krms", re.I)
 COUNTY_TOWNS = [
     "Conway", "Phillipsburg", "Stoutland", "Eldridge", "Brumley",
     "Waynesville", "St. Robert", "Saint Robert", "Fort Leonard Wood", "Dixon", "Crocker", "Richland", "Laquey", "Pulaski County",
@@ -161,7 +181,8 @@ TRAGIC = re.compile(
     r"passed away|cancer|tragic|tragedy|grie(f|ving)|mourn\w*|victim\w*|suspect\w*|kidnap\w*|trafficking|crash\w*|"
     r"wreck|collision|injur\w*|airlift\w*|hospitali[sz]ed|critical condition|explosion|layoffs?|laid off|"
     r"bankrupt\w*|recall\w*|measles|outbreak|tornado|flood\w*|evacuat\w*|scam\w*|fraud|die|dying|arson\w*|"
-    r"accused|fire|fires|blaze|burn(ed|s)? down|unsafe|destroyed)\b", re.I)
+    r"accused|fires|blaze|burn(ed|s)? down|unsafe|destroyed|engulf\w*|"
+    r"fire(?! (department|dept|truck|station|chief|district|fighters?|protection|academy|prevention|safety|pit|up)))\b", re.I)
 POLITICS = re.compile(
     r"\b(trump|biden|vance|harris|obama|democrat\w*|republican\w*|gop|congress\w*|senat\w*|legislat\w*|"
     r"lawmaker\w*|election\w*|ballot|voters?|voting|campaign\w*|candidate\w*|governor|kehoe|hawley|schmitt|"
@@ -281,11 +302,16 @@ def google_trends():
 
 def wikipedia_top():
     """Article -> views for yesterday's most-read English Wikipedia pages."""
-    y = NOW - timedelta(days=1)
-    try:
-        d = json.loads(get(f"https://wikimedia.org/api/rest_v1/metrics/pageviews/top/en.wikipedia/all-access/{y:%Y/%m/%d}"))
-    except Exception as e:
-        FAILED.append(f"Wikipedia ({str(e)[:40]})")
+    d = None
+    for back in (1, 2):  # yesterday's list is not published until mid-morning UTC
+        y = NOW - timedelta(days=back)
+        try:
+            d = json.loads(get(f"https://wikimedia.org/api/rest_v1/metrics/pageviews/top/en.wikipedia/all-access/{y:%Y/%m/%d}"))
+            break
+        except Exception as e:
+            err = str(e)[:40]
+    if d is None:
+        FAILED.append(f"Wikipedia ({err})")
         return {}
     top = {}
     for a in d["items"][0]["articles"][:150]:
@@ -483,31 +509,41 @@ def page_summary(url):
     return ""
 
 
-def resolve_all(items, limit=None):
+def resolve_all(items, limit=None, budget_s=240):
     """Swap Google News links for publisher links. Google throttles this, so: one at a time, cached,
-    and stop at the first 429. Unresolved items keep the Google News link, which still opens the story."""
+    2.5 s apart, a 60 s pause after each 429 (two pauses at most), and a 4-minute budget.
+    Unresolved items keep the Google News link, which still opens the story in a modern browser."""
     cache = json.loads(CACHE.read_text()) if CACHE.exists() else {}
-    tried = 0
+    tried, pauses, start = 0, 0, time.time()
     for it in items:
+        if time.time() - start > budget_s:
+            FAILED.append("Google News link lookup (time budget used, rest keep Google links)")
+            break
         if not it.get("gn_url") and it["url"].startswith("https://news.google.com"):
             it["gn_url"] = it["url"]
         if not it["url"].startswith("https://news.google.com"):
             continue
         if it["url"] not in cache and limit is not None and tried >= limit:
             continue
-        try:
-            tried += it["url"] not in cache
-            real = resolve_gn(it["url"], cache)
-        except urllib.error.HTTPError as e:
-            if e.code == 429:
-                FAILED.append("Google News link lookup (429, rest keep Google links)")
+        real = None
+        for attempt in range(2):
+            try:
+                tried += it["url"] not in cache
+                real = resolve_gn(it["url"], cache)
                 break
-            real = None
-        except Exception:
-            real = None
+            except urllib.error.HTTPError as e:
+                if e.code != 429 or pauses >= 2:
+                    break
+                pauses += 1
+                time.sleep(60)
+            except Exception:
+                break
         if real:
             it["url"] = real
-        time.sleep(1.2)
+        elif pauses >= 2:
+            FAILED.append("Google News link lookup (429, rest keep Google links)")
+            break
+        time.sleep(2.5)
     CACHE.write_text(json.dumps(cache, indent=0))
 
 
@@ -524,7 +560,7 @@ def main():
     DATA.mkdir(exist_ok=True)
     jobs =[("gn", "national", "Google News", gn(q, 1)) for q in NATIONAL_Q]
     jobs += [("feed", "national", l, u) for l, u in NATIONAL_FEEDS]
-    jobs += [("gn", "local", "Google News", gn(q, 7)) for q in LOCAL_Q]
+    jobs += [("gn", "local", "Google News", gn(q, d)) for q, d in LOCAL_Q]
     jobs += [("feed", "local", l, u) for l, u in LOCAL_FEEDS]
     jobs += [("gn", "music", "Google News", gn(q, 1)) for q in MUSIC_Q]
     jobs += [("feed", "music", l, u) for l, u in MUSIC_FEEDS]
@@ -542,7 +578,8 @@ def main():
     kept, dropped = [], {}
     for it in raw:
         age_h = (NOW - it["ts"]).total_seconds() / 3600
-        if age_h > FRESH_HOURS[it["col"]] or not it["title"]:
+        limit = LEBANON_FRESH_HOURS if it["col"] == "local" else FRESH_HOURS[it["col"]]
+        if age_h > limit or not it["title"]:
             continue
         why = blocked(it["col"], it["title"], it["desc"], it["source"])
         if why:
@@ -552,6 +589,8 @@ def main():
             it["town"], it["tier"] = town_of(it["title"], it["desc"], it["source"])
             if it["town"] is None:
                 dropped["outside area"] = dropped.get("outside area", 0) + 1
+                continue
+            if it["tier"] != 0 and age_h > FRESH_HOURS["local"]:
                 continue
         kept.append(it)
 
@@ -586,7 +625,7 @@ def main():
     short += jokes[:30] + lists[:10]
     for it in short:
         it["gn_url"] = it["url"] if it["gn"] else None
-    top_gn = [i for col, n in (("national", 12), ("local", 12), ("music", 12), ("humor", 4))
+    top_gn = [i for col, n in (("local", 70), ("national", 15), ("music", 12), ("humor", 4))
               for i in sorted((x for x in short if x["col"] == col and x["gn"]), key=lambda x: -x["score"])[:n]]
     resolve_all(top_gn)
     summaries(short)

@@ -1,7 +1,8 @@
 # KJEL Buzz Report — "The Buzz"
 
 Trello-style board of today's talkable stories for jocks and voicetrackers. Same look as the KJEL Event Board.
-Four columns: National, Local, Music, Humor. About 10 cards each, best first. Cards under 12 hours old are gold.
+Four columns: National (~10), Local (~20), Music (~10), Humor (~10), best first. Cards under 12 hours old are gold.
+Each news card is ONE on-air sentence with full context, city in parentheses. Lebanon cities are highlighted.
 Music has a search box (artist or song) at the top.
 
 ## Open
@@ -22,9 +23,10 @@ Double-click `index.html`. No server needed.
 - Listener: working couple, 28–44, Lebanon area. Funny, weird, wholesome, or uplifting only.
 - Never: tragedy, crime, illness, politics, celebrity gossip, outrage, ads, shopping lists.
 - Never dated events or activities. Those belong on the Event Board.
-- Local: Lebanon cards only when real (goal 30%). Then the 7 counties and the lake. Wider Ozarks only to fill.
+- Local: about 20. Lebanon cards only when real (goal 30%; Lebanon stories stay eligible 14 days, others 7). Then the 7 counties and the lake, including high school wins and honors. Wider Ozarks only to fill.
 - Music: country artists, songs, tours, chart news. Prefer artists in the Country Airplay top 40.
-- Line: under 12 words, facts from the headline or summary only. Blank when it would repeat the headline.
+- Line: one on-air sentence, 15-35 words, full context, facts from the headline or summary only. Skip the story if the facts are too thin.
+- City: the town from the source, shown in parentheses. Local always has one (county name if no town).
 - Humor: about 6 jokes + 3-4 funniest-posts roundup links. Clean for broadcast, tellable aloud in under 20 seconds, lands by ear. No old classics.
 
 ## Humor freshness guards
@@ -37,10 +39,10 @@ These stand in for virality. Facebook, TikTok, Instagram, X and Reddit share cou
 
 ## Sources
 - National: Google News searches (viral, heartwarming, weird, animals, records, lottery, Chiefs/Cards/Mizzou, season), Google Trends, Wikipedia, UPI Odd News, Good News Network, Upworthy, Fox News Lifestyle.
-- Local: Google News searches for Lebanon, Laclede, Camden, Pulaski, Webster, Dallas, Wright, Miller, the lake, Springfield, Branson; Laclede County Record; My Ozarks Online; City of Lebanon; Downtown Lebanon; KY3; OzarksFirst.
+- Local: 33 Google News searches (Lebanon, every town in the 7 counties, school teams, good-news themes, the lake, Springfield, Branson); Laclede County Record; My Ozarks Online; City of Lebanon; Downtown Lebanon; KY3; OzarksFirst; KSPR; KRMS.
 - Music: Taste of Country, The Boot, Whiskey Riff, Saving Country Music, Billboard, Rolling Stone, Country Now, Google News; Billboard Country Airplay chart.
 - Humor: Reddit joke boards; HuffPost comedy, Pleated Jeans, Cheezburger, Google News "funniest tweets/posts".
 
 ## Known limits
-- Google throttles the link lookup after heavy use. Unresolved cards keep a Google News link, which still opens the story in a modern browser.
+- Google throttles the link lookup after heavy use (the morning searches use most of the allowance). Lookups are spaced out and cached, so stories missed today usually resolve the next morning. Unresolved cards keep a Google News link, which still opens the story in a modern browser.
 - Feeds rarely carry feel-good Lebanon stories. The Local header shows "short today" when Lebanon is under 30%.
