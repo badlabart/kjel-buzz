@@ -3,255 +3,213 @@
  "national": [
   {
    "id": "N8b3693",
-   "line": "In South Carolina, children's goodbye letters for a senior dog went viral and helped get him adopted.",
-   "city": "South Carolina",
-   "congrats": false
+   "line": "In South Carolina, a group of children wrote goodbye letters for a senior shelter dog, and the letters went viral and got him adopted.",
+   "city": "South Carolina"
   },
   {
    "id": "N565b3b",
-   "line": "A tiny black cat found stuck in a car engine brought unexpected joy to a Sandy Springs, Georgia, couple whose wedding anniversary falls on Halloween.",
-   "city": "Sandy Springs, Ga.",
-   "congrats": false
-  },
-  {
-   "id": "Nffc5ef",
-   "line": "A Knicks fan's hilarious Halloween display featuring Taylor Swift and Timothee Chalamet has gone viral.",
-   "city": "",
-   "congrats": false
-  },
-  {
-   "id": "Ne33068",
-   "line": "Twenty years after dreaming about a house as teenagers, a pair finally made it theirs after slipping a handwritten note under the door.",
-   "city": "",
-   "congrats": false
+   "line": "A high school teacher in Sandy Springs, Georgia, found a tiny black cat stuck in her car engine on her way to work, just in time for her Halloween wedding anniversary.",
+   "city": "Sandy Springs, Ga."
   },
   {
    "id": "N7737dc",
-   "line": "A retired Oregon couple facing financial hardship was surprised with a new $16,000 heating and cooling system through a 'Feel the Love' program that has helped 3,100 people.",
-   "city": "Oregon",
-   "congrats": false
+   "line": "A retired couple in Beaverton, Oregon, got a brand-new heating and cooling system worth sixteen thousand dollars for free through a program called Feel the Love that has helped thirty-one hundred people.",
+   "city": "Beaverton, Ore."
+  },
+  {
+   "id": "Ne33068",
+   "line": "A couple who dreamed of buying a certain house as teenagers slipped a handwritten note under its door twenty years later, and that note led to the house becoming theirs.",
+   "city": ""
   },
   {
    "id": "N3f0c8c",
-   "line": "A woman accidentally said 'Love you!' to an important client, and his perfect response even included a heartwarming follow-up email.",
-   "city": "",
-   "congrats": false
+   "line": "A woman accidentally ended a work call by telling an important client \"Love you,\" and he answered so kindly that he even followed up with a heartwarming email.",
+   "city": ""
   },
   {
-   "id": "Nac09af",
-   "line": "A 3,156-pound pumpkin is going for a world record.",
-   "city": "",
-   "congrats": false
+   "id": "N212e4b",
+   "line": "Actor Brendan Fraser surprised a theater full of fans by showing up in costume at a screening of his movie The Mummy.",
+   "city": ""
   },
   {
-   "id": "N4386bd",
-   "line": "Actor Jason Segel married Kayla Radomski in a botanical garden wedding in Pasadena, California, on October 17th.",
-   "city": "Pasadena, Calif.",
-   "congrats": false
+   "id": "N58fb48",
+   "line": "Rescuers used a remote-controlled crawler built to look like R2-D2 from Star Wars to help get a kitten out of a drain pipe.",
+   "city": ""
+  },
+  {
+   "id": "N30edd9",
+   "line": "A crew of Ameren utility workers got a happy reunion with a stray dog they had helped rescue.",
+   "city": ""
+  },
+  {
+   "id": "Nffc5ef",
+   "line": "A New York Knicks fan's hilarious Halloween display featuring Taylor Swift and Timothée Chalamet is going viral online.",
+   "city": ""
+  },
+  {
+   "id": "N74be1b",
+   "line": "Pepsi is rolling out a new holiday flavor called Pepsi Vanilla and Cream nationwide for a limited time, in both regular and Zero Sugar.",
+   "city": ""
+  },
+  {
+   "id": "N0f9576",
+   "line": "HGTV star Joanna Gaines posted a hilarious video of herself dancing with her sister, and fans are loving it.",
+   "city": ""
   }
  ],
  "local": [
   {
-   "id": "La6f4f1",
-   "line": "Congratulations to the Lebanon R-3 School District, which earned a national Meritorious Budget Award.",
+   "id": "L584d8b",
+   "line": "Congratulations to Lebanon R-3 Schools on celebrating the opening of the new Robert W. Plaster Center for Student Success.",
    "city": "Lebanon",
    "congrats": true
   },
   {
-   "id": "L5cd73f",
-   "line": "Congratulations to an Olathe, Kansas, man who reeled in a world-record 164-pound paddlefish at Lake of the Ozarks on his very first time snagging.",
-   "city": "Lake of the Ozarks",
+   "id": "La6f4f1",
+   "line": "Congratulations to Lebanon R-3 Schools for earning a national Meritorious Budget Award.",
+   "city": "Lebanon",
    "congrats": true
   },
   {
    "id": "L68a64a",
-   "line": "Congratulations to three Lebanon tennis players who received All-District honors.",
+   "line": "Congratulations to three Lebanon High School tennis players who received All-District honors this season.",
    "city": "Lebanon",
-   "congrats": true
-  },
-  {
-   "id": "Lce8cf3",
-   "line": "Congratulations to the Camdenton Lakers, who beat Capital City in a back-and-forth Week 8 football game on a go-ahead touchdown run by Michael Maschino.",
-   "city": "Camdenton",
    "congrats": true
   },
   {
    "id": "L5817be",
-   "line": "Congratulations to the Lebanon High School Marching Yellowjackets, who placed at the Valhalla Marching Festival at Parkview High School in Springfield on October 3rd.",
+   "line": "Congratulations to the Lebanon Yellowjackets marching band for placing at the Valhalla Marching Festival.",
    "city": "Lebanon",
    "congrats": true
-  },
-  {
-   "id": "L5f82b2",
-   "line": "Congratulations to Camdenton's homecoming royalty, part of the town's homecoming celebration that included a parade.",
-   "city": "Camdenton",
-   "congrats": true
-  },
-  {
-   "id": "L584d8b",
-   "line": "Congratulations to Lebanon Schools on the opening of the new Robert W. Plaster Center for Student Success.",
-   "city": "Lebanon",
-   "congrats": true
-  },
-  {
-   "id": "L604b7b",
-   "line": "Patrick Mahomes' mom has shot down a story claiming the Chiefs star has a home at Lake of the Ozarks.",
-   "city": "Lake of the Ozarks",
-   "congrats": false
   },
   {
    "id": "Lf3ee85",
-   "line": "Congratulations to Brittany Stamm, the new head girls basketball coach for Lebanon Schools.",
+   "line": "Congratulations to Brittany Stamm, who has been named the new head girls basketball coach for Lebanon R-3 Schools.",
    "city": "Lebanon",
    "congrats": true
-  },
-  {
-   "id": "L53d98a",
-   "line": "Nearly 2,300 boaters turned out for a sunny Fall Harbor Hop at Lake of the Ozarks.",
-   "city": "Lake of the Ozarks",
-   "congrats": false
   },
   {
    "id": "L02a661",
-   "line": "Congratulations to Kalem Copling, the new head boys basketball coach for Lebanon Schools.",
+   "line": "Congratulations to Kalem Copling, who has been named the new head boys basketball coach for Lebanon R-3 Schools.",
    "city": "Lebanon",
    "congrats": true
   },
   {
-   "id": "L79a120",
-   "line": "A developer is looking to build a new 126-room Hyatt hotel in Backwater Jacks' Cove at Lake of the Ozarks.",
-   "city": "Lake of the Ozarks",
+   "id": "Lb75d94",
+   "line": "Lebanon R-3 Schools says its Hive Depot is providing essential resources and learning opportunities for Lebanon students.",
+   "city": "Lebanon",
    "congrats": false
   },
   {
    "id": "Lc00021",
-   "line": "A neighboring church stepped in and built a ramp for a Lebanon woman living with a rare condition called Ehlers-Danlos Syndrome, to make her daily life easier.",
+   "line": "A local church in Lebanon came together to build a ramp for a woman with a disability, according to the Laclede County Record.",
    "city": "Lebanon",
    "congrats": false
   },
   {
-   "id": "L02e34a",
-   "line": "Lake of the Ozarks set a heat record on Tuesday, October 13th, when the National Weather Service says temperatures reached the low 90s.",
+   "id": "L5cd73f",
+   "line": "Congratulations to the angler who set a new world record at Lake of the Ozarks by landing a 164-pound paddlefish.",
+   "city": "Lake of the Ozarks",
+   "congrats": true
+  },
+  {
+   "id": "L53d98a",
+   "line": "The Fall Harbor Hop drew nearly twenty-three hundred boaters out for a sunny day on Lake of the Ozarks.",
    "city": "Lake of the Ozarks",
    "congrats": false
   },
   {
-   "id": "Lb75d94",
-   "line": "Lebanon Schools' Hive Depot is providing essential resources and learning opportunities for Lebanon students.",
-   "city": "Lebanon",
+   "id": "L79a120",
+   "line": "New details are out on a 126-room Hyatt hotel planned in the Backwater Jacks' cove at Lake of the Ozarks.",
+   "city": "Lake of the Ozarks",
    "congrats": false
   },
   {
-   "id": "L9d9732",
-   "line": "The Joel E. Barber C-5 School District is considering building a high school addition onto its existing building.",
-   "city": "Laclede County",
+   "id": "L604b7b",
+   "line": "Patrick Mahomes' mom has set the record straight: the Chiefs quarterback does not have a home at Lake of the Ozarks.",
+   "city": "Lake of the Ozarks",
    "congrats": false
   },
   {
-   "id": "La6e69f",
-   "line": "The City of Lebanon has gone back to the drawing board with another new city logo, paired with a new slogan: 'Build your journey here.'",
-   "city": "Lebanon",
+   "id": "L5f82b2",
+   "line": "Camdenton celebrated its Homecoming with a parade and the crowning of this year's Homecoming royalty.",
+   "city": "Camdenton",
+   "congrats": false
+  },
+  {
+   "id": "L02e34a",
+   "line": "Lake of the Ozarks hit a new heat record on Tuesday.",
+   "city": "Lake of the Ozarks",
    "congrats": false
   }
  ],
  "music": [
   {
-   "id": "M6e6450",
-   "line": "Ella Langley is celebrating one year of her massive hit 'Choosin' Texas,' saying she is constantly and consistently amazed.",
-   "city": "",
-   "congrats": false
+   "id": "Ma0876b",
+   "line": "The Country Music Hall of Fame has officially inducted its class of 2026: Tim McGraw, Paul Overstreet and The Stanley Brothers.",
+   "city": ""
   },
   {
-   "id": "Mb999fb",
-   "line": "Tim McGraw, Paul Overstreet and the Stanley Brothers are the newest inductees into the Country Music Hall of Fame.",
-   "city": "",
-   "congrats": false
+   "id": "M224e21",
+   "line": "Luke Bryan is hitting a big milestone on American Idol, a full decade as a judge, and he is sharing what he expects from season twenty-five.",
+   "city": ""
+  },
+  {
+   "id": "M6e6450",
+   "line": "Ella Langley is celebrating one full year of her massive hit Choosin' Texas, saying she is constantly and consistently amazed.",
+   "city": ""
   },
   {
    "id": "M57a6ee",
-   "line": "Megan Moroney made country music history at the Victoria's Secret Fashion Show.",
-   "city": "",
-   "congrats": false
+   "line": "Megan Moroney made country music history by performing at the Victoria's Secret Fashion Show.",
+   "city": ""
+  },
+  {
+   "id": "M4f6aac",
+   "line": "Zach Top has released two new songs, Good Girls and Cowgirls and Other Side of Hurtin'.",
+   "city": ""
   },
   {
    "id": "Md19536",
-   "line": "Zach Bryan says Morgan Wallen and Jason Isbell helped change his mind about Nashville, and that the chip on his shoulder was his own.",
-   "city": "",
-   "congrats": false
-  },
-  {
-   "id": "Mf09831",
-   "line": "Morgan Wallen, Garth Brooks and Taylor Swift are among the artists with the most weeks at No. 1 on Billboard's Top Country Albums chart.",
-   "city": "",
-   "congrats": false
+   "line": "Zach Bryan says Morgan Wallen and Jason Isbell helped change his mind about Nashville, admitting the chip on his shoulder was his own.",
+   "city": ""
   },
   {
    "id": "M2268ca",
-   "line": "Trace Adkins is celebrating 30 years of his 'Dreamin' Out Loud' album with its first-ever vinyl release.",
-   "city": "",
-   "congrats": false
+   "line": "Trace Adkins is celebrating thirty years of his album Dreamin' Out Loud with its first-ever vinyl release.",
+   "city": ""
   },
   {
    "id": "M0f13d5",
-   "line": "Vince Gill and Marty Stuart teamed up on a new album, 'Marty and Me,' that Saving Country Music calls twangy and tasty.",
-   "city": "",
-   "congrats": false
+   "line": "Vince Gill has a new album with Marty Stuart called Marty and Me, and reviewers say it is twangy and tasty from the very start.",
+   "city": ""
   },
   {
-   "id": "Md685d3",
-   "line": "Turnpike Troubadours announced two headlining shows at Red Rocks for 2027, with special guests Amble and Wade Forster.",
-   "city": "",
-   "congrats": false
+   "id": "Ma7981f",
+   "line": "Red Dirt favorites Turnpike Troubadours will headline two nights at Red Rocks in 2027.",
+   "city": ""
   }
  ],
  "humor": [
   {
    "id": "Hddc180",
    "line": "",
-   "city": "",
-   "congrats": false
+   "city": ""
   },
   {
-   "id": "Hac2c5e",
+   "id": "H837575",
    "line": "",
-   "city": "",
-   "congrats": false
+   "city": ""
   },
   {
-   "id": "Hba7911",
+   "id": "H7bc769",
    "line": "",
-   "city": "",
-   "congrats": false
-  },
-  {
-   "id": "H7c6147",
-   "line": "",
-   "city": "",
-   "congrats": false
+   "city": ""
   },
   {
    "id": "Hd8a8cd",
    "line": "",
-   "city": "",
-   "congrats": false
-  },
-  {
-   "id": "H797a45",
-   "line": "",
-   "city": "",
-   "congrats": false
-  },
-  {
-   "id": "Hbea08d",
-   "line": "",
-   "city": "",
-   "congrats": false
-  },
-  {
-   "id": "Hb27f16",
-   "line": "",
-   "city": "",
-   "congrats": false
+   "city": ""
   }
  ]
 }

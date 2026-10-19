@@ -20,7 +20,7 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .title{font-weight:bold;font-size:20px}.meta{font-size:13px;color:#33445C}
 .stale{display:none;background:#D0101F;color:#FFFFFF;font-weight:bold;font-size:13px;padding:6px 18px}
 .board{white-space:nowrap;overflow-x:auto;padding:12px 6px}
-.col{display:inline-block;vertical-align:top;white-space:normal;box-sizing:border-box;width:24.2%;min-width:260px;margin:0 4px;background:#E6E9EE;border-radius:12px;padding:0 8px 4px}
+.col{display:inline-block;vertical-align:top;white-space:normal;box-sizing:border-box;width:19.4%;min-width:250px;margin:0 3px;background:#E6E9EE;border-radius:12px;padding:0 8px 4px}
 .col h2{margin:0;padding:10px 4px 2px;font-size:17px}
 .sub{font-size:12px;font-weight:bold;padding:0 4px 8px;color:#33445C}
 .sub.short{color:#D0101F}

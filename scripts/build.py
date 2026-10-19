@@ -15,7 +15,8 @@ import page  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
-COLUMNS = [("national", "National"), ("local", "Local"), ("music", "Music"), ("humor", "Humor")]
+COLUMNS = [("national", "National"), ("local", "Local"), ("music", "Music"), ("humor", "Humor"),
+           ("weird", "Morning News Only")]
 LEBANON_GOAL = 0.50
 
 
