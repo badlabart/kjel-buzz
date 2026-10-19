@@ -1,7 +1,7 @@
 # KJEL Buzz Report — "The Buzz"
 
 Trello-style board of today's talkable stories for jocks and voicetrackers. Same look as the KJEL Event Board.
-Five columns: National (~10), Local (up to 24), Music (~10), Humor (~10), Morning News Only (20+), best first. Cards under 12 hours old are gold.
+Six columns: National (~10), LOCAL PRIDE (up to 24), Local (up to 24), Music (concerts + ~30 news), Humor (6-10 one-liners), Morning News Only (20+), best first. Cards under 12 hours old are gold.
 Each news card is ONE on-air sentence with full context, city in parentheses. Lebanon cities are highlighted.
 Music has a search box (artist or song) at the top.
 
@@ -33,7 +33,10 @@ Double-click `index.html`. No server needed.
 - Music: country artists, songs, tours, chart news. Prefer artists in the Country Airplay top 40.
 - Line: one on-air sentence, 15-35 words, full context, facts from the headline or summary only. Skip the story if the facts are too thin.
 - City: the town from the source, shown in parentheses. Local always has one (county name if no town).
-- Humor: about 6 jokes + 3-4 funniest-posts roundup links. Clean for broadcast, tellable aloud in under 20 seconds, lands by ear. No old classics.
+- LOCAL PRIDE: congratulations only, and every card NAMES the recipients (NAMES line lists them all). No names in the source = no card. Article text is read so names don't need a click.
+- Local: useful, interesting local news and local pride that isn't an award. Nothing that's a downer.
+- Both local columns: up to 12 Lebanon + up to 12 other towns. Other towns HIGH first (Waynesville, St. Robert, Fort Leonard Wood, Bolivar, Marshfield, Osage Beach, Eldon, Camdenton), then LOW (Richland, Buffalo, Sunrise Beach, Four Seasons, Lake Ozark, Laurie, Crocker, Hermitage, Fair Grove, Dixon, Pleasant Hope), then other core-area towns.
+- Humor: one-line jokes only, readable on the card with no click. Never tweets, posts or roundup links. Clean for broadcast, lands by ear. No old classics.
 
 ## Morning News Only
 - Bizarre, stunning, weird, crazy stories a listener can't wait to share at work. Never negative; a harmless brush with the law is OK.
@@ -41,7 +44,8 @@ Double-click `index.html`. No server needed.
 - Sources: UPI Odd News, NY Post Weird But True, Neatorama, Laughing Squid, the Mirror and Daily Star (international, rule above), and 13 targeted Google News searches (loose animals, odd finds, oddball records, Florida man, viral animals, Missouri and listening-area oddities).
 
 ## Humor freshness guards
-- Jokes come from this week's 100 top-voted posts on r/dadjokes, r/cleanjokes, r/oneliners, r/Jokes (one combined pull; Reddit blocks a second).
+- Jokes come from the last 24 hours' 100 top-voted posts on r/dadjokes, r/cleanjokes, r/oneliners, r/Jokes, r/Showerthoughts (one combined pull; Reddit blocks a second).
+- Auto-dropped: over 170 characters (Humor must read in one line).
 - Auto-dropped: over 280 characters, dirty words, downers/politics, anything close to the 744 classic dad jokes in `data/classic_jokes.json`, anything already shown (`data/humor_shown.json`).
 
 ## Buzz signals (the "BUZZ:" line)
@@ -51,9 +55,10 @@ These stand in for virality. Facebook, TikTok, Instagram, X and Reddit share cou
 ## Sources
 - National: Google News searches (viral, heartwarming, weird, animals, records, lottery, Chiefs/Cards/Mizzou, season), Google Trends, Wikipedia, UPI Odd News, Good News Network, Upworthy, Fox News Lifestyle.
 - Community congratulations: school live feeds for Waynesville, Gasconade C-4, Crocker, Fordland, School of the Osage, Iberia; news boards for Lebanon R-3 and Seymour; Richland schools RSS; Camdenton, Lake West, Mountain Grove chambers; Laclede Electric; Mercy Hospital Lebanon.
-- Local: ~40 Google News searches (Lebanon, every town in the 7 counties, school teams, honors/scholarships/business milestones, the lake); Lebanon R-3 Schools news page (no dates on the site, so a post is dated the day it is first seen and shows SCHOOL NEWS); Laclede County Record; My Ozarks Online; City of Lebanon; Downtown Lebanon; KY3; OzarksFirst; KSPR; KRMS.
+- Local feeds also: LakeExpo, Bolivar Herald-Free Press, Marshfield Mail, Buffalo Reflex.
+- Local: ~45 Google News searches (Lebanon, every town in the 7 counties, school teams, honors/scholarships/business milestones, the lake); Lebanon R-3 Schools news page (no dates on the site, so a post is dated the day it is first seen and shows SCHOOL NEWS); Laclede County Record; My Ozarks Online; City of Lebanon; Downtown Lebanon; KY3; OzarksFirst; KSPR; KRMS.
 - Music: Taste of Country, The Boot, Whiskey Riff, Saving Country Music, Billboard, Rolling Stone, Country Now, Google News; Billboard Country Airplay chart.
-- Humor: Reddit joke boards; HuffPost comedy, Pleated Jeans, Cheezburger, Google News "funniest tweets/posts".
+- Humor: Reddit joke boards only.
 
 ## Known limits
 - Google throttles the link lookup after heavy use (the morning searches use most of the allowance). Lookups are spaced out and cached, so stories missed today usually resolve the next morning. Unresolved cards keep a Google News link, which still opens the story in a modern browser.

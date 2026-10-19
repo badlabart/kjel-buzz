@@ -20,7 +20,7 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .title{font-weight:bold;font-size:20px}.meta{font-size:13px;color:#33445C}
 .stale{display:none;background:#D0101F;color:#FFFFFF;font-weight:bold;font-size:13px;padding:6px 18px}
 .board{white-space:nowrap;overflow-x:auto;padding:12px 6px}
-.col{display:inline-block;vertical-align:top;white-space:normal;box-sizing:border-box;width:19.4%;min-width:250px;margin:0 3px;background:#E6E9EE;border-radius:12px;padding:0 8px 4px}
+.col{display:inline-block;vertical-align:top;white-space:normal;box-sizing:border-box;width:16.2%;min-width:240px;margin:0 3px;background:#E6E9EE;border-radius:12px;padding:0 8px 4px}
 .col h2{margin:0;padding:10px 4px 2px;font-size:17px}
 .sub{font-size:12px;font-weight:bold;padding:0 4px 8px;color:#33445C}
 .sub.short{color:#D0101F}
@@ -45,7 +45,7 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .search .go{background:#D0101F;color:#FFFFFF;border-color:#D0101F;font-weight:bold;cursor:pointer}
 .results{display:none}
 .tag{font-size:10px;font-weight:bold;padding:1px 5px;border-radius:3px;margin-right:4px;vertical-align:middle}
-.tag.keep{background:#FDB913;color:#0A2A50}.card.concert{border-left:5px solid #D0101F}.tag.cong{background:#0A2A50;color:#FDB913}.tag.off{background:#D0101F;color:#FFFFFF}
+.tag.keep{background:#FDB913;color:#0A2A50}.names{font-size:13px;margin-top:4px}.names b{color:#D0101F}.card.concert{border-left:5px solid #D0101F}.tag.cong{background:#0A2A50;color:#FDB913}.tag.off{background:#D0101F;color:#FFFFFF}
 """
 
 # ES3 only: no let/const, arrow functions, classList, or dataset.
@@ -119,15 +119,19 @@ def write(data):
     for col in data["columns"]:
         cards = []
         for c in col["cards"]:
-            city = c.get("city") or (c.get("town") if col["key"] == "local" and c.get("town") != "Ozarks" else "")
+            city = c.get("city") or (c.get("town") if col["key"] in ("local", "pride") and c.get("town") != "Ozarks" else "")
             leb = (city or "").lower() == "lebanon"
             where = f' <span class="city{" leb" if leb else ""}">({esc(city)})</span>' if city else ""
             sig = f'<div class="sig"><b>BUZZ:</b> {esc(c["signal"])}</div>' if c.get("signal") else ""
             joke = c.get("kind") == "joke"
-            punch = f'<div class="punch">{esc(c["punch"])}</div>' if joke and c.get("punch") else ""
+            punch = ""
             # On-air sentence replaces the headline. Jokes and roundups keep their own text.
-            main = esc(c["line"]) if c.get("line") and not joke else esc(c["title"])
+            if joke:  # one line: Claude's tightened version, or setup and punchline joined
+                main = esc(c.get("line") or f'{c["title"]} {c.get("punch", "")}'.strip())
+            else:
+                main = esc(c["line"]) if c.get("line") else esc(c["title"])
             cong = '<span class="tag cong">CONGRATS</span>' if c.get("congrats") else ""
+            names = f'<div class="names"><b>NAMES:</b> {esc(c["names"])}</div>' if c.get("names") else ""
             # The R-3 site gives no post dates, so its cards show a label instead of an age.
             if c.get("kind") == "concert":
                 head = (f'<div class="card concert"><div class="when">CONCERT &middot; {esc(c["when_label"])} '
@@ -139,9 +143,10 @@ def write(data):
                         f'<div class="when"><span>{static_when(c["ts"])}</span> <span class="src">&middot; {esc(c["source"])}</span></div>')
             cards.append(
                 head +
-                f'<div class="name">{cong}{main}{where}</div>{punch}{sig}'
-                f'<a class="link" href="{esc(c["url"])}" target="_blank" rel="noopener">'
-                f'{"See post" if joke else "Tickets / details" if c.get("kind") == "concert" else "Read story"} &#8599;</a></div>')
+                f'<div class="name">{cong}{main}{where}</div>{names}{punch}{sig}' +
+                ('</div>' if joke else
+                 f'<a class="link" href="{esc(c["url"])}" target="_blank" rel="noopener">'
+                 f'{"Tickets / details" if c.get("kind") == "concert" else "Read story"} &#8599;</a></div>'))
         body = "".join(cards) or '<div class="empty">Nothing worth airing today.</div>'
         if col["key"] == "music":
             body = ('<form class="search" onsubmit="return kjSearch();">'
@@ -149,8 +154,8 @@ def write(data):
                     ' <input class="go" type="submit" value="Search"></form>'
                     f'<div class="results" id="kjres"></div><div id="kjcards">{body}</div>')
         sub = ""
-        if col["key"] == "local":
-            lb = data["lebanon"]
+        if col["key"] in data["lebanon"]:
+            lb = data["lebanon"][col["key"]]
             short = lb["of"] and lb["count"] < round(lb["goal"] * lb["of"])
             sub = (f'<div class="sub{" short" if short else ""}">Lebanon {lb["count"]} of {lb["of"]}'
                    f' &middot; goal {round(lb["goal"] * 100)}%{" &middot; short today" if short else ""}</div>')

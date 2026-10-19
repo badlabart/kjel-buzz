@@ -25,11 +25,6 @@
    "city": ""
   },
   {
-   "id": "N51df8a",
-   "line": "A dog has been reunited with its family after spending a month lost in Yellowstone.",
-   "city": "Yellowstone"
-  },
-  {
    "id": "N050645",
    "line": "The 2026 Dog Photography Awards named 18 finalists, and the top trophy went to a photographer named Caldwell for championing bully breeds like pit bulls.",
    "city": ""
@@ -42,130 +37,54 @@
  ],
  "local": [
   {
-   "id": "La6f4f1",
-   "line": "Congratulations to the Lebanon R-3 School District, which earned a national Meritorious Budget Award.",
-   "city": "Lebanon",
-   "congrats": true
+   "id": "Lb75d94",
+   "line": "Lebanon Schools' Hive Depot is providing essential resources and learning opportunities for Lebanon students.",
+   "city": "Lebanon"
   },
   {
-   "id": "L7873cc",
-   "line": "Congratulations to Waynesville Career Center culinary students Molly McDermitt, Cycila Keeney and Samantha Etheridge, who reached the finals at the World Food Championships in Indianapolis with their 'Bacon Lover's Christmas' dish.",
-   "city": "Waynesville",
-   "congrats": true
-  },
-  {
-   "id": "L68a64a",
-   "line": "Congratulations to three Lebanon tennis players who received All-District honors.",
-   "city": "Lebanon",
-   "congrats": true
-  },
-  {
-   "id": "L653bb1",
-   "line": "Congratulations to Waynesville High School senior Christina Smithey, named the Rotary Student of the Month for October.",
-   "city": "Waynesville",
-   "congrats": true
-  },
-  {
-   "id": "L584d8b",
-   "line": "Congratulations to Lebanon Schools on the opening of the Robert W. Plaster Center for Student Success.",
-   "city": "Lebanon",
-   "congrats": true
-  },
-  {
-   "id": "Lb402b0",
-   "line": "Congratulations to the Waynesville High School students named to the Central District Band after auditions at Rolla High School.",
-   "city": "Waynesville",
-   "congrats": true
-  },
-  {
-   "id": "L5817be",
-   "line": "Congratulations to the Lebanon High School Marching Yellowjackets, who placed at the Valhalla Marching Festival at Parkview High School in Springfield on October 3rd.",
-   "city": "Lebanon",
-   "congrats": true
-  },
-  {
-   "id": "L172777",
-   "line": "Congratulations to the Waynesville High School Tiger Pride Marching Band, which took third place overall and won the Outstanding Winds Award at the Valhalla Marching Band Festival.",
-   "city": "Waynesville",
-   "congrats": true
-  },
-  {
-   "id": "Lf3ee85",
-   "line": "Congratulations to Brittany Stamm, the new head girls basketball coach for Lebanon Schools.",
-   "city": "Lebanon",
-   "congrats": true
-  },
-  {
-   "id": "L536192",
-   "line": "Congratulations to Wood Elementary teacher Michael McGuire, this week's Teacher Proud shout-out from Waynesville schools.",
-   "city": "Waynesville",
-   "congrats": true
-  },
-  {
-   "id": "L02a661",
-   "line": "Congratulations to Kalem Copling, the new head boys basketball coach for Lebanon Schools.",
-   "city": "Lebanon",
-   "congrats": true
-  },
-  {
-   "id": "Lce8cf3",
-   "line": "Congratulations to the Camdenton Lakers, who beat Capital City in a back-and-forth Week 8 football game on a go-ahead touchdown run by Michael Maschino.",
-   "city": "Camdenton",
-   "congrats": true
-  },
-  {
-   "id": "Lda54a9",
-   "line": "Congratulations to the kindergarten and fifth grade classes at Gasconade C-4 Schools for earning perfect attendance in the first quarter.",
-   "city": "Laclede County",
-   "congrats": true
-  },
-  {
-   "id": "L5f82b2",
-   "line": "Congratulations to Camdenton's homecoming royalty, part of the town's homecoming celebration that included a parade.",
-   "city": "Camdenton",
-   "congrats": true
-  },
-  {
-   "id": "L423753",
-   "line": "Congratulations to the two new Missouri Highway Patrol troopers joining the Lake of the Ozarks area.",
-   "city": "Lake of the Ozarks",
-   "congrats": true
+   "id": "Lf2fb5a",
+   "line": "Osage Beach has a new city administrator, Keith Klostermann, a 30-year educator who spent time with the Orchard Farm School District.",
+   "city": "Osage Beach"
   },
   {
    "id": "Lc00021",
    "line": "A neighboring church stepped in and built a ramp for a Lebanon woman living with a rare condition called Ehlers-Danlos Syndrome, to make her daily life easier.",
-   "city": "Lebanon",
-   "congrats": false
+   "city": "Lebanon"
   },
   {
-   "id": "L3a4159",
-   "line": "Fordland Schools is thanking Mrs. Foraker and Mr. Cook, who lead its schools, for their dedication to Eagle Nation.",
-   "city": "Fordland",
-   "congrats": false
-  },
-  {
-   "id": "Lb75d94",
-   "line": "Lebanon Schools' Hive Depot is providing essential resources and learning opportunities for Lebanon students.",
-   "city": "Lebanon",
-   "congrats": false
-  },
-  {
-   "id": "L604b7b",
-   "line": "Patrick Mahomes' mom has shot down a story claiming the Chiefs star has a home at Lake of the Ozarks.",
-   "city": "Lake of the Ozarks",
-   "congrats": false
+   "id": "L1e6a22",
+   "line": "A group called Shine Through Faith is bringing helping hands to Marshfield, from mowing yards to picking up groceries for elderly neighbors.",
+   "city": "Marshfield"
   },
   {
    "id": "La6e69f",
    "line": "The City of Lebanon has gone back to the drawing board with another new city logo, paired with a new slogan: 'Build your journey here.'",
-   "city": "Lebanon",
-   "congrats": false
+   "city": "Lebanon"
   },
   {
-   "id": "L79a120",
-   "line": "A developer is looking to build a new 126-room Hyatt hotel in Backwater Jacks' Cove at Lake of the Ozarks.",
-   "city": "Lake of the Ozarks",
-   "congrats": false
+   "id": "L53d98a",
+   "line": "Nearly 2,300 boaters turned out for a sunny Fall Harbor Hop at Lake of the Ozarks to celebrate the end of another season.",
+   "city": "Lake of the Ozarks"
+  },
+  {
+   "id": "L9d9732",
+   "line": "The Joel E. Barber C-5 School District is considering building a high school addition onto its existing building.",
+   "city": "Laclede County"
+  },
+  {
+   "id": "L3566dc",
+   "line": "Sixty years ago this week, Mrs. Jimmie Hayes of Buffalo showed off an unusual two-headed lizard she found, according to the Buffalo Reflex's look back at Dallas County history.",
+   "city": "Buffalo"
+  },
+  {
+   "id": "L73994b",
+   "line": "Residents of Colonial Springs Healthcare Center in Buffalo competed at Bolivar's Golden Age Games on October 9th.",
+   "city": "Buffalo"
+  },
+  {
+   "id": "L25252f",
+   "line": "Fall is prime time for white bass at Lake of the Ozarks, as the fish push into the shallows chasing shad.",
+   "city": "Lake of the Ozarks"
   }
  ],
  "weird": [
@@ -375,40 +294,130 @@
  ],
  "humor": [
   {
-   "id": "Hddc180",
-   "line": "",
+   "id": "He76113",
+   "line": "My wife is really mad that I have no sense of direction, so I packed up my stuff and right.",
+   "city": ""
+  },
+  {
+   "id": "H6bb4f7",
+   "line": "James Hetfield left Metallica to become a priest at the Jim Henson Company. He's now a Pastor of Muppets.",
    "city": ""
   },
   {
    "id": "H194914",
-   "line": "",
-   "city": ""
-  },
-  {
-   "id": "Hba7911",
-   "line": "",
-   "city": ""
-  },
-  {
-   "id": "H9fc5db",
-   "line": "",
-   "city": ""
-  },
-  {
-   "id": "Hd8a8cd",
-   "line": "",
-   "city": ""
-  },
-  {
-   "id": "Hdd5bb0",
-   "line": "",
-   "city": ""
-  },
-  {
-   "id": "Hbea08d",
-   "line": "",
+   "line": "What do you call a criminal landing an airplane? Condescending.",
    "city": ""
   }
  ],
- "music_drop": []
+ "music_drop": [],
+ "pride": [
+  {
+   "id": "L68a64a",
+   "line": "Congratulations to Lebanon girls tennis players Lilly Bradbury, Ava Johnson and Carli Alford, who earned All-District honors with fourth-place finishes in singles and doubles.",
+   "city": "Lebanon",
+   "names": "Lilly Bradbury, Ava Johnson, Carli Alford"
+  },
+  {
+   "id": "L7873cc",
+   "line": "Congratulations to Waynesville Career Center culinary students Molly McDermitt, Cycila Keeney and Samantha Etheridge, who reached the finals at the World Food Championships in Indianapolis.",
+   "city": "Waynesville",
+   "names": "Molly McDermitt, Cycila Keeney, Samantha Etheridge"
+  },
+  {
+   "id": "La6f4f1",
+   "line": "Congratulations to the Lebanon R-3 School District, which earned a national Meritorious Budget Award.",
+   "city": "Lebanon",
+   "names": "Lebanon R-3 School District"
+  },
+  {
+   "id": "L653bb1",
+   "line": "Congratulations to Waynesville High School senior Christina Smithey, named the Rotary Student of the Month for October.",
+   "city": "Waynesville",
+   "names": "Christina Smithey"
+  },
+  {
+   "id": "Lf3ee85",
+   "line": "Congratulations to Brittany Stamm, the new head girls basketball coach for Lebanon Schools.",
+   "city": "Lebanon",
+   "names": "Brittany Stamm"
+  },
+  {
+   "id": "Lb402b0",
+   "line": "Congratulations to Payton Rushing, Ericah Njuguna, Tyler Silbanuz and 21 other Waynesville High School students named to the Central District Band and Jazz Band.",
+   "city": "Waynesville",
+   "names": "Payton Rushing, Ericah Njuguna, Tyler Silbanuz, Ethan Schacke, Ethan Schnacke, Vivien Lu, Zoe Striplin, Alexzander Romans, Myra (Archer) Gutierrez, Aliyah Bowers, Kevin Connor, Aiden York, Jenna Ballard, Juliet Piper, Matthew Hinton, Mikaila Knight, Haley Brown, Landon Boswell, Harley Atchison, Zayden Fikes, Ayuko Kileleman, Connor Reith, Dim Nuam, Ulysses Gonzales"
+  },
+  {
+   "id": "L02a661",
+   "line": "Congratulations to Kalem Copling, the new head boys basketball coach for Lebanon Schools.",
+   "city": "Lebanon",
+   "names": "Kalem Copling"
+  },
+  {
+   "id": "L172777",
+   "line": "Congratulations to the Waynesville High School Tiger Pride Marching Band, which took third place overall and won the Outstanding Winds Award at the Valhalla Marching Band Festival.",
+   "city": "Waynesville",
+   "names": "Waynesville High School Tiger Pride Marching Band"
+  },
+  {
+   "id": "L5817be",
+   "line": "Congratulations to the Lebanon High School Marching Yellowjackets, who placed at the Valhalla Marching Festival.",
+   "city": "Lebanon",
+   "names": "Lebanon High School Marching Yellowjackets"
+  },
+  {
+   "id": "Lafb979",
+   "line": "Congratulations to Marshfield Chevrolet, which is celebrating 100 years of serving the community.",
+   "city": "Marshfield",
+   "names": "Marshfield Chevrolet"
+  },
+  {
+   "id": "L584d8b",
+   "line": "Congratulations to Lebanon Schools on the opening of the Robert W. Plaster Center for Student Success.",
+   "city": "Lebanon",
+   "names": "Lebanon R-3 School District"
+  },
+  {
+   "id": "L423753",
+   "line": "Congratulations to new Missouri State Highway Patrol troopers Ashton Wise, a 2022 Camdenton High School graduate, and Erin Bock, who are assigned to Camden and Miller counties.",
+   "city": "Camdenton",
+   "names": "Ashton G. Wise, Erin K. Bock"
+  },
+  {
+   "id": "Lce8cf3",
+   "line": "Congratulations to the Camdenton Lakers, who beat Capital City in a back-and-forth Week 8 football game on a go-ahead touchdown run by Michael Maschino.",
+   "city": "Camdenton",
+   "names": "Camdenton Lakers football team, Michael Maschino"
+  },
+  {
+   "id": "L536192",
+   "line": "Congratulations to Wood Elementary teacher Michael McGuire, this week's Teacher Proud shout-out from Waynesville schools.",
+   "city": "Waynesville",
+   "names": "Michael McGuire"
+  },
+  {
+   "id": "L84e5a2",
+   "line": "Congratulations to Buffalo Alderman Eric Kirchberg, who earned the Certified Municipal Official designation from the Missouri Municipal League.",
+   "city": "Buffalo",
+   "names": "Eric Kirchberg"
+  },
+  {
+   "id": "Lf2c95b",
+   "line": "Congratulations to the Waynesville High School Class of 1966, which donated $775 to the district's Snack in a Pack program during its class reunion.",
+   "city": "Waynesville",
+   "names": "Waynesville High School Class of 1966"
+  },
+  {
+   "id": "Lda54a9",
+   "line": "Congratulations to the kindergarten and fifth grade classes at Gasconade C-4 Schools for earning perfect attendance in the first quarter.",
+   "city": "Laclede County",
+   "names": "Gasconade C-4 kindergarten and fifth grade classes"
+  },
+  {
+   "id": "L3a4159",
+   "line": "Fordland Schools is thanking Mrs. Foraker and Mr. Cook, who lead its schools, for their dedication to Eagle Nation.",
+   "city": "Fordland",
+   "names": "Mrs. Foraker, Mr. Cook"
+  }
+ ]
 }

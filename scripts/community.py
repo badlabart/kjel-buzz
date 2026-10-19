@@ -55,7 +55,7 @@ def _title_from(text):
 
 
 def _item(c, source, title, url, ts, desc, town):
-    return {"col": "local", "title": title, "url": url, "source": source, "ts": ts, "desc": desc[:400],
+    return {"col": "local", "title": title, "url": url, "source": source, "ts": ts, "desc": desc[:3000],
             "gn": False, "town": town, "tier": 0 if town == "Lebanon" else 1, "community": True}
 
 

@@ -123,6 +123,10 @@ LOCAL_Q = [
     ('"Lake of the Ozarks" OR "Osage Beach" OR Camdenton OR "Lake Ozark"', 7),
     ('"Camden County" Missouri', 7),
     ('"Pulaski County" Missouri OR "Fort Leonard Wood" OR Waynesville OR "St. Robert"', 7),
+    ('"Bolivar, Mo." OR "Bolivar, Missouri" OR "Polk County" Missouri OR "Pleasant Hope" OR "Fair Grove, Mo."', 7),
+    ('Hermitage Missouri OR "Hickory County" Missouri OR "Four Seasons" Missouri OR "Lake Ozark"', 7),
+    ('(Bolivar OR "Pleasant Hope" OR "Fair Grove" OR Hermitage) Missouri '
+     '(award OR honored OR scholarship OR "of the year" OR champion OR "Eagle Scout" OR anniversary OR "ribbon cutting")', 14),
     ('"Webster County" Missouri OR "Marshfield, Mo." OR "Seymour, Mo."', 7),
     ('"Dallas County" Missouri OR "Buffalo, Mo."', 7),
     ('"Wright County" Missouri OR "Mountain Grove" OR "Hartville, Mo." OR "Mansfield, Mo."', 7),
@@ -140,6 +144,10 @@ LOCAL_FEEDS = [
     ("OzarksFirst", "https://www.ozarksfirst.com/news/local-news/feed/"),
     ("KSPR", "https://www.kspr.com/arc/outboundfeeds/rss/?outputType=xml"),
     ("KRMS", "https://www.krmsradio.com/feed/"),
+    ("LakeExpo.com", "https://www.lakeexpo.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc"),
+    ("Bolivar Herald-Free Press", "https://www.bolivarmonews.com/feed/"),
+    ("Marshfield Mail", "https://www.marshfieldmail.com/feed/"),
+    ("Buffalo Reflex", "https://www.buffaloreflex.com/feed/"),
 ]
 MUSIC_Q = ['"country music" OR "country singer" OR "country star"']
 # Morning News Only: bizarre, stunning, weird, crazy, never negative. Listening area first, then US, then
@@ -237,7 +245,7 @@ MO_MARK = re.compile(r"\b(Mo\.|MO|Missouri|Ozarks?)\b")
 LOCAL_OUTLET = re.compile(
     r"laclede|ozark|ky3|kolr|kspr|lakeexpo|lake sun|lake news|news-leader|branson globe|reflex|webster county citizen|"
     r"marshfield mail|komu|krcg|kmzu|ksmu|krms|kttn|sgf|springfield daily|sedalia|daily guide|missouri|"
-    r"myozarks|guidon|houston herald|eldon|kspr|krms", re.I)
+    r"myozarks|guidon|houston herald|eldon|kspr|krms|bolivar|polk county", re.I)
 COUNTY_TOWNS = [
     "Conway", "Phillipsburg", "Stoutland", "Eldridge", "Brumley",
     "Waynesville", "St. Robert", "Saint Robert", "Fort Leonard Wood", "Dixon", "Crocker", "Richland", "Laquey", "Pulaski County",
@@ -246,8 +254,21 @@ COUNTY_TOWNS = [
     "Buffalo", "Louisburg", "Urbana", "Dallas County",
     "Mountain Grove", "Hartville", "Mansfield", "Norwood", "Wright County",
     "Eldon", "Tuscumbia", "Iberia", "Miller County",
+    "Bolivar", "Pleasant Hope", "Polk County", "Hermitage", "Hickory County", "Fair Grove",
+    "Village of Four Seasons", "Four Seasons",
 ]
-WIDER_TOWNS = ["Springfield", "Branson", "Rolla", "Bolivar", "Nixa", "Ozark", "Republic", "West Plains", "Ozarks"]
+WIDER_TOWNS = ["Springfield", "Branson", "Rolla", "Nixa", "Ozark", "Republic", "West Plains", "Ozarks"]
+# Boss's order for the non-Lebanon half of LOCAL PRIDE and Local (2026-10-19).
+HIGH_TOWNS = {"Waynesville", "St. Robert", "Fort Leonard Wood", "Bolivar", "Marshfield", "Osage Beach", "Eldon", "Camdenton"}
+LOW_TOWNS = {"Richland", "Buffalo", "Sunrise Beach", "Four Seasons", "Village of Four Seasons", "Lake Ozark", "Laurie",
+             "Crocker", "Hermitage", "Fair Grove", "Dixon", "Pleasant Hope", "Lake"}
+
+
+def town_priority(town, tier):
+    """0 Lebanon, 1 high-priority town, 2 lower-priority town, 3 any other core-area town."""
+    if tier == 0:
+        return 0
+    return 1 if town in HIGH_TOWNS else 2 if town in LOW_TOWNS else 3
 
 
 def town_of(title, desc, source):
@@ -586,7 +607,8 @@ def score(it, wiki, chart):
     if it["source"] in ("UPI Odd News", "Good News Network", "Upworthy"):
         s += 2
     if it["col"] == "local":
-        s += {0: 8, 1: 4, 2: 0}[it["tier"]] + (8 if it.get("congrats") else 0)
+        it["prio"] = town_priority(it.get("town"), it["tier"]) if it["tier"] != 2 else 4
+        s += {0: 8, 1: 6, 2: 3, 3: 0, 4: 0}[it["prio"]] + (8 if it.get("congrats") else 0)
         s -= hours / 24 * 2
     elif it["col"] == "weird":
         s += {"local": 15, "missouri": 6, "us": 0, "intl": -3}[it["scope"]]
@@ -683,6 +705,27 @@ def resolve_all(items, limit=None, budget_s=240):
             break
         time.sleep(2.5)
     CACHE.write_text(json.dumps(cache, indent=0))
+
+
+def article_text(url):
+    """Paragraph text of an article page, so LOCAL PRIDE can name every recipient without a click."""
+    try:
+        h = get(url, timeout=15)[:600000]
+    except Exception:
+        return ""
+    h = re.sub(r"<(nav|header|footer|aside|script|style)\b.*?</\1>", " ", h, flags=re.S | re.I)
+    paras = [text(x) for x in re.findall(r"<p[^>]*>(.*?)</p>", h, re.S)]
+    boiler = re.compile(r"outdated browser|subscri|password|cookie|sign up|newsletter|click here|log ?in|"
+                        r"all rights reserved|advertis|copyright", re.I)
+    keep = [x for x in paras if len(x.split()) >= 6 and re.search(r"[.!?\"”]$", x) and not boiler.search(x)]
+    return " ".join(keep)[:2500]
+
+
+def bodies(items):
+    todo = [i for i in items if not i["url"].startswith("https://news.google.com") and len(i.get("desc", "")) < 600]
+    with ThreadPoolExecutor(6) as ex:
+        for it, body in zip(todo, ex.map(lambda i: article_text(i["url"]), todo)):
+            it["body"] = body
 
 
 def summaries(items):
@@ -799,13 +842,14 @@ def main():
               for i in sorted((x for x in short if x["col"] == col and x["gn"]), key=lambda x: -x["score"])[:n]]
     resolve_all(top_gn)
     summaries(short)
+    bodies([i for i in short if i["col"] == "local" and i.get("congrats")])
     # Second pass: a resolved summary can reveal a downer the headline hid.
     short = [i for i in short if not (TRAGIC.search(i["desc"][:200]) or POLITICS.search(i["desc"][:200]))]
 
     pool = []
     for i in short:
         pool.append({k: i.get(k) for k in ("id", "col", "title", "source", "url", "gn_url", "desc", "outlets", "also",
-                                           "signal", "score", "town", "tier", "kind", "punch", "congrats", "scope", "near")} | {"ts": i["ts"].isoformat()})
+                                           "signal", "score", "town", "tier", "kind", "punch", "congrats", "scope", "near", "body", "prio")} | {"ts": i["ts"].isoformat()})
     (DATA / "pool.json").write_text(json.dumps({"collected": NOW.isoformat(), "items": pool}, indent=1, ensure_ascii=False))
 
     print(f"raw {len(raw)} | kept {len(kept)} | stories {len(items)} | shortlist {len(pool)} | dropped {dropped}")
@@ -825,7 +869,8 @@ def main():
         for i in sorted((p for p in pool if p["col"] == col), key=lambda x: -x["score"]):
             age = (NOW - datetime.fromisoformat(i["ts"])).total_seconds() / 3600
             age = f"{age:.0f}h" if age < 48 else f"{age / 24:.0f}d"
-            where = (f' [{i["town"]}{"*" if i["tier"] == 0 else ""}]{" CONGRATS?" if i.get("congrats") else ""}'
+            prio = {0: "", 1: " HIGH", 2: " LOW"}.get(i.get("prio"), "")
+            where = (f' [{i["town"]}{"*" if i["tier"] == 0 else ""}{prio}]{" CONGRATS?" if i.get("congrats") else ""}'
                      if col == "local" else
                      f' [{"LOCAL " + (i["town"] or "") if i["scope"] == "local" else i["scope"].upper()}]' if col == "weird" else
                      f' [{"NEAR US" if i["near"] == 1 else "KC/STL"}]' if col == "music" and i.get("near") else "")
@@ -833,7 +878,9 @@ def main():
                 print(f'{i["id"]} | {age} | {i["source"]} | {i["signal"]} | JOKE: {i["title"]} / {i["punch"]}')
             else:
                 tag = "LIST: " if col == "humor" else ""
-                print(f'{i["id"]} | {age} | {i["source"][:22]}{where} | {i["signal"] or "-"} | {tag}{i["title"]} || {i["desc"][:220]}')
+                full = i.get("body") or i["desc"]
+                summ = full[:1800] if col == "local" and i.get("congrats") else i["desc"][:220]
+                print(f'{i["id"]} | {age} | {i["source"][:22]}{where} | {i["signal"] or "-"} | {tag}{i["title"]} || {summ}')
 
 
 if __name__ == "__main__":

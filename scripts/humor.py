@@ -11,14 +11,14 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 
 A = "{http://www.w3.org/2005/Atom}"
-REDDIT = "https://www.reddit.com/r/dadjokes+cleanjokes+oneliners+Jokes/top/.rss?t=week&limit=100"
+REDDIT = "https://www.reddit.com/r/dadjokes+cleanjokes+oneliners+Jokes+Showerthoughts/top/.rss?t=day&limit=100"
 LIST_FEEDS = [
     ("HuffPost", "https://www.huffpost.com/section/comedy/feed"),
     ("Pleated Jeans", "https://pleated-jeans.com/feed/"),
     ("Cheezburger", "https://cheezburger.com/rss"),
 ]
 LIST_Q = '"funniest tweets" OR "funniest posts" OR "funniest parenting" OR "hilarious tweets"'
-MAX_JOKE_CHARS = 280  # fits a 15-25 second break
+MAX_JOKE_CHARS = 170  # Boss (2026-10-19): Humor must read in ONE LINE, no click needed
 DIRTY = re.compile(
     r"\b(sex\w*|penis|vagina|dick|cock|boobs?|tits?|ass|asses|asshole|fuck\w*|shit\w*|bitch\w*|porn\w*|naked|nude|"
     r"horny|orgasm|condoms?|viagra|blow ?jobs?|whores?|sluts?|hookers?|strippers?|erection|testicl\w*|balls|"
@@ -106,7 +106,7 @@ def reddit_jokes(c):
             continue
         out.append({"col": "humor", "kind": "joke", "title": setup, "punch": punch, "source": sub, "url": link,
                     "ts": ts, "desc": "", "gn": False, "score": 100 - rank,
-                    "signal": f"#{rank} of this week's 100 top-voted Reddit jokes"})
+                    "signal": f"#{rank} of today's 100 top-voted Reddit jokes and one-liners"})
     return out, dropped
 
 
@@ -132,8 +132,9 @@ def roundups(c):
 
 
 def collect(c):
+    """One-line jokes only. Boss (2026-10-19): no tweet or post roundups in Humor."""
     jokes, dropped = reddit_jokes(c)
-    lists = roundups(c)
+    lists = []
     if dropped:
         print("humor dropped:", dropped)
     return jokes, lists
