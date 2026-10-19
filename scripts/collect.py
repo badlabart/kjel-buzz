@@ -31,7 +31,7 @@ FRESH_HOURS = {"national": 48, "music": 48, "local": 24 * 7, "weird": 24 * 14}
 WEIRD_AWAY_HOURS = 48  # Morning News Only: listening-area stories may be 14 days old, everything else 48 hours
 LEBANON_FRESH_HOURS = 24 * 14  # Lebanon stories are scarce, so they get two weeks
 CONGRATS_FRESH_HOURS = {0: 24 * 21, 1: 24 * 14}  # congratulations stay sayable longer: Lebanon 3 weeks, core area 2
-SHORT = {"national": 30, "music": 30, "local": 80, "weird": 50}
+SHORT = {"national": 30, "music": 30, "local": 80, "weird": 80}
 # Things a jock can congratulate a local person, team, school or business for.
 CONGRATS = re.compile(
     r"\b(awards?|awarded|honou?r(s|ed|ee)?|named|recogni[sz]\w*|scholarships?|dean'?s list|president'?s list|"
@@ -145,31 +145,70 @@ MUSIC_Q = ['"country music" OR "country singer" OR "country star"']
 # Morning News Only: bizarre, stunning, weird, crazy, never negative. Listening area first, then US, then
 # international only when US outlets are carrying it widely (10+) or it is in Google Trends.
 WEIRD_Q = [
-    ('bizarre OR "strange discovery" OR unusual OR weird OR "odd news" OR "you won\'t believe"', 1),
-    ('"world record" OR "record-breaking" OR giant OR "largest ever" OR "first ever"', 1),
-    ('(rare OR albino OR two-headed OR "mystery creature" OR escaped) (animal OR deer OR bear OR fish OR snake OR alligator OR cow OR emu)', 2),
-    ('(found OR discovered OR unearthed) (treasure OR "time capsule" OR fossil OR "message in a bottle" OR meteorite)', 2),
-    ('"Florida man" OR "Florida woman" OR "only in Florida"', 2),
-    ('Missouri (bizarre OR strange OR unusual OR weird OR rare OR giant OR "world record" OR albino OR "first ever" OR "state record")', 7),
+    ('"odd news" OR "weird news" OR "strange but true" OR bizarre OR baffled OR "mystery solved"', 1),
+    ('(raccoon OR goat OR alligator OR bear OR moose OR emu OR llama OR kangaroo OR cow OR pig OR snake OR python) '
+     '(loose OR escaped OR stuck OR wandered OR rescued OR spotted OR "on the run")', 2),
+    ('(police OR deputies OR firefighters OR troopers) (raccoon OR goat OR alligator OR cow OR pig OR emu OR snake OR turkey OR duck)', 2),
+    ('(found OR discovered OR unearthed) (treasure OR "time capsule" OR "message in a bottle" OR meteorite OR fossil OR shipwreck OR "hidden room")', 2),
+    ('"Guinness World Records" OR "world record" (pumpkin OR dog OR cat OR tallest OR longest OR largest OR oldest OR fastest)', 2),
+    ('"Florida man" OR "Florida woman"', 2),
+    ('record (catfish OR bass OR buck OR deer OR pumpkin OR watermelon OR sunflower OR sturgeon OR paddlefish OR gar)', 3),
+    ('(baffled OR stunned OR puzzled) (residents OR neighbors OR scientists OR homeowner OR police)', 2),
+    ('"caught on camera" OR "caught on video" (dog OR cat OR bear OR deer OR raccoon OR goat OR cow OR squirrel)', 2),
+    ('"goes viral" OR "went viral" (dog OR cat OR raccoon OR goat OR bear OR deer OR cow OR squirrel OR parrot)', 2),
+    ('Missouri (bizarre OR strange OR unusual OR weird OR rare OR "world record" OR albino OR "state record" OR mystery OR escaped)', 7),
     ('(Lebanon OR Camdenton OR "Lake of the Ozarks" OR Waynesville OR Marshfield OR Buffalo OR "Mountain Grove" OR Eldon OR Laclede '
      'OR "Osage Beach" OR "Fort Leonard Wood") Missouri (unusual OR rare OR giant OR record OR strange OR albino OR mystery OR bizarre)', 14),
 ]
 WEIRD_FEEDS = [
     ("UPI Odd News", "https://rss.upi.com/news/odd_news.rss"),
     ("New York Post", "https://nypost.com/weird-but-true/feed/"),
-    ("Oddity Central", "https://www.odditycentral.com/feed"),
+    ("Neatorama", "https://www.neatorama.com/feed/"),
+    ("Laughing Squid", "https://laughingsquid.com/feed/"),
     ("The Mirror", "https://www.mirror.co.uk/news/weird-news/?service=rss"),
     ("Daily Star", "https://www.dailystar.co.uk/news/weird-news/?service=rss"),
-    ("Metro UK", "https://metro.co.uk/news/weird/feed/"),
 ]
-INTL_SOURCES = {"The Mirror", "Daily Star", "Metro UK", "Oddity Central"}
+WEIRD_SOURCES = {l for l, _ in WEIRD_FEEDS}
+# Google News items must sound weird; business, sports and medical "giants" and "records" are noise.
+WEIRD_WORDS = re.compile(
+    r"bizarre|strange|weird|odd\b|unusual|myster\w*|baffl\w*|stunn\w*|rare\b|world record|guinness|record-breaking|"
+    r"escaped|on the loose|loose\b|stuck\b|rescued|spotted|viral|hilarious|unbelievable|first-ever|unearthed|treasure|"
+    r"time capsule|message in a bottle|meteorite|fossil|alligator|gator|raccoon|emu|goat|moose|llama|kangaroo|squirrel|"
+    r"possum|opossum|python|snake|pumpkin|florida man|florida woman|albino|two-headed|lookalike|doppelg|dressed as|"
+    r"record\b|sturgeon|paddlefish|catfish|caught on (camera|video)|puzzled|"
+    r"giant (pumpkin|squid|fish|catfish|snake|jellyfish|tortoise|turtle|spider|crab|lobster|zucchini|potato|carrot)", re.I)
+WEIRD_NOISE = re.compile(
+    r"\b(stocks?|shares|investor\w*|earnings|ceo|acquir\w*|merger|oil|banking|packaging|nfl|nba|nhl|mlb|playoffs?|"
+    r"quarterback|halftime|coach|season|vs\.?|game|innings?|touchdown|tgl|patients?|study|clinical|case report|"
+    r"infection|bacteri\w*|startup|ipo|revenue|market|podcast|review|trailer|album|poll|nsfw|penis|porn|nude|naked|"
+    r"legal limit|dui|dwi|drunk|inmate|manhunt|fugitive|anime|manga|jojo|bravo|soap|interview|reacts|episode|"
+    r"series|emergency landing|black holes?|nasa|chart|airplay|billboard)\b", re.I)
+INTL_SOURCES = {"The Mirror", "Daily Star"}
 FOREIGN_PLACE = re.compile(
     r"\b(UK|U\.K\.|Britain|British|Brit|Brits|England|English|London|Scotland|Scottish|Wales|Welsh|Ireland|Irish|"
     r"Australia\w*|Aussie|New Zealand|Kiwi|Canada|Canadian|Quebec|Ontario|Mexico|Mexican|Brazil\w*|Argentin\w*|"
     r"Japan\w*|China|Chinese|Korea\w*|India\w*|Thailand|Thai|Vietnam\w*|Philippin\w*|Indonesia\w*|Germany|German|"
     r"France|French|Paris|Spain|Spanish|Italy|Italian|Rome|Netherlands|Dutch|Sweden|Swedish|Norway|Norwegian|"
     r"Finland|Finnish|Denmark|Danish|Poland|Polish|Russia\w*|Ukrain\w*|Turkey|Turkish|Croatia\w*|Greece|Greek|"
-    r"Egypt\w*|Africa\w*|Nigeria\w*|Kenya\w*|Dubai|Saudi|Israel\w*|Singapore|Taiwan\w*|Bali|Peru|Chile|Colombia\w*)\b")
+    r"Egypt\w*|Africa\w*|Nigeria\w*|Kenya\w*|Dubai|Saudi|Israel\w*|Singapore|Taiwan\w*|Bali|Peru|Chile|Colombia\w*|"
+    r"Moldova\w*|Kyrgyz\w*|Bishkek|Macedonia\w*|Cornwall|Cheltenham|St Albans|Yorkshire|Mysuru|Odisha|Kerala|Mumbai|"
+    r"Delhi|Bangalore|Pretoria|Cape Town|Johannesburg|Tokyo|Osaka|Gunma|Seoul|Beijing|Shanghai|Hong Kong|Sydney|"
+    r"Melbourne|Toronto|Vancouver|Montreal|Dublin|Glasgow|Edinburgh|Manchester|Liverpool|Scots?|Britons|Surrey|"
+    r"Donegal|Malaysia\w*|Thane|Isle of Wight|South Shields|Suffolk|Essex|Devon|Kent, England|Center Parcs)\b")
+# A US state in the story keeps it US even when a foreign outlet carried it.
+US_PLACE = re.compile(
+    r"\b(Alabama|Alaska|Arizona|Arkansas|California|Colorado|Connecticut|Delaware|Florida|Georgia|Hawaii|Idaho|Illinois|"
+    r"Indiana|Iowa|Kansas|Kentucky|Louisiana|Maine|Maryland|Massachusetts|Michigan|Minnesota|Mississippi|Missouri|"
+    r"Montana|Nebraska|Nevada|New Hampshire|New Jersey|New Mexico|New York|North Carolina|North Dakota|Ohio|Oklahoma|"
+    r"Oregon|Pennsylvania|Rhode Island|South Carolina|South Dakota|Tennessee|Texas|Utah|Vermont|Virginia|Washington|"
+    r"West Virginia|Wisconsin|Wyoming|U\.S\.|American)\b")
+# Outlets that are clearly outside the US (or not in English) mark a story international.
+FOREIGN_SOURCE = re.compile(
+    r"india|gulf news|herts|gloucestershire|york press|joburg|mathrubhumi|newsx|bhaskar|samaa|\.in\b|japan times|"
+    r"globe and mail|vietnam|kursiv|good things guy|futura|daily mail|mirror|daily star|the sun\b|express|bbc|guardian|"
+    r"independent|telegraph|scotsman|irish|ireland|abc\.net\.au|\.com\.au|cbc|ctv|news24|dawn|khaleej|arab|straits|"
+    r"south china|surrey|gb news|turkmen|mid-day|shields|suffolk|kent online|wales|yorkshire|manchester|"
+    r"[^\x00-\x7f]", re.I)
 # Weird news may involve a harmless brush with police; it may never involve death, injury, violence or victims.
 WEIRD_BLOCK = re.compile(
     r"\b(murder\w*|homicide|kill(ed|s|ing)?|dead|dies|died|death|deaths|fatal\w*|shoot\w*|shot|stab\w*|gunman|"
@@ -292,6 +331,8 @@ def blocked(col, title, desc, src=""):
     if col == "weird":
         if WEIRD_BLOCK.search(blob) or POLITICS.search(title) or ICE.search(title):
             return "downer/politics"
+        if WEIRD_NOISE.search(title) or (src not in WEIRD_SOURCES and not WEIRD_WORDS.search(title)):
+            return "not weird"
     elif TRAGIC.search(title) or POLITICS.search(title) or ICE.search(title):
         return "downer/politics"
     if col != "local" and GOSSIP.search(title):
@@ -690,7 +731,8 @@ def main():
             town, tier = town_of(it["title"], it["desc"], it["source"])
             blob = f'{it["title"]} {it["desc"][:200]}'
             it["scope"] = ("local" if tier in (0, 1) else "missouri" if re.search(r"\bMissouri\b|\bMo\.", blob)
-                           else "intl" if it["source"] in INTL_SOURCES or FOREIGN_PLACE.search(blob) else "us")
+                           else "intl" if (FOREIGN_PLACE.search(blob) or (not US_PLACE.search(blob) and (
+                               it["source"] in INTL_SOURCES or FOREIGN_SOURCE.search(it["source"])))) else "us")
             it["town"], it["tier"] = (town, tier) if it["scope"] == "local" else (None, None)
             if it["scope"] != "local" and age_h > WEIRD_AWAY_HOURS:
                 continue

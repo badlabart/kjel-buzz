@@ -54,9 +54,13 @@ def classics(c):
     return out
 
 
-def shown(c):
+def shown(c, before_today=False):
+    """Jokes already on the board as {"text", "day"}. Older entries were plain strings (aired before 2026-10-19)."""
     path = c.DATA / "humor_shown.json"
-    return json.loads(path.read_text()) if path.exists() else []
+    rows = json.loads(path.read_text()) if path.exists() else []
+    rows = [r if isinstance(r, dict) else {"text": r, "day": "2026-10-18"} for r in rows]
+    today = c.NOW.astimezone(c.CT).date().isoformat()
+    return [r for r in rows if not before_today or r["day"] < today]
 
 
 def reddit_jokes(c):
@@ -66,7 +70,7 @@ def reddit_jokes(c):
         c.FAILED.append(f"Reddit jokes ({str(e)[:40]})")
         return [], {}
     old = [c.words(j) for j in classics(c)]
-    seen = [c.words(j) for j in shown(c)]
+    seen = [c.words(r["text"]) for r in shown(c, before_today=True)]  # a same-day rebuild may reuse today's jokes
     out, dropped = [], {}
     for rank, en in enumerate(root.findall(A + "entry"), 1):
         cat = en.find(A + "category")
@@ -139,8 +143,10 @@ def record_shown(c, jokes):
     """Remember jokes that made the board so they never run twice."""
     path = c.DATA / "humor_shown.json"
     have = shown(c)
+    texts = {r["text"] for r in have}
+    today = c.NOW.astimezone(c.CT).date().isoformat()
     for j in jokes:
         t = f'{j["title"]} {j.get("punch", "")}'.strip()
-        if t not in have:
-            have.append(t)
+        if t not in texts:
+            have.append({"text": t, "day": today})
     path.write_text(json.dumps(have, indent=0, ensure_ascii=False))

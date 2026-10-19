@@ -3,160 +3,295 @@
  "national": [
   {
    "id": "N8b3693",
-   "line": "In South Carolina, a group of children wrote goodbye letters for a senior shelter dog, and the letters went viral and got him adopted.",
-   "city": "South Carolina"
+   "line": "In South Carolina, children's goodbye letters for a senior dog went viral and helped get him adopted.",
+   "city": "South Carolina",
+   "congrats": false
   },
   {
    "id": "N565b3b",
-   "line": "A high school teacher in Sandy Springs, Georgia, found a tiny black cat stuck in her car engine on her way to work, just in time for her Halloween wedding anniversary.",
-   "city": "Sandy Springs, Ga."
-  },
-  {
-   "id": "N7737dc",
-   "line": "A retired couple in Beaverton, Oregon, got a brand-new heating and cooling system worth sixteen thousand dollars for free through a program called Feel the Love that has helped thirty-one hundred people.",
-   "city": "Beaverton, Ore."
-  },
-  {
-   "id": "Ne33068",
-   "line": "A couple who dreamed of buying a certain house as teenagers slipped a handwritten note under its door twenty years later, and that note led to the house becoming theirs.",
-   "city": ""
-  },
-  {
-   "id": "N3f0c8c",
-   "line": "A woman accidentally ended a work call by telling an important client \"Love you,\" and he answered so kindly that he even followed up with a heartwarming email.",
-   "city": ""
-  },
-  {
-   "id": "N212e4b",
-   "line": "Actor Brendan Fraser surprised a theater full of fans by showing up in costume at a screening of his movie The Mummy.",
-   "city": ""
+   "line": "A tiny black cat found stuck in a car engine brought unexpected joy to a Sandy Springs, Georgia, couple whose wedding anniversary falls on Halloween.",
+   "city": "Sandy Springs, Ga.",
+   "congrats": false
   },
   {
    "id": "N58fb48",
-   "line": "Rescuers used a remote-controlled crawler built to look like R2-D2 from Star Wars to help get a kitten out of a drain pipe.",
-   "city": ""
+   "line": "A kitten stuck in a drain pipe was rescued with help from a remote-controlled R2-D2 crawler.",
+   "city": "",
+   "congrats": false
   },
   {
-   "id": "N30edd9",
-   "line": "A crew of Ameren utility workers got a happy reunion with a stray dog they had helped rescue.",
-   "city": ""
+   "id": "N97ea13",
+   "line": "A Knicks fan's hilarious Halloween display featuring Taylor Swift and Timothee Chalamet has gone viral.",
+   "city": "",
+   "congrats": false
   },
   {
-   "id": "Nffc5ef",
-   "line": "A New York Knicks fan's hilarious Halloween display featuring Taylor Swift and Timothée Chalamet is going viral online.",
-   "city": ""
-  },
-  {
-   "id": "N74be1b",
-   "line": "Pepsi is rolling out a new holiday flavor called Pepsi Vanilla and Cream nationwide for a limited time, in both regular and Zero Sugar.",
-   "city": ""
-  },
-  {
-   "id": "N0f9576",
-   "line": "HGTV star Joanna Gaines posted a hilarious video of herself dancing with her sister, and fans are loving it.",
-   "city": ""
+   "id": "N62f256",
+   "line": "Gen Xers are sharing the nostalgic dishes they ate growing up and still make for dinner, from sloppy joes to pizza bread.",
+   "city": "",
+   "congrats": false
   }
  ],
  "local": [
   {
-   "id": "L584d8b",
-   "line": "Congratulations to Lebanon R-3 Schools on celebrating the opening of the new Robert W. Plaster Center for Student Success.",
+   "id": "La6f4f1",
+   "line": "Congratulations to the Lebanon R-3 School District, which earned a national Meritorious Budget Award.",
    "city": "Lebanon",
    "congrats": true
   },
   {
-   "id": "La6f4f1",
-   "line": "Congratulations to Lebanon R-3 Schools for earning a national Meritorious Budget Award.",
-   "city": "Lebanon",
+   "id": "L7873cc",
+   "line": "Congratulations to Waynesville Career Center culinary students Molly McDermitt, Cycila Keeney and Samantha Etheridge, who reached the finals at the World Food Championships in Indianapolis with their 'Bacon Lover's Christmas' dish.",
+   "city": "Waynesville",
    "congrats": true
   },
   {
    "id": "L68a64a",
-   "line": "Congratulations to three Lebanon High School tennis players who received All-District honors this season.",
+   "line": "Congratulations to three Lebanon tennis players who received All-District honors.",
    "city": "Lebanon",
+   "congrats": true
+  },
+  {
+   "id": "L653bb1",
+   "line": "Congratulations to Waynesville High School senior Christina Smithey, named the Rotary Student of the Month for October.",
+   "city": "Waynesville",
+   "congrats": true
+  },
+  {
+   "id": "L584d8b",
+   "line": "Congratulations to Lebanon Schools on the opening of the Robert W. Plaster Center for Student Success.",
+   "city": "Lebanon",
+   "congrats": true
+  },
+  {
+   "id": "Lb402b0",
+   "line": "Congratulations to the Waynesville High School students named to the Central District Band after auditions at Rolla High School.",
+   "city": "Waynesville",
    "congrats": true
   },
   {
    "id": "L5817be",
-   "line": "Congratulations to the Lebanon Yellowjackets marching band for placing at the Valhalla Marching Festival.",
+   "line": "Congratulations to the Lebanon High School Marching Yellowjackets, who placed at the Valhalla Marching Festival at Parkview High School in Springfield on October 3rd.",
    "city": "Lebanon",
+   "congrats": true
+  },
+  {
+   "id": "L172777",
+   "line": "Congratulations to the Waynesville High School Tiger Pride Marching Band, which took third place overall and won the Outstanding Winds Award at the Valhalla Marching Band Festival.",
+   "city": "Waynesville",
    "congrats": true
   },
   {
    "id": "Lf3ee85",
-   "line": "Congratulations to Brittany Stamm, who has been named the new head girls basketball coach for Lebanon R-3 Schools.",
+   "line": "Congratulations to Brittany Stamm, the new head girls basketball coach for Lebanon Schools.",
    "city": "Lebanon",
+   "congrats": true
+  },
+  {
+   "id": "L536192",
+   "line": "Congratulations to Wood Elementary teacher Michael McGuire, this week's Teacher Proud shout-out from Waynesville schools.",
+   "city": "Waynesville",
    "congrats": true
   },
   {
    "id": "L02a661",
-   "line": "Congratulations to Kalem Copling, who has been named the new head boys basketball coach for Lebanon R-3 Schools.",
+   "line": "Congratulations to Kalem Copling, the new head boys basketball coach for Lebanon Schools.",
    "city": "Lebanon",
    "congrats": true
   },
   {
-   "id": "Lb75d94",
-   "line": "Lebanon R-3 Schools says its Hive Depot is providing essential resources and learning opportunities for Lebanon students.",
-   "city": "Lebanon",
-   "congrats": false
+   "id": "Lce8cf3",
+   "line": "Congratulations to the Camdenton Lakers, who beat Capital City in a back-and-forth Week 8 football game on a go-ahead touchdown run by Michael Maschino.",
+   "city": "Camdenton",
+   "congrats": true
+  },
+  {
+   "id": "Lda54a9",
+   "line": "Congratulations to the kindergarten and fifth grade classes at Gasconade C-4 Schools for earning perfect attendance in the first quarter.",
+   "city": "Laclede County",
+   "congrats": true
+  },
+  {
+   "id": "L5f82b2",
+   "line": "Congratulations to Camdenton's homecoming royalty, part of the town's homecoming celebration that included a parade.",
+   "city": "Camdenton",
+   "congrats": true
+  },
+  {
+   "id": "L423753",
+   "line": "Congratulations to the two new Missouri Highway Patrol troopers joining the Lake of the Ozarks area.",
+   "city": "Lake of the Ozarks",
+   "congrats": true
   },
   {
    "id": "Lc00021",
-   "line": "A local church in Lebanon came together to build a ramp for a woman with a disability, according to the Laclede County Record.",
+   "line": "A neighboring church stepped in and built a ramp for a Lebanon woman living with a rare condition called Ehlers-Danlos Syndrome, to make her daily life easier.",
    "city": "Lebanon",
    "congrats": false
   },
   {
-   "id": "L5cd73f",
-   "line": "Congratulations to the angler who set a new world record at Lake of the Ozarks by landing a 164-pound paddlefish.",
-   "city": "Lake of the Ozarks",
-   "congrats": true
-  },
-  {
-   "id": "L53d98a",
-   "line": "The Fall Harbor Hop drew nearly twenty-three hundred boaters out for a sunny day on Lake of the Ozarks.",
-   "city": "Lake of the Ozarks",
+   "id": "L3a4159",
+   "line": "Fordland Schools is thanking Mrs. Foraker and Mr. Cook, who lead its schools, for their dedication to Eagle Nation.",
+   "city": "Fordland",
    "congrats": false
   },
   {
-   "id": "L79a120",
-   "line": "New details are out on a 126-room Hyatt hotel planned in the Backwater Jacks' cove at Lake of the Ozarks.",
-   "city": "Lake of the Ozarks",
+   "id": "Lb75d94",
+   "line": "Lebanon Schools' Hive Depot is providing essential resources and learning opportunities for Lebanon students.",
+   "city": "Lebanon",
    "congrats": false
   },
   {
    "id": "L604b7b",
-   "line": "Patrick Mahomes' mom has set the record straight: the Chiefs quarterback does not have a home at Lake of the Ozarks.",
+   "line": "Patrick Mahomes' mom has shot down a story claiming the Chiefs star has a home at Lake of the Ozarks.",
    "city": "Lake of the Ozarks",
    "congrats": false
   },
   {
-   "id": "L5f82b2",
-   "line": "Camdenton celebrated its Homecoming with a parade and the crowning of this year's Homecoming royalty.",
-   "city": "Camdenton",
+   "id": "La6e69f",
+   "line": "The City of Lebanon has gone back to the drawing board with another new city logo, paired with a new slogan: 'Build your journey here.'",
+   "city": "Lebanon",
    "congrats": false
   },
   {
-   "id": "L02e34a",
-   "line": "Lake of the Ozarks hit a new heat record on Tuesday.",
+   "id": "L79a120",
+   "line": "A developer is looking to build a new 126-room Hyatt hotel in Backwater Jacks' Cove at Lake of the Ozarks.",
    "city": "Lake of the Ozarks",
+   "congrats": false
+  }
+ ],
+ "weird": [
+  {
+   "id": "W5cd73f",
+   "line": "On his very first time snagging, a man from Olathe, Kansas, reeled in a world-record 164-pound paddlefish at Lake of the Ozarks.",
+   "city": "Lake of the Ozarks",
+   "congrats": false
+  },
+  {
+   "id": "W2023c6",
+   "line": "Biologists netted a 70-pound lake sturgeon below a Missouri River dam and found a tag the size of a grain of rice showing it had swum 681 miles upstream in nine years.",
+   "city": "Missouri",
+   "congrats": false
+  },
+  {
+   "id": "W8fd579",
+   "line": "Florida police got a call about a 'pedestrian' blocking traffic, and it turned out to be an alligator.",
+   "city": "Florida",
+   "congrats": false
+  },
+  {
+   "id": "W516b55",
+   "line": "A black bear was caught on camera boxing a punching bag on a Southern California patio like a seasoned pro.",
+   "city": "Southern California",
+   "congrats": false
+  },
+  {
+   "id": "Waba78a",
+   "line": "An emu that ran away from its owner was caught on video giving sheriff's deputies the slip.",
+   "city": "",
+   "congrats": false
+  },
+  {
+   "id": "W95e62b",
+   "line": "A cow that escaped from a California slaughterhouse truck got a new life at a sanctuary with help from Diane Warren.",
+   "city": "California",
+   "congrats": false
+  },
+  {
+   "id": "W3a906b",
+   "line": "A tiny dog played the drums in an 'Angine de Pawtrine' tribute costume at New York City's annual Tompkins Square Halloween Dog Parade.",
+   "city": "New York City",
+   "congrats": false
+  },
+  {
+   "id": "W884a7d",
+   "line": "A 61-year-old grandmother of 12 just broke her own world record by holding a plank for five hours.",
+   "city": "",
+   "congrats": false
+  },
+  {
+   "id": "W6212fb",
+   "line": "A woman bought a bizarre set of porcelain objects at a thrift store, and nobody seems to know what they're for.",
+   "city": "",
+   "congrats": false
+  },
+  {
+   "id": "Wb6116c",
+   "line": "A 6-year-old in Nebraska discovered a rare 200-million-year-old fossil of a jellyfish-like sea creature.",
+   "city": "Nebraska",
+   "congrats": false
+  },
+  {
+   "id": "W7d4692",
+   "line": "Cartoonist Matthew Inman of The Oatmeal built 'Grimothy,' a giant evil version of Jimothy, Seattle's viral raccoon, in his brother's front yard for Halloween.",
+   "city": "",
+   "congrats": false
+  },
+  {
+   "id": "Wc4f4fe",
+   "line": "A cow in Hillsborough County, Florida, spent eight hours stuck in the mud of Boat Bayou before it was rescued.",
+   "city": "Hillsborough County, Fla.",
+   "congrats": false
+  },
+  {
+   "id": "Wfc8175",
+   "line": "There's a new heaviest pumpkin in the world, and the champion grower is American.",
+   "city": "",
+   "congrats": false
+  },
+  {
+   "id": "W9c5989",
+   "line": "An Ohio mare set a world record for the longest horse tail.",
+   "city": "Ohio",
+   "congrats": false
+  },
+  {
+   "id": "W3e7a01",
+   "line": "Scientists identified a new dinosaur species from a fossil that sat stashed in a drawer for a century.",
+   "city": "",
+   "congrats": false
+  },
+  {
+   "id": "W6d75d4",
+   "line": "A 10,000-year-old fossilized mastodon was found in a creek.",
+   "city": "",
+   "congrats": false
+  },
+  {
+   "id": "Wb26ad9",
+   "line": "Scientists found a bizarre insect from the age of the dinosaurs that had a mouth twice the length of its body.",
+   "city": "",
+   "congrats": false
+  },
+  {
+   "id": "Wb09d7b",
+   "line": "A rare fossil of a T. rex cousin is on display in New York before it heads to auction.",
+   "city": "New York",
+   "congrats": false
+  },
+  {
+   "id": "Wd5cad7",
+   "line": "A Colorado community is raising money for its firefighters with help from Goldie the goat.",
+   "city": "Colorado",
+   "congrats": false
+  },
+  {
+   "id": "Wb86b27",
+   "line": "Boeing has explained the mysterious object people spotted being hauled along North Lindbergh.",
+   "city": "",
+   "congrats": false
+  },
+  {
+   "id": "Wd48bd4",
+   "line": "West Virginia turns out to hold plenty of strange and fun Guinness World Records.",
+   "city": "West Virginia",
    "congrats": false
   }
  ],
  "music": [
   {
-   "id": "Ma0876b",
-   "line": "The Country Music Hall of Fame has officially inducted its class of 2026: Tim McGraw, Paul Overstreet and The Stanley Brothers.",
-   "city": ""
-  },
-  {
    "id": "M224e21",
    "line": "Luke Bryan is hitting a big milestone on American Idol, a full decade as a judge, and he is sharing what he expects from season twenty-five.",
-   "city": ""
-  },
-  {
-   "id": "M6e6450",
-   "line": "Ella Langley is celebrating one full year of her massive hit Choosin' Texas, saying she is constantly and consistently amazed.",
    "city": ""
   },
   {
@@ -197,7 +332,7 @@
    "city": ""
   },
   {
-   "id": "H837575",
+   "id": "Hba7911",
    "line": "",
    "city": ""
   },
@@ -208,6 +343,16 @@
   },
   {
    "id": "Hd8a8cd",
+   "line": "",
+   "city": ""
+  },
+  {
+   "id": "Hdd5bb0",
+   "line": "",
+   "city": ""
+  },
+  {
+   "id": "Hbea08d",
    "line": "",
    "city": ""
   }
