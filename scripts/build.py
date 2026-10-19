@@ -16,8 +16,10 @@ import page  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
-COLUMNS = [("national", "National"), ("pride", "LOCAL PRIDE"), ("local", "Local"), ("music", "Music"),
-           ("humor", "Humor"), ("weird", "Morning News Only")]
+# Boss (2026-10-19): Local and Morning News Only moved to a separate "News" app with the same look.
+BUZZ = [("national", "National"), ("pride", "LOCAL PRIDE"), ("music", "Music"), ("humor", "Humor")]
+NEWS = [("local", "Local"), ("weird", "Morning News Only")]
+COLUMNS = BUZZ + NEWS
 SPLIT = ("pride", "local")  # columns that aim for 50% Lebanon
 LEBANON_GOAL = 0.50
 
@@ -96,7 +98,7 @@ def main():
             if not it:
                 missing.append(p["id"])
                 continue
-            cards.append(dict(it, line=p.get("line", ""), city=p.get("city", ""), names=p.get("names", ""),
+            cards.append(dict(it, line=p.get("line", ""), city=p.get("city", ""), label=p.get("label", ""),
                               congrats=False))  # LOCAL PRIDE is all congratulations, so no tag is needed
         cols.append({"key": key, "name": name, "cards": cards})
 
@@ -110,10 +112,17 @@ def main():
             n = sum(1 for c in col["cards"] if (c.get("city") or "").lower() == "lebanon"
                     or (not c.get("city") and c.get("tier") == 0))
             lebanon[col["key"]] = {"count": n, "of": len(col["cards"]), "goal": LEBANON_GOAL}
-    data = {"updated": datetime.now(timezone.utc).isoformat(timespec="seconds"), "columns": cols, "lebanon": lebanon}
-    (DATA / "buzz.js").write_text("window.KJEL_BUZZ = " + json.dumps(data, indent=1, ensure_ascii=False) + ";\n")
+    stamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    buzz_keys, news_keys = {k for k, _ in BUZZ}, {k for k, _ in NEWS}
+    buzz = {"updated": stamp, "columns": [c for c in cols if c["key"] in buzz_keys],
+            "lebanon": {k: v for k, v in lebanon.items() if k in buzz_keys}}
+    news = {"updated": stamp, "columns": [c for c in cols if c["key"] in news_keys],
+            "lebanon": {k: v for k, v in lebanon.items() if k in news_keys}}
+    (DATA / "buzz.js").write_text("window.KJEL_BUZZ = " + json.dumps(buzz, indent=1, ensure_ascii=False) + ";\n")
+    (DATA / "news.js").write_text("window.KJEL_NEWS = " + json.dumps(news, indent=1, ensure_ascii=False) + ";\n")
     kept, recent = music_search()
-    page.write(data)
+    page.write(buzz)
+    page.write(news, title="News", doc_title="KJEL News", subdir="news")
     humor.record_shown(collect, [c for c in next(c for c in cols if c["key"] == "humor")["cards"] if c.get("kind") == "joke"])
     print(f"Board: {' | '.join(f'{c[1]} {len(x["cards"])}' for c, x in zip(COLUMNS, cols))} | "
           f"Lebanon: {' / '.join(f'{k} {v["count"]} of {v["of"]}' for k, v in lebanon.items())} | "

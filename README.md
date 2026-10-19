@@ -1,7 +1,10 @@
-# KJEL Buzz Report — "The Buzz"
+# KJEL Buzz Report — "The Buzz" + "News"
 
 Trello-style board of today's talkable stories for jocks and voicetrackers. Same look as the KJEL Event Board.
-Six columns: National (~10), LOCAL PRIDE (up to 24), Local (up to 24), Music (concerts + ~30 news), Humor (6-10 one-liners), Morning News Only (20+), best first. Cards under 12 hours old are gold.
+Two apps from one build:
+- The Buzz (docs/index.html): National (~10), LOCAL PRIDE (up to 24), Music (concerts + ~30 news), Humor (12-20 bits).
+- News (docs/news/index.html, https://badlabart.github.io/kjel-buzz/news/): Local (up to 24), Morning News Only (20+).
+No card in either app should need a click to understand. Cards under 12 hours old are gold.
 Each news card is ONE on-air sentence with full context, city in parentheses. Lebanon cities are highlighted.
 Music has a search box (artist or song) at the top.
 
@@ -33,10 +36,10 @@ Double-click `index.html`. No server needed.
 - Music: country artists, songs, tours, chart news. Prefer artists in the Country Airplay top 40.
 - Line: one on-air sentence, 15-35 words, full context, facts from the headline or summary only. Skip the story if the facts are too thin.
 - City: the town from the source, shown in parentheses. Local always has one (county name if no town).
-- LOCAL PRIDE: congratulations only, and every card NAMES the recipients (NAMES line lists them all). No names in the source = no card. Article text is read so names don't need a click.
+- LOCAL PRIDE: accomplishments only. Format: LABEL ("World Food Champs", "New Coach") – names, from place, what they earned, when and where. Never "Congratulations to". No names in the source = no card. Article text is read so names don't need a click.
 - Local: useful, interesting local news and local pride that isn't an award. Nothing that's a downer.
 - Both local columns: up to 12 Lebanon + up to 12 other towns. Other towns HIGH first (Waynesville, St. Robert, Fort Leonard Wood, Bolivar, Marshfield, Osage Beach, Eldon, Camdenton), then LOW (Richland, Buffalo, Sunrise Beach, Four Seasons, Lake Ozark, Laurie, Crocker, Hermitage, Fair Grove, Dixon, Pleasant Hope), then other core-area towns.
-- Humor: one-line jokes only, readable on the card with no click. Never tweets, posts or roundup links. Clean for broadcast, lands by ear. No old classics.
+- Humor: radio show-prep bits in one line, no click: TODAY IS (quirky national day + funny take), VIRAL (trending story + sarcastic take), SATIRE ("From The Onion:"), ONE-LINER (fresh jokes, Showerthoughts). The funny takes are written by Claude each morning; the facts come from the source. Never tweets, posts or roundup links.
 
 ## Morning News Only
 - Bizarre, stunning, weird, crazy stories a listener can't wait to share at work. Never negative; a harmless brush with the law is OK.
@@ -58,7 +61,7 @@ These stand in for virality. Facebook, TikTok, Instagram, X and Reddit share cou
 - Local feeds also: LakeExpo, Bolivar Herald-Free Press, Marshfield Mail, Buffalo Reflex.
 - Local: ~45 Google News searches (Lebanon, every town in the 7 counties, school teams, honors/scholarships/business milestones, the lake); Lebanon R-3 Schools news page (no dates on the site, so a post is dated the day it is first seen and shows SCHOOL NEWS); Laclede County Record; My Ozarks Online; City of Lebanon; Downtown Lebanon; KY3; OzarksFirst; KSPR; KRMS.
 - Music: Taste of Country, The Boot, Whiskey Riff, Saving Country Music, Billboard, Rolling Stone, Country Now, Google News; Billboard Country Airplay chart.
-- Humor: Reddit joke boards only.
+- Humor: Checkiday and National Day Calendar (today's days), Daily Dot and Know Your Meme (viral), The Onion (satire), Reddit joke boards + Showerthoughts (one pull a day).
 
 ## Known limits
 - Google throttles the link lookup after heavy use (the morning searches use most of the allowance). Lookups are spaced out and cached, so stories missed today usually resolve the next morning. Unresolved cards keep a Google News link, which still opens the story in a modern browser.

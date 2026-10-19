@@ -294,18 +294,99 @@
  ],
  "humor": [
   {
+   "id": "H0d0ca9",
+   "label": "Today Is",
+   "line": "It's International Adjust Your Chair Day, the one holiday you can celebrate at your desk with a single lever and a deeply satisfying 'pssshhh.'",
+   "city": ""
+  },
+  {
+   "id": "H7ade4c",
+   "label": "Viral",
+   "line": "A TikToker got asked for an 18 percent tip at an airport self-checkout after buying a bottle of water, so apparently we now tip ourselves for doing our own shopping.",
+   "city": ""
+  },
+  {
+   "id": "H467d97",
+   "label": "Today Is",
+   "line": "It's Dress Like a Dork Day, so if your spouse already said 'You're not wearing that,' congratulations, you're celebrating correctly.",
+   "city": ""
+  },
+  {
+   "id": "H243bcd",
+   "label": "Satire",
+   "line": "From The Onion: 'I'll need a gift receipt,' lies man buying a $270 Lord of the Rings Lego set.",
+   "city": ""
+  },
+  {
    "id": "He76113",
+   "label": "One-Liner",
    "line": "My wife is really mad that I have no sense of direction, so I packed up my stuff and right.",
    "city": ""
   },
   {
+   "id": "He7d3a9",
+   "label": "Viral",
+   "line": "A husband moved his mom into his wife's craft room for six weeks of knee recovery, so his wife moved into his game room, which is just fair real estate.",
+   "city": ""
+  },
+  {
+   "id": "Hdeba58",
+   "label": "Today Is",
+   "line": "It's Evaluate Your Life Day, which sounds deep until you realize most of us are only going to evaluate what's for lunch.",
+   "city": ""
+  },
+  {
+   "id": "H951ff4",
+   "label": "Viral",
+   "line": "Bodybuilder Ronnie Coleman explaining that everybody thought he was eating French fries is TikTok's newest meme, and honestly, same, Ronnie.",
+   "city": ""
+  },
+  {
    "id": "H6bb4f7",
+   "label": "One-Liner",
    "line": "James Hetfield left Metallica to become a priest at the Jim Henson Company. He's now a Pastor of Muppets.",
    "city": ""
   },
   {
+   "id": "H26a378",
+   "label": "Satire",
+   "line": "From The Onion: Weird Cleveland Browns fan has no children on the team, because why else would anyone go on purpose?",
+   "city": ""
+  },
+  {
+   "id": "H234f46",
+   "label": "Today Is",
+   "line": "It's National Clean Your Virtual Desktop Day, so go ahead and finally delete the file named Final, Final, Version Seven, Really Final.",
+   "city": ""
+  },
+  {
+   "id": "H0e4a12",
+   "label": "Viral",
+   "line": "A TikTok server says a teenager struggled to count back change, and now the internet is debating whether schools still teach math or just tapping a phone.",
+   "city": ""
+  },
+  {
+   "id": "Hcbf5fd",
+   "label": "Today Is",
+   "line": "It's New Friends Day, the perfect excuse to finally learn the name of the neighbor you've been waving at for six years.",
+   "city": ""
+  },
+  {
+   "id": "H806f6a",
+   "label": "Viral",
+   "line": "The Babydoll Dance is TikTok's two-step of the month, which means every parent in the Ozarks is about to be asked to film it 47 times.",
+   "city": ""
+  },
+  {
    "id": "H194914",
+   "label": "One-Liner",
    "line": "What do you call a criminal landing an airplane? Condescending.",
+   "city": ""
+  },
+  {
+   "id": "H56014b",
+   "label": "Satire",
+   "line": "From The Onion: Poll finds a majority of Americans still go bonkers for amber waves of grain.",
    "city": ""
   }
  ],
@@ -313,111 +394,111 @@
  "pride": [
   {
    "id": "L68a64a",
-   "line": "Congratulations to Lebanon girls tennis players Lilly Bradbury, Ava Johnson and Carli Alford, who earned All-District honors with fourth-place finishes in singles and doubles.",
-   "city": "Lebanon",
-   "names": "Lilly Bradbury, Ava Johnson, Carli Alford"
+   "label": "All-District Tennis",
+   "line": "Lilly Bradbury, Ava Johnson and Carli Alford, from Lebanon High School, earned All-District honors earlier this month with fourth-place finishes in singles and doubles.",
+   "city": "Lebanon"
   },
   {
    "id": "L7873cc",
-   "line": "Congratulations to Waynesville Career Center culinary students Molly McDermitt, Cycila Keeney and Samantha Etheridge, who reached the finals at the World Food Championships in Indianapolis.",
-   "city": "Waynesville",
-   "names": "Molly McDermitt, Cycila Keeney, Samantha Etheridge"
+   "label": "World Food Champs",
+   "line": "Molly McDermitt, Cycila Keeney and Samantha Etheridge, from the Waynesville Career Center, reached the finals of the World Food Championships in Indianapolis on Oct. 18 with their Bacon Lover's Christmas dish.",
+   "city": "Waynesville"
   },
   {
    "id": "La6f4f1",
-   "line": "Congratulations to the Lebanon R-3 School District, which earned a national Meritorious Budget Award.",
-   "city": "Lebanon",
-   "names": "Lebanon R-3 School District"
+   "label": "National Budget Award",
+   "line": "The Lebanon R-3 School District earned a national Meritorious Budget Award.",
+   "city": "Lebanon"
   },
   {
    "id": "L653bb1",
-   "line": "Congratulations to Waynesville High School senior Christina Smithey, named the Rotary Student of the Month for October.",
-   "city": "Waynesville",
-   "names": "Christina Smithey"
+   "label": "Student of the Month",
+   "line": "Christina Smithey, a senior at Waynesville High School, was named Rotary Student of the Month for October at the Oct. 13 Rotary Club of Pulaski County meeting.",
+   "city": "Waynesville"
   },
   {
    "id": "Lf3ee85",
-   "line": "Congratulations to Brittany Stamm, the new head girls basketball coach for Lebanon Schools.",
-   "city": "Lebanon",
-   "names": "Brittany Stamm"
+   "label": "New Coach",
+   "line": "Brittany Stamm, from Lebanon Schools, is the new head girls basketball coach.",
+   "city": "Lebanon"
   },
   {
    "id": "Lb402b0",
-   "line": "Congratulations to Payton Rushing, Ericah Njuguna, Tyler Silbanuz and 21 other Waynesville High School students named to the Central District Band and Jazz Band.",
-   "city": "Waynesville",
-   "names": "Payton Rushing, Ericah Njuguna, Tyler Silbanuz, Ethan Schacke, Ethan Schnacke, Vivien Lu, Zoe Striplin, Alexzander Romans, Myra (Archer) Gutierrez, Aliyah Bowers, Kevin Connor, Aiden York, Jenna Ballard, Juliet Piper, Matthew Hinton, Mikaila Knight, Haley Brown, Landon Boswell, Harley Atchison, Zayden Fikes, Ayuko Kileleman, Connor Reith, Dim Nuam, Ulysses Gonzales"
+   "label": "District Band",
+   "line": "Payton Rushing, Ericah Njuguna, Tyler Silbanuz, Ethan Schacke, Ethan Schnacke, Vivien Lu, Zoe Striplin, Alexzander Romans, Myra (Archer) Gutierrez, Aliyah Bowers, Kevin Connor, Aiden York, Jenna Ballard, Juliet Piper, Matthew Hinton, Mikaila Knight, Haley Brown, Landon Boswell, Harley Atchison, Zayden Fikes, Ayuko Kileleman, Connor Reith, Dim Nuam and Ulysses Gonzales, from Waynesville High School, made the Central District Band and Jazz Band after Oct. 13 auditions at Rolla High School.",
+   "city": "Waynesville"
   },
   {
    "id": "L02a661",
-   "line": "Congratulations to Kalem Copling, the new head boys basketball coach for Lebanon Schools.",
-   "city": "Lebanon",
-   "names": "Kalem Copling"
+   "label": "New Coach",
+   "line": "Kalem Copling, from Lebanon Schools, is the new head boys basketball coach.",
+   "city": "Lebanon"
   },
   {
    "id": "L172777",
-   "line": "Congratulations to the Waynesville High School Tiger Pride Marching Band, which took third place overall and won the Outstanding Winds Award at the Valhalla Marching Band Festival.",
-   "city": "Waynesville",
-   "names": "Waynesville High School Tiger Pride Marching Band"
+   "label": "Marching Band Award",
+   "line": "The Tiger Pride Marching Band, from Waynesville High School, took third place overall and the Outstanding Winds Award at the Valhalla Marching Band Festival in Springfield on Oct. 3.",
+   "city": "Waynesville"
   },
   {
    "id": "L5817be",
-   "line": "Congratulations to the Lebanon High School Marching Yellowjackets, who placed at the Valhalla Marching Festival.",
-   "city": "Lebanon",
-   "names": "Lebanon High School Marching Yellowjackets"
+   "label": "Marching Festival",
+   "line": "The Marching Yellowjackets, from Lebanon High School, placed at the Valhalla Marching Festival.",
+   "city": "Lebanon"
   },
   {
    "id": "Lafb979",
-   "line": "Congratulations to Marshfield Chevrolet, which is celebrating 100 years of serving the community.",
-   "city": "Marshfield",
-   "names": "Marshfield Chevrolet"
+   "label": "100 Years in Business",
+   "line": "Marshfield Chevrolet, from Marshfield, is celebrating 100 years of serving the community with a two-day anniversary celebration.",
+   "city": "Marshfield"
   },
   {
    "id": "L584d8b",
-   "line": "Congratulations to Lebanon Schools on the opening of the Robert W. Plaster Center for Student Success.",
-   "city": "Lebanon",
-   "names": "Lebanon R-3 School District"
+   "label": "Grand Opening",
+   "line": "Lebanon Schools opened its new Robert W. Plaster Center for Student Success.",
+   "city": "Lebanon"
   },
   {
    "id": "L423753",
-   "line": "Congratulations to new Missouri State Highway Patrol troopers Ashton Wise, a 2022 Camdenton High School graduate, and Erin Bock, who are assigned to Camden and Miller counties.",
-   "city": "Camdenton",
-   "names": "Ashton G. Wise, Erin K. Bock"
+   "label": "New Troopers",
+   "line": "Ashton G. Wise, a 2022 Camdenton High School graduate, and Erin K. Bock graduated Oct. 16 in the Missouri State Highway Patrol's 126th Recruit Class and are assigned to Camden and Miller counties.",
+   "city": "Camdenton"
   },
   {
    "id": "Lce8cf3",
-   "line": "Congratulations to the Camdenton Lakers, who beat Capital City in a back-and-forth Week 8 football game on a go-ahead touchdown run by Michael Maschino.",
-   "city": "Camdenton",
-   "names": "Camdenton Lakers football team, Michael Maschino"
+   "label": "Football Win",
+   "line": "The Camdenton Lakers beat Capital City in Week 8 on a go-ahead touchdown run by Michael Maschino.",
+   "city": "Camdenton"
   },
   {
    "id": "L536192",
-   "line": "Congratulations to Wood Elementary teacher Michael McGuire, this week's Teacher Proud shout-out from Waynesville schools.",
-   "city": "Waynesville",
-   "names": "Michael McGuire"
+   "label": "Teacher Shout-Out",
+   "line": "Michael McGuire, from Wood Elementary in Waynesville, is this week's Teacher Proud Tuesday shout-out.",
+   "city": "Waynesville"
   },
   {
    "id": "L84e5a2",
-   "line": "Congratulations to Buffalo Alderman Eric Kirchberg, who earned the Certified Municipal Official designation from the Missouri Municipal League.",
-   "city": "Buffalo",
-   "names": "Eric Kirchberg"
+   "label": "Municipal Honor",
+   "line": "Alderman Eric Kirchberg, from Buffalo, earned the Certified Municipal Official designation from the Missouri Municipal League.",
+   "city": "Buffalo"
   },
   {
    "id": "Lf2c95b",
-   "line": "Congratulations to the Waynesville High School Class of 1966, which donated $775 to the district's Snack in a Pack program during its class reunion.",
-   "city": "Waynesville",
-   "names": "Waynesville High School Class of 1966"
+   "label": "Class Gift",
+   "line": "The Waynesville High School Class of 1966 donated $775 to the district's Snack in a Pack program during its Oct. 10 reunion.",
+   "city": "Waynesville"
   },
   {
    "id": "Lda54a9",
-   "line": "Congratulations to the kindergarten and fifth grade classes at Gasconade C-4 Schools for earning perfect attendance in the first quarter.",
-   "city": "Laclede County",
-   "names": "Gasconade C-4 kindergarten and fifth grade classes"
+   "label": "Perfect Attendance",
+   "line": "The kindergarten and fifth grade classes, from Gasconade C-4 Schools, earned perfect attendance for the first quarter.",
+   "city": "Laclede County"
   },
   {
    "id": "L3a4159",
-   "line": "Fordland Schools is thanking Mrs. Foraker and Mr. Cook, who lead its schools, for their dedication to Eagle Nation.",
-   "city": "Fordland",
-   "names": "Mrs. Foraker, Mr. Cook"
+   "label": "School Leaders",
+   "line": "Mrs. Foraker and Mr. Cook, from Fordland Schools, are being thanked for their dedication to Eagle Nation.",
+   "city": "Fordland"
   }
  ]
 }

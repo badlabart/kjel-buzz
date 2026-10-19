@@ -45,7 +45,7 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .search .go{background:#D0101F;color:#FFFFFF;border-color:#D0101F;font-weight:bold;cursor:pointer}
 .results{display:none}
 .tag{font-size:10px;font-weight:bold;padding:1px 5px;border-radius:3px;margin-right:4px;vertical-align:middle}
-.tag.keep{background:#FDB913;color:#0A2A50}.names{font-size:13px;margin-top:4px}.names b{color:#D0101F}.card.concert{border-left:5px solid #D0101F}.tag.cong{background:#0A2A50;color:#FDB913}.tag.off{background:#D0101F;color:#FFFFFF}
+.tag.keep{background:#FDB913;color:#0A2A50}.label{color:#D0101F;text-transform:uppercase}.card.concert{border-left:5px solid #D0101F}.tag.cong{background:#0A2A50;color:#FDB913}.tag.off{background:#D0101F;color:#FFFFFF}
 """
 
 # ES3 only: no let/const, arrow functions, classList, or dataset.
@@ -113,7 +113,8 @@ def static_when(iso):
     return datetime.fromisoformat(iso).astimezone(CT).strftime("%a %b %-d").upper()
 
 
-def write(data):
+def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir=""):
+    """subdir="" writes the Buzz (docs/index.html); subdir="news" writes the News app (docs/news/index.html)."""
     esc = html.escape
     cols = []
     for col in data["columns"]:
@@ -124,6 +125,7 @@ def write(data):
             where = f' <span class="city{" leb" if leb else ""}">({esc(city)})</span>' if city else ""
             sig = f'<div class="sig"><b>BUZZ:</b> {esc(c["signal"])}</div>' if c.get("signal") else ""
             joke = c.get("kind") == "joke"
+            nolink = joke or col["key"] == "humor"  # Humor reads in one line; nothing to click
             punch = ""
             # On-air sentence replaces the headline. Jokes and roundups keep their own text.
             if joke:  # one line: Claude's tightened version, or setup and punchline joined
@@ -131,7 +133,9 @@ def write(data):
             else:
                 main = esc(c["line"]) if c.get("line") else esc(c["title"])
             cong = '<span class="tag cong">CONGRATS</span>' if c.get("congrats") else ""
-            names = f'<div class="names"><b>NAMES:</b> {esc(c["names"])}</div>' if c.get("names") else ""
+            names = ""
+            # LOCAL PRIDE (Boss 2026-10-19): "World Food Champs - names, from place, what/when/where."
+            label = f'<span class="label">{esc(c["label"])}</span> &ndash; ' if c.get("label") else ""
             # The R-3 site gives no post dates, so its cards show a label instead of an age.
             if c.get("kind") == "concert":
                 head = (f'<div class="card concert"><div class="when">CONCERT &middot; {esc(c["when_label"])} '
@@ -143,8 +147,8 @@ def write(data):
                         f'<div class="when"><span>{static_when(c["ts"])}</span> <span class="src">&middot; {esc(c["source"])}</span></div>')
             cards.append(
                 head +
-                f'<div class="name">{cong}{main}{where}</div>{names}{punch}{sig}' +
-                ('</div>' if joke else
+                f'<div class="name">{cong}{label}{main}{where}</div>{names}{punch}{sig}' +
+                ('</div>' if nolink else
                  f'<a class="link" href="{esc(c["url"])}" target="_blank" rel="noopener">'
                  f'{"Tickets / details" if c.get("kind") == "concert" else "Read story"} &#8599;</a></div>'))
         body = "".join(cards) or '<div class="empty">Nothing worth airing today.</div>'
@@ -168,16 +172,17 @@ def write(data):
 <html lang="en"><head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>KJEL Buzz Report</title><style>{CSS}</style></head>
+<title>{esc(doc_title)}</title><style>{CSS.replace("width:16.2%", f"width:{round(97 / max(1, len(cols)), 1)}%")}</style></head>
 <body data-updated="{int(updated.timestamp() * 1000)}">
 <div class="top"><div class="logo">103<span class="star">&#9733;</span>7 <span class="call">KJEL</span></div>
-<div class="hd"><div class="title">The Buzz</div>
-<div class="meta">KJEL Buzz Report &middot; updated {esc(stamp)}</div></div></div>
+<div class="hd"><div class="title">{esc(title)}</div>
+<div class="meta">{esc(doc_title)} &middot; updated {esc(stamp)}</div></div></div>
 <div class="stale" id="stale">This report is more than a day old. The 6 AM refresh did not run.</div>
 <div class="board">{"".join(cols)}</div>
 <script>{SEARCH_JS}{JS}</script>
 </body></html>
 """
     (ROOT / "docs").mkdir(exist_ok=True)
-    (ROOT / "docs" / "index.html").write_text(page)
-    (ROOT / "index.html").write_text(page)
+    for folder in (ROOT / "docs" / subdir, ROOT / subdir):
+        folder.mkdir(parents=True, exist_ok=True)
+        (folder / "index.html").write_text(page)

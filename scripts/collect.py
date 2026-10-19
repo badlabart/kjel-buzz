@@ -835,7 +835,7 @@ def main():
     jokes, lists = humor.collect(sys.modules[__name__])
     for it in jokes + lists:
         it["id"] = "H" + md5((it["title"] + it["source"]).encode()).hexdigest()[:6]
-    short += jokes[:30] + lists[:10]
+    short += jokes[:30] + lists[:40]
     for it in short:
         it["gn_url"] = it["url"] if it["gn"] else None
     top_gn = [i for col, n in (("local", 70), ("weird", 25), ("national", 12), ("music", 10), ("humor", 4))
@@ -854,7 +854,7 @@ def main():
 
     print(f"raw {len(raw)} | kept {len(kept)} | stories {len(items)} | shortlist {len(pool)} | dropped {dropped}")
     print(f"music archive: +{arch_added} top-40 stories kept (total {arch_total}) | {recent_n} other music stories searchable until replaced")
-    print(f"humor: {len(jokes)} jokes pass the filters | {len(lists)} roundups")
+    print(f"humor: {len(jokes)} jokes pass the filters | {len(lists)} show-prep topics (national days, viral, satire)")
     board_path = DATA / "music_board.json"
     board = json.loads(board_path.read_text()) if board_path.exists() else []
     print(f"music cards already up (kept up to 30 days; replace one by listing its id in music_drop): {len(board)}")
@@ -877,7 +877,7 @@ def main():
             if i.get("kind") == "joke":
                 print(f'{i["id"]} | {age} | {i["source"]} | {i["signal"]} | JOKE: {i["title"]} / {i["punch"]}')
             else:
-                tag = "LIST: " if col == "humor" else ""
+                tag = {"day": "TODAY IS: ", "viral": "VIRAL: ", "satire": "SATIRE: "}.get(i.get("kind"), "") if col == "humor" else ""
                 full = i.get("body") or i["desc"]
                 summ = full[:1800] if col == "local" and i.get("congrats") else i["desc"][:220]
                 print(f'{i["id"]} | {age} | {i["source"][:22]}{where} | {i["signal"] or "-"} | {tag}{i["title"]} || {summ}')

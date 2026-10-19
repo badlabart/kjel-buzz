@@ -131,10 +131,48 @@ def roundups(c):
     return sorted(out, key=lambda x: -x["score"])
 
 
+# Radio show-prep humor (Boss 2026-10-19): funny things, sarcastic takes on viral stuff and culture, one line, no click.
+DAY_FEEDS = [("Checkiday", "https://www.checkiday.com/rss.php"), ("National Day Calendar", "https://nationaldaycalendar.com/feed/")]
+VIRAL_FEEDS = [("Daily Dot", "https://www.dailydot.com/feed/"), ("Know Your Meme", "https://knowyourmeme.com/newsfeed.rss")]
+SATIRE_FEEDS = [("The Onion", "https://theonion.com/rss")]
+
+
+def show_prep(c):
+    """Today's quirky national days, viral culture stories and apolitical satire headlines.
+    Claude writes the one-line funny take each morning; the feeds only supply the topic."""
+    today = c.NOW.astimezone(c.CT)
+    out = []
+    for label, url in DAY_FEEDS:
+        for it in c.pull(("feed", "humor", label, url)):
+            t = re.sub(r"\s*[-\u2013]\s*\w+ \d{1,2}, \d{4}$", "", it["title"]).strip()
+            same_day = it["ts"].astimezone(c.CT).date() == today.date() or today.strftime("%B %-d, %Y") in it["title"]
+            serious = re.search(r"awareness|prevention|disease|violence|cancer|memorial|remembrance|syndrome|"
+                                r"disorder|infection|abuse|suicide|hunger|lgbt|diversity|pediatric|safety", t, re.I)
+            if same_day and re.search(r"\bDay\b", t, re.I) and not serious and not (c.TRAGIC.search(t) or c.POLITICS.search(t)):
+                out.append(dict(it, title=t.title() if t.isupper() else t, kind="day", score=60, signal="Today's date"))
+    for label, url in VIRAL_FEEDS + SATIRE_FEEDS:
+        for it in c.pull(("feed", "humor", label, url)):
+            if (c.NOW - it["ts"]).total_seconds() > 48 * 3600:
+                continue
+            t = it["title"]
+            if DIRTY.search(t) or c.TRAGIC.search(t) or c.POLITICS.search(t) or c.ICE.search(t) or c.GOSSIP.search(t):
+                continue
+            kind = "satire" if label in dict(SATIRE_FEEDS) else "viral"
+            out.append(dict(it, kind=kind, score=50, signal="Satire" if kind == "satire" else "Trending online"))
+    # one card per topic: national-day feeds overlap
+    seen, uniq = set(), []
+    for it in out:
+        k = re.sub(r"[^a-z]", "", it["title"].lower())[:40]
+        if k not in seen:
+            seen.add(k)
+            uniq.append(it)
+    return uniq
+
+
 def collect(c):
-    """One-line jokes only. Boss (2026-10-19): no tweet or post roundups in Humor."""
+    """Show-prep humor plus one-line jokes. Boss (2026-10-19): no tweet or post roundups in Humor."""
     jokes, dropped = reddit_jokes(c)
-    lists = []
+    lists = show_prep(c)
     if dropped:
         print("humor dropped:", dropped)
     return jokes, lists
