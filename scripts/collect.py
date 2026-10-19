@@ -29,7 +29,16 @@ NOW = datetime.now(timezone.utc)
 CT = ZoneInfo("America/Chicago")
 FRESH_HOURS = {"national": 48, "music": 48, "local": 24 * 7}
 LEBANON_FRESH_HOURS = 24 * 14  # Lebanon stories are scarce, so they get two weeks
-SHORT = {"national": 30, "music": 30, "local": 70}
+CONGRATS_FRESH_HOURS = {0: 24 * 21, 1: 24 * 14}  # congratulations stay sayable longer: Lebanon 3 weeks, core area 2
+SHORT = {"national": 30, "music": 30, "local": 80}
+# Things a jock can congratulate a local person, team, school or business for.
+CONGRATS = re.compile(
+    r"\b(awards?|awarded|honou?r(s|ed|ee)?|named|recogni[sz]\w*|scholarships?|dean'?s list|president'?s list|"
+    r"honor roll|eagle scout|of the (week|month|year)|champions?|championship|state (qualifier|champion|title|finals?)|"
+    r"qualif\w*|all-(state|district|conference|region)|hall of fame|first place|1st place|place[sd]|medals?|"
+    r"anniversar\w*|years in business|ribbon[- ]cutting|grand opening|opens|expands|milestone|retir\w*|"
+    r"graduat\w*|promot\w*|selected|wins?|won|record|semifinalists?|finalists?|signs with|commits? to|"
+    r"wall of honor|teacher of the year|outstanding|excellence|achiev\w*|celebrat\w*)\b", re.I)
 PER_SOURCE = {"national": 3, "music": 4, "local": 10}  # cap per outlet in the shortlist
 FAILED = []
 
@@ -86,6 +95,20 @@ LOCAL_Q = [
     ('site:laclederecord.com', 14),
     ('site:myozarksonline.com', 14),
     ('Lebanon Missouri (opens OR "grand opening" OR restaurant OR celebrates OR honored OR award OR record OR champion OR wins)', 14),
+    # Congratulations: people, teams, schools and businesses (Lebanon 3 weeks, core area 2)
+    ('Lebanon Missouri ("dean\'s list" OR "honor roll" OR scholarship OR "Eagle Scout" OR "of the month" OR "of the year" '
+     'OR "hall of fame" OR "all-state" OR "all-district" OR "all-conference" OR award OR honored OR recognized OR named)', 21),
+    ('Lebanon Missouri ("ribbon cutting" OR anniversary OR "years in business" OR "grand opening" OR expands OR "new location" OR milestone)', 21),
+    ('"Laclede County" (award OR honored OR scholarship OR champion OR "of the year" OR recognized OR anniversary)', 21),
+    ('(Yellowjackets OR "Lebanon High School" OR "Lebanon R-3" OR "Lebanon R-III") (state OR district OR champions OR honors OR qualifies OR places OR signs)', 21),
+    ('(Camdenton OR "Osage Beach" OR "Lake Ozark" OR "Sunrise Beach" OR Laurie OR "Linn Creek") '
+     '(award OR honored OR scholarship OR "of the year" OR champion OR "Eagle Scout" OR anniversary OR "ribbon cutting")', 14),
+    ('(Waynesville OR "St. Robert" OR "Fort Leonard Wood" OR Richland OR Dixon OR Crocker) '
+     '(award OR honored OR scholarship OR "of the year" OR champion OR "Eagle Scout" OR anniversary OR "ribbon cutting")', 14),
+    ('(Marshfield OR Seymour OR Rogersville OR Niangua OR Buffalo OR Louisburg) Missouri '
+     '(award OR honored OR scholarship OR "of the year" OR champion OR "Eagle Scout" OR anniversary OR "ribbon cutting")', 14),
+    ('("Mountain Grove" OR Hartville OR Mansfield OR Norwood OR Eldon OR Iberia OR Tuscumbia) Missouri '
+     '(award OR honored OR scholarship OR "of the year" OR champion OR "Eagle Scout" OR anniversary OR "ribbon cutting")', 14),
     ('(Conway OR Phillipsburg OR Stoutland OR Falcon OR Eldridge) Missouri', 7),
     ('(Richland OR Dixon OR Crocker OR Laquey) Missouri', 7),
     ('"Sunrise Beach" OR Laurie OR "Linn Creek" OR "Climax Springs" OR "Macks Creek" OR "Gravois Mills"', 7),
@@ -107,8 +130,6 @@ LOCAL_Q = [
     ('site:lakeexpo.com', 7),
     ('site:krmsradio.com', 7),
     ('Ozarks (heartwarming OR viral OR "first ever" OR record OR rescued OR celebrates OR surprise)', 7),
-    ('"Springfield, Mo." (heartwarming OR viral OR celebrates OR record OR "first ever" OR opens)', 7),
-    ('Branson (new OR record OR viral OR celebrates OR opens)', 7),
 ]
 LOCAL_FEEDS = [
     ("My Ozarks Online", "https://www.myozarksonline.com/feed/"),
@@ -133,13 +154,13 @@ MUSIC_FEEDS = [
 
 # Towns: tier 0 = Lebanon, 1 = the 7 counties + lake, 2 = wider Ozarks (filler only).
 LEBANON = re.compile(r"\bLebanon\b|\bLaclede\b|Bennett Spring|Yellowjackets", re.I)
-NOT_MO_LEBANON = re.compile(r"Lebanon,? (Ohio|OH|Pa\.?|Pennsylvania|Tenn\.?|Tennessee|TN|N\.?H\.?|New Hampshire|Ind\.?|Indiana|Ky\.?|Kentucky|Ore\.?|Oregon|Ill\.?|Illinois|Conn\.?|Va\.?|Virginia)|\bBeirut\b|\bLebanese\b|Israel|Hezbollah", re.I)
-LEBANON_SOURCES = {"Laclede County Record", "My Ozarks Online", "City of Lebanon", "Downtown Lebanon"}
+NOT_MO_LEBANON = re.compile(r"Lebanon,? (Ohio|OH|Pa\.?|Pennsylvania|Tenn\.?|Tennessee|TN|N\.?H\.?|New Hampshire|Ind\.?|Indiana|Ky\.?|Kentucky|Ore\.?|Oregon|Ill\.?|Illinois|Conn\.?|Va\.?|Virginia)(?![a-z])|\bBeirut\b|\bLebanese\b|Israel|Hezbollah|Lebanon Daily News|Lebanon Democrat|Lebanon Reporter|Lebanon Express|Lebanon Valley|Lebanon County", re.I)
+LEBANON_SOURCES = {"Laclede County Record", "My Ozarks Online", "City of Lebanon", "Downtown Lebanon", "Lebanon R-3 Schools"}
 # "KRMS" is a Lake radio station, so it is a local outlet but not a Lebanon one.
 MO_MARK = re.compile(r"\b(Mo\.|MO|Missouri|Ozarks?)\b")
 LOCAL_OUTLET = re.compile(
     r"laclede|ozark|ky3|kolr|kspr|lakeexpo|lake sun|lake news|news-leader|branson globe|reflex|webster county citizen|"
-    r"marshfield mail|komu|krcg|kmzu|ksmu|krms|kttn|sgf|springfield daily|sedalia|daily guide|missouri|lebanon|"
+    r"marshfield mail|komu|krcg|kmzu|ksmu|krms|kttn|sgf|springfield daily|sedalia|daily guide|missouri|"
     r"myozarks|guidon|houston herald|eldon|kspr|krms", re.I)
 COUNTY_TOWNS = [
     "Conway", "Phillipsburg", "Stoutland", "Eldridge", "Brumley",
@@ -156,6 +177,8 @@ WIDER_TOWNS = ["Springfield", "Branson", "Rolla", "Bolivar", "Nixa", "Ozark", "R
 def town_of(title, desc, source):
     blob = f"{title} {desc}"
     if not (source in LEBANON_SOURCES or LOCAL_OUTLET.search(source) or MO_MARK.search(blob)):
+        return None, None
+    if NOT_MO_LEBANON.search(source):
         return None, None
     if source in LEBANON_SOURCES and not NOT_MO_LEBANON.search(blob):
         m = re.search(r"\b(" + "|".join(map(re.escape, COUNTY_TOWNS)) + r")\b", title)
@@ -280,6 +303,30 @@ def pull(job):
     except Exception as e:
         FAILED.append(f"{label} ({str(e)[:40]})")
         return []
+
+
+def lebanon_r3():
+    """Lebanon R-3 Schools news posts: staff honors, school awards, new facilities, coaches.
+    The page lists posts newest first without dates, so each post is dated the day this script first saw it."""
+    page = "https://www.lebanonr3.org/our-district/news-archive"
+    try:
+        b = get(page)
+    except Exception as e:
+        FAILED.append(f"Lebanon R-3 news ({str(e)[:40]})")
+        return []
+    path = DATA / "r3_seen.json"
+    first_run = not path.exists()
+    seen = json.loads(path.read_text()) if path.exists() else {}
+    out = []
+    posts = re.findall(r'class="fsPostLink" data-slug="([^"]+)"[^>]*>(.*?)</a>', b, re.S)
+    for n, (slug, title) in enumerate(posts):
+        if slug not in seen:
+            # First run: the 5 newest posts count as new; older ones are marked 60 days old.
+            seen[slug] = (NOW if not first_run or n < 5 else NOW - timedelta(days=60)).isoformat()
+        out.append({"col": "local", "title": text(title), "url": page, "source": "Lebanon R-3 Schools",
+                    "ts": datetime.fromisoformat(seen[slug]), "desc": "", "gn": False})
+    path.write_text(json.dumps(seen, indent=0))
+    return out
 
 
 def google_trends():
@@ -456,7 +503,7 @@ def score(it, wiki, chart):
     if it["source"] in ("UPI Odd News", "Good News Network", "Upworthy"):
         s += 2
     if it["col"] == "local":
-        s += {0: 8, 1: 4, 2: 0}[it["tier"]]
+        s += {0: 8, 1: 4, 2: 0}[it["tier"]] + (8 if it.get("congrats") else 0)
         s -= hours / 24 * 2
     else:
         s -= hours / 6
@@ -523,6 +570,10 @@ def resolve_all(items, limit=None, budget_s=240):
             it["gn_url"] = it["url"]
         if not it["url"].startswith("https://news.google.com"):
             continue
+        tkey = f'{it["source"]}|{it["title"]}'  # Google gives one story different links in different searches
+        if tkey in cache:
+            it["url"] = cache[tkey]
+            continue
         if it["url"] not in cache and limit is not None and tried >= limit:
             continue
         real = None
@@ -540,6 +591,7 @@ def resolve_all(items, limit=None, budget_s=240):
                 break
         if real:
             it["url"] = real
+            cache[tkey] = real
         elif pauses >= 2:
             FAILED.append("Google News link lookup (429, rest keep Google links)")
             break
@@ -567,6 +619,7 @@ def main():
     with ThreadPoolExecutor(6) as ex:
         raw = [it for chunk in ex.map(pull, jobs) for it in chunk]
     raw += google_trends()
+    raw += lebanon_r3()
     wiki, chart = wikipedia_top(), country_airplay()
 
     # Music archive works from every music story, before the board's downer/gossip filters.
@@ -578,7 +631,7 @@ def main():
     kept, dropped = [], {}
     for it in raw:
         age_h = (NOW - it["ts"]).total_seconds() / 3600
-        limit = LEBANON_FRESH_HOURS if it["col"] == "local" else FRESH_HOURS[it["col"]]
+        limit = CONGRATS_FRESH_HOURS[0] if it["col"] == "local" else FRESH_HOURS[it["col"]]
         if age_h > limit or not it["title"]:
             continue
         why = blocked(it["col"], it["title"], it["desc"], it["source"])
@@ -590,7 +643,12 @@ def main():
             if it["town"] is None:
                 dropped["outside area"] = dropped.get("outside area", 0) + 1
                 continue
-            if it["tier"] != 0 and age_h > FRESH_HOURS["local"]:
+            if it["tier"] == 2:  # Springfield, Branson etc. are outside the core listening area
+                dropped["outside core area"] = dropped.get("outside core area", 0) + 1
+                continue
+            it["congrats"] = bool(CONGRATS.search(it["title"]))
+            base = LEBANON_FRESH_HOURS if it["tier"] == 0 else FRESH_HOURS["local"]
+            if age_h > (CONGRATS_FRESH_HOURS[it["tier"]] if it["congrats"] else base):
                 continue
         kept.append(it)
 
@@ -635,7 +693,7 @@ def main():
     pool = []
     for i in short:
         pool.append({k: i.get(k) for k in ("id", "col", "title", "source", "url", "gn_url", "desc", "outlets", "also",
-                                           "signal", "score", "town", "tier", "kind", "punch")} | {"ts": i["ts"].isoformat()})
+                                           "signal", "score", "town", "tier", "kind", "punch", "congrats")} | {"ts": i["ts"].isoformat()})
     (DATA / "pool.json").write_text(json.dumps({"collected": NOW.isoformat(), "items": pool}, indent=1, ensure_ascii=False))
 
     print(f"raw {len(raw)} | kept {len(kept)} | stories {len(items)} | shortlist {len(pool)} | dropped {dropped}")
@@ -647,7 +705,8 @@ def main():
         for i in sorted((p for p in pool if p["col"] == col), key=lambda x: -x["score"]):
             age = (NOW - datetime.fromisoformat(i["ts"])).total_seconds() / 3600
             age = f"{age:.0f}h" if age < 48 else f"{age / 24:.0f}d"
-            where = f' [{i["town"]}{"*" if i["tier"] == 0 else ""}]' if col == "local" else ""
+            where = (f' [{i["town"]}{"*" if i["tier"] == 0 else ""}]{" CONGRATS?" if i.get("congrats") else ""}'
+                     if col == "local" else "")
             if i.get("kind") == "joke":
                 print(f'{i["id"]} | {age} | {i["source"]} | {i["signal"]} | JOKE: {i["title"]} / {i["punch"]}')
             else:

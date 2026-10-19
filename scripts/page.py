@@ -45,7 +45,7 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .search .go{background:#D0101F;color:#FFFFFF;border-color:#D0101F;font-weight:bold;cursor:pointer}
 .results{display:none}
 .tag{font-size:10px;font-weight:bold;padding:1px 5px;border-radius:3px;margin-right:4px;vertical-align:middle}
-.tag.keep{background:#FDB913;color:#0A2A50}.tag.off{background:#D0101F;color:#FFFFFF}
+.tag.keep{background:#FDB913;color:#0A2A50}.tag.cong{background:#0A2A50;color:#FDB913}.tag.off{background:#D0101F;color:#FFFFFF}
 """
 
 # ES3 only: no let/const, arrow functions, classList, or dataset.
@@ -127,10 +127,16 @@ def write(data):
             punch = f'<div class="punch">{esc(c["punch"])}</div>' if joke and c.get("punch") else ""
             # On-air sentence replaces the headline. Jokes and roundups keep their own text.
             main = esc(c["line"]) if c.get("line") and not joke else esc(c["title"])
+            cong = '<span class="tag cong">CONGRATS</span>' if c.get("congrats") else ""
+            # The R-3 site gives no post dates, so its cards show a label instead of an age.
+            if c.get("source") == "Lebanon R-3 Schools":
+                head = f'<div class="card"><div class="when">SCHOOL NEWS <span class="src">&middot; {esc(c["source"])}</span></div>'
+            else:
+                head = (f'<div class="card" data-ts="{ts_ms(c["ts"])}">'
+                        f'<div class="when"><span>{static_when(c["ts"])}</span> <span class="src">&middot; {esc(c["source"])}</span></div>')
             cards.append(
-                f'<div class="card" data-ts="{ts_ms(c["ts"])}">'
-                f'<div class="when"><span>{static_when(c["ts"])}</span> <span class="src">&middot; {esc(c["source"])}</span></div>'
-                f'<div class="name">{main}{where}</div>{punch}{sig}'
+                head +
+                f'<div class="name">{cong}{main}{where}</div>{punch}{sig}'
                 f'<a class="link" href="{esc(c["url"])}" target="_blank" rel="noopener">'
                 f'{"See post" if joke else "Read story"} &#8599;</a></div>')
         body = "".join(cards) or '<div class="empty">Nothing worth airing today.</div>'

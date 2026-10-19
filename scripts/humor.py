@@ -24,7 +24,8 @@ DIRTY = re.compile(
     r"horny|orgasm|condoms?|viagra|blow ?jobs?|whores?|sluts?|hookers?|strippers?|erection|testicl\w*|balls|"
     r"weed|stoned|cocaine|meth|hitler|nazis?|rape\w*|virgin\w*|wank\w*|masturbat\w*|panties|thong|nipples?|"
     r"genital\w*|pubes?|bang(ed|ing)?|screw(ed|ing)?|69|lesbian|gay|tranny|retard\w*|n-word|nsfw|cum|"
-    r"autoerotic|asphyxia\w*|piss\w*|cheat\w*|affair|mistress|dildo|kinky|bdsm|hooters)\b", re.I)
+    r"autoerotic|asphyxia\w*|piss\w*|cheat\w*|affair|mistress|dildo|kinky|bdsm|hooters|two girls|one cup|"
+    r"white (people|guys?)|black (people|guys?)|cracka\w*|redneck|mexicans?|asians?|antidepressants?|lawyers? charge)\b", re.I)
 FUNNY_LIST = re.compile(r"funn|hilar|laugh|joke|meme|tweet|posts|reviews|comic|lol\b", re.I)
 META = re.compile(r"years ago today|repost|\bmods?\b|subreddit|r/|upvote|karma|this sub", re.I)
 

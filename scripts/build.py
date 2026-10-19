@@ -16,7 +16,7 @@ import page  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 COLUMNS = [("national", "National"), ("local", "Local"), ("music", "Music"), ("humor", "Humor")]
-LEBANON_GOAL = 0.30
+LEBANON_GOAL = 0.50
 
 
 def music_search():
@@ -41,7 +41,7 @@ def main():
             if not it:
                 missing.append(p["id"])
                 continue
-            cards.append(dict(it, line=p.get("line", ""), city=p.get("city", "")))
+            cards.append(dict(it, line=p.get("line", ""), city=p.get("city", ""), congrats=bool(p.get("congrats"))))
         cols.append({"key": key, "name": name, "cards": cards})
 
     every = [c for col in cols for c in col["cards"]]
