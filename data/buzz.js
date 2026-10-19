@@ -1,5 +1,5 @@
 window.KJEL_BUZZ = {
- "updated": "2026-10-19T16:59:44+00:00",
+ "updated": "2026-10-19T16:59:50+00:00",
  "columns": [
   {
    "key": "national",
@@ -26,7 +26,7 @@ window.KJEL_BUZZ = {
      "punch": null,
      "congrats": false,
      "ts": "2026-10-19T11:12:24+00:00",
-     "line": "In South Carolina, a group of children wrote goodbye letters for a senior dog, and those letters went viral and got the old pup adopted.",
+     "line": "In South Carolina, a group of children wrote goodbye letters for a senior shelter dog, and the letters went viral and got him adopted.",
      "city": "South Carolina"
     },
     {
@@ -47,8 +47,29 @@ window.KJEL_BUZZ = {
      "punch": null,
      "congrats": false,
      "ts": "2026-10-18T20:32:45+00:00",
-     "line": "A high school teacher in Sandy Springs, Georgia, found a tiny black cat stuck in her car engine on the way to work, just in time for her Halloween wedding anniversary.",
+     "line": "A high school teacher in Sandy Springs, Georgia, found a tiny black cat stuck in her car engine on her way to work, just in time for her Halloween wedding anniversary.",
      "city": "Sandy Springs, Ga."
+    },
+    {
+     "id": "N7737dc",
+     "col": "national",
+     "title": "Retired Couple Surprised With New HVAC System Worth $16k in a ‘Feel the Love’ Program That’s Aided 3100 Folks",
+     "source": "Good News Network",
+     "url": "https://www.goodnewsnetwork.org/retired-couple-surprised-with-new-hvac-system-worth-16k/",
+     "gn_url": null,
+     "desc": "An Oregon couple facing financial hardship can now endure the winter in comfort and with ‘peace of mind’ since a new HVAC system was installed in their home at no cost. Diane and Brian Johnsen of Beaverton received a complete heating and cooling system installed—valued at approximately $16,000—with the labor performed by local contractor Aviator […] The post Retired Couple Surprised With New HVAC ",
+     "outlets": 1,
+     "also": [],
+     "signal": "",
+     "score": 11.1,
+     "town": null,
+     "tier": null,
+     "kind": null,
+     "punch": null,
+     "congrats": false,
+     "ts": "2026-10-18T17:19:59+00:00",
+     "line": "A retired couple in Beaverton, Oregon, got a brand-new heating and cooling system worth sixteen thousand dollars for free through a program called Feel the Love that has helped thirty-one hundred people.",
+     "city": "Beaverton, Ore."
     },
     {
      "id": "Ne33068",
@@ -68,7 +89,7 @@ window.KJEL_BUZZ = {
      "punch": null,
      "congrats": false,
      "ts": "2026-10-18T23:15:00+00:00",
-     "line": "A couple who dreamed of buying a certain house as teenagers slipped a handwritten note under its door twenty years later, and that note ended up making the house theirs.",
+     "line": "A couple who dreamed of buying a certain house as teenagers slipped a handwritten note under its door twenty years later, and that note led to the house becoming theirs.",
      "city": ""
     },
     {
@@ -89,7 +110,7 @@ window.KJEL_BUZZ = {
      "punch": null,
      "congrats": false,
      "ts": "2026-10-18T17:04:00+00:00",
-     "line": "A woman accidentally said \"Love you!\" to an important client at the end of a call, and he answered perfectly, then even followed up with a heartwarming email.",
+     "line": "A woman accidentally ended a work call by telling an important client \"Love you,\" and he answered so kindly that he even followed up with a heartwarming email.",
      "city": ""
     },
     {
@@ -110,29 +131,50 @@ window.KJEL_BUZZ = {
      "punch": null,
      "congrats": false,
      "ts": "2026-10-17T17:05:00+00:00",
-     "line": "Actor Brendan Fraser surprised everyone at a screening of The Mummy by showing up in costume, and now fans are begging for a fourth Mummy movie.",
+     "line": "Actor Brendan Fraser surprised a theater full of fans by showing up in costume at a screening of his movie The Mummy.",
      "city": ""
     },
     {
-     "id": "N7737dc",
+     "id": "N58fb48",
      "col": "national",
-     "title": "Retired Couple Surprised With New HVAC System Worth $16k in a ‘Feel the Love’ Program That’s Aided 3100 Folks",
-     "source": "Good News Network",
-     "url": "https://www.goodnewsnetwork.org/retired-couple-surprised-with-new-hvac-system-worth-16k/",
-     "gn_url": null,
-     "desc": "An Oregon couple facing financial hardship can now endure the winter in comfort and with ‘peace of mind’ since a new HVAC system was installed in their home at no cost. Diane and Brian Johnsen of Beaverton received a complete heating and cooling system installed—valued at approximately $16,000—with the labor performed by local contractor Aviator […] The post Retired Couple Surprised With New HVAC ",
+     "title": "Kitten rescued from drain pipe with help from remote-controlled R2D2 crawler",
+     "source": "WKRC",
+     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOXE5bm02T2xtVjhxY2dPbUE0blBfY080TTVBVUROak5md3ByXzRKUjhyeGx6am5PQ1d2T3laUTBxUmZyYXFZbF9RdWVvbnNXYThMTHlLak9xS0J1a1F2ZDhaMWh2eFJEZ1pmRVJ6dE1FZ3NTMldMZ1RCcUZtQUhDZDBITlJtM1Fnc2k3T3N2XzdzU3J6TTZld2NNZnU4QnFSd1RKTW9GZVByUFVKdTJzN3p1cTA2X3lp?oc=5",
+     "gn_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOXE5bm02T2xtVjhxY2dPbUE0blBfY080TTVBVUROak5md3ByXzRKUjhyeGx6am5PQ1d2T3laUTBxUmZyYXFZbF9RdWVvbnNXYThMTHlLak9xS0J1a1F2ZDhaMWh2eFJEZ1pmRVJ6dE1FZ3NTMldMZ1RCcUZtQUhDZDBITlJtM1Fnc2k3T3N2XzdzU3J6TTZld2NNZnU4QnFSd1RKTW9GZVByUFVKdTJzN3p1cTA2X3lp?oc=5",
+     "desc": "",
      "outlets": 1,
      "also": [],
      "signal": "",
-     "score": 11.1,
+     "score": 16.0,
      "town": null,
      "tier": null,
      "kind": null,
      "punch": null,
      "congrats": false,
-     "ts": "2026-10-18T17:19:59+00:00",
-     "line": "A retired couple in Beaverton, Oregon, facing financial hardship got a brand new heating and cooling system worth sixteen thousand dollars installed in their home at no cost.",
-     "city": "Beaverton, Ore."
+     "ts": "2026-10-19T16:36:35+00:00",
+     "line": "Rescuers used a remote-controlled crawler built to look like R2-D2 from Star Wars to help get a kitten out of a drain pipe.",
+     "city": ""
+    },
+    {
+     "id": "N30edd9",
+     "col": "national",
+     "title": "Ameren workers reunited with stray dog they helped rescue",
+     "source": "KSDK",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNLU9qc3pFeFBmb3VUOUFNdkQ0VzVUSVkzMVFKMXRzTG8xZzVNU3QxN3pzVXBxdlo0VTU3MjZmRG9pNF9vWmt1QklBV1dqQVZ4em5VMFJEMVVJVHplWUFzd0cyVVBob0htaDVabzFxQ0UyWm52VE9nZ2VnM3RLY2dPTFBzUGdfWVpDcUN3TmxVbWF5YS1BUGx4eFpDM2xBcmEwQWhtclg3X1B1RWNnUlFrZkhKWldHU0RmQUtzUWV3cTJHaVpiV2l4ZXlnYzJzMDRTTkVV?oc=5",
+     "gn_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNLU9qc3pFeFBmb3VUOUFNdkQ0VzVUSVkzMVFKMXRzTG8xZzVNU3QxN3pzVXBxdlo0VTU3MjZmRG9pNF9vWmt1QklBV1dqQVZ4em5VMFJEMVVJVHplWUFzd0cyVVBob0htaDVabzFxQ0UyWm52VE9nZ2VnM3RLY2dPTFBzUGdfWVpDcUN3TmxVbWF5YS1BUGx4eFpDM2xBcmEwQWhtclg3X1B1RWNnUlFrZkhKWldHU0RmQUtzUWV3cTJHaVpiV2l4ZXlnYzJzMDRTTkVV?oc=5",
+     "desc": "",
+     "outlets": 1,
+     "also": [],
+     "signal": "",
+     "score": 15.9,
+     "town": null,
+     "tier": null,
+     "kind": null,
+     "punch": null,
+     "congrats": false,
+     "ts": "2026-10-19T16:20:00+00:00",
+     "line": "A crew of Ameren utility workers got a happy reunion with a stray dog they had helped rescue.",
+     "city": ""
     },
     {
      "id": "Nffc5ef",
@@ -154,49 +196,7 @@ window.KJEL_BUZZ = {
      "punch": null,
      "congrats": false,
      "ts": "2026-10-19T13:30:00+00:00",
-     "line": "A Knicks fan's hilarious Halloween display featuring Taylor Swift and Timothee Chalamet has gone viral online.",
-     "city": ""
-    },
-    {
-     "id": "N58fb48",
-     "col": "national",
-     "title": "Kitten rescued from drain pipe with help from remote-controlled R2D2 crawler",
-     "source": "WKRC",
-     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOXE5bm02T2xtVjhxY2dPbUE0blBfY080TTVBVUROak5md3ByXzRKUjhyeGx6am5PQ1d2T3laUTBxUmZyYXFZbF9RdWVvbnNXYThMTHlLak9xS0J1a1F2ZDhaMWh2eFJEZ1pmRVJ6dE1FZ3NTMldMZ1RCcUZtQUhDZDBITlJtM1Fnc2k3T3N2XzdzU3J6TTZld2NNZnU4QnFSd1RKTW9GZVByUFVKdTJzN3p1cTA2X3lp?oc=5",
-     "gn_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOXE5bm02T2xtVjhxY2dPbUE0blBfY080TTVBVUROak5md3ByXzRKUjhyeGx6am5PQ1d2T3laUTBxUmZyYXFZbF9RdWVvbnNXYThMTHlLak9xS0J1a1F2ZDhaMWh2eFJEZ1pmRVJ6dE1FZ3NTMldMZ1RCcUZtQUhDZDBITlJtM1Fnc2k3T3N2XzdzU3J6TTZld2NNZnU4QnFSd1RKTW9GZVByUFVKdTJzN3p1cTA2X3lp?oc=5",
-     "desc": "",
-     "outlets": 1,
-     "also": [],
-     "signal": "",
-     "score": 16.0,
-     "town": null,
-     "tier": null,
-     "kind": null,
-     "punch": null,
-     "congrats": false,
-     "ts": "2026-10-19T16:36:35+00:00",
-     "line": "Rescuers saved a kitten stuck in a drain pipe with help from a remote-controlled crawler robot that looks just like R2-D2 from Star Wars.",
-     "city": ""
-    },
-    {
-     "id": "N30edd9",
-     "col": "national",
-     "title": "Ameren workers reunited with stray dog they helped rescue",
-     "source": "KSDK",
-     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNLU9qc3pFeFBmb3VUOUFNdkQ0VzVUSVkzMVFKMXRzTG8xZzVNU3QxN3pzVXBxdlo0VTU3MjZmRG9pNF9vWmt1QklBV1dqQVZ4em5VMFJEMVVJVHplWUFzd0cyVVBob0htaDVabzFxQ0UyWm52VE9nZ2VnM3RLY2dPTFBzUGdfWVpDcUN3TmxVbWF5YS1BUGx4eFpDM2xBcmEwQWhtclg3X1B1RWNnUlFrZkhKWldHU0RmQUtzUWV3cTJHaVpiV2l4ZXlnYzJzMDRTTkVV?oc=5",
-     "gn_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNLU9qc3pFeFBmb3VUOUFNdkQ0VzVUSVkzMVFKMXRzTG8xZzVNU3QxN3pzVXBxdlo0VTU3MjZmRG9pNF9vWmt1QklBV1dqQVZ4em5VMFJEMVVJVHplWUFzd0cyVVBob0htaDVabzFxQ0UyWm52VE9nZ2VnM3RLY2dPTFBzUGdfWVpDcUN3TmxVbWF5YS1BUGx4eFpDM2xBcmEwQWhtclg3X1B1RWNnUlFrZkhKWldHU0RmQUtzUWV3cTJHaVpiV2l4ZXlnYzJzMDRTTkVV?oc=5",
-     "desc": "",
-     "outlets": 1,
-     "also": [],
-     "signal": "",
-     "score": 15.9,
-     "town": null,
-     "tier": null,
-     "kind": null,
-     "punch": null,
-     "congrats": false,
-     "ts": "2026-10-19T16:20:00+00:00",
-     "line": "A group of Ameren workers who helped rescue a stray dog got a happy reunion with that same pup.",
+     "line": "A New York Knicks fan's hilarious Halloween display featuring Taylor Swift and Timothée Chalamet is going viral online.",
      "city": ""
     },
     {
@@ -219,6 +219,29 @@ window.KJEL_BUZZ = {
      "ts": "2026-10-19T16:54:19.091738+00:00",
      "line": "Pepsi is rolling out a new holiday flavor called Pepsi Vanilla and Cream nationwide for a limited time, in both regular and Zero Sugar.",
      "city": ""
+    },
+    {
+     "id": "N0f9576",
+     "col": "national",
+     "title": "HGTV’s Joanna Gaines Dances With Her Sister in Hilarious Video – Fans React",
+     "source": "IMDb",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1KYUlsR0tkVUE4Qnl1cjV4dEdJWUxtRXVzUTZ6MUpnSmlqQlA4M0dJQUQ5SG1OX21BcWU5Zld3SWY1clVNYi1zUUJxVzd4d2VhUVRGdVctbUNaaE5HZVB1LWFVYVZXUQ?oc=5",
+     "gn_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1KYUlsR0tkVUE4Qnl1cjV4dEdJWUxtRXVzUTZ6MUpnSmlqQlA4M0dJQUQ5SG1OX21BcWU5Zld3SWY1clVNYi1zUUJxVzd4d2VhUVRGdVctbUNaaE5HZVB1LWFVYVZXUQ?oc=5",
+     "desc": "",
+     "outlets": 2,
+     "also": [
+      "TV Insider"
+     ],
+     "signal": "",
+     "score": 16.9,
+     "town": null,
+     "tier": null,
+     "kind": null,
+     "punch": null,
+     "congrats": false,
+     "ts": "2026-10-19T16:23:34+00:00",
+     "line": "HGTV star Joanna Gaines posted a hilarious video of herself dancing with her sister, and fans are loving it.",
+     "city": ""
     }
    ]
   },
@@ -226,27 +249,6 @@ window.KJEL_BUZZ = {
    "key": "local",
    "name": "Local",
    "cards": [
-    {
-     "id": "La6f4f1",
-     "col": "local",
-     "title": "Lebanon Schools Earns National Meritorious Budget Award",
-     "source": "Lebanon R-3 Schools",
-     "url": "https://www.lebanonr3.org/our-district/news-archive",
-     "gn_url": null,
-     "desc": "News Archive - Lebanon R-III School District",
-     "outlets": 1,
-     "also": [],
-     "signal": "",
-     "score": 28.9,
-     "town": "Lebanon",
-     "tier": 0,
-     "kind": null,
-     "punch": null,
-     "congrats": true,
-     "ts": "2026-10-19T15:45:21.153323+00:00",
-     "line": "Congratulations to Lebanon R-3 Schools for earning a national Meritorious Budget Award.",
-     "city": "Lebanon"
-    },
     {
      "id": "L584d8b",
      "col": "local",
@@ -266,6 +268,27 @@ window.KJEL_BUZZ = {
      "congrats": true,
      "ts": "2026-10-19T15:45:21.153323+00:00",
      "line": "Congratulations to Lebanon R-3 Schools on celebrating the opening of the new Robert W. Plaster Center for Student Success.",
+     "city": "Lebanon"
+    },
+    {
+     "id": "La6f4f1",
+     "col": "local",
+     "title": "Lebanon Schools Earns National Meritorious Budget Award",
+     "source": "Lebanon R-3 Schools",
+     "url": "https://www.lebanonr3.org/our-district/news-archive",
+     "gn_url": null,
+     "desc": "News Archive - Lebanon R-III School District",
+     "outlets": 1,
+     "also": [],
+     "signal": "",
+     "score": 28.9,
+     "town": "Lebanon",
+     "tier": 0,
+     "kind": null,
+     "punch": null,
+     "congrats": true,
+     "ts": "2026-10-19T15:45:21.153323+00:00",
+     "line": "Congratulations to Lebanon R-3 Schools for earning a national Meritorious Budget Award.",
      "city": "Lebanon"
     },
     {
@@ -307,7 +330,7 @@ window.KJEL_BUZZ = {
      "punch": null,
      "congrats": true,
      "ts": "2026-10-08T16:30:00+00:00",
-     "line": "Congratulations to the Lebanon Yellowjackets marching band, who placed at the Valhalla Marching Festival.",
+     "line": "Congratulations to the Lebanon Yellowjackets marching band for placing at the Valhalla Marching Festival.",
      "city": "Lebanon"
     },
     {
@@ -353,27 +376,6 @@ window.KJEL_BUZZ = {
      "city": "Lebanon"
     },
     {
-     "id": "L5cd73f",
-     "col": "local",
-     "title": "New World Record At Lake Of The Ozarks! Angler Snags 164-POUND Paddlefish",
-     "source": "LakeExpo.com",
-     "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOUEFPdlU0ZHVGeXlnUjBCNHpaUDh0ZjAzNE5YOTNnVENBVUE1OFZYNjlIWEJCVHFIVTNjbWpJNEtkZV9GUVJNVkJMdmFHVWpKcFlnOUo1SzlHRzljZERLNkJWbTlpdm4wWEZuSkY1NWo0aG11OFpXazRvY0F2UlFVc0VqRWZOeVp1cFY5R0tyX3loZjRsa0pwLXp2Z2JmR3A2XzBSUzlBZnJaQW9Uc2VwNUNPYzZ0bUppOVBwQ2k2OWx1ci0wQkFKSFFTenI4a3MyaHhmb3k2eDJYeG44SzlTSGU5N3VpdTR5aTR1Vm5VZWZDeDNHSnF1VzRWbzdkbnV2?oc=5",
-     "gn_url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOUEFPdlU0ZHVGeXlnUjBCNHpaUDh0ZjAzNE5YOTNnVENBVUE1OFZYNjlIWEJCVHFIVTNjbWpJNEtkZV9GUVJNVkJMdmFHVWpKcFlnOUo1SzlHRzljZERLNkJWbTlpdm4wWEZuSkY1NWo0aG11OFpXazRvY0F2UlFVc0VqRWZOeVp1cFY5R0tyX3loZjRsa0pwLXp2Z2JmR3A2XzBSUzlBZnJaQW9Uc2VwNUNPYzZ0bUppOVBwQ2k2OWx1ci0wQkFKSFFTenI4a3MyaHhmb3k2eDJYeG44SzlTSGU5N3VpdTR5aTR1Vm5VZWZDeDNHSnF1VzRWbzdkbnV2?oc=5",
-     "desc": "",
-     "outlets": 1,
-     "also": [],
-     "signal": "",
-     "score": 16.9,
-     "town": "Lake",
-     "tier": 1,
-     "kind": null,
-     "punch": null,
-     "congrats": true,
-     "ts": "2026-10-15T16:15:50+00:00",
-     "line": "Congratulations to the angler who snagged a 164-pound paddlefish at Lake of the Ozarks, setting a new world record.",
-     "city": "Lake of the Ozarks"
-    },
-    {
      "id": "Lb75d94",
      "col": "local",
      "title": "Hive Depot Provides Essential Resources and Learning Opportunities for Lebanon Students",
@@ -412,8 +414,29 @@ window.KJEL_BUZZ = {
      "punch": null,
      "congrats": false,
      "ts": "2026-10-14T11:00:00+00:00",
-     "line": "A church in Lebanon built a ramp for a disabled woman, the Laclede County Record reports.",
+     "line": "A local church in Lebanon came together to build a ramp for a woman with a disability, according to the Laclede County Record.",
      "city": "Lebanon"
+    },
+    {
+     "id": "L5cd73f",
+     "col": "local",
+     "title": "New World Record At Lake Of The Ozarks! Angler Snags 164-POUND Paddlefish",
+     "source": "LakeExpo.com",
+     "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOUEFPdlU0ZHVGeXlnUjBCNHpaUDh0ZjAzNE5YOTNnVENBVUE1OFZYNjlIWEJCVHFIVTNjbWpJNEtkZV9GUVJNVkJMdmFHVWpKcFlnOUo1SzlHRzljZERLNkJWbTlpdm4wWEZuSkY1NWo0aG11OFpXazRvY0F2UlFVc0VqRWZOeVp1cFY5R0tyX3loZjRsa0pwLXp2Z2JmR3A2XzBSUzlBZnJaQW9Uc2VwNUNPYzZ0bUppOVBwQ2k2OWx1ci0wQkFKSFFTenI4a3MyaHhmb3k2eDJYeG44SzlTSGU5N3VpdTR5aTR1Vm5VZWZDeDNHSnF1VzRWbzdkbnV2?oc=5",
+     "gn_url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOUEFPdlU0ZHVGeXlnUjBCNHpaUDh0ZjAzNE5YOTNnVENBVUE1OFZYNjlIWEJCVHFIVTNjbWpJNEtkZV9GUVJNVkJMdmFHVWpKcFlnOUo1SzlHRzljZERLNkJWbTlpdm4wWEZuSkY1NWo0aG11OFpXazRvY0F2UlFVc0VqRWZOeVp1cFY5R0tyX3loZjRsa0pwLXp2Z2JmR3A2XzBSUzlBZnJaQW9Uc2VwNUNPYzZ0bUppOVBwQ2k2OWx1ci0wQkFKSFFTenI4a3MyaHhmb3k2eDJYeG44SzlTSGU5N3VpdTR5aTR1Vm5VZWZDeDNHSnF1VzRWbzdkbnV2?oc=5",
+     "desc": "",
+     "outlets": 1,
+     "also": [],
+     "signal": "",
+     "score": 16.9,
+     "town": "Lake",
+     "tier": 1,
+     "kind": null,
+     "punch": null,
+     "congrats": true,
+     "ts": "2026-10-15T16:15:50+00:00",
+     "line": "Congratulations to the angler who set a new world record at Lake of the Ozarks by landing a 164-pound paddlefish.",
+     "city": "Lake of the Ozarks"
     },
     {
      "id": "L53d98a",
@@ -433,7 +456,7 @@ window.KJEL_BUZZ = {
      "punch": null,
      "congrats": false,
      "ts": "2026-10-15T15:35:00+00:00",
-     "line": "The Fall Harbor Hop drew nearly 2,300 boaters out for a sunny day on Lake of the Ozarks.",
+     "line": "The Fall Harbor Hop drew nearly twenty-three hundred boaters out for a sunny day on Lake of the Ozarks.",
      "city": "Lake of the Ozarks"
     },
     {
@@ -454,7 +477,7 @@ window.KJEL_BUZZ = {
      "punch": null,
      "congrats": false,
      "ts": "2026-10-15T19:30:00+00:00",
-     "line": "New details are out on a 126-room Hyatt hotel planned in the cove at Backwater Jacks on Lake of the Ozarks.",
+     "line": "New details are out on a 126-room Hyatt hotel planned in the Backwater Jacks' cove at Lake of the Ozarks.",
      "city": "Lake of the Ozarks"
     },
     {
@@ -475,7 +498,7 @@ window.KJEL_BUZZ = {
      "punch": null,
      "congrats": false,
      "ts": "2026-10-15T16:23:00+00:00",
-     "line": "No, Patrick Mahomes does not have a home at Lake of the Ozarks, and his mom is the one setting the record straight.",
+     "line": "Patrick Mahomes' mom has set the record straight: the Chiefs quarterback does not have a home at Lake of the Ozarks.",
      "city": "Lake of the Ozarks"
     },
     {
@@ -496,7 +519,7 @@ window.KJEL_BUZZ = {
      "punch": null,
      "congrats": false,
      "ts": "2026-10-13T19:41:00+00:00",
-     "line": "Camdenton celebrated Homecoming with a parade and the crowning of its Homecoming royalty.",
+     "line": "Camdenton celebrated its Homecoming with a parade and the crowning of this year's Homecoming royalty.",
      "city": "Camdenton"
     },
     {
@@ -517,7 +540,7 @@ window.KJEL_BUZZ = {
      "punch": null,
      "congrats": false,
      "ts": "2026-10-13T19:00:00+00:00",
-     "line": "Lake of the Ozarks hit a new heat record on Tuesday, in the middle of October.",
+     "line": "Lake of the Ozarks hit a new heat record on Tuesday.",
      "city": "Lake of the Ozarks"
     }
    ]
@@ -526,29 +549,6 @@ window.KJEL_BUZZ = {
    "key": "music",
    "name": "Music",
    "cards": [
-    {
-     "id": "M224e21",
-     "col": "music",
-     "title": "Luke Bryan Shares Expectations for 'American Idol' Season 25",
-     "source": "Taste of Country",
-     "url": "https://tasteofcountry.com/american-idol-season-25-luke-bryan/",
-     "gn_url": null,
-     "desc": "Luke Bryan's hitting a major milestone on 'American Idol' after a full decade of judging the competition. Continue reading…",
-     "outlets": 2,
-     "also": [
-      "The Boot"
-     ],
-     "signal": "Luke Bryan: #9 on Country Airplay",
-     "score": 23.1,
-     "town": null,
-     "tier": null,
-     "kind": null,
-     "punch": null,
-     "congrats": false,
-     "ts": "2026-10-19T16:38:33+00:00",
-     "line": "Luke Bryan is hitting a major milestone on American Idol, heading into Season 25 after a full decade as a judge on the show.",
-     "city": ""
-    },
     {
      "id": "Ma0876b",
      "col": "music",
@@ -571,29 +571,31 @@ window.KJEL_BUZZ = {
      "punch": null,
      "congrats": false,
      "ts": "2026-10-19T16:28:00+00:00",
-     "line": "The Country Music Hall of Fame has inducted its class of 2026: Tim McGraw, songwriter Paul Overstreet, and the Stanley Brothers.",
-     "city": "Nashville"
+     "line": "The Country Music Hall of Fame has officially inducted its class of 2026: Tim McGraw, Paul Overstreet and The Stanley Brothers.",
+     "city": ""
     },
     {
-     "id": "M078fcd",
+     "id": "M224e21",
      "col": "music",
-     "title": "Lainey Wilson Honors Tim McGraw With Performance Of \"Just To See You Smile\" During His Country Music Hall Of Fame Induction [Watch]",
-     "source": "Country Chord",
-     "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOd1hZVk8tQWdfTWpMdWRZel9BT201X3QtOHI4eDdwMUVlRlJsN3hoMlo5RERXdWRKSGo0SmVIU3h1cU42d01kc01hZEt0V2FzSnZreTVneHJoNWZKRnZBZGVXYUVReGIyN05jd0ZsY2tiQ3hZNEhXaHU4QktzcHN5Mk02SlhGWS1mQS12cVYtZ1E5Tms1MWp4cG1aRk5XS1NPUWxsTG9fTDNzYWxlUkJDcE9RNW1Hb0NROHVLVzgteWZ0cEw2ZTRQNWVBOEd4a0twdDdLMXVOS3BDRVUyRGxVSUdqb2VsMndt?oc=5",
-     "gn_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOd1hZVk8tQWdfTWpMdWRZel9BT201X3QtOHI4eDdwMUVlRlJsN3hoMlo5RERXdWRKSGo0SmVIU3h1cU42d01kc01hZEt0V2FzSnZreTVneHJoNWZKRnZBZGVXYUVReGIyN05jd0ZsY2tiQ3hZNEhXaHU4QktzcHN5Mk02SlhGWS1mQS12cVYtZ1E5Tms1MWp4cG1aRk5XS1NPUWxsTG9fTDNzYWxlUkJDcE9RNW1Hb0NROHVLVzgteWZ0cEw2ZTRQNWVBOEd4a0twdDdLMXVOS3BDRVUyRGxVSUdqb2VsMndt?oc=5",
-     "desc": "",
-     "outlets": 1,
-     "also": [],
-     "signal": "Lainey Wilson: #14 on Country Airplay",
-     "score": 21.4,
+     "title": "Luke Bryan Shares Expectations for 'American Idol' Season 25",
+     "source": "Taste of Country",
+     "url": "https://tasteofcountry.com/american-idol-season-25-luke-bryan/",
+     "gn_url": null,
+     "desc": "Luke Bryan's hitting a major milestone on 'American Idol' after a full decade of judging the competition. Continue reading…",
+     "outlets": 2,
+     "also": [
+      "The Boot"
+     ],
+     "signal": "Luke Bryan: #9 on Country Airplay",
+     "score": 23.1,
      "town": null,
      "tier": null,
      "kind": null,
      "punch": null,
      "congrats": false,
-     "ts": "2026-10-19T15:54:55+00:00",
-     "line": "Lainey Wilson honored Tim McGraw by performing his song \"Just to See You Smile\" during his Country Music Hall of Fame induction.",
-     "city": "Nashville"
+     "ts": "2026-10-19T16:38:33+00:00",
+     "line": "Luke Bryan is hitting a big milestone on American Idol, a full decade as a judge, and he is sharing what he expects from season twenty-five.",
+     "city": ""
     },
     {
      "id": "M6e6450",
@@ -615,49 +617,7 @@ window.KJEL_BUZZ = {
      "punch": null,
      "congrats": false,
      "ts": "2026-10-18T15:40:27+00:00",
-     "line": "Ella Langley is celebrating one whole year of her massive hit \"Choosin' Texas,\" saying she is constantly and consistently amazed.",
-     "city": ""
-    },
-    {
-     "id": "Mf09831",
-     "col": "music",
-     "title": "Morgan Wallen, Garth Brooks, Taylor Swift & More Artists With Most Weeks at No. 1 on Top Country Albums Chart: Full List",
-     "source": "Billboard",
-     "url": "https://www.billboard.com/lists/top-country-albums-number-ones-biggest/",
-     "gn_url": null,
-     "desc": "Male solo artists dominate, though three female solo artists and two groups have also achieved the feat.",
-     "outlets": 1,
-     "also": [],
-     "signal": "Morgan Wallen: #2 on Country Airplay",
-     "score": 19.2,
-     "town": null,
-     "tier": null,
-     "kind": null,
-     "punch": null,
-     "congrats": false,
-     "ts": "2026-10-18T19:28:22+00:00",
-     "line": "Billboard ranked the artists with the most weeks at Number One on the Top Country Albums chart, including Morgan Wallen, Garth Brooks and Taylor Swift.",
-     "city": ""
-    },
-    {
-     "id": "Md19536",
-     "col": "music",
-     "title": "Zach Bryan Reveals Morgan Wallen & Jason Isbell Helped Changed His Mind About Nashville: “I Realized The Chip Was Mine On My Shoulder”",
-     "source": "Whiskey Riff",
-     "url": "https://www.whiskeyriff.com/2026/10/19/zach-bryan-reveals-morgan-wallen-jason-isbell-helped-changed-his-mind-about-nashville-i-realized-the-chip-was-mine-on-my-shoulder/",
-     "gn_url": null,
-     "desc": "An unlikely duo that changed his mind. It’s hard to imagine a more fascinating artist in today’s country music landscape than Zach Bryan. In a six-year span, the “Something in the Orange” singer has gone from recording his debut album, DeAnn, in a Florida Airbnb and scoring viral hits online to selling his publishing catalog for a staggering $350 million and, most notably, setting the record for t",
-     "outlets": 1,
-     "also": [],
-     "signal": "Morgan Wallen: #2 on Country Airplay",
-     "score": 19.6,
-     "town": null,
-     "tier": null,
-     "kind": null,
-     "punch": null,
-     "congrats": false,
-     "ts": "2026-10-19T15:44:49+00:00",
-     "line": "Zach Bryan revealed that Morgan Wallen and Jason Isbell helped change his mind about Nashville, admitting the chip on his shoulder was his own.",
+     "line": "Ella Langley is celebrating one full year of her massive hit Choosin' Texas, saying she is constantly and consistently amazed.",
      "city": ""
     },
     {
@@ -699,7 +659,28 @@ window.KJEL_BUZZ = {
      "punch": null,
      "congrats": false,
      "ts": "2026-10-19T12:37:36+00:00",
-     "line": "Zach Top just released two new tracks, \"Good Girls and Cowgirls\" and \"Other Side of Hurtin'.\"",
+     "line": "Zach Top has released two new songs, Good Girls and Cowgirls and Other Side of Hurtin'.",
+     "city": ""
+    },
+    {
+     "id": "Md19536",
+     "col": "music",
+     "title": "Zach Bryan Reveals Morgan Wallen & Jason Isbell Helped Changed His Mind About Nashville: “I Realized The Chip Was Mine On My Shoulder”",
+     "source": "Whiskey Riff",
+     "url": "https://www.whiskeyriff.com/2026/10/19/zach-bryan-reveals-morgan-wallen-jason-isbell-helped-changed-his-mind-about-nashville-i-realized-the-chip-was-mine-on-my-shoulder/",
+     "gn_url": null,
+     "desc": "An unlikely duo that changed his mind. It’s hard to imagine a more fascinating artist in today’s country music landscape than Zach Bryan. In a six-year span, the “Something in the Orange” singer has gone from recording his debut album, DeAnn, in a Florida Airbnb and scoring viral hits online to selling his publishing catalog for a staggering $350 million and, most notably, setting the record for t",
+     "outlets": 1,
+     "also": [],
+     "signal": "Morgan Wallen: #2 on Country Airplay",
+     "score": 19.6,
+     "town": null,
+     "tier": null,
+     "kind": null,
+     "punch": null,
+     "congrats": false,
+     "ts": "2026-10-19T15:44:49+00:00",
+     "line": "Zach Bryan says Morgan Wallen and Jason Isbell helped change his mind about Nashville, admitting the chip on his shoulder was his own.",
      "city": ""
     },
     {
@@ -720,7 +701,7 @@ window.KJEL_BUZZ = {
      "punch": null,
      "congrats": false,
      "ts": "2026-10-19T13:23:58+00:00",
-     "line": "Trace Adkins is celebrating 30 years of his album \"Dreamin' Out Loud\" with its first-ever vinyl release.",
+     "line": "Trace Adkins is celebrating thirty years of his album Dreamin' Out Loud with its first-ever vinyl release.",
      "city": ""
     },
     {
@@ -743,7 +724,28 @@ window.KJEL_BUZZ = {
      "punch": null,
      "congrats": false,
      "ts": "2026-10-19T14:05:02+00:00",
-     "line": "Vince Gill and Marty Stuart have a new album called \"Marty and Me,\" and reviewers say it is twangy and tasty from the very start.",
+     "line": "Vince Gill has a new album with Marty Stuart called Marty and Me, and reviewers say it is twangy and tasty from the very start.",
+     "city": ""
+    },
+    {
+     "id": "Ma7981f",
+     "col": "music",
+     "title": "Turnpike Troubadours To Headline Two Nights At Red Rocks In 2027",
+     "source": "Whiskey Riff",
+     "url": "https://www.whiskeyriff.com/2026/10/19/turnpike-troubadors-to-headline-two-nights-at-red-rocks-in-2027/",
+     "gn_url": null,
+     "desc": "Won’t want to miss this. It’s safe to say 2025 was arguably the biggest year to debate from the Red Dirt legends, Turnpike Troubadours. In addition to scoring massive opening spots on Cross Canadian Ragweed’s highly successful “Boys From Oklahoma” concert series, both in Stillwater, Oklahoma and Waco, Texas, the Red Dirt legends would also score appearances at Zach Bryan’s concerts over the summer",
+     "outlets": 1,
+     "also": [],
+     "signal": "",
+     "score": 15.9,
+     "town": null,
+     "tier": null,
+     "kind": null,
+     "punch": null,
+     "congrats": false,
+     "ts": "2026-10-19T16:11:33+00:00",
+     "line": "Red Dirt favorites Turnpike Troubadours will headline two nights at Red Rocks in 2027.",
      "city": ""
     }
    ]
@@ -819,23 +821,23 @@ window.KJEL_BUZZ = {
      "city": ""
     },
     {
-     "id": "Hfd9556",
+     "id": "Hd8a8cd",
      "col": "humor",
-     "title": "30 Funny Posts That Made Me Laugh Harder Than They Probably Should Have",
+     "title": "30 Wholesome Tweets For Anyone Who Needs A Little Less Internet And A Little More Nice",
      "source": "Pleated Jeans",
-     "url": "https://pleated-jeans.com/2026/10/19/funny-posts-pictures-internet/",
+     "url": "https://pleated-jeans.com/2026/10/18/wholesome-tweets-funny-feel-good-posts-10-18-26/",
      "gn_url": null,
-     "desc": "My wife will occasionally ask what I’m laughing at on my phone, and I immediately realize I don’t know how to explain it. You can’t just say, “Someone’s grandpa collects traffic cones.” There’s context. There are pictures. Now I’m walking across the room to explain it to her. Half the time, showing her works. The... The post 30 Funny Posts That Made Me Laugh Harder Than They Probably Should Have a",
+     "desc": "I like when someone gets really excited to tell me about their hobby. I might not understand it, but I’m happy they’ve found something that makes them want to talk that fast. Please continue explaining your bird feeder situation. I had no idea it could get this intricate. I’d love to get through one day... The post 30 Wholesome Tweets For Anyone Who Needs A Little Less Internet And A Little More N",
      "outlets": 1,
      "also": [],
      "signal": "",
-     "score": 51.91395727155093,
+     "score": 51.09624893821759,
      "town": null,
      "tier": null,
      "kind": "list",
      "punch": null,
      "congrats": false,
-     "ts": "2026-10-19T14:50:25+00:00",
+     "ts": "2026-10-18T19:12:55+00:00",
      "line": "",
      "city": ""
     }
