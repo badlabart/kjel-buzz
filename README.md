@@ -13,6 +13,11 @@ Double-click `index.html`. No server needed.
 2. Claude picks about 10 per column from the shortlist and writes `data/picks.json`.
 3. `python3 -I scripts/build.py` — swaps Google News links for publisher links where Google allows, writes `data/buzz.js`, `index.html`, `docs/index.html`, `music_search.js`, and records which jokes ran.
 
+## Music column
+- Concert cards (top): Country Airplay top-40 artists playing Camdenton, Osage Beach, Springfield or Branson first, then Kansas City and St. Louis. Found on AllEvents city pages (each page shows only its first ~10 events, so some shows are missed). Saved in `data/concerts.json`; each stays until the show date passes. The card names the whole bill.
+- News cards: kept in `data/music_board.json` up to 30 days, about 30 at a time. Each morning adds 5-15 new ones; `music_drop` in picks.json replaces an older card with a better or more local one.
+- Top-40 artist stories tied to our area (tour stops, sightings, local ties) are searched 30 days back and tagged NEAR US or KC/STL.
+
 ## Music search
 - KEPT forever: any music story naming an artist or quoting a song in the Billboard Country Airplay top 40 that day (`data/music_archive.json`). Tagged TOP 40.
 - Everything else: searchable only until the next refresh replaces it (`data/music_recent.json`).

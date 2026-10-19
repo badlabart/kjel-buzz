@@ -14,22 +14,30 @@
    "congrats": false
   },
   {
-   "id": "N58fb48",
-   "line": "A kitten stuck in a drain pipe was rescued with help from a remote-controlled R2-D2 crawler.",
-   "city": "",
-   "congrats": false
-  },
-  {
    "id": "N97ea13",
    "line": "A Knicks fan's hilarious Halloween display featuring Taylor Swift and Timothee Chalamet has gone viral.",
    "city": "",
    "congrats": false
   },
   {
-   "id": "N62f256",
-   "line": "Gen Xers are sharing the nostalgic dishes they ate growing up and still make for dinner, from sloppy joes to pizza bread.",
-   "city": "",
-   "congrats": false
+   "id": "N267549",
+   "line": "Taylor Swift snapped and clapped with her wedding ring on full display as she danced at Sunday's Chiefs game.",
+   "city": ""
+  },
+  {
+   "id": "N51df8a",
+   "line": "A dog has been reunited with its family after spending a month lost in Yellowstone.",
+   "city": "Yellowstone"
+  },
+  {
+   "id": "N050645",
+   "line": "The 2026 Dog Photography Awards named 18 finalists, and the top trophy went to a photographer named Caldwell for championing bully breeds like pit bulls.",
+   "city": ""
+  },
+  {
+   "id": "N070fa2",
+   "line": "A comedian perfectly captured the mysterious joy of checking the pockets of an old winter coat for the first time.",
+   "city": ""
   }
  ],
  "local": [
@@ -290,38 +298,78 @@
  ],
  "music": [
   {
-   "id": "M224e21",
-   "line": "Luke Bryan is hitting a big milestone on American Idol, a full decade as a judge, and he is sharing what he expects from season twenty-five.",
+   "id": "M972f2f",
+   "line": "Morgan Wallen's Sand In My Boots festival is reportedly set to return in 2027.",
    "city": ""
   },
   {
-   "id": "M57a6ee",
-   "line": "Megan Moroney made country music history by performing at the Victoria's Secret Fashion Show.",
+   "id": "M639875",
+   "line": "Tim McGraw fought back tears honoring his mom, Faith Hill and their daughters in his Hall of Fame speech, joking, 'There's a lot of estrogen in my house.'",
+   "city": ""
+  },
+  {
+   "id": "Mbbab88",
+   "line": "Lainey Wilson performed in Tim McGraw's honor at his Country Music Hall of Fame ceremony and talked about a letter she wrote him when she was 18.",
+   "city": ""
+  },
+  {
+   "id": "M584219",
+   "line": "Megan Moroney became the first country singer to wear Victoria's Secret Angel wings.",
+   "city": ""
+  },
+  {
+   "id": "M224e21",
+   "line": "Luke Bryan is sharing what he expects from American Idol's 25th season, a decade after he started judging the show.",
+   "city": ""
+  },
+  {
+   "id": "M404833",
+   "line": "One year after its release, Ella Langley says she is still constantly and consistently amazed by her hit 'Choosin' Texas.'",
    "city": ""
   },
   {
    "id": "M4f6aac",
-   "line": "Zach Top has released two new songs, Good Girls and Cowgirls and Other Side of Hurtin'.",
+   "line": "Zach Top has released two new tracks, 'Good Girls and Cowgirls' and 'Other Side of Hurtin'.'",
    "city": ""
   },
   {
-   "id": "Md19536",
-   "line": "Zach Bryan says Morgan Wallen and Jason Isbell helped change his mind about Nashville, admitting the chip on his shoulder was his own.",
+   "id": "M496efa",
+   "line": "Toby Keith's 'Red Solo Cup' turned a plastic cup into a party anthem, and the song's success created real problems for the company that makes them.",
+   "city": ""
+  },
+  {
+   "id": "Mf09831",
+   "line": "Morgan Wallen, Garth Brooks and Taylor Swift are among the artists with the most weeks at No. 1 on Billboard's Top Country Albums chart.",
    "city": ""
   },
   {
    "id": "M2268ca",
-   "line": "Trace Adkins is celebrating thirty years of his album Dreamin' Out Loud with its first-ever vinyl release.",
+   "line": "Trace Adkins is celebrating 30 years of his 'Dreamin' Out Loud' album with its first-ever vinyl release.",
+   "city": ""
+  },
+  {
+   "id": "M914c3b",
+   "line": "Morgan Wallen is curating his own 24-hour SiriusXM channel called Morgan Wallen Radio.",
+   "city": ""
+  },
+  {
+   "id": "M0329ed",
+   "line": "Zach Bryan credits Evan Felker and Jason Isbell with inspiring him to get sober.",
+   "city": ""
+  },
+  {
+   "id": "M5968a4",
+   "line": "Kip Moore brought out a local youth choir in South Africa for a moving performance of 'Faith in the Wind.'",
+   "city": "South Africa"
+  },
+  {
+   "id": "M7c3797",
+   "line": "The new Street Fighter movie gave the masked role of Vega to a country star who has never shown his face onstage.",
    "city": ""
   },
   {
    "id": "M0f13d5",
-   "line": "Vince Gill has a new album with Marty Stuart called Marty and Me, and reviewers say it is twangy and tasty from the very start.",
-   "city": ""
-  },
-  {
-   "id": "Ma7981f",
-   "line": "Red Dirt favorites Turnpike Troubadours will headline two nights at Red Rocks in 2027.",
+   "line": "Vince Gill and Marty Stuart teamed up on a new album, 'Marty and Me,' that Saving Country Music calls twangy and tasty.",
    "city": ""
   }
  ],
@@ -332,12 +380,17 @@
    "city": ""
   },
   {
+   "id": "H194914",
+   "line": "",
+   "city": ""
+  },
+  {
    "id": "Hba7911",
    "line": "",
    "city": ""
   },
   {
-   "id": "H7bc769",
+   "id": "H9fc5db",
    "line": "",
    "city": ""
   },
@@ -356,5 +409,6 @@
    "line": "",
    "city": ""
   }
- ]
+ ],
+ "music_drop": []
 }

@@ -1,0 +1,26 @@
+[
+ {
+  "key": "zach john king|2026-10-23|morton amphitheater",
+  "artist": "Zach John King",
+  "rank": 6,
+  "event": "Thomas Rhett, Zach John King, Emily Ann Roberts in Kansas City",
+  "venue": "Morton Amphitheater",
+  "city": "Kansas City",
+  "tier": 2,
+  "date": "2026-10-23",
+  "url": "https://allevents.in/kansas-city/thomas-rhett-zach-john-king-emily-ann-roberts-in-kansas-city/3300029961521736",
+  "first_seen": "2026-10-19"
+ },
+ {
+  "key": "kenny chesney|2027-05-15|america's center & the dome",
+  "artist": "Kenny Chesney",
+  "rank": 11,
+  "event": "Kenny Chesney: The Original Vibe Room Tour with Eric Church",
+  "venue": "America's Center & The Dome",
+  "city": "St. Louis",
+  "tier": 2,
+  "date": "2027-05-15",
+  "url": "https://allevents.in/st-louis/kenny-chesney-the-original-vibe-room-tour-with-eric-church/200030789697020",
+  "first_seen": "2026-10-19"
+ }
+]

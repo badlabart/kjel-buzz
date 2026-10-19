@@ -31,7 +31,7 @@ FRESH_HOURS = {"national": 48, "music": 48, "local": 24 * 7, "weird": 24 * 14}
 WEIRD_AWAY_HOURS = 48  # Morning News Only: listening-area stories may be 14 days old, everything else 48 hours
 LEBANON_FRESH_HOURS = 24 * 14  # Lebanon stories are scarce, so they get two weeks
 CONGRATS_FRESH_HOURS = {0: 24 * 21, 1: 24 * 14}  # congratulations stay sayable longer: Lebanon 3 weeks, core area 2
-SHORT = {"national": 30, "music": 30, "local": 80, "weird": 80}
+SHORT = {"national": 30, "music": 40, "local": 80, "weird": 80}
 # Things a jock can congratulate a local person, team, school or business for.
 CONGRATS = re.compile(
     r"\b(awards?|awarded|honou?r(s|ed|ee)?|named|recogni[sz]\w*|scholarships?|dean'?s list|president'?s list|"
@@ -579,6 +579,8 @@ def score(it, wiki, chart):
             a, r = hit
             s += 6 + (40 - r) / 10
             signals.append(f"{a}: #{r} on Country Airplay")
+        if it.get("near"):
+            s += 12 if it["near"] == 1 else 6
     s += min(9, 3 * len(set(m.group(0).lower() for m in FUN.finditer(blob))))
     s -= 6 * len(set(m.group(0).lower() for m in DOWNER.finditer(it["title"])))
     if it["source"] in ("UPI Odd News", "Good News Network", "Upworthy"):
@@ -710,17 +712,21 @@ def main():
     import community
     raw += community.collect(sys.modules[__name__])
     wiki, chart = wikipedia_top(), country_airplay()
+    import concerts
+    shows = concerts.find_concerts(sys.modules[__name__], chart[0])
+    raw += concerts.area_news(sys.modules[__name__], chart[0])
 
     # Music archive works from every music story, before the board's downer/gossip filters.
     music_all = [dict(it) for it in raw if it["col"] == "music" and it["title"]
-                 and (NOW - it["ts"]).total_seconds() <= FRESH_HOURS["music"] * 3600
+                 and (NOW - it["ts"]).total_seconds() <= (24 * 30 if it.get("near") else FRESH_HOURS["music"]) * 3600
                  and not JUNK.search(f'{it["title"]} | {it["source"]}') and not SPAM.search(it["title"])]
     arch_added, arch_total, recent_n = update_music_archive(cluster(music_all), *chart)
 
     kept, dropped = [], {}
     for it in raw:
         age_h = (NOW - it["ts"]).total_seconds() / 3600
-        limit = CONGRATS_FRESH_HOURS[0] if it["col"] == "local" else FRESH_HOURS[it["col"]]
+        limit = (CONGRATS_FRESH_HOURS[0] if it["col"] == "local" else 24 * 30 if it.get("near")
+                 else FRESH_HOURS[it["col"]])
         if age_h > limit or not it["title"]:
             continue
         why = blocked(it["col"], it["title"], it["desc"], it["source"])
@@ -777,6 +783,8 @@ def main():
                 per_src[i["source"]] = per_src.get(i["source"], 0) + 1
         if col == "local":  # every Lebanon item that survived the filters goes to Claude
             pick += [i for i in rows if i["tier"] == 0 and i not in pick]
+        if col == "music":  # every top-40 artist story tied to our area goes to Claude
+            pick += [i for i in rows if i.get("near") and i not in pick]
         if col == "weird":  # every listening-area weird story goes to Claude
             pick += [i for i in rows if i["scope"] == "local" and i not in pick]
         short += pick
@@ -797,12 +805,20 @@ def main():
     pool = []
     for i in short:
         pool.append({k: i.get(k) for k in ("id", "col", "title", "source", "url", "gn_url", "desc", "outlets", "also",
-                                           "signal", "score", "town", "tier", "kind", "punch", "congrats", "scope")} | {"ts": i["ts"].isoformat()})
+                                           "signal", "score", "town", "tier", "kind", "punch", "congrats", "scope", "near")} | {"ts": i["ts"].isoformat()})
     (DATA / "pool.json").write_text(json.dumps({"collected": NOW.isoformat(), "items": pool}, indent=1, ensure_ascii=False))
 
     print(f"raw {len(raw)} | kept {len(kept)} | stories {len(items)} | shortlist {len(pool)} | dropped {dropped}")
     print(f"music archive: +{arch_added} top-40 stories kept (total {arch_total}) | {recent_n} other music stories searchable until replaced")
     print(f"humor: {len(jokes)} jokes pass the filters | {len(lists)} roundups")
+    board_path = DATA / "music_board.json"
+    board = json.loads(board_path.read_text()) if board_path.exists() else []
+    print(f"music cards already up (kept up to 30 days; replace one by listing its id in music_drop): {len(board)}")
+    for b in board:
+        print(f'   UP | {b["id"]} | added {b["added"]} | {"NEAR US" if b.get("near") == 1 else "KC/STL" if b.get("near") == 2 else "-"} | {b["line"][:110]}')
+    print(f"concerts found (top-40 artists, nearest first): {len(shows)}")
+    for sh in shows:
+        print(f'   CONCERT | tier {sh["tier"]} | {sh["date"]} | {sh["artist"]} (#{sh["rank"]}) | {sh["venue"]}, {sh["city"]} | {sh["event"][:70]}')
     print("FAILED: " + (", ".join(FAILED) if FAILED else "none"))
     for col in ("national", "local", "music", "humor", "weird"):
         print(f"\n=== {'MORNING NEWS ONLY' if col == 'weird' else col.upper()}")
@@ -811,7 +827,8 @@ def main():
             age = f"{age:.0f}h" if age < 48 else f"{age / 24:.0f}d"
             where = (f' [{i["town"]}{"*" if i["tier"] == 0 else ""}]{" CONGRATS?" if i.get("congrats") else ""}'
                      if col == "local" else
-                     f' [{"LOCAL " + (i["town"] or "") if i["scope"] == "local" else i["scope"].upper()}]' if col == "weird" else "")
+                     f' [{"LOCAL " + (i["town"] or "") if i["scope"] == "local" else i["scope"].upper()}]' if col == "weird" else
+                     f' [{"NEAR US" if i["near"] == 1 else "KC/STL"}]' if col == "music" and i.get("near") else "")
             if i.get("kind") == "joke":
                 print(f'{i["id"]} | {age} | {i["source"]} | {i["signal"]} | JOKE: {i["title"]} / {i["punch"]}')
             else:
