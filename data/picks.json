@@ -1,504 +1,454 @@
 {
- "made": "2026-10-19",
+ "made": "2026-10-20",
  "national": [
   {
-   "id": "N8b3693",
-   "line": "In South Carolina, children's goodbye letters for a senior dog went viral and helped get him adopted.",
-   "city": "South Carolina",
-   "congrats": false
-  },
-  {
    "id": "N565b3b",
-   "line": "A tiny black cat found stuck in a car engine brought unexpected joy to a Sandy Springs, Georgia, couple whose wedding anniversary falls on Halloween.",
-   "city": "Sandy Springs, Ga.",
-   "congrats": false
-  },
-  {
-   "id": "N97ea13",
-   "line": "A Knicks fan's hilarious Halloween display featuring Taylor Swift and Timothee Chalamet has gone viral.",
-   "city": "",
-   "congrats": false
-  },
-  {
-   "id": "N267549",
-   "line": "Taylor Swift snapped and clapped with her wedding ring on full display as she danced at Sunday's Chiefs game.",
-   "city": ""
+   "line": "A high school teacher in Sandy Springs, Georgia, found a tiny black cat stuck in her car engine on the way to work, and it turned into a surprise gift right before her Halloween wedding anniversary.",
+   "city": "Sandy Springs, Ga."
   },
   {
    "id": "N050645",
-   "line": "The 2026 Dog Photography Awards named 18 finalists, and the top trophy went to a photographer named Caldwell for championing bully breeds like pit bulls.",
+   "line": "The 2026 Dog Photography Awards named 18 finalists, and a photographer named Caldwell took home a trophy for a photo championing bully breeds like the pit bull.",
    "city": ""
   },
   {
-   "id": "N070fa2",
-   "line": "A comedian perfectly captured the mysterious joy of checking the pockets of an old winter coat for the first time.",
+   "id": "Nb642f4",
+   "line": "Tom Petty was born 76 years ago today in Gainesville, Florida, and as an 11-year-old he met Elvis Presley, the moment that sparked his love of rock and roll.",
+   "city": "Gainesville, Fla."
+  },
+  {
+   "id": "N77abbb",
+   "line": "A sixth grader's science experiment set out to answer a question nobody knew they needed answered: whether a cat's backside really touches every surface it sits on.",
    "city": ""
+  },
+  {
+   "id": "Neff957",
+   "line": "Couples therapists say the simple move that cools down almost any argument is one person being willing to go first, because most fights do not actually need a winner.",
+   "city": ""
+  },
+  {
+   "id": "Nc697e6",
+   "line": "A dog in New Hampshire went viral zooming through big piles of leaves as the fall colors there hit their peak.",
+   "city": "New Hampshire"
+  },
+  {
+   "id": "Nff0cf7",
+   "line": "Walmart is rolling out a new membership bundle that combines Walmart Plus and Sam's Club Plus into one package.",
+   "city": ""
+  },
+  {
+   "id": "N8d5635",
+   "line": "Rescuers in Florida pulled a dog out of a sinkhole, and the pup made it out safe.",
+   "city": "Florida"
   }
  ],
- "local": [
-  {
-   "id": "Lb75d94",
-   "line": "Lebanon Schools' Hive Depot is providing essential resources and learning opportunities for Lebanon students.",
-   "city": "Lebanon"
-  },
-  {
-   "id": "Lf2fb5a",
-   "line": "Osage Beach has a new city administrator, Keith Klostermann, a 30-year educator who spent time with the Orchard Farm School District.",
-   "city": "Osage Beach"
-  },
-  {
-   "id": "Lc00021",
-   "line": "A neighboring church stepped in and built a ramp for a Lebanon woman living with a rare condition called Ehlers-Danlos Syndrome, to make her daily life easier.",
-   "city": "Lebanon"
-  },
-  {
-   "id": "L1e6a22",
-   "line": "A group called Shine Through Faith is bringing helping hands to Marshfield, from mowing yards to picking up groceries for elderly neighbors.",
-   "city": "Marshfield"
-  },
-  {
-   "id": "La6e69f",
-   "line": "The City of Lebanon has gone back to the drawing board with another new city logo, paired with a new slogan: 'Build your journey here.'",
-   "city": "Lebanon"
-  },
-  {
-   "id": "L53d98a",
-   "line": "Nearly 2,300 boaters turned out for a sunny Fall Harbor Hop at Lake of the Ozarks to celebrate the end of another season.",
-   "city": "Lake of the Ozarks"
-  },
-  {
-   "id": "L9d9732",
-   "line": "The Joel E. Barber C-5 School District is considering building a high school addition onto its existing building.",
-   "city": "Laclede County"
-  },
-  {
-   "id": "L3566dc",
-   "line": "Sixty years ago this week, Mrs. Jimmie Hayes of Buffalo showed off an unusual two-headed lizard she found, according to the Buffalo Reflex's look back at Dallas County history.",
-   "city": "Buffalo"
-  },
-  {
-   "id": "L73994b",
-   "line": "Residents of Colonial Springs Healthcare Center in Buffalo competed at Bolivar's Golden Age Games on October 9th.",
-   "city": "Buffalo"
-  },
-  {
-   "id": "L25252f",
-   "line": "Fall is prime time for white bass at Lake of the Ozarks, as the fish push into the shallows chasing shad.",
-   "city": "Lake of the Ozarks"
-  }
- ],
- "weird": [
-  {
-   "id": "W5cd73f",
-   "line": "On his very first time snagging, a man from Olathe, Kansas, reeled in a world-record 164-pound paddlefish at Lake of the Ozarks.",
-   "city": "Lake of the Ozarks",
-   "congrats": false
-  },
-  {
-   "id": "W2023c6",
-   "line": "Biologists netted a 70-pound lake sturgeon below a Missouri River dam and found a tag the size of a grain of rice showing it had swum 681 miles upstream in nine years.",
-   "city": "Missouri",
-   "congrats": false
-  },
-  {
-   "id": "W8fd579",
-   "line": "Florida police got a call about a 'pedestrian' blocking traffic, and it turned out to be an alligator.",
-   "city": "Florida",
-   "congrats": false
-  },
-  {
-   "id": "W516b55",
-   "line": "A black bear was caught on camera boxing a punching bag on a Southern California patio like a seasoned pro.",
-   "city": "Southern California",
-   "congrats": false
-  },
-  {
-   "id": "Waba78a",
-   "line": "An emu that ran away from its owner was caught on video giving sheriff's deputies the slip.",
-   "city": "",
-   "congrats": false
-  },
-  {
-   "id": "W95e62b",
-   "line": "A cow that escaped from a California slaughterhouse truck got a new life at a sanctuary with help from Diane Warren.",
-   "city": "California",
-   "congrats": false
-  },
-  {
-   "id": "W3a906b",
-   "line": "A tiny dog played the drums in an 'Angine de Pawtrine' tribute costume at New York City's annual Tompkins Square Halloween Dog Parade.",
-   "city": "New York City",
-   "congrats": false
-  },
-  {
-   "id": "W884a7d",
-   "line": "A 61-year-old grandmother of 12 just broke her own world record by holding a plank for five hours.",
-   "city": "",
-   "congrats": false
-  },
-  {
-   "id": "W6212fb",
-   "line": "A woman bought a bizarre set of porcelain objects at a thrift store, and nobody seems to know what they're for.",
-   "city": "",
-   "congrats": false
-  },
-  {
-   "id": "Wb6116c",
-   "line": "A 6-year-old in Nebraska discovered a rare 200-million-year-old fossil of a jellyfish-like sea creature.",
-   "city": "Nebraska",
-   "congrats": false
-  },
-  {
-   "id": "W7d4692",
-   "line": "Cartoonist Matthew Inman of The Oatmeal built 'Grimothy,' a giant evil version of Jimothy, Seattle's viral raccoon, in his brother's front yard for Halloween.",
-   "city": "",
-   "congrats": false
-  },
-  {
-   "id": "Wc4f4fe",
-   "line": "A cow in Hillsborough County, Florida, spent eight hours stuck in the mud of Boat Bayou before it was rescued.",
-   "city": "Hillsborough County, Fla.",
-   "congrats": false
-  },
-  {
-   "id": "Wfc8175",
-   "line": "There's a new heaviest pumpkin in the world, and the champion grower is American.",
-   "city": "",
-   "congrats": false
-  },
-  {
-   "id": "W9c5989",
-   "line": "An Ohio mare set a world record for the longest horse tail.",
-   "city": "Ohio",
-   "congrats": false
-  },
-  {
-   "id": "W3e7a01",
-   "line": "Scientists identified a new dinosaur species from a fossil that sat stashed in a drawer for a century.",
-   "city": "",
-   "congrats": false
-  },
-  {
-   "id": "W6d75d4",
-   "line": "A 10,000-year-old fossilized mastodon was found in a creek.",
-   "city": "",
-   "congrats": false
-  },
-  {
-   "id": "Wb26ad9",
-   "line": "Scientists found a bizarre insect from the age of the dinosaurs that had a mouth twice the length of its body.",
-   "city": "",
-   "congrats": false
-  },
-  {
-   "id": "Wb09d7b",
-   "line": "A rare fossil of a T. rex cousin is on display in New York before it heads to auction.",
-   "city": "New York",
-   "congrats": false
-  },
-  {
-   "id": "Wd5cad7",
-   "line": "A Colorado community is raising money for its firefighters with help from Goldie the goat.",
-   "city": "Colorado",
-   "congrats": false
-  },
-  {
-   "id": "Wb86b27",
-   "line": "Boeing has explained the mysterious object people spotted being hauled along North Lindbergh.",
-   "city": "",
-   "congrats": false
-  },
-  {
-   "id": "Wd48bd4",
-   "line": "West Virginia turns out to hold plenty of strange and fun Guinness World Records.",
-   "city": "West Virginia",
-   "congrats": false
-  }
- ],
- "music": [
-  {
-   "id": "M972f2f",
-   "line": "Morgan Wallen's Sand In My Boots festival is reportedly set to return in 2027.",
-   "city": ""
-  },
-  {
-   "id": "M639875",
-   "line": "Tim McGraw fought back tears honoring his mom, Faith Hill and their daughters in his Hall of Fame speech, joking, 'There's a lot of estrogen in my house.'",
-   "city": ""
-  },
-  {
-   "id": "Mbbab88",
-   "line": "Lainey Wilson performed in Tim McGraw's honor at his Country Music Hall of Fame ceremony and talked about a letter she wrote him when she was 18.",
-   "city": ""
-  },
-  {
-   "id": "M584219",
-   "line": "Megan Moroney became the first country singer to wear Victoria's Secret Angel wings.",
-   "city": ""
-  },
-  {
-   "id": "M224e21",
-   "line": "Luke Bryan is sharing what he expects from American Idol's 25th season, a decade after he started judging the show.",
-   "city": ""
-  },
-  {
-   "id": "M404833",
-   "line": "One year after its release, Ella Langley says she is still constantly and consistently amazed by her hit 'Choosin' Texas.'",
-   "city": ""
-  },
-  {
-   "id": "M4f6aac",
-   "line": "Zach Top has released two new tracks, 'Good Girls and Cowgirls' and 'Other Side of Hurtin'.'",
-   "city": ""
-  },
-  {
-   "id": "M496efa",
-   "line": "Toby Keith's 'Red Solo Cup' turned a plastic cup into a party anthem, and the song's success created real problems for the company that makes them.",
-   "city": ""
-  },
-  {
-   "id": "Mf09831",
-   "line": "Morgan Wallen, Garth Brooks and Taylor Swift are among the artists with the most weeks at No. 1 on Billboard's Top Country Albums chart.",
-   "city": ""
-  },
-  {
-   "id": "M2268ca",
-   "line": "Trace Adkins is celebrating 30 years of his 'Dreamin' Out Loud' album with its first-ever vinyl release.",
-   "city": ""
-  },
-  {
-   "id": "M914c3b",
-   "line": "Morgan Wallen is curating his own 24-hour SiriusXM channel called Morgan Wallen Radio.",
-   "city": ""
-  },
-  {
-   "id": "M0329ed",
-   "line": "Zach Bryan credits Evan Felker and Jason Isbell with inspiring him to get sober.",
-   "city": ""
-  },
-  {
-   "id": "M5968a4",
-   "line": "Kip Moore brought out a local youth choir in South Africa for a moving performance of 'Faith in the Wind.'",
-   "city": "South Africa"
-  },
-  {
-   "id": "M7c3797",
-   "line": "The new Street Fighter movie gave the masked role of Vega to a country star who has never shown his face onstage.",
-   "city": ""
-  },
-  {
-   "id": "M0f13d5",
-   "line": "Vince Gill and Marty Stuart teamed up on a new album, 'Marty and Me,' that Saving Country Music calls twangy and tasty.",
-   "city": ""
-  }
- ],
- "humor": [
-  {
-   "id": "H0d0ca9",
-   "label": "Today Is",
-   "line": "It's International Adjust Your Chair Day, the one holiday you can celebrate at your desk with a single lever and a deeply satisfying 'pssshhh.'",
-   "city": ""
-  },
-  {
-   "id": "H7ade4c",
-   "label": "Viral",
-   "line": "A TikToker got asked for an 18 percent tip at an airport self-checkout after buying a bottle of water, so apparently we now tip ourselves for doing our own shopping.",
-   "city": ""
-  },
-  {
-   "id": "H467d97",
-   "label": "Today Is",
-   "line": "It's Dress Like a Dork Day, so if your spouse already said 'You're not wearing that,' congratulations, you're celebrating correctly.",
-   "city": ""
-  },
-  {
-   "id": "H243bcd",
-   "label": "Satire",
-   "line": "From The Onion: 'I'll need a gift receipt,' lies man buying a $270 Lord of the Rings Lego set.",
-   "city": ""
-  },
-  {
-   "id": "He76113",
-   "label": "One-Liner",
-   "line": "My wife is really mad that I have no sense of direction, so I packed up my stuff and right.",
-   "city": ""
-  },
-  {
-   "id": "He7d3a9",
-   "label": "Viral",
-   "line": "A husband moved his mom into his wife's craft room for six weeks of knee recovery, so his wife moved into his game room, which is just fair real estate.",
-   "city": ""
-  },
-  {
-   "id": "Hdeba58",
-   "label": "Today Is",
-   "line": "It's Evaluate Your Life Day, which sounds deep until you realize most of us are only going to evaluate what's for lunch.",
-   "city": ""
-  },
-  {
-   "id": "H951ff4",
-   "label": "Viral",
-   "line": "Bodybuilder Ronnie Coleman explaining that everybody thought he was eating French fries is TikTok's newest meme, and honestly, same, Ronnie.",
-   "city": ""
-  },
-  {
-   "id": "H6bb4f7",
-   "label": "One-Liner",
-   "line": "James Hetfield left Metallica to become a priest at the Jim Henson Company. He's now a Pastor of Muppets.",
-   "city": ""
-  },
-  {
-   "id": "H26a378",
-   "label": "Satire",
-   "line": "From The Onion: Weird Cleveland Browns fan has no children on the team, because why else would anyone go on purpose?",
-   "city": ""
-  },
-  {
-   "id": "H234f46",
-   "label": "Today Is",
-   "line": "It's National Clean Your Virtual Desktop Day, so go ahead and finally delete the file named Final, Final, Version Seven, Really Final.",
-   "city": ""
-  },
-  {
-   "id": "H0e4a12",
-   "label": "Viral",
-   "line": "A TikTok server says a teenager struggled to count back change, and now the internet is debating whether schools still teach math or just tapping a phone.",
-   "city": ""
-  },
-  {
-   "id": "Hcbf5fd",
-   "label": "Today Is",
-   "line": "It's New Friends Day, the perfect excuse to finally learn the name of the neighbor you've been waving at for six years.",
-   "city": ""
-  },
-  {
-   "id": "H806f6a",
-   "label": "Viral",
-   "line": "The Babydoll Dance is TikTok's two-step of the month, which means every parent in the Ozarks is about to be asked to film it 47 times.",
-   "city": ""
-  },
-  {
-   "id": "H194914",
-   "label": "One-Liner",
-   "line": "What do you call a criminal landing an airplane? Condescending.",
-   "city": ""
-  },
-  {
-   "id": "H56014b",
-   "label": "Satire",
-   "line": "From The Onion: Poll finds a majority of Americans still go bonkers for amber waves of grain.",
-   "city": ""
-  }
- ],
- "music_drop": [],
  "pride": [
   {
-   "id": "L68a64a",
-   "label": "All-District Tennis",
-   "line": "Lilly Bradbury, Ava Johnson and Carli Alford, from Lebanon High School, earned All-District honors earlier this month with fourth-place finishes in singles and doubles.",
+   "id": "La6f4f1",
+   "label": "National Award",
+   "line": "Lebanon R-3 Schools has earned a National Meritorious Budget Award.",
+   "city": "Lebanon"
+  },
+  {
+   "id": "Lf3ee85",
+   "label": "New Coach",
+   "line": "Brittany Stamm has been named the new head girls basketball coach for Lebanon R-3 Schools.",
+   "city": "Lebanon"
+  },
+  {
+   "id": "L02a661",
+   "label": "New Coach",
+   "line": "Kalem Copling has been named the new head boys basketball coach for Lebanon R-3 Schools.",
+   "city": "Lebanon"
+  },
+  {
+   "id": "L584d8b",
+   "label": "Grand Opening",
+   "line": "Lebanon R-3 Schools celebrated the opening of its new Robert W. Plaster Center for Student Success.",
+   "city": "Lebanon"
+  },
+  {
+   "id": "L5817be",
+   "label": "Band Honors",
+   "line": "The Lebanon Jackets placed at the Valhalla Marching Festival.",
    "city": "Lebanon"
   },
   {
    "id": "L7873cc",
    "label": "World Food Champs",
-   "line": "Molly McDermitt, Cycila Keeney and Samantha Etheridge, from the Waynesville Career Center, reached the finals of the World Food Championships in Indianapolis on Oct. 18 with their Bacon Lover's Christmas dish.",
+   "line": "Molly McDermitt, Cycila Keeney and Samantha Etheridge, culinary arts students from the Waynesville Career Center under Chef Jon Dye, competed in the finals of the World Food Championships in Indianapolis on Oct. 18 with a dish called Bacon Lover's Christmas.",
    "city": "Waynesville"
-  },
-  {
-   "id": "La6f4f1",
-   "label": "National Budget Award",
-   "line": "The Lebanon R-3 School District earned a national Meritorious Budget Award.",
-   "city": "Lebanon"
   },
   {
    "id": "L653bb1",
    "label": "Student of the Month",
-   "line": "Christina Smithey, a senior at Waynesville High School, was named Rotary Student of the Month for October at the Oct. 13 Rotary Club of Pulaski County meeting.",
+   "line": "Christina Smithey, a senior at Waynesville High School, was named the Rotary Student of the Month for October, recognized at the Oct. 13 Rotary Club of Pulaski County meeting for her blood drives and community service.",
    "city": "Waynesville"
-  },
-  {
-   "id": "Lf3ee85",
-   "label": "New Coach",
-   "line": "Brittany Stamm, from Lebanon Schools, is the new head girls basketball coach.",
-   "city": "Lebanon"
   },
   {
    "id": "Lb402b0",
    "label": "District Band",
-   "line": "Payton Rushing, Ericah Njuguna, Tyler Silbanuz, Ethan Schacke, Ethan Schnacke, Vivien Lu, Zoe Striplin, Alexzander Romans, Myra (Archer) Gutierrez, Aliyah Bowers, Kevin Connor, Aiden York, Jenna Ballard, Juliet Piper, Matthew Hinton, Mikaila Knight, Haley Brown, Landon Boswell, Harley Atchison, Zayden Fikes, Ayuko Kileleman, Connor Reith, Dim Nuam and Ulysses Gonzales, from Waynesville High School, made the Central District Band and Jazz Band after Oct. 13 auditions at Rolla High School.",
+   "line": "Payton Rushing, Ericah Njuguna, Tyler Silbanuz, Ethan Schnacke, Vivien Lu, Zoe Striplin, Alexzander Romans, Myra Archer Gutierrez, Aliyah Bowers, Kevin Connor, Aiden York, Jenna Ballard, Juliet Piper, Matthew Hinton, Mikaila Knight, Haley Brown, Landon Boswell, Harley Atchison and Zayden Fikes, from Waynesville High School, made the Central District Band after auditions at Rolla High School on Oct. 13.",
    "city": "Waynesville"
-  },
-  {
-   "id": "L02a661",
-   "label": "New Coach",
-   "line": "Kalem Copling, from Lebanon Schools, is the new head boys basketball coach.",
-   "city": "Lebanon"
   },
   {
    "id": "L172777",
-   "label": "Marching Band Award",
-   "line": "The Tiger Pride Marching Band, from Waynesville High School, took third place overall and the Outstanding Winds Award at the Valhalla Marching Band Festival in Springfield on Oct. 3.",
+   "label": "Band Award",
+   "line": "The Waynesville High School Tiger Pride Marching Band took third place overall and the Outstanding Winds Award for the highest music score at the Valhalla Marching Band Festival in Springfield on Oct. 3.",
    "city": "Waynesville"
-  },
-  {
-   "id": "L5817be",
-   "label": "Marching Festival",
-   "line": "The Marching Yellowjackets, from Lebanon High School, placed at the Valhalla Marching Festival.",
-   "city": "Lebanon"
-  },
-  {
-   "id": "Lafb979",
-   "label": "100 Years in Business",
-   "line": "Marshfield Chevrolet, from Marshfield, is celebrating 100 years of serving the community with a two-day anniversary celebration.",
-   "city": "Marshfield"
-  },
-  {
-   "id": "L584d8b",
-   "label": "Grand Opening",
-   "line": "Lebanon Schools opened its new Robert W. Plaster Center for Student Success.",
-   "city": "Lebanon"
-  },
-  {
-   "id": "L423753",
-   "label": "New Troopers",
-   "line": "Ashton G. Wise, a 2022 Camdenton High School graduate, and Erin K. Bock graduated Oct. 16 in the Missouri State Highway Patrol's 126th Recruit Class and are assigned to Camden and Miller counties.",
-   "city": "Camdenton"
-  },
-  {
-   "id": "Lce8cf3",
-   "label": "Football Win",
-   "line": "The Camdenton Lakers beat Capital City in Week 8 on a go-ahead touchdown run by Michael Maschino.",
-   "city": "Camdenton"
   },
   {
    "id": "L536192",
    "label": "Teacher Shout-Out",
-   "line": "Michael McGuire, from Wood Elementary in Waynesville, is this week's Teacher Proud Tuesday shout-out.",
+   "line": "Michael McGuire, a teacher at Wood Elementary, got this week's Teacher Proud Tuesday shout-out from the Waynesville R-6 School District.",
    "city": "Waynesville"
+  },
+  {
+   "id": "Lafb979",
+   "label": "100 Years in Business",
+   "line": "Marshfield Chevrolet is celebrating 100 years of serving the Marshfield community.",
+   "city": "Marshfield"
+  },
+  {
+   "id": "Lf2fb5a",
+   "label": "New Leader",
+   "line": "Keith Klostermann, a 30-year educator, has been appointed the new city administrator for Osage Beach.",
+   "city": "Osage Beach"
   },
   {
    "id": "L84e5a2",
-   "label": "Municipal Honor",
-   "line": "Alderman Eric Kirchberg, from Buffalo, earned the Certified Municipal Official designation from the Missouri Municipal League.",
+   "label": "State Honor",
+   "line": "Buffalo Alderman Eric Kirchberg has earned the designation of Certified Municipal Official from the Missouri Municipal League's Municipal Governance Institute.",
    "city": "Buffalo"
+  }
+ ],
+ "local": [
+  {
+   "id": "Lb75d94",
+   "line": "The Hive Depot is providing essential resources and learning opportunities for students in Lebanon R-3 Schools.",
+   "city": "Lebanon"
+  },
+  {
+   "id": "Lc00021",
+   "line": "A Lebanon church built a ramp for a disabled woman so she can get in and out of her home more easily.",
+   "city": "Lebanon"
+  },
+  {
+   "id": "La6e69f",
+   "line": "Another new logo has been proposed for the City of Lebanon.",
+   "city": "Lebanon"
   },
   {
    "id": "Lf2c95b",
-   "label": "Class Gift",
-   "line": "The Waynesville High School Class of 1966 donated $775 to the district's Snack in a Pack program during its Oct. 10 reunion.",
+   "line": "Members of the Waynesville High School Class of 1966 toured today's high school during their reunion and donated 775 dollars to the district's Snack in a Pack program for students in need.",
    "city": "Waynesville"
   },
   {
-   "id": "Lda54a9",
-   "label": "Perfect Attendance",
-   "line": "The kindergarten and fifth grade classes, from Gasconade C-4 Schools, earned perfect attendance for the first quarter.",
-   "city": "Laclede County"
+   "id": "Lab2d1e",
+   "line": "The Waynesville R-6 School District is marking National School Bus Safety Week through Oct. 23 and thanking its transportation team for keeping students safe every day.",
+   "city": "Waynesville"
   },
   {
-   "id": "L3a4159",
-   "label": "School Leaders",
-   "line": "Mrs. Foraker and Mr. Cook, from Fordland Schools, are being thanked for their dedication to Eagle Nation.",
-   "city": "Fordland"
+   "id": "L73994b",
+   "line": "Residents of Colonial Springs Healthcare Center in Buffalo traveled to Bolivar on Oct. 9 to compete in the Golden Age Games.",
+   "city": "Bolivar"
+  },
+  {
+   "id": "L1e6a22",
+   "line": "A group called Shine Through Faith is bringing helping hands to Marshfield, mowing yards, picking up groceries and checking on elderly neighbors.",
+   "city": "Marshfield"
+  },
+  {
+   "id": "L79a120",
+   "line": "A new 126-room Hyatt hotel is planned in Backwater Jacks' Cove at Lake of the Ozarks.",
+   "city": "Lake of the Ozarks"
+  },
+  {
+   "id": "L09817d",
+   "line": "A Lake of the Ozarks nonprofit is helping women start over by offering hope, housing and support.",
+   "city": "Lake of the Ozarks"
+  },
+  {
+   "id": "L604b7b",
+   "line": "Patrick Mahomes does not have a home at Lake of the Ozarks, despite the rumors, and his mom says so herself.",
+   "city": "Lake of the Ozarks"
+  },
+  {
+   "id": "L02e34a",
+   "line": "Lake of the Ozarks hit a new heat record last Tuesday.",
+   "city": "Lake of the Ozarks"
+  },
+  {
+   "id": "Lfc18b1",
+   "line": "The Dallas County Library has new books on the shelf, including The Mountains We Call Home by Kim Michele Richardson.",
+   "city": "Dallas County"
+  }
+ ],
+ "music": [
+  {
+   "id": "Md272e2",
+   "line": "The CMA is giving its Dolly Parton tribute its own TV special instead of a short segment on the 2026 CMA Awards in November.",
+   "city": ""
+  },
+  {
+   "id": "M8068e7",
+   "line": "Blake Shelton made a surprise appearance at the Country Music Hall of Fame ceremony and got big laughs telling how his Paul Overstreet song turned out to be 'Some Beach.'",
+   "city": ""
+  },
+  {
+   "id": "Mda165c",
+   "line": "Zach Top is expanding his Cold Beer and Country Music Tour with more shows.",
+   "city": ""
+  },
+  {
+   "id": "Mfd8efe",
+   "line": "On this day in 2023, Luke Combs hit number one with a cover song that helped a folk legend make country music history.",
+   "city": ""
+  },
+  {
+   "id": "Mfedc50",
+   "line": "Carly Pearce has released the music video for her song 'Same Circus.'",
+   "city": ""
+  },
+  {
+   "id": "M836972",
+   "line": "Brothers Osborne have a new album called 'Watertown' on the way.",
+   "city": ""
+  }
+ ],
+ "music_drop": [],
+ "weird": [
+  {
+   "id": "W5cd73f",
+   "line": "An angler at Lake of the Ozarks set a new world record by reeling in a 164-pound paddlefish.",
+   "city": "Lake of the Ozarks"
+  },
+  {
+   "id": "L3566dc",
+   "line": "Sixty years ago this month, a Buffalo woman named Mrs. Jimmie Hayes found a two-headed lizard on her porch and put it on display, according to the Buffalo Reflex.",
+   "city": "Buffalo"
+  },
+  {
+   "id": "W2023c6",
+   "line": "Biologists netted a 70-pound lake sturgeon below a Missouri River dam and found a tag the size of a grain of rice showing the fish had swum 681 miles upstream in nine years.",
+   "city": ""
+  },
+  {
+   "id": "Wc845d9",
+   "line": "An Asian elephant named Samudra squished a 500-pound pumpkin flat during the Oregon Zoo's 28th annual Squishing of the Squash.",
+   "city": "Oregon"
+  },
+  {
+   "id": "Wc43a04",
+   "line": "A grower has produced the first pumpkin ever to break the 3,000-pound barrier.",
+   "city": ""
+  },
+  {
+   "id": "W0edac5",
+   "line": "A 61-year-old grandmother of 12 broke her own world record by holding a plank for five hours.",
+   "city": ""
+  },
+  {
+   "id": "Weec732",
+   "line": "A rare blue-tinted alligator was rescued and taken in at Gatorland in Florida.",
+   "city": "Florida"
+  },
+  {
+   "id": "W516b55",
+   "line": "A black bear was caught on camera boxing a punching bag on a Southern California patio like a seasoned pro.",
+   "city": "Southern California"
+  },
+  {
+   "id": "W992469",
+   "line": "A bear was caught on camera opening a fridge and walking off with an alcoholic drink in Golden Gate Estates, Florida.",
+   "city": "Golden Gate Estates, Fla."
+  },
+  {
+   "id": "W057ad9",
+   "line": "An emu that ran away from its owner tried its best to outrun police officers before it was finally rounded up.",
+   "city": ""
+  },
+  {
+   "id": "W3967a9",
+   "line": "Emergency crews in Monroe, New Jersey, helped a herd of escaped goats find their way back home.",
+   "city": "Monroe, N.J."
+  },
+  {
+   "id": "W97e75b",
+   "line": "Veronica the runaway cow is back home after rescuers pulled her out of deep mud.",
+   "city": ""
+  },
+  {
+   "id": "W9c5989",
+   "line": "A mare in Ohio has set the world record for the longest horse tail.",
+   "city": "Ohio"
+  },
+  {
+   "id": "W355d86",
+   "line": "A mysterious white shape on the Alaska tundra turned out to be an albino caribou that had not been seen for decades.",
+   "city": "Alaska"
+  },
+  {
+   "id": "W3e7097",
+   "line": "A scorched, foreign-looking object found in a Minnesota crop field has people trying to figure out what it is.",
+   "city": "Minnesota"
+  },
+  {
+   "id": "W41e037",
+   "line": "A traveler was baffled when an airport self-checkout machine asked him to leave an 18 percent tip, and his question was simple: who am I tipping here?",
+   "city": ""
+  },
+  {
+   "id": "W7d4692",
+   "line": "Matthew Inman of The Oatmeal built a giant, evil Halloween version of Jimothy, the viral short and round Seattle raccoon, in his brother's front yard on Bainbridge Island.",
+   "city": "Bainbridge Island, Wash."
+  },
+  {
+   "id": "W3a906b",
+   "line": "A tiny dog played the drums in a rock band costume at the 36th annual Tompkins Square Halloween Dog Parade.",
+   "city": ""
+  },
+  {
+   "id": "Wa79b45",
+   "line": "In South Carolina, children wrote goodbye letters for a senior shelter dog, the letters went viral, and the dog got adopted.",
+   "city": "South Carolina"
+  },
+  {
+   "id": "W54118d",
+   "line": "A small bear was spotted wandering through a neighborhood in San Luis Obispo County, California.",
+   "city": "San Luis Obispo County, Calif."
+  },
+  {
+   "id": "W2f8497",
+   "line": "A moose was spotted on the loose in Brewster.",
+   "city": "Brewster"
+  },
+  {
+   "id": "Wa1e107",
+   "line": "Scientists have discovered a bizarre squid-like creature from the Jurassic period unlike anything ever seen before.",
+   "city": ""
+  }
+ ],
+ "humor": [
+  {
+   "id": "Nbebe51",
+   "label": "Viral",
+   "line": "A team from Finland just won the World Olive Picking Championship in Croatia, which is impressive since Finland does not have a single olive tree, kind of like Missouri winning a surfing contest.",
+   "city": ""
+  },
+  {
+   "id": "H19714d",
+   "label": "One-Liner",
+   "line": "I paid 500 dollars so my son could play high school football, and it was a terrible investment: all I got was a quarterback.",
+   "city": ""
+  },
+  {
+   "id": "Hec65ff",
+   "label": "Today Is",
+   "line": "It's Office Chocolate Day, the one day a year when emptying your coworker's candy dish by 10 a.m. officially counts as celebrating.",
+   "city": ""
+  },
+  {
+   "id": "H72acf0",
+   "label": "Satire",
+   "line": "From The Onion: Druid Loving This Cloak Weather.",
+   "city": ""
+  },
+  {
+   "id": "He7d3a9",
+   "label": "Viral",
+   "line": "A husband gave his wife's craft room to his mother for six weeks, so the wife moved her crafts right into his game room, and the internet says that's what you call a fair trade.",
+   "city": ""
+  },
+  {
+   "id": "H469058",
+   "label": "One-Liner",
+   "line": "I'm sitting on the couch hiding from all forms of exercise, so if anyone asks, I'm in the Fitness Protection Program.",
+   "city": ""
+  },
+  {
+   "id": "H5961f9",
+   "label": "Today Is",
+   "line": "It's National Chicken and Waffles Day, the one meal that settles the sweet-or-savory argument by flat-out refusing to pick a side.",
+   "city": ""
+  },
+  {
+   "id": "Hc16e77",
+   "label": "One-Liner",
+   "line": "What do you call a Sith Lord from the South? Darth Y'all.",
+   "city": ""
+  },
+  {
+   "id": "H243bcd",
+   "label": "Satire",
+   "line": "From The Onion: 'I'll Need A Gift Receipt,' Lies Man Buying 270-Dollar Lord Of The Rings Lego Set.",
+   "city": ""
+  },
+  {
+   "id": "Hc0f147",
+   "label": "Viral",
+   "line": "The internet is sharing the hobbies that push partners away, and 'one more game' made the list, which every wife already knew the first time her husband said he was almost done with this level.",
+   "city": ""
+  },
+  {
+   "id": "Hc9630d",
+   "label": "Today Is",
+   "line": "It's National Mozzarella Stick Day, honoring the only appetizer that comes with a built-in contest to see how far the cheese stretches before it snaps.",
+   "city": ""
+  },
+  {
+   "id": "H8d52ff",
+   "label": "One-Liner",
+   "line": "I asked my wife to stop shaking the orange juice before she pours it, but she keeps doing it, and honestly it's so agitating.",
+   "city": ""
+  },
+  {
+   "id": "H56014b",
+   "label": "Satire",
+   "line": "From The Onion: Poll Finds Majority Of Americans Still Go Bonkers For Amber Waves Of Grain.",
+   "city": ""
+  },
+  {
+   "id": "H4c8c2e",
+   "label": "Today Is",
+   "line": "It's International Day of the Air Traffic Controller, honoring the people who line up a hundred planes without a scratch while the rest of us can't get through a four-way stop.",
+   "city": ""
+  },
+  {
+   "id": "H1200e6",
+   "label": "One-Liner",
+   "line": "The service at the T-Rex Cafe is terrible, because they're always short-handed.",
+   "city": ""
+  },
+  {
+   "id": "H5e33d9",
+   "label": "Today Is",
+   "line": "It's National Suspenders Day, celebrating every man who decided a belt was just too much commitment.",
+   "city": ""
+  },
+  {
+   "id": "H72e31a",
+   "label": "One-Liner",
+   "line": "What's Medusa's favorite cheese? Gorgonzola.",
+   "city": ""
+  },
+  {
+   "id": "H26a378",
+   "label": "Satire",
+   "line": "From The Onion: Weird Cleveland Browns Fan Has No Children On Team.",
+   "city": ""
+  },
+  {
+   "id": "H3032fc",
+   "label": "Today Is",
+   "line": "It's International Chefs Day, so whoever cooks dinner at your house tonight gets the title, even if the specialty is cereal.",
+   "city": ""
+  },
+  {
+   "id": "H82ad53",
+   "label": "One-Liner",
+   "line": "I bought some coconut shampoo today, but when I got home I realized I don't even have a coconut.",
+   "city": ""
   }
  ]
 }
