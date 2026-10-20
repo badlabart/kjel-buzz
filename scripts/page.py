@@ -137,7 +137,12 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir=""):
             # LOCAL PRIDE (Boss 2026-10-19): "World Food Champs - names, from place, what/when/where."
             label = f'<span class="label">{esc(c["label"])}</span> &ndash; ' if c.get("label") else ""
             # The R-3 site gives no post dates, so its cards show a label instead of an age.
-            if c.get("kind") == "concert":
+            if c.get("kind") == "event":
+                head = (f'<div class="card"><div class="when">{c["when_label"]} '
+                        f'<span class="src">&middot; {esc(c["source"])}</span></div>')
+                names = (f'<div class="why">{esc(c["place"])}</div>' if c.get("place") else "") + \
+                        (f'<div class="why">{esc(c["why"])}</div>' if c.get("why") else "")
+            elif c.get("kind") == "concert":
                 head = (f'<div class="card concert"><div class="when">CONCERT &middot; {esc(c["when_label"])} '
                         f'<span class="src">&middot; {esc(c["source"])}</span></div>')
             elif c.get("source") == "Lebanon R-3 Schools":
@@ -150,7 +155,7 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir=""):
                 f'<div class="name">{cong}{label}{main}{where}</div>{names}{punch}{sig}' +
                 ('</div>' if nolink else
                  f'<a class="link" href="{esc(c["url"])}" target="_blank" rel="noopener">'
-                 f'{"Tickets / details" if c.get("kind") == "concert" else "Read story"} &#8599;</a></div>'))
+                 f'{"Tickets / details" if c.get("kind") == "concert" else "Details" if c.get("kind") == "event" else "Read story"} &#8599;</a></div>'))
         body = "".join(cards) or '<div class="empty">Nothing worth airing today.</div>'
         if col["key"] == "music":
             body = ('<form class="search" onsubmit="return kjSearch();">'

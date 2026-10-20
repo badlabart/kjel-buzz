@@ -20,6 +20,31 @@ DATA = ROOT / "data"
 BUZZ = [("national", "National"), ("pride", "LOCAL PRIDE"), ("music", "Music"), ("humor", "Humor")]
 NEWS = [("local", "Local"), ("weird", "Morning News Only")]
 COLUMNS = BUZZ + NEWS
+# Boss (2026-10-20): "Show Prep" = LOCAL PRIDE, National, Humor, Music, then every Event Board column
+# except KIM ONLY and Live Music.
+SHOW_PREP = ["pride", "national", "humor", "music"]
+EVENTS_JS = Path.home() / "Documents/Claude/Projects/KJEL-event-board/data/events.js"
+EVENT_SKIP = {"kim only", "live music"}
+
+
+def event_columns():
+    """Event Board columns for Show Prep, upcoming only, soonest first."""
+    if not EVENTS_JS.exists():
+        return []
+    d = json.loads(EVENTS_JS.read_text().split("=", 1)[1].rstrip().rstrip(";"))
+    today = datetime.now(collect.CT).date()
+    cols = []
+    for typ in d["types"]:
+        if typ.lower() in EVENT_SKIP:
+            continue
+        evs = sorted((e for e in d["events"] if e["type"] == typ and date.fromisoformat(e["date"]) >= today),
+                     key=lambda e: (e["date"], e.get("min", 0)))
+        cards = [{"kind": "event", "title": e["title"], "line": e["title"], "city": e["town"], "source": e.get("source", ""),
+                  "url": e["url"], "ts": None, "signal": "", "why": e.get("why", ""), "place": e.get("place", ""),
+                  "when_label": date.fromisoformat(e["date"]).strftime("%a, %b %-d").upper()
+                  + (f' &middot; {e["time"]}' if e.get("time") else "")} for e in evs]
+        cols.append({"key": "ev-" + typ.lower().replace(" ", "-"), "name": typ, "cards": cards})
+    return cols
 SPLIT = ("pride", "local")  # columns that aim for 50% Lebanon
 LEBANON_GOAL = 0.50
 
@@ -30,7 +55,8 @@ def music_search():
     recent = json.loads((DATA / "music_recent.json").read_text()) if (DATA / "music_recent.json").exists() else []
     rows = sorted(arch + recent, key=lambda e: e["d"], reverse=True)
     body = "window.KJEL_MUSIC = " + json.dumps(rows, separators=(",", ":"), ensure_ascii=True) + ";\n"
-    for folder in (ROOT, ROOT / "docs"):
+    for folder in (ROOT, ROOT / "docs", ROOT / "show-prep", ROOT / "docs" / "show-prep"):
+        folder.mkdir(parents=True, exist_ok=True)
         (folder / "music_search.js").write_text(body)
     return len(arch), len(recent)
 
@@ -123,6 +149,10 @@ def main():
     kept, recent = music_search()
     page.write(buzz)
     page.write(news, title="News", doc_title="KJEL News", subdir="news")
+    by_key = {c["key"]: c for c in cols}
+    prep = {"updated": stamp, "columns": [by_key[k] for k in SHOW_PREP] + event_columns(),
+            "lebanon": {k: v for k, v in lebanon.items() if k in SHOW_PREP}}
+    page.write(prep, title="Show Prep", doc_title="KJEL Show Prep", subdir="show-prep")
     humor.record_shown(collect, [c for c in next(c for c in cols if c["key"] == "humor")["cards"] if c.get("kind") == "joke"])
     print(f"Board: {' | '.join(f'{c[1]} {len(x["cards"])}' for c, x in zip(COLUMNS, cols))} | "
           f"Lebanon: {' / '.join(f'{k} {v["count"]} of {v["of"]}' for k, v in lebanon.items())} | "

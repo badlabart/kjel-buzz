@@ -1,5 +1,5 @@
 window.KJEL_NEWS = {
- "updated": "2026-10-19T23:49:35+00:00",
+ "updated": "2026-10-20T00:15:56+00:00",
  "columns": [
   {
    "key": "local",

@@ -4,7 +4,8 @@ Trello-style board of today's talkable stories for jocks and voicetrackers. Same
 Two apps from one build:
 - The Buzz (docs/index.html): National (~10), LOCAL PRIDE (up to 24), Music (concerts + ~30 news), Humor (12-20 bits).
 - News (docs/news/index.html, https://badlabart.github.io/kjel-buzz/news/): Local (up to 24), Morning News Only (20+).
-No card in either app should need a click to understand. Cards under 12 hours old are gold.
+- Show Prep (docs/show-prep/index.html, https://badlabart.github.io/kjel-buzz/show-prep/): LOCAL PRIDE, National, Humor, Music, then the KJEL Event Board columns except KIM ONLY and Live Music (read from ~/Documents/Claude/Projects/KJEL-event-board/data/events.js, upcoming only).
+No card in any app should need a click to understand. Cards under 12 hours old are gold.
 Each news card is ONE on-air sentence with full context, city in parentheses. Lebanon cities are highlighted.
 Music has a search box (artist or song) at the top.
 
