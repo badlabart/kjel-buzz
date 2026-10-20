@@ -1,5 +1,5 @@
 window.KJEL_BUZZ = {
- "updated": "2026-10-20T13:52:10+00:00",
+ "updated": "2026-10-20T15:49:26+00:00",
  "columns": [
   {
    "key": "national",
@@ -579,6 +579,7 @@ window.KJEL_BUZZ = {
      "signal": "Zach John King: #6 on Country Airplay",
      "line": "Thomas Rhett, Zach John King, Emily Ann Roberts are coming to Morton Amphitheater in Kansas City on Friday, October 23rd.",
      "city": "Kansas City",
+     "date": "2026-10-23",
      "when_label": "FRI, OCT 23"
     },
     {
@@ -591,6 +592,7 @@ window.KJEL_BUZZ = {
      "signal": "Kenny Chesney: #11 on Country Airplay",
      "line": "Kenny Chesney: The Original Vibe Room Tour with Eric Church is coming to America's Center & The Dome in St. Louis on Saturday, May 15th.",
      "city": "St. Louis",
+     "date": "2027-05-15",
      "when_label": "SAT, MAY 15"
     },
     {

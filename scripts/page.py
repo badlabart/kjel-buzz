@@ -99,6 +99,18 @@ JS = """
     if(w) w.innerHTML=label;
     if(h<12) c.className='card new';
   }
+  // Dated cards (events, concerts): hide anything already past; label today and tomorrow.
+  function p2(n){return (n<10?'0':'')+n;}
+  function iso(d){return d.getFullYear()+'-'+p2(d.getMonth()+1)+'-'+p2(d.getDate());}
+  var t0=new Date(), today=iso(t0), tmr=iso(new Date(t0.getFullYear(),t0.getMonth(),t0.getDate()+1));
+  for(var k=0;k<divs.length;k++){
+    var e=divs[k], dd=e.getAttribute('data-date'); if(!dd) continue;
+    if(dd<today){e.style.display='none';continue;}
+    var sp=e.getElementsByTagName('span'), dl=null;
+    for(var m=0;m<sp.length;m++){ if(sp[m].className==='dl'){dl=sp[m];break;} }
+    if(dd===today){ if(dl) dl.innerHTML='TODAY'; e.className=e.className+' new'; }
+    else if(dd===tmr && dl){ dl.innerHTML='TOMORROW'; }
+  }
   var u=parseInt(document.body.getAttribute('data-updated'),10);
   if(u && now-u>30*3600000){var s=document.getElementById('stale'); if(s) s.style.display='block';}
 })();
@@ -138,12 +150,13 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir=""):
             label = f'<span class="label">{esc(c["label"])}</span> &ndash; ' if c.get("label") else ""
             # The R-3 site gives no post dates, so its cards show a label instead of an age.
             if c.get("kind") == "event":
-                head = (f'<div class="card"><div class="when">{c["when_label"]} '
+                tm = f' &middot; {esc(c["time"])}' if c.get("time") else ""
+                head = (f'<div class="card" data-date="{c["date"]}"><div class="when"><span class="dl">{c["when_label"]}</span>{tm} '
                         f'<span class="src">&middot; {esc(c["source"])}</span></div>')
                 names = (f'<div class="why">{esc(c["place"])}</div>' if c.get("place") else "") + \
                         (f'<div class="why">{esc(c["why"])}</div>' if c.get("why") else "")
             elif c.get("kind") == "concert":
-                head = (f'<div class="card concert"><div class="when">CONCERT &middot; {esc(c["when_label"])} '
+                head = (f'<div class="card concert" data-date="{c["date"]}"><div class="when">CONCERT &middot; <span class="dl">{esc(c["when_label"])}</span> '
                         f'<span class="src">&middot; {esc(c["source"])}</span></div>')
             elif c.get("source") == "Lebanon R-3 Schools":
                 head = f'<div class="card"><div class="when">SCHOOL NEWS <span class="src">&middot; {esc(c["source"])}</span></div>'

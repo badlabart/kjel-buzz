@@ -41,8 +41,8 @@ def event_columns():
                      key=lambda e: (e["date"], e.get("min", 0)))
         cards = [{"kind": "event", "title": e["title"], "line": e["title"], "city": e["town"], "source": e.get("source", ""),
                   "url": e["url"], "ts": None, "signal": "", "why": e.get("why", ""), "place": e.get("place", ""),
-                  "when_label": date.fromisoformat(e["date"]).strftime("%a, %b %-d").upper()
-                  + (f' &middot; {e["time"]}' if e.get("time") else "")} for e in evs]
+                  "date": e["date"], "time": e.get("time", ""),
+                  "when_label": date.fromisoformat(e["date"]).strftime("%a, %b %-d").upper()} for e in evs]
         cols.append({"key": "ev-" + typ.lower().replace(" ", "-"), "name": typ, "cards": cards})
     return cols
 SPLIT = ("pride", "local")  # columns that aim for 50% Lebanon
@@ -104,7 +104,7 @@ def music_column(picks, pool):
         gigs.append({"id": "C" + sh["key"][:20], "kind": "concert", "title": sh["event"], "source": "AllEvents",
                      "url": sh["url"], "ts": None, "signal": f'{sh["artist"]}: #{sh["rank"]} on Country Airplay',
                      "line": concerts.sentence(sh, d),
-                     "city": sh["city"], "when_label": d.strftime("%a, %b %-d").upper()})
+                     "city": sh["city"], "date": sh["date"], "when_label": d.strftime("%a, %b %-d").upper()})
     return gigs + board, missing
 
 
