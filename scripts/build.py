@@ -153,6 +153,12 @@ def main():
     prep = {"updated": stamp, "columns": [by_key[k] for k in SHOW_PREP] + event_columns(),
             "lebanon": {k: v for k, v in lebanon.items() if k in SHOW_PREP}}
     page.write(prep, title="Show Prep", doc_title="KJEL Show Prep", subdir="show-prep")
+    # Boss (2026-10-20): Show Prep also lives at its own short address, badlabart.github.io/kjel-showprep
+    out = Path.home() / "Documents/Claude/Projects/KJEL-showprep/docs"
+    if out.parent.exists():
+        out.mkdir(exist_ok=True)
+        for f in ("index.html", "music_search.js"):
+            (out / f).write_bytes((ROOT / "docs" / "show-prep" / f).read_bytes())
     humor.record_shown(collect, [c for c in next(c for c in cols if c["key"] == "humor")["cards"] if c.get("kind") == "joke"])
     print(f"Board: {' | '.join(f'{c[1]} {len(x["cards"])}' for c, x in zip(COLUMNS, cols))} | "
           f"Lebanon: {' / '.join(f'{k} {v["count"]} of {v["of"]}' for k, v in lebanon.items())} | "
