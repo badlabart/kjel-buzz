@@ -23,138 +23,108 @@
    "id": "T70c2f4"
   },
   {
+   "id": "Tc173d4"
+  },
+  {
    "id": "T321560"
   },
   {
    "id": "T851b71"
   },
   {
+   "id": "Ta76b3b"
+  },
+  {
    "id": "Tdce645",
-   "label": "20 Years of Taylor",
-   "line": "Twenty years ago this week, Taylor Swift released her very first album, Taylor Swift, the 2006 debut that made her a rising star in country music.",
+   "label": "Music Anniversary",
+   "line": "Twenty years ago today, Taylor Swift released her debut album, Taylor Swift, the record that made her a rising star in country music.",
    "date": "2026-10-24"
   },
   {
    "id": "T5d5e34",
-   "label": "Reba Is Back",
-   "line": "Reba McEntire's NBC sitcom Happy's Place returns for season three, with Reba as Bobbie, who inherits her dad's Tennessee tavern, reunited with Melissa Peterman.",
+   "label": "TV Tonight",
+   "line": "Reba McEntire's NBC sitcom Happy's Place returns for season three, with Reba running her late father's Tennessee tavern alongside her old co-star Melissa Peterman.",
    "date": "2026-10-23"
   },
   {
-   "id": "T75a997",
-   "label": "New NBC Sitcom",
-   "line": "NBC's new sitcom Newlyweds stars Tea Leoni and Tim Daly as a free spirit and a buttoned-up professor who marry on impulse, Fridays at 8:30 Eastern.",
-   "date": "2026-10-22"
-  },
-  {
-   "id": "Tc55e0a",
-   "label": "Matthew Perry Doc",
-   "line": "Netflix's three-part documentary The One About Matthew Perry looks back at the Friends star's life and his comedy legacy as Chandler Bing.",
-   "date": "2026-10-27"
-  },
-  {
    "id": "Td06d23",
-   "label": "Family Movie",
-   "line": "The stop-motion family fantasy Wildwood, adapted from the children's novel, follows a girl into a secret enchanted forest to save her baby brother, with Mahershala Ali and Angela Bassett.",
+   "label": "Movie Night",
+   "line": "Wildwood, a new family fantasy film with Mahershala Ali and Angela Bassett, follows a girl into a secret enchanted forest to save her baby brother.",
    "date": "2026-10-21"
-  },
-  {
-   "id": "T96dab5",
-   "label": "New on Netflix",
-   "line": "Netflix's new comedy Minimum Wage follows a crew of teenage workers at a chaotic local pizza shop, in short 12-minute episodes with a guest spot from Randall Park.",
-   "date": "2026-10-22"
   }
  ],
  "johnsons": [
   {
-   "id": "J311183",
+   "id": "J4353ce",
    "label": "Outdoors",
-   "line": "Missouri Conservation is asking southwest Missouri deer hunters to get their deer sampled for chronic wasting disease all season, at MDC offices, meat processors, taxidermists and freezer drops."
+   "line": "The Missouri Department of Conservation is hosting a prescribed burn field day in Dade County on Oct. 27, and you must finish an online portion before attending.",
+   "city": ""
   },
   {
-   "id": "Jf20104",
+   "id": "J09b55e",
    "label": "Outdoors",
-   "line": "Busch Shooting Range is holding a Field to Freezer class on October 31 to teach deer hunters how to handle and prepare their deer right after the harvest."
+   "line": "Trails at the Runge Conservation Nature Center in Jefferson City close Nov. 6 through 8 for a managed archery deer hunt, though the building stays open.",
+   "city": ""
   },
   {
-   "id": "J3321a2",
+   "id": "J9ed6c5",
    "label": "Outdoors",
-   "line": "Missouri Conservation is hosting a free class in Hannibal on November 10 showing hunters how to process a deer into freezer-ready venison."
+   "line": "Wired2Fish says the Gamakatsu 4/0 extra wide gap hook may be the best bass hook ever, because it works for dozens of rigs, including soft plastics.",
+   "city": ""
   },
   {
-   "id": "J5feb88",
-   "label": "Outdoors",
-   "line": "Missouri Conservation has a free milkweed event in Columbia on November 7, and everyone goes home with milkweed seed of their own to plant."
-  },
-  {
-   "id": "Jc84e19",
-   "label": "Outdoors",
-   "line": "Seven-year-old Arizona angler Liam Hellum caught his age, landing and releasing a personal-best 7.1-pound largemouth bass."
-  },
-  {
-   "id": "J1ce3be",
-   "label": "Family",
-   "line": "Romorgniz is recalling six-drawer dressers because they can tip over and trap kids if not anchored to the wall, and they fail the federal safety standard."
-  },
-  {
-   "id": "J4c40bd",
-   "label": "Family",
-   "line": "The Conqueror is recalling Avengers medals because their strong magnets can come loose, and swallowed magnets are a deadly danger to children."
-  },
-  {
-   "id": "J7be4d0",
-   "label": "Family",
-   "line": "Primark is recalling 101 Dalmatians faux leather children's coin purses because they contain high levels of phthalates, which can be harmful if kids chew on them."
-  },
-  {
-   "id": "J228570",
-   "label": "Family",
-   "line": "A Reddit dad blew his 7-year-old's mind with this trick for 11 plus 7: take the 1 off the 11, add it to the 7 to make 8, then add that to 10 for 18."
-  },
-  {
-   "id": "Je30d45",
+   "id": "J6fe4e1",
    "label": "Cooking",
-   "line": "Skinnytaste has an easy high-protein fall dinner: Crockpot Chicken with Apples, a sweet-and-savory twist on Chicken Normandy served over mashed potatoes."
+   "line": "Budget Bytes has a cheap, easy apple spice cake packed with fresh apples, warm spices and nutty brown butter for fall weekends.",
+   "city": ""
   },
   {
-   "id": "J3a16f3",
+   "id": "J88cab5",
    "label": "Cooking",
-   "line": "Budget Bytes has a cozy Italian Wedding Soup with tender meatballs, vegetables and pasta in chicken broth, perfect for a chilly fall weeknight."
+   "line": "Skinnytaste's easy one-pan chicken curry uses chicken thighs, potatoes, coconut milk, tomatoes and warm spices, a weeknight dinner the whole family can share.",
+   "city": ""
   },
   {
-   "id": "J543392",
+   "id": "J54cccc",
    "label": "Cooking",
-   "line": "Skinnytaste posted a free seven-day high-protein meal plan with breakfast, lunch and dinner ideas plus a ready-made shopping list."
+   "line": "Pumpkin cornbread muffins sweetened with maple syrup and a touch of pumpkin spice work for breakfast and again warm next to a bowl of chili.",
+   "city": ""
   },
   {
-   "id": "Jf4346b",
-   "label": "Cooking",
-   "line": "A Reddit meal prepper shared a healthier nacho beef bowl with a lime slaw on the side that makes four servings for the week."
-  },
-  {
-   "id": "Jc166db",
+   "id": "Jcd540f",
    "label": "Life",
-   "line": "Stop raking your leaves: turf scientists say bagging them is mostly wasted work and may actually shortchange your grass."
+   "line": "Forecasters now say mortgage rates will not drop until 2028, so anyone counting on refinancing next year may need a new plan.",
+   "city": ""
   },
   {
-   "id": "Jfeedfa",
+   "id": "J6bfde0",
    "label": "Life",
-   "line": "Walmart scam victims are getting refund checks averaging 150 dollars, so don't toss yours, but watch out because fake checks are going around too."
+   "line": "Mike Rowe says for every five tradespeople who leave, only two are replaced, so it pays to handle home repairs before the first freeze brings a rush of calls.",
+   "city": ""
   },
   {
-   "id": "J44344b",
+   "id": "J5171d7",
    "label": "Life",
-   "line": "Scammers are cashing in on the rush for Apple's new foldable iPhone Duo with fake preorder scams, so be careful where you order one."
+   "line": "A Reddit poster says a tablespoon of blackstrap molasses and a pinch of salt in a water bottle is a cheap swap for store-bought hydration packets.",
+   "city": ""
   },
   {
-   "id": "J4f22ba",
+   "id": "Je1678c",
    "label": "Life",
-   "line": "A Reddit poster says snipping open an empty toothpaste tube with scissors gets at least five more brushings out of it."
+   "line": "A Reddit poster is choosing the non-smart version of things on purpose, like a regular doorbell, paper notes and a microwave with a dial, to keep life simple.",
+   "city": ""
   },
   {
-   "id": "Ja5a88b",
-   "label": "Life",
-   "line": "A Reddit poster scored the most comfortable couch they've ever laid on for 70 dollars at a local thrift store that sells furniture dirt cheap."
+   "id": "J27772f",
+   "label": "Family",
+   "line": "A Reddit dad told his kid the moon is a potato, got shot down, then asked a stranger on the street, who backed him up immediately.",
+   "city": ""
+  },
+  {
+   "id": "J04bd75",
+   "label": "Family",
+   "line": "A Reddit dad is proudly explaining to his daughter that an exasperated eye roll counts just as much as a laugh when it comes to dad jokes.",
+   "city": ""
   }
  ]
 }

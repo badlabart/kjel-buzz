@@ -939,26 +939,6 @@
  ],
  "johnsons": [
   {
-   "title": "Learn the importance of milkweed with MDC at a free event in Columbia on Nov. 7",
-   "url": "https://mdc.mo.gov/newsroom/learn-importance-milkweed-mdc-free-event-columbia-nov-7",
-   "desc": "Participants will be sent home with milkweed seed of their own to plant.",
-   "ts": "2026-10-20T05:00:00+00:00",
-   "pillar": "Outdoors",
-   "source": "Missouri Dept. of Conservation",
-   "id": "J5feb88",
-   "niche": true
-  },
-  {
-   "title": "Busch Shooting Range to hold Field to Freezer program for deer hunters Oct. 31",
-   "url": "https://mdc.mo.gov/newsroom/busch-shooting-range-hold-field-freezer-program-deer-hunters-oct-31",
-   "desc": "Hunters can learn the important skills of handling and preparing their deer immediately after harvest.",
-   "ts": "2026-10-20T05:00:00+00:00",
-   "pillar": "Outdoors",
-   "source": "Missouri Dept. of Conservation",
-   "id": "Jf20104",
-   "niche": true
-  },
-  {
    "title": "MDC to host prescribed burn field day Oct. 27 in Dade County",
    "url": "https://mdc.mo.gov/newsroom/mdc-host-prescribed-burn-field-day-oct-27-dade-county",
    "desc": "Participants must complete online portion before attending fire demonstration.",
@@ -966,16 +946,6 @@
    "pillar": "Outdoors",
    "source": "Missouri Dept. of Conservation",
    "id": "J4353ce",
-   "niche": true
-  },
-  {
-   "title": "MDC encourages hunters in SWMO to have deer sampled for CWD all season",
-   "url": "https://mdc.mo.gov/newsroom/mdc-encourages-hunters-swmo-have-deer-sampled-cwd-all-season",
-   "desc": "Sampling sites in Southwest region include MDC offices, meat processors, taxidermists, freezer drops, and more.",
-   "ts": "2026-10-19T05:00:00+00:00",
-   "pillar": "Outdoors",
-   "source": "Missouri Dept. of Conservation",
-   "id": "J311183",
    "niche": true
   },
   {
@@ -989,43 +959,73 @@
    "niche": true
   },
   {
-   "title": "Learn how to process a deer into freezer-ready venison with MDC on Nov. 10 in Hannibal",
-   "url": "https://mdc.mo.gov/newsroom/learn-how-process-deer-freezer-ready-venison-mdc-nov-10-hannibal",
-   "desc": "This free event will show participants how to process their deer from field to freezer.",
+   "title": "MDC encourages hunters in KC region to have deer sampled for CWD all season",
+   "url": "https://mdc.mo.gov/newsroom/mdc-encourages-hunters-kc-region-have-deer-sampled-cwd-all-season",
+   "desc": "Sampling sites in Kansas City region include MDC offices, meat processors, taxidermists, and freezer head drops",
    "ts": "2026-10-19T05:00:00+00:00",
    "pillar": "Outdoors",
    "source": "Missouri Dept. of Conservation",
-   "id": "J3321a2",
+   "id": "Jd1d100",
    "niche": true
   },
   {
-   "title": "Primark Recalls 101 Dalmatians Faux Leather Children’s Coin Purses Due to Phthalate Levels and Risk of Ingestion",
-   "url": "https://www.cpsc.gov/Recalls/2027/Primark-Recalls-101-Dalmatians-Faux-Leather-Childrens-Coin-Purses-Due-to-Phthalate-Levels-and-Risk-of-Ingestion",
-   "desc": "The coin purses contain higher phthalate concentration levels. Phthalates can be harmful if young children are exposed to sufficient amounts, including through ingestion, and certain phthalates have been associated with adverse health effects, particularly effects on development and the hormone system.",
-   "ts": "2026-10-15T00:00:00+00:00",
-   "pillar": "Family",
-   "source": "CPSC Recalls",
-   "id": "J7be4d0",
+   "title": "MDC encourages hunters in NWMO to have deer sampled for CWD all season",
+   "url": "https://mdc.mo.gov/newsroom/mdc-encourages-hunters-nwmo-have-deer-sampled-cwd-all-season",
+   "desc": "Sampling sites in NW region include MDC offices, meat processors, taxidermists, and freezer head drops Current page 1 Page 2 Page 3 Page 4 Page 5 <span class=\"visually",
+   "ts": "2026-10-19T05:00:00+00:00",
+   "pillar": "Outdoors",
+   "source": "Missouri Dept. of Conservation",
+   "id": "Jf5aed7",
    "niche": true
   },
   {
-   "title": "Stop Raking Your Leaves. Your Lawn Actually Wants Them",
-   "url": "https://www.moneytalksnews.com/stop-raking-your-leaves-your-lawn-actually-wants-them/",
-   "desc": "That Saturday ritual with the rake and paper bags? Turf scientists say it's mostly wasted work — and it may shortchange your grass.",
-   "ts": "2026-10-21T15:30:33+00:00",
-   "pillar": "Life",
-   "source": "Money Talks News",
-   "id": "Jc166db",
+   "title": "The Best Upland Hunting Loads, Expert Tested",
+   "url": "https://fieldandstream.com/outdoor-gear/guns-gear/ammo-gear/shotgun-ammo-gear/best-upland-hunting-loads",
+   "desc": "Our shotgun editor picks his favorite upland loads for everything from pheasants to woodcock, including non-toxic options The post The Best Upland Hunting Loads, Expert Tested appeared first on Field & Stream .",
+   "ts": "2026-10-21T17:09:32+00:00",
+   "pillar": "Outdoors",
+   "source": "Field & Stream",
+   "id": "J8745cf",
    "niche": false
   },
   {
-   "title": "10 Hacks Ever Siri AI User Should Know",
-   "url": "https://lifehacker.com/tech/best-siri-ai-hacks?utm_medium=RSS",
-   "desc": "Apple's revamped Siri is here, and some of its most useful features are easy to miss.",
-   "ts": "2026-10-21T15:00:00+00:00",
+   "title": "Mortgage Rates Won’t Drop Until 2028. 5 Moves to Make Now",
+   "url": "https://www.moneytalksnews.com/mortgage-rates-wont-drop-until-moves-to-make-now/",
+   "desc": "The forecasters just moved the goalposts. If your plan depends on refinancing next year, read this first.",
+   "ts": "2026-10-21T17:03:21+00:00",
+   "pillar": "Life",
+   "source": "Money Talks News",
+   "id": "Jcd540f",
+   "niche": false
+  },
+  {
+   "title": "The Best Apple Watch for Most People Is Over $100 Off",
+   "url": "https://lifehacker.com/tech/apple-watch-series-10-deal-october-2026?utm_medium=RSS",
+   "desc": "The titanium Apple Watch Series 10 has dropped to its lowest price (after the most recent price hikes).",
+   "ts": "2026-10-21T17:00:00+00:00",
    "pillar": "Life",
    "source": "Lifehacker",
-   "id": "J605113",
+   "id": "Jf1a6e9",
+   "niche": false
+  },
+  {
+   "title": "Elk Hunting with a 6mm Creedmoor and 93-Grain Bullets",
+   "url": "https://www.outdoorlife.com/hunting/elk-hunting-6mm-creedmoor/",
+   "desc": "Elk have a reputation as tough critters, but it's usually not the cartridge that's to blame The post Elk Hunting with a 6mm Creedmoor and 93-Grain Bullets appeared first on Outdoor Life .",
+   "ts": "2026-10-21T12:55:11-04:00",
+   "pillar": "Outdoors",
+   "source": "Outdoor Life",
+   "id": "J642ecc",
+   "niche": false
+  },
+  {
+   "title": "Scary Mommy 2026 Readers' Choice Awards Best Baby Diaper Brands",
+   "url": "https://www.scarymommy.com/shopping/scary-mommy-2026-readers-choice-awards-best-baby-diaper-brands",
+   "desc": "Diapers are one of those baby essentials that people have big feelings about.",
+   "ts": "2026-10-21T16:00:25+00:00",
+   "pillar": "Family",
+   "source": "Scary Mommy",
+   "id": "Ja94eff",
    "niche": false
   },
   {
@@ -1036,26 +1036,6 @@
    "pillar": "Cooking",
    "source": "The Kitchn",
    "id": "J0e4bde",
-   "niche": false
-  },
-  {
-   "title": "Jack O’Connor Dodged Hungry Lions to Take His First Leopard",
-   "url": "https://www.outdoorlife.com/hunting/jack-oconnor-first-leopard/",
-   "desc": "Even the legendary Jack O’Connor had the occasional mishap during a big hunt The post Jack O’Connor Dodged Hungry Lions to Take His First Leopard appeared first on Outdoor Life .",
-   "ts": "2026-10-21T10:29:23-04:00",
-   "pillar": "Outdoors",
-   "source": "Outdoor Life",
-   "id": "Jd9bbed",
-   "niche": false
-  },
-  {
-   "title": "I Am The Desperate Mom Friend Organizer You’re Going to Like More Than You Think",
-   "url": "https://www.scarymommy.com/lifestyle/i-am-the-desperate-mom-friend-organizer-youre-going-to-like-more-than-you-think",
-   "desc": "I am, at times, a human exclamation point. I have, at times, hated everything about myself for being this person.",
-   "ts": "2026-10-21T13:13:46+00:00",
-   "pillar": "Family",
-   "source": "Scary Mommy",
-   "id": "J731a86",
    "niche": false
   },
   {
@@ -1075,7 +1055,7 @@
    "ts": "2026-10-21T12:12:30+00:00",
    "pillar": "Family",
    "source": "r/daddit",
-   "signal": "#25 this week on r/daddit",
+   "signal": "#17 this week on r/daddit",
    "id": "J5535e7",
    "niche": false
   },
@@ -1087,16 +1067,6 @@
    "pillar": "Outdoors",
    "source": "Wired2Fish",
    "id": "J9ed6c5",
-   "niche": false
-  },
-  {
-   "title": "6 Natural Parenting Practices You Should Rethink And 5 You Can Keep",
-   "url": "https://www.todaysparent.com/family/parenting/natural-parenting/",
-   "desc": "We all want to keep our kids safe but is natural parenting more trouble than it's worth?",
-   "ts": "2026-10-21T10:00:24+00:00",
-   "pillar": "Family",
-   "source": "Today's Parent",
-   "id": "J8e93c9",
    "niche": false
   },
   {
@@ -1116,18 +1086,8 @@
    "ts": "2026-10-20T22:50:05+00:00",
    "pillar": "Family",
    "source": "r/Mommit",
-   "signal": "#13 this week on r/Mommit",
+   "signal": "#12 this week on r/Mommit",
    "id": "Jba94c6",
-   "niche": false
-  },
-  {
-   "title": "This is What a Mallard’s Year Looks Like",
-   "url": "https://fieldandstream.com/stories/hunting/waterfowl-hunting/duck-hunting/mallard-migration-patterns",
-   "desc": "Recent telemetry studies are providing insights into how waterfowl move across the landscape The post This is What a Mallard’s Year Looks Like appeared first on Field & Stream .",
-   "ts": "2026-10-20T19:51:51+00:00",
-   "pillar": "Outdoors",
-   "source": "Field & Stream",
-   "id": "J9aa9e3",
    "niche": false
   },
   {
@@ -1137,40 +1097,8 @@
    "ts": "2026-10-20T19:28:59+00:00",
    "pillar": "Life",
    "source": "r/personalfinance",
-   "signal": "#32 this week on r/personalfinance",
+   "signal": "#29 this week on r/personalfinance",
    "id": "Jd8ea03",
-   "niche": false
-  },
-  {
-   "title": "Meal Prep for Weight Loss: Healthier Nacho Beef Bowl",
-   "url": "https://www.reddit.com/r/MealPrepSunday/comments/1xafr3i/meal_prep_for_weight_loss_healthier_nacho_beef/",
-   "desc": "I've been eating through my backlog of meals over the last week or so and finally had room for another batch of recipes! The video only covers the bowl, but I'll include the recipe for the lime slaw that I'm having with it as well. Serves 4: Nacho beef bowl and lime slaw: 695kcal, 46g protein, 24g fat, 75g carbs, 11g fiber. Keep the potatoes separate and airfry for 5 minutes at 375F when you are ready to eat to maintain their texture. The weight loss has stalled slightly over the last couple weeks for several different reasons, but I'll be on track again this week. Full recipe in the comments!",
-   "ts": "2026-10-20T01:59:45+00:00",
-   "pillar": "Cooking",
-   "source": "r/MealPrepSunday",
-   "signal": "#21 this week on r/MealPrepSunday",
-   "id": "Jf4346b",
-   "niche": false
-  },
-  {
-   "title": "This High-Protein Crockpot Chicken with Apples Is an Easy Fall Dinner",
-   "url": "https://www.skinnytaste.com/crockpot-chicken-with-apples/?adt_ei=*|EMAIL|*",
-   "desc": "Inspired by Chicken Normandy, this Crockpot Chicken with Apples combines tender chicken and apples in a sweet-and-savory sauce. Serve it over mashed potatoes to soak up every last bit of the sauce. Crockpot Chicken Normandy After going apple picking in upstate New York last month, I made this Crockpot Chicken with Apples as a savory […]",
-   "ts": "2026-10-19T13:29:48+00:00",
-   "pillar": "Cooking",
-   "source": "Skinnytaste",
-   "id": "Je30d45",
-   "niche": false
-  },
-  {
-   "title": "This couch cost 70 bucks and I love it",
-   "url": "https://www.reddit.com/r/Frugal/comments/1x9kl7z/this_couch_cost_70_bucks_and_i_love_it/",
-   "desc": "This couch cost me 70 bucks at a thrift store and it is the most comfortable couch I ever laid on. Dont mind Domino, thats my cat. My cats and I love this couch. There's a local thrift store in my town that sells furniture dirt cheap, I dont care if furniture matches. If its comfy and I like it, its coming home with me. Not sure who else buys thrift store furniture, i also got a gun case for 30 bucks. A tv stand with drawers for 50, and a power recliner for 130.",
-   "ts": "2026-10-19T01:57:54+00:00",
-   "pillar": "Life",
-   "source": "r/Frugal",
-   "signal": "#35 this week on r/Frugal",
-   "id": "Ja5a88b",
    "niche": false
   },
   {
@@ -1191,18 +1119,40 @@
    "ts": "2026-10-18T04:08:57+00:00",
    "pillar": "Life",
    "source": "r/simpleliving",
-   "signal": "#34 this week on r/simpleliving",
+   "signal": "#33 this week on r/simpleliving",
    "id": "Je1678c",
    "niche": false
   },
   {
-   "title": "Italian Wedding Soup",
-   "url": "https://www.budgetbytes.com/italian-wedding-soup/",
-   "desc": "This cozy Italian Wedding Soup recipe features tender and flavorful meatballs, vegetables, and pasta in a delicious chicken broth. The post Italian Wedding Soup appeared first on Budget Bytes .",
-   "ts": "2026-10-17T13:30:00+00:00",
+   "title": "Molasses + a pinch of Salt in a bottle of water is a remarkably good/cheap substitute for Hydration packets",
+   "url": "https://www.reddit.com/r/Frugal/comments/1x7zn1g/molasses_a_pinch_of_salt_in_a_bottle_of_water_is/",
+   "desc": "Pretty much the title. Blackstrap molasses is pretty amazing stuff, a Tablespoon has way more minerals and electrolytes than any of the mixes on the market. I did write a blog post on the idea, but rules say I can't post - so figured I'd just give you the basics and you can look up the nutrition numbers yourself. Just add a pinch of salt. Nutrient Pedialyte Classic (12 oz) Blackstrap molasses (1 tbsp) Daily Value Sugar 5 g (10%) 11 g (22%) 50 g added sugars* Sodium 390 mg (17%) 7–35 mg (0–2%) 2,300 mg Potassium 280 mg (6%) 293–343 mg (6–7%) 4,700 mg Chloride 440 mg (19%) Not established 2,300 ",
+   "ts": "2026-10-17T03:10:59+00:00",
+   "pillar": "Life",
+   "source": "r/Frugal",
+   "signal": "#24 this week on r/Frugal",
+   "id": "J5171d7",
+   "niche": false
+  },
+  {
+   "title": "Apple Spice Cake",
+   "url": "https://www.budgetbytes.com/apple-spice-cake/",
+   "desc": "This homemade Apple Spice Cake recipe is packed with fresh apples, warm spices, and nutty brown butter. It's moist, easy to make, and cheap! The post Apple Spice Cake appeared first on Budget Bytes .",
+   "ts": "2026-10-16T13:30:00+00:00",
    "pillar": "Cooking",
    "source": "Budget Bytes",
-   "id": "J3a16f3",
+   "id": "J6fe4e1",
+   "niche": false
+  },
+  {
+   "title": "Lower Cal. Pad See Ew",
+   "url": "https://www.reddit.com/r/MealPrepSunday/comments/1x6z4j8/lower_cal_pad_see_ew/",
+   "desc": "Each portion (4) is approx. 615cal and weighs 550g Tired of the high volume salads I've been eating for every meal so decided to switch it up a bit for the next few days! This has much less protein than the volume salads (which were ~45-60g protein each) but sometimes you need noods in your life while still maintaining calorie deficit to stay sane! (Salads were also around 800cal/ea so I've got room for protein elsewhere in shakes or a bunch more egg whites, etc.) 1lb (dry wt.) Rice noodles 4x whole eggs 500ml egg whites 2 heads broccoli (including stems) Sauce is: Light soy Dark soy Oyster sa",
+   "ts": "2026-10-15T22:10:29+00:00",
+   "pillar": "Cooking",
+   "source": "r/MealPrepSunday",
+   "signal": "#49 this week on r/MealPrepSunday",
+   "id": "J84fd60",
    "niche": false
   },
   {
@@ -1217,6 +1167,16 @@
    "niche": false
   },
   {
+   "title": "A Friend Taught Me This Easy Chicken Curry Years Ago, and I Still Make It Today",
+   "url": "https://www.skinnytaste.com/chicken-curry-with-coconut-milk-43-pts/?adt_ei=*|EMAIL|*",
+   "desc": "This easy chicken curry combines tender chicken thighs and potatoes with coconut milk, tomatoes, and warm spices for a flavorful one-pan dinner. A Chicken Curry I’ve Been Making for Years A friend taught me how to make this chicken curry years ago, before I started Skinnytaste, and I’ve been making it this way ever since. […]",
+   "ts": "2026-10-15T16:52:10+00:00",
+   "pillar": "Cooking",
+   "source": "Skinnytaste",
+   "id": "J88cab5",
+   "niche": false
+  },
+  {
    "title": "Nate Bargatze Is (Sort Of) Leading By Example",
    "url": "https://www.fatherly.com/entertainment/nate-bargatzes-folksy-funny-fatherhood",
    "desc": "One of the biggest comedians in the world, Nate Bargatze’s career path was anything but straightforward.",
@@ -1227,33 +1187,43 @@
    "niche": false
   },
   {
-   "title": "Romorgniz Recalls Six-Drawer Dressers Due to Risk of Serious Injury or Death from Tip-Over and Entrapment Hazards; Violate Mandatory Standard for Clothing Storage Units",
-   "url": "https://www.cpsc.gov/Recalls/2027/Romorgniz-Recalls-Six-Drawer-Dressers-Due-to-Risk-of-Serious-Injury-or-Death-from-Tip-Over-and-Entrapment-Hazards-Violate-Mandatory-Standard-for-Clothing-Storage-Units",
-   "desc": "The recalled dressers are unstable if they are not anchored to the wall, posing tip-over and entrapment hazards that can result in risks of serious injuries or death to children. The dressers violate the mandatory safety standards as required by the STURDY Act .",
-   "ts": "2026-10-08T00:00:00+00:00",
-   "pillar": "Family",
-   "source": "CPSC Recalls",
-   "id": "J1ce3be",
-   "niche": true
-  },
-  {
-   "title": "Walmart Scam Victims Are Getting Checks Averaging $150. Don’t Toss Yours",
-   "url": "https://www.moneytalksnews.com/walmart-scam-victims-are-getting-checks-averaging-dont-toss-yours/",
-   "desc": "Scammers used Walmart's money-transfer counters to collect from their victims. Now some money is coming back — and so are the fakes.",
-   "ts": "2026-10-21T15:00:28+00:00",
+   "title": "‘Dirty Jobs’ Host Mike Rowe Says for Every 5 Tradespeople Who Leave, Only 2 Are Replaced. 7 Home Maintenance Jobs to Handle Before Winter",
+   "url": "https://www.moneytalksnews.com/dirty-jobs-host-mike-rowe-says-for-every-tradespeople-who-leave-only-are-replaced-home-maintenance-jobs-to-handle-before-winter/",
+   "desc": "The repair calls that pile up after the first freeze go to an ever-decreasing pool of workers. Here's how to avoid emergency repairs.",
+   "ts": "2026-10-21T16:30:32+00:00",
    "pillar": "Life",
    "source": "Money Talks News",
-   "id": "Jfeedfa",
+   "id": "J6bfde0",
    "niche": false
   },
   {
-   "title": "Why Your Smartwatch Size Really Does Matter",
-   "url": "https://lifehacker.com/health/why-your-smartwatch-size-matters?utm_medium=RSS",
-   "desc": "It's about accuracy, not just looks.",
-   "ts": "2026-10-21T14:30:17+00:00",
+   "title": "Everything You Should See Along With ‘You Can See Everything’",
+   "url": "https://lifehacker.com/entertainment/what-to-see-along-with-you-can-see-everything?utm_medium=RSS",
+   "desc": "A spoiler-free guide to getting the most out of this one-of-a-kind cinematic experience.",
+   "ts": "2026-10-21T16:30:00+00:00",
    "pillar": "Life",
    "source": "Lifehacker",
-   "id": "Jfb0a2b",
+   "id": "Jd8d9cb",
+   "niche": false
+  },
+  {
+   "title": "Scary Mommy 2026 Readers' Choice Awards Best Maternity Lounge Brands",
+   "url": "https://www.scarymommy.com/shopping/scary-mommy-2026-readers-choice-awards-best-maternity-lounge-brands",
+   "desc": "So comfortable and chic you’ll want to wear them long after baby is born.",
+   "ts": "2026-10-21T16:00:25+00:00",
+   "pillar": "Family",
+   "source": "Scary Mommy",
+   "id": "Jd20cc3",
+   "niche": false
+  },
+  {
+   "title": "Jack O’Connor Dodged Hungry Lions to Take His First Leopard",
+   "url": "https://www.outdoorlife.com/hunting/jack-oconnor-first-leopard/",
+   "desc": "Even the legendary Jack O’Connor had the occasional mishap during a big hunt The post Jack O’Connor Dodged Hungry Lions to Take His First Leopard appeared first on Outdoor Life .",
+   "ts": "2026-10-21T10:29:23-04:00",
+   "pillar": "Outdoors",
+   "source": "Outdoor Life",
+   "id": "Jd9bbed",
    "niche": false
   },
   {
@@ -1287,23 +1257,13 @@
    "niche": false
   },
   {
-   "title": "The Best Musky Reels of 2026, Tested on the Water",
-   "url": "https://www.outdoorlife.com/gear/best-musky-reels/",
-   "desc": "These reels are built to throw giant baits all day and battle big fish to the boat The post The Best Musky Reels of 2026, Tested on the Water appeared first on Outdoor Life .",
-   "ts": "2026-10-20T21:12:35-04:00",
+   "title": "This is What a Mallard’s Year Looks Like",
+   "url": "https://fieldandstream.com/stories/hunting/waterfowl-hunting/duck-hunting/mallard-migration-patterns",
+   "desc": "Recent telemetry studies are providing insights into how waterfowl move across the landscape The post This is What a Mallard’s Year Looks Like appeared first on Field & Stream .",
+   "ts": "2026-10-20T19:51:51+00:00",
    "pillar": "Outdoors",
-   "source": "Outdoor Life",
-   "id": "J406e5a",
-   "niche": false
-  },
-  {
-   "title": "47 Cozy Fall Movies To Cue Up After Your Annual 'You’ve Got Mail' Rewatch",
-   "url": "https://www.scarymommy.com/entertainment/cozy-fall-movies",
-   "desc": "Grab your favorite nubby blanket, light a candle, and get cozy. These comfort watches hit that sweet sweater-weather spot.",
-   "ts": "2026-10-20T22:24:49+00:00",
-   "pillar": "Family",
-   "source": "Scary Mommy",
-   "id": "Ja78b04",
+   "source": "Field & Stream",
+   "id": "J9aa9e3",
    "niche": false
   },
   {
@@ -1313,38 +1273,18 @@
    "ts": "2026-10-20T19:03:00+00:00",
    "pillar": "Family",
    "source": "r/daddit",
-   "signal": "#39 this week on r/daddit",
+   "signal": "#36 this week on r/daddit",
    "id": "J188b7c",
    "niche": false
   },
   {
-   "title": "Discover The Magic Behind New Stop-Motion Movie Wildwood",
-   "url": "https://www.todaysparent.com/kids/stop-motion-movie-wildwood/",
-   "desc": "Canadian actor Jacob Tremblay and LAIKA's head of animation, Brad Schiff, reveal the surprising details behind bringing the fantastical world of Wildwood to life.",
-   "ts": "2026-10-20T18:32:45+00:00",
-   "pillar": "Family",
-   "source": "Today's Parent",
-   "id": "J5ac25d",
-   "niche": false
-  },
-  {
-   "title": "Our Favorite Gifts for Hunting Dog Owners and Their Best Friends",
-   "url": "https://fieldandstream.com/stories/dogs/canine-gear-accessories/gifts-for-hunting-dog-owners",
-   "desc": "Because the best hunting buddies deserve the best gear—here's what made our list this year The post Our Favorite Gifts for Hunting Dog Owners and Their Best Friends appeared first on Field & Stream .",
-   "ts": "2026-10-20T17:00:42+00:00",
-   "pillar": "Outdoors",
-   "source": "Field & Stream",
-   "id": "Je28d37",
-   "niche": false
-  },
-  {
-   "title": "7-Year-Old Angler “Caught His Age” With Personal-Best 7-Pound Largemouth",
-   "url": "https://www.wired2fish.com/news/7-year-old-angler-caught-his-age-with-personal-best-7-pound-largemouth",
-   "desc": "Liam Hellum is a young Arizona fishing phenom. The second-grader recently caught-and-released his biggest bass to date: a thick-body 7.1-pound largemouth bass. “Liam has been fishing since he was old enough to hold a fishing rod,” his proud dad Brad told Wired2fish. “He’s just like his 15-year-old sister Annabel. She loves to fish, and even [...] Read More... from 7-Year-Old Angler “Caught His Age” With Personal-Best 7-Pound Largemouth The post 7-Year-Old Angler “Caught His Age” With Personal-Best 7-Pound Largemouth appeared first on Wired2Fish .",
-   "ts": "2026-10-20T14:00:00+00:00",
+   "title": "The South’s Hot Winter Bass Fishing Really Starts Brewing in Fall",
+   "url": "https://www.wired2fish.com/fall-fishing/the-souths-hot-winter-bass-fishing-really-starts-brewing-in-fall",
+   "desc": "With the leaves changing color and Indian Summer all but completed, some states have come to terms with the cold weather. Our office in Minnesota, not far from Leech Lake, likely experienced its last day in the 80s in early October. And now the chill has set in. But regions in the Deep South — [...] Read More... from The South’s Hot Winter Bass Fishing Really Starts Brewing in Fall The post The South’s Hot Winter Bass Fishing Really Starts Brewing in Fall appeared first on Wired2Fish .",
+   "ts": "2026-10-20T11:00:00+00:00",
    "pillar": "Outdoors",
    "source": "Wired2Fish",
-   "id": "Jc84e19",
+   "id": "Jdca13c",
    "niche": false
   },
   {
@@ -1359,86 +1299,75 @@
    "niche": false
   },
   {
-   "title": "A few scissor snips and I'm getting at least 5 extra brushes",
-   "url": "https://www.reddit.com/r/Frugal/comments/1x8z63k/a_few_scissor_snips_and_im_getting_at_least_5/",
-   "desc": "I used to squeeze every bit of toothpaste out of the tube then toss it in the bin . I would always hav the tragic feeling of knowing that my squeeze techniques would always underperform and the anger giving Big Toothpaste 100% the price while only allowing use of 93% of the product. Since joining this sub I've married buy it for life scissors with toothpaste tubes and now feel like a secret frugal hero brushing away in my bathroom Thank you mods & all for inspiring me and my toothpaste usage to achieve our full potential .",
-   "ts": "2026-10-18T09:42:49+00:00",
-   "pillar": "Life",
-   "source": "r/Frugal",
-   "signal": "#44 this week on r/Frugal",
-   "id": "J4f22ba",
-   "niche": false
-  },
-  {
    "title": "Low energy men should not be fathers",
    "url": "https://www.reddit.com/r/Mommit/comments/1x7z58d/low_energy_men_should_not_be_fathers/",
    "desc": "​ I'm fed up. We have 3.5 year old boy (he is in daycare 5 days a week) and almost 3 month old girl (always at home). My husband recently returned to work after 3 month parental leave. I'm still on maternity leave. He is always angry - it doesn't matter if it's a weekday or a weekend. Same was during his leave, same , maybe a bit better, when we only had 1 child. He doesn't want to go anywhere, doesn't plan anything, he looks pissed at every \"daddy, why\", every \"daddy, look at me\", every \"i don't want that food\". Every weekend he asks me what do I want to do as if he fully embraced slaves ment",
    "ts": "2026-10-17T02:43:46+00:00",
    "pillar": "Family",
    "source": "r/Mommit",
-   "signal": "#29 this week on r/Mommit",
+   "signal": "#28 this week on r/Mommit",
    "id": "J0392b1",
    "niche": false
   },
   {
-   "title": "I just blew my 7 year olds mind.",
-   "url": "https://www.reddit.com/r/Parenting/comments/1x7lbv3/i_just_blew_my_7_year_olds_mind/",
-   "desc": "My son was playing with his number blocks, throwing random maths questions at me, and one was, what's 11 + 7? I said 18. 11 has a 10 and a 1, remove the 1 and add it to the 7, which gives you 8, then add the 8 back to the 10.. gives you 18. He stared into space for a few seconds and shouts, mom you're a genius!! You're like Albert Einstein Haha the way your children make you feel like the smartest person in the world 😂😂",
-   "ts": "2026-10-16T16:46:39+00:00",
-   "pillar": "Family",
-   "source": "r/Parenting",
-   "signal": "#7 this week on r/Parenting",
-   "id": "J228570",
+   "title": "Disabled and can barely afford my bills. Scared of the cost of heat this winter.",
+   "url": "https://www.reddit.com/r/Frugal/comments/1x63704/disabled_and_can_barely_afford_my_bills_scared_of/",
+   "desc": "I live in a tiny, old, uninsulated, and electrically inefficient apartment. One of my windows is stuck open (top half won't stay up about 2in) and creates a draft. The heaters are electric and the main one takes up the length of the southern wall in the unit, and I'm scared to use it cause it makes contact with my bed. Bed is in the southwest corner, TV is on the east wall, dresser is on the north wall next to my closet. I live in North Dakota. I'm wondering if it would be better to use a space heater in the main room, or if I should switch my bed and dresser around. The electric heat is more ",
+   "ts": "2026-10-14T21:09:37+00:00",
+   "pillar": "Life",
+   "source": "r/Frugal",
+   "signal": "#58 this week on r/Frugal",
+   "id": "Jbc40fc",
    "niche": false
   },
   {
-   "title": "7 Day High Protein Diet Meal Plan",
-   "url": "https://www.skinnytaste.com/7-day-high-protein-diet-meal-plan-55/?adt_ei=*|EMAIL|*",
-   "desc": "A free, 7-day high protein diet meal plan including breakfast, lunch and dinner ideas and a shopping list. All recipes include macros and Weight Watchers points. 7 Day High Protein Diet Meal Plan Fall is the perfect excuse to cozy up with comforting, satisfying meals that make the most of the season. From hearty soups […]",
-   "ts": "2026-10-16T15:50:00+00:00",
+   "title": "These Pumpkin Cornbread Muffins Go From Breakfast to Chili Night",
+   "url": "https://www.skinnytaste.com/pumpkin-cornbread-muffins/?adt_ei=*|EMAIL|*",
+   "desc": "Pumpkin Cornbread Muffins are moist, tender, and lightly sweetened with maple syrup, with a touch of pumpkin spice for warm fall flavor. Enjoy them for breakfast or serve them warm alongside a bowl of your favorite chili. Cornbread Pumpkin Muffins These easy pumpkin cornbread muffins have everything I love about classic cornbread, with pumpkin puree […]",
+   "ts": "2026-10-14T14:40:34+00:00",
    "pillar": "Cooking",
    "source": "Skinnytaste",
-   "id": "J543392",
+   "id": "J54cccc",
    "niche": false
   },
   {
-   "title": "The Conqueror Recalls Avengers Medals Due to Risk of Serious Injury or Death from Magnet Ingestion; Violate Mandatory Standard for Magnets",
-   "url": "https://www.cpsc.gov/Recalls/2027/The-Conqueror-Recalls-Avengers-Medals-Due-to-Risk-of-Serious-Injury-or-Death-from-Magnet-Ingestion-Violate-Mandatory-Standard-for-Magnets",
-   "desc": "The recalled medals violate the mandatory safety standard for magnets because the high-powered magnets may detach, posing a deadly ingestion hazard to children. When high-powered magnets are swallowed, the ingested magnets can attract each other or other metal objects and become lodged in the digestive system. This can result in perforations, twisting, and/or blockage of the intestines, blood poisoning and death.",
-   "ts": "2026-10-08T00:00:00+00:00",
-   "pillar": "Family",
-   "source": "CPSC Recalls",
-   "id": "J4c40bd",
-   "niche": true
-  },
-  {
-   "title": "Getting Your GLP-1 Online? Check if the Pharmacy Making It Is Legit",
-   "url": "https://www.moneytalksnews.com/getting-your-glp-online-check-if-the-pharmacy-making-it-is-legit/",
-   "desc": "Nearly one in five GLP-1 users now takes a compounded version, and a state board lookup can reveal whether the pharmacy behind it is licensed.",
-   "ts": "2026-10-21T14:42:02+00:00",
+   "title": "Social Security Database Gets Major Cleanup. Does It Impact You?",
+   "url": "https://www.moneytalksnews.com/social-security-database-gets-major-cleanup-does-it-impact-you/",
+   "desc": "The agency added 17 million dates of death and corrected 25 million citizenship entries, but most beneficiaries won't see any change to their checks.",
+   "ts": "2026-10-21T16:13:21+00:00",
    "pillar": "Life",
    "source": "Money Talks News",
-   "id": "Jb5bf0d",
+   "id": "J67d913",
    "niche": false
   },
   {
-   "title": "Beware of These iPhone Duo Preorder Scams",
-   "url": "https://lifehacker.com/money/iphone-duo-preorder-scams?utm_medium=RSS",
-   "desc": "Scammers are capitalizing on the rush to obtain Apple's new foldable phone.",
-   "ts": "2026-10-21T14:00:00+00:00",
+   "title": "Scary Mommy 2026 Readers' Choice Awards Best Nursing Bra Brands",
+   "url": "https://www.scarymommy.com/shopping/scary-mommy-2026-readers-choice-awards-best-nursing-bra-brands",
+   "desc": "Even if you don’t breastfeed, these are comfortable to have in the postpartum days.",
+   "ts": "2026-10-21T16:00:25+00:00",
+   "pillar": "Family",
+   "source": "Scary Mommy",
+   "id": "Jdf6deb",
+   "niche": false
+  },
+  {
+   "title": "10 Hacks Ever Siri AI User Should Know",
+   "url": "https://lifehacker.com/tech/best-siri-ai-hacks?utm_medium=RSS",
+   "desc": "Apple's revamped Siri is here, and some of its most useful features are easy to miss.",
+   "ts": "2026-10-21T15:00:00+00:00",
    "pillar": "Life",
    "source": "Lifehacker",
-   "id": "J44344b",
+   "id": "J605113",
    "niche": false
   },
   {
-   "title": "The Best Inshore Spinning Reels of 2026, Tested and Reviewed",
-   "url": "https://www.outdoorlife.com/gear/best-inshore-spinning-reels/",
-   "desc": "These reels were tested for months in Virginia and Florida The post The Best Inshore Spinning Reels of 2026, Tested and Reviewed appeared first on Outdoor Life .",
-   "ts": "2026-10-20T21:03:45-04:00",
+   "title": "The Best Musky Reels of 2026, Tested on the Water",
+   "url": "https://www.outdoorlife.com/gear/best-musky-reels/",
+   "desc": "These reels are built to throw giant baits all day and battle big fish to the boat The post The Best Musky Reels of 2026, Tested on the Water appeared first on Outdoor Life .",
+   "ts": "2026-10-20T21:12:35-04:00",
    "pillar": "Outdoors",
    "source": "Outdoor Life",
-   "id": "J55e1e4",
+   "id": "J406e5a",
    "niche": false
   },
   {
@@ -1452,23 +1381,98 @@
    "niche": false
   },
   {
-   "title": "Book-To-Screen Adaptations Coming In 2027 That Are Worth The Read First",
-   "url": "https://www.scarymommy.com/entertainment/book-to-screen-adaptations-coming-in-2027",
-   "desc": "Here are all the best book-to-screen adaptations coming in 2027, so you can read the book beforehand if that’s your jam (it's totally ours).",
-   "ts": "2026-10-20T20:38:00+00:00",
-   "pillar": "Family",
-   "source": "Scary Mommy",
-   "id": "J88fc7f",
+   "title": "Our Favorite Gifts for Hunting Dog Owners and Their Best Friends",
+   "url": "https://fieldandstream.com/stories/dogs/canine-gear-accessories/gifts-for-hunting-dog-owners",
+   "desc": "Because the best hunting buddies deserve the best gear—here's what made our list this year The post Our Favorite Gifts for Hunting Dog Owners and Their Best Friends appeared first on Field & Stream .",
+   "ts": "2026-10-20T17:00:42+00:00",
+   "pillar": "Outdoors",
+   "source": "Field & Stream",
+   "id": "Je28d37",
    "niche": false
   },
   {
-   "title": "27 Best Stocking Stuffers for Mom 2026",
-   "url": "https://www.todaysparent.com/shopping/stocking-stuffers-for-mom/",
-   "desc": "From self-care to sparkly, goodies she's sure to love.",
-   "ts": "2026-10-20T17:27:10+00:00",
+   "title": "Ep. 06: John Wesley Hardin vs Wild Bill Hickok",
+   "url": "https://www.themeateater.com/listen/gunfighters/ep-06-john-wesley-hardin-vs-wild-bill-hickok",
+   "desc": "America’s first famous gunfighter also happens to have been a titanic fraud. Join best-selling author Bryan Burrough as he dives separates the into facts from the fictions enveloping the career of Wild Bill Hickok. Thank you to our sponsor, Tecovas. Follow now on Apple, Spotify, iHeart, and YouTube. MeatEater on Instagram, Facebook, Twitter, Youtube, and Youtube Clips Check out more MeatEater's American History audio originals \"The Long...",
+   "ts": "2026-10-20T09:00:00+00:00",
+   "pillar": "Outdoors",
+   "source": "MeatEater",
+   "id": "Jed6a08",
+   "niche": false
+  },
+  {
+   "title": "I’ve tried to explain that an exasperated eye roll counts as much as laugh when it comes to Dad jokes.",
+   "url": "https://www.reddit.com/r/daddit/comments/1xai421/ive_tried_to_explain_that_an_exasperated_eye_roll/",
+   "desc": "I tagged it achievements cause I’m damn proud of this one (and there isn’t a humor option). But I’m pretty sure I felt her eye roll via text. 🤣",
+   "ts": "2026-10-20T03:58:52+00:00",
    "pillar": "Family",
-   "source": "Today's Parent",
-   "id": "J7859ae",
+   "source": "r/daddit",
+   "signal": "#26 this week on r/daddit",
+   "id": "J04bd75",
+   "niche": false
+  },
+  {
+   "title": "My husband hasn't connected the dots.",
+   "url": "https://www.reddit.com/r/Mommit/comments/1x6fea3/my_husband_hasnt_connected_the_dots/",
+   "desc": "So I am 7 days post op after a bartholin gland excision (total removal to treat reoccuring cysts and abscesses), and things went a little differently than expected and I have 45 stitches, a 6in long incision, and I am meant to be on bedrest for two weeks. My husband has been helping with absolutely everything and while he has been helpful, he is clearly super stressed out. He took two weeks off work to be here so he is doing around the clock care of our 15 month old daughter while I am in recovery. I made four weeks of meal prep before my surgery, so he wouldn't have to scramble to cook, and I",
+   "ts": "2026-10-15T07:38:48+00:00",
+   "pillar": "Family",
+   "source": "r/Mommit",
+   "signal": "#4 this week on r/Mommit",
+   "id": "J51275b",
+   "niche": false
+  },
+  {
+   "title": "Scary Mommy 2026 Readers' Choice Awards Best Diaper Bag Brands",
+   "url": "https://www.scarymommy.com/shopping/scary-mommy-2026-readers-choice-awards-best-diaper-bag-brands",
+   "desc": "Baby-friendly, but make it chic.",
+   "ts": "2026-10-21T16:00:25+00:00",
+   "pillar": "Family",
+   "source": "Scary Mommy",
+   "id": "Jbac0a0",
+   "niche": false
+  },
+  {
+   "title": "Told my kid the moon is a potato while out for a walk. I got a laugh but my assertion was rejected, so I asked a random bloke on the street. He understood the assignment immediately and backed me up. It was very funny.",
+   "url": "https://www.reddit.com/r/daddit/comments/1x9jqbv/told_my_kid_the_moon_is_a_potato_while_out_for_a/",
+   "desc": "He said, Oh yeah, everyone knows the moon is a potato! Kiddo kept laughing, it was good fun. Thank you random stranger, you legend. ..... Wow! The giant potato in the sky must have shone bright last night because this post seems to have received a few upvotes. Well, to the dads of many, dads of one, dads-to-be, and lurker mums, cheers for being an awesome bunch. You are all legends.",
+   "ts": "2026-10-19T01:14:11+00:00",
+   "pillar": "Family",
+   "source": "r/daddit",
+   "signal": "#8 this week on r/daddit",
+   "id": "J27772f",
+   "niche": false
+  },
+  {
+   "title": "“This is why men cheat on their wives”",
+   "url": "https://www.reddit.com/r/Mommit/comments/1x5y2vg/this_is_why_men_cheat_on_their_wives/",
+   "desc": "My husband said this to me today. We are on hospital admission #4 with our 5 month old baby (third kid) who has some medical issues. Backstory: I had severe bleeding during my pregnancy and was on pelvic rest (no sex or orgasms) and eventually bed rest starting when I was 5 months along. My baby had to be delivered a month early by c section because of a placental abruption. Two weeks after delivery I was readmitted to the hospital for severe postpartum preeclampsia. All the while we have a new baby who has problems. My recovery was very rough because I had three kids to take care of while rec",
+   "ts": "2026-10-14T17:52:41+00:00",
+   "pillar": "Family",
+   "source": "r/Mommit",
+   "signal": "#5 this week on r/Mommit",
+   "id": "Jeb2ea4",
+   "niche": false
+  },
+  {
+   "title": "Scary Mommy 2026 Readers' Choice Awards Best Baby Monitor Brands",
+   "url": "https://www.scarymommy.com/shopping/scary-mommy-2026-readers-choice-awards-best-baby-monitor-brands",
+   "desc": "As a new parent, you will live and die by the baby monitor. Make it a good one.",
+   "ts": "2026-10-21T16:00:25+00:00",
+   "pillar": "Family",
+   "source": "Scary Mommy",
+   "id": "Jc6afcc",
+   "niche": false
+  },
+  {
+   "title": "My son has gotten into paw patrol and it's so bad",
+   "url": "https://www.reddit.com/r/daddit/comments/1x9j7a3/my_son_has_gotten_into_paw_patrol_and_its_so_bad/",
+   "desc": "We started him on Bluey, Thomas, Seseme Street and Ms Rachel. He's 3. But I can't with paw patrol. It's so baaaaad. Bluey tells stories, has an actual art style and has soul. Paw patrol is so generic.",
+   "ts": "2026-10-19T00:47:58+00:00",
+   "pillar": "Family",
+   "source": "r/daddit",
+   "signal": "#32 this week on r/daddit",
+   "id": "J554566",
    "niche": false
   }
  ]
