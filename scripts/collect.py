@@ -62,6 +62,18 @@ def gn(q, days):
             + "&hl=en-US&gl=US&ceid=US:en")
 
 
+def gn_front(q, days):
+    return ("https://news.google.com/rss/search?q=" + urllib.parse.quote(f"when:{days}d {q}")
+            + "&hl=en-US&gl=US&ceid=US:en")
+
+
+def gn_urls(q, days):
+    """Google News drops "when:" on many long queries (2026-10-21: stories years old crowd out the fresh ones), and
+    where it sits decides which queries it works on, with no spot that works for all. So ask both ways; the age
+    filter and cluster() merge the two answers."""
+    return [gn(q, days), gn_front(q, days)]
+
+
 # ---------------- sources ----------------
 SEASON = {
     1: '"snow day" OR "New Year" OR "ice fishing"', 2: '"Valentine\'s" OR "Super Bowl" OR "Groundhog"',
@@ -749,13 +761,13 @@ def summaries(items):
 # ---------------- main ----------------
 def main():
     DATA.mkdir(exist_ok=True)
-    jobs =[("gn", "national", "Google News", gn(q, 1)) for q in NATIONAL_Q]
+    jobs =[("gn", "national", "Google News", u) for q in NATIONAL_Q for u in gn_urls(q, 1)]
     jobs += [("feed", "national", l, u) for l, u in NATIONAL_FEEDS]
-    jobs += [("gn", "local", "Google News", gn(q, d)) for q, d in LOCAL_Q]
+    jobs += [("gn", "local", "Google News", u) for q, d in LOCAL_Q for u in gn_urls(q, d)]
     jobs += [("feed", "local", l, u) for l, u in LOCAL_FEEDS]
-    jobs += [("gn", "music", "Google News", gn(q, 1)) for q in MUSIC_Q]
+    jobs += [("gn", "music", "Google News", u) for q in MUSIC_Q for u in gn_urls(q, 1)]
     jobs += [("feed", "music", l, u) for l, u in MUSIC_FEEDS]
-    jobs += [("gn", "weird", "Google News", gn(q, d)) for q, d in WEIRD_Q]
+    jobs += [("gn", "weird", "Google News", u) for q, d in WEIRD_Q for u in gn_urls(q, d)]
     jobs += [("feed", "weird", l, u) for l, u in WEIRD_FEEDS]
     with ThreadPoolExecutor(6) as ex:
         raw = [it for chunk in ex.map(pull, jobs) for it in chunk]

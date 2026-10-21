@@ -10,7 +10,6 @@ Run: python3 -I scripts/light.py   (1-3 minutes)
 """
 import json
 import sys
-import urllib.parse
 from concurrent.futures import ThreadPoolExecutor
 from hashlib import md5
 from pathlib import Path
@@ -22,7 +21,7 @@ import collect  # noqa: E402  (reuses pull(), the filters, town_of(), cluster(),
 
 LIGHT_DAYS = 14
 # Google News ignores "when:" on a long query (it returned stories years old), so the tone words are split into
-# short groups and "when:" goes first.
+# short groups, and collect.gn_urls() asks with "when:" both first and last.
 TONES = [
     '(heartwarming OR "feel-good" OR uplifting OR inspiring OR kindness OR generous)',
     '(surprise OR surprised OR reunited OR rescued OR adopted OR "pays it forward" OR "good deed")',
@@ -47,14 +46,9 @@ QUERIES = [f"{a} {t}" for a in AREAS for t in TONES] + [
 ]
 
 
-def gn_front(q, days):
-    return ("https://news.google.com/rss/search?q=" + urllib.parse.quote(f"when:{days}d {q}")
-            + "&hl=en-US&gl=US&ceid=US:en")
-
-
 def main():
     c = collect
-    jobs = [("gn", "local", "Google News", gn_front(q, LIGHT_DAYS)) for q in QUERIES]
+    jobs = [("gn", "local", "Google News", u) for q in QUERIES for u in c.gn_urls(q, LIGHT_DAYS)]
     # The searches find little (most feel-good hits are national), so every post from the area's own outlets
     # in the last 14 days is a candidate too. The main collector keeps only the top few per outlet and 7 days.
     jobs += [("feed", "local", l, u) for l, u in c.LOCAL_FEEDS]
