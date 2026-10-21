@@ -29,7 +29,7 @@ NEWS_PAGE = ["johnsons", "pride", "local", "light", "weird"]
 SHOW_PREP = ["pride", "national", "humor", "music", "timely", "johnsons"]
 EXTRA_NAMES = {"timely": "Timely", "johnsons": "The Johnsons"}
 EVENTS_JS = Path.home() / "Documents/Claude/Projects/KJEL-event-board/data/events.js"
-EVENT_SKIP = {"kim only", "live music"}
+EVENT_SKIP = {"kim only", "live music", "manual entries"}  # manual entries are filed under their own category (d["manual"])
 
 
 def event_columns():
@@ -42,7 +42,8 @@ def event_columns():
     for typ in d["types"]:
         if typ.lower() in EVENT_SKIP:
             continue
-        evs = sorted((e for e in d["events"] if e["type"] == typ and date.fromisoformat(e["date"]) >= today),
+        # Boss (2026-10-21): events she adds by hand go into the Show Prep category they belong in (d["manual"]).
+        evs = sorted((e for e in d["events"] + d.get("manual", []) if e["type"] == typ and date.fromisoformat(e["date"]) >= today),
                      key=lambda e: (e["date"], e.get("min", 0)))
         cards = [{"kind": "event", "title": e["title"], "line": e["title"], "city": e["town"], "source": e.get("source", ""),
                   "url": e["url"], "ts": None, "signal": "", "why": e.get("why", ""), "place": e.get("place", ""),

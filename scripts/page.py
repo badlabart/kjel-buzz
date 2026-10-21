@@ -147,7 +147,7 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir=""):
                 where = ""
             sig = f'<div class="sig"><b>BUZZ:</b> {esc(c["signal"])}</div>' if c.get("signal") else ""
             joke = c.get("kind") == "joke"
-            nolink = joke or col["key"] == "humor"  # Humor reads in one line; nothing to click
+            nolink = joke or col["key"] == "humor" or (c.get("kind") == "event" and not c.get("url"))  # Humor reads in one line; hand-entered events may have no link
             punch = ""
             # On-air sentence replaces the headline. Jokes and roundups keep their own text.
             if joke:  # one line: Claude's tightened version, or setup and punchline joined
