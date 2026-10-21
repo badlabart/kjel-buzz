@@ -13,6 +13,7 @@ import collect  # noqa: E402  (reuses the Google News link lookup)
 import concerts  # noqa: E402
 import humor  # noqa: E402
 import page  # noqa: E402
+import wx  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -239,9 +240,11 @@ def main():
     if news_out.parent.exists():
         news_out.mkdir(exist_ok=True)
         (news_out / "index.html").write_bytes((ROOT / "docs" / "news" / "index.html").read_bytes())
-    prep = {"updated": stamp, "columns": [by_key[k] for k in SHOW_PREP if k in by_key] + event_columns(),
+    # Boss (2026-10-21): Show Prep opens with a day / date search, and Wx (alerts + today's town forecasts) is its first column.
+    wxcol = wx.column()
+    prep = {"updated": stamp, "columns": [wxcol] + [by_key[k] for k in SHOW_PREP if k in by_key] + event_columns(),
             "lebanon": {k: v for k, v in lebanon.items() if k in SHOW_PREP}}
-    page.write(prep, title="Show Prep", doc_title="KJEL Show Prep", subdir="show-prep")
+    page.write(prep, title="Show Prep", doc_title="KJEL Show Prep", subdir="show-prep", day_search=True)
     # Boss (2026-10-20): Show Prep also lives at its own short address, badlabart.github.io/kjel-showprep
     out = Path.home() / "Documents/Claude/Projects/KJEL-showprep/docs"
     if out.parent.exists():
@@ -254,6 +257,7 @@ def main():
           f"Light {len(light['cards'])} | "
           f"Lebanon: {' / '.join(f'{k} {v["count"]} of {v["of"]}' for k, v in lebanon.items())} | "
           f"music search: {kept} kept + {recent} current | "
+          f"Wx: {wxcol['count']} alerts{' | Wx failed: ' + '; '.join(wxcol['failed']) if wxcol['failed'] else ''} | "
           f"Google links left unresolved: {unresolved} | missing pick ids: {', '.join(missing) or 'none'}")
 
 

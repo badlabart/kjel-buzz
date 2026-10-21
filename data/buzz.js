@@ -1,5 +1,5 @@
 window.KJEL_BUZZ = {
- "updated": "2026-10-21T18:04:18+00:00",
+ "updated": "2026-10-21T22:04:35+00:00",
  "columns": [
   {
    "key": "national",
@@ -94,7 +94,7 @@ window.KJEL_BUZZ = {
      "col": "national",
      "title": "Tiny Yorkie dog goes viral after barking black bear out of his backyard: \"David vs. Goliath\"",
      "source": "TAG24 NEWS USA INC",
-     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxORXlONWUxTTdjUnZTMzJ4dDFHTUlWU18wT1NQRUQ3cmNnOUg4MEVUZ1AwcEpiNE82N2U2b2cyZC1PdHYwUzFGN3FHNXhSRmg0LUdNbTRyRWp4dU9wUUZxaExRdlphVWUzWXo5bjBzVmJsRHZUMWRGWXlFcUxGcUhUSTR3OENjbE9DS1dJYVhHNUhkQnFtMXc3SFpuekJoZ3pnMEpnNUlRWlY1M2laa2NUdHdPMVc3VDhkNmJmVktXUVRFTFJ5N3UybWpIRkVjWEo4ZEFyZ2U1Y9IB3AFBVV95cUxNdmtWeHREaVphOEhpYjVfXzhFWUFfWU5VcUcwSGdpekZoTWdzT2VPb0Y3YVlrOV8xTjNZNUxTRTN4ZjlwS0xsRExDbHhaLU5WeERQeXBxeGZhMWRxSU80NHBYaFo1TDJBXzNEbC1qRUNTbzZaYkpTUnNZUERnZkxHWERTbHRhR3lva3VjQmowRDZ6Vi1GeXVnaTRCaXkxUGhMcmY3RTNyM3YwYWZmQVJXeW00bExhVDgzSmFnZERfVzlJRmZyTDJMTXQyWEpwS1IycWdidDYzQm1xTm1p?oc=5",
+     "url": "https://www.tag24.com/en/topic/animals/dogs/tiny-yorkie-dog-goes-viral-after-barking-black-bear-out-of-his-backyard-david-vs-goliath-3541797",
      "gn_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxORXlONWUxTTdjUnZTMzJ4dDFHTUlWU18wT1NQRUQ3cmNnOUg4MEVUZ1AwcEpiNE82N2U2b2cyZC1PdHYwUzFGN3FHNXhSRmg0LUdNbTRyRWp4dU9wUUZxaExRdlphVWUzWXo5bjBzVmJsRHZUMWRGWXlFcUxGcUhUSTR3OENjbE9DS1dJYVhHNUhkQnFtMXc3SFpuekJoZ3pnMEpnNUlRWlY1M2laa2NUdHdPMVc3VDhkNmJmVktXUVRFTFJ5N3UybWpIRkVjWEo4ZEFyZ2U1Y9IB3AFBVV95cUxNdmtWeHREaVphOEhpYjVfXzhFWUFfWU5VcUcwSGdpekZoTWdzT2VPb0Y3YVlrOV8xTjNZNUxTRTN4ZjlwS0xsRExDbHhaLU5WeERQeXBxeGZhMWRxSU80NHBYaFo1TDJBXzNEbC1qRUNTbzZaYkpTUnNZUERnZkxHWERTbHRhR3lva3VjQmowRDZ6Vi1GeXVnaTRCaXkxUGhMcmY3RTNyM3YwYWZmQVJXeW00bExhVDgzSmFnZERfVzlJRmZyTDJMTXQyWEpwS1IycWdidDYzQm1xTm1p?oc=5",
      "desc": "",
      "outlets": 1,
@@ -122,7 +122,7 @@ window.KJEL_BUZZ = {
      "col": "national",
      "title": "Christian McCaffrey Has Heartwarming Jersey Exchange With Younger Brother After Their First-Ever NFL Game Against Each Other",
      "source": "Yahoo Sports",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNY3FUN0RDeXJXMV9TN0t3b05WbFFBcFFYVkFnc3huRnB4OEVEQkx0ZDY5SE1ycDNMRTQ2aWZjaEpId2ozRGhjSmRtZEVtU1I0M2JPa1lGVjZDRldmWHRnR2U2d25XZG9abGtDOWZxeWYyWjA2VkFPd3ZWVFJzdlMzeTZlRE5ncG03MVVkT05GbzBtWjZOd0xlRndSY0Vvdw?oc=5",
+     "url": "https://sports.yahoo.com/articles/christian-mccaffrey-heartwarming-jersey-exchange-190445698.html",
      "gn_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNY3FUN0RDeXJXMV9TN0t3b05WbFFBcFFYVkFnc3huRnB4OEVEQkx0ZDY5SE1ycDNMRTQ2aWZjaEpId2ozRGhjSmRtZEVtU1I0M2JPa1lGVjZDRldmWHRnR2U2d25XZG9abGtDOWZxeWYyWjA2VkFPd3ZWVFJzdlMzeTZlRE5ncG03MVVkT05GbzBtWjZOd0xlRndSY0Vvdw?oc=5",
      "desc": "",
      "outlets": 1,
@@ -150,7 +150,7 @@ window.KJEL_BUZZ = {
      "col": "national",
      "title": "Josh Hart Gets NBA Championship Trophy Braided Into Hair for Knicks' Season Opener in Viral Video",
      "source": "Bleacher Report",
-     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOc3hhQTJWRUl5S2xZMk5FT1llWnF1WGJQb21hOU84WEJZall4Z3RjN0FCT2J3WTZ0VnNQYzNMaUx1WTlDa1diX0ZZSVpZWDRQdjRJTWVFNnlqUVhnNklLeU4ycXF5SE90R3M0Q1NRcWdyZFJaMzZCTW1GUFltWWxBS01scHhJN2NZV2FMSktNQ2NuZ1JZZzdOUFRjN25tVG5NSHFLR1QzVDZfODdYRkdTekhhb1R5VENnX255WWxZd0pENGJTdGw1NA?oc=5",
+     "url": "https://bleacherreport.com/articles/25513887-josh-hart-gets-nba-championship-trophy-braided-hair-knicks-season-opener-viral-video",
      "gn_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOc3hhQTJWRUl5S2xZMk5FT1llWnF1WGJQb21hOU84WEJZall4Z3RjN0FCT2J3WTZ0VnNQYzNMaUx1WTlDa1diX0ZZSVpZWDRQdjRJTWVFNnlqUVhnNklLeU4ycXF5SE90R3M0Q1NRcWdyZFJaMzZCTW1GUFltWWxBS01scHhJN2NZV2FMSktNQ2NuZ1JZZzdOUFRjN25tVG5NSHFLR1QzVDZfODdYRkdTekhhb1R5VENnX255WWxZd0pENGJTdGw1NA?oc=5",
      "desc": "",
      "outlets": 1,
@@ -178,7 +178,7 @@ window.KJEL_BUZZ = {
      "col": "national",
      "title": "Dolly Parton Halloween costume is among most searched in U.S. Four iconic looks to try",
      "source": "The Daily News Journal",
-     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPczBtNVNFRG9EZWJhT1J2YldVZk5IOGlUQUFVMTI1cEgzbm1FcVJxOTdXTjFCcjQyYUtfNzRTSHd4NzJYLTJFYmt0NUtOUUJYWUotV0FLY0V6alpxMnYxWXIweUs3MmtDUHhBeEctQktJMm14Z01rNDQ1YUVBa0pWZWFuX1d5MWRMQzlsWmhTNW9vaHl4NXRmd0w5NXJuMUp3NDRZZm9BSDBlLS1HZVFwZnhiOWZNVHY1dlVwSVlXWnB4VEIzTkJpLWNDQW9DOGM1dlQ1Mg?oc=5",
+     "url": "https://www.dnj.com/story/entertainment/music/2026/10/21/after-her-death-dolly-parton-halloween-costume-searches-surge-in-u-s/92280214007/",
      "gn_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPczBtNVNFRG9EZWJhT1J2YldVZk5IOGlUQUFVMTI1cEgzbm1FcVJxOTdXTjFCcjQyYUtfNzRTSHd4NzJYLTJFYmt0NUtOUUJYWUotV0FLY0V6alpxMnYxWXIweUs3MmtDUHhBeEctQktJMm14Z01rNDQ1YUVBa0pWZWFuX1d5MWRMQzlsWmhTNW9vaHl4NXRmd0w5NXJuMUp3NDRZZm9BSDBlLS1HZVFwZnhiOWZNVHY1dlVwSVlXWnB4VEIzTkJpLWNDQW9DOGM1dlQ1Mg?oc=5",
      "desc": "",
      "outlets": 2,
@@ -208,7 +208,7 @@ window.KJEL_BUZZ = {
      "col": "national",
      "title": "Elderly cats are being saved from being euthanized with adorable cat retirement village",
      "source": "Upworthy",
-     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE16T2JBWWl2cUZMRVZUcEdOY2dObjJ6aHFsU3hfY0h0eHpaM1o0aTA5WlFVQTlCdGs0aDhuM0M1N2ViTU0wVC1ZVloyS0l4Z3EzdkFxY3lVVzBBVXBvMDJfUWsxWDhCTGpMZjJDN1czeWFxZjM3SnlKdg?oc=5",
+     "url": "https://www.upworthy.com/adorable-elderly-cat-retirement-village-ex1/",
      "gn_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE16T2JBWWl2cUZMRVZUcEdOY2dObjJ6aHFsU3hfY0h0eHpaM1o0aTA5WlFVQTlCdGs0aDhuM0M1N2ViTU0wVC1ZVloyS0l4Z3EzdkFxY3lVVzBBVXBvMDJfUWsxWDhCTGpMZjJDN1czeWFxZjM3SnlKdg?oc=5",
      "desc": "",
      "outlets": 1,
@@ -236,7 +236,7 @@ window.KJEL_BUZZ = {
      "col": "national",
      "title": "California woman admits she prefers sleeping on airport floors to hotel beds in viral video: ‘I plan it’",
      "source": "New York Post",
-     "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPT0hXNGdNWklwYzNWM2NyVHZ0M3F2Mkt0UWdzajBkdVRRWHlBRG0zb1daSmZIREJHb2pvc1dIbF9MYTVDNkNKZi03MlFYWWFSYkFicnFMZFZKRVhvWGV5Um1hZGJ0bXNfX2pPQTNxaXhIUXJ3ai1HZHRMUS0yRFllRzlnd1lXOGc2QlB4a25RQm9PMm4ycWZ1S0Z0VW1kQk9CTTVGQkQ3MFA0aDNncFRTdmtzTHlqckJxNlpQVE5NRFliM3ZWRVlGOVNFOEdLRWxwOTd4RWVTTndZNTRkM1JHczNGdUI1cU8weEdFYg?oc=5",
+     "url": "https://nypost.com/2026/10/21/lifestyle/california-woman-santeon-brown-admits-she-prefers-sleeping-on-airport-floors-to-hotel-beds-in-viral-video-i-plan-it/",
      "gn_url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPT0hXNGdNWklwYzNWM2NyVHZ0M3F2Mkt0UWdzajBkdVRRWHlBRG0zb1daSmZIREJHb2pvc1dIbF9MYTVDNkNKZi03MlFYWWFSYkFicnFMZFZKRVhvWGV5Um1hZGJ0bXNfX2pPQTNxaXhIUXJ3ai1HZHRMUS0yRFllRzlnd1lXOGc2QlB4a25RQm9PMm4ycWZ1S0Z0VW1kQk9CTTVGQkQ3MFA0aDNncFRTdmtzTHlqckJxNlpQVE5NRFliM3ZWRVlGOVNFOEdLRWxwOTd4RWVTTndZNTRkM1JHczNGdUI1cU8weEdFYg?oc=5",
      "desc": "",
      "outlets": 1,
@@ -382,7 +382,7 @@ window.KJEL_BUZZ = {
      "col": "local",
      "title": "Jackets place at Valhalla Marching Festival",
      "source": "Laclede County Record",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPYk1xdWlJWFA1QzRCdVd0elFpMVQzcnp0aC1FRk0xbndEelRvTFhaam02d0JRNkE3UlNaV09WZkVuU0hleHZySHNhZ1U2YlZaQUdjeE5YdmpXeFZHcVZlVkZfZ0F0aTFzSFkzM3JhOVFuNEozcjM5Ni1zLVlOSzdKdkhhWGVxSWdYS0kxUkhwNkF2QQ?oc=5",
+     "url": "https://www.laclederecord.com/stories/jackets-place-at-valhalla-marching-festival,210133",
      "gn_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPYk1xdWlJWFA1QzRCdVd0elFpMVQzcnp0aC1FRk0xbndEelRvTFhaam02d0JRNkE3UlNaV09WZkVuU0hleHZySHNhZ1U2YlZaQUdjeE5YdmpXeFZHcVZlVkZfZ0F0aTFzSFkzM3JhOVFuNEozcjM5Ni1zLVlOSzdKdkhhWGVxSWdYS0kxUkhwNkF2QQ?oc=5",
      "desc": "",
      "outlets": 1,
@@ -763,13 +763,14 @@ window.KJEL_BUZZ = {
      "id": "M81f7b6",
      "title": "New Country Music Hall Of Fame Inductions: Tim McGraw, Paul Overstreet and The Stanley Brothers",
      "source": "WKRN News 2",
-     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOb205aVVJTmhUSThpbm5GbHN0NGJPMmdEdXhuXy02QXk4M25RX0R6T0pZc2QwN21XNW5jZWw1SDI4dEFQSUp4WEdETmZ4RUJqeE1zWWJ1anRIbk9uZkkzQkJMRG0yYUVOS3Q2TWxxVXIwd2txbC1INGNCRE9zWnNUZEROaXJoMXg5ZFJwU01GcVY3Z3NBUHFWX1lQX2toaS1nS3ota19jUURfUmI4VWtwU2xPOFZfNHVTOWJYSVVGaWpwR1BNSjNxNndR?oc=5",
+     "url": "https://www.wkrn.com/video/new-country-music-hall-of-fame-inductions-tim-mcgraw-paul-overstreet-and-the-stanley-brothers/12282337/",
      "ts": "2026-10-21T14:40:46+00:00",
      "signal": "",
      "near": null,
      "line": "Tim McGraw, Paul Overstreet and the Stanley Brothers are the newest members of the Country Music Hall of Fame.",
      "city": "Nashville",
-     "added": "2026-10-21"
+     "added": "2026-10-21",
+     "gn_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOb205aVVJTmhUSThpbm5GbHN0NGJPMmdEdXhuXy02QXk4M25RX0R6T0pZc2QwN21XNW5jZWw1SDI4dEFQSUp4WEdETmZ4RUJqeE1zWWJ1anRIbk9uZkkzQkJMRG0yYUVOS3Q2TWxxVXIwd2txbC1INGNCRE9zWnNUZEROaXJoMXg5ZFJwU01GcVY3Z3NBUHFWX1lQX2toaS1nS3ota19jUURfUmI4VWtwU2xPOFZfNHVTOWJYSVVGaWpwR1BNSjNxNndR?oc=5"
     },
     {
      "id": "Ma7c2de",
@@ -787,13 +788,14 @@ window.KJEL_BUZZ = {
      "id": "M389478",
      "title": "How John Osborne's childhood bully inspired Brothers Osborne's 'Tough Kid' | Exclusive",
      "source": "Shelby Star",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQM21DeHZKaUFLUThTbmdlSDlhYUJlOHMwWjBzazdRS3JtUkh5aHBVZFN2UXhybFJMQXIyYnpUcXFrRFM1RlBhejdmdmFhdkFhUGR5Szc0SHVKTWcteFZxT1hadkhZSzJYTDkxY1NBTElLcVc2RzN5Y2RrYWVfRWxFS1FfWkZlOFdMYjB5ZFotcG80MkVjN3ZTWFlFM2VWWlFzU0FpWkhoYTJDUGJsVFN3Tl9ycy1SZ3lhNHJVeUFibWQ?oc=5",
+     "url": "https://www.shelbystar.com/story/entertainment/music/2026/10/20/brothers-osborne-country-music-watertown-album/92332613007/",
      "ts": "2026-10-20T20:27:00+00:00",
      "signal": "Carried by 3 outlets",
      "near": null,
      "line": "John Osborne says a childhood bully inspired the Brothers Osborne song Tough Kid.",
      "city": "",
-     "added": "2026-10-21"
+     "added": "2026-10-21",
+     "gn_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQM21DeHZKaUFLUThTbmdlSDlhYUJlOHMwWjBzazdRS3JtUkh5aHBVZFN2UXhybFJMQXIyYnpUcXFrRFM1RlBhejdmdmFhdkFhUGR5Szc0SHVKTWcteFZxT1hadkhZSzJYTDkxY1NBTElLcVc2RzN5Y2RrYWVfRWxFS1FfWkZlOFdMYjB5ZFotcG80MkVjN3ZTWFlFM2VWWlFzU0FpWkhoYTJDUGJsVFN3Tl9ycy1SZ3lhNHJVeUFibWQ?oc=5"
     },
     {
      "id": "M7a69b8",
@@ -847,37 +849,40 @@ window.KJEL_BUZZ = {
      "id": "Mf07f57",
      "title": "Birthplace of Country Music Museum celebrates America’s 250th anniversary with music, history and special events",
      "source": "Yahoo",
-     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOaFNyYW9tY29LcXdvamdqMkFoRVVMWk5lSURENjZKTW9uWklzVmF2T3lBUm10bWo4ak1BeDRRTmpwcjdhaWxYNzY1bXlkQjJUVWlWQlZRLXpZZnFtV0pnYjNNOGU0SjJMNzBrYVhZTjc1Y0lRS1ZFZmdBeWd6SmQyRFNDaUtybTlJVzFUdlRJb1RXNng4amYyUDhZSlA?oc=5",
+     "url": "https://www.yahoo.com/news/us/articles/birthplace-country-music-museum-celebrates-165740469.html",
      "ts": "2026-10-20T16:57:40+00:00",
      "signal": "",
      "near": null,
      "line": "The Birthplace of Country Music Museum is celebrating America's 250th anniversary with music, history and special events.",
      "city": "",
-     "added": "2026-10-21"
+     "added": "2026-10-21",
+     "gn_url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOaFNyYW9tY29LcXdvamdqMkFoRVVMWk5lSURENjZKTW9uWklzVmF2T3lBUm10bWo4ak1BeDRRTmpwcjdhaWxYNzY1bXlkQjJUVWlWQlZRLXpZZnFtV0pnYjNNOGU0SjJMNzBrYVhZTjc1Y0lRS1ZFZmdBeWd6SmQyRFNDaUtybTlJVzFUdlRJb1RXNng4amYyUDhZSlA?oc=5"
     },
     {
      "id": "M81e232",
      "title": "Luke Combs extends record with 23rd consecutive No. 1 for ‘Be By You’",
      "source": "Big Country News |",
-     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVURWbHVjQ25BcHJXTDdUbGI5NTBpRkUyS0FhOGlUZlkyeEtaYnAydFRPNElIX3VJRFdraENkenYzNUtZZFVEMWRka1ZxTFFWT2pyd042bHR2ZlRZeXBRdnBQUmYyVHd1bDJYTGFPVDMzNThvVW9xTTdfY0NGWWNtUUtWVEViNi1td2RwaGlCSGt3VUZDRnBKWEotUDlqMjdYUTR3YnpueWU2WDky?oc=5",
+     "url": "https://www.bigcountrynewsconnection.com/luke-combs-extends-record-with-23rd-consecutive-no-1-for-be-by-you/",
      "ts": "2026-10-21T10:21:34+00:00",
      "signal": "Luke Combs: #9 on Country Airplay",
      "near": null,
      "line": "Luke Combs has extended his record with his 23rd straight number one song on country radio, 'Be By You.'",
      "city": "",
-     "added": "2026-10-21"
+     "added": "2026-10-21",
+     "gn_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVURWbHVjQ25BcHJXTDdUbGI5NTBpRkUyS0FhOGlUZlkyeEtaYnAydFRPNElIX3VJRFdraENkenYzNUtZZFVEMWRka1ZxTFFWT2pyd042bHR2ZlRZeXBRdnBQUmYyVHd1bDJYTGFPVDMzNThvVW9xTTdfY0NGWWNtUUtWVEViNi1td2RwaGlCSGt3VUZDRnBKWEotUDlqMjdYUTR3YnpueWU2WDky?oc=5"
     },
     {
      "id": "M2e4c9d",
      "title": "Bo Bryan, son of country music star Luke Bryan, picks up offer from Georgia",
      "source": "USA Today",
-     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSTJhTVRvU2JDaHR5MXFTVnhJX0VCTDF0VHZRSXpDaVJVSzhkWGljLXdvamhZVzNNTDdmX0lqMUpqMm0yUGp6MHZ0dVZlSmdsRWFkdXhvWVVMLU5CZ092dG1TNWJfZHdGZUVONThHSV84a0NKQXp1STZHMjhiN3ByUlpNZlZtRm9ZZ1QwYlYwY0pCWXJLcW5TcFhBcmlKUGJwRUZGckVfMG1tY0xxUDY2TW05OXFBTkFOal9vRlpzMGlfd1JKbjJfR3ZjMGx1X1VmT1VOYVN6cw?oc=5",
+     "url": "https://www.usatoday.com/story/sports/high-school/football/2026/10/20/bo-bryan-picks-up-offer-from-kirby-smart-georgia-bulldogs/92353042007/",
      "ts": "2026-10-20T23:09:00+00:00",
      "signal": "Luke Bryan: #8 on Country Airplay",
      "near": null,
      "line": "Bo Bryan, son of country star Luke Bryan and a 2027 quarterback recruit, has picked up a scholarship offer from the University of Georgia.",
      "city": "",
-     "added": "2026-10-21"
+     "added": "2026-10-21",
+     "gn_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSTJhTVRvU2JDaHR5MXFTVnhJX0VCTDF0VHZRSXpDaVJVSzhkWGljLXdvamhZVzNNTDdmX0lqMUpqMm0yUGp6MHZ0dVZlSmdsRWFkdXhvWVVMLU5CZ092dG1TNWJfZHdGZUVONThHSV84a0NKQXp1STZHMjhiN3ByUlpNZlZtRm9ZZ1QwYlYwY0pCWXJLcW5TcFhBcmlKUGJwRUZGckVfMG1tY0xxUDY2TW05OXFBTkFOal9vRlpzMGlfd1JKbjJfR3ZjMGx1X1VmT1VOYVN6cw?oc=5"
     },
     {
      "id": "Md295a0",
@@ -895,37 +900,40 @@ window.KJEL_BUZZ = {
      "id": "M01f0c8",
      "title": "New mural honors country star Lainey Wilson",
      "source": "WTOK",
-     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVkNTdDZlRkMtaGtJQXY5UWNaN3Jzd1JNT2Q2ZXFrczc0OVVyeFRvRDdWQ1RfUEcwSlY4TlVIOGFVUGdlLWhFTEQyUTF4UmRtMVJBV0tERWxwMWVPTDJPY1F0bERpeC1xSWNtWmotQjkwaElJcGlZQ3ltNkkzRFoxV1V30gGWAUFVX3lxTE02RVNXU185VVdING1wNkFTeldhOWFLZUh2dFpQVEJyTy1QWjh1d1Y2UFQ1OTY1a2lzNXktSVZ0T3A2X2VaRkIyTjZmVm5WcTFwLUJvLXdxeGhwTHNHSndGLWR0V3JYbHZpR25aLXFvRnpwYkVRekhYaWs1SnJ2N2pZWHFoY0tEdjQwX0lIVWpCQzZTSnBBUQ?oc=5",
+     "url": "https://www.wtok.com/2026/10/20/new-mural-honors-country-star-lainey-wilson/",
      "ts": "2026-10-20T21:42:00+00:00",
      "signal": "Lainey Wilson: #13 on Country Airplay",
      "near": null,
      "line": "A new mural has been painted to honor country star Lainey Wilson.",
      "city": "",
-     "added": "2026-10-21"
+     "added": "2026-10-21",
+     "gn_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVkNTdDZlRkMtaGtJQXY5UWNaN3Jzd1JNT2Q2ZXFrczc0OVVyeFRvRDdWQ1RfUEcwSlY4TlVIOGFVUGdlLWhFTEQyUTF4UmRtMVJBV0tERWxwMWVPTDJPY1F0bERpeC1xSWNtWmotQjkwaElJcGlZQ3ltNkkzRFoxV1V30gGWAUFVX3lxTE02RVNXU185VVdING1wNkFTeldhOWFLZUh2dFpQVEJyTy1QWjh1d1Y2UFQ1OTY1a2lzNXktSVZ0T3A2X2VaRkIyTjZmVm5WcTFwLUJvLXdxeGhwTHNHSndGLWR0V3JYbHZpR25aLXFvRnpwYkVRekhYaWs1SnJ2N2pZWHFoY0tEdjQwX0lIVWpCQzZTSnBBUQ?oc=5"
     },
     {
      "id": "Me42a93",
      "title": "Cole Swindell turns family memories into new single ‘Bronco’",
      "source": "Big Country News |",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVm5EMWluMnlvaGNkV2NFbk1leTZZblFHVkpyUFF1M3ZBVHBRSGg4YklGSTZRbC10TkkyMDNJSEpoZS02Q1U3djRZRGV4OHM4WlVNQXpneHJGU3lBUkhqX3M2NWxnTEEwdk9JX3lSSlJzcnN2SjBiVF9WV0hZeWpvVEJzZVl0dFJkczJ3WlRKdllmLXF0OVV0bE9WS0tiT3dPQkE?oc=5",
+     "url": "https://www.bigcountrynewsconnection.com/cole-swindell-turns-family-memories-into-new-single-bronco/",
      "ts": "2026-10-21T10:21:37+00:00",
      "signal": "Cole Swindell: #40 on Country Airplay",
      "near": null,
      "line": "Cole Swindell has turned family memories into his new single, 'Bronco.'",
      "city": "",
-     "added": "2026-10-21"
+     "added": "2026-10-21",
+     "gn_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVm5EMWluMnlvaGNkV2NFbk1leTZZblFHVkpyUFF1M3ZBVHBRSGg4YklGSTZRbC10TkkyMDNJSEpoZS02Q1U3djRZRGV4OHM4WlVNQXpneHJGU3lBUkhqX3M2NWxnTEEwdk9JX3lSSlJzcnN2SjBiVF9WV0hZeWpvVEJzZVl0dFJkczJ3WlRKdllmLXF0OVV0bE9WS0tiT3dPQkE?oc=5"
     },
     {
      "id": "M770322",
      "title": "Brooks & Dunn Celebrate 35 Years of ‘Brand New Man’ With Surprise Nashville Show",
      "source": "That Eric Alper",
-     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRk9PX01Pd1lxWDViTGktRUhJR1dfTTJuQ1gzMlNOdnVOOFlJRDl4MWRQSEUzSi1EdzRORl91d1NORmhOLXhqWDIyelBHVEhvRGlUSUR0WHlKTXpSTFJ2X1lPSDRBY3lUZVgxZHk4TTAyYmsxYU1weDJ0eGZvTDY5OG5HZzctbm5Hel9wcy1hS3YwNzFBbGNRWjhCWTFvZ3lSa19FZ3V4ZWpXODNoOEpjS1Z6cmFmUHUwdVE?oc=5",
+     "url": "https://www.thatericalper.com/2026/10/20/brooks-dunn-celebrate-35-years-of-brand-new-man-with-surprise-nashville-show/",
      "ts": "2026-10-20T16:29:18+00:00",
      "signal": "",
      "near": null,
      "line": "Brooks and Dunn celebrated 35 years of their 'Brand New Man' album with a surprise show in Nashville.",
      "city": "Nashville",
-     "added": "2026-10-21"
+     "added": "2026-10-21",
+     "gn_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRk9PX01Pd1lxWDViTGktRUhJR1dfTTJuQ1gzMlNOdnVOOFlJRDl4MWRQSEUzSi1EdzRORl91d1NORmhOLXhqWDIyelBHVEhvRGlUSUR0WHlKTXpSTFJ2X1lPSDRBY3lUZVgxZHk4TTAyYmsxYU1weDJ0eGZvTDY5OG5HZzctbm5Hel9wcy1hS3YwNzFBbGNRWjhCWTFvZ3lSa19FZ3V4ZWpXODNoOEpjS1Z6cmFmUHUwdVE?oc=5"
     },
     {
      "id": "Md358cf",
@@ -967,25 +975,27 @@ window.KJEL_BUZZ = {
      "id": "M26953f",
      "title": "Blake Shelton, Rascal Flatts, Brad Paisley to Lead VOA Fest 2026",
      "source": "TicketNews",
-     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNYkpHRVEwOW5waFBZTHVjUUcwYzhLQktQNF9RQzdYS0ZrUk9KY2NkU3RwMXFUalhZUXB0NVZ4ZEF6dXRkUmZiaUpHQTA3czFFU2hWSGRlQVZGRDl1bEVHU2VhWm5raUQ4d3ZFTXUyR1J1WFNSMUxYTmZOQWk2S2NRdDliQUtibUxyX3AyYlhBeW40eFBV?oc=5",
+     "url": "https://www.ticketnews.com/2026/02/blake-shelton-rascal-flatts-brad-paisley-voa-fest-2026/",
      "ts": "2026-10-20T17:29:23+00:00",
      "signal": "Blake Shelton: #22 on Country Airplay",
      "near": null,
      "line": "Blake Shelton, Rascal Flatts and Brad Paisley will headline VOA Fest 2026.",
      "city": "",
-     "added": "2026-10-21"
+     "added": "2026-10-21",
+     "gn_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNYkpHRVEwOW5waFBZTHVjUUcwYzhLQktQNF9RQzdYS0ZrUk9KY2NkU3RwMXFUalhZUXB0NVZ4ZEF6dXRkUmZiaUpHQTA3czFFU2hWSGRlQVZGRDl1bEVHU2VhWm5raUQ4d3ZFTXUyR1J1WFNSMUxYTmZOQWk2S2NRdDliQUtibUxyX3AyYlhBeW40eFBV?oc=5"
     },
     {
      "id": "Md8aa53",
      "title": "Emmy Award-Winning Duo The War and Treaty to Receive Inaugural Origins Vanguard Award at 2026 Origins Impact Awards",
      "source": "BlackNews.com",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNdnlRY2lYQlA2bU1kb3MzSldKZy0taFNrUWNscXliY2lFY0JoOGpnbERvT3otdEZrOWgteWh3bXRsODJPRVdqN2NIZF9oNG5UaXh4TXdEREptZ3I3T3FLZXZWcUIta2NrWlJqMklqMlJxX0JrV2JIdTNfelVfbW9wcVprb3ItbE5ER0hqcTRSVFU5YllVeHFjTTdFTEh2ZURvUC0yTW9CZE0wNm94STFwR2tJYUFxa191Mm5jZGZEMjJhdHVZLVpLTW5KRXVPd9IB0wFBVV95cUxQSHM5VVkwWnRWOFNxa0JGNXNfVzF6MjNaYl90dnhoUnU5bFltc255YUtJbDFKLV9oNlduZktaWGJzRkRVMUs1V1lCS0tfeUZWb040TGZ6N21pRGNaaEo3RjlzODI2UUJuV1p0Y2VSdU9yeXpSaDUzZzI5ZFZOMTdGMFhyejhtQ3VBa3k3TlpWYVdELTJkNkNtdXV4Z0RsbDFWWFhHUXdVeDhWYUwtUWQzcFBzckxOUFlfc2lNSEhIZGtJUzZlVWxKeUJLbDJqaktHejFR?oc=5",
+     "url": "https://blacknews.com/news/emmy-award-winning-duo-war-and-treaty-receive-inaugural-origins-vanguard-award-2026-origins-impact-awards/",
      "ts": "2026-10-21T06:22:31+00:00",
      "signal": "",
      "near": null,
      "line": "Emmy-winning duo The War and Treaty will receive the first-ever Origins Vanguard Award at the 2026 Origins Impact Awards.",
      "city": "",
-     "added": "2026-10-21"
+     "added": "2026-10-21",
+     "gn_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNdnlRY2lYQlA2bU1kb3MzSldKZy0taFNrUWNscXliY2lFY0JoOGpnbERvT3otdEZrOWgteWh3bXRsODJPRVdqN2NIZF9oNG5UaXh4TXdEREptZ3I3T3FLZXZWcUIta2NrWlJqMklqMlJxX0JrV2JIdTNfelVfbW9wcVprb3ItbE5ER0hqcTRSVFU5YllVeHFjTTdFTEh2ZURvUC0yTW9CZE0wNm94STFwR2tJYUFxa191Mm5jZGZEMjJhdHVZLVpLTW5KRXVPd9IB0wFBVV95cUxQSHM5VVkwWnRWOFNxa0JGNXNfVzF6MjNaYl90dnhoUnU5bFltc255YUtJbDFKLV9oNlduZktaWGJzRkRVMUs1V1lCS0tfeUZWb040TGZ6N21pRGNaaEo3RjlzODI2UUJuV1p0Y2VSdU9yeXpSaDUzZzI5ZFZOMTdGMFhyejhtQ3VBa3k3TlpWYVdELTJkNkNtdXV4Z0RsbDFWWFhHUXdVeDhWYUwtUWQzcFBzckxOUFlfc2lNSEhIZGtJUzZlVWxKeUJLbDJqaktHejFR?oc=5"
     },
     {
      "id": "M8068e7",
@@ -1003,73 +1013,79 @@ window.KJEL_BUZZ = {
      "id": "Mda165c",
      "title": "Zach Top Expands ‘Cold Beer & Country Music’ Tour",
      "source": "TicketNews",
-     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVkgwZmtVN1hSazRZUE4xQzBxVEFLNElqZmRtdE5xQ01RdGk5dXdWbzNaTlBRdmZWcG8wTzhnQmI5OWg1RHRuUjBRaklaMFV2b3VpZDFpNHlaNjhWSVhPWmxRcDFpZXVPOUFSM3VDNTIyRmdBQktmM3hKNkFxMXpheVZoTU5EU0pC?oc=5",
+     "url": "https://www.ticketnews.com/2026/04/zach-top-expands-cold-beer-country-music-tour/",
      "ts": "2026-10-19T20:55:11+00:00",
      "signal": "Zach Top: #14 on Country Airplay",
      "near": null,
      "line": "Zach Top is expanding his Cold Beer and Country Music Tour with more shows.",
      "city": "",
-     "added": "2026-10-20"
+     "added": "2026-10-20",
+     "gn_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVkgwZmtVN1hSazRZUE4xQzBxVEFLNElqZmRtdE5xQ01RdGk5dXdWbzNaTlBRdmZWcG8wTzhnQmI5OWg1RHRuUjBRaklaMFV2b3VpZDFpNHlaNjhWSVhPWmxRcDFpZXVPOUFSM3VDNTIyRmdBQktmM3hKNkFxMXpheVZoTU5EU0pC?oc=5"
     },
     {
      "id": "Mfd8efe",
      "title": "On This Day in 2023, Luke Combs Hit No. 1 With a Cover That Helped a Folk Legend Make Country Music History",
      "source": "American Songwriter",
-     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZEoxWHktclVyRUhTejBiN1Fzd1U3Y1FkSnVEWklETzBQc0FsVkphQUg1b2ZYd2pRdlg4ZUVhWkx2eHhQeHNSSVlrMXZFZGR3YnpORk81dGIzUkxra1cwcHZtTVJDa01uMFpmbmFVWE1RQWJBTk16d29UUXJyZi1IeGt5dUM3bWc4N19vdlIwX2RSSnlrbXZhUk1PRkMwdHdPa29RbnJDc3NLMFdrbjFzZXV0SXc2dld6VzdDTUpmbGZMUExkUkdINmd4YURGbzYzczBr?oc=5",
+     "url": "https://americansongwriter.com/on-this-day-in-2023-luke-combs-hit-no-1-with-a-cover-that-helped-a-folk-legend-make-country-music-history/",
      "ts": "2026-10-19T20:45:00+00:00",
      "signal": "Luke Combs: #9 on Country Airplay",
      "near": null,
      "line": "On this day in 2023, Luke Combs hit number one with a cover song that helped a folk legend make country music history.",
      "city": "",
-     "added": "2026-10-20"
+     "added": "2026-10-20",
+     "gn_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZEoxWHktclVyRUhTejBiN1Fzd1U3Y1FkSnVEWklETzBQc0FsVkphQUg1b2ZYd2pRdlg4ZUVhWkx2eHhQeHNSSVlrMXZFZGR3YnpORk81dGIzUkxra1cwcHZtTVJDa01uMFpmbmFVWE1RQWJBTk16d29UUXJyZi1IeGt5dUM3bWc4N19vdlIwX2RSSnlrbXZhUk1PRkMwdHdPa29RbnJDc3NLMFdrbjFzZXV0SXc2dld6VzdDTUpmbGZMUExkUkdINmd4YURGbzYzczBr?oc=5"
     },
     {
      "id": "Mfedc50",
      "title": "Carly Pearce shares her video for ‘Same Circus’",
      "source": "Big Country News |",
-     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPM0V4MjQzM2NCNGxoSURtV1BSYmF3QjJLaExPY05fY0JMTl90XzNVdEs3T3ZHbXp4VXRoNmVHdEZBM0Y0YlVhaG9IVGQzeFQ4LTVOX01MUFVta2Z3c0JwMnhDQlE1cjd2SHFBaTJZRmtEaTVLa1dEY09YaE1ySVA2SkdlbmZrYzhpbHJRWGJYaUQ?oc=5",
+     "url": "https://www.bigcountrynewsconnection.com/carly-pearce-shares-her-video-for-same-circus/",
      "ts": "2026-10-20T10:14:53+00:00",
      "signal": "Carly Pearce: #36 on Country Airplay",
      "near": null,
      "line": "Carly Pearce has released the music video for her song 'Same Circus.'",
      "city": "",
-     "added": "2026-10-20"
+     "added": "2026-10-20",
+     "gn_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPM0V4MjQzM2NCNGxoSURtV1BSYmF3QjJLaExPY05fY0JMTl90XzNVdEs3T3ZHbXp4VXRoNmVHdEZBM0Y0YlVhaG9IVGQzeFQ4LTVOX01MUFVta2Z3c0JwMnhDQlE1cjd2SHFBaTJZRmtEaTVLa1dEY09YaE1ySVA2SkdlbmZrYzhpbHJRWGJYaUQ?oc=5"
     },
     {
      "id": "M836972",
      "title": "Inside Brothers Osborne's new album 'Watertown' | Exclusive",
      "source": "The Tennessean",
-     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNeGdoeUhnM1c2bHJBX0pLVjRUZTlKTGJndmJqcnNOLTRGWFVmS3I2VllGRExSUGg1NWJuVHBjYjl0VUQxRVFYejlvbTVqSzBDcm1uVVVaMmFMd29aaHRpdVpUS09DbUZOblFhTnNhdENzd3llaVA2Q2Z1WnFhenhDVU9iclNhNjZjOEpSZHZnbDhwV2twOVlWZ1Q3REoybDRyN2lHVkp6R2J3SU1DaHZCS0pIYWptaW9JOUlYVGlQRUpnbGM?oc=5",
+     "url": "https://amp.tennessean.com/story/entertainment/music/country/2026/10/20/brothers-osborne-country-music-watertown/92120263007/",
      "ts": "2026-10-20T10:02:00+00:00",
      "signal": "",
      "near": null,
      "line": "Brothers Osborne have a new album called 'Watertown' on the way.",
      "city": "",
-     "added": "2026-10-20"
+     "added": "2026-10-20",
+     "gn_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNeGdoeUhnM1c2bHJBX0pLVjRUZTlKTGJndmJqcnNOLTRGWFVmS3I2VllGRExSUGg1NWJuVHBjYjl0VUQxRVFYejlvbTVqSzBDcm1uVVVaMmFMd29aaHRpdVpUS09DbUZOblFhTnNhdENzd3llaVA2Q2Z1WnFhenhDVU9iclNhNjZjOEpSZHZnbDhwV2twOVlWZ1Q3REoybDRyN2lHVkp6R2J3SU1DaHZCS0pIYWptaW9JOUlYVGlQRUpnbGM?oc=5"
     },
     {
      "id": "M2268ca",
      "title": "Trace Adkins Celebrates 30 Years Of ‘Dreamin’ Out Loud’ With First-Ever Vinyl Release",
      "source": "That Eric Alper",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQcjVaMmp6b0JhVjYtLWpLbFp3UVktRlJxbXlGZDl6OU1CQTlOX0wxa1dJd1NxcGFJMlRXemF3dy1tbHBoRHYxck1pLTZQU2ctdFlzWUx4blJfTzlQak40cDBoOU5VZU1PR2JCQTFXVnBQTHNrUWNnb0lpMklZMmJ6T1RyWGpFUUpUZmU1M2RvSVIxQ3pHbW9xQmx1Z0RmbGJxdndkNm1taWJpR0hUX2V6R3o0Vlo4c0ZhTjlxbF9YNU51dw?oc=5",
+     "url": "https://www.thatericalper.com/2026/10/19/trace-adkins-celebrates-30-years-of-dreamin-out-loud-with-first-ever-vinyl-release/",
      "ts": "2026-10-19T13:23:58+00:00",
      "signal": "",
      "near": null,
      "line": "Trace Adkins is celebrating 30 years of his 'Dreamin' Out Loud' album with its first-ever vinyl release.",
      "city": "",
-     "added": "2026-10-19"
+     "added": "2026-10-19",
+     "gn_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQcjVaMmp6b0JhVjYtLWpLbFp3UVktRlJxbXlGZDl6OU1CQTlOX0wxa1dJd1NxcGFJMlRXemF3dy1tbHBoRHYxck1pLTZQU2ctdFlzWUx4blJfTzlQak40cDBoOU5VZU1PR2JCQTFXVnBQTHNrUWNnb0lpMklZMmJ6T1RyWGpFUUpUZmU1M2RvSVIxQ3pHbW9xQmx1Z0RmbGJxdndkNm1taWJpR0hUX2V6R3o0Vlo4c0ZhTjlxbF9YNU51dw?oc=5"
     },
     {
      "id": "M914c3b",
      "title": "Morgan Wallen Curates His Own 24/7 SiriusXM Channel, Morgan Wallen Radio",
      "source": "SiriusXM",
-     "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBHMExBS3lHVmpVN0N2SUtMRlRtS3RNUFZadnhORjZ3by1LVHF3Nms2WFhPUEhCTmk4X0hvc09VdzZ5YS1LckM2b0lPVjV1WGVIc1Ixb2ViQlRUX3BJR3hlZzJBakIybTktOFE?oc=5",
+     "url": "https://www.siriusxm.com/blog/morgan-wallen-radio-siriusxm",
      "ts": "2026-10-19T06:23:01+00:00",
      "signal": "Morgan Wallen: #2 on Country Airplay",
      "near": null,
      "line": "Morgan Wallen is curating his own 24-hour SiriusXM channel called Morgan Wallen Radio.",
      "city": "",
-     "added": "2026-10-19"
+     "added": "2026-10-19",
+     "gn_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBHMExBS3lHVmpVN0N2SUtMRlRtS3RNUFZadnhORjZ3by1LVHF3Nms2WFhPUEhCTmk4X0hvc09VdzZ5YS1LckM2b0lPVjV1WGVIc1Ixb2ViQlRUX3BJR3hlZzJBakIybTktOFE?oc=5"
     },
     {
      "id": "M0329ed",

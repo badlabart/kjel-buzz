@@ -4,7 +4,6 @@ Same look as the KJEL Event Board. Old browsers show every card from the HTML it
 A tiny ES3 script turns timestamps into "5H AGO" and warns when the report is stale.
 """
 import html
-import re
 from datetime import date, datetime, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -47,6 +46,15 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .results{display:none}
 .tag{font-size:10px;font-weight:bold;padding:1px 5px;border-radius:3px;margin-right:4px;vertical-align:middle}
 .tag.keep{background:#FDB913;color:#0A2A50}.label{color:#D0101F;text-transform:uppercase}.nd .when{color:#0A2A50;font-size:13px}.ndn{color:#D0101F;font-weight:bold}.ndt{font-weight:normal}.card.concert{border-left:5px solid #D0101F}.tag.cong{background:#0A2A50;color:#FDB913}.tag.off{background:#D0101F;color:#FFFFFF}
+.dsearch{margin:0;padding:12px 18px 2px}
+.dsearch .dq{width:400px;max-width:60%;font-size:18px;padding:8px 10px;border:2px solid #FDB913;border-radius:8px}
+.dsearch .dgo{font-size:17px;font-weight:bold;padding:8px 18px;border:0;border-radius:8px;background:#D0101F;color:#FFFFFF;cursor:pointer}
+.dsearch a{color:#FDB913;font-weight:bold;font-size:15px;margin-left:12px}
+.dnote{color:#FFFFFF;font-size:16px;font-weight:bold;padding:6px 18px 0}
+.dnote .dn{color:#FDB913}.dnote a{color:#FDB913}
+.kjs .col{display:none}.kjs .col.kjm{display:inline-block}.kjs .card{display:none}.kjs .card.kjm{display:block}.kjs .search{display:none}
+.wxw{border-left:6px solid #D0101F}.wxt{border-left:6px solid #FDB913}.wxi{border-left:6px solid #33445C}
+.wxl{font-size:14px;margin:4px 0}
 """
 
 # ES3 only: no let/const, arrow functions, classList, or dataset.
@@ -89,6 +97,158 @@ function kjSearch(){
 }
 """
 
+# Day / date search at the top of Show Prep (Boss 2026-10-21). A day name means that day THIS WEEK (Monday through Sunday);
+# a date without a year means its next occurrence. It filters the board in place: cards with data-date equal to the
+# target stay, everything else (including undated news cards) is hidden until Clear. ES3 only, like the rest.
+DAY_FORM = ('<form class="dsearch" onsubmit="return kjDay();">'
+            '<input class="dq" id="kjd" type="text" aria-label="Search by day or date" placeholder="Day or date: Friday, 10/24, Oct 24">'
+            ' <input class="dgo" type="submit" value="Search"><a href="#" onclick="return kjDayClear();">Clear</a></form>'
+            '<div class="dnote" id="kjdn"></div>')
+
+DAY_JS = r"""
+var KJ_DOW=['SUNDAY','MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY'];
+var KJ_DK={sun:0,sunday:0,mon:1,monday:1,tue:2,tues:2,tuesday:2,wed:3,weds:3,wednesday:3,thu:4,thur:4,thurs:4,thursday:4,fri:5,friday:5,sat:6,saturday:6};
+var KJ_MO={jan:1,january:1,feb:2,february:2,mar:3,march:3,apr:4,april:4,may:5,jun:6,june:6,jul:7,july:7,aug:8,august:8,sep:9,sept:9,september:9,oct:10,october:10,nov:11,november:11,dec:12,december:12};
+function kjHas(el,c){return (' '+el.className+' ').indexOf(' '+c+' ')>=0;}
+function kjAdd(el,c){if(!kjHas(el,c)) el.className=el.className+' '+c;}
+function kjDel(el,c){el.className=(' '+el.className+' ').replace(' '+c+' ',' ').replace(/^\s+|\s+$/g,'');}
+function kjP2(n){return (n<10?'0':'')+n;}
+function kjIso(y,m,d){return y+'-'+kjP2(m)+'-'+kjP2(d);}
+function kjDayOf(y,m,d){var dt=new Date(y,m-1,d);return (dt.getFullYear()===y && dt.getMonth()===m-1 && dt.getDate()===d)?dt:null;}
+function kjResolve(m,d,y,todayIso){
+  var y0=new Date().getFullYear(), k, dt;
+  if(y) return kjDayOf(y,m,d);
+  for(k=0;k<5;k++){ dt=kjDayOf(y0+k,m,d); if(dt && kjIso(dt.getFullYear(),dt.getMonth()+1,dt.getDate())>=todayIso) return dt; }
+  return null;
+}
+function kjTarget(raw){
+  var s=raw.toLowerCase().replace(/,/g,' ').replace(/^\s+|\s+$/g,'').replace(/\s+/g,' ');
+  var now=new Date(), todayIso=kjIso(now.getFullYear(),now.getMonth()+1,now.getDate()), parts, m, dt=null, wk=false, back, y;
+  if(!s) return null;
+  parts=s.split(' ');
+  if(parts.length>1 && KJ_DK.hasOwnProperty(parts[0])){ parts.shift(); s=parts.join(' '); }  // "FRI, OCT 23" or "Fri 10/23"
+  if(s==='today' || s==='tomorrow'){
+    dt=new Date(now.getFullYear(),now.getMonth(),now.getDate()+(s==='tomorrow'?1:0));
+  } else if(KJ_DK.hasOwnProperty(s)){
+    back=(now.getDay()+6)%7;  // this week runs Monday through Sunday
+    dt=new Date(now.getFullYear(),now.getMonth(),now.getDate()-back+(KJ_DK[s]+6)%7); wk=true;
+  } else if((m=/^(\d{4})-(\d{1,2})-(\d{1,2})$/.exec(s))){
+    dt=kjDayOf(parseInt(m[1],10),parseInt(m[2],10),parseInt(m[3],10));
+  } else if((m=/^(\d{1,2})[\/\-.](\d{1,2})(?:[\/\-.](\d{2}|\d{4}))?$/.exec(s))){
+    y=m[3]?parseInt(m[3],10):0; if(y && y<100) y+=2000;
+    dt=kjResolve(parseInt(m[1],10),parseInt(m[2],10),y,todayIso);
+  } else if((m=/^([a-z]+)\.? (\d{1,2})(?:st|nd|rd|th)?(?: (\d{4}))?$/.exec(s)) && KJ_MO.hasOwnProperty(m[1])){
+    dt=kjResolve(KJ_MO[m[1]],parseInt(m[2],10),m[3]?parseInt(m[3],10):0,todayIso);
+  }
+  if(!dt) return null;
+  return {dt:dt, iso:kjIso(dt.getFullYear(),dt.getMonth()+1,dt.getDate()), wk:wk, todayIso:todayIso, y0:now.getFullYear()};
+}
+function kjDayReset(){
+  var divs=document.getElementsByTagName('div'), i, c, sp;
+  for(i=0;i<divs.length;i++){
+    c=divs[i];
+    if(!kjHas(c,'kjm')) continue;
+    kjDel(c,'kjm');
+    if(kjHas(c,'col')){
+      c.kjn=0; sp=c.getElementsByTagName('h2')[0].getElementsByTagName('span')[0];
+      if(typeof sp.kjo!=='undefined') sp.innerHTML=sp.kjo;
+    }
+  }
+  kjDel(document.body,'kjs');
+}
+function kjDayClear(){
+  document.getElementById('kjd').value=''; document.getElementById('kjdn').innerHTML=''; kjDayReset(); return false;
+}
+function kjDayGo(txt){document.getElementById('kjd').value=txt; return kjDay();}
+function kjDay(){
+  var inp=document.getElementById('kjd'), note=document.getElementById('kjdn'), t, label, divs, i, c, col, sp, n=0, cols=0, nx, r;
+  if(!/\S/.test(inp.value)) return kjDayClear();
+  kjDayReset();
+  t=kjTarget(inp.value);
+  if(!t){ note.innerHTML='Not a day or date. Try Friday, 10/24 or Oct 24.'; return false; }
+  label=KJ_DOW[t.dt.getDay()]+' '+(t.dt.getMonth()+1)+'/'+t.dt.getDate()+(t.dt.getFullYear()!==t.y0?'/'+t.dt.getFullYear():'');
+  if(t.iso<t.todayIso){
+    note.innerHTML='<span class="dn">'+label+'</span> has passed.';
+    if(t.wk){ nx=new Date(t.dt.getFullYear(),t.dt.getMonth(),t.dt.getDate()+7);
+      note.innerHTML='<span class="dn">'+label+'</span> has passed this week. <a href="#" onclick="return kjDayGo(\''+(nx.getMonth()+1)+'/'+nx.getDate()+'\');">Show '+KJ_DOW[nx.getDay()].substr(0,3)+' '+(nx.getMonth()+1)+'/'+nx.getDate()+'</a>'; }
+    return false;
+  }
+  r=document.getElementById('kjres'); if(r && r.style.display==='block') kjClear();
+  divs=document.getElementsByTagName('div');
+  for(i=0;i<divs.length;i++){
+    c=divs[i];
+    if(!kjHas(c,'card') || c.getAttribute('data-date')!==t.iso || c.style.display==='none') continue;
+    kjAdd(c,'kjm'); n++;
+    col=c.parentNode; while(col && !kjHas(col,'col')) col=col.parentNode;
+    if(col){ kjAdd(col,'kjm'); col.kjn=(col.kjn||0)+1; }
+  }
+  for(i=0;i<divs.length;i++){
+    c=divs[i];
+    if(kjHas(c,'col') && kjHas(c,'kjm')){
+      cols++; sp=c.getElementsByTagName('h2')[0].getElementsByTagName('span')[0];
+      if(typeof sp.kjo==='undefined') sp.kjo=sp.innerHTML;
+      sp.innerHTML=c.kjn;
+    }
+  }
+  kjAdd(document.body,'kjs');
+  note.innerHTML='<span class="dn">'+label+(t.wk?' (this week)':'')+'</span> &middot; '+n+(n===1?' card':' cards')+' in '+cols+(cols===1?' column':' columns')+'. Cards with no date are hidden.';
+  return false;
+}
+"""
+
+# Wx column (Boss 2026-10-21): the build writes a snapshot; this re-reads active alerts from the National Weather Service
+# on load and every 5 minutes, so a warning issued after the 6 AM build still shows. KJ_WXC (county table) comes from wx.py.
+WX_JS = r"""
+function kjWxIso(s){
+  var m=/^(\d{4})-(\d\d)-(\d\d)T(\d\d):(\d\d):(\d\d)(Z|([+-])(\d\d):(\d\d))$/.exec(s||'');
+  if(!m) return null;
+  var ms=Date.UTC(parseInt(m[1],10),parseInt(m[2],10)-1,parseInt(m[3],10),parseInt(m[4],10),parseInt(m[5],10),parseInt(m[6],10));
+  if(m[7]!=='Z') ms-=(m[8]==='-'?-1:1)*(parseInt(m[9],10)*60+parseInt(m[10],10))*60000;
+  return ms;
+}
+function kjWxTime(ms){
+  var d=new Date(ms), h=d.getHours(), mi=d.getMinutes(), t=(h%12===0?12:h%12)+':'+(mi<10?'0':'')+mi+' '+(h>=12?'PM':'AM');
+  if(d.toDateString()!==new Date().toDateString()) t=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][d.getDay()]+' '+t;
+  return t;
+}
+function kjWxCovers(hit){
+  var out=[], i;
+  if(hit.length===KJ_WXC.length) return 'Entire listening area';
+  for(i=0;i<hit.length;i++) out.push(kjEsc(hit[i].n)+' Co.'+(hit[i].t.length?' ('+kjEsc(hit[i].t.join(', '))+')':''));
+  return out.join(' &middot; ');
+}
+function kjWxCard(p,hit){
+  var ev=p.event||'Alert', cls=/Warning$/.test(ev)?'wxw':(/Watch$/.test(ev)?'wxt':'wxi'), ms=kjWxIso(p.ends||p.expires), ll=hit[0].ll.split(',');
+  return '<div class="card '+cls+'"><div class="when">'+kjEsc(ev.toUpperCase())+(ms?' <span class="src">&middot; until '+kjWxTime(ms)+'</span>':'')+'</div>'
+    +'<div class="name">'+kjWxCovers(hit)+'</div>'
+    +'<a class="link" href="https://forecast.weather.gov/MapClick.php?lat='+ll[0]+'&amp;lon='+ll[1]+'" target="_blank" rel="noopener">NWS details &#8599;</a></div>';
+}
+function kjWxLive(){
+  var x;
+  if(!window.JSON || !window.XMLHttpRequest) return;
+  try{ x=new XMLHttpRequest(); x.open('GET','https://api.weather.gov/alerts/active?status=actual&area=MO',true); x.setRequestHeader('Accept','application/geo+json'); }catch(e){ return; }
+  x.onreadystatechange=function(){
+    if(x.readyState!==4 || x.status!==200) return;
+    var f, buckets=[[],[],[]], i, j, k, p, same, hit, r, n=0, out='';
+    try{ f=JSON.parse(x.responseText).features||[]; }catch(e){ return; }
+    for(i=0;i<f.length;i++){
+      p=f[i].properties; if(!p || p.status!=='Actual') continue;
+      same=(p.geocode && p.geocode.SAME) || []; hit=[];
+      for(j=0;j<KJ_WXC.length;j++){ for(k=0;k<same.length;k++){ if(same[k]===KJ_WXC[j].s){ hit.push(KJ_WXC[j]); break; } } }
+      if(!hit.length) continue;
+      r=/Warning$/.test(p.event||'')?0:(/Watch$/.test(p.event||'')?1:2);
+      buckets[r].push(kjWxCard(p,hit)); n++;
+    }
+    out=buckets[0].concat(buckets[1],buckets[2]).join('');
+    document.getElementById('wxalerts').innerHTML=out||'<div class="card wxn"><div class="name">No active alerts for the listening area.</div></div>';
+    document.getElementById('wxcount').innerHTML=n;
+    document.getElementById('wxstamp').innerHTML='Alerts live &middot; '+kjWxTime(new Date().getTime());
+  };
+  try{ x.send(null); }catch(e){}
+}
+kjWxLive(); setInterval(kjWxLive,300000);
+"""
+
 JS = """
 (function(){
   var now=new Date().getTime(), divs=document.getElementsByTagName('div');
@@ -119,12 +279,6 @@ JS = """
 """
 
 
-def day_name(t):
-    """Boss (2026-10-21): no "National ... Day" in Nat'l Day titles: "National Nut Day" -> "Nut"."""
-    t = re.sub(r"^National\s+", "", t.strip().strip('"').replace('"', ""))
-    return re.sub(r"\s+Day(\s*\(UK\))?$", "", t) or t
-
-
 def ts_ms(iso):
     return int(datetime.fromisoformat(iso).timestamp() * 1000)
 
@@ -133,11 +287,17 @@ def static_when(iso):
     return datetime.fromisoformat(iso).astimezone(CT).strftime("%a %b %-d").upper()
 
 
-def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir=""):
-    """subdir="" writes the Buzz (docs/index.html); subdir="news" writes the News app (docs/news/index.html)."""
+def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_search=False):
+    """subdir="" writes the Buzz (docs/index.html); subdir="news" writes the News app (docs/news/index.html).
+    day_search=True adds the day / date search bar (Show Prep)."""
     esc = html.escape
     cols = []
+    wx_conf = ""
     for col in data["columns"]:
+        if col.get("html"):  # a column that renders itself (Wx); its badge counts active alerts
+            wx_conf = col["conf"]
+            cols.append(f'<div class="col wx"><h2>{esc(col["name"])} <span class="count" id="wxcount">{col["count"]}</span></h2>{col["html"]}</div>')
+            continue
         cards = []
         for c in col["cards"]:
             city = c.get("city") or (c.get("town") if col["key"] in ("local", "pride", "light") and c.get("town") != "Ozarks" else "")
@@ -178,7 +338,8 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir=""):
                 head = (f'<div class="card nd" data-date="{c["date"]}"><div class="when">'
                         f'<span class="dl">{d.strftime("%A").upper()} {d.month}/{d.day}</span></div>')
                 label = ""
-                main = f'<span class="ndn">{esc(day_name(c["title"]))}</span> <span class="ndt">{esc(c.get("line", ""))}</span>' 
+                # Boss (2026-10-21): the title is the day's exact name ("National Bubble Blowing Day"), never shortened.
+                main = f'<span class="ndn">{esc(c["title"].strip())}</span> <span class="ndt">{esc(c.get("line", ""))}</span>'
             elif c.get("source") == "Lebanon R-3 Schools":
                 head = f'<div class="card"><div class="when">SCHOOL NEWS <span class="src">&middot; {esc(c["source"])}</span></div>'
             else:
@@ -217,8 +378,9 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir=""):
 <div class="hd"><div class="title">{esc(title)}</div>
 <div class="meta">{esc(doc_title)} &middot; updated {esc(stamp)}</div></div></div>
 <div class="stale" id="stale">This report is more than a day old. The 6 AM refresh did not run.</div>
+{DAY_FORM if day_search else ""}
 <div class="board">{"".join(cols)}</div>
-<script>{SEARCH_JS}{JS}</script>
+<script>{SEARCH_JS}{DAY_JS if day_search else ""}{f"var KJ_WXC={wx_conf};" + WX_JS if wx_conf else ""}{JS}</script>
 </body></html>
 """
     (ROOT / "docs").mkdir(exist_ok=True)
