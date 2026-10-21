@@ -36,11 +36,12 @@ Double-click `index.html`. No server needed.
 - Freshness: Lebanon congrats 21 days, core-area congrats 14, other Lebanon 14, other core-area 7.
 - Music: country artists, songs, tours, chart news. Prefer artists in the Country Airplay top 40.
 - Line: one on-air sentence, 15-35 words, full context, facts from the headline or summary only. Skip the story if the facts are too thin.
+- Never a teaser: the line states the finding or result. Teaser headlines get their article text printed in the shortlist so the finding can be written in.
 - City: the town from the source, shown in parentheses. Local always has one (county name if no town).
 - LOCAL PRIDE: accomplishments only. Format: LABEL ("World Food Champs", "New Coach") – names, from place, what they earned, when and where. Never "Congratulations to". No names in the source = no card. Article text is read so names don't need a click.
 - Local: useful, interesting local news and local pride that isn't an award. Nothing that's a downer.
 - Both local columns: up to 12 Lebanon + up to 12 other towns. Other towns HIGH first (Waynesville, St. Robert, Fort Leonard Wood, Bolivar, Marshfield, Osage Beach, Eldon, Camdenton), then LOW (Richland, Buffalo, Sunrise Beach, Four Seasons, Lake Ozark, Laurie, Crocker, Hermitage, Fair Grove, Dixon, Pleasant Hope), then other core-area towns.
-- Humor: radio show-prep bits in one line, no click: TODAY IS (quirky national day + funny take), VIRAL (trending story + sarcastic take), SATIRE ("From The Onion:"), ONE-LINER (fresh jokes, Showerthoughts). The funny takes are written by Claude each morning; the facts come from the source. Never tweets, posts or roundup links.
+- Humor: radio show-prep bits in one line, no click: TODAY IS (quirky national days for today AND the next 6 days, each card showing its weekday, so jocks can voice track a week ahead; true story behind the day + funny take), VIRAL (trending story + sarcastic take), SATIRE ("From The Onion:"), ONE-LINER (fresh jokes, Showerthoughts). The funny takes are written by Claude each morning; the facts come from the source. Never tweets, posts or roundup links.
 
 ## Morning News Only
 - Bizarre, stunning, weird, crazy stories a listener can't wait to share at work. Never negative; a harmless brush with the law is OK.
@@ -62,7 +63,7 @@ These stand in for virality. Facebook, TikTok, Instagram, X and Reddit share cou
 - Local feeds also: LakeExpo, Bolivar Herald-Free Press, Marshfield Mail, Buffalo Reflex.
 - Local: ~45 Google News searches (Lebanon, every town in the 7 counties, school teams, honors/scholarships/business milestones, the lake); Lebanon R-3 Schools news page (no dates on the site, so a post is dated the day it is first seen and shows SCHOOL NEWS); Laclede County Record; My Ozarks Online; City of Lebanon; Downtown Lebanon; KY3; OzarksFirst; KSPR; KRMS.
 - Music: Taste of Country, The Boot, Whiskey Riff, Saving Country Music, Billboard, Rolling Stone, Country Now, Google News; Billboard Country Airplay chart.
-- Humor: Checkiday and National Day Calendar (today's days), Daily Dot and Know Your Meme (viral), The Onion (satire), Reddit joke boards + Showerthoughts (one pull a day).
+- Humor: Checkiday date pages (next 7 days, with each day's back story, cached in data/day_stories.json) and National Day Calendar (today), Daily Dot and Know Your Meme (viral), The Onion (satire), Reddit joke boards + Showerthoughts (one pull a day).
 
 ## Known limits
 - Google throttles the link lookup after heavy use (the morning searches use most of the allowance). Lookups are spaced out and cached, so stories missed today usually resolve the next morning. Unresolved cards keep a Google News link, which still opens the story in a modern browser.

@@ -707,8 +707,17 @@ def resolve_all(items, limit=None, budget_s=240):
     CACHE.write_text(json.dumps(cache, indent=0))
 
 
-def article_text(url):
-    """Paragraph text of an article page, so LOCAL PRIDE can name every recipient without a click."""
+# Boss (2026-10-21): a card never teases ("what he found changed...") — it states the finding. Teaser stories get
+# their article text printed so Claude can write the takeaway into the line.
+TEASER = re.compile(r"what (he|she|they|it|we|scientists|researchers|doctors|experts) (found|discovered|learned|saw|did)|"
+                    r"here'?s (why|what|how)|you won'?t believe|the reason|this is (why|what)|changed how|what happened|"
+                    r"the answer|secret|reveals?\b|turns out|find out|guess what|the result|is a goldmine|will surprise|"
+                    r"\bwhy\b.*\?|\bhow\b.*\?|\bwhat\b.*\?", re.I)
+
+
+def article_text(url, cap=2500, loose=False):
+    """Paragraph text of an article page, so LOCAL PRIDE can name every recipient without a click.
+    loose=True keeps paragraphs that do not end in punctuation (some sites run the whole story as one block)."""
     try:
         h = get(url, timeout=15)[:600000]
     except Exception:
@@ -717,8 +726,9 @@ def article_text(url):
     paras = [text(x) for x in re.findall(r"<p[^>]*>(.*?)</p>", h, re.S)]
     boiler = re.compile(r"outdated browser|subscri|password|cookie|sign up|newsletter|click here|log ?in|"
                         r"all rights reserved|advertis|copyright", re.I)
-    keep = [x for x in paras if len(x.split()) >= 6 and re.search(r"[.!?\"”]$", x) and not boiler.search(x)]
-    return " ".join(keep)[:2500]
+    keep = [x for x in paras if len(x.split()) >= 6 and (loose or re.search(r"[.!?\"”]$", x))
+            and not (boiler.search(x) and len(x) < 300)]
+    return " ".join(keep)[:cap]
 
 
 def bodies(items):
@@ -835,7 +845,8 @@ def main():
     jokes, lists = humor.collect(sys.modules[__name__])
     for it in jokes + lists:
         it["id"] = "H" + md5((it["title"] + it["source"]).encode()).hexdigest()[:6]
-    short += jokes[:30] + lists[:40]
+    days = [i for i in lists if i.get("kind") == "day"]  # every fun day of the coming week goes to Claude
+    short += jokes[:30] + days + [i for i in lists if i.get("kind") != "day"][:40]
     for it in short:
         it["gn_url"] = it["url"] if it["gn"] else None
     top_gn = [i for col, n in (("local", 70), ("weird", 25), ("national", 12), ("music", 10), ("humor", 4))
@@ -843,13 +854,18 @@ def main():
     resolve_all(top_gn)
     summaries(short)
     bodies([i for i in short if i["col"] == "local" and i.get("congrats")])
+    teasers = [i for i in short if i["col"] in ("national", "weird", "humor", "local") and i.get("kind") not in ("joke", "day")
+               and TEASER.search(i["title"]) and not i["url"].startswith("https://news.google.com")]
+    with ThreadPoolExecutor(6) as ex:
+        for it, body in zip(teasers, ex.map(lambda i: article_text(i["url"], 3500, loose=True), teasers)):
+            it["body"], it["teaser"] = body, True
     # Second pass: a resolved summary can reveal a downer the headline hid.
     short = [i for i in short if not (TRAGIC.search(i["desc"][:200]) or POLITICS.search(i["desc"][:200]))]
 
     pool = []
     for i in short:
         pool.append({k: i.get(k) for k in ("id", "col", "title", "source", "url", "gn_url", "desc", "outlets", "also",
-                                           "signal", "score", "town", "tier", "kind", "punch", "congrats", "scope", "near", "body", "prio")} | {"ts": i["ts"].isoformat()})
+                                           "signal", "score", "town", "tier", "kind", "punch", "congrats", "scope", "near", "body", "prio", "date", "teaser")} | {"ts": i["ts"].isoformat()})
     (DATA / "pool.json").write_text(json.dumps({"collected": NOW.isoformat(), "items": pool}, indent=1, ensure_ascii=False))
 
     print(f"raw {len(raw)} | kept {len(kept)} | stories {len(items)} | shortlist {len(pool)} | dropped {dropped}")
@@ -877,9 +893,13 @@ def main():
             if i.get("kind") == "joke":
                 print(f'{i["id"]} | {age} | {i["source"]} | {i["signal"]} | JOKE: {i["title"]} / {i["punch"]}')
             else:
-                tag = {"day": "TODAY IS: ", "viral": "VIRAL: ", "satire": "SATIRE: "}.get(i.get("kind"), "") if col == "humor" else ""
+                tag = {"viral": "VIRAL: ", "satire": "SATIRE: "}.get(i.get("kind"), "") if col == "humor" else ""
+                if i.get("kind") == "day" and i.get("date"):
+                    tag = datetime.fromisoformat(i["date"]).strftime("%A %b %-d").upper() + " IS: "
                 full = i.get("body") or i["desc"]
-                summ = full[:1800] if col == "local" and i.get("congrats") else i["desc"][:220]
+                if i.get("teaser"):
+                    tag = "TEASER - STATE THE FINDING: " + tag
+                summ = full[:3500] if i.get("teaser") else full[:1800] if col == "local" and i.get("congrats") else i["desc"][:700] if i.get("kind") == "day" else i["desc"][:220]
                 print(f'{i["id"]} | {age} | {i["source"][:22]}{where} | {i["signal"] or "-"} | {tag}{i["title"]} || {summ}')
 
 

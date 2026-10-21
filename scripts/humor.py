@@ -137,11 +137,69 @@ VIRAL_FEEDS = [("Daily Dot", "https://www.dailydot.com/feed/"), ("Know Your Meme
 SATIRE_FEEDS = [("The Onion", "https://theonion.com/rss")]
 
 
+SERIOUS_DAY = re.compile(r"awareness|prevention|disease|violence|cancer|memorial|remembrance|syndrome|disorder|"
+                         r"infection|abuse|suicide|hunger|lgbt|diversity|pediatric|safety|saint|\bst\. |feast|"
+                         r"independence|republic|liberation|national day of|martyr|genocide|holocaust|war\b", re.I)
+WEEK_DAYS = 7  # Boss (2026-10-21): jocks voice track up to a week ahead, so Humor carries the next 7 days
+
+
+def day_story(c, url, cache):
+    """The 'story behind it' paragraphs from a Checkiday day page, cached by url."""
+    if url in cache:
+        return cache[url]
+    try:
+        h = c.get(url)
+    except Exception:
+        return ""
+    ps = [c.text(p) for p in re.findall(r"<p[^>]*>(.*?)</p>", h, re.S)]
+    ps = [p for p in ps if len(p) > 80 and "Observed" not in p and "View All Events" not in p and "Subscribe" not in p]
+    intro = re.search(r'<meta property="og:description" content="([^"]*)"', h)
+    intro = c.text(intro.group(1)).rstrip("\u2026") if intro else ""
+    if intro and re.search(r"is being observed|is observed next on", intro):  # Checkiday stock line, no write-up
+        intro = ""
+    cache[url] = " ".join([intro] + ps[:3]).strip()[:1200]
+    return cache[url]
+
+
+def week_days(c):
+    """Fun national days for today and the next 6 days, from Checkiday's date pages, with the story behind each."""
+    import datetime as dt
+    from concurrent.futures import ThreadPoolExecutor
+    start = c.NOW.astimezone(c.CT).date()
+    found = []
+    for n in range(WEEK_DAYS):
+        d = start + dt.timedelta(days=n)
+        try:
+            h = c.get(f"https://www.checkiday.com/{d.month}/{d.day}/{d.year}")
+        except Exception:
+            c.FAILED.append(f"Checkiday {d}")
+            continue
+        seen = set()
+        for url, name in re.findall(r'<h2 class="mdl-card__title-text"><a href="(https://www\.checkiday\.com/[0-9a-f]{32}/[^"]+)">(.*?)</a>', h):
+            name = c.text(name)
+            if url in seen or not re.search(r"\bDay\b", name) or SERIOUS_DAY.search(name) \
+                    or c.TRAGIC.search(name) or c.POLITICS.search(name):
+                continue
+            seen.add(url)
+            found.append({"col": "humor", "kind": "day", "title": name, "source": "Checkiday", "url": url,
+                          "date": d.isoformat(), "ts": c.NOW, "gn": False, "outlets": 1, "also": [],
+                          "score": 60 - n, "signal": "", "town": "", "tier": None, "scope": "", "desc": ""})
+    path = c.DATA / "day_stories.json"
+    cache = json.loads(path.read_text()) if path.exists() else {}
+    with ThreadPoolExecutor(4) as pool:
+        stories = list(pool.map(lambda it: day_story(c, it["url"], cache), found))
+    for it, s in zip(found, stories):
+        it["desc"] = s
+    keep = {it["url"] for it in found}
+    path.write_text(json.dumps({u: s for u, s in cache.items() if u in keep}, indent=0, ensure_ascii=False))
+    return found
+
+
 def show_prep(c):
-    """Today's quirky national days, viral culture stories and apolitical satire headlines.
+    """Quirky national days for the coming week, viral culture stories and apolitical satire headlines.
     Claude writes the one-line funny take each morning; the feeds only supply the topic."""
     today = c.NOW.astimezone(c.CT)
-    out = []
+    out = week_days(c)
     for label, url in DAY_FEEDS:
         for it in c.pull(("feed", "humor", label, url)):
             t = re.sub(r"\s*[-\u2013]\s*\w+ \d{1,2}, \d{4}$", "", it["title"]).strip()
@@ -149,7 +207,8 @@ def show_prep(c):
             serious = re.search(r"awareness|prevention|disease|violence|cancer|memorial|remembrance|syndrome|"
                                 r"disorder|infection|abuse|suicide|hunger|lgbt|diversity|pediatric|safety", t, re.I)
             if same_day and re.search(r"\bDay\b", t, re.I) and not serious and not (c.TRAGIC.search(t) or c.POLITICS.search(t)):
-                out.append(dict(it, title=t.title() if t.isupper() else t, kind="day", score=60, signal="Today's date"))
+                out.append(dict(it, title=t.title() if t.isupper() else t, kind="day", score=60, signal="",
+                                date=today.date().isoformat()))
     for label, url in VIRAL_FEEDS + SATIRE_FEEDS:
         for it in c.pull(("feed", "humor", label, url)):
             if (c.NOW - it["ts"]).total_seconds() > 48 * 3600:

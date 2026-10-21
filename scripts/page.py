@@ -4,7 +4,7 @@ Same look as the KJEL Event Board. Old browsers show every card from the HTML it
 A tiny ES3 script turns timestamps into "5H AGO" and warns when the report is stale.
 """
 import html
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -135,6 +135,8 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir=""):
             city = c.get("city") or (c.get("town") if col["key"] in ("local", "pride") and c.get("town") != "Ozarks" else "")
             leb = (city or "").lower() == "lebanon"
             where = f' <span class="city{" leb" if leb else ""}">({esc(city)})</span>' if city else ""
+            if col["key"] == "pride":  # Boss (2026-10-21): the town is already in the line ("Congrats to Waynesville's ...")
+                where = ""
             sig = f'<div class="sig"><b>BUZZ:</b> {esc(c["signal"])}</div>' if c.get("signal") else ""
             joke = c.get("kind") == "joke"
             nolink = joke or col["key"] == "humor"  # Humor reads in one line; nothing to click
@@ -158,6 +160,11 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir=""):
             elif c.get("kind") == "concert":
                 head = (f'<div class="card concert" data-date="{c["date"]}"><div class="when">CONCERT &middot; <span class="dl">{esc(c["when_label"])}</span> '
                         f'<span class="src">&middot; {esc(c["source"])}</span></div>')
+            elif c.get("kind") == "day" and c.get("date"):
+                # Boss (2026-10-21): jocks voice track a week ahead, so national days show the weekday they air.
+                wd = date.fromisoformat(c["date"]).strftime("%A, %b %-d").upper()
+                head = (f'<div class="card" data-date="{c["date"]}"><div class="when"><span class="dl">{wd}</span> '
+                        f'<span class="src">&middot; {esc(c["title"])}</span></div>')
             elif c.get("source") == "Lebanon R-3 Schools":
                 head = f'<div class="card"><div class="when">SCHOOL NEWS <span class="src">&middot; {esc(c["source"])}</span></div>'
             else:

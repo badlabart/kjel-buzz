@@ -126,6 +126,11 @@ def main():
                 continue
             cards.append(dict(it, line=p.get("line", ""), city=p.get("city", ""), label=p.get("label", ""),
                               congrats=False))  # LOCAL PRIDE is all congratulations, so no tag is needed
+        if key == "humor":  # today's national days and bits first, then the coming week's days in date order
+            today = datetime.now(collect.CT).date().isoformat()
+            ahead = sorted((c for c in cards if c.get("kind") == "day" and (c.get("date") or today) > today),
+                           key=lambda c: c["date"])
+            cards = [c for c in cards if c not in ahead] + ahead
         cols.append({"key": key, "name": name, "cards": cards})
 
     every = [c for col in cols for c in col["cards"] if c.get("kind") != "concert"]
