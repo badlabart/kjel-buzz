@@ -20,6 +20,9 @@ DATA = ROOT / "data"
 BUZZ = [("national", "National"), ("pride", "LOCAL PRIDE"), ("music", "Music"), ("humor", "Nat'l Day")]
 NEWS = [("local", "Local"), ("weird", "Morning News Only")]
 COLUMNS = BUZZ + NEWS
+# Boss (2026-10-21): the News app also carries LOCAL PRIDE (from the Buzz) and The Johnsons (from Show Prep).
+# Both stay on their original pages too. Order is Claude's: LOCAL PRIDE sits next to Local.
+NEWS_PAGE = ["local", "pride", "weird", "johnsons"]
 # Boss (2026-10-20): "Show Prep" = LOCAL PRIDE, National, Humor, Music, then every Event Board column
 # except KIM ONLY and Live Music.
 SHOW_PREP = ["pride", "national", "humor", "music", "timely", "johnsons"]
@@ -187,19 +190,24 @@ def main():
                     or (not c.get("city") and c.get("tier") == 0))
             lebanon[col["key"]] = {"count": n, "of": len(col["cards"]), "goal": LEBANON_GOAL}
     stamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    buzz_keys, news_keys = {k for k, _ in BUZZ}, {k for k, _ in NEWS}
+    by_key = {c["key"]: c for c in cols}
+    extras = extra_columns()
+    by_key.update(extras)
+    buzz_keys = {k for k, _ in BUZZ}
     buzz = {"updated": stamp, "columns": [c for c in cols if c["key"] in buzz_keys],
             "lebanon": {k: v for k, v in lebanon.items() if k in buzz_keys}}
-    news = {"updated": stamp, "columns": [c for c in cols if c["key"] in news_keys],
-            "lebanon": {k: v for k, v in lebanon.items() if k in news_keys}}
+    news = {"updated": stamp, "columns": [by_key[k] for k in NEWS_PAGE if k in by_key],
+            "lebanon": {k: v for k, v in lebanon.items() if k in NEWS_PAGE}}
     (DATA / "buzz.js").write_text("window.KJEL_BUZZ = " + json.dumps(buzz, indent=1, ensure_ascii=False) + ";\n")
     (DATA / "news.js").write_text("window.KJEL_NEWS = " + json.dumps(news, indent=1, ensure_ascii=False) + ";\n")
     kept, recent = music_search()
     page.write(buzz)
     page.write(news, title="News", doc_title="KJEL News", subdir="news")
-    by_key = {c["key"]: c for c in cols}
-    extras = extra_columns()
-    by_key.update(extras)
+    # Boss (2026-10-21): News lives at its own short address, badlabart.github.io/kjel-news
+    news_out = Path.home() / "Documents/Claude/Projects/KJEL-news/docs"
+    if news_out.parent.exists():
+        news_out.mkdir(exist_ok=True)
+        (news_out / "index.html").write_bytes((ROOT / "docs" / "news" / "index.html").read_bytes())
     prep = {"updated": stamp, "columns": [by_key[k] for k in SHOW_PREP if k in by_key] + event_columns(),
             "lebanon": {k: v for k, v in lebanon.items() if k in SHOW_PREP}}
     page.write(prep, title="Show Prep", doc_title="KJEL Show Prep", subdir="show-prep")
