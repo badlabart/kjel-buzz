@@ -4,6 +4,7 @@ Same look as the KJEL Event Board. Old browsers show every card from the HTML it
 A tiny ES3 script turns timestamps into "5H AGO" and warns when the report is stale.
 """
 import html
+import re
 from datetime import date, datetime, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -45,7 +46,7 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .search .go{background:#D0101F;color:#FFFFFF;border-color:#D0101F;font-weight:bold;cursor:pointer}
 .results{display:none}
 .tag{font-size:10px;font-weight:bold;padding:1px 5px;border-radius:3px;margin-right:4px;vertical-align:middle}
-.tag.keep{background:#FDB913;color:#0A2A50}.label{color:#D0101F;text-transform:uppercase}.card.concert{border-left:5px solid #D0101F}.tag.cong{background:#0A2A50;color:#FDB913}.tag.off{background:#D0101F;color:#FFFFFF}
+.tag.keep{background:#FDB913;color:#0A2A50}.label{color:#D0101F;text-transform:uppercase}.nd .when{color:#0A2A50;font-size:13px}.ndn{color:#D0101F;font-weight:bold}.ndt{font-weight:normal}.card.concert{border-left:5px solid #D0101F}.tag.cong{background:#0A2A50;color:#FDB913}.tag.off{background:#D0101F;color:#FFFFFF}
 """
 
 # ES3 only: no let/const, arrow functions, classList, or dataset.
@@ -108,13 +109,20 @@ JS = """
     if(dd<today){e.style.display='none';continue;}
     var sp=e.getElementsByTagName('span'), dl=null;
     for(var m=0;m<sp.length;m++){ if(sp[m].className==='dl'){dl=sp[m];break;} }
-    if(dd===today){ if(dl) dl.innerHTML='TODAY &middot; '+dl.innerHTML; e.className=e.className+' new'; }
-    else if(dd===tmr && dl){ dl.innerHTML='TOMORROW &middot; '+dl.innerHTML; }
+    var nd=e.className.indexOf(' nd')>=0;  // Nat'l Day cards lead with the weekday, so the flag goes after it
+    if(dd===today){ if(dl) dl.innerHTML=nd?dl.innerHTML+' &middot; TODAY':'TODAY &middot; '+dl.innerHTML; e.className=e.className+' new'; }
+    else if(dd===tmr && dl){ dl.innerHTML=nd?dl.innerHTML+' &middot; TOMORROW':'TOMORROW &middot; '+dl.innerHTML; }
   }
   var u=parseInt(document.body.getAttribute('data-updated'),10);
   if(u && now-u>30*3600000){var s=document.getElementById('stale'); if(s) s.style.display='block';}
 })();
 """
+
+
+def day_name(t):
+    """Boss (2026-10-21): no "National ... Day" in Nat'l Day titles: "National Nut Day" -> "Nut"."""
+    t = re.sub(r"^National\s+", "", t.strip().strip('"').replace('"', ""))
+    return re.sub(r"\s+Day(\s*\(UK\))?$", "", t) or t
 
 
 def ts_ms(iso):
@@ -164,10 +172,13 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir=""):
                 head = (f'<div class="card concert" data-date="{c["date"]}"><div class="when">CONCERT &middot; <span class="dl">{esc(c["when_label"])}</span> '
                         f'<span class="src">&middot; {esc(c["source"])}</span></div>')
             elif c.get("kind") == "day" and c.get("date"):
-                # Boss (2026-10-21): jocks voice track a week ahead, so national days show the weekday they air.
-                wd = date.fromisoformat(c["date"]).strftime("%A, %b %-d").upper()
-                head = (f'<div class="card" data-date="{c["date"]}"><div class="when"><span class="dl">{wd}</span> '
-                        f'<span class="src">&middot; {esc(c["title"])}</span></div>')
+                # Boss (2026-10-21): "Nat'l Day" cards = WEEKDAY 10/22, the day's name in bold color, then one
+                # entertaining sentence in plain text. Jocks voice track a week ahead, so the weekday leads.
+                d = date.fromisoformat(c["date"])
+                head = (f'<div class="card nd" data-date="{c["date"]}"><div class="when">'
+                        f'<span class="dl">{d.strftime("%A").upper()} {d.month}/{d.day}</span></div>')
+                label = ""
+                main = f'<span class="ndn">{esc(day_name(c["title"]))}</span> <span class="ndt">{esc(c.get("line", ""))}</span>' 
             elif c.get("source") == "Lebanon R-3 Schools":
                 head = f'<div class="card"><div class="when">SCHOOL NEWS <span class="src">&middot; {esc(c["source"])}</span></div>'
             else:
@@ -175,7 +186,7 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir=""):
                         f'<div class="when"><span>{static_when(c["ts"])}</span> <span class="src">&middot; {esc(c["source"])}</span></div>')
             cards.append(
                 head +
-                f'<div class="name">{cong}{label}{main}{where}</div>{names}{punch}{sig}' +
+                f'<div class="name">{cong}{label}{main}{where}</div>{names}{punch}{"" if c.get("kind") == "day" else sig}' +
                 ('</div>' if nolink else
                  f'<a class="link" href="{esc(c["url"])}" target="_blank" rel="noopener">'
                  f'{"Tickets / details" if c.get("kind") == "concert" else "Details" if c.get("kind") == "event" else "Source" if c.get("kind") == "timely" else "Read story"} &#8599;</a></div>'))

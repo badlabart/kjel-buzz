@@ -17,7 +17,7 @@ import page  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 # Boss (2026-10-19): Local and Morning News Only moved to a separate "News" app with the same look.
-BUZZ = [("national", "National"), ("pride", "LOCAL PRIDE"), ("music", "Music"), ("humor", "Humor")]
+BUZZ = [("national", "National"), ("pride", "LOCAL PRIDE"), ("music", "Music"), ("humor", "Nat'l Day")]
 NEWS = [("local", "Local"), ("weird", "Morning News Only")]
 COLUMNS = BUZZ + NEWS
 # Boss (2026-10-20): "Show Prep" = LOCAL PRIDE, National, Humor, Music, then every Event Board column

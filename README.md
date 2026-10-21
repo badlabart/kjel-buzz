@@ -2,7 +2,7 @@
 
 Trello-style board of today's talkable stories for jocks and voicetrackers. Same look as the KJEL Event Board.
 Two apps from one build:
-- The Buzz (docs/index.html): National (~10), LOCAL PRIDE (up to 24), Music (concerts + ~30 news), Humor (12-20 bits).
+- The Buzz (docs/index.html): National (~10), LOCAL PRIDE (up to 24), Music (concerts + ~30 news), Nat'l Day (national days for today and the next 6 days).
 - News (docs/news/index.html, https://badlabart.github.io/kjel-buzz/news/): Local (up to 24), Morning News Only (20+).
 - Show Prep (docs/show-prep/index.html, https://badlabart.github.io/kjel-buzz/show-prep/): LOCAL PRIDE, National, Humor, Music, then the KJEL Event Board columns except KIM ONLY and Live Music (read from ~/Documents/Claude/Projects/KJEL-event-board/data/events.js, upcoming only).
 No card in any app should need a click to understand. Cards under 12 hours old are gold.
@@ -71,3 +71,6 @@ These stand in for virality. Facebook, TikTok, Instagram, X and Reddit share cou
 
 ## Timely and The Johnsons (Show Prep only, Boss 2026-10-21)
 `python3 -I scripts/extra.py` pulls candidates into `data/extra_pool.json` and prints a shortlist: IanGardner.com daily prep sheet, NWS forecast, AAA gas, MDC season dates and calendar countdowns (Timely); kid-safety recalls, parenting, cooking, MDC news, hunting and fishing, money feeds and one Reddit pull (The Johnsons). Claude writes `data/picks_extra.json` (ids, labels, lines; a Timely pick may set its own "date"); `build.py` adds both columns after Music. Johnsons never repeat (`data/extra_shown.json`, 60 days).
+
+## Nat'l Day column (Boss, 2026-10-21)
+Formerly Humor. National days only, today through 6 days ahead. Card: WEEKDAY 10/22 (TODAY/TOMORROW flag after it), the day's name in bold red with "National" and "Day" removed, then one plain sentence: the most entertaining true fact about the day from its Checkiday story (default: why it was created). Dated facts give the year only.
