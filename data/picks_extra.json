@@ -11,15 +11,13 @@
    "id": "Tb2d03e"
   },
   {
-   "id": "Tc09a9e",
-   "label": "On This Day",
-   "line": "Four years ago today, Taylor Swift released her album Midnights."
-  },
-  {
    "id": "T5f14aa"
   },
   {
    "id": "T2f8a71"
+  },
+  {
+   "id": "Ta7d631"
   },
   {
    "id": "T70c2f4"
@@ -31,103 +29,132 @@
    "id": "T851b71"
   },
   {
-   "id": "T6fa61c",
-   "label": "Today Is",
-   "line": "Thursday is National Make a Dog's Day, a day for giving your dog extra love and thinking about the shelter dogs still waiting for a home."
-  },
-  {
-   "id": "Td06d23",
-   "label": "Movie Night",
-   "line": "The new stop-motion movie Wildwood opens in theaters Friday, about a girl who goes into a secret enchanted forest to save her baby brother, adapted from the children's novel.",
-   "date": "2026-10-23"
+   "id": "Tdce645",
+   "label": "20 Years of Taylor",
+   "line": "Twenty years ago this week, Taylor Swift released her very first album, Taylor Swift, the 2006 debut that made her a rising star in country music.",
+   "date": "2026-10-24"
   },
   {
    "id": "T5d5e34",
-   "label": "On TV",
-   "line": "Reba McEntire's NBC sitcom Happy's Place returns for its third season Friday.",
+   "label": "Reba Is Back",
+   "line": "Reba McEntire's NBC sitcom Happy's Place returns for season three, with Reba as Bobbie, who inherits her dad's Tennessee tavern, reunited with Melissa Peterman.",
    "date": "2026-10-23"
   },
   {
-   "id": "Tdce645",
-   "label": "On This Day",
-   "line": "Saturday marks 20 years since Taylor Swift released her debut album, which made her a rising star in country music."
+   "id": "T75a997",
+   "label": "New NBC Sitcom",
+   "line": "NBC's new sitcom Newlyweds stars Tea Leoni and Tim Daly as a free spirit and a buttoned-up professor who marry on impulse, Fridays at 8:30 Eastern.",
+   "date": "2026-10-22"
+  },
+  {
+   "id": "Tc55e0a",
+   "label": "Matthew Perry Doc",
+   "line": "Netflix's three-part documentary The One About Matthew Perry looks back at the Friends star's life and his comedy legacy as Chandler Bing.",
+   "date": "2026-10-27"
+  },
+  {
+   "id": "Td06d23",
+   "label": "Family Movie",
+   "line": "The stop-motion family fantasy Wildwood, adapted from the children's novel, follows a girl into a secret enchanted forest to save her baby brother, with Mahershala Ali and Angela Bassett.",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "T96dab5",
+   "label": "New on Netflix",
+   "line": "Netflix's new comedy Minimum Wage follows a crew of teenage workers at a chaotic local pizza shop, in short 12-minute episodes with a guest spot from Randall Park.",
+   "date": "2026-10-22"
   }
  ],
  "johnsons": [
   {
-   "id": "J9b8fcd",
-   "label": "Family",
-   "line": "The Consumer Product Safety Commission says Papablic is recalling its convertible bedside sleepers with play yard extensions, because the mattress can shift and trap a baby between the sleeping pad and the bottom, a risk of serious injury or death."
-  },
-  {
-   "id": "J785d9a",
-   "label": "Family",
-   "line": "The Consumer Product Safety Commission says ONTHEWEI is recalling its baby bath seats because they are unstable and can tip over while in use, a risk of serious injury or death to children."
-  },
-  {
-   "id": "J10990e",
-   "label": "Family",
-   "line": "A Reddit mom is asking whether a babysitter who earned $120 for four hours of date-night babysitting, plus $20 for gas, should have tidied the kids' messes before she left."
-  },
-  {
-   "id": "Jc0c352",
-   "label": "Family",
-   "line": "A Reddit dad says he can't believe he used to get frustrated and yell at his 2-year-old, now that his oldest is almost 5 and still seems like a baby to him."
-  },
-  {
-   "id": "J5f631c",
-   "label": "Family",
-   "line": "A Reddit parent with a 2-year-old is asking whether visiting grandparents are guests or help with the kids."
-  },
-  {
-   "id": "J81e023",
-   "label": "Cooking",
-   "line": "Budget Bytes has an easy Southern smothered pork chops recipe, with seared pork chops in creamy onion gravy, ready in 35 minutes."
-  },
-  {
-   "id": "J81f423",
-   "label": "Cooking",
-   "line": "Budget Bytes' Rasta Pasta is a one-pot meal of jerk-seasoned chicken, colorful peppers and a creamy Parmesan sauce, ready in 45 minutes."
-  },
-  {
-   "id": "J5601ef",
-   "label": "Cooking",
-   "line": "Skinnytaste's cheesy turkey and black bean enchiladas, made with seasoned ground turkey and homemade enchilada sauce, pack 15 grams of fiber per serving."
-  },
-  {
-   "id": "J17c8e6",
+   "id": "J311183",
    "label": "Outdoors",
-   "line": "The Missouri Department of Conservation is asking Ozarks hunters to have their deer sampled for chronic wasting disease all season, at MDC offices, meat processors, taxidermists, freezer drops and more."
+   "line": "Missouri Conservation is asking southwest Missouri deer hunters to get their deer sampled for chronic wasting disease all season, at MDC offices, meat processors, taxidermists and freezer drops."
   },
   {
-   "id": "J42779a",
+   "id": "Jf20104",
    "label": "Outdoors",
-   "line": "The Missouri Department of Conservation says waterfowl hunters should be poised for fall flights similar to 2025, and reminds them of changes to zone boundaries and season dates."
+   "line": "Busch Shooting Range is holding a Field to Freezer class on October 31 to teach deer hunters how to handle and prepare their deer right after the harvest."
   },
   {
-   "id": "J37c7f5",
+   "id": "J3321a2",
    "label": "Outdoors",
-   "line": "A fisheries biologist caught the same monster muskie he released last year, and autumn is prime time for big muskies because they feed heavily before winter."
+   "line": "Missouri Conservation is hosting a free class in Hannibal on November 10 showing hunters how to process a deer into freezer-ready venison."
   },
   {
-   "id": "Jda816f",
-   "label": "Life",
-   "line": "NerdWallet says if your bills are due before payday, asking to move your bill due dates can ease your cash flow."
+   "id": "J5feb88",
+   "label": "Outdoors",
+   "line": "Missouri Conservation has a free milkweed event in Columbia on November 7, and everyone goes home with milkweed seed of their own to plant."
   },
   {
-   "id": "J6e7947",
-   "label": "Life",
-   "line": "Lifehacker says Spotify Family plan members are being prompted to confirm their location by scanning a QR code, and need to do it to avoid being locked out."
+   "id": "Jc84e19",
+   "label": "Outdoors",
+   "line": "Seven-year-old Arizona angler Liam Hellum caught his age, landing and releasing a personal-best 7.1-pound largemouth bass."
   },
   {
-   "id": "J46504c",
-   "label": "Life",
-   "line": "A thread on r/Frugal asks which products are at an all-time low price right now, since things like computer memory and graphics cards are at all-time highs."
+   "id": "J1ce3be",
+   "label": "Family",
+   "line": "Romorgniz is recalling six-drawer dressers because they can tip over and trap kids if not anchored to the wall, and they fail the federal safety standard."
   },
   {
-   "id": "Jca6478",
+   "id": "J4c40bd",
+   "label": "Family",
+   "line": "The Conqueror is recalling Avengers medals because their strong magnets can come loose, and swallowed magnets are a deadly danger to children."
+  },
+  {
+   "id": "J7be4d0",
+   "label": "Family",
+   "line": "Primark is recalling 101 Dalmatians faux leather children's coin purses because they contain high levels of phthalates, which can be harmful if kids chew on them."
+  },
+  {
+   "id": "J228570",
+   "label": "Family",
+   "line": "A Reddit dad blew his 7-year-old's mind with this trick for 11 plus 7: take the 1 off the 11, add it to the 7 to make 8, then add that to 10 for 18."
+  },
+  {
+   "id": "Je30d45",
+   "label": "Cooking",
+   "line": "Skinnytaste has an easy high-protein fall dinner: Crockpot Chicken with Apples, a sweet-and-savory twist on Chicken Normandy served over mashed potatoes."
+  },
+  {
+   "id": "J3a16f3",
+   "label": "Cooking",
+   "line": "Budget Bytes has a cozy Italian Wedding Soup with tender meatballs, vegetables and pasta in chicken broth, perfect for a chilly fall weeknight."
+  },
+  {
+   "id": "J543392",
+   "label": "Cooking",
+   "line": "Skinnytaste posted a free seven-day high-protein meal plan with breakfast, lunch and dinner ideas plus a ready-made shopping list."
+  },
+  {
+   "id": "Jf4346b",
+   "label": "Cooking",
+   "line": "A Reddit meal prepper shared a healthier nacho beef bowl with a lime slaw on the side that makes four servings for the week."
+  },
+  {
+   "id": "Jc166db",
    "label": "Life",
-   "line": "A r/Frugal poster says a $280 gas bill last January had them wearing a hat and gloves indoors, and wishes they had bought a heated vest three winters ago."
+   "line": "Stop raking your leaves: turf scientists say bagging them is mostly wasted work and may actually shortchange your grass."
+  },
+  {
+   "id": "Jfeedfa",
+   "label": "Life",
+   "line": "Walmart scam victims are getting refund checks averaging 150 dollars, so don't toss yours, but watch out because fake checks are going around too."
+  },
+  {
+   "id": "J44344b",
+   "label": "Life",
+   "line": "Scammers are cashing in on the rush for Apple's new foldable iPhone Duo with fake preorder scams, so be careful where you order one."
+  },
+  {
+   "id": "J4f22ba",
+   "label": "Life",
+   "line": "A Reddit poster says snipping open an empty toothpaste tube with scissors gets at least five more brushings out of it."
+  },
+  {
+   "id": "Ja5a88b",
+   "label": "Life",
+   "line": "A Reddit poster scored the most comfortable couch they've ever laid on for 70 dollars at a local thrift store that sells furniture dirt cheap."
   }
  ]
 }
