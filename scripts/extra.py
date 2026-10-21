@@ -365,8 +365,8 @@ def johnsons():
     for i in out:
         per[i["source"]] = per.get(i["source"], 0) + 1
         rank[i["id"]] = per[i["source"]]
-    out = [i for i in out if rank[i["id"]] <= 3]
-    out.sort(key=lambda i: (rank[i["id"]], not i["niche"], -i["ts"].timestamp()))
+    out = [i for i in out if rank[i["id"]] <= (6 if i["source"] == "Missouri Dept. of Conservation" else 5)]
+    out.sort(key=lambda i: (0 if i["source"] == "Missouri Dept. of Conservation" else rank[i["id"]], not i["niche"], -i["ts"].timestamp()))
     return out
 
 
@@ -374,7 +374,7 @@ def main():
     DATA.mkdir(exist_ok=True)
     timely = ian_gardner() + weather() + gas() + seasons() + countdowns()
     jj = johnsons()
-    cap = {"Family": 12, "Cooking": 6, "Outdoors": 14, "Life": 12}
+    cap = {"Family": 16, "Cooking": 6, "Outdoors": 16, "Life": 14}
     taken = {k: 0 for k in cap}
     jj = [i for i in jj if (taken.__setitem__(i["pillar"], taken[i["pillar"]] + 1) or taken[i["pillar"]] <= cap[i["pillar"]])]
     for i in jj:

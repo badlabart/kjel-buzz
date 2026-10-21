@@ -68,3 +68,6 @@ These stand in for virality. Facebook, TikTok, Instagram, X and Reddit share cou
 ## Known limits
 - Google throttles the link lookup after heavy use (the morning searches use most of the allowance). Lookups are spaced out and cached, so stories missed today usually resolve the next morning. Unresolved cards keep a Google News link, which still opens the story in a modern browser.
 - Feeds carry few Lebanon congratulations; most live on Facebook (school, chamber, sports pages), which cannot be read automatically. The Local header shows "short today" when Lebanon is under 50%.
+
+## Timely and The Johnsons (Show Prep only, Boss 2026-10-21)
+`python3 -I scripts/extra.py` pulls candidates into `data/extra_pool.json` and prints a shortlist: IanGardner.com daily prep sheet, NWS forecast, AAA gas, MDC season dates and calendar countdowns (Timely); kid-safety recalls, parenting, cooking, MDC news, hunting and fishing, money feeds and one Reddit pull (The Johnsons). Claude writes `data/picks_extra.json` (ids, labels, lines; a Timely pick may set its own "date"); `build.py` adds both columns after Music. Johnsons never repeat (`data/extra_shown.json`, 60 days).

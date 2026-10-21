@@ -1,5 +1,5 @@
 window.KJEL_BUZZ = {
- "updated": "2026-10-21T15:25:12+00:00",
+ "updated": "2026-10-21T15:29:23+00:00",
  "columns": [
   {
    "key": "national",

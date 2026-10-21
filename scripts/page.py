@@ -157,6 +157,9 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir=""):
                         f'<span class="src">&middot; {esc(c["source"])}</span></div>')
                 names = (f'<div class="why">{esc(c["place"])}</div>' if c.get("place") else "") + \
                         (f'<div class="why">{esc(c["why"])}</div>' if c.get("why") else "")
+            elif c.get("kind") == "timely":  # Timely: a dated talking point; the date label turns into TODAY / TOMORROW in the browser
+                head = (f'<div class="card" data-date="{c["date"]}"><div class="when"><span class="dl">{esc(c["when_label"])}</span> '
+                        f'<span class="src">&middot; {esc(c["source"])}</span></div>')
             elif c.get("kind") == "concert":
                 head = (f'<div class="card concert" data-date="{c["date"]}"><div class="when">CONCERT &middot; <span class="dl">{esc(c["when_label"])}</span> '
                         f'<span class="src">&middot; {esc(c["source"])}</span></div>')
@@ -175,7 +178,7 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir=""):
                 f'<div class="name">{cong}{label}{main}{where}</div>{names}{punch}{sig}' +
                 ('</div>' if nolink else
                  f'<a class="link" href="{esc(c["url"])}" target="_blank" rel="noopener">'
-                 f'{"Tickets / details" if c.get("kind") == "concert" else "Details" if c.get("kind") == "event" else "Read story"} &#8599;</a></div>'))
+                 f'{"Tickets / details" if c.get("kind") == "concert" else "Details" if c.get("kind") == "event" else "Source" if c.get("kind") == "timely" else "Read story"} &#8599;</a></div>'))
         body = "".join(cards) or '<div class="empty">Nothing worth airing today.</div>'
         if col["key"] == "music":
             body = ('<form class="search" onsubmit="return kjSearch();">'

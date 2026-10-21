@@ -22,7 +22,8 @@ NEWS = [("local", "Local"), ("weird", "Morning News Only")]
 COLUMNS = BUZZ + NEWS
 # Boss (2026-10-20): "Show Prep" = LOCAL PRIDE, National, Humor, Music, then every Event Board column
 # except KIM ONLY and Live Music.
-SHOW_PREP = ["pride", "national", "humor", "music"]
+SHOW_PREP = ["pride", "national", "humor", "music", "timely", "johnsons"]
+EXTRA_NAMES = {"timely": "Timely", "johnsons": "The Johnsons"}
 EVENTS_JS = Path.home() / "Documents/Claude/Projects/KJEL-event-board/data/events.js"
 EVENT_SKIP = {"kim only", "live music"}
 
@@ -45,6 +46,48 @@ def event_columns():
                   "when_label": date.fromisoformat(e["date"]).strftime("%a, %b %-d").upper()} for e in evs]
         cols.append({"key": "ev-" + typ.lower().replace(" ", "-"), "name": typ, "cards": cards})
     return cols
+
+def extra_columns():
+    """Timely and The Johnsons (Boss 2026-10-21). Candidates come from data/extra_pool.json (scripts/extra.py), the picks
+    and lines from data/picks_extra.json. Timely cards are dated, so the page hides them once their day has passed."""
+    pool_p, picks_p = DATA / "extra_pool.json", DATA / "picks_extra.json"
+    if not (pool_p.exists() and picks_p.exists()):
+        return {}
+    pool = json.loads(pool_p.read_text())
+    items = {i["id"]: i for i in pool["timely"] + pool["johnsons"]}
+    picks = json.loads(picks_p.read_text())
+    cols = {}
+    for key in ("timely", "johnsons"):
+        cards = []
+        for p in picks.get(key, []):
+            it = items.get(p["id"])
+            if not it:
+                continue
+            line = p.get("line") or it.get("line", "")
+            if key == "timely":
+                d = date.fromisoformat(p.get("date") or it["date"])
+                cards.append({"kind": "timely", "title": line, "line": line, "label": p.get("label") or it.get("label", ""),
+                              "city": "", "source": it["source"], "url": it["url"], "ts": None, "signal": "",
+                              "date": d.isoformat(), "when_label": d.strftime("%a, %b %-d").upper()})
+            else:
+                cards.append({"id": it["id"], "title": it["title"], "line": line, "label": p.get("label") or it["pillar"], "city": "",
+                              "source": it["source"], "url": it["url"], "ts": it["ts"], "signal": it.get("signal", "")})
+        if key == "timely":
+            cards.sort(key=lambda c: c["date"])  # stable: pick order holds within a day
+        cols[key] = {"key": key, "name": EXTRA_NAMES[key], "cards": cards}
+    return cols
+
+
+def record_extra_shown(cols):
+    """The Johnsons never repeat: remember what was shown so scripts/extra.py skips it for 60 days."""
+    path = DATA / "extra_shown.json"
+    seen = json.loads(path.read_text()) if path.exists() else {}
+    for c in cols.get("johnsons", {}).get("cards", []):
+        seen[c["id"]] = datetime.now(collect.CT).date().isoformat()
+    keep = {k: v for k, v in seen.items() if (datetime.now(collect.CT).date() - date.fromisoformat(v)).days <= 60}
+    path.write_text(json.dumps(keep, indent=0))
+
+
 SPLIT = ("pride", "local")  # columns that aim for 50% Lebanon
 LEBANON_GOAL = 0.50
 
@@ -155,7 +198,9 @@ def main():
     page.write(buzz)
     page.write(news, title="News", doc_title="KJEL News", subdir="news")
     by_key = {c["key"]: c for c in cols}
-    prep = {"updated": stamp, "columns": [by_key[k] for k in SHOW_PREP] + event_columns(),
+    extras = extra_columns()
+    by_key.update(extras)
+    prep = {"updated": stamp, "columns": [by_key[k] for k in SHOW_PREP if k in by_key] + event_columns(),
             "lebanon": {k: v for k, v in lebanon.items() if k in SHOW_PREP}}
     page.write(prep, title="Show Prep", doc_title="KJEL Show Prep", subdir="show-prep")
     # Boss (2026-10-20): Show Prep also lives at its own short address, badlabart.github.io/kjel-showprep
@@ -164,6 +209,7 @@ def main():
         out.mkdir(exist_ok=True)
         for f in ("index.html", "music_search.js"):
             (out / f).write_bytes((ROOT / "docs" / "show-prep" / f).read_bytes())
+    record_extra_shown(extras)
     humor.record_shown(collect, [c for c in next(c for c in cols if c["key"] == "humor")["cards"] if c.get("kind") == "joke"])
     print(f"Board: {' | '.join(f'{c[1]} {len(x["cards"])}' for c, x in zip(COLUMNS, cols))} | "
           f"Lebanon: {' / '.join(f'{k} {v["count"]} of {v["of"]}' for k, v in lebanon.items())} | "
