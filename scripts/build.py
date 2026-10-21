@@ -18,11 +18,12 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 # Boss (2026-10-19): Local and Morning News Only moved to a separate "News" app with the same look.
 BUZZ = [("national", "National"), ("pride", "LOCAL PRIDE"), ("music", "Music"), ("humor", "Nat'l Day")]
-NEWS = [("local", "Local"), ("weird", "Morning News Only")]
+NEWS = [("local", "Ozarks"), ("weird", "Morning News Only")]
 COLUMNS = BUZZ + NEWS
-# Boss (2026-10-21): the News app also carries LOCAL PRIDE (from the Buzz) and The Johnsons (from Show Prep).
-# Both stay on their original pages too. Order is Claude's: LOCAL PRIDE sits next to Local.
-NEWS_PAGE = ["local", "pride", "weird", "johnsons"]
+# Boss (2026-10-21): the News app also carries LOCAL PRIDE (from the Buzz) and The Johnsons (from Show Prep), which
+# stay on their original pages too. Her order: Johnsons, LOCAL PRIDE, Ozarks (the old "Local"), the new Light, and
+# Morning News Only last.
+NEWS_PAGE = ["johnsons", "pride", "local", "light", "weird"]
 # Boss (2026-10-20): "Show Prep" = LOCAL PRIDE, National, Humor, Music, then every Event Board column
 # except KIM ONLY and Live Music.
 SHOW_PREP = ["pride", "national", "humor", "music", "timely", "johnsons"]
@@ -79,6 +80,27 @@ def extra_columns():
             cards.sort(key=lambda c: c["date"])  # stable: pick order holds within a day
         cols[key] = {"key": key, "name": EXTRA_NAMES[key], "cards": cards}
     return cols
+
+
+def light_column(pool, picks):
+    """Light (Boss 2026-10-21): uplifting, encouraging, amusing or funny stories from anywhere in the listening area,
+    no Lebanon percentage. Candidates come from data/light_pool.json (scripts/light.py) or the main pool; Claude writes
+    data/picks_light.json. A story LOCAL PRIDE, National or Morning News Only already carries stays there."""
+    picks_p, pool_p = DATA / "picks_light.json", DATA / "light_pool.json"
+    items = dict(pool)
+    if pool_p.exists():
+        items.update({i["id"]: i for i in json.loads(pool_p.read_text())["items"]})
+    taken = {p["id"] for k in ("national", "pride", "weird") for p in picks.get(k, [])}
+    cards, missing = [], []
+    for p in (json.loads(picks_p.read_text()).get("light", []) if picks_p.exists() else []):
+        it = items.get(p["id"])
+        if p["id"] in taken:
+            continue
+        if not it:
+            missing.append(p["id"])
+            continue
+        cards.append(dict(it, line=p.get("line", ""), city=p.get("city", ""), label="", congrats=False))
+    return {"key": "light", "name": "Light", "cards": cards}, missing
 
 
 def record_extra_shown(cols):
@@ -179,7 +201,14 @@ def main():
             cards = [c for c in cards if c not in ahead] + ahead
         cols.append({"key": key, "name": name, "cards": cards})
 
-    every = [c for col in cols for c in col["cards"] if c.get("kind") != "concert"]
+    light, gone = light_column(pool, picks)
+    missing += gone
+    light_ids = {c["id"] for c in light["cards"]}
+    for col in cols:  # a story sits in one column: Light wins over Ozarks
+        if col["key"] == "local":
+            col["cards"] = [c for c in col["cards"] if c.get("id") not in light_ids]
+
+    every = [c for col in cols + [light] for c in col["cards"] if c.get("kind") != "concert"]
     collect.resolve_all(every, budget_s=120)
     unresolved = sum(1 for c in every if c["url"].startswith("https://news.google.com"))
 
@@ -191,6 +220,7 @@ def main():
             lebanon[col["key"]] = {"count": n, "of": len(col["cards"]), "goal": LEBANON_GOAL}
     stamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
     by_key = {c["key"]: c for c in cols}
+    by_key["light"] = light
     extras = extra_columns()
     by_key.update(extras)
     buzz_keys = {k for k, _ in BUZZ}
@@ -220,6 +250,7 @@ def main():
     record_extra_shown(extras)
     humor.record_shown(collect, [c for c in next(c for c in cols if c["key"] == "humor")["cards"] if c.get("kind") == "joke"])
     print(f"Board: {' | '.join(f'{c[1]} {len(x["cards"])}' for c, x in zip(COLUMNS, cols))} | "
+          f"Light {len(light['cards'])} | "
           f"Lebanon: {' / '.join(f'{k} {v["count"]} of {v["of"]}' for k, v in lebanon.items())} | "
           f"music search: {kept} kept + {recent} current | "
           f"Google links left unresolved: {unresolved} | missing pick ids: {', '.join(missing) or 'none'}")

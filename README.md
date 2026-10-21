@@ -3,7 +3,8 @@
 Trello-style board of today's talkable stories for jocks and voicetrackers. Same look as the KJEL Event Board.
 Two apps from one build:
 - The Buzz (docs/index.html): National (~10), LOCAL PRIDE (up to 24), Music (concerts + ~30 news), Nat'l Day (national days for today and the next 6 days).
-- News (docs/news/index.html; published copy at https://badlabart.github.io/kjel-news/, repo KJEL-news): Local (up to 24), LOCAL PRIDE, Morning News Only (20+), The Johnsons. LOCAL PRIDE and The Johnsons also stay on the Buzz and Show Prep.
+- News (docs/news/index.html; published copy at https://badlabart.github.io/kjel-news/, repo KJEL-news), in Boss's order: The Johnsons, LOCAL PRIDE, Ozarks (up to 24; the old "Local"), Light, Morning News Only (20+). LOCAL PRIDE and The Johnsons also stay on the Buzz and Show Prep.
+- Light (News app): uplifting, encouraging, amusing or funny stories from anywhere in the listening area, no Lebanon percentage, no card limit. `python3 -I scripts/light.py` writes data/light_pool.json; Claude writes data/picks_light.json; build.py adds the column. A story LOCAL PRIDE, National or Morning News Only carries stays there; Light wins over Ozarks.
 - Show Prep (docs/show-prep/index.html, https://badlabart.github.io/kjel-buzz/show-prep/): LOCAL PRIDE, National, Humor, Music, then the KJEL Event Board columns except KIM ONLY and Live Music (read from ~/Documents/Claude/Projects/KJEL-event-board/data/events.js, upcoming only).
 No card in any app should need a click to understand. Cards under 12 hours old are gold.
 Each news card is ONE on-air sentence with full context, city in parentheses. Lebanon cities are highlighted.

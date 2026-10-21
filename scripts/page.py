@@ -140,7 +140,7 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir=""):
     for col in data["columns"]:
         cards = []
         for c in col["cards"]:
-            city = c.get("city") or (c.get("town") if col["key"] in ("local", "pride") and c.get("town") != "Ozarks" else "")
+            city = c.get("city") or (c.get("town") if col["key"] in ("local", "pride", "light") and c.get("town") != "Ozarks" else "")
             leb = (city or "").lower() == "lebanon"
             where = f' <span class="city{" leb" if leb else ""}">({esc(city)})</span>' if city else ""
             if col["key"] == "pride":  # Boss (2026-10-21): the town is already in the line ("Congrats to Waynesville's ...")
