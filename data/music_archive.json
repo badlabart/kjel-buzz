@@ -1,5 +1,45 @@
 [
 {
+"id": "Afd776411",
+"t": "Zach Top plans drive-in premiere for concert film 'Live From Red Rocks' and YouTube live event",
+"s": "Big Country News |",
+"d": "2026-10-22",
+"u": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNNUM0dDQxbWJNSndWS0ppbE1feVlRaHJDOEFCRk1KQ2JUOS1la2pDbmdHM0RDQ2xQNWM1WnhzSExXY1QwTjBMV1lnWUwzTE82SjRjTlZ3TFNFTm5fdG5SYTRRY2FlR1RfYXlxQnFpWGlsNU9nUllNOXNkTGIybGxJaDU1NUV1OHlHR3NSYnNoaC1hbzg0YURVWEJ5THZzV0tZcDBqeTFLSFNpVExqX25wX3FVb19SX2xjNURCOThGd0lvWnBBTDl2ODlmZjd5OFU?oc=5",
+"a": "Zach Top",
+"o": 0,
+"k": 1
+},
+{
+"id": "A2bc92ef3",
+"t": "Ella Langley Performs Dolly Parton’s ‘Jolene’ at Tribute: WATCH",
+"s": "Taste of Country",
+"d": "2026-10-22",
+"u": "https://tasteofcountry.com/ella-langley-jolene-dolly-parton-tribute/",
+"a": "Ella Langley",
+"o": 0,
+"k": 1
+},
+{
+"id": "A2e7a0859",
+"t": "‘The Great And Unmatched’: John Anderson Remembered by Blake Shelton, Tim McGraw & More",
+"s": "Billboard",
+"d": "2026-10-22",
+"u": "https://www.billboard.com/music/country/john-anderson-death-reaction-1236365421/",
+"a": "Blake Shelton",
+"o": 0,
+"k": 1
+},
+{
+"id": "A1db3a014",
+"t": "Megan Moroney’s Most Awkward Moment Hearing Her Own Song",
+"s": "Taste of Country",
+"d": "2026-10-22",
+"u": "https://tasteofcountry.com/megan-moroney-hears-own-song-laser-hair-removal/",
+"a": "Megan Moroney",
+"o": 0,
+"k": 1
+},
+{
 "id": "Ae42a93b6",
 "t": "Cole Swindell turns family memories into new single ‘Bronco’",
 "s": "Big Country News |",
@@ -77,6 +117,86 @@
 "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQTRtMEU2T2RnMW1jckxTWnNRMHZTR2FVNXp6S0c3VUFPOVlvMTNNUzZyZ1lRWnVhcG9Ccy1ZdTdpLTJGVlpGZXlFRlRyTE1jVnNOMFItSlRma0YtS0lINGlzMkg0NFlQdGlwZGVkM0ViQ0xzdWJNSlpkQnNkN0dwQURzRzBXREZwN3Vfb2xXV1FZU2R6c04yUnpKZlpia1BvM3oyU3RMeW1CVHpjcmc?oc=5",
 "a": "Megan Moroney",
 "o": 0,
+"k": 1
+},
+{
+"id": "A7eec24f9",
+"t": "Tim McGraw, Blake Shelton, Riley Green Mourn John Anderson: ‘This One Really Hurts’",
+"s": "Rolling Stone",
+"d": "2026-10-21",
+"u": "https://www.rollingstone.com/music/music-country/john-anderson-tributes-tim-mcgraw-blake-shelton-riley-green-1235646417/",
+"a": "Riley Green",
+"o": 1,
+"k": 1
+},
+{
+"id": "Af6b5bf79",
+"t": "Tim McGraw, Blake Shelton, & More Remember John Anderson In Emotional Tributes Following His Death",
+"s": "Country Now",
+"d": "2026-10-21",
+"u": "https://countrynow.com/tim-mcgraw-blake-shelton-more-remember-john-anderson-in-emotional-tributes-following-his-death/",
+"a": "Blake Shelton",
+"o": 1,
+"k": 1
+},
+{
+"id": "Ace777d6a",
+"t": "Ella Langley Takes the Stage for a Memorable Rendition of Dolly Parton’s Beloved Classic ‘Jolene’",
+"s": "Country Now",
+"d": "2026-10-21",
+"u": "https://countrynow.com/ella-langley-takes-the-stage-for-a-memorable-rendition-of-dolly-partons-beloved-classic-jolene/",
+"a": "Ella Langley",
+"o": 0,
+"k": 1
+},
+{
+"id": "Aaad5ebce",
+"t": "Ella Langley Pays Tribute to Dolly Parton With Smoldering Version of ‘Jolene’",
+"s": "Rolling Stone",
+"d": "2026-10-21",
+"u": "https://www.rollingstone.com/music/music-country/ella-langley-performs-jolene-dolly-parton-tribute-concert-1235646106/",
+"a": "Ella Langley",
+"o": 0,
+"k": 1
+},
+{
+"id": "A8a11eb6d",
+"t": "Luke Bryan’s Son, Bo, Gets Offer From University Of Georgia To Play Football",
+"s": "Whiskey Riff",
+"d": "2026-10-21",
+"u": "https://www.whiskeyriff.com/2026/10/21/luke-bryans-son-bo-gets-offer-from-university-of-georgia-to-play-football/",
+"a": "Luke Bryan",
+"o": 0,
+"k": 1
+},
+{
+"id": "A261943ac",
+"t": "Morgan Wallen Outsells Garth, Carrie, Luke + More — Top 10 Highest-Selling Country Artists of All Time",
+"s": "Taste of Country",
+"d": "2026-10-21",
+"u": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9OTGNwUklsRWxVOVV6RklaRVN5SlVYd3U1dmxUWVg2T213dElFZkJ1TjI1cVFtcVR1TUpGbThTaDdYejNtVHFiZUNZdElnanUyV0JSTlU5NE5pdW5teDJpbDJ5bzY3VURINFVPbFBSNDlYQ0ttSVJ3dFNKV1BVUQ?oc=5",
+"a": "Morgan Wallen",
+"o": 0,
+"k": 1
+},
+{
+"id": "A0bb7c837",
+"t": "Highest-Selling Country Music Artists: Morgan Wallen Is No. 1",
+"s": "Taste of Country",
+"d": "2026-10-21",
+"u": "https://tasteofcountry.com/morgan-wallen-highest-selling-country-artists/",
+"a": "Morgan Wallen",
+"o": 0,
+"k": 1
+},
+{
+"id": "Ae43c2991",
+"t": "Brothers Osborne Look Past Politics For Music With Cody Johnson",
+"s": "Taste of Country",
+"d": "2026-10-21",
+"u": "https://tasteofcountry.com/brothers-osborne-cody-johnson-collaboration/",
+"a": "Cody Johnson",
+"o": 1,
 "k": 1
 },
 {

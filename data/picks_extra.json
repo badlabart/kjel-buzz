@@ -1,29 +1,29 @@
 {
- "made": "2026-10-21",
+ "made": "2026-10-22",
  "timely": [
-  {
-   "id": "T5716a4"
-  },
   {
    "id": "T78849d"
   },
   {
-   "id": "Tb2d03e"
+   "id": "Ta75ecc"
+  },
+  {
+   "id": "Te950db"
+  },
+  {
+   "id": "Ta7d631"
+  },
+  {
+   "id": "Tc173d4"
+  },
+  {
+   "id": "T70c2f4"
   },
   {
    "id": "T5f14aa"
   },
   {
    "id": "T2f8a71"
-  },
-  {
-   "id": "Ta7d631"
-  },
-  {
-   "id": "T70c2f4"
-  },
-  {
-   "id": "Tc173d4"
   },
   {
    "id": "T321560"
@@ -35,96 +35,97 @@
    "id": "Ta76b3b"
   },
   {
+   "id": "Tc44f8a"
+  },
+  {
    "id": "Tdce645",
-   "label": "Music Anniversary",
-   "line": "Twenty years ago today, Taylor Swift released her debut album, Taylor Swift, the record that made her a rising star in country music.",
+   "label": "20 Years Ago",
+   "line": "Twenty years ago this week, in 2006, Taylor Swift released her debut album, the record that made her a rising star in country music.",
    "date": "2026-10-24"
   },
   {
-   "id": "T5d5e34",
-   "label": "TV Tonight",
-   "line": "Reba McEntire's NBC sitcom Happy's Place returns for season three, with Reba running her late father's Tennessee tavern alongside her old co-star Melissa Peterman.",
+   "id": "T51f384",
+   "label": "Reba's Back",
+   "line": "Reba McEntire's NBC sitcom Happy's Place, where she runs the Tennessee tavern she inherited from her dad, returns for season three on Friday night.",
    "date": "2026-10-23"
   },
   {
-   "id": "Td06d23",
-   "label": "Movie Night",
-   "line": "Wildwood, a new family fantasy film with Mahershala Ali and Angela Bassett, follows a girl into a secret enchanted forest to save her baby brother.",
-   "date": "2026-10-21"
+   "id": "Tace680",
+   "label": "Family Movie",
+   "line": "Wildwood, a fantasy film based on an acclaimed children's novel about a girl saving her baby brother in a secret enchanted forest, stars Mahershala Ali and Angela Bassett.",
+   "date": "2026-10-22"
   }
  ],
  "johnsons": [
   {
-   "id": "J4353ce",
+   "id": "J45b2d8",
    "label": "Outdoors",
-   "line": "The Missouri Department of Conservation is hosting a prescribed burn field day in Dade County on Oct. 27, and you must finish an online portion before attending.",
-   "city": ""
+   "line": "The Missouri Department of Conservation is asking Central Missouri deer hunters to get their deer tested for chronic wasting disease all season, at MDC offices, meat processors, taxidermists and freezer head drops."
   },
   {
-   "id": "J09b55e",
+   "id": "J787315",
    "label": "Outdoors",
-   "line": "Trails at the Runge Conservation Nature Center in Jefferson City close Nov. 6 through 8 for a managed archery deer hunt, though the building stays open.",
-   "city": ""
+   "line": "Researchers sank 140 fallen and cut trees into a 92-acre Wisconsin lake, and fish production in that lake doubled."
   },
   {
-   "id": "J9ed6c5",
-   "label": "Outdoors",
-   "line": "Wired2Fish says the Gamakatsu 4/0 extra wide gap hook may be the best bass hook ever, because it works for dozens of rigs, including soft plastics.",
-   "city": ""
+   "id": "Jf3f0f3",
+   "label": "Life",
+   "line": "A Reddit poster's frugal Halloween tip: a four-pound bag of bulk saltwater taffy costs about ten dollars and holds roughly 300 pieces of candy."
   },
   {
-   "id": "J6fe4e1",
+   "id": "J8235b3",
+   "label": "Life",
+   "line": "One tester ranked the most affordable new electric cars of 2026, and the Tesla Model 3 came out on top under $40,000, with the Nissan Leaf and Kia EV3 close behind."
+  },
+  {
+   "id": "Jd2df01",
+   "label": "Life",
+   "line": "Starbucks has new Halloween treats out now, including a Black Cat Frappuccino and a $15 Bearista charm, while the $30 glow-in-the-dark cold cup is the splurge."
+  },
+  {
+   "id": "J19d880",
+   "label": "Life",
+   "line": "Netflix's November lineup includes the drama series The Altruists, the thriller Heartland starring Jessica Chastain, and an NFL game on Thanksgiving Eve."
+  },
+  {
+   "id": "J93d768",
    "label": "Cooking",
-   "line": "Budget Bytes has a cheap, easy apple spice cake packed with fresh apples, warm spices and nutty brown butter for fall weekends.",
-   "city": ""
+   "line": "Budget Bytes says the secret to juicy baked chicken breasts is soaking them in a simple brine before you season them and bake them until golden."
   },
   {
-   "id": "J88cab5",
+   "id": "J1b71d1",
    "label": "Cooking",
-   "line": "Skinnytaste's easy one-pan chicken curry uses chicken thighs, potatoes, coconut milk, tomatoes and warm spices, a weeknight dinner the whole family can share.",
-   "city": ""
+   "line": "Skinnytaste rounded up 13 easy weeknight meatloaf recipes, including turkey meatloaf, meatloaf with brown gravy, cheesy stuffed meatloaf, air fryer meatloaf and mini meatloaves."
   },
   {
-   "id": "J54cccc",
+   "id": "J0c04c9",
    "label": "Cooking",
-   "line": "Pumpkin cornbread muffins sweetened with maple syrup and a touch of pumpkin spice work for breakfast and again warm next to a bowl of chili.",
-   "city": ""
+   "line": "A warm fall breakfast bowl of creamy coconut quinoa, roasted sweet potato, blueberries, pecans and coconut whipped cream tastes almost like dessert, according to Skinnytaste."
   },
   {
-   "id": "Jcd540f",
-   "label": "Life",
-   "line": "Forecasters now say mortgage rates will not drop until 2028, so anyone counting on refinancing next year may need a new plan.",
-   "city": ""
+   "id": "Jcea8a6",
+   "label": "Cooking",
+   "line": "Lay's has a new limited-edition potato chip flavor that tastes just like Thanksgiving dinner, out more than a month before the holiday."
   },
   {
-   "id": "J6bfde0",
-   "label": "Life",
-   "line": "Mike Rowe says for every five tradespeople who leave, only two are replaced, so it pays to handle home repairs before the first freeze brings a rush of calls.",
-   "city": ""
-  },
-  {
-   "id": "J5171d7",
-   "label": "Life",
-   "line": "A Reddit poster says a tablespoon of blackstrap molasses and a pinch of salt in a water bottle is a cheap swap for store-bought hydration packets.",
-   "city": ""
-  },
-  {
-   "id": "Je1678c",
-   "label": "Life",
-   "line": "A Reddit poster is choosing the non-smart version of things on purpose, like a regular doorbell, paper notes and a microwave with a dial, to keep life simple.",
-   "city": ""
-  },
-  {
-   "id": "J27772f",
+   "id": "J554566",
    "label": "Family",
-   "line": "A Reddit dad told his kid the moon is a potato, got shot down, then asked a stranger on the street, who backed him up immediately.",
-   "city": ""
+   "line": "A Reddit dad says his 3-year-old has gotten into Paw Patrol and he can't take it, because Bluey tells real stories with soul while Paw Patrol is so generic."
   },
   {
-   "id": "J04bd75",
+   "id": "Jd9e9b4",
    "label": "Family",
-   "line": "A Reddit dad is proudly explaining to his daughter that an exasperated eye roll counts just as much as a laugh when it comes to dad jokes.",
-   "city": ""
+   "line": "A Reddit dad who does bedtime every night says he daydreams about those moments in the middle of meetings, and tells other parents they're doing the best they can."
+  },
+  {
+   "id": "Jba94c6",
+   "label": "Family",
+   "line": "A Reddit mom says the internet is full of parents acting superior, and reminds everyone that a kid with a snotty nose does not make you a bad parent."
+  },
+  {
+   "id": "J77585f",
+   "label": "Family",
+   "line": "An only-child mom writes that a one-and-done family isn't a lesser family, and that parents of just one child deserve to feel stressed too."
   }
  ]
 }
