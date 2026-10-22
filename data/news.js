@@ -1,5 +1,5 @@
 window.KJEL_NEWS = {
- "updated": "2026-10-22T16:32:30+00:00",
+ "updated": "2026-10-22T16:45:11+00:00",
  "columns": [
   {
    "key": "wireready",

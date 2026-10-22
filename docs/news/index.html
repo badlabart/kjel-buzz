@@ -70,10 +70,10 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .wrtool .wrlock{display:inline-block;margin:0 12px 0 0;vertical-align:middle}.wrtool .wrlock button{background:#FDB913;color:#0A2A50;font-weight:bold}.wrtool .empty{display:inline-block;color:#FFFFFF;font-size:14px;vertical-align:middle}
 .wrfp .col{max-height:calc(100vh - 140px);overflow-y:auto}
 </style></head>
-<body data-updated="1792686750000">
+<body data-updated="1792687511000">
 <div class="top"><div class="logo">103<span class="star">&#9733;</span>7 <span class="call">KJEL</span></div>
 <div class="hd"><div class="title">News</div>
-<div class="meta">KJEL News &middot; updated Thu Oct 22, 11:32 AM</div></div></div>
+<div class="meta">KJEL News &middot; updated Thu Oct 22, 11:45 AM</div></div></div>
 <div class="stale" id="stale">This report is more than a day old. The 6 AM refresh did not run.</div>
 
 
@@ -182,7 +182,7 @@ function kjSearch(){
       if(s.taps[WHO[j]]){b.className='on'; used.push(WHO[j]+' '+shortDate(s.taps[WHO[j]]));}
       b.onclick=tapper(s.id,WHO[j]); who.appendChild(b);
     }
-    var st=document.createElement('span'); st.className='wrst'; st.innerHTML='added '+longDate(s.added)+(showSrc?' &middot; '+s.by:'');
+    var st=document.createElement('span'); st.className='wrst'; st.innerHTML='added '+longDate(s.added)+(showSrc?' &middot; '+s.by:'')+(s.kind==='summary'?' &middot; audio summary':'');
     t.appendChild(who); t.appendChild(st);
     var nl=s.text.indexOf('\n'), head=(s.by==='MOnet' || nl>0)?(nl>0?s.text.slice(0,nl):s.text):'';  // the title line is bold
     if(head){var h=document.createElement('span'); h.className='wrh'; h.appendChild(document.createTextNode(head)); t.appendChild(h); if(s.text.length>head.length) t.appendChild(document.createTextNode(s.text.slice(head.length)));}
