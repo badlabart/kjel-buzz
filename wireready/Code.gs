@@ -153,6 +153,29 @@ function installWeeklyTrigger() {
   ScriptApp.newTrigger('weeklyLog').timeBased().onWeekDay(ScriptApp.WeekDay.MONDAY).atHour(6).create();
 }
 
+// ---- WireReady menu in the Sheet (so the passcode and email address never sit in code or chat) -------------------
+
+function onOpen() {
+  SpreadsheetApp.getUi().createMenu('WireReady')
+    .addItem('Set passcode', 'setPasscode')
+    .addItem('Set weekly email address', 'setReportTo')
+    .addItem('Send last week\'s log now', 'weeklyLog')
+    .addToUi();
+}
+
+function ask_(title, prompt, key) {
+  var ui = SpreadsheetApp.getUi();
+  var r = ui.prompt(title, prompt, ui.ButtonSet.OK_CANCEL);
+  if (r.getSelectedButton() !== ui.Button.OK) return false;
+  var v = r.getResponseText().replace(/^\s+|\s+$/g, '');
+  if (!v) { ui.alert('Nothing was entered, so nothing was saved.'); return false; }
+  PropertiesService.getScriptProperties().setProperty(key, v);
+  ui.alert('Saved.');
+  return true;
+}
+function setPasscode() { return ask_('WireReady passcode', 'Type the shared passcode the news people will use.', 'PASSCODE'); }
+function setReportTo() { return ask_('Weekly email address', 'Who should get the weekly WireReady log?', 'REPORT_TO'); }
+
 // Run once from the editor to create the two sheets with their headers.
 function setup() { stories_(); taps_(); }
 
