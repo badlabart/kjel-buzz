@@ -6,11 +6,12 @@
  * Sheet "Taps":    tapped | who | story added | story text | story id | story from
  *     the LOG: one row each time B, J or R taps a story, in date order. Tapping again undoes it.
  *
- * The News page and the WireReady full page (kjel-news) call this over POST. Every call carries the shared PASSCODE.
+ * The News page and the WireReady full page (kjel-news) call this over POST. If a PASSCODE property is set, every
+ * call must carry it; with no PASSCODE property (Boss removed it 2026-10-22) the app is open to anyone with the address.
  * Daily, importMonet() adds new Missourinet stories. Weekly, weeklyLog() emails the last 7 days of the Taps log to REPORT_TO.
  *
  * Script properties, set from the WireReady menu in the Sheet (never in code or the repo):
- *   PASSCODE   the shared passcode the three news people type once per browser
+ *   PASSCODE   optional shared passcode the news people type once per browser (menu: Set passcode / Remove passcode)
  *   REPORT_TO  who gets the weekly email
  *
  * @OnlyCurrentDoc  (the script may touch this one Sheet only, not the rest of the Drive)
@@ -65,8 +66,8 @@ function doPost(e) {
   var out;
   try {
     var p = JSON.parse(e.postData.contents);
-    var pass = prop_('PASSCODE');
-    if (!pass || String(p.key) !== pass) return json_({ ok: false, error: 'passcode' });
+    var pass = prop_('PASSCODE');  // no passcode set = open to anyone with the page address
+    if (pass && String(p.key) !== pass) return json_({ ok: false, error: 'passcode' });
     if (p.action === 'add' || p.action === 'tap') {
       var lock = LockService.getScriptLock();
       lock.waitLock(10000);
@@ -140,13 +141,22 @@ function htmlToText_(h) {
   return h.replace(/^\s+|\s+$/g, '');
 }
 
+// Missourinet's "LISTEN" features and audio reports are not articles (Boss 2026-10-22: articles only). They show up as
+// "(LISTEN)" in the title, "-listen" at the end of the link, an audio enclosure, or a "sports-report" link.
+function isListen_(title, link, audio) {
+  return !!audio || /\(\s*listen\s*\)/i.test(title) || /-listen\/?$/i.test(link) || /sports-report/i.test(link);
+}
+
 function parseFeed_(xml) {
   var items = [], re = /<item>([\s\S]*?)<\/item>/g, m;
   function tag(s, t) { var x = new RegExp('<' + t + '[^>]*>([\\s\\S]*?)</' + t + '>').exec(s); return x ? x[1] : ''; }
   while ((m = re.exec(xml))) {
     var title = htmlToText_(tag(m[1], 'title')), link = htmlToText_(tag(m[1], 'link')), pub = new Date(htmlToText_(tag(m[1], 'pubDate')));
     var body = htmlToText_(tag(m[1], 'description')).replace(/\s*The post .* appeared first on .*$/, '');
-    if (title && link && !isNaN(pub.getTime())) items.push({ title: title, link: link, pub: pub, excerpt: body });
+    var audio = /<enclosure[^>]+(audio\/|\.mp3|\.m4a)/i.test(m[1]);
+    if (title && link && !isNaN(pub.getTime())) {
+      items.push({ title: title, link: link, pub: pub, excerpt: body, listen: isListen_(title, link, audio) });
+    }
   }
   return items;
 }
@@ -158,16 +168,23 @@ function fetchFeed_() {
   return r.getContentText();
 }
 
-// Adds every Missourinet story not already in the Stories tab (matched by link). Returns how many were added.
+// Adds every Missourinet ARTICLE not already in the Stories tab (matched by link), skipping LISTEN features and audio
+// reports, and removes any LISTEN story an earlier import let in. Returns how many were added.
 function importMonet() {
   var items = parseFeed_(fetchFeed_());
   if (!items.length) throw new Error('The Missourinet feed had no stories');
   var lock = LockService.getScriptLock();
   lock.waitLock(10000);
   try {
-    var sh = stories_(), have = {};
-    sh.getDataRange().getValues().slice(1).forEach(function (r) { if (r[4]) have[String(r[4])] = true; });
-    var fresh = items.filter(function (it) { return !have[it.link]; });
+    var sh = stories_(), rows = sh.getDataRange().getValues(), have = {}, i;
+    for (i = rows.length - 1; i >= 1; i--) {
+      if (String(rows[i][3]) === 'MOnet' && isListen_(String(rows[i][2]).split('\n')[0], String(rows[i][4]), false)) {
+        sh.deleteRow(i + 1);
+        rows.splice(i, 1);
+      }
+    }
+    rows.slice(1).forEach(function (r) { if (r[4]) have[String(r[4])] = true; });
+    var fresh = items.filter(function (it) { return !it.listen && !have[it.link]; });
     fresh.sort(function (a, b) { return a.pub.getTime() - b.pub.getTime(); });  // oldest first, so the newest ends up on top
     fresh.forEach(function (it) {
       appendText_(sh, [Utilities.getUuid().substring(0, 8), Utilities.formatDate(it.pub, TZ, 'yyyy-MM-dd HH:mm'),
@@ -242,6 +259,7 @@ function installTriggers() {
 function onOpen() {
   SpreadsheetApp.getUi().createMenu('WireReady')
     .addItem('Set passcode', 'setPasscode')
+    .addItem('Remove passcode', 'removePasscode')
     .addItem('Set weekly email address', 'setReportTo')
     .addItem('Import Missourinet stories now', 'importMonetNow')
     .addItem('Send last week\'s log now', 'weeklyLog')
@@ -259,6 +277,11 @@ function ask_(title, prompt, key) {
   return true;
 }
 function setPasscode() { return ask_('WireReady passcode', 'Type the shared passcode the news people will use.', 'PASSCODE'); }
+function removePasscode() {
+  PropertiesService.getScriptProperties().deleteProperty('PASSCODE');
+  var msg = 'The passcode is removed. WireReady now opens for anyone with the page address.';
+  try { SpreadsheetApp.getUi().alert(msg); } catch (e) { Logger.log(msg); }
+}
 function setReportTo() { return ask_('Weekly email address', 'Who should get the weekly WireReady log?', 'REPORT_TO'); }
 
 function importMonetNow() {
