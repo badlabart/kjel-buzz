@@ -54,7 +54,8 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .dnote .dn{color:#FDB913}.dnote a{color:#FDB913}
 .kjs .col{display:none}.kjs .col.kjm{display:inline-block}.kjs .card{display:none}.kjs .card.kjm{display:block}.kjs .search{display:none}
 .wxw{border-left:6px solid #D0101F}.wxt{border-left:6px solid #FDB913}.wxi{border-left:6px solid #33445C}
-.wxl{font-size:14px;margin:4px 0}
+.wxl{font-size:15px;font-weight:bold;margin:2px 0 6px}
+.wxok{font-size:13px;font-weight:bold;color:#33445C;padding:2px 4px 10px}
 """
 
 # ES3 only: no let/const, arrow functions, classList, or dataset.
@@ -206,21 +207,20 @@ function kjWxIso(s){
   if(m[7]!=='Z') ms-=(m[8]==='-'?-1:1)*(parseInt(m[9],10)*60+parseInt(m[10],10))*60000;
   return ms;
 }
-function kjWxTime(ms){
-  var d=new Date(ms), h=d.getHours(), mi=d.getMinutes(), t=(h%12===0?12:h%12)+':'+(mi<10?'0':'')+mi+' '+(h>=12?'PM':'AM');
-  if(d.toDateString()!==new Date().toDateString()) t=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][d.getDay()]+' '+t;
-  return t;
+function kjWxClock(d){var h=d.getHours(), mi=d.getMinutes(); return (h%12===0?12:h%12)+(mi?':'+(mi<10?'0':'')+mi:'')+' '+(h>=12?'PM':'AM');}
+function kjWxTime(ms){  // "7 PM (Thu 10/22)": the date always follows the time
+  var d=new Date(ms);
+  return kjWxClock(d)+' ('+['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][d.getDay()]+' '+(d.getMonth()+1)+'/'+d.getDate()+')';
 }
 function kjWxCovers(hit){
-  var out=[], i;
-  if(hit.length===KJ_WXC.length) return 'Entire listening area';
-  for(i=0;i<hit.length;i++) out.push(kjEsc(hit[i].n)+' Co.'+(hit[i].t.length?' ('+kjEsc(hit[i].t.join(', '))+')':''));
-  return out.join(' &middot; ');
+  var names=[], i;
+  if(hit.length===KJ_WXC.length) return 'entire listening area';
+  for(i=0;i<hit.length;i++) names.push(kjEsc(hit[i].n));
+  return names.join(', ')+(hit.length===1?' county':' counties');
 }
 function kjWxCard(p,hit){
-  var ev=p.event||'Alert', cls=/Warning$/.test(ev)?'wxw':(/Watch$/.test(ev)?'wxt':'wxi'), ms=kjWxIso(p.ends||p.expires), ll=hit[0].ll.split(',');
-  return '<div class="card '+cls+'"><div class="when">'+kjEsc(ev.toUpperCase())+(ms?' <span class="src">&middot; until '+kjWxTime(ms)+'</span>':'')+'</div>'
-    +'<div class="name">'+kjWxCovers(hit)+'</div>'
+  var ev=p.event||'Alert', cls=/Warning$/.test(ev)?'wxw':'wxt', ms=kjWxIso(p.ends||p.expires), ll=hit[0].ll.split(',');
+  return '<div class="card '+cls+'"><div class="name"><span class="label">'+kjEsc(ev)+':</span> '+kjWxCovers(hit)+(ms?' until '+kjWxTime(ms):'')+'</div>'
     +'<a class="link" href="https://forecast.weather.gov/MapClick.php?lat='+ll[0]+'&amp;lon='+ll[1]+'" target="_blank" rel="noopener">NWS details &#8599;</a></div>';
 }
 function kjWxLive(){
@@ -229,20 +229,20 @@ function kjWxLive(){
   try{ x=new XMLHttpRequest(); x.open('GET','https://api.weather.gov/alerts/active?status=actual&area=MO',true); x.setRequestHeader('Accept','application/geo+json'); }catch(e){ return; }
   x.onreadystatechange=function(){
     if(x.readyState!==4 || x.status!==200) return;
-    var f, buckets=[[],[],[]], i, j, k, p, same, hit, r, n=0, out='';
+    var f, buckets=[[],[]], i, j, k, p, same, hit, r, n=0, out='';
     try{ f=JSON.parse(x.responseText).features||[]; }catch(e){ return; }
     for(i=0;i<f.length;i++){
-      p=f[i].properties; if(!p || p.status!=='Actual') continue;
+      p=f[i].properties; if(!p || p.status!=='Actual' || !/(Warning|Watch)$/.test(p.event||'')) continue;  // severe only: watches and warnings
       same=(p.geocode && p.geocode.SAME) || []; hit=[];
       for(j=0;j<KJ_WXC.length;j++){ for(k=0;k<same.length;k++){ if(same[k]===KJ_WXC[j].s){ hit.push(KJ_WXC[j]); break; } } }
       if(!hit.length) continue;
-      r=/Warning$/.test(p.event||'')?0:(/Watch$/.test(p.event||'')?1:2);
+      r=/Warning$/.test(p.event)?0:1;
       buckets[r].push(kjWxCard(p,hit)); n++;
     }
-    out=buckets[0].concat(buckets[1],buckets[2]).join('');
-    document.getElementById('wxalerts').innerHTML=out||'<div class="card wxn"><div class="name">No active alerts for the listening area.</div></div>';
+    out=buckets[0].concat(buckets[1]).join('');
+    document.getElementById('wxalerts').innerHTML=out||'<div class="wxok">No watches or warnings.</div>';
     document.getElementById('wxcount').innerHTML=n;
-    document.getElementById('wxstamp').innerHTML='Alerts live &middot; '+kjWxTime(new Date().getTime());
+    document.getElementById('wxstamp').innerHTML='Alerts live &middot; '+kjWxClock(new Date());
   };
   try{ x.send(null); }catch(e){}
 }

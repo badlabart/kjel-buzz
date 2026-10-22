@@ -1,14 +1,15 @@
-"""Wx column for Show Prep (Boss 2026-10-21): active National Weather Service alerts for the listening area, then a
-one-line-per-town forecast for today. Source: api.weather.gov (free, no key).
+"""Wx column for Show Prep (Boss 2026-10-21): two lines of general weather for the whole listening area (sky, then who gets
+rain and when), then ONLY severe weather: active watches and warnings, one line each. Source: api.weather.gov (free, no key).
 
-Alerts are matched by county (SAME code), so a warning that covers only part of a county still lists the whole county.
+Alerts match by county (SAME code), so a warning for part of a county lists the whole county. Advisories and statements
+are left out on purpose (Boss: "only mention severe wx").
 The page re-reads alerts live in the browser (page.py WX_JS), so a warning issued after the morning build still shows.
-This module writes the build-time snapshot that old browsers and offline copies show.
+This module writes the build-time snapshot that old browsers and offline copies show. The forecast is the build's.
 """
 import html
 import json
 import urllib.request
-from datetime import datetime
+from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
 CT = ZoneInfo("America/Chicago")
@@ -17,22 +18,25 @@ NWS = "https://api.weather.gov"
 MAPCLICK = "https://forecast.weather.gov/MapClick.php?lat={}&amp;lon={}"
 OFFICE = "https://www.weather.gov/sgf/"  # NWS Springfield covers all nine counties
 
-# n = county, s = SAME code (29 + county FIPS), ll = point for the NWS details page, t = towns we name on air
+# n = county, s = SAME code (29 + county FIPS), town = the place we name on air for that county, ll = its point
+# (forecast point and NWS details page).
 COUNTIES = [
-    {"n": "Laclede", "s": "029105", "ll": "37.6806,-92.6638", "t": ["Lebanon"]},
-    {"n": "Pulaski", "s": "029169", "ll": "37.8203,-92.1696", "t": ["Waynesville", "St. Robert", "Fort Leonard Wood"]},
-    {"n": "Camden", "s": "029029", "ll": "37.9962,-92.7446", "t": ["Camdenton", "Osage Beach"]},
-    {"n": "Miller", "s": "029131", "ll": "38.3481,-92.5813", "t": ["Eldon"]},
-    {"n": "Polk", "s": "029167", "ll": "37.6142,-93.4105", "t": ["Bolivar"]},
-    {"n": "Webster", "s": "029225", "ll": "37.3392,-92.9077", "t": ["Marshfield"]},
-    {"n": "Dallas", "s": "029059", "ll": "37.6439,-93.0929", "t": ["Buffalo"]},
-    {"n": "Hickory", "s": "029085", "ll": "37.9395,-93.3180", "t": ["Hermitage"]},
-    {"n": "Wright", "s": "029229", "ll": "37.2517,-92.5107", "t": []},
+    {"n": "Laclede", "s": "029105", "town": "Lebanon", "ll": "37.6806,-92.6638"},
+    {"n": "Pulaski", "s": "029169", "town": "Waynesville", "ll": "37.8281,-92.2007"},
+    {"n": "Camden", "s": "029029", "town": "Camdenton", "ll": "37.9962,-92.7446"},
+    {"n": "Miller", "s": "029131", "town": "Eldon", "ll": "38.3481,-92.5813"},
+    {"n": "Polk", "s": "029167", "town": "Bolivar", "ll": "37.6142,-93.4105"},
+    {"n": "Webster", "s": "029225", "town": "Marshfield", "ll": "37.3392,-92.9077"},
+    {"n": "Dallas", "s": "029059", "town": "Buffalo", "ll": "37.6439,-93.0929"},
+    {"n": "Hickory", "s": "029085", "town": "Hermitage", "ll": "37.9395,-93.3180"},
+    {"n": "Wright", "s": "029229", "town": "Hartville", "ll": "37.2517,-92.5107"},
 ]
-# Forecast towns: Lebanon plus Boss's high-priority towns (collect.HIGH_TOWNS). Towns with the same forecast share a line.
-TOWNS = [("Lebanon", "37.6806,-92.6638"), ("Waynesville", "37.8281,-92.2007"), ("St. Robert", "37.8203,-92.1696"),
-         ("Fort Leonard Wood", "37.7436,-92.1294"), ("Camdenton", "37.9962,-92.7446"), ("Osage Beach", "38.1503,-92.6177"),
-         ("Eldon", "38.3481,-92.5813"), ("Bolivar", "37.6142,-93.4105"), ("Marshfield", "37.3392,-92.9077")]
+PARTS = (("morning", range(6, 12)), ("afternoon", range(12, 18)), ("tonight", range(18, 24)))
+RAIN_MIN = 30   # percent: lowest rain chance worth naming
+LIKELY = 60     # percent: "likely" tier, kept apart from "chance" so one line never blends 30% with 70%
+DAY_SKY = ("Sunny", "Mostly sunny", "Partly sunny", "Mostly cloudy", "Cloudy")
+NIGHT_SKY = ("Clear", "Mostly clear", "Partly cloudy", "Mostly cloudy", "Cloudy")
+KINDS = (("freezing", "freezing rain"), ("sleet", "sleet"), ("snow", "snow"), ("thunder", "storms"))
 
 
 def get(url):
@@ -41,104 +45,187 @@ def get(url):
         return json.loads(r.read().decode("utf-8", "ignore"))
 
 
-def clock(dt, today):
+# ---------------------------------------------------------------- severe weather
+def is_severe(event):
+    return event.endswith("Warning") or event.endswith("Watch")
+
+
+def clock(dt):
+    """"7 PM (Thu 10/22)" or "7:30 PM (Thu 10/22)": the date always follows the time (Boss 2026-10-21)."""
     t = dt.astimezone(CT)
-    s = t.strftime("%-I:%M %p")
-    return s if t.date() == today else t.strftime("%a ") + s
+    return f"{t.strftime('%-I %p' if t.minute == 0 else '%-I:%M %p')} ({t.strftime('%a')} {t.month}/{t.day})"
 
 
-def rank(event):
-    return 0 if event.endswith("Warning") else 1 if event.endswith("Watch") else 2
-
-
-def covers(hit):
+def counties_text(hit):
     if len(hit) == len(COUNTIES):
-        return "Entire listening area"
-    return " &middot; ".join(html.escape(c["n"]) + " Co." + (f' ({html.escape(", ".join(c["t"]))})' if c["t"] else "") for c in hit)
+        return "entire listening area"
+    names = ", ".join(html.escape(c["n"]) for c in hit)
+    return f"{names} county" if len(hit) == 1 else f"{names} counties"
 
 
-def alert_card(p, hit, today):
+def alert_card(p, hit):
     ev = p["event"]
-    cls = "wxw" if ev.endswith("Warning") else "wxt" if ev.endswith("Watch") else "wxi"
+    cls = "wxw" if ev.endswith("Warning") else "wxt"
     end = p.get("ends") or p.get("expires")
-    until = f' <span class="src">&middot; until {clock(datetime.fromisoformat(end), today)}</span>' if end else ""
+    until = f" until {clock(datetime.fromisoformat(end))}" if end else ""
     lat, lon = hit[0]["ll"].split(",")
-    return (f'<div class="card {cls}"><div class="when">{html.escape(ev.upper())}{until}</div>'
-            f'<div class="name">{covers(hit)}</div>'
+    return (f'<div class="card {cls}"><div class="name"><span class="label">{html.escape(ev)}:</span> {counties_text(hit)}{until}</div>'
             f'<a class="link" href="{MAPCLICK.format(lat, lon)}" target="_blank" rel="noopener">NWS details &#8599;</a></div>')
 
 
-def alerts(today):
-    """(cards, count) for every active alert that touches one of our counties, warnings first."""
+def alerts():
+    """Cards for every active watch and warning that touches one of our counties, warnings first."""
     found = []
     for f in get(f"{NWS}/alerts/active?status=actual&area=MO")["features"]:
         p = f["properties"]
         same = set((p.get("geocode") or {}).get("SAME", []))
         hit = [c for c in COUNTIES if c["s"] in same]
-        if p.get("status") == "Actual" and hit:
+        if p.get("status") == "Actual" and hit and is_severe(p["event"]):
             found.append((p, hit))
-    found.sort(key=lambda a: rank(a[0]["event"]))  # stable: NWS order holds within a class
-    return [alert_card(p, hit, today) for p, hit in found]
+    found.sort(key=lambda a: 0 if a[0]["event"].endswith("Warning") else 1)  # stable: NWS order holds within a class
+    return [alert_card(p, hit) for p, hit in found]
 
 
-def town_text(periods, today):
-    day = night = None
-    for p in periods:
-        if datetime.fromisoformat(p["startTime"]).date() != today:
-            continue
-        if p["isDaytime"]:
-            day = day or p
-        else:
-            night = night or p
-    main = day or night
-    if not main:
+# ---------------------------------------------------------------- general weather
+def is_wet(p):
+    return any(w in p["shortForecast"].lower() for w in ("rain", "shower", "storm", "snow", "sleet", "drizzle", "freezing"))
+
+
+def sky_score(p):
+    """0 sunny .. 4 cloudy for one hour, or None when the hour says nothing about sky (fog, a slight chance of a shower)."""
+    t = p["shortForecast"].lower()
+    pop = (p.get("probabilityOfPrecipitation") or {}).get("value") or 0
+    if any(w in t for w in ("fog", "haze", "smoke", "mist")):
         return None
-    bits = [main["shortForecast"]]
-    if day:
-        bits.append(f"Hi {day['temperature']}")
-    if night:
-        bits.append(f"Lo {night['temperature']}")
-    dpop = (day or {}).get("probabilityOfPrecipitation", {}).get("value") or 0
-    npop = (night or {}).get("probabilityOfPrecipitation", {}).get("value") or 0
-    if dpop >= 30:
-        bits.append(f"Rain {dpop}%")
-    elif npop >= 30:
-        bits.append(f"Rain {npop}% tonight")
-    return " &middot; ".join(html.escape(b) for b in bits)
+    if is_wet(p):
+        return 4 if pop >= 50 else None
+    if "partly" in t:
+        return 2
+    if "mostly sunny" in t or "mostly clear" in t:
+        return 1
+    if "sunny" in t or "clear" in t:
+        return 0
+    return 3 if "mostly cloudy" in t else 4
 
 
-def forecast_card(today, stamp):
-    groups, failed = {}, []
-    for name, ll in TOWNS:
+def kind_of(texts):
+    low = " ".join(texts).lower()
+    for key, name in KINDS:
+        if key in low:
+            return name
+    return "rain"
+
+
+def town_view(periods, now, sky_hours):
+    """What one town gets for the rest of today: average sky score, afternoon high, and rain by part of the day."""
+    hrs = []
+    for p in periods:
+        t = datetime.fromisoformat(p["startTime"])
+        if t.date() == now.date() and t + timedelta(hours=1) > now:
+            hrs.append((t.hour, p))
+    # Sky describes the dry hours; rain is its own line. A day that is wet all day reads "cloudy".
+    dry, wet = [], []
+    for h, p in hrs:
+        s = sky_score(p) if h in sky_hours else None
+        if s is not None:
+            (wet if is_wet(p) else dry).append(s)
+    scores = dry or wet
+    highs = [p["temperature"] for h, p in hrs if 12 <= h < 18]
+    rain = {}
+    for name, rng in PARTS:
+        wet = [p for h, p in hrs if h in rng and ((p.get("probabilityOfPrecipitation") or {}).get("value") or 0) >= RAIN_MIN]
+        if wet:
+            pop = max(p["probabilityOfPrecipitation"]["value"] for p in wet)
+            rain[name] = (pop, kind_of([p["shortForecast"] for p in wet]))
+    return {"sky": sum(scores) / len(scores) if scores else None, "high": max(highs) if highs else None, "rain": rain}
+
+
+def sky_label(avg, labels):
+    return labels[0 if avg < 0.5 else 1 if avg < 1.5 else 2 if avg < 2.5 else 3 if avg < 3.5 else 4]
+
+
+def pct(pops):
+    lo, hi = min(pops), max(pops)
+    return f"{lo}%" if lo == hi else f"{lo}-{hi}%"
+
+
+def summarize(views, now):
+    """Two lines for the whole area: sky (with highs in the morning), then who gets rain and when."""
+    tonight = now.hour >= 17
+    labels = NIGHT_SKY if tonight else DAY_SKY
+    avgs = [v["sky"] for _, v in views if v["sky"] is not None]
+    line1 = ""
+    if avgs:
+        lo, hi = sky_label(min(avgs), labels), sky_label(max(avgs), labels)
+        line1 = (lo if lo == hi else f"{lo} to {hi.lower()}") + (" tonight" if tonight else " today")
+        highs = [v["high"] for _, v in views if v["high"] is not None]
+        if highs and now.hour < 13:
+            line1 += f", highs {min(highs)}" + (f"-{max(highs)}" if max(highs) != min(highs) else "")
+        line1 += "."
+    order = [n for n, _ in PARTS]
+    groups = rain_groups(views, True)
+    if len(groups) > 4:  # too many pieces for one line: stop splitting likely from chance
+        groups = rain_groups(views, False)
+    groups.sort(key=lambda g: (min(order.index(p) for p in g["parts"]), -max(p for p, _ in g["items"])))
+    bits = []
+    for g in groups:
+        g["items"].sort(key=lambda it: -it[0])
+        who = "Entire area" if len(g["items"]) == len(views) else ", ".join(t for _, t in g["items"])
+        parts = sorted(g["parts"], key=order.index)
+        when = "all day" if len(parts) == len(PARTS) else " and ".join(parts)
+        bits.append(f"{who} {pct([p for p, _ in g['items']])} {g['kind']} {when}")
+    line2 = "; ".join(bits) + "." if bits else "No rain expected."
+    return [l for l in (line1, line2) if l]
+
+
+def rain_groups(views, split):
+    """Towns with the same kind and chance of precipitation share a group; a group that repeats across parts of the day
+    becomes one group ("afternoon and tonight"). split=True keeps likely (60%+) apart from chance (30-50%)."""
+    by_part = {}
+    for town, v in views:
+        for part, (pop, kind) in v["rain"].items():
+            by_part.setdefault((part, kind, split and pop >= LIKELY), []).append((pop, town))
+    joined = {}
+    for (part, kind, likely), items in by_part.items():
+        sig = (kind, likely, tuple(sorted((t, p) for p, t in items)))
+        joined.setdefault(sig, {"kind": kind, "items": items, "parts": []})["parts"].append(part)
+    return list(joined.values())
+
+
+def forecast_card(now, stamp):
+    views, failed = [], []
+    sky_hours = range(18, 24) if now.hour >= 17 else range(7, 18)
+    for c in COUNTIES:
         try:
-            pt = get(f"{NWS}/points/{ll}")["properties"]
-            text = town_text(get(pt["forecast"])["properties"]["periods"], today)
+            pt = get(f"{NWS}/points/{c['ll']}")["properties"]
+            views.append((c["town"], town_view(get(pt["forecastHourly"])["properties"]["periods"], now, sky_hours)))
         except Exception as e:
-            failed.append(f"{name} forecast ({str(e)[:40]})")
-            continue
-        if text:
-            groups.setdefault(text, []).append(name)
-    lines = "".join(f'<div class="wxl"><b>{html.escape(", ".join(n))}</b> {t}</div>' for t, n in groups.items())
+            failed.append(f"{c['town']} forecast ({str(e)[:40]})")
+    lines = "".join(f'<div class="wxl">{html.escape(l)}</div>' for l in summarize(views, now)) if views else ""
     if not lines:
         lines = '<div class="wxl">Forecast unavailable. Use the link below.</div>'
-    return (f'<div class="card wxf"><div class="when">TODAY <span class="src">&middot; NWS forecast, {stamp}</span></div>{lines}'
-            f'<a class="link" href="{OFFICE}" target="_blank" rel="noopener">Full forecast &#8599;</a></div>'), failed
+    return (f'<div class="card wxf">{lines}<div class="sig">NWS forecast, {stamp} &middot; '
+            f'<a class="link" href="{OFFICE}" target="_blank" rel="noopener">Full forecast &#8599;</a></div></div>'), failed
+
+
+NO_ALERTS = '<div class="wxok">No watches or warnings.</div>'
 
 
 def column():
     """Wx column for page.write: its own HTML, an alert count for the badge, and the county table the page script needs."""
     now = datetime.now(CT)
-    today, stamp = now.date(), now.strftime("%-I:%M %p")
+    stamp = now.strftime("%-I:%M %p")
     failed = []
     try:
-        cards = alerts(today)
-        alert_html = "".join(cards) or '<div class="card wxn"><div class="name">No active alerts for the listening area.</div></div>'
+        cards = alerts()
+        alert_html = "".join(cards) or NO_ALERTS
     except Exception as e:
         failed.append(f"NWS alerts ({str(e)[:40]})")
         cards = []
         alert_html = ('<div class="card wxi"><div class="name">Alerts could not be loaded.</div>'
                       f'<a class="link" href="{OFFICE}" target="_blank" rel="noopener">Check weather.gov &#8599;</a></div>')
-    fc, fc_failed = forecast_card(today, stamp)
+    fc, fc_failed = forecast_card(now, stamp)
     failed += fc_failed
-    return {"key": "wx", "name": "Wx", "cards": [], "count": len(cards), "failed": failed, "conf": json.dumps(COUNTIES),
+    conf = json.dumps([{k: c[k] for k in ("n", "s", "ll")} for c in COUNTIES])
+    return {"key": "wx", "name": "Wx", "cards": [], "count": len(cards), "failed": failed, "conf": conf,
             "html": f'<div class="sub" id="wxstamp">Alerts as of {stamp}</div><div id="wxalerts">{alert_html}</div>{fc}'}
