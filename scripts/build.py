@@ -24,7 +24,19 @@ COLUMNS = BUZZ + NEWS
 # Boss (2026-10-21): the News app also carries LOCAL PRIDE (from the Buzz) and The Johnsons (from Show Prep), which
 # stay on their original pages too. Her order: Johnsons, LOCAL PRIDE, Ozarks (the old "Local"), the new Light, and
 # Morning News Only last.
-NEWS_PAGE = ["johnsons", "pride", "local", "light", "weird"]
+NEWS_PAGE = ["wireready", "johnsons", "pride", "local", "light", "weird"]
+# Boss (2026-10-22): WireReady, where the three news people paste wire stories and tap B, J or R when they use one.
+# The column appears at the far left of News only after wireready/config.json holds the deployed Apps Script address.
+WIREREADY_CFG = ROOT / "wireready" / "config.json"
+
+
+def wireready_column():
+    if not WIREREADY_CFG.exists():
+        return None
+    url = json.loads(WIREREADY_CFG.read_text()).get("url", "")
+    if not url.startswith("http"):
+        return None
+    return {"key": "wireready", "name": "WireReady", "cards": [], "wireready_url": url}
 # Boss (2026-10-20): "Show Prep" = LOCAL PRIDE, National, Humor, Music, then every Event Board column
 # except KIM ONLY and Live Music.
 SHOW_PREP = ["pride", "national", "humor", "music", "timely", "johnsons"]
@@ -225,6 +237,9 @@ def main():
     by_key["light"] = light
     extras = extra_columns()
     by_key.update(extras)
+    wrcol = wireready_column()
+    if wrcol:
+        by_key["wireready"] = wrcol
     buzz_keys = {k for k, _ in BUZZ}
     buzz = {"updated": stamp, "columns": [c for c in cols if c["key"] in buzz_keys],
             "lebanon": {k: v for k, v in lebanon.items() if k in buzz_keys}}

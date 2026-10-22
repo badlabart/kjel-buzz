@@ -4,6 +4,7 @@ Same look as the KJEL Event Board. Old browsers show every card from the HTML it
 A tiny ES3 script turns timestamps into "5H AGO" and warns when the report is stale.
 """
 import html
+import json
 from datetime import date, datetime, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -56,6 +57,101 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .wxw{border-left:6px solid #D0101F}.wxt{border-left:6px solid #FDB913}.wxi{border-left:6px solid #33445C}
 .wxl{font-size:15px;font-weight:bold;margin:2px 0 6px}
 .wxok{font-size:13px;font-weight:bold;color:#33445C;padding:2px 4px 10px}
+.wradd{display:block;width:100%;background:#D0101F;color:#FFFFFF;border:0;border-radius:8px;padding:9px;font-weight:bold;font-size:15px;cursor:pointer;margin-bottom:8px}
+.wrt{white-space:pre-wrap;word-wrap:break-word}.wrst{font-size:10px;color:#33445C;margin-right:4px}
+.wwho{float:right;margin:1px 0 0 6px;white-space:nowrap}
+.wwho b{display:inline-block;width:16px;height:16px;line-height:16px;text-align:center;font-size:11px;border:1px solid #8C97A8;border-radius:3px;color:#8C97A8;margin-left:2px;cursor:pointer}
+.wwho b.on{background:#0A2A50;border-color:#0A2A50;color:#FDB913}
+.wrtap{font-size:10px;color:#33445C;margin-top:3px;clear:both}
+.wrmodal{display:none;position:fixed;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,.55);z-index:9}
+.wrwin{background:#FFFFFF;border-radius:10px;max-width:560px;margin:6% auto 0;padding:14px;color:#0A2A50}
+.wrmt{font-weight:bold;font-size:18px;margin-bottom:8px}
+.wrwin textarea{width:100%;box-sizing:border-box;height:240px;font-size:15px;font-family:Arial,Helvetica,sans-serif;padding:8px;border:1px solid #C9CFD8;border-radius:6px}
+.wrerr{color:#D0101F;font-size:13px;font-weight:bold;min-height:16px;margin-top:4px}
+.wrrow{text-align:right;margin-top:8px}
+.wrrow button{font-size:14px;padding:6px 16px;border-radius:6px;border:1px solid #C9CFD8;background:#FFFFFF;color:#0A2A50;cursor:pointer;margin-left:8px}
+.wrrow .wrgo{background:#D0101F;border-color:#D0101F;color:#FFFFFF;font-weight:bold}
+"""
+
+# WireReady (Boss 2026-10-22): three news people paste wire stories and tap B, J or R when they use one. The page talks to
+# the Google Apps Script in wireready/Code.gs (which keeps the stories and the log in a private Google Sheet).
+# ES3 plus XMLHttpRequest: no fetch, promises, arrow functions or let/const.
+WR_BODY = ('<button class="wradd" type="button" id="wradd">+ Add Story</button>'
+           '<div class="empty" id="wrmsg">Loading...</div><div id="wrlist"></div>')
+WR_MODAL = ('<div class="wrmodal" id="wrmodal"><div class="wrwin"><div class="wrmt">Add story</div>'
+            '<textarea id="wrtext" placeholder="Paste or type the story here"></textarea><div class="wrerr" id="wrerr"></div>'
+            '<div class="wrrow"><button type="button" id="wrcancel">Cancel</button>'
+            '<button type="button" class="wrgo" id="wrsubmit">Submit</button></div></div></div>')
+WR_JS = r"""
+(function(){
+  var URL=__WR_URL__, WHO=['B','J','R'], MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  var list=document.getElementById('wrlist'), msg=document.getElementById('wrmsg'), cnt=document.getElementById('wrn');
+  var modal=document.getElementById('wrmodal'), ta=document.getElementById('wrtext'), err=document.getElementById('wrerr');
+  var go=document.getElementById('wrsubmit'), busy=false;
+  function getKey(){try{return window.localStorage.getItem('wrkey')||'';}catch(e){return '';}}
+  function setKey(k){try{window.localStorage.setItem('wrkey',k);}catch(e){}}
+  function longDate(s){var p=s.split('-');return MON[parseInt(p[1],10)-1]+' '+parseInt(p[2],10);}
+  function shortDate(s){var p=s.split('-');return parseInt(p[1],10)+'/'+parseInt(p[2],10);}
+  function ask(){var k=window.prompt('WireReady passcode:'); if(k){setKey(k);return true;} return false;}
+  function say(t){msg.style.display='block';msg.innerHTML=t;}
+  function call(body,cb){
+    var x=new XMLHttpRequest();
+    x.open('POST',URL,true);
+    x.setRequestHeader('Content-Type','text/plain;charset=utf-8');  // keeps the request "simple", so no CORS preflight
+    x.onreadystatechange=function(){
+      if(x.readyState!==4) return;
+      var d=null; try{d=JSON.parse(x.responseText);}catch(e){}
+      if(d && d.error==='passcode'){
+        setKey('');
+        if(ask()){call(body,cb);return;}
+        say('Enter the passcode to use WireReady. Reload the page to try again.'); return;
+      }
+      cb(d);
+    };
+    body.key=getKey();
+    x.send(JSON.stringify(body));
+  }
+  function tapper(id,who){
+    return function(){call({action:'tap',id:id,who:who},function(d){if(d && d.ok) render(d.stories); else say((d && d.error) || 'Could not reach WireReady. Try again.');});};
+  }
+  function render(stories){
+    cnt.innerHTML=stories.length; list.innerHTML='';
+    if(stories.length) msg.style.display='none'; else say('No stories yet. Tap Add Story.');
+    for(var i=0;i<stories.length;i++){
+      var s=stories[i], card=document.createElement('div'), t=document.createElement('div'), who=document.createElement('span'), used=[];
+      card.className='card'; t.className='wrt'; who.className='wwho';
+      for(var j=0;j<WHO.length;j++){
+        var b=document.createElement('b'); b.innerHTML=WHO[j]; b.title='Tap when '+WHO[j]+' uses this story';
+        if(s.taps[WHO[j]]){b.className='on'; used.push(WHO[j]+' '+shortDate(s.taps[WHO[j]]));}
+        b.onclick=tapper(s.id,WHO[j]); who.appendChild(b);
+      }
+      var st=document.createElement('span'); st.className='wrst'; st.innerHTML='added '+longDate(s.added);
+      t.appendChild(who); t.appendChild(st); t.appendChild(document.createTextNode(s.text)); card.appendChild(t);
+      if(used.length){var tp=document.createElement('div'); tp.className='wrtap'; tp.innerHTML=used.join(' &middot; '); card.appendChild(tp);}
+      list.appendChild(card);
+    }
+  }
+  function refresh(){
+    if(busy || modal.style.display==='block') return;
+    if(!getKey() && !ask()){say('Enter the passcode to use WireReady. Reload the page to try again.');return;}
+    call({action:'list'},function(d){if(d && d.ok) render(d.stories); else if(!list.firstChild) say('Could not load WireReady. Reload the page to try again.');});
+  }
+  document.getElementById('wradd').onclick=function(){err.innerHTML='';ta.value='';modal.style.display='block';ta.focus();};
+  document.getElementById('wrcancel').onclick=function(){modal.style.display='none';};
+  ta.onkeyup=function(){err.innerHTML='';};
+  go.onclick=function(){
+    var v=ta.value.replace(/^\s+|\s+$/g,'');
+    if(!v){err.innerHTML='Paste or type the story first.';return;}
+    if(busy) return;
+    busy=true; go.innerHTML='Saving...';
+    call({action:'add',text:v},function(d){
+      busy=false; go.innerHTML='Submit';
+      if(d && d.ok){modal.style.display='none'; render(d.stories);}
+      else err.innerHTML=(d && d.error) || 'Could not save. Check the connection and submit again.';
+    });
+  };
+  refresh(); setInterval(refresh,60000);
+})();
 """
 
 # ES3 only: no let/const, arrow functions, classList, or dataset.
@@ -293,7 +389,12 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_s
     esc = html.escape
     cols = []
     wx_conf = ""
+    wr_url = ""
     for col in data["columns"]:
+        if col.get("wireready_url"):  # WireReady draws itself in the browser from the Google Apps Script
+            wr_url = col["wireready_url"]
+            cols.append(f'<div class="col wr"><h2>{esc(col["name"])} <span class="count" id="wrn">0</span></h2>{WR_BODY}</div>')
+            continue
         if col.get("html"):  # a column that renders itself (Wx); its badge counts active alerts
             wx_conf = col["conf"]
             cols.append(f'<div class="col wx"><h2>{esc(col["name"])} <span class="count" id="wxcount">{col["count"]}</span></h2>{col["html"]}</div>')
@@ -380,7 +481,8 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_s
 <div class="stale" id="stale">This report is more than a day old. The 6 AM refresh did not run.</div>
 {DAY_FORM if day_search else ""}
 <div class="board">{"".join(cols)}</div>
-<script>{SEARCH_JS}{DAY_JS if day_search else ""}{f"var KJ_WXC={wx_conf};" + WX_JS if wx_conf else ""}{JS}</script>
+{WR_MODAL if wr_url else ""}
+<script>{SEARCH_JS}{DAY_JS if day_search else ""}{f"var KJ_WXC={wx_conf};" + WX_JS if wx_conf else ""}{JS}{WR_JS.replace("__WR_URL__", json.dumps(wr_url)) if wr_url else ""}</script>
 </body></html>
 """
     (ROOT / "docs").mkdir(exist_ok=True)
