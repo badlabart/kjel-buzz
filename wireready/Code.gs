@@ -8,9 +8,11 @@
  * The News page (kjel-news) calls this over POST. Every call carries the shared PASSCODE.
  * Once a week, weeklyLog() emails the last 7 days of the Taps log to REPORT_TO.
  *
- * Script properties (Project Settings > Script properties), set by hand, never in the repo:
+ * Script properties, set from the WireReady menu in the Sheet (never in code or the repo):
  *   PASSCODE   the shared passcode the three news people type once per browser
  *   REPORT_TO  who gets the weekly email
+ *
+ * @OnlyCurrentDoc  (the script may touch this one Sheet only, not the rest of the Drive)
  */
 var TZ = 'America/Chicago';
 var WHO = ['B', 'J', 'R'];
