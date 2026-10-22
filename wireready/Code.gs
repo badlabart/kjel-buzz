@@ -155,3 +155,24 @@ function installWeeklyTrigger() {
 
 // Run once from the editor to create the two sheets with their headers.
 function setup() { stories_(); taps_(); }
+
+// Run from the editor after setup: adds two test stories, taps B, undoes it, checks "=..." text stays text,
+// removes its own rows, and logs PASSED or FAILED in the Execution log.
+function selfTest() {
+  var before = list_().length;
+  add_('=1+1');
+  add_('SELF TEST story, safe to ignore');
+  var s = list_()[0], f = list_()[1];
+  tap_(s.id, 'B');
+  var tapped = list_()[0].taps.B === ymd_(new Date());
+  tap_(s.id, 'B');
+  var undone = !list_()[0].taps.B;
+  var textKept = f.text === '=1+1';
+  var sh = stories_(), rows = sh.getDataRange().getValues();
+  for (var i = rows.length - 1; i >= 1; i--) {
+    if (String(rows[i][0]) === s.id || String(rows[i][0]) === f.id) sh.deleteRow(i + 1);
+  }
+  var ok = tapped && undone && textKept && list_().length === before;
+  Logger.log('SELF TEST ' + (ok ? 'PASSED' : 'FAILED') + ' (tapped=' + tapped + ', undone=' + undone + ', textKept=' + textKept + ')');
+  return ok;
+}
