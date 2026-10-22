@@ -44,12 +44,13 @@ function sheet_(name) {
   }
   return sh;
 }
-// appendRow can turn "=..." or date-like text into formulas or dates. Formatting the new row as plain text first
-// keeps every cell exactly as typed.
+// appendRow (and setValues on a text-formatted cell) can still turn "=..." text into a formula or date-like text into a
+// date. A leading apostrophe is how Sheets itself says "keep this as text", and it is not stored, so every cell is
+// written that way.
 function appendText_(sh, vals) {
   var rg = sh.getRange(sh.getLastRow() + 1, 1, 1, vals.length);
   rg.setNumberFormat('@');
-  rg.setValues([vals]);
+  rg.setValues([vals.map(function (v) { return "'" + String(v); })]);
 }
 function stories_() { return sheet_('Stories'); }
 function taps_() { return sheet_('Taps'); }
