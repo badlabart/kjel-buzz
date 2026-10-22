@@ -136,7 +136,7 @@ WR_JS = r"""
       if(s.taps[WHO[j]]){b.className='on'; used.push(WHO[j]+' '+shortDate(s.taps[WHO[j]]));}
       b.onclick=tapper(s.id,WHO[j]); who.appendChild(b);
     }
-    var st=document.createElement('span'); st.className='wrst'; st.innerHTML='added '+longDate(s.added)+(showSrc?' &middot; '+s.by:'');
+    var st=document.createElement('span'); st.className='wrst'; st.innerHTML='added '+longDate(s.added)+(showSrc?' &middot; '+s.by:'')+(s.kind==='summary'?' &middot; audio summary':'');
     t.appendChild(who); t.appendChild(st);
     var nl=s.text.indexOf('\n'), head=(s.by==='MOnet' || nl>0)?(nl>0?s.text.slice(0,nl):s.text):'';  // the title line is bold
     if(head){var h=document.createElement('span'); h.className='wrh'; h.appendChild(document.createTextNode(head)); t.appendChild(h); if(s.text.length>head.length) t.appendChild(document.createTextNode(s.text.slice(head.length)));}

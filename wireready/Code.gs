@@ -1,8 +1,9 @@
 /**
  * WireReady backend (Boss 2026-10-22). A Google Apps Script web app bound to a private Google Sheet.
  *
- * Sheet "Stories": id | added | text | by | link
+ * Sheet "Stories": id | added | text | by | link | kind
  *     by = "MOnet" (imported daily from the Missourinet feed) or B / J / R (typed in by that person)
+ *     kind = "summary" for the written summary of a Missourinet LISTEN story that mentions Lebanon
  * Sheet "Taps":    tapped | who | story added | story text | story id | story from
  *     the LOG: one row each time B, J or R taps a story, in date order. Tapping again undoes it.
  *
@@ -30,7 +31,7 @@ function daysAgo_(n) { return new Date(new Date().getTime() - n * 86400000); }
 function dstr_(v) { return v instanceof Date ? ymd_(v) : String(v); }
 
 var HEADERS = {
-  Stories: ['id', 'added', 'text', 'by', 'link'],
+  Stories: ['id', 'added', 'text', 'by', 'link', 'kind'],
   Taps: ['tapped', 'who', 'story added', 'story text', 'story id', 'story from']
 };
 
@@ -68,11 +69,13 @@ function doPost(e) {
     var p = JSON.parse(e.postData.contents);
     var pass = prop_('PASSCODE');  // no passcode set = open to anyone with the page address
     if (pass && String(p.key) !== pass) return json_({ ok: false, error: 'passcode' });
-    if (p.action === 'add' || p.action === 'tap') {
+    if (p.action === 'add' || p.action === 'tap' || p.action === 'summary') {
       var lock = LockService.getScriptLock();
       lock.waitLock(10000);
       try {
-        if (p.action === 'add') add_(p.text, p.by); else tap_(p.id, p.who);
+        if (p.action === 'add') add_(p.text, p.by);
+        else if (p.action === 'summary') addSummary_(p.title, p.text, p.link, p.added);
+        else tap_(p.id, p.who);
       } finally { lock.releaseLock(); }
     }
     out = { ok: true, stories: list_() };
@@ -89,6 +92,21 @@ function add_(text, by) {
   if (text.length > MAX_TEXT) throw new Error('The story is too long');
   appendText_(stories_(), [Utilities.getUuid().substring(0, 8),
                            Utilities.formatDate(new Date(), TZ, 'yyyy-MM-dd HH:mm'), text, by, '']);
+}
+
+// A written summary of a Missourinet LISTEN story that mentions Lebanon (the audio itself is never stored).
+// Posted by the daily job; matched by the story link, so posting twice adds it once.
+function addSummary_(title, text, link, added) {
+  title = String(title || '').replace(/^\s+|\s+$/g, '');
+  text = String(text || '').replace(/^\s+|\s+$/g, '');
+  link = String(link || '');
+  if (!title || !text) throw new Error('The summary needs a title and text');
+  if (text.length > MAX_TEXT) throw new Error('The summary is too long');
+  if (link.indexOf('https://www.missourinet.com/') !== 0) throw new Error('The summary needs the Missourinet link');
+  var sh = stories_(), rows = sh.getDataRange().getValues(), i;
+  for (i = 1; i < rows.length; i++) { if (String(rows[i][4]) === link) return; }
+  if (!/^\d{4}-\d{2}-\d{2} \d{2}:\d{2}$/.test(String(added || ''))) added = Utilities.formatDate(new Date(), TZ, 'yyyy-MM-dd HH:mm');
+  appendText_(sh, [Utilities.getUuid().substring(0, 8), added, title + '\n' + text, 'MOnet', link, 'summary']);
 }
 
 function tap_(id, who) {
@@ -114,7 +132,7 @@ function list_() {
     var added = dstr_(r[1]).slice(0, 10);
     if (!r[0] || added < cutoff) return;
     out.push({ id: String(r[0]), added: added, text: String(r[2]), by: String(r[3] || 'MOnet'), link: String(r[4] || ''),
-               taps: taps[String(r[0])] || {} });
+               kind: String(r[5] || ''), taps: taps[String(r[0])] || {} });
   });
   out.reverse();  // newest first
   return out;
@@ -178,7 +196,7 @@ function importMonet() {
   try {
     var sh = stories_(), rows = sh.getDataRange().getValues(), have = {}, i;
     for (i = rows.length - 1; i >= 1; i--) {
-      if (String(rows[i][3]) === 'MOnet' && isListen_(String(rows[i][2]).split('\n')[0], String(rows[i][4]), false)) {
+      if (String(rows[i][3]) === 'MOnet' && String(rows[i][5]) !== 'summary' && isListen_(String(rows[i][2]).split('\n')[0], String(rows[i][4]), false)) {
         sh.deleteRow(i + 1);
         rows.splice(i, 1);
       }
