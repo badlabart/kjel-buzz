@@ -30,13 +30,35 @@ NEWS_PAGE = ["wireready", "johnsons", "pride", "local", "light", "weird"]
 WIREREADY_CFG = ROOT / "wireready" / "config.json"
 
 
-def wireready_column():
+# Boss (2026-10-22): the full page has MOnet (imported daily from Missourinet) and one column each for the stories
+# B, J and R entered. Her labels.
+WIREREADY_FULL = [("MOnet", "MOnet"), ("B", "Bruce"), ("J", "Jeff"), ("R", "Riley")]
+WIREREADY_COMPACT_LIMIT = 20  # newest stories shown in the News column; the rest are on the full page
+
+
+def wireready_url():
     if not WIREREADY_CFG.exists():
-        return None
+        return ""
     url = json.loads(WIREREADY_CFG.read_text()).get("url", "")
-    if not url.startswith("http"):
+    return url if url.startswith("http") else ""
+
+
+def wireready_column():
+    url = wireready_url()
+    if not url:
         return None
-    return {"key": "wireready", "name": "WireReady", "cards": [], "wireready_url": url}
+    return {"key": "wireready", "name": "WireReady", "cards": [], "wireready_url": url,
+            "wr": {"by": "ALL", "limit": WIREREADY_COMPACT_LIMIT, "full": "wireready/"}}
+
+
+def wireready_full(stamp):
+    url = wireready_url()
+    if not url:
+        return None
+    return {"updated": stamp, "lebanon": {}, "wr_toolbar": True,
+            "columns": [{"key": "wr-" + k, "name": name, "cards": [], "wireready_url": url, "wr": {"by": k}}
+                        for k, name in WIREREADY_FULL]}
+
 # Boss (2026-10-20): "Show Prep" = LOCAL PRIDE, National, Humor, Music, then every Event Board column
 # except KIM ONLY and Live Music.
 SHOW_PREP = ["pride", "national", "humor", "music", "timely", "johnsons"]
@@ -255,6 +277,13 @@ def main():
     if news_out.parent.exists():
         news_out.mkdir(exist_ok=True)
         (news_out / "index.html").write_bytes((ROOT / "docs" / "news" / "index.html").read_bytes())
+    # Boss (2026-10-22): WireReady full page (MOnet, Bruce, Jeff, Riley), opened from the small button on the News column.
+    wrfull = wireready_full(stamp)
+    if wrfull:
+        page.write(wrfull, title="WireReady", doc_title="KJEL WireReady", subdir="news/wireready")
+        if news_out.parent.exists():
+            (news_out / "wireready").mkdir(exist_ok=True)
+            (news_out / "wireready" / "index.html").write_bytes((ROOT / "docs" / "news" / "wireready" / "index.html").read_bytes())
     # Boss (2026-10-21): Show Prep opens with a day / date search, and Wx (alerts + today's town forecasts) is its first column.
     wxcol = wx.column()
     prep = {"updated": stamp, "columns": [wxcol] + [by_key[k] for k in SHOW_PREP if k in by_key] + event_columns(),

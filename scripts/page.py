@@ -71,29 +71,46 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .wrrow{text-align:right;margin-top:8px}
 .wrrow button{font-size:14px;padding:6px 16px;border-radius:6px;border:1px solid #C9CFD8;background:#FFFFFF;color:#0A2A50;cursor:pointer;margin-left:8px}
 .wrrow .wrgo{background:#D0101F;border-color:#D0101F;color:#FFFFFF;font-weight:bold}
+.wrfull{float:right;font-size:11px;font-weight:bold;margin:2px 6px 0 0;padding:1px 8px;border:1px solid #8C97A8;border-radius:10px;color:#0A2A50;text-decoration:none}
+.wrby{font-size:15px;font-weight:bold;margin:0 0 8px}.wrby label{margin-right:14px;cursor:pointer}
+.wrlock{margin:0 0 8px}.wrlock input{font-size:14px;padding:6px;border:1px solid #C9CFD8;border-radius:6px;width:120px}
+.wrlock button{font-size:14px;padding:6px 12px;border:0;border-radius:6px;background:#0A2A50;color:#FFFFFF;cursor:pointer}
+.wrlink{font-size:10px;color:#33445C}.wrmore{font-size:12px;font-weight:bold;padding:2px 4px 8px}.wrmore a{color:#0A2A50}
+.wrtool{padding:12px 18px 0}.wrtool .wradd{display:inline-block;width:auto;padding:9px 22px;margin:0 12px 0 0;vertical-align:middle}
+.wrtool .wrlock{display:inline-block;margin:0 12px 0 0;vertical-align:middle}.wrtool .empty{display:inline-block;color:#FFFFFF;font-size:14px;vertical-align:middle}
+.wrfp .col{max-height:calc(100vh - 140px);overflow-y:auto}
 """
 
 # WireReady (Boss 2026-10-22): three news people paste wire stories and tap B, J or R when they use one. The page talks to
-# the Google Apps Script in wireready/Code.gs (which keeps the stories and the log in a private Google Sheet).
+# the Google Apps Script in wireready/Code.gs (which keeps the stories and the log in a private Google Sheet and imports
+# Missourinet daily). Two layouts: a compact column on News, and a full page with MOnet, Bruce, Jeff and Riley columns.
 # ES3 plus XMLHttpRequest: no fetch, promises, arrow functions or let/const.
-WR_BODY = ('<button class="wradd" type="button" id="wradd">+ Add Story</button>'
-           '<div class="empty" id="wrmsg">Loading...</div><div id="wrlist"></div>')
+WR_ADD = '<button class="wradd" type="button" id="wradd">+ Add Story</button>'
+WR_LOCK = ('<div class="wrlock" id="wrlock" style="display:none"><input type="password" id="wrpass" placeholder="Passcode"> '
+           '<button type="button" id="wrunlock">Unlock</button></div>')
+WR_MSG = '<div class="empty" id="wrmsg">Loading...</div>'
+WR_TOOLBAR = f'<div class="wrtool">{WR_ADD}{WR_LOCK}{WR_MSG}</div>'
 WR_MODAL = ('<div class="wrmodal" id="wrmodal"><div class="wrwin"><div class="wrmt">Add story</div>'
+            '<div class="wrby">Entered by: <label><input type="radio" name="wrby" value="B"> B</label> '
+            '<label><input type="radio" name="wrby" value="J"> J</label> '
+            '<label><input type="radio" name="wrby" value="R"> R</label></div>'
             '<textarea id="wrtext" placeholder="Paste or type the story here"></textarea><div class="wrerr" id="wrerr"></div>'
             '<div class="wrrow"><button type="button" id="wrcancel">Cancel</button>'
             '<button type="button" class="wrgo" id="wrsubmit">Submit</button></div></div></div>')
 WR_JS = r"""
 (function(){
   var URL=__WR_URL__, WHO=['B','J','R'], MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  var list=document.getElementById('wrlist'), msg=document.getElementById('wrmsg'), cnt=document.getElementById('wrn');
+  var divs=document.getElementsByTagName('div'), lists=[], n;
+  for(n=0;n<divs.length;n++){ if(divs[n].className==='wrlist') lists.push(divs[n]); }
+  var msg=document.getElementById('wrmsg'), lock=document.getElementById('wrlock'), pass=document.getElementById('wrpass');
   var modal=document.getElementById('wrmodal'), ta=document.getElementById('wrtext'), err=document.getElementById('wrerr');
-  var go=document.getElementById('wrsubmit'), busy=false;
+  var go=document.getElementById('wrsubmit'), unlock=document.getElementById('wrunlock'), busy=false;
   function getKey(){try{return window.localStorage.getItem('wrkey')||'';}catch(e){return '';}}
   function setKey(k){try{window.localStorage.setItem('wrkey',k);}catch(e){}}
   function longDate(s){var p=s.split('-');return MON[parseInt(p[1],10)-1]+' '+parseInt(p[2],10);}
   function shortDate(s){var p=s.split('-');return parseInt(p[1],10)+'/'+parseInt(p[2],10);}
-  function ask(){var k=window.prompt('WireReady passcode:'); if(k){setKey(k);return true;} return false;}
-  function say(t){msg.style.display='block';msg.innerHTML=t;}
+  function say(t){msg.style.display=t?'block':'none';msg.innerHTML=t||'';}
+  function needKey(t){lock.style.display='block';say(t);}
   function call(body,cb){
     var x=new XMLHttpRequest();
     x.open('POST',URL,true);
@@ -101,52 +118,76 @@ WR_JS = r"""
     x.onreadystatechange=function(){
       if(x.readyState!==4) return;
       var d=null; try{d=JSON.parse(x.responseText);}catch(e){}
-      if(d && d.error==='passcode'){
-        setKey('');
-        if(ask()){call(body,cb);return;}
-        say('Enter the passcode to use WireReady. Reload the page to try again.'); return;
-      }
+      if(d && d.error==='passcode'){setKey(''); needKey('That passcode did not work. Try again.');}
       cb(d);
     };
     body.key=getKey();
     x.send(JSON.stringify(body));
   }
   function tapper(id,who){
-    return function(){call({action:'tap',id:id,who:who},function(d){if(d && d.ok) render(d.stories); else say((d && d.error) || 'Could not reach WireReady. Try again.');});};
+    return function(){call({action:'tap',id:id,who:who},function(d){
+      if(d && d.ok) render(d.stories); else if(!d || d.error!=='passcode') say((d && d.error) || 'Could not reach WireReady. Try again.');});};
+  }
+  function card(s,showSrc){
+    var c=document.createElement('div'), t=document.createElement('div'), who=document.createElement('span'), used=[], j;
+    c.className='card'; t.className='wrt'; who.className='wwho';
+    for(j=0;j<WHO.length;j++){
+      var b=document.createElement('b'); b.innerHTML=WHO[j]; b.title='Tap when '+WHO[j]+' uses this story';
+      if(s.taps[WHO[j]]){b.className='on'; used.push(WHO[j]+' '+shortDate(s.taps[WHO[j]]));}
+      b.onclick=tapper(s.id,WHO[j]); who.appendChild(b);
+    }
+    var st=document.createElement('span'); st.className='wrst'; st.innerHTML='added '+longDate(s.added)+(showSrc?' &middot; '+s.by:'');
+    t.appendChild(who); t.appendChild(st); t.appendChild(document.createTextNode(s.text));
+    if(s.link){var a=document.createElement('a'); a.className='wrlink'; a.href=s.link; a.target='_blank'; a.rel='noopener'; a.innerHTML=' Missourinet &#8599;'; t.appendChild(a);}
+    c.appendChild(t);
+    if(used.length){var tp=document.createElement('div'); tp.className='wrtap'; tp.innerHTML=used.join(' &middot; '); c.appendChild(tp);}
+    return c;
   }
   function render(stories){
-    cnt.innerHTML=stories.length; list.innerHTML='';
-    if(stories.length) msg.style.display='none'; else say('No stories yet. Tap Add Story.');
-    for(var i=0;i<stories.length;i++){
-      var s=stories[i], card=document.createElement('div'), t=document.createElement('div'), who=document.createElement('span'), used=[];
-      card.className='card'; t.className='wrt'; who.className='wwho';
-      for(var j=0;j<WHO.length;j++){
-        var b=document.createElement('b'); b.innerHTML=WHO[j]; b.title='Tap when '+WHO[j]+' uses this story';
-        if(s.taps[WHO[j]]){b.className='on'; used.push(WHO[j]+' '+shortDate(s.taps[WHO[j]]));}
-        b.onclick=tapper(s.id,WHO[j]); who.appendChild(b);
-      }
-      var st=document.createElement('span'); st.className='wrst'; st.innerHTML='added '+longDate(s.added);
-      t.appendChild(who); t.appendChild(st); t.appendChild(document.createTextNode(s.text)); card.appendChild(t);
-      if(used.length){var tp=document.createElement('div'); tp.className='wrtap'; tp.innerHTML=used.join(' &middot; '); card.appendChild(tp);}
-      list.appendChild(card);
+    for(n=0;n<lists.length;n++){
+      var L=lists[n], by=L.getAttribute('data-by'), lim=parseInt(L.getAttribute('data-limit')||'0',10), items=[], j;
+      for(j=0;j<stories.length;j++){ if(by==='ALL' || stories[j].by===by) items.push(stories[j]); }
+      var cnt=document.getElementById(L.getAttribute('data-count')); if(cnt) cnt.innerHTML=items.length;
+      L.innerHTML='';
+      var shown=(lim && items.length>lim)?lim:items.length;
+      for(j=0;j<shown;j++) L.appendChild(card(items[j],by==='ALL'));
+      if(shown<items.length){var m=document.createElement('div'); m.className='wrmore'; m.innerHTML='<a href="'+L.getAttribute('data-full')+'" target="_blank">+'+(items.length-shown)+' more on the full page</a>'; L.appendChild(m);}
+      if(!items.length){var e=document.createElement('div'); e.className='empty'; e.innerHTML=(by==='ALL'?'No stories yet.':'Nothing here yet.'); L.appendChild(e);}
     }
   }
   function refresh(){
     if(busy || modal.style.display==='block') return;
-    if(!getKey() && !ask()){say('Enter the passcode to use WireReady. Reload the page to try again.');return;}
-    call({action:'list'},function(d){if(d && d.ok) render(d.stories); else if(!list.firstChild) say('Could not load WireReady. Reload the page to try again.');});
+    if(!getKey()){needKey('Enter the passcode to open WireReady.');return;}
+    call({action:'list'},function(d){
+      if(d && d.ok){lock.style.display='none'; say(''); render(d.stories);}
+      else if(!d || d.error!=='passcode') say('Could not load WireReady. It will try again in a minute.');
+    });
   }
-  document.getElementById('wradd').onclick=function(){err.innerHTML='';ta.value='';modal.style.display='block';ta.focus();};
+  unlock.onclick=function(){
+    var v=pass.value.replace(/^\s+|\s+$/g,''); if(!v) return;
+    setKey(v); pass.value=''; say('Loading...'); refresh();
+  };
+  pass.onkeyup=function(ev){ev=ev||window.event; if((ev.keyCode||ev.which)===13) unlock.onclick();};
+  document.getElementById('wradd').onclick=function(){
+    if(!getKey()){needKey('Enter the passcode first.');return;}
+    var r=document.getElementsByName('wrby'), k;
+    for(k=0;k<r.length;k++) r[k].checked=false;
+    err.innerHTML=''; ta.value=''; modal.style.display='block'; ta.focus();
+  };
   document.getElementById('wrcancel').onclick=function(){modal.style.display='none';};
   ta.onkeyup=function(){err.innerHTML='';};
   go.onclick=function(){
+    var r=document.getElementsByName('wrby'), by='', k;
+    for(k=0;k<r.length;k++){ if(r[k].checked) by=r[k].value; }
     var v=ta.value.replace(/^\s+|\s+$/g,'');
+    if(!by){err.innerHTML='Check B, J or R: who is adding this story?';return;}
     if(!v){err.innerHTML='Paste or type the story first.';return;}
     if(busy) return;
     busy=true; go.innerHTML='Saving...';
-    call({action:'add',text:v},function(d){
+    call({action:'add',text:v,by:by},function(d){
       busy=false; go.innerHTML='Submit';
       if(d && d.ok){modal.style.display='none'; render(d.stories);}
+      else if(d && d.error==='passcode') err.innerHTML='The passcode was not accepted. Close this window and unlock again.';
       else err.innerHTML=(d && d.error) || 'Could not save. Check the connection and submit again.';
     });
   };
@@ -393,7 +434,16 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_s
     for col in data["columns"]:
         if col.get("wireready_url"):  # WireReady draws itself in the browser from the Google Apps Script
             wr_url = col["wireready_url"]
-            cols.append(f'<div class="col wr"><h2>{esc(col["name"])} <span class="count" id="wrn">0</span></h2>{WR_BODY}</div>')
+            wr = col["wr"]  # {"by": "ALL" | "MOnet" | "B" | "J" | "R", "limit": n, "full": link to the full page}
+            cid = "wrc-" + col["key"]
+            if wr["by"] == "ALL":  # the compact column on News: controls live in the column, newest few stories, link to the full page
+                cols.append(f'<div class="col wr"><h2>{esc(col["name"])} <span class="count" id="{cid}">0</span>'
+                            f'<a class="wrfull" href="{wr["full"]}" target="_blank">Full page &#8599;</a></h2>'
+                            f'{WR_ADD}{WR_LOCK}{WR_MSG}<div class="wrlist" data-by="ALL" data-limit="{wr["limit"]}" '
+                            f'data-count="{cid}" data-full="{wr["full"]}"></div></div>')
+            else:  # one column of the full page
+                cols.append(f'<div class="col wr"><h2>{esc(col["name"])} <span class="count" id="{cid}">0</span></h2>'
+                            f'<div class="wrlist" data-by="{wr["by"]}" data-count="{cid}"></div></div>')
             continue
         if col.get("html"):  # a column that renders itself (Wx); its badge counts active alerts
             wx_conf = col["conf"]
@@ -480,7 +530,8 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_s
 <div class="meta">{esc(doc_title)} &middot; updated {esc(stamp)}</div></div></div>
 <div class="stale" id="stale">This report is more than a day old. The 6 AM refresh did not run.</div>
 {DAY_FORM if day_search else ""}
-<div class="board">{"".join(cols)}</div>
+{WR_TOOLBAR if data.get("wr_toolbar") else ""}
+<div class="board{" wrfp" if data.get("wr_toolbar") else ""}">{"".join(cols)}</div>
 {WR_MODAL if wr_url else ""}
 <script>{SEARCH_JS}{DAY_JS if day_search else ""}{f"var KJ_WXC={wx_conf};" + WX_JS if wx_conf else ""}{JS}{WR_JS.replace("__WR_URL__", json.dumps(wr_url)) if wr_url else ""}</script>
 </body></html>
