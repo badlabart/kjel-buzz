@@ -77,7 +77,7 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .wrlock button{font-size:14px;padding:6px 12px;border:0;border-radius:6px;background:#0A2A50;color:#FFFFFF;cursor:pointer}
 .wrlink{font-size:10px;color:#33445C}.wrmore{font-size:12px;font-weight:bold;padding:2px 4px 8px}.wrmore a{color:#0A2A50}
 .wrtool{padding:12px 18px 0}.wrtool .wradd{display:inline-block;width:auto;padding:9px 22px;margin:0 12px 0 0;vertical-align:middle}
-.wrtool .wrlock{display:inline-block;margin:0 12px 0 0;vertical-align:middle}.wrtool .empty{display:inline-block;color:#FFFFFF;font-size:14px;vertical-align:middle}
+.wrtool .wrlock{display:inline-block;margin:0 12px 0 0;vertical-align:middle}.wrtool .wrlock button{background:#FDB913;color:#0A2A50;font-weight:bold}.wrtool .empty{display:inline-block;color:#FFFFFF;font-size:14px;vertical-align:middle}
 .wrfp .col{max-height:calc(100vh - 140px);overflow-y:auto}
 """
 
