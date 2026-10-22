@@ -44,6 +44,13 @@ function sheet_(name) {
   }
   return sh;
 }
+// appendRow can turn "=..." or date-like text into formulas or dates. Formatting the new row as plain text first
+// keeps every cell exactly as typed.
+function appendText_(sh, vals) {
+  var rg = sh.getRange(sh.getLastRow() + 1, 1, 1, vals.length);
+  rg.setNumberFormat('@');
+  rg.setValues([vals]);
+}
 function stories_() { return sheet_('Stories'); }
 function taps_() { return sheet_('Taps'); }
 
@@ -78,8 +85,8 @@ function add_(text, by) {
   text = String(text || '').replace(/^\s+|\s+$/g, '');
   if (!text) throw new Error('The story is empty');
   if (text.length > MAX_TEXT) throw new Error('The story is too long');
-  stories_().appendRow([Utilities.getUuid().substring(0, 8),
-                        Utilities.formatDate(new Date(), TZ, 'yyyy-MM-dd HH:mm'), text, by, '']);
+  appendText_(stories_(), [Utilities.getUuid().substring(0, 8),
+                           Utilities.formatDate(new Date(), TZ, 'yyyy-MM-dd HH:mm'), text, by, '']);
 }
 
 function tap_(id, who) {
@@ -91,7 +98,7 @@ function tap_(id, who) {
   for (i = rows.length - 1; i >= 1; i--) {
     if (String(rows[i][4]) === String(id) && String(rows[i][1]) === who) { sh.deleteRow(i + 1); return; }  // tap again = undo
   }
-  sh.appendRow([ymd_(new Date()), who, dstr_(story[1]).slice(0, 10), String(story[2]), String(id), String(story[3] || 'MOnet')]);
+  appendText_(sh, [ymd_(new Date()), who, dstr_(story[1]).slice(0, 10), String(story[2]), String(id), String(story[3] || 'MOnet')]);
 }
 
 function list_() {
@@ -162,8 +169,8 @@ function importMonet() {
     var fresh = items.filter(function (it) { return !have[it.link]; });
     fresh.sort(function (a, b) { return a.pub.getTime() - b.pub.getTime(); });  // oldest first, so the newest ends up on top
     fresh.forEach(function (it) {
-      sh.appendRow([Utilities.getUuid().substring(0, 8), Utilities.formatDate(it.pub, TZ, 'yyyy-MM-dd HH:mm'),
-                    it.title + (it.excerpt ? '\n' + it.excerpt : ''), 'MOnet', it.link]);
+      appendText_(sh, [Utilities.getUuid().substring(0, 8), Utilities.formatDate(it.pub, TZ, 'yyyy-MM-dd HH:mm'),
+                       it.title + (it.excerpt ? '\n' + it.excerpt : ''), 'MOnet', it.link]);
     });
     return fresh.length;
   } finally { lock.releaseLock(); }
@@ -285,6 +292,7 @@ function selfTest() {
     if (String(rows[i][0]) === s.id || String(rows[i][0]) === f.id) sh.deleteRow(i + 1);
   }
   var ok = tapped && undone && textKept && list_().length === before;
-  Logger.log('SELF TEST ' + (ok ? 'PASSED' : 'FAILED') + ' (tapped=' + tapped + ', undone=' + undone + ', textKept=' + textKept + ')');
+  Logger.log('SELF TEST ' + (ok ? 'PASSED' : 'FAILED') + ' (tapped=' + tapped + ', undone=' + undone + ', textKept=' + textKept +
+             ', saw ' + JSON.stringify([f.text, f.by, s.by]) + ')');
   return ok;
 }
