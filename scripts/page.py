@@ -60,6 +60,9 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .cityhd.leb{background:#FDB913;color:#0A2A50}
 .col.kjh,.card.kjh,.cg.kjh{display:none}
 .kjs .cg{display:none}.kjs .cg.kjm{display:block}
+.cg.kjz{display:none}.ctag{display:none}
+.cflat .ctag{display:inline-block;background:#0A2A50;color:#FFFFFF;font-size:11px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;padding:1px 7px;border-radius:3px;margin-bottom:4px}
+.cflat .ctag.leb{background:#FDB913;color:#0A2A50}
 .dnote{color:#FFFFFF;font-size:16px;font-weight:bold;padding:6px 18px 0}
 .dnote .dn{color:#FDB913}.dnote a{color:#FDB913}
 .kjs .col{display:none}.kjs .col.kjm{display:inline-block}.kjs .card{display:none}.kjs .card.kjm{display:block}.kjs .search{display:none}
@@ -301,8 +304,40 @@ function kjTarget(raw){
 }
 function kjColOf(c){var col=c.parentNode; while(col && !kjHas(col,'col')) col=col.parentNode; return col;}
 function kjBadge(col){var h=col.getElementsByTagName('h2')[0]; return h?h.getElementsByTagName('span')[0]:null;}
+function kjFlat(on){  // a date search lists Holiday Events by date, not under city headings; Clear puts the city groups back
+  var divs=document.getElementsByTagName('div'), cols=[], i, k, c, all, gs, cards, flat;
+  for(i=0;i<divs.length;i++){ if(kjHas(divs[i],'col')) cols.push(divs[i]); }
+  for(i=0;i<cols.length;i++){
+    c=cols[i]; all=c.getElementsByTagName('div'); gs=[]; cards=[];
+    for(k=0;k<all.length;k++){ if(kjHas(all[k],'cg')) gs.push(all[k]); else if(kjHas(all[k],'card')) cards.push(all[k]); }
+    if(!gs.length) continue;
+    if(on){
+      if(c.kjflat) continue;
+      for(k=0;k<cards.length;k++){ cards[k].kjg=cards[k].parentNode; cards[k].kji=k; }
+      cards.sort(function(a,b){
+        var da=a.getAttribute('data-date'), db=b.getAttribute('data-date'), ma, mb;
+        if(da!==db) return da<db?-1:1;
+        ma=parseInt(a.getAttribute('data-min'),10)||0; mb=parseInt(b.getAttribute('data-min'),10)||0;
+        return ma!==mb?ma-mb:a.kji-b.kji;
+      });
+      flat=document.createElement('div'); flat.className='cflat';
+      gs[0].parentNode.insertBefore(flat,gs[0]);
+      for(k=0;k<cards.length;k++) flat.appendChild(cards[k]);
+      for(k=0;k<gs.length;k++) kjAdd(gs[k],'kjz');
+      c.kjflat=flat;
+    } else if(c.kjflat){
+      flat=c.kjflat; all=flat.getElementsByTagName('div'); cards=[];
+      for(k=0;k<all.length;k++){ if(kjHas(all[k],'card')) cards.push(all[k]); }
+      for(k=0;k<cards.length;k++) cards[k].kjg.appendChild(cards[k]);  // already in date order, so each city's list comes back in date order
+      flat.parentNode.removeChild(flat); c.kjflat=null;
+      for(k=0;k<gs.length;k++) kjDel(gs[k],'kjz');
+    }
+  }
+}
 function kjDayReset(){
-  var divs=document.getElementsByTagName('div'), i, c, sp;
+  var divs, i, c, sp;
+  kjFlat(false);
+  divs=document.getElementsByTagName('div');
   for(i=0;i<divs.length;i++){
     c=divs[i];
     if(kjHas(c,'kjm')) kjDel(c,'kjm');
@@ -327,7 +362,8 @@ function kjMode(m){
   for(i=0;i<ids.length;i++){ b=document.getElementById('kjt-'+ids[i]); if(ids[i]===m) kjAdd(b,'on'); else kjDel(b,'on'); }
   document.getElementById('kjd').placeholder=KJ_HINT[m];
   document.getElementById('kjhelp').innerHTML=KJ_HELP[m];
-  document.getElementById('kjdn').innerHTML=''; kjDayReset();  // the old result no longer matches the choice; the typed text stays
+  document.getElementById('kjdn').innerHTML=''; kjDayReset();  // the old result no longer matches the choice
+  if(/\S/.test(document.getElementById('kjd').value)) return kjGo();  // Boss (2026-10-23): text already typed, so clicking a choice runs the search
   return false;
 }
 function kjGo(){
@@ -382,6 +418,7 @@ function kjDay(v,mode){
       note.innerHTML='<span class="dn">'+label+'</span> has passed this week. <a href="#" onclick="return kjDayGo(\''+(nx.getMonth()+1)+'/'+nx.getDate()+'\');">Show '+KJ_DOW[nx.getDay()].substr(0,3)+' '+(nx.getMonth()+1)+'/'+nx.getDate()+'</a>'; }
     return false;
   }
+  kjFlat(true);
   divs=document.getElementsByTagName('div');
   if(from){
     // Undated cards stay. Dated cards before the date hide, and a column left with no cards goes too. Hiding instead of
@@ -563,7 +600,10 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_s
             # The R-3 site gives no post dates, so its cards show a label instead of an age.
             if c.get("kind") == "event":
                 tm = f' &middot; {esc(c["time"])}' if c.get("time") else ""
-                head = (f'<div class="card" data-date="{c["date"]}"><div class="when"><span class="dl">{c["when_label"]}</span>{tm} '
+                # A city chip, hidden until a date search lists Holiday Events by date and the city headings are gone.
+                ct = (f'<div class="ctag{" leb" if c["city"].lower() == "lebanon" else ""}">{esc(c["city"])}</div>'
+                      if col.get("by_city") and c.get("city") else "")
+                head = (f'<div class="card" data-date="{c["date"]}" data-min="{c.get("min", 0)}">{ct}<div class="when"><span class="dl">{c["when_label"]}</span>{tm} '
                         f'<span class="src">&middot; {esc(c["source"])}</span></div>')
                 names = (f'<div class="why">{esc(c["place"])}</div>' if c.get("place") else "") + \
                         (f'<div class="why">{esc(c["why"])}</div>' if c.get("why") else "")

@@ -83,7 +83,7 @@ def event_columns():
                      key=lambda e: (e["date"], e.get("min", 0)))
         cards = [{"kind": "event", "title": e["title"], "line": e["title"], "city": e["town"], "source": e.get("source", ""),
                   "url": e["url"], "ts": None, "signal": "", "why": e.get("why", ""), "place": e.get("place", ""),
-                  "date": e["date"], "time": e.get("time", ""),
+                  "date": e["date"], "time": e.get("time", ""), "min": e.get("min", 0),
                   "when_label": date.fromisoformat(e["date"]).strftime("%a, %b %-d").upper()} for e in evs]
         # Boss (2026-10-23): Holiday Events are listed by city, under highlighted city headings (page.py).
         cols.append({"key": "ev-" + typ.lower().replace(" ", "-"), "name": typ, "cards": cards, "by_city": typ.lower() == "holiday events"})
