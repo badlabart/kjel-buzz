@@ -4,6 +4,8 @@
  * Sheet "Stories": id | added | text | by | link | kind
  *     by = "MOnet" (imported daily from the Missourinet feed) or B / J / R (typed in by that person)
  *     kind = "summary" for the written summary of a Missourinet LISTEN story that mentions Lebanon
+ *     short = the daily job's quick-read rewrite of a Missourinet article (Boss 2026-10-23); the page shows it in place
+ *             of the feed excerpt, and the feed text stays in "text"
  * Sheet "Taps":    tapped | who | story added | story text | story id | story from
  *     the LOG: one row each time B, J or R taps a story, in date order. Tapping again undoes it.
  *
@@ -31,7 +33,7 @@ function daysAgo_(n) { return new Date(new Date().getTime() - n * 86400000); }
 function dstr_(v) { return v instanceof Date ? ymd_(v) : String(v); }
 
 var HEADERS = {
-  Stories: ['id', 'added', 'text', 'by', 'link', 'kind'],
+  Stories: ['id', 'added', 'text', 'by', 'link', 'kind', 'short'],
   Taps: ['tapped', 'who', 'story added', 'story text', 'story id', 'story from']
 };
 
@@ -42,7 +44,7 @@ function sheet_(name) {
     sh = ss.insertSheet(name);
     sh.appendRow(HEADERS[name]);
     sh.setFrozenRows(1);
-    sh.getRange('A:F').setNumberFormat('@');  // plain text, so dates and "=..." story text stay as typed
+    sh.getRange('A:G').setNumberFormat('@');  // plain text, so dates and "=..." story text stay as typed
   }
   return sh;
 }
@@ -69,12 +71,13 @@ function doPost(e) {
     var p = JSON.parse(e.postData.contents);
     var pass = prop_('PASSCODE');  // no passcode set = open to anyone with the page address
     if (pass && String(p.key) !== pass) return json_({ ok: false, error: 'passcode' });
-    if (p.action === 'add' || p.action === 'tap' || p.action === 'summary') {
+    if (p.action === 'add' || p.action === 'tap' || p.action === 'summary' || p.action === 'rewrite') {
       var lock = LockService.getScriptLock();
       lock.waitLock(10000);
       try {
         if (p.action === 'add') add_(p.text, p.by);
         else if (p.action === 'summary') addSummary_(p.title, p.text, p.link, p.added);
+        else if (p.action === 'rewrite') rewrite_(p.id, p.text);
         else tap_(p.id, p.who);
       } finally { lock.releaseLock(); }
     }
@@ -109,6 +112,26 @@ function addSummary_(title, text, link, added) {
   appendText_(sh, [Utilities.getUuid().substring(0, 8), added, title + '\n' + text, 'MOnet', link, 'summary']);
 }
 
+// The quick-read rewrite of one imported Missourinet article (Boss 2026-10-23). Typed-in B / J / R stories and the
+// LISTEN summaries are never rewritten.
+function rewrite_(id, text) {
+  text = String(text || '').replace(/^\s+|\s+$/g, '');
+  if (!text) throw new Error('The rewrite is empty');
+  if (text.length > MAX_TEXT) throw new Error('The rewrite is too long');
+  var sh = stories_();
+  if (sh.getRange(1, 7).getValue() !== 'short') sh.getRange(1, 7).setValue('short');
+  var rows = sh.getDataRange().getValues(), i;
+  for (i = 1; i < rows.length; i++) {
+    if (String(rows[i][0]) !== String(id)) continue;
+    if (String(rows[i][3]) !== 'MOnet' || String(rows[i][5]) === 'summary') throw new Error('Only Missourinet articles are rewritten');
+    var rg = sh.getRange(i + 1, 7);
+    rg.setNumberFormat('@');
+    rg.setValue("'" + text);
+    return;
+  }
+  throw new Error('Story not found');
+}
+
 function tap_(id, who) {
   if (WHO.indexOf(who) < 0) throw new Error('Unknown initial');
   var st = stories_().getDataRange().getValues(), story = null, i;
@@ -131,8 +154,10 @@ function list_() {
   stories_().getDataRange().getValues().slice(1).forEach(function (r) {
     var added = dstr_(r[1]).slice(0, 10);
     if (!r[0] || added < cutoff) return;
-    out.push({ id: String(r[0]), added: added, text: String(r[2]), by: String(r[3] || 'MOnet'), link: String(r[4] || ''),
-               kind: String(r[5] || ''), taps: taps[String(r[0])] || {} });
+    var text = String(r[2]), short = String(r[6] || '');
+    if (short) text = text.split('\n')[0] + '\n' + short;  // the headline stays the bold first line
+    out.push({ id: String(r[0]), added: added, text: text, by: String(r[3] || 'MOnet'), link: String(r[4] || ''),
+               kind: String(r[5] || ''), short: !!short, taps: taps[String(r[0])] || {} });
   });
   out.reverse();  // newest first
   return out;

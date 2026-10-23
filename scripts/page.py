@@ -480,11 +480,8 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_s
             continue
         cards = []
         for c in col["cards"]:
-            city = c.get("city") or (c.get("town") if col["key"] in ("local", "pride", "light") and c.get("town") != "Ozarks" else "")
-            leb = (city or "").lower() == "lebanon"
-            where = f' <span class="city{" leb" if leb else ""}">({esc(city)})</span>' if city else ""
-            if col["key"] == "pride":  # Boss (2026-10-21): the town is already in the line ("Congrats to Waynesville's ...")
-                where = ""
+            # Boss (2026-10-23): the place goes inside the quick-read line, so no card shows "(Town)" after it any more.
+            where = ""
             sig = f'<div class="sig"><b>BUZZ:</b> {esc(c["signal"])}</div>' if c.get("signal") else ""
             joke = c.get("kind") == "joke"
             nolink = joke or col["key"] == "humor" or (c.get("kind") == "event" and not c.get("url"))  # Humor reads in one line; hand-entered events may have no link

@@ -2,66 +2,92 @@
  "made": "2026-10-23",
  "timely": [
   {
-   "id": "Ta75ecc"
+   "id": "Ta75ecc",
+   "line": "Today's Lebanon forecast: sunny, a high near 78, a low around 53. Shorts in late October, Missouri style.",
+   "label": "Weather"
   },
   {
-   "id": "Ta9b3cb"
+   "id": "Ta9b3cb",
+   "line": "Tomorrow's Lebanon forecast: mostly sunny, a high near 79, a low around 53. Missouri forgot it's fall.",
+   "label": "Weather"
   },
   {
-   "id": "Taec67a"
+   "id": "Taec67a",
+   "line": "Missouri regular gas averages $3.95 today, down 23 cents from a month ago and up $1.24 from a year ago, according to AAA, and Springfield averages $4.00. Carpool, anyone?",
+   "label": "Gas Prices"
   },
   {
-   "id": "T5f14aa"
+   "id": "T5f14aa",
+   "line": "Youth firearms deer season opens tomorrow, Saturday, Oct. 24, and runs through Oct. 25. Bring the kids and the hand warmers.",
+   "label": "Hunting Season"
   },
   {
-   "id": "T2f8a71"
+   "id": "T2f8a71",
+   "line": "Fall firearms turkey season ends Saturday, Oct. 31, in 8 days. The turkeys are counting too.",
+   "label": "Hunting Season"
   },
   {
-   "id": "Ta7d631"
+   "id": "Ta7d631",
+   "line": "Archery deer season ends Friday, Nov. 13, in 21 days. Practice those shots now.",
+   "label": "Hunting Season"
   },
   {
-   "id": "T70c2f4"
+   "id": "T70c2f4",
+   "line": "The November portion of firearms deer season opens Saturday, Nov. 14, in 22 days, and runs through Nov. 24. Blaze orange is back in style.",
+   "label": "Hunting Season"
   },
   {
-   "id": "Tc173d4"
+   "id": "Tc173d4",
+   "line": "Archery deer season opens again Wednesday, Nov. 25, in 33 days, and runs through Jan. 15. Bows before pie.",
+   "label": "Hunting Season"
   },
   {
-   "id": "T1997d6"
+   "id": "T1997d6",
+   "line": "Another youth firearms deer season opens Friday, Nov. 27, in 35 days, and runs through Nov. 29. Leftovers in the deer stand.",
+   "label": "Hunting Season"
   },
   {
-   "id": "T321560"
+   "id": "T321560",
+   "line": "Halloween is Saturday, Oct. 31, in 8 days. Buy the candy you actually like.",
+   "label": "Halloween"
   },
   {
-   "id": "T851b71"
+   "id": "T851b71",
+   "line": "Daylight saving time ends Sunday, Nov. 1, in 9 days, so clocks fall back one hour and sunset comes an hour earlier. One more hour of sleep, kids permitting.",
+   "label": "Clocks Fall Back"
   },
   {
-   "id": "Ta76b3b"
+   "id": "Ta76b3b",
+   "line": "Veterans Day is Wednesday, Nov. 11, in 19 days. Thank a vet, buy their coffee.",
+   "label": "Veterans Day"
   },
   {
-   "id": "Tc44f8a"
+   "id": "Tc44f8a",
+   "line": "Thanksgiving is Thursday, Nov. 26, in 34 days. Stretchy pants season is near.",
+   "label": "Thanksgiving"
   },
   {
    "id": "T51f384",
    "label": "TV Tonight",
-   "line": "Reba McEntire's NBC sitcom Happy's Place, where she inherits her father's Tennessee tavern, returns tonight for its third season with her old co-star Melissa Peterman.",
+   "line": "Reba McEntire's NBC sitcom Happy's Place, where she inherits her father's Tennessee tavern, returns tonight for season three with old co-star Melissa Peterman. The tavern is open again.",
    "date": "2026-10-23"
   },
   {
    "id": "Td16ce4",
    "label": "Family Movie",
-   "line": "Wildwood, a fantasy movie from an acclaimed children's novel about a girl who heads into a secret enchanted forest to save her baby brother, is now in theaters.",
+   "line": "Wildwood, a fantasy movie from an acclaimed children's novel about a girl who heads into an enchanted forest to save her baby brother, is now in theaters. Siblings everywhere are taking notes.",
    "date": "2026-10-23"
   },
   {
    "id": "Tdce645",
    "label": "20 Years Ago",
-   "line": "Twenty years ago today, Taylor Swift released her debut album, Taylor Swift, which made her a rising star in country music.",
+   "line": "Twenty years ago today, Taylor Swift released her debut album, Taylor Swift, and became a rising country star. Feeling old yet?",
    "date": "2026-10-24"
   },
   {
    "id": "T4cc2fa",
    "label": "25 Years Ago",
-   "line": "Twenty-five years ago today, Microsoft released Windows XP, which became one of its most successful operating systems ever.",
+   "line": "Twenty-five years ago today, Microsoft released Windows XP, one of its most successful operating systems ever. Somebody's grandpa still runs it.",
    "date": "2026-10-25"
   }
  ],
@@ -69,79 +95,79 @@
   {
    "id": "J319c9a",
    "label": "Outdoors",
-   "line": "Missouri's Share the Harvest program wants 6,500 donated deer this year and has dropped the fees to donate, so hunters can feed more Missourians.",
+   "line": "Missouri's Share the Harvest program wants 6,500 donated deer this year and dropped the fees to donate. Freezer full? Share the venison.",
    "city": ""
   },
   {
    "id": "J09b668",
    "label": "Outdoors",
-   "line": "Old-school deer hunters say getting out while a big storm is moving through may give you your best chance all season at a big buck.",
+   "line": "Old-school deer hunters say a big storm moving through may be your best shot all season at a big buck. Rain gear: the new lucky charm.",
    "city": ""
   },
   {
    "id": "J7f341d",
    "label": "Outdoors",
-   "line": "After heavy rains, duck hunters should scout flooded fields that are holding ducks and hunt that shallow sheet water.",
+   "line": "After heavy rains, duck hunters should scout flooded fields holding ducks and hunt that shallow sheet water. Puddles were never this exciting.",
    "city": ""
   },
   {
    "id": "J560bc5",
    "label": "Family",
-   "line": "CIYTI light-up princess costumes are being recalled because kids can easily get to the button batteries inside, which can cause serious injury if swallowed.",
+   "line": "CIYTI light-up princess costumes are recalled because kids can easily reach the button batteries inside, which can cause serious injury if swallowed. Check the costume bin before Halloween.",
    "city": ""
   },
   {
    "id": "J14d1ee",
    "label": "Family",
-   "line": "Costway convertible high chairs are being recalled because they have no built-in restraint, so a child can slip through between the tray and the seat.",
+   "line": "Costway convertible high chairs are recalled because they have no built-in restraint, so a child can slip through between the tray and the seat. Worth a look at mealtime.",
    "city": ""
   },
   {
    "id": "Jb6e02d",
    "label": "Family",
-   "line": "BAMAMON LED projecting finger light toys are being recalled because kids can easily open the button battery compartments, which is dangerous if a battery is swallowed.",
+   "line": "BAMAMON LED finger light toys are recalled because kids can easily open the button battery compartments. Time to check the toy box.",
    "city": ""
   },
   {
    "id": "Jfd24cf",
    "label": "Family",
-   "line": "A Reddit dad says his greatest joy is watching his wife parent their daughter, a little version of herself, and hearing her say Can you just relax, the same words he's told his wife many times.",
+   "line": "A Reddit dad says his greatest joy is watching his wife parent their mini-me daughter and hearing her say, Can you just relax. What goes around comes around.",
    "city": ""
   },
   {
    "id": "J75489c",
    "label": "Family",
-   "line": "A Reddit mom says nobody warns you how awkward it is being the parent at a kid's birthday party, making small talk for a couple of hours with parents you don't know.",
+   "line": "A Reddit mom says nobody warns you how awkward it is being a parent at a kid's birthday party, making small talk for hours. Bring snacks and an exit plan.",
    "city": ""
   },
   {
    "id": "Ja70103",
    "label": "Family",
-   "line": "A Reddit mom says there are too many trunk-or-treats now, and they've turned into a boring fast candy grab on the to-do list instead of a fun social event.",
+   "line": "A Reddit mom says there are too many trunk-or-treats, and they've become a fast candy grab instead of a fun social event. The minivans are tired too.",
    "city": ""
   },
   {
    "id": "J308a1f",
    "label": "Cooking",
-   "line": "Budget Bytes has an easy stuffed pepper soup with ground beef and bell peppers in a rich tomato broth, served over rice and ready in 45 minutes.",
+   "line": "Budget Bytes has an easy stuffed pepper soup with ground beef, bell peppers and rice in a tomato broth, ready in 45 minutes. All the flavor, none of the stuffing.",
    "city": ""
   },
   {
    "id": "J37b22b",
    "label": "Cooking",
-   "line": "For a cozy, mostly hands-off dinner, Budget Bytes has a Crockpot chili with ground beef, beans, tomatoes and warm spices.",
+   "line": "Budget Bytes has a mostly hands-off Crockpot chili with ground beef, beans, tomatoes and warm spices. The Crockpot does the work.",
    "city": ""
   },
   {
    "id": "J8792eb",
    "label": "Life",
-   "line": "Mortgage rates took a substantial drop Friday, because trouble for tech stocks pushed bond yields and mortgage interest rates lower.",
+   "line": "Mortgage rates took a big drop Friday, Oct. 23, because trouble for tech stocks pushed bond yields lower. Somebody's house hunt just got cheaper.",
    "city": ""
   },
   {
    "id": "J13fe2e",
    "label": "Life",
-   "line": "A Reddit poster says one of the most underrated money-saving moves is living somewhere rural where nobody tries to keep up with the Joneses.",
+   "line": "A Reddit poster says one of the most underrated ways to save money is living rural, where nobody keeps up with the Joneses. The Joneses are broke anyway.",
    "city": ""
   }
  ]

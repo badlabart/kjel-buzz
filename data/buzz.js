@@ -1,5 +1,5 @@
 window.KJEL_BUZZ = {
- "updated": "2026-10-23T13:51:07+00:00",
+ "updated": "2026-10-23T15:30:58+00:00",
  "columns": [
   {
    "key": "national",
@@ -10,7 +10,7 @@ window.KJEL_BUZZ = {
      "col": "national",
      "title": "184 Witches Set Halloween World Record on Orlando's 400-Foot Observation Wheel",
      "source": "Yahoo",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNOVVjSnJmVUMxTjRzWGcwcUNXY203Z0pmaDJGeHpOVl8wNzF6MjdoYjZoSy1RLVJxZ1pWdVRxM2ZjYU55RVlmRTFhd0t1Wk5oNlVrY2Z5Mi1sOFY5VnVZeVlPMHhCTlFJRnM0b1pXNG1TOUNMNExnUHN0eHhYRjhXdlNOSW1HcUFlb0Ywd1N2ZWJuM1lRTEE?oc=5",
+     "url": "https://www.yahoo.com/entertainment/articles/184-witches-set-halloween-world-201549233.html",
      "gn_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNOVVjSnJmVUMxTjRzWGcwcUNXY203Z0pmaDJGeHpOVl8wNzF6MjdoYjZoSy1RLVJxZ1pWdVRxM2ZjYU55RVlmRTFhd0t1Wk5oNlVrY2Z5Mi1sOFY5VnVZeVlPMHhCTlFJRnM0b1pXNG1TOUNMNExnUHN0eHhYRjhXdlNOSW1HcUFlb0Ywd1N2ZWJuM1lRTEE?oc=5",
      "desc": "",
      "outlets": 2,
@@ -31,7 +31,7 @@ window.KJEL_BUZZ = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-22T20:15:49+00:00",
-     "line": "A group of 184 witches set a Halloween world record by riding Orlando's 400-foot observation wheel together.",
+     "line": "The Orlando Eye, a 400-foot-tall observation wheel, is trying to set a new world record for Halloween - most witches on a wheel. 184 costumed witches of all ages participated on Oct. 21. Apparently brooms weren't fast enough.",
      "city": "Orlando",
      "label": ""
     },
@@ -59,7 +59,7 @@ window.KJEL_BUZZ = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-21T11:42:55-04:00",
-     "line": "A 7-week-old kitten rescued from a busy interstate in Massachusetts has been given the perfect name, Freeway.",
+     "line": "A 7-week-old kitten rescued from a busy Massachusetts interstate got the perfect name - Freeway. Thankfully not Off-Ramp.",
      "city": "Massachusetts",
      "label": ""
     },
@@ -87,7 +87,7 @@ window.KJEL_BUZZ = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-22T16:36:27+00:00",
-     "line": "A service dog named Forest spotted his favorite Disney character on a cruise and went absolutely bananas with joy, and the video has people smiling everywhere.",
+     "line": "A service dog named Forest went bananas with joy when he spotted his favorite Disney character on a cruise. Even service dogs get a day off.",
      "city": "",
      "label": ""
     },
@@ -115,7 +115,7 @@ window.KJEL_BUZZ = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-22T23:22:51+00:00",
-     "line": "David Bowie didn't like the song Bing Crosby picked for their duet, so a last-minute rewrite created Peace on Earth, and that one became a Christmas classic.",
+     "line": "Peace on Earth, the Bing Crosby and David Bowie Christmas classic, only exists because Bowie didn't like the song Bing picked. Nothing says Christmas like creative differences.",
      "city": "",
      "label": ""
     },
@@ -143,7 +143,7 @@ window.KJEL_BUZZ = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "Gladiator II, starring Denzel Washington and Pedro Pascal, underwhelmed in theaters with 462 million dollars, but it just became the number one movie on Netflix.",
+     "line": "Gladiator II, starring Denzel Washington and Pedro Pascal, underwhelmed in theaters at 462 million dollars but is now Netflix's number one movie. Everybody waited for it on the couch.",
      "city": "",
      "label": ""
     }
@@ -177,7 +177,7 @@ window.KJEL_BUZZ = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-21T18:00:00+00:00",
-     "line": "Congrats to Lebanon's Dean Long, a 2011 Lebanon High School graduate, for being inducted into the Emporia State University baseball Hall of Fame in Emporia, Kansas, on Oct. 10. As a senior there, he led the conference with 23 home runs.",
+     "line": "Dean Long, Lebanon High School graduate, was inducted into the Emporia State University baseball Hall of Fame in October. Not bad for a kid from Lebanon.",
      "city": "Lebanon",
      "label": "Hall of Fame"
     },
@@ -205,7 +205,7 @@ window.KJEL_BUZZ = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-19T15:45:21.153323+00:00",
-     "line": "Congrats to Lebanon's R-3 School District for earning the National Meritorious Budget Award.",
+     "line": "Lebanon R-3 School District earned the National Meritorious Budget Award. Spreadsheets everywhere are cheering.",
      "city": "Lebanon",
      "label": "National Budget Award"
     },
@@ -233,7 +233,7 @@ window.KJEL_BUZZ = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-19T15:45:21.153323+00:00",
-     "line": "Congrats to Lebanon's R-3 School District on opening the new Robert W. Plaster Center for Student Success.",
+     "line": "Lebanon R-3 School District opened the new Robert W. Plaster Center for Student Success. Ribbon-cutting scissors got a workout.",
      "city": "Lebanon",
      "label": "Grand Opening"
     },
@@ -261,7 +261,7 @@ window.KJEL_BUZZ = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-19T15:45:21.153323+00:00",
-     "line": "Congrats to Lebanon's Brittany Stamm, named the new head girls basketball coach for Lebanon Schools.",
+     "line": "Brittany Stamm is the new head girls basketball coach for Lebanon Schools. Whistle shopping starts now.",
      "city": "Lebanon",
      "label": "New Head Coach"
     },
@@ -289,7 +289,7 @@ window.KJEL_BUZZ = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-19T15:45:21.153323+00:00",
-     "line": "Congrats to Lebanon's Kalem Copling, named the new head boys basketball coach for Lebanon Schools.",
+     "line": "Kalem Copling is the new head boys basketball coach for Lebanon Schools. Practice just got a lot louder.",
      "city": "Lebanon",
      "label": "New Head Coach"
     },
@@ -317,7 +317,7 @@ window.KJEL_BUZZ = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-18T14:37:12.069000-05:00",
-     "line": "Congrats to Waynesville's Molly McDermitt, Cycila Keeney and Samantha Etheridge for becoming finalists in the World Food Championships in Indianapolis on Oct. 18. Their dish - Bacon Lover's Christmas.",
+     "line": "Waynesville Career Center students Molly McDermitt, Cycila Keeney and Samantha Etheridge made the finals at the World Food Championships in Indianapolis Oct. 18 with Bacon Lover's Christmas. The judges never stood a chance.",
      "city": "Waynesville",
      "label": "World Food Champ Finalists"
     },
@@ -345,7 +345,7 @@ window.KJEL_BUZZ = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-20T15:30:00.487000-05:00",
-     "line": "Congrats to Waynesville's Kyleen Oxendine, a teacher at East Elementary, for winning the 1st Quarter Project Teach Award on Oct. 19. Her Take Home Reading Success Kits help students practice reading at home.",
+     "line": "East Elementary teacher Kyleen Oxendine of Waynesville won the 1st Quarter Project Teach Award Oct. 19. Reading homework just got cool.",
      "city": "Waynesville",
      "label": "Teacher Award"
     },
@@ -373,7 +373,7 @@ window.KJEL_BUZZ = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-20T14:51:43.120000-05:00",
-     "line": "Congrats to Waynesville's Sixth Grade Center for winning the traveling Tiger Spirit Trophy again with a first-place finish in the 2026 Homecoming Parade.",
+     "line": "Waynesville's Sixth Grade Center won the traveling Tiger Spirit Trophy again for its first-place Homecoming Parade float. That trophy isn't traveling anywhere.",
      "city": "Waynesville",
      "label": "Tiger Spirit Trophy"
     },
@@ -401,7 +401,7 @@ window.KJEL_BUZZ = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-20T13:31:31.095000-05:00",
-     "line": "Congrats to Waynesville's school bus mechanics and drivers, whose 10 randomly picked buses all passed a surprise Missouri State Highway Patrol inspection on Oct. 20.",
+     "line": "All 10 Waynesville R-6 school buses picked at random passed a surprise Missouri State Highway Patrol inspection Oct. 20. Even the squeaky seats passed.",
      "city": "Waynesville",
      "label": "Perfect Bus Inspection"
     },
@@ -429,7 +429,7 @@ window.KJEL_BUZZ = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-20T16:30:02.331000-05:00",
-     "line": "Congrats to Waynesville's Domino's for receiving the school district's Community Recognition Plaque for October for its ongoing support of students.",
+     "line": "Domino's of Waynesville received the school district's October Community Recognition Plaque for supporting students. Pizza: the official food of school support.",
      "city": "Waynesville",
      "label": "Community Recognition"
     },
@@ -457,7 +457,7 @@ window.KJEL_BUZZ = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-20T15:37:00+00:00",
-     "line": "Congrats to Bolivar's school district for its strongest test results since state testing began in 1998, with 56.3 percent of students proficient in math, well above the state average.",
+     "line": "Bolivar School District posted its best state test scores since testing began in 1998, with 56.3 percent of students proficient in math. Somebody pass the calculators around.",
      "city": "Bolivar",
      "label": "Record Test Scores"
     },
@@ -485,7 +485,7 @@ window.KJEL_BUZZ = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-20T17:48:34+00:00",
-     "line": "Congrats to Bolivar's Lathan Martin and Boone Shockley of Grand Missouri Bank for graduating from the Oklahoma Bankers Association Consumer Lending School in Oklahoma City.",
+     "line": "Lathan Martin and Boone Shockley of Grand Missouri Bank in Bolivar graduated from the Oklahoma Bankers Association Consumer Lending School in Oklahoma City in October. Loan officers with diplomas to prove it.",
      "city": "Bolivar",
      "label": "Banking School Grads"
     },
@@ -513,7 +513,7 @@ window.KJEL_BUZZ = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-20T16:15:49+00:00",
-     "line": "Congrats to Bolivar's Parkview Health Care Facility for passing its annual state inspection with zero deficiencies.",
+     "line": "Parkview Health Care Facility in Bolivar passed its annual state inspection with zero deficiencies. Not even a dust bunny.",
      "city": "Bolivar",
      "label": "Perfect Inspection"
     },
@@ -541,7 +541,7 @@ window.KJEL_BUZZ = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-13T18:40:00+00:00",
-     "line": "Congrats to Marshfield's Marshfield Chevrolet for celebrating 100 years of serving the community.",
+     "line": "Marshfield Chevrolet is celebrating 100 years in Marshfield. Still running better than most of us.",
      "city": "Marshfield",
      "label": "100 Years in Business"
     },
@@ -569,7 +569,7 @@ window.KJEL_BUZZ = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-20T17:52:00+00:00",
-     "line": "Congrats to Marshfield's High School marching band for taking fourth place at the Ozark Mountain Marching Festival.",
+     "line": "The Marshfield High School marching band took fourth place at the Ozark Mountain Marching Festival. Those feet never missed a step.",
      "city": "Marshfield",
      "label": "Marching Band"
     },
@@ -597,7 +597,7 @@ window.KJEL_BUZZ = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-22T04:34:00+00:00",
-     "line": "Congrats to Crocker's Johnny Carriger, named KY3 Athlete of the Week after scoring a hat trick in Crocker's district championship soccer game, his second of the tournament.",
+     "line": "Crocker soccer player Johnny Carriger was named KY3 Athlete of the Week for a hat trick in the district championship game, his second of the tournament. Hats are clearly his thing.",
      "city": "Crocker",
      "label": "Athlete of the Week"
     },
@@ -606,7 +606,7 @@ window.KJEL_BUZZ = {
      "col": "local",
      "title": "Macks Creek cross country teams claim title, runner-up finish at Dixon Invitational",
      "source": "The Lake Sun",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbDBSb3VsTDY3Vm9sV2Ntb29pOGlVeTgtaWQ1NUQ0UU1DS0lBU2xPQ3ExeWNjN2RSNkJKQlhfOFFKeTBxcmc4LWRaTlNhandMXzh2QVF4V0JhLUJ4YS10bFk4X2huV1RjbDVVN3otZHhqUG1WdndqV1doTkdSR1pRY0ZxSnUxSTlhRDlxV0UzOW5qQ0lmMmtob3dCS0k2V3E1RlYyaXNPa2NZYkt1QThxNXhHUDA2WnNEc01zQWx5eHA0QQ?oc=5",
+     "url": "https://lakenewsonline.com/stories/macks-creek-cross-country-teams-claim-title-runner-up-finish-at-dixon-invitational,249535",
      "gn_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbDBSb3VsTDY3Vm9sV2Ntb29pOGlVeTgtaWQ1NUQ0UU1DS0lBU2xPQ3ExeWNjN2RSNkJKQlhfOFFKeTBxcmc4LWRaTlNhandMXzh2QVF4V0JhLUJ4YS10bFk4X2huV1RjbDVVN3otZHhqUG1WdndqV1doTkdSR1pRY0ZxSnUxSTlhRDlxV0UzOW5qQ0lmMmtob3dCS0k2V3E1RlYyaXNPa2NZYkt1QThxNXhHUDA2WnNEc01zQWx5eHA0QQ?oc=5",
      "desc": "",
      "outlets": 1,
@@ -625,7 +625,7 @@ window.KJEL_BUZZ = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-21T18:36:12+00:00",
-     "line": "Congrats to Macks Creek's cross country teams for claiming the title and a runner-up finish at the Dixon Invitational.",
+     "line": "Macks Creek cross country teams won the title and finished runner-up at the Dixon Invitational. Running is easier when you're winning.",
      "city": "Dixon",
      "label": "Cross Country Title"
     }
@@ -669,7 +669,7 @@ window.KJEL_BUZZ = {
      "ts": "2026-10-22T01:56:26+00:00",
      "signal": "Wikipedia: 34K reads yesterday (Dolly Parton) · Ella Langley: #2 on Country Airplay",
      "near": null,
-     "line": "Ella Langley gave a fiery performance of Dolly Parton's 1974 hit Jolene at the CMA's I Will Always Love You tribute to Dolly.",
+     "line": "Ella Langley sang a fiery version of Dolly Parton's 1974 hit Jolene at the CMA's I Will Always Love You tribute to Dolly. Jolene, consider yourself warned.",
      "city": "Nashville",
      "added": "2026-10-23"
     },
@@ -681,7 +681,7 @@ window.KJEL_BUZZ = {
      "ts": "2026-10-22T03:25:46+00:00",
      "signal": "Wikipedia: 34K reads yesterday (Dolly Parton)",
      "near": null,
-     "line": "Reba McEntire honored her longtime friend Dolly Parton by singing He's Alive with the Belmont University choir, and earned a standing ovation.",
+     "line": "Reba McEntire sang He's Alive with the Belmont University choir to honor her longtime friend Dolly Parton and got a standing ovation. Reba gets those a lot.",
      "city": "Nashville",
      "added": "2026-10-23"
     },
@@ -693,7 +693,7 @@ window.KJEL_BUZZ = {
      "ts": "2026-10-22T15:45:53+00:00",
      "signal": "Wikipedia: 34K reads yesterday (Dolly Parton)",
      "near": null,
-     "line": "Zac Brown performed Butterfly alongside Dolly Parton's own vocals one more time at the CMA tribute to Dolly.",
+     "line": "Zac Brown sang Butterfly alongside Dolly Parton's own recorded vocals at the CMA tribute to Dolly. A duet across time.",
      "city": "Nashville",
      "added": "2026-10-23"
     },
@@ -705,7 +705,7 @@ window.KJEL_BUZZ = {
      "ts": "2026-10-22T14:37:08+00:00",
      "signal": "Wikipedia: 34K reads yesterday (Dolly Parton)",
      "near": null,
-     "line": "Kelsea Ballerini sang Dolly Parton's Here You Come Again at the CMA tribute and closed by saying, We love you, Miss Dolly.",
+     "line": "Kelsea Ballerini sang Dolly Parton's Here You Come Again at the CMA tribute and ended with, We love you, Miss Dolly. Everybody does.",
      "city": "Nashville",
      "added": "2026-10-23"
     },
@@ -717,7 +717,7 @@ window.KJEL_BUZZ = {
      "ts": "2026-10-22T14:16:41+00:00",
      "signal": "Wikipedia: 34K reads yesterday (Dolly Parton)",
      "near": null,
-     "line": "Brad Paisley and Sierra Hull honored Dolly Parton with an emotional performance of When I Get Where I'm Going at the CMA tribute.",
+     "line": "Brad Paisley and Sierra Hull sang Dolly Parton's When I Get Where I'm Going at the CMA tribute. Bring tissues for this one.",
      "city": "Nashville",
      "added": "2026-10-23"
     },
@@ -725,25 +725,27 @@ window.KJEL_BUZZ = {
      "id": "Mf6a6bc",
      "title": "Country Music Association announces $1 million donation to Dolly Parton’s Imagination Library",
      "source": "WSMV",
-     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPbWZkemZ4aE9IZ0hpTTNacWpBYkRuQ1E1OXRTcXFxOXB0WGllR2NOenF3a3JTZHVzVXFCdVlVbmlQdTd1Z3BkX281azdHWkVvUzVMaDFEbGFZenZnMmRhZ0lNTk9mel9ERHBheEhzbGh6d3NpaWJ4TTVrZUxtQWs2UEtaeVpVeWlNOThRRUFFcnRjWTZUcjZqZ096OHBpTjI2SzVfTFVHYVNlemQ5U1BxeDl6S2dWdk03NVVUMU1B?oc=5",
+     "url": "https://www.wsmv.com/2026/10/22/country-music-association-announces-1-million-donation-dolly-partons-imagination-library/",
      "ts": "2026-10-22T16:30:00+00:00",
      "signal": "Wikipedia: 34K reads yesterday (Dolly Parton)",
      "near": null,
-     "line": "The Country Music Association is donating one million dollars to Dolly Parton's Imagination Library.",
+     "line": "The Country Music Association is giving one million dollars to Dolly Parton's Imagination Library. That's a lot of bedtime stories.",
      "city": "",
-     "added": "2026-10-23"
+     "added": "2026-10-23",
+     "gn_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPbWZkemZ4aE9IZ0hpTTNacWpBYkRuQ1E1OXRTcXFxOXB0WGllR2NOenF3a3JTZHVzVXFCdVlVbmlQdTd1Z3BkX281azdHWkVvUzVMaDFEbGFZenZnMmRhZ0lNTk9mel9ERHBheEhzbGh6d3NpaWJ4TTVrZUxtQWs2UEtaeVpVeWlNOThRRUFFcnRjWTZUcjZqZ096OHBpTjI2SzVfTFVHYVNlemQ5U1BxeDl6S2dWdk03NVVUMU1B?oc=5"
     },
     {
      "id": "M2a5616",
      "title": "Zach Top Brings His Sold-Out Red Rocks Shows to the Drive-In for New Concert Film",
      "source": "That Eric Alper",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZHNnNVdSbDVDVjRnaFF6eHdHSlJCOEx6dUdGUjEyQkJ0NE9iUzVVbVZWbFZnNzl1ZllXZ0h6b3A5eUJ1NG1OeWcwUWlwYWVPa2NoODNyZkF6M3ZuSmpjVnRIY3ZXakk4UUdoY2xvX1BJTXdmNUJJSndJdkFJYWRJd2ZOLVB1Y2kyY0ZvQXlGa0J3QW9feEE3Z25XNWllV0lnLXlFUWE1ZEVadHM3LTduUWNINUxQM2xmcHlLdGV3bHU?oc=5",
+     "url": "https://www.thatericalper.com/2026/10/22/zach-top-brings-his-sold-out-red-rocks-shows-to-the-drive-in-for-new-concert-film/",
      "ts": "2026-10-23T00:14:19+00:00",
      "signal": "Zach Top: #14 on Country Airplay",
      "near": null,
-     "line": "Zach Top is bringing his sold-out Red Rocks shows to drive-in theaters as a new concert film.",
+     "line": "Zach Top is bringing his sold-out Red Rocks shows to drive-in theaters as a concert film. Pass the popcorn and the cowboy hat.",
      "city": "",
-     "added": "2026-10-23"
+     "added": "2026-10-23",
+     "gn_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZHNnNVdSbDVDVjRnaFF6eHdHSlJCOEx6dUdGUjEyQkJ0NE9iUzVVbVZWbFZnNzl1ZllXZ0h6b3A5eUJ1NG1OeWcwUWlwYWVPa2NoODNyZkF6M3ZuSmpjVnRIY3ZXakk4UUdoY2xvX1BJTXdmNUJJSndJdkFJYWRJd2ZOLVB1Y2kyY0ZvQXlGa0J3QW9feEE3Z25XNWllV0lnLXlFUWE1ZEVadHM3LTduUWNINUxQM2xmcHlLdGV3bHU?oc=5"
     },
     {
      "id": "M879554",
@@ -753,7 +755,7 @@ window.KJEL_BUZZ = {
      "ts": "2026-10-23T11:49:24+00:00",
      "signal": "Kacey Musgraves: #38 on Country Airplay",
      "near": null,
-     "line": "Kacey Musgraves announced Middle of Nowhere Volume 2: Tex Mex Tapes and previewed it with two new songs, Weekend in Texas and Mi Tesoro.",
+     "line": "Kacey Musgraves announced Middle of Nowhere Volume 2: Tex Mex Tapes and previewed two new songs, Weekend in Texas and Mi Tesoro. Queso not included.",
      "city": "",
      "added": "2026-10-23"
     },
@@ -761,13 +763,14 @@ window.KJEL_BUZZ = {
      "id": "Ma86556",
      "title": "Lainey Wilson Joins Marty Stuart for Unveiling of \"Wildflowers and Wild Horses\" Mural in Downtown Philadelphia, Mississippi",
      "source": "Morningstar",
-     "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOSG12T2Q5b1d6dG5iU3V1QWc2a256RnB3UXRCSG1WeU5Vc09zeGhoMmtmVnNjOTZfc005dmlFa3IxdVZfWlZrY3ozQU9JZDZnLUtPb3QtemdWSXNhcXBxYnl1cWVIWng3Ym1ZbXBtZHpnR2Q1ejhiTHZ0dnFjV3R3SlN2NUhiVjk1MFQyQXptOU1ZbEFvNDlaZ3VYZkpfN28tSGxTWGRELWpyV3FZdkw2bFVfVFE1QW1aTFoyYUxZYzVOTUJiSDJQVGxmck1DTGFQa1huN29BbHBDVXUwcVFQYzJINGRTTzVKVUZ3cEJjWnVmT2ZGT2NkR29uTGNMZjQtdlJGNXJ2UURJMDJXNUE?oc=5",
+     "url": "https://www.morningstar.com/news/pr-newswire/20261022cl79233/lainey-wilson-joins-marty-stuart-for-unveiling-of-wildflowers-and-wild-horses-mural-in-downtown-philadelphia-mississippi",
      "ts": "2026-10-22T17:53:00+00:00",
      "signal": "Lainey Wilson: #13 on Country Airplay",
      "near": null,
-     "line": "Lainey Wilson joined Marty Stuart to unveil a mural called Wildflowers and Wild Horses in downtown Philadelphia, Mississippi.",
+     "line": "Lainey Wilson and Marty Stuart unveiled a Wildflowers and Wild Horses mural in downtown Philadelphia, Mississippi. Bell-bottoms in paint form.",
      "city": "Philadelphia, Miss.",
-     "added": "2026-10-23"
+     "added": "2026-10-23",
+     "gn_url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOSG12T2Q5b1d6dG5iU3V1QWc2a256RnB3UXRCSG1WeU5Vc09zeGhoMmtmVnNjOTZfc005dmlFa3IxdVZfWlZrY3ozQU9JZDZnLUtPb3QtemdWSXNhcXBxYnl1cWVIWng3Ym1ZbXBtZHpnR2Q1ejhiTHZ0dnFjV3R3SlN2NUhiVjk1MFQyQXptOU1ZbEFvNDlaZ3VYZkpfN28tSGxTWGRELWpyV3FZdkw2bFVfVFE1QW1aTFoyYUxZYzVOTUJiSDJQVGxmck1DTGFQa1huN29BbHBDVXUwcVFQYzJINGRTTzVKVUZ3cEJjWnVmT2ZGT2NkR29uTGNMZjQtdlJGNXJ2UURJMDJXNUE?oc=5"
     },
     {
      "id": "Mc65b87",
@@ -777,7 +780,7 @@ window.KJEL_BUZZ = {
      "ts": "2026-10-21T16:19:48+00:00",
      "signal": "Ella Langley: #2 on Country Airplay",
      "near": null,
-     "line": "Ella Langley cast singer Kaitlin Butts as the mean girl in her Choosin' Texas video because she knew Butts would be good at it.",
+     "line": "Ella Langley cast singer Kaitlin Butts as the mean girl in her Choosin' Texas video because she knew Butts would nail it. Acting range, unlocked.",
      "city": "",
      "added": "2026-10-21"
     },
@@ -785,13 +788,14 @@ window.KJEL_BUZZ = {
      "id": "M81f7b6",
      "title": "New Country Music Hall Of Fame Inductions: Tim McGraw, Paul Overstreet and The Stanley Brothers",
      "source": "WKRN News 2",
-     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOb205aVVJTmhUSThpbm5GbHN0NGJPMmdEdXhuXy02QXk4M25RX0R6T0pZc2QwN21XNW5jZWw1SDI4dEFQSUp4WEdETmZ4RUJqeE1zWWJ1anRIbk9uZkkzQkJMRG0yYUVOS3Q2TWxxVXIwd2txbC1INGNCRE9zWnNUZEROaXJoMXg5ZFJwU01GcVY3Z3NBUHFWX1lQX2toaS1nS3ota19jUURfUmI4VWtwU2xPOFZfNHVTOWJYSVVGaWpwR1BNSjNxNndR?oc=5",
+     "url": "https://www.wkrn.com/video/new-country-music-hall-of-fame-inductions-tim-mcgraw-paul-overstreet-and-the-stanley-brothers/12282337/",
      "ts": "2026-10-21T14:40:46+00:00",
      "signal": "",
      "near": null,
-     "line": "Tim McGraw, Paul Overstreet and the Stanley Brothers are the newest members of the Country Music Hall of Fame.",
+     "line": "Tim McGraw, Paul Overstreet and the Stanley Brothers are the newest members of the Country Music Hall of Fame in Nashville. Clear some wall space.",
      "city": "Nashville",
-     "added": "2026-10-21"
+     "added": "2026-10-21",
+     "gn_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOb205aVVJTmhUSThpbm5GbHN0NGJPMmdEdXhuXy02QXk4M25RX0R6T0pZc2QwN21XNW5jZWw1SDI4dEFQSUp4WEdETmZ4RUJqeE1zWWJ1anRIbk9uZkkzQkJMRG0yYUVOS3Q2TWxxVXIwd2txbC1INGNCRE9zWnNUZEROaXJoMXg5ZFJwU01GcVY3Z3NBUHFWX1lQX2toaS1nS3ota19jUURfUmI4VWtwU2xPOFZfNHVTOWJYSVVGaWpwR1BNSjNxNndR?oc=5"
     },
     {
      "id": "Ma7c2de",
@@ -801,7 +805,7 @@ window.KJEL_BUZZ = {
      "ts": "2026-10-21T15:43:28+00:00",
      "signal": "",
      "near": null,
-     "line": "Kip Moore has released a new song, The Wolf, for the soundtrack of the Prime Video series The Terminal List.",
+     "line": "Kip Moore released The Wolf, a new song for the Prime Video series The Terminal List. Howl along.",
      "city": "",
      "added": "2026-10-21"
     },
@@ -809,13 +813,14 @@ window.KJEL_BUZZ = {
      "id": "M389478",
      "title": "How John Osborne's childhood bully inspired Brothers Osborne's 'Tough Kid' | Exclusive",
      "source": "Shelby Star",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQM21DeHZKaUFLUThTbmdlSDlhYUJlOHMwWjBzazdRS3JtUkh5aHBVZFN2UXhybFJMQXIyYnpUcXFrRFM1RlBhejdmdmFhdkFhUGR5Szc0SHVKTWcteFZxT1hadkhZSzJYTDkxY1NBTElLcVc2RzN5Y2RrYWVfRWxFS1FfWkZlOFdMYjB5ZFotcG80MkVjN3ZTWFlFM2VWWlFzU0FpWkhoYTJDUGJsVFN3Tl9ycy1SZ3lhNHJVeUFibWQ?oc=5",
+     "url": "https://www.shelbystar.com/story/entertainment/music/2026/10/20/brothers-osborne-country-music-watertown-album/92332613007/",
      "ts": "2026-10-20T20:27:00+00:00",
      "signal": "Carried by 3 outlets",
      "near": null,
-     "line": "John Osborne says a childhood bully inspired the Brothers Osborne song Tough Kid.",
+     "line": "John Osborne says a childhood bully inspired the Brothers Osborne song Tough Kid. Revenge is a hit single.",
      "city": "",
-     "added": "2026-10-21"
+     "added": "2026-10-21",
+     "gn_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQM21DeHZKaUFLUThTbmdlSDlhYUJlOHMwWjBzazdRS3JtUkh5aHBVZFN2UXhybFJMQXIyYnpUcXFrRFM1RlBhejdmdmFhdkFhUGR5Szc0SHVKTWcteFZxT1hadkhZSzJYTDkxY1NBTElLcVc2RzN5Y2RrYWVfRWxFS1FfWkZlOFdMYjB5ZFotcG80MkVjN3ZTWFlFM2VWWlFzU0FpWkhoYTJDUGJsVFN3Tl9ycy1SZ3lhNHJVeUFibWQ?oc=5"
     },
     {
      "id": "M7a69b8",
@@ -825,7 +830,7 @@ window.KJEL_BUZZ = {
      "ts": "2026-10-19T22:57:28+00:00",
      "signal": "Morgan Wallen: #3 on Country Airplay",
      "near": null,
-     "line": "Morgan Wallen's Sand in My Boots festival is heading back to Gulf Shores, Alabama, in 2027 after a year away, mixing country heavyweights with artists from other genres.",
+     "line": "Morgan Wallen's Sand in My Boots festival returns to Gulf Shores, Alabama, in 2027 after a year off. Pack the sunscreen early.",
      "city": "Gulf Shores, Ala.",
      "added": "2026-10-21"
     },
@@ -837,7 +842,7 @@ window.KJEL_BUZZ = {
      "ts": "2026-10-21T14:41:26+00:00",
      "signal": "",
      "near": null,
-     "line": "Chris Stapleton now has a second song with one billion Spotify streams, You Should Probably Leave, joining elite company.",
+     "line": "Chris Stapleton's You Should Probably Leave just passed one billion Spotify streams, his second song to do it. Nobody's leaving yet.",
      "city": "",
      "added": "2026-10-21"
     },
@@ -849,7 +854,7 @@ window.KJEL_BUZZ = {
      "ts": "2026-10-21T15:24:18+00:00",
      "signal": "",
      "near": null,
-     "line": "Zach Bryan, who just turned 30 and reportedly sold his song catalog for 350 million dollars, has released an eight-song EP called Young Manhood and Other Donatable Organs to go with a book about his life.",
+     "line": "Zach Bryan, who just turned 30 and reportedly sold his song catalog for 350 million dollars, released an eight-song EP, Young Manhood and Other Donatable Organs, to go with a book about his life. That title is a mouthful.",
      "city": "",
      "added": "2026-10-21"
     },
@@ -861,7 +866,7 @@ window.KJEL_BUZZ = {
      "ts": "2026-10-21T13:02:52+00:00",
      "signal": "",
      "near": null,
-     "line": "Jordan Davis has a new radio single called Mess, and he told Billboard the melody locked him in right away.",
+     "line": "Jordan Davis' new radio single is called Mess, and he told Billboard the melody locked him in right away. Best mess he ever made.",
      "city": "",
      "added": "2026-10-21"
     },
@@ -869,25 +874,27 @@ window.KJEL_BUZZ = {
      "id": "M81e232",
      "title": "Luke Combs extends record with 23rd consecutive No. 1 for ‘Be By You’",
      "source": "Big Country News |",
-     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVURWbHVjQ25BcHJXTDdUbGI5NTBpRkUyS0FhOGlUZlkyeEtaYnAydFRPNElIX3VJRFdraENkenYzNUtZZFVEMWRka1ZxTFFWT2pyd042bHR2ZlRZeXBRdnBQUmYyVHd1bDJYTGFPVDMzNThvVW9xTTdfY0NGWWNtUUtWVEViNi1td2RwaGlCSGt3VUZDRnBKWEotUDlqMjdYUTR3YnpueWU2WDky?oc=5",
+     "url": "https://www.bigcountrynewsconnection.com/luke-combs-extends-record-with-23rd-consecutive-no-1-for-be-by-you/",
      "ts": "2026-10-21T10:21:34+00:00",
      "signal": "Luke Combs: #9 on Country Airplay",
      "near": null,
-     "line": "Luke Combs has extended his record with his 23rd straight number one song on country radio, 'Be By You.'",
+     "line": "Luke Combs extended his record with his 23rd straight number one on country radio, Be By You. At this point, just give him the chart.",
      "city": "",
-     "added": "2026-10-21"
+     "added": "2026-10-21",
+     "gn_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVURWbHVjQ25BcHJXTDdUbGI5NTBpRkUyS0FhOGlUZlkyeEtaYnAydFRPNElIX3VJRFdraENkenYzNUtZZFVEMWRka1ZxTFFWT2pyd042bHR2ZlRZeXBRdnBQUmYyVHd1bDJYTGFPVDMzNThvVW9xTTdfY0NGWWNtUUtWVEViNi1td2RwaGlCSGt3VUZDRnBKWEotUDlqMjdYUTR3YnpueWU2WDky?oc=5"
     },
     {
      "id": "M2e4c9d",
      "title": "Bo Bryan, son of country music star Luke Bryan, picks up offer from Georgia",
      "source": "USA Today",
-     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSTJhTVRvU2JDaHR5MXFTVnhJX0VCTDF0VHZRSXpDaVJVSzhkWGljLXdvamhZVzNNTDdmX0lqMUpqMm0yUGp6MHZ0dVZlSmdsRWFkdXhvWVVMLU5CZ092dG1TNWJfZHdGZUVONThHSV84a0NKQXp1STZHMjhiN3ByUlpNZlZtRm9ZZ1QwYlYwY0pCWXJLcW5TcFhBcmlKUGJwRUZGckVfMG1tY0xxUDY2TW05OXFBTkFOal9vRlpzMGlfd1JKbjJfR3ZjMGx1X1VmT1VOYVN6cw?oc=5",
+     "url": "https://www.usatoday.com/story/sports/high-school/football/2026/10/20/bo-bryan-picks-up-offer-from-kirby-smart-georgia-bulldogs/92353042007/",
      "ts": "2026-10-20T23:09:00+00:00",
      "signal": "Luke Bryan: #8 on Country Airplay",
      "near": null,
-     "line": "Bo Bryan, son of country star Luke Bryan and a 2027 quarterback recruit, has picked up a scholarship offer from the University of Georgia.",
+     "line": "Bo Bryan, Luke Bryan's son and a 2027 quarterback recruit, got a scholarship offer from the University of Georgia. Dad's tailgate plans are set.",
      "city": "",
-     "added": "2026-10-21"
+     "added": "2026-10-21",
+     "gn_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSTJhTVRvU2JDaHR5MXFTVnhJX0VCTDF0VHZRSXpDaVJVSzhkWGljLXdvamhZVzNNTDdmX0lqMUpqMm0yUGp6MHZ0dVZlSmdsRWFkdXhvWVVMLU5CZ092dG1TNWJfZHdGZUVONThHSV84a0NKQXp1STZHMjhiN3ByUlpNZlZtRm9ZZ1QwYlYwY0pCWXJLcW5TcFhBcmlKUGJwRUZGckVfMG1tY0xxUDY2TW05OXFBTkFOal9vRlpzMGlfd1JKbjJfR3ZjMGx1X1VmT1VOYVN6cw?oc=5"
     },
     {
      "id": "Md295a0",
@@ -897,7 +904,7 @@ window.KJEL_BUZZ = {
      "ts": "2026-10-20T16:04:01+00:00",
      "signal": "Riley Green: #12 on Country Airplay",
      "near": null,
-     "line": "Riley Green says he wants to be a dad, and he pictures fatherhood with camo, hunting trips and plenty of new songs down the line.",
+     "line": "Riley Green says he wants to be a dad and pictures camo, hunting trips and plenty of new songs. Baby's first tree stand.",
      "city": "",
      "added": "2026-10-21"
     },
@@ -905,25 +912,27 @@ window.KJEL_BUZZ = {
      "id": "Me42a93",
      "title": "Cole Swindell turns family memories into new single ‘Bronco’",
      "source": "Big Country News |",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVm5EMWluMnlvaGNkV2NFbk1leTZZblFHVkpyUFF1M3ZBVHBRSGg4YklGSTZRbC10TkkyMDNJSEpoZS02Q1U3djRZRGV4OHM4WlVNQXpneHJGU3lBUkhqX3M2NWxnTEEwdk9JX3lSSlJzcnN2SjBiVF9WV0hZeWpvVEJzZVl0dFJkczJ3WlRKdllmLXF0OVV0bE9WS0tiT3dPQkE?oc=5",
+     "url": "https://www.bigcountrynewsconnection.com/cole-swindell-turns-family-memories-into-new-single-bronco/",
      "ts": "2026-10-21T10:21:37+00:00",
      "signal": "Cole Swindell: #40 on Country Airplay",
      "near": null,
-     "line": "Cole Swindell has turned family memories into his new single, 'Bronco.'",
+     "line": "Cole Swindell turned family memories into his new single, Bronco. Every family has a Bronco story.",
      "city": "",
-     "added": "2026-10-21"
+     "added": "2026-10-21",
+     "gn_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVm5EMWluMnlvaGNkV2NFbk1leTZZblFHVkpyUFF1M3ZBVHBRSGg4YklGSTZRbC10TkkyMDNJSEpoZS02Q1U3djRZRGV4OHM4WlVNQXpneHJGU3lBUkhqX3M2NWxnTEEwdk9JX3lSSlJzcnN2SjBiVF9WV0hZeWpvVEJzZVl0dFJkczJ3WlRKdllmLXF0OVV0bE9WS0tiT3dPQkE?oc=5"
     },
     {
      "id": "M770322",
      "title": "Brooks & Dunn Celebrate 35 Years of ‘Brand New Man’ With Surprise Nashville Show",
      "source": "That Eric Alper",
-     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRk9PX01Pd1lxWDViTGktRUhJR1dfTTJuQ1gzMlNOdnVOOFlJRDl4MWRQSEUzSi1EdzRORl91d1NORmhOLXhqWDIyelBHVEhvRGlUSUR0WHlKTXpSTFJ2X1lPSDRBY3lUZVgxZHk4TTAyYmsxYU1weDJ0eGZvTDY5OG5HZzctbm5Hel9wcy1hS3YwNzFBbGNRWjhCWTFvZ3lSa19FZ3V4ZWpXODNoOEpjS1Z6cmFmUHUwdVE?oc=5",
+     "url": "https://www.thatericalper.com/2026/10/20/brooks-dunn-celebrate-35-years-of-brand-new-man-with-surprise-nashville-show/",
      "ts": "2026-10-20T16:29:18+00:00",
      "signal": "",
      "near": null,
-     "line": "Brooks and Dunn celebrated 35 years of their 'Brand New Man' album with a surprise show in Nashville.",
+     "line": "Brooks and Dunn played a surprise Nashville show to celebrate 35 years of their Brand New Man album. Not so brand new anymore.",
      "city": "Nashville",
-     "added": "2026-10-21"
+     "added": "2026-10-21",
+     "gn_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRk9PX01Pd1lxWDViTGktRUhJR1dfTTJuQ1gzMlNOdnVOOFlJRDl4MWRQSEUzSi1EdzRORl91d1NORmhOLXhqWDIyelBHVEhvRGlUSUR0WHlKTXpSTFJ2X1lPSDRBY3lUZVgxZHk4TTAyYmsxYU1weDJ0eGZvTDY5OG5HZzctbm5Hel9wcy1hS3YwNzFBbGNRWjhCWTFvZ3lSa19FZ3V4ZWpXODNoOEpjS1Z6cmFmUHUwdVE?oc=5"
     },
     {
      "id": "Md358cf",
@@ -933,7 +942,7 @@ window.KJEL_BUZZ = {
      "ts": "2026-10-20T15:06:33+00:00",
      "signal": "",
      "near": null,
-     "line": "Emily Ann Roberts is heading out on her first-ever headlining run, 'The Thread Tour,' hitting 23 cities in the spring of 2027.",
+     "line": "Emily Ann Roberts launches her first headlining run, The Thread Tour, hitting 23 cities in spring 2027. Sew far, sew good.",
      "city": "",
      "added": "2026-10-21"
     },
@@ -945,7 +954,7 @@ window.KJEL_BUZZ = {
      "ts": "2026-10-20T19:24:16+00:00",
      "signal": "",
      "near": null,
-     "line": "The two-hour Dolly Parton tribute special, 'CMA Presents I Will Always Love You,' is coming to TV with a lineup of country stars paying tribute.",
+     "line": "CMA Presents I Will Always Love You, a two-hour Dolly Parton tribute special starring country's biggest names, is coming to TV. Clear the DVR.",
      "city": "",
      "added": "2026-10-21"
     },
@@ -957,7 +966,7 @@ window.KJEL_BUZZ = {
      "ts": "2026-10-20T18:45:35+00:00",
      "signal": "",
      "near": null,
-     "line": "Little Big Town, HARDY and the Red Clay Strays will lead 'New Year's Eve Live: Nashville's Big Bash' on December 31 on CBS and Paramount Plus.",
+     "line": "Little Big Town, HARDY and the Red Clay Strays lead New Year's Eve Live: Nashville's Big Bash Dec. 31 on CBS and Paramount Plus. Staying up till midnight just got easier.",
      "city": "Nashville",
      "added": "2026-10-21"
     },
@@ -965,61 +974,66 @@ window.KJEL_BUZZ = {
      "id": "M26953f",
      "title": "Blake Shelton, Rascal Flatts, Brad Paisley to Lead VOA Fest 2026",
      "source": "TicketNews",
-     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNYkpHRVEwOW5waFBZTHVjUUcwYzhLQktQNF9RQzdYS0ZrUk9KY2NkU3RwMXFUalhZUXB0NVZ4ZEF6dXRkUmZiaUpHQTA3czFFU2hWSGRlQVZGRDl1bEVHU2VhWm5raUQ4d3ZFTXUyR1J1WFNSMUxYTmZOQWk2S2NRdDliQUtibUxyX3AyYlhBeW40eFBV?oc=5",
+     "url": "https://www.ticketnews.com/2026/02/blake-shelton-rascal-flatts-brad-paisley-voa-fest-2026/",
      "ts": "2026-10-20T17:29:23+00:00",
      "signal": "Blake Shelton: #22 on Country Airplay",
      "near": null,
-     "line": "Blake Shelton, Rascal Flatts and Brad Paisley will headline VOA Fest 2026.",
+     "line": "Blake Shelton, Rascal Flatts and Brad Paisley will headline VOA Fest 2026. That's a lot of cowboy hats.",
      "city": "",
-     "added": "2026-10-21"
+     "added": "2026-10-21",
+     "gn_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNYkpHRVEwOW5waFBZTHVjUUcwYzhLQktQNF9RQzdYS0ZrUk9KY2NkU3RwMXFUalhZUXB0NVZ4ZEF6dXRkUmZiaUpHQTA3czFFU2hWSGRlQVZGRDl1bEVHU2VhWm5raUQ4d3ZFTXUyR1J1WFNSMUxYTmZOQWk2S2NRdDliQUtibUxyX3AyYlhBeW40eFBV?oc=5"
     },
     {
      "id": "Md8aa53",
      "title": "Emmy Award-Winning Duo The War and Treaty to Receive Inaugural Origins Vanguard Award at 2026 Origins Impact Awards",
      "source": "BlackNews.com",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNdnlRY2lYQlA2bU1kb3MzSldKZy0taFNrUWNscXliY2lFY0JoOGpnbERvT3otdEZrOWgteWh3bXRsODJPRVdqN2NIZF9oNG5UaXh4TXdEREptZ3I3T3FLZXZWcUIta2NrWlJqMklqMlJxX0JrV2JIdTNfelVfbW9wcVprb3ItbE5ER0hqcTRSVFU5YllVeHFjTTdFTEh2ZURvUC0yTW9CZE0wNm94STFwR2tJYUFxa191Mm5jZGZEMjJhdHVZLVpLTW5KRXVPd9IB0wFBVV95cUxQSHM5VVkwWnRWOFNxa0JGNXNfVzF6MjNaYl90dnhoUnU5bFltc255YUtJbDFKLV9oNlduZktaWGJzRkRVMUs1V1lCS0tfeUZWb040TGZ6N21pRGNaaEo3RjlzODI2UUJuV1p0Y2VSdU9yeXpSaDUzZzI5ZFZOMTdGMFhyejhtQ3VBa3k3TlpWYVdELTJkNkNtdXV4Z0RsbDFWWFhHUXdVeDhWYUwtUWQzcFBzckxOUFlfc2lNSEhIZGtJUzZlVWxKeUJLbDJqaktHejFR?oc=5",
+     "url": "https://blacknews.com/news/emmy-award-winning-duo-war-and-treaty-receive-inaugural-origins-vanguard-award-2026-origins-impact-awards/",
      "ts": "2026-10-21T06:22:31+00:00",
      "signal": "",
      "near": null,
-     "line": "Emmy-winning duo The War and Treaty will receive the first-ever Origins Vanguard Award at the 2026 Origins Impact Awards.",
+     "line": "Emmy-winning duo The War and Treaty will get the first-ever Origins Vanguard Award at the 2026 Origins Impact Awards. Clear a spot on the shelf.",
      "city": "",
-     "added": "2026-10-21"
+     "added": "2026-10-21",
+     "gn_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNdnlRY2lYQlA2bU1kb3MzSldKZy0taFNrUWNscXliY2lFY0JoOGpnbERvT3otdEZrOWgteWh3bXRsODJPRVdqN2NIZF9oNG5UaXh4TXdEREptZ3I3T3FLZXZWcUIta2NrWlJqMklqMlJxX0JrV2JIdTNfelVfbW9wcVprb3ItbE5ER0hqcTRSVFU5YllVeHFjTTdFTEh2ZURvUC0yTW9CZE0wNm94STFwR2tJYUFxa191Mm5jZGZEMjJhdHVZLVpLTW5KRXVPd9IB0wFBVV95cUxQSHM5VVkwWnRWOFNxa0JGNXNfVzF6MjNaYl90dnhoUnU5bFltc255YUtJbDFKLV9oNlduZktaWGJzRkRVMUs1V1lCS0tfeUZWb040TGZ6N21pRGNaaEo3RjlzODI2UUJuV1p0Y2VSdU9yeXpSaDUzZzI5ZFZOMTdGMFhyejhtQ3VBa3k3TlpWYVdELTJkNkNtdXV4Z0RsbDFWWFhHUXdVeDhWYUwtUWQzcFBzckxOUFlfc2lNSEhIZGtJUzZlVWxKeUJLbDJqaktHejFR?oc=5"
     },
     {
      "id": "Mda165c",
      "title": "Zach Top Expands ‘Cold Beer & Country Music’ Tour",
      "source": "TicketNews",
-     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVkgwZmtVN1hSazRZUE4xQzBxVEFLNElqZmRtdE5xQ01RdGk5dXdWbzNaTlBRdmZWcG8wTzhnQmI5OWg1RHRuUjBRaklaMFV2b3VpZDFpNHlaNjhWSVhPWmxRcDFpZXVPOUFSM3VDNTIyRmdBQktmM3hKNkFxMXpheVZoTU5EU0pC?oc=5",
+     "url": "https://www.ticketnews.com/2026/04/zach-top-expands-cold-beer-country-music-tour/",
      "ts": "2026-10-19T20:55:11+00:00",
      "signal": "Zach Top: #14 on Country Airplay",
      "near": null,
-     "line": "Zach Top is expanding his Cold Beer and Country Music Tour with more shows.",
+     "line": "Zach Top is adding more shows to his Cold Beer and Country Music Tour. The title says it all.",
      "city": "",
-     "added": "2026-10-20"
+     "added": "2026-10-20",
+     "gn_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVkgwZmtVN1hSazRZUE4xQzBxVEFLNElqZmRtdE5xQ01RdGk5dXdWbzNaTlBRdmZWcG8wTzhnQmI5OWg1RHRuUjBRaklaMFV2b3VpZDFpNHlaNjhWSVhPWmxRcDFpZXVPOUFSM3VDNTIyRmdBQktmM3hKNkFxMXpheVZoTU5EU0pC?oc=5"
     },
     {
      "id": "Mfd8efe",
      "title": "On This Day in 2023, Luke Combs Hit No. 1 With a Cover That Helped a Folk Legend Make Country Music History",
      "source": "American Songwriter",
-     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZEoxWHktclVyRUhTejBiN1Fzd1U3Y1FkSnVEWklETzBQc0FsVkphQUg1b2ZYd2pRdlg4ZUVhWkx2eHhQeHNSSVlrMXZFZGR3YnpORk81dGIzUkxra1cwcHZtTVJDa01uMFpmbmFVWE1RQWJBTk16d29UUXJyZi1IeGt5dUM3bWc4N19vdlIwX2RSSnlrbXZhUk1PRkMwdHdPa29RbnJDc3NLMFdrbjFzZXV0SXc2dld6VzdDTUpmbGZMUExkUkdINmd4YURGbzYzczBr?oc=5",
+     "url": "https://americansongwriter.com/on-this-day-in-2023-luke-combs-hit-no-1-with-a-cover-that-helped-a-folk-legend-make-country-music-history/",
      "ts": "2026-10-19T20:45:00+00:00",
      "signal": "Luke Combs: #9 on Country Airplay",
      "near": null,
-     "line": "On this day in 2023, Luke Combs hit number one with a cover song that helped a folk legend make country music history.",
+     "line": "On this day in 2023, Luke Combs hit number one with a cover song that helped a folk legend make country music history. Good covers never go out of style.",
      "city": "",
-     "added": "2026-10-20"
+     "added": "2026-10-20",
+     "gn_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZEoxWHktclVyRUhTejBiN1Fzd1U3Y1FkSnVEWklETzBQc0FsVkphQUg1b2ZYd2pRdlg4ZUVhWkx2eHhQeHNSSVlrMXZFZGR3YnpORk81dGIzUkxra1cwcHZtTVJDa01uMFpmbmFVWE1RQWJBTk16d29UUXJyZi1IeGt5dUM3bWc4N19vdlIwX2RSSnlrbXZhUk1PRkMwdHdPa29RbnJDc3NLMFdrbjFzZXV0SXc2dld6VzdDTUpmbGZMUExkUkdINmd4YURGbzYzczBr?oc=5"
     },
     {
      "id": "M836972",
      "title": "Inside Brothers Osborne's new album 'Watertown' | Exclusive",
      "source": "The Tennessean",
-     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNeGdoeUhnM1c2bHJBX0pLVjRUZTlKTGJndmJqcnNOLTRGWFVmS3I2VllGRExSUGg1NWJuVHBjYjl0VUQxRVFYejlvbTVqSzBDcm1uVVVaMmFMd29aaHRpdVpUS09DbUZOblFhTnNhdENzd3llaVA2Q2Z1WnFhenhDVU9iclNhNjZjOEpSZHZnbDhwV2twOVlWZ1Q3REoybDRyN2lHVkp6R2J3SU1DaHZCS0pIYWptaW9JOUlYVGlQRUpnbGM?oc=5",
+     "url": "https://amp.tennessean.com/story/entertainment/music/country/2026/10/20/brothers-osborne-country-music-watertown/92120263007/",
      "ts": "2026-10-20T10:02:00+00:00",
      "signal": "",
      "near": null,
-     "line": "Brothers Osborne have a new album called 'Watertown' on the way.",
+     "line": "Brothers Osborne have a new album, Watertown, on the way. Stay hydrated, folks.",
      "city": "",
-     "added": "2026-10-20"
+     "added": "2026-10-20",
+     "gn_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNeGdoeUhnM1c2bHJBX0pLVjRUZTlKTGJndmJqcnNOLTRGWFVmS3I2VllGRExSUGg1NWJuVHBjYjl0VUQxRVFYejlvbTVqSzBDcm1uVVVaMmFMd29aaHRpdVpUS09DbUZOblFhTnNhdENzd3llaVA2Q2Z1WnFhenhDVU9iclNhNjZjOEpSZHZnbDhwV2twOVlWZ1Q3REoybDRyN2lHVkp6R2J3SU1DaHZCS0pIYWptaW9JOUlYVGlQRUpnbGM?oc=5"
     }
    ]
   },
@@ -1051,7 +1065,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-23",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "It isn't actually a pie but a cake, first whipped up in 1856 by a French chef at Boston's Parker House Hotel.",
+     "line": "It isn't actually a pie but a cake, first whipped up in 1856 by a French chef at Boston's Parker House Hotel. Nobody tell the pie.",
      "city": "",
      "label": ""
     },
@@ -1079,7 +1093,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-23",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "It's about chemistry, not the critter, and it runs from 6:02 in the morning to 6:02 at night to honor Avogadro's number, 6.02 times ten to the 23rd.",
+     "line": "It's about chemistry, not the critter, and it runs from 6:02 in the morning to 6:02 at night to honor Avogadro's number, 6.02 times ten to the 23rd. The nerdiest clock-in ever.",
      "city": "",
      "label": ""
     },
@@ -1107,7 +1121,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-23",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "A fan made the day up, and in 2018 Crocs released a limited-edition gold-foiled clog for it that sold out within hours.",
+     "line": "A fan made the day up, and in 2018 Crocs released a limited-edition gold-foiled clog for it that sold out within hours. Fancy Crocs, the height of fashion.",
      "city": "",
      "label": ""
     },
@@ -1135,7 +1149,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-23",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "In 1795, France offered a 12,000-franc prize for a way to preserve food, and chef Nicolas Appert came up with heating it and sealing it in airtight glass jars.",
+     "line": "In 1795, France offered a 12,000-franc prize for a way to preserve food, and chef Nicolas Appert came up with heating it and sealing it in airtight glass jars. Grandma's pantry owes him big.",
      "city": "",
      "label": ""
     },
@@ -1163,7 +1177,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-23",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "It falls on Johnny Carson's birthday, the King of Late Night who hosted The Tonight Show from 1962 until 1992.",
+     "line": "It falls on Johnny Carson's birthday, the King of Late Night who hosted The Tonight Show from 1962 until 1992. Heeere's Johnny.",
      "city": "",
      "label": ""
     },
@@ -1191,7 +1205,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-24",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "One famous kind is Lebanon bologna, though it comes from Lebanon, Pennsylvania, where two companies have made it since the late 1800s.",
+     "line": "One famous kind is Lebanon bologna, though it comes from Lebanon, Pennsylvania, where two companies have made it since the late 1800s. Sorry, Lebanon, Missouri.",
      "city": "",
      "label": ""
     },
@@ -1219,7 +1233,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-24",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "Those pink and white candy-coated licorice pieces are the oldest candy brand made in the United States, first produced in Philadelphia in 1893.",
+     "line": "Those pink and white candy-coated licorice pieces are the oldest candy brand made in the United States, first produced in Philadelphia in 1893. Still the movie candy nobody shares.",
      "city": "",
      "label": ""
     },
@@ -1247,7 +1261,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-24",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "It's promoted by a tongue-in-cheek website called the Tripe Marketing Board, and the date comes from a 1662 diary entry where Samuel Pepys raved about a dish of tripe.",
+     "line": "It's promoted by a tongue-in-cheek website called the Tripe Marketing Board, and the date comes from a 1662 diary entry where Samuel Pepys raved about a dish of tripe. One fan, 364 years later.",
      "city": "",
      "label": ""
     },
@@ -1275,7 +1289,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-24",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "It marks the day in 1938 when the law creating the 40-hour work week took effect, and that same law set the minimum wage at 25 cents.",
+     "line": "It marks the day in 1938 when the law creating the 40-hour work week took effect, and that same law set the minimum wage at 25 cents. Ask for that raise.",
      "city": "",
      "label": ""
     },
@@ -1303,7 +1317,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-24",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "It started in 1975 as an Earth Day for food, and when it came back in 2011, more than 2,300 events were held across the country.",
+     "line": "It started in 1975 as an Earth Day for food, and when it came back in 2011, more than 2,300 events were held across the country. Everybody brought a casserole.",
      "city": "",
      "label": ""
     },
@@ -1331,7 +1345,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-24",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "The whole idea is to break your normal routine and do things a little differently, and it counts as a success if you make somebody laugh.",
+     "line": "The whole idea is to break your normal routine and do things a little differently, and it counts as a success if you make somebody laugh. So, a normal Friday.",
      "city": "",
      "label": ""
     },
@@ -1359,7 +1373,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-25",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "A Michigan man created it to honor his old roommate on his birthday, and the roommate's last name was Sauer.",
+     "line": "A Michigan man created it to honor his old roommate on his birthday, and the roommate's last name was Sauer. Some friendships come with a pucker.",
      "city": "",
      "label": ""
     },
@@ -1387,7 +1401,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-25",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "The official advice for celebrating: when in doubt, just deep fry any food you have.",
+     "line": "The official advice for celebrating: when in doubt, just deep fry any food you have. Doctors hate this one trick.",
      "city": "",
      "label": ""
     },
@@ -1415,7 +1429,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-25",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "Pizza started in Naples in the late 1700s as cheap flatbread for working people, back when Naples was its own kingdom and not part of Italy.",
+     "line": "Pizza started in Naples in the late 1700s as cheap flatbread for working people, back when Naples was its own kingdom and not part of Italy. A kingdom built on crust.",
      "city": "",
      "label": ""
     },
@@ -1443,7 +1457,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-25",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "Holidays for mothers-in-law go back to at least the early 1920s, but it didn't land on the fourth Sunday in October until the mid-1970s.",
+     "line": "Holidays for mothers-in-law go back to at least the early 1920s, but it didn't land on the fourth Sunday in October until the mid-1970s. Call her. Seriously.",
      "city": "",
      "label": ""
     },
@@ -1471,7 +1485,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-25",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "It started at the first World Pasta Congress in Rome in 1995, where countries agreed to team up and get the whole world eating more pasta.",
+     "line": "It started at the first World Pasta Congress in Rome in 1995, where countries agreed to team up and get the whole world eating more pasta. Best treaty ever signed.",
      "city": "",
      "label": ""
     },
@@ -1499,7 +1513,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-25",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "You're supposed to dress up like a punk rocker and crank up punk music, the sound born in the 1970s with bands like the Ramones.",
+     "line": "You're supposed to dress up like a punk rocker and crank up punk music, the sound born in the 1970s with bands like the Ramones. Mohawk optional.",
      "city": "",
      "label": ""
     },
@@ -1527,7 +1541,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-26",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "It marks 1785, when the King of Spain sent two donkeys to the United States as a gift, and George Washington used them to breed the first mules of their kind in the country.",
+     "line": "It marks 1785, when the King of Spain sent two donkeys to the United States as a gift, and George Washington used them to breed the first mules of their kind in the country. Stubborn, but loyal.",
      "city": "",
      "label": ""
     },
@@ -1555,7 +1569,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-26",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "A Dallas PR man got turned down by both the state agriculture department and the Texas Beef Council before a state lawmaker who was also in the restaurant business took up his cause.",
+     "line": "A Dallas PR man got turned down by both the state agriculture department and the Texas Beef Council before a state lawmaker who was also in the restaurant business took up his cause. Persistence, with gravy.",
      "city": "",
      "label": ""
     },
@@ -1583,7 +1597,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-26",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "The word pumpkin comes from the Greek word pepon, which means large melon.",
+     "line": "The word pumpkin comes from the Greek word pepon, which means large melon. Pumpkin spice melon latte, anyone?",
      "city": "",
      "label": ""
     },
@@ -1611,7 +1625,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-26",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "Mincemeat traditionally mixes minced meat, fat and fruit, but many modern recipes leave the meat out entirely.",
+     "line": "Mincemeat traditionally mixes minced meat, fat and fruit, but many modern recipes leave the meat out entirely. So it's just mince now.",
      "city": "",
      "label": ""
     },
@@ -1639,7 +1653,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-26",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "The date comes from a 1769 diary entry about writer Samuel Johnson being told of a newly invented machine that drove without horses.",
+     "line": "The date comes from a 1769 diary entry about writer Samuel Johnson being told of a newly invented machine that drove without horses. The horses were thrilled.",
      "city": "",
      "label": ""
     },
@@ -1667,7 +1681,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-27",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "You're supposed to let your cranky co-workers complain all they want today instead of trying to cheer them up.",
+     "line": "You're supposed to let your cranky co-workers complain all they want today instead of trying to cheer them up. You know who you are.",
      "city": "",
      "label": ""
     },
@@ -1695,7 +1709,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-27",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "Potatoes were first grown thousands of years ago in what is now Peru and Bolivia, and Scotch-Irish immigrants brought them to New Hampshire in 1719.",
+     "line": "Potatoes were first grown thousands of years ago in what is now Peru and Bolivia, and Scotch-Irish immigrants brought them to New Hampshire in 1719. Couch potatoes came later.",
      "city": "",
      "label": ""
     },
@@ -1723,7 +1737,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-27",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "It was set up in 1922 and falls on Teddy Roosevelt's birthday.",
+     "line": "It was set up in 1922 and falls on Teddy Roosevelt's birthday. Speak softly and carry a big boat.",
      "city": "",
      "label": ""
     },
@@ -1751,7 +1765,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-27",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "There are 22 types of black cats, and many places waive black cat adoption fees on Black Friday.",
+     "line": "There are 22 types of black cats, and many places waive black cat adoption fees on Black Friday. Best Black Friday deal going.",
      "city": "",
      "label": ""
     },
@@ -1779,7 +1793,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-28",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "The word chocolate traces back to the Aztec word xocolatl, which means bitter water.",
+     "line": "The word chocolate traces back to the Aztec word xocolatl, which means bitter water. Thank goodness for sugar.",
      "city": "",
      "label": ""
     },
@@ -1807,7 +1821,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-28",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "The statue arrived in New York in 1885 packed in 214 crates and had to be put back together before it was dedicated in 1886.",
+     "line": "The statue arrived in New York in 1885 packed in 214 crates and had to be put back together before it was dedicated in 1886. Some assembly required.",
      "city": "",
      "label": ""
     },
@@ -1835,7 +1849,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-28",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "It likely caught on thanks to Euell Gibbons, whose 1962 book was called Stalking the Wild Asparagus.",
+     "line": "It likely caught on thanks to Euell Gibbons, whose 1962 book was called Stalking the Wild Asparagus. The asparagus never saw it coming.",
      "city": "",
      "label": ""
     },
@@ -1863,7 +1877,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-28",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "It honors the first public showing of projected moving pictures, Emile Reynaud's Theatre Optique, in 1892.",
+     "line": "It honors the first public showing of projected moving pictures, Emile Reynaud's Theatre Optique, in 1892. Saturday morning cartoons started somewhere.",
      "city": "",
      "label": ""
     },
@@ -1891,7 +1905,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-28",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "You're encouraged to take your stuffed animals out of storage and bring them everywhere you go for the day.",
+     "line": "You're encouraged to take your stuffed animals out of storage and bring them everywhere you go for the day. Teddy's riding shotgun.",
      "city": "",
      "label": ""
     },
@@ -1919,7 +1933,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-29",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "It was created by Colleen Paige, who also founded National Dog Day, and cats live in more than a third of American homes.",
+     "line": "It was created by Colleen Paige, who also founded National Dog Day, and cats live in more than a third of American homes. The cats will pretend not to care.",
      "city": "",
      "label": ""
     },
@@ -1947,7 +1961,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-29",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "It marks 1969, when the very first electronic message was sent from one computer to another over ARPANET, the network that came before the internet.",
+     "line": "It marks 1969, when the very first electronic message was sent from one computer to another over ARPANET, the network that came before the internet. Probably asked to reply-all.",
      "city": "",
      "label": ""
     },
@@ -1975,7 +1989,7 @@ window.KJEL_BUZZ = {
      "date": "2026-10-29",
      "teaser": null,
      "ts": "2026-10-23T13:24:09.362531+00:00",
-     "line": "Oatmeal starts as hulled oats called groats, which get heated to give them their nutty flavor.",
+     "line": "Oatmeal starts as hulled oats called groats, which get heated to give them their nutty flavor. Groats: a fun word to say.",
      "city": "",
      "label": ""
     }

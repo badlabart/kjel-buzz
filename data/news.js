@@ -1,5 +1,5 @@
 window.KJEL_NEWS = {
- "updated": "2026-10-23T13:51:07+00:00",
+ "updated": "2026-10-23T15:30:58+00:00",
  "columns": [
   {
    "key": "wireready",
@@ -19,7 +19,7 @@ window.KJEL_NEWS = {
     {
      "id": "J319c9a",
      "title": "Share the Harvest program expands to feed more Missourians",
-     "line": "Missouri's Share the Harvest program wants 6,500 donated deer this year and has dropped the fees to donate, so hunters can feed more Missourians.",
+     "line": "Missouri's Share the Harvest program wants 6,500 donated deer this year and dropped the fees to donate. Freezer full? Share the venison.",
      "label": "Outdoors",
      "city": "",
      "source": "Missouri Dept. of Conservation",
@@ -30,7 +30,7 @@ window.KJEL_NEWS = {
     {
      "id": "J09b668",
      "title": "Old School Tactics for Hunting Big Bucks During Big Storms",
-     "line": "Old-school deer hunters say getting out while a big storm is moving through may give you your best chance all season at a big buck.",
+     "line": "Old-school deer hunters say a big storm moving through may be your best shot all season at a big buck. Rain gear: the new lucky charm.",
      "label": "Outdoors",
      "city": "",
      "source": "Outdoor Life",
@@ -41,7 +41,7 @@ window.KJEL_NEWS = {
     {
      "id": "J7f341d",
      "title": "How to Hunt Ducks Over Sheet Water",
-     "line": "After heavy rains, duck hunters should scout flooded fields that are holding ducks and hunt that shallow sheet water.",
+     "line": "After heavy rains, duck hunters should scout flooded fields holding ducks and hunt that shallow sheet water. Puddles were never this exciting.",
      "label": "Outdoors",
      "city": "",
      "source": "Field & Stream",
@@ -52,7 +52,7 @@ window.KJEL_NEWS = {
     {
      "id": "J560bc5",
      "title": "FoShanShiNanHaiQuNuoAiTongZhuangShangHang Recalls CIYTI Light-Up Princess Costumes Due to Risk of Serious Injury or Death from Battery Ingestion; Violate Mandatory Standard for Toys",
-     "line": "CIYTI light-up princess costumes are being recalled because kids can easily get to the button batteries inside, which can cause serious injury if swallowed.",
+     "line": "CIYTI light-up princess costumes are recalled because kids can easily reach the button batteries inside, which can cause serious injury if swallowed. Check the costume bin before Halloween.",
      "label": "Family",
      "city": "",
      "source": "CPSC Recalls",
@@ -63,7 +63,7 @@ window.KJEL_NEWS = {
     {
      "id": "J14d1ee",
      "title": "Costway Recalls Convertible High Chairs Due to Risk of Serious Injury or Death from Entrapment and Fall Hazards; Violate Mandatory Standard for High Chairs",
-     "line": "Costway convertible high chairs are being recalled because they have no built-in restraint, so a child can slip through between the tray and the seat.",
+     "line": "Costway convertible high chairs are recalled because they have no built-in restraint, so a child can slip through between the tray and the seat. Worth a look at mealtime.",
      "label": "Family",
      "city": "",
      "source": "CPSC Recalls",
@@ -74,7 +74,7 @@ window.KJEL_NEWS = {
     {
      "id": "Jb6e02d",
      "title": "BAMAMON Recalls LED Projecting Finger Light Toys Due to Risk of Serious Injury or Death from Battery Ingestion; Violate Mandatory Standard for Toys",
-     "line": "BAMAMON LED projecting finger light toys are being recalled because kids can easily open the button battery compartments, which is dangerous if a battery is swallowed.",
+     "line": "BAMAMON LED finger light toys are recalled because kids can easily open the button battery compartments. Time to check the toy box.",
      "label": "Family",
      "city": "",
      "source": "CPSC Recalls",
@@ -85,7 +85,7 @@ window.KJEL_NEWS = {
     {
      "id": "Jfd24cf",
      "title": "My greatest joy in life",
-     "line": "A Reddit dad says his greatest joy is watching his wife parent their daughter, a little version of herself, and hearing her say Can you just relax, the same words he's told his wife many times.",
+     "line": "A Reddit dad says his greatest joy is watching his wife parent their mini-me daughter and hearing her say, Can you just relax. What goes around comes around.",
      "label": "Family",
      "city": "",
      "source": "r/daddit",
@@ -96,7 +96,7 @@ window.KJEL_NEWS = {
     {
      "id": "J75489c",
      "title": "I did not realize how awkward being the parent at kids birthday parties is",
-     "line": "A Reddit mom says nobody warns you how awkward it is being the parent at a kid's birthday party, making small talk for a couple of hours with parents you don't know.",
+     "line": "A Reddit mom says nobody warns you how awkward it is being a parent at a kid's birthday party, making small talk for hours. Bring snacks and an exit plan.",
      "label": "Family",
      "city": "",
      "source": "r/Mommit",
@@ -107,7 +107,7 @@ window.KJEL_NEWS = {
     {
      "id": "Ja70103",
      "title": "No, really, there are too many trunk-or-treats",
-     "line": "A Reddit mom says there are too many trunk-or-treats now, and they've turned into a boring fast candy grab on the to-do list instead of a fun social event.",
+     "line": "A Reddit mom says there are too many trunk-or-treats, and they've become a fast candy grab instead of a fun social event. The minivans are tired too.",
      "label": "Family",
      "city": "",
      "source": "r/Mommit",
@@ -118,7 +118,7 @@ window.KJEL_NEWS = {
     {
      "id": "J308a1f",
      "title": "Stuffed Pepper Soup",
-     "line": "Budget Bytes has an easy stuffed pepper soup with ground beef and bell peppers in a rich tomato broth, served over rice and ready in 45 minutes.",
+     "line": "Budget Bytes has an easy stuffed pepper soup with ground beef, bell peppers and rice in a tomato broth, ready in 45 minutes. All the flavor, none of the stuffing.",
      "label": "Cooking",
      "city": "",
      "source": "Budget Bytes",
@@ -129,7 +129,7 @@ window.KJEL_NEWS = {
     {
      "id": "J37b22b",
      "title": "Crockpot Chili",
-     "line": "For a cozy, mostly hands-off dinner, Budget Bytes has a Crockpot chili with ground beef, beans, tomatoes and warm spices.",
+     "line": "Budget Bytes has a mostly hands-off Crockpot chili with ground beef, beans, tomatoes and warm spices. The Crockpot does the work.",
      "label": "Cooking",
      "city": "",
      "source": "Budget Bytes",
@@ -140,7 +140,7 @@ window.KJEL_NEWS = {
     {
      "id": "J8792eb",
      "title": "Mortgage Rates Today, Friday, October 23: A Substantial Drop",
-     "line": "Mortgage rates took a substantial drop Friday, because trouble for tech stocks pushed bond yields and mortgage interest rates lower.",
+     "line": "Mortgage rates took a big drop Friday, Oct. 23, because trouble for tech stocks pushed bond yields lower. Somebody's house hunt just got cheaper.",
      "label": "Life",
      "city": "",
      "source": "NerdWallet",
@@ -151,7 +151,7 @@ window.KJEL_NEWS = {
     {
      "id": "J13fe2e",
      "title": "Live where no one keeps up with the Joneses",
-     "line": "A Reddit poster says one of the most underrated money-saving moves is living somewhere rural where nobody tries to keep up with the Joneses.",
+     "line": "A Reddit poster says one of the most underrated ways to save money is living rural, where nobody keeps up with the Joneses. The Joneses are broke anyway.",
      "label": "Life",
      "city": "",
      "source": "r/Frugal",
@@ -189,7 +189,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-21T18:00:00+00:00",
-     "line": "Congrats to Lebanon's Dean Long, a 2011 Lebanon High School graduate, for being inducted into the Emporia State University baseball Hall of Fame in Emporia, Kansas, on Oct. 10. As a senior there, he led the conference with 23 home runs.",
+     "line": "Dean Long, Lebanon High School graduate, was inducted into the Emporia State University baseball Hall of Fame in October. Not bad for a kid from Lebanon.",
      "city": "Lebanon",
      "label": "Hall of Fame"
     },
@@ -217,7 +217,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-19T15:45:21.153323+00:00",
-     "line": "Congrats to Lebanon's R-3 School District for earning the National Meritorious Budget Award.",
+     "line": "Lebanon R-3 School District earned the National Meritorious Budget Award. Spreadsheets everywhere are cheering.",
      "city": "Lebanon",
      "label": "National Budget Award"
     },
@@ -245,7 +245,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-19T15:45:21.153323+00:00",
-     "line": "Congrats to Lebanon's R-3 School District on opening the new Robert W. Plaster Center for Student Success.",
+     "line": "Lebanon R-3 School District opened the new Robert W. Plaster Center for Student Success. Ribbon-cutting scissors got a workout.",
      "city": "Lebanon",
      "label": "Grand Opening"
     },
@@ -273,7 +273,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-19T15:45:21.153323+00:00",
-     "line": "Congrats to Lebanon's Brittany Stamm, named the new head girls basketball coach for Lebanon Schools.",
+     "line": "Brittany Stamm is the new head girls basketball coach for Lebanon Schools. Whistle shopping starts now.",
      "city": "Lebanon",
      "label": "New Head Coach"
     },
@@ -301,7 +301,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-19T15:45:21.153323+00:00",
-     "line": "Congrats to Lebanon's Kalem Copling, named the new head boys basketball coach for Lebanon Schools.",
+     "line": "Kalem Copling is the new head boys basketball coach for Lebanon Schools. Practice just got a lot louder.",
      "city": "Lebanon",
      "label": "New Head Coach"
     },
@@ -329,7 +329,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-18T14:37:12.069000-05:00",
-     "line": "Congrats to Waynesville's Molly McDermitt, Cycila Keeney and Samantha Etheridge for becoming finalists in the World Food Championships in Indianapolis on Oct. 18. Their dish - Bacon Lover's Christmas.",
+     "line": "Waynesville Career Center students Molly McDermitt, Cycila Keeney and Samantha Etheridge made the finals at the World Food Championships in Indianapolis Oct. 18 with Bacon Lover's Christmas. The judges never stood a chance.",
      "city": "Waynesville",
      "label": "World Food Champ Finalists"
     },
@@ -357,7 +357,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-20T15:30:00.487000-05:00",
-     "line": "Congrats to Waynesville's Kyleen Oxendine, a teacher at East Elementary, for winning the 1st Quarter Project Teach Award on Oct. 19. Her Take Home Reading Success Kits help students practice reading at home.",
+     "line": "East Elementary teacher Kyleen Oxendine of Waynesville won the 1st Quarter Project Teach Award Oct. 19. Reading homework just got cool.",
      "city": "Waynesville",
      "label": "Teacher Award"
     },
@@ -385,7 +385,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-20T14:51:43.120000-05:00",
-     "line": "Congrats to Waynesville's Sixth Grade Center for winning the traveling Tiger Spirit Trophy again with a first-place finish in the 2026 Homecoming Parade.",
+     "line": "Waynesville's Sixth Grade Center won the traveling Tiger Spirit Trophy again for its first-place Homecoming Parade float. That trophy isn't traveling anywhere.",
      "city": "Waynesville",
      "label": "Tiger Spirit Trophy"
     },
@@ -413,7 +413,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-20T13:31:31.095000-05:00",
-     "line": "Congrats to Waynesville's school bus mechanics and drivers, whose 10 randomly picked buses all passed a surprise Missouri State Highway Patrol inspection on Oct. 20.",
+     "line": "All 10 Waynesville R-6 school buses picked at random passed a surprise Missouri State Highway Patrol inspection Oct. 20. Even the squeaky seats passed.",
      "city": "Waynesville",
      "label": "Perfect Bus Inspection"
     },
@@ -441,7 +441,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-20T16:30:02.331000-05:00",
-     "line": "Congrats to Waynesville's Domino's for receiving the school district's Community Recognition Plaque for October for its ongoing support of students.",
+     "line": "Domino's of Waynesville received the school district's October Community Recognition Plaque for supporting students. Pizza: the official food of school support.",
      "city": "Waynesville",
      "label": "Community Recognition"
     },
@@ -469,7 +469,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-20T15:37:00+00:00",
-     "line": "Congrats to Bolivar's school district for its strongest test results since state testing began in 1998, with 56.3 percent of students proficient in math, well above the state average.",
+     "line": "Bolivar School District posted its best state test scores since testing began in 1998, with 56.3 percent of students proficient in math. Somebody pass the calculators around.",
      "city": "Bolivar",
      "label": "Record Test Scores"
     },
@@ -497,7 +497,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-20T17:48:34+00:00",
-     "line": "Congrats to Bolivar's Lathan Martin and Boone Shockley of Grand Missouri Bank for graduating from the Oklahoma Bankers Association Consumer Lending School in Oklahoma City.",
+     "line": "Lathan Martin and Boone Shockley of Grand Missouri Bank in Bolivar graduated from the Oklahoma Bankers Association Consumer Lending School in Oklahoma City in October. Loan officers with diplomas to prove it.",
      "city": "Bolivar",
      "label": "Banking School Grads"
     },
@@ -525,7 +525,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-20T16:15:49+00:00",
-     "line": "Congrats to Bolivar's Parkview Health Care Facility for passing its annual state inspection with zero deficiencies.",
+     "line": "Parkview Health Care Facility in Bolivar passed its annual state inspection with zero deficiencies. Not even a dust bunny.",
      "city": "Bolivar",
      "label": "Perfect Inspection"
     },
@@ -553,7 +553,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-13T18:40:00+00:00",
-     "line": "Congrats to Marshfield's Marshfield Chevrolet for celebrating 100 years of serving the community.",
+     "line": "Marshfield Chevrolet is celebrating 100 years in Marshfield. Still running better than most of us.",
      "city": "Marshfield",
      "label": "100 Years in Business"
     },
@@ -581,7 +581,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-20T17:52:00+00:00",
-     "line": "Congrats to Marshfield's High School marching band for taking fourth place at the Ozark Mountain Marching Festival.",
+     "line": "The Marshfield High School marching band took fourth place at the Ozark Mountain Marching Festival. Those feet never missed a step.",
      "city": "Marshfield",
      "label": "Marching Band"
     },
@@ -609,7 +609,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-22T04:34:00+00:00",
-     "line": "Congrats to Crocker's Johnny Carriger, named KY3 Athlete of the Week after scoring a hat trick in Crocker's district championship soccer game, his second of the tournament.",
+     "line": "Crocker soccer player Johnny Carriger was named KY3 Athlete of the Week for a hat trick in the district championship game, his second of the tournament. Hats are clearly his thing.",
      "city": "Crocker",
      "label": "Athlete of the Week"
     },
@@ -618,7 +618,7 @@ window.KJEL_NEWS = {
      "col": "local",
      "title": "Macks Creek cross country teams claim title, runner-up finish at Dixon Invitational",
      "source": "The Lake Sun",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbDBSb3VsTDY3Vm9sV2Ntb29pOGlVeTgtaWQ1NUQ0UU1DS0lBU2xPQ3ExeWNjN2RSNkJKQlhfOFFKeTBxcmc4LWRaTlNhandMXzh2QVF4V0JhLUJ4YS10bFk4X2huV1RjbDVVN3otZHhqUG1WdndqV1doTkdSR1pRY0ZxSnUxSTlhRDlxV0UzOW5qQ0lmMmtob3dCS0k2V3E1RlYyaXNPa2NZYkt1QThxNXhHUDA2WnNEc01zQWx5eHA0QQ?oc=5",
+     "url": "https://lakenewsonline.com/stories/macks-creek-cross-country-teams-claim-title-runner-up-finish-at-dixon-invitational,249535",
      "gn_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbDBSb3VsTDY3Vm9sV2Ntb29pOGlVeTgtaWQ1NUQ0UU1DS0lBU2xPQ3ExeWNjN2RSNkJKQlhfOFFKeTBxcmc4LWRaTlNhandMXzh2QVF4V0JhLUJ4YS10bFk4X2huV1RjbDVVN3otZHhqUG1WdndqV1doTkdSR1pRY0ZxSnUxSTlhRDlxV0UzOW5qQ0lmMmtob3dCS0k2V3E1RlYyaXNPa2NZYkt1QThxNXhHUDA2WnNEc01zQWx5eHA0QQ?oc=5",
      "desc": "",
      "outlets": 1,
@@ -637,7 +637,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-21T18:36:12+00:00",
-     "line": "Congrats to Macks Creek's cross country teams for claiming the title and a runner-up finish at the Dixon Invitational.",
+     "line": "Macks Creek cross country teams won the title and finished runner-up at the Dixon Invitational. Running is easier when you're winning.",
      "city": "Dixon",
      "label": "Cross Country Title"
     }
@@ -671,7 +671,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-22T15:56:47-06:00",
-     "line": "Lebanon's street, electric, water and wastewater crews teamed up with two neighboring cities on Oct. 21 for hands-on trench and confined space rescue training.",
+     "line": "Lebanon street, electric, water and wastewater crews trained with two neighboring cities Oct. 21 for trench and confined space rescues. Hopefully the only trench drama all year.",
      "city": "Lebanon",
      "label": ""
     },
@@ -699,7 +699,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-19T15:45:21.153323+00:00",
-     "line": "The Lebanon R-3 School District's Hive Depot is providing essential resources and learning opportunities for Lebanon students.",
+     "line": "Lebanon R-3 School District's Hive Depot is giving Lebanon students essential resources and learning opportunities. Busy bees, indeed.",
      "city": "Lebanon",
      "label": ""
     },
@@ -727,7 +727,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-22T13:04:04+00:00",
-     "line": "A historic Route 66 gas station in Marshfield has been restored.",
+     "line": "A historic Route 66 gas station in Marshfield has been restored. Fill-ups not included.",
      "city": "Marshfield",
      "label": ""
     },
@@ -755,7 +755,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-22T20:12:00+00:00",
-     "line": "A retro Route 66 diner in St. Robert is getting attention as the Missouri road-trip stop for chicken-fried steak and malts.",
+     "line": "A retro Route 66 diner in St. Robert is getting attention as the Missouri road-trip stop for chicken-fried steak and malts. Pants with stretch recommended.",
      "city": "St. Robert",
      "label": ""
     },
@@ -785,7 +785,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-23T05:52:39-05:00",
-     "line": "After a two-month pilot, the Webster County Health Unit has officially launched its Baby Bridge program to help families with babies and toddlers.",
+     "line": "Webster County Health Unit officially launched its Baby Bridge program for families with babies and toddlers after a two-month pilot. Toddlers approve, probably.",
      "city": "Webster County",
      "label": ""
     },
@@ -794,7 +794,7 @@ window.KJEL_NEWS = {
      "col": "local",
      "title": "Two New Troopers Join Missouri Highway Patrol In Lake Of The Ozarks Area",
      "source": "LakeExpo.com",
-     "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQVzI4WUY1cE1GcTRNLVZVSHgyZXBnWXQ0WWVGcXF6OWNMLUpjR2c3T3IxZzg3alJlQUV2UnIyZU9IYUUyX01jaG1zMWZiU1hHQWdmVW5PMmNkUzQxaHdOZ1VwdExNWERCWWpKSkptemFUU1VPaGpnak15N0Q2elNzOGFEQnMyU2FHN1lhYVYya1JYNW9JQm96UjBGb0xUbGduaEZNREdGd04zdmQzQ3R2S21ONnhUWnNBdnhFakpHY3B4WldWSDc0WlZVbWFzY1dhRldsVUhXMjI3VmN1d0gyYXg3Xy1NWHl4dUx4eW85OGF5Z2NI?oc=5",
+     "url": "https://www.lakeexpo.com/news/lake_news/two-new-troopers-join-missouri-highway-patrol-in-lake-of-the-ozarks-area/article_eda91f21-faca-4b1e-be4b-eb257ec55582.html",
      "gn_url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQVzI4WUY1cE1GcTRNLVZVSHgyZXBnWXQ0WWVGcXF6OWNMLUpjR2c3T3IxZzg3alJlQUV2UnIyZU9IYUUyX01jaG1zMWZiU1hHQWdmVW5PMmNkUzQxaHdOZ1VwdExNWERCWWpKSkptemFUU1VPaGpnak15N0Q2elNzOGFEQnMyU2FHN1lhYVYya1JYNW9JQm96UjBGb0xUbGduaEZNREdGd04zdmQzQ3R2S21ONnhUWnNBdnhFakpHY3B4WldWSDc0WlZVbWFzY1dhRldsVUhXMjI3VmN1d0gyYXg3Xy1NWHl4dUx4eW85OGF5Z2NI?oc=5",
      "desc": "",
      "outlets": 1,
@@ -813,7 +813,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-19T16:28:00+00:00",
-     "line": "Two new Missouri State Highway Patrol troopers have joined the Lake of the Ozarks area.",
+     "line": "Two new Missouri State Highway Patrol troopers have joined the Lake of the Ozarks area. Maybe ease off the gas a bit.",
      "city": "Lake of the Ozarks",
      "label": ""
     },
@@ -841,7 +841,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-20T15:46:00+00:00",
-     "line": "The Polk County Museum hosted a group of homeschoolers who came to learn about Cherokee history and customs.",
+     "line": "The Polk County Museum hosted homeschoolers learning Cherokee history and customs. Best field trip of the semester.",
      "city": "Polk County",
      "label": ""
     },
@@ -850,7 +850,7 @@ window.KJEL_NEWS = {
      "col": "local",
      "title": "- Seymour’s estimated population at 2,247",
      "source": "Webster County Citizen",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdDVpRkRGbTgwTzNSLWYzRDdQTi1wZXI5a05sZk15VUNEZE5rbTBBcEljTDMxaUhBaFpBaGpRUHhfQl83TG80UlM0alczVko5dmtyS2RMbzl1akZobXhaaS1BNTdwOUs2UWtQTlp1MGhiQ1BZYzhvM0R3SFR4anVTQW9Na3NSVnRDTlRUdzg2SHl4cjNxZmc?oc=5",
+     "url": "https://www.webstercountycitizen.com/news/article_56bc5a83-f575-4ab5-ace0-aaa0aa0163df.html",
      "gn_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdDVpRkRGbTgwTzNSLWYzRDdQTi1wZXI5a05sZk15VUNEZE5rbTBBcEljTDMxaUhBaFpBaGpRUHhfQl83TG80UlM0alczVko5dmtyS2RMbzl1akZobXhaaS1BNTdwOUs2UWtQTlp1MGhiQ1BZYzhvM0R3SFR4anVTQW9Na3NSVnRDTlRUdzg2SHl4cjNxZmc?oc=5",
      "desc": "",
      "outlets": 1,
@@ -869,7 +869,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-21T13:00:00+00:00",
-     "line": "Seymour's estimated population now stands at 2,247.",
+     "line": "Seymour's estimated population is now 2,247. Everybody wave.",
      "city": "Seymour",
      "label": ""
     }
@@ -892,7 +892,7 @@ window.KJEL_NEWS = {
      "body": "Sometimes, helping someone doesn’t take much. It might be mowing a yard, picking up groceries, or simply making sure an elderly neighbor has someone to turn to. That’s the idea behind Shine Through Faith, a Marshfield nonprofit founded by Heather Rodriguez. What started as a way to help older residents remain in their homes has grown into a community resource center helping families, foster children, teachers, and others who need a hand. For Rodriguez, the organization grew out of some difficult times in her own life. She has spent much of her life between Missouri and Arizona. Her grandparents lived in Missouri, and she raised her daughters here for much of their childhood. After spending more time in Arizona, she and her family returned to Missouri so their younger boys could grow up here, too. Rodriguez has always enjoyed volunteering and helping others. But after being diagnosed with thyroid cancer and having to medically retire, she found herself wondering what came next. “I thought everything was over,” she said. During that time, Rodriguez said she felt God leading her toward something called Shine Through Faith. She just wasn’t sure what it was supposed to become. About five years later, after meeting several elderly people who had little or no family support, the answer began to take shape. “I was like, how can I make a difference with them?” she said. That question became the starting point for Shine Through Faith. The original mission was simple: help elderly residents stay in their own homes longer by connecting them with volunteers who could handle everyday tasks. That might mean helping with yard work, cleaning around the house, shopping for groceries or making small improvements to a home. Volunteers have even helped build ramps for residents who needed b",
      "col": "local",
      "ts": "2026-10-13T18:45:00+00:00",
-     "line": "A Marshfield nonprofit called Shine Through Faith, founded by Heather Rodriguez, started by helping older neighbors stay in their homes and now helps families, foster kids and teachers too.",
+     "line": "Heather Rodriguez's Marshfield nonprofit, Shine Through Faith, started by helping older neighbors stay in their homes and now helps families, foster kids and teachers too. Neighbors like that are worth their weight in casseroles.",
      "city": "Marshfield",
      "label": "",
      "congrats": false
@@ -921,7 +921,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-21T11:40:46.045000-05:00",
-     "line": "Three Waynesville lodges and chapters donated 50 headphones for elementary students and clothing for the school nurses' offices on Oct. 20.",
+     "line": "Bathsheba Chapter 14, King Solomon Lodge 15 and UKHFI Temple 203 donated 50 headphones and clothing for school nurses' offices to Waynesville elementary schools Oct. 20. Quiet classrooms, here we come.",
      "city": "Waynesville",
      "label": ""
     },
@@ -949,7 +949,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-21T15:00:11.427000-05:00",
-     "line": "Waynesville bus drivers and aides celebrated School Bus Safety Week by handing out stickers and pencils to kids, and on Oct. 21 the drivers got treated to pizza.",
+     "line": "Waynesville bus drivers and aides handed out stickers and pencils for School Bus Safety Week, and on Oct. 21 the drivers got a pizza thank-you. Pizza: the universal thank-you note.",
      "city": "Waynesville",
      "label": ""
     },
@@ -966,7 +966,7 @@ window.KJEL_NEWS = {
      "body": "What started as a night of live music in Rogersville has grown into something quite a bit bigger. The ninth annual Rockin’ Rogersville brought music, food, local vendors and a new kids’ area together this year, all while raising money that will eventually make its way back into the community. The event is the signature fundraiser for the Community Foundation of Rogersville, an affiliate of the Community Foundation of the Ozarks. Christina Craig, board president of the Community Foundation of Rogersville, said the event has continued to change as organizers listen to what people want. “When it originally started, it was like a rock concert,” Craig said. The early version featured local bands, food trucks, and an evening fireworks show. This year looked a little different. Organizers added a vendor marketplace with 33 vendors, giving local artisans and crafters a chance to show and sell their work. Nine food trucks were also part of the event. A new kids’ zone helped move Rockin’ Rogersville even further toward becoming a full family festival. “We’re kind of trying to make it more of a family-centered event,” Craig said. “So not just a rock concert, but more of a festival.” Music is still a big part of it. Five bands performed this year, including KC and the Atta Boys, the Stephen James Gang, Dawson Hollow, Isaac Kenneth Band and KC Flo. Instead of sticking with one type of music, organizers mixed things up. Craig said previous years have leaned heavily toward either country or rock. This year’s lineup offered a little bluegrass, country, rockabilly, and rock. The foundation uses feedback from those attending to help decide what people would like to hear at future events. But behind the food, music, and family activities is the main reason Rockin’ Rogersville exists. Crai",
      "col": "local",
      "ts": "2026-10-13T20:49:00+00:00",
-     "line": "Rockin' Rogersville started as one night of live music and has grown into a full community festival that raises money to give back to Rogersville.",
+     "line": "Rockin' Rogersville grew from one night of live music into a full community festival that raises money for Rogersville. Small town, big jam.",
      "city": "Rogersville",
      "label": "",
      "congrats": false
@@ -976,7 +976,7 @@ window.KJEL_NEWS = {
      "col": "local",
      "title": "Helping Women Start Over: Lake Of The Ozarks Nonprofit Offers Hope, Housing And Support",
      "source": "LakeExpo.com",
-     "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxOSVN3eFJ5S3RMb2hqdkdXR3o1MHlBNWtKS1pQRHdRMkhIUW44dkhMUC05Y2hRRVN6MXJCV1RmS2NSN1Rac3NOeTM4QTF1NUVrN2lFaTZGcjF5VXNoSmt3YUU3c0RHcXgwb3o3dEtEbFdvU3p6bUNtZlYzcEhlMTBubEt3aGtoa0NtMzU4RVJQWXlVc1ZmMWdyaFF6N3daYkdwWHpUZ0VEeEpCTDZYS0tmdVhLQWd6S0JoWmlNczRZN2ZlUnJ5QmVtVjlLWGxrUWtvU0gzdGlsWnJuR0tJanctSTB3NTFwajJtbllnQkZQY1V6Tm5JcnZibHpHWEtNMU40VncxaUM0TDR3NERkMGJwZ2V1WjVZcU9yMVItdw?oc=5",
+     "url": "https://www.lakeexpo.com/community/volunteer_and_charity/helping-women-start-over-lake-of-the-ozarks-nonprofit-offers-hope-housing-and-support/article_3ed65f9e-813b-44b5-ab9c-2f8c267734e1.html",
      "gn_url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxOSVN3eFJ5S3RMb2hqdkdXR3o1MHlBNWtKS1pQRHdRMkhIUW44dkhMUC05Y2hRRVN6MXJCV1RmS2NSN1Rac3NOeTM4QTF1NUVrN2lFaTZGcjF5VXNoSmt3YUU3c0RHcXgwb3o3dEtEbFdvU3p6bUNtZlYzcEhlMTBubEt3aGtoa0NtMzU4RVJQWXlVc1ZmMWdyaFF6N3daYkdwWHpUZ0VEeEpCTDZYS0tmdVhLQWd6S0JoWmlNczRZN2ZlUnJ5QmVtVjlLWGxrUWtvU0gzdGlsWnJuR0tJanctSTB3NTFwajJtbllnQkZQY1V6Tm5JcnZibHpHWEtNMU40VncxaUM0TDR3NERkMGJwZ2V1WjVZcU9yMVItdw?oc=5",
      "desc": "",
      "outlets": 1,
@@ -995,7 +995,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-20T11:30:00+00:00",
-     "line": "A Lake of the Ozarks nonprofit is helping women start over by offering them housing, support and hope.",
+     "line": "A Lake of the Ozarks nonprofit is helping women start over with housing, support and hope. That's the good stuff.",
      "city": "Lake of the Ozarks",
      "label": ""
     }
@@ -1031,7 +1031,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-22T12:26:19-04:00",
-     "line": "Authorities in Santa Cruz, California, rounded up an escaped emu wandering city streets, just days after a different emu got loose there.",
+     "line": "Santa Cruz, California, rounded up a loose emu on city streets, just days after a different emu got out there. Somebody check the emu gate.",
      "city": "Santa Cruz, Calif.",
      "label": ""
     },
@@ -1040,7 +1040,7 @@ window.KJEL_NEWS = {
      "col": "weird",
      "title": "Ghostly raccoon in Florida raids cat's dinner and steals the Internet",
      "source": "Naples Daily News",
-     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNV3ozNHlZNDdYT0pqM2pzaTJ4SjE0Qlo5SDc2d3FtbXNxd2s4bnVaNmFDZm9oMVVBNjZtM3M0WkpXOFZ3REgycER4b1A3VFZoeV9YVHM3cUtlOG9WOThocWNLRUtzbGwwd1FYWkhPamxlenpkMXFUZC1QREd2OVctSW5ZdU9ROVBxVThVNkRNNzFPem13d0JjcnBkeWpscFlvZVc2LXA0RHVfa1pTYU1fdnIzWV9WT3Z0LWQyMGxZbGNiRXdXczVpRXpDZXFaOEZFV0ExQUZZNE5xNGh2RmFF?oc=5",
+     "url": "https://www.naplesnews.com/story/news/environment/2026/10/22/albino-or-leucistic-raccoon-goes-viral-after-raiding-florida-cats-dinner/92381790007/",
      "gn_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNV3ozNHlZNDdYT0pqM2pzaTJ4SjE0Qlo5SDc2d3FtbXNxd2s4bnVaNmFDZm9oMVVBNjZtM3M0WkpXOFZ3REgycER4b1A3VFZoeV9YVHM3cUtlOG9WOThocWNLRUtzbGwwd1FYWkhPamxlenpkMXFUZC1QREd2OVctSW5ZdU9ROVBxVThVNkRNNzFPem13d0JjcnBkeWpscFlvZVc2LXA0RHVfa1pTYU1fdnIzWV9WT3Z0LWQyMGxZbGNiRXdXczVpRXpDZXFaOEZFV0ExQUZZNE5xNGh2RmFF?oc=5",
      "desc": "",
      "outlets": 3,
@@ -1062,7 +1062,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-22T20:00:00+00:00",
-     "line": "A ghostly white raccoon in Florida got caught on camera raiding a cat's dinner, and the internet can't get enough of it.",
+     "line": "A ghostly white raccoon in Florida got caught on camera raiding a cat's dinner. The cat was not consulted.",
      "city": "Florida",
      "label": ""
     },
@@ -1071,7 +1071,7 @@ window.KJEL_NEWS = {
      "col": "weird",
      "title": "Black bear sneaks into family’s backyard, swipes booze from fridge: ‘I figured he was thirsty’",
      "source": "New York Post",
-     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOOXdpc0t2NkJuZWdIS0lnVVp1d3hfdVkwX0Y3Y0lBS1J2V3k3bGlNdDJJbnk3OVVYQkt2MjZoNks2dURZNERmelR0a1VnU2YyUHU5WEFZRTlrVkNGSmJleVZITGlaMlVzN1YwX1pTaGZQaTh0dXZWZkVDMVJvSVI4ZnNRTjFKSEcxcXBYa1JMeGllTTM2S3B5MklXRWdpbmJEc3hYZmo2NTdHdS1uNFlUOUd0YXljX3FsLXRGX29MUFVOR1F6WTh4VHFXcklBMEVMN2hfR19WRGxEaGlHemxybg?oc=5",
+     "url": "https://nypost.com/2026/10/22/us-news/black-bear-sneaks-into-familys-backyard-swipes-booze-from-fridge-after-eating-trash-i-figured-he-was-thirsty/",
      "gn_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOOXdpc0t2NkJuZWdIS0lnVVp1d3hfdVkwX0Y3Y0lBS1J2V3k3bGlNdDJJbnk3OVVYQkt2MjZoNks2dURZNERmelR0a1VnU2YyUHU5WEFZRTlrVkNGSmJleVZITGlaMlVzN1YwX1pTaGZQaTh0dXZWZkVDMVJvSVI4ZnNRTjFKSEcxcXBYa1JMeGllTTM2S3B5MklXRWdpbmJEc3hYZmo2NTdHdS1uNFlUOUd0YXljX3FsLXRGX29MUFVOR1F6WTh4VHFXcklBMEVMN2hfR19WRGxEaGlHemxybg?oc=5",
      "desc": "",
      "outlets": 1,
@@ -1090,7 +1090,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-23T03:48:00+00:00",
-     "line": "A black bear snuck into a family's backyard and swiped a drink right out of their fridge, and the homeowner said, I figured he was thirsty.",
+     "line": "A black bear wandered into a family's backyard and swiped a drink out of their fridge, and the homeowner said, I figured he was thirsty. Hospitality, Southern style.",
      "city": "",
      "label": ""
     },
@@ -1099,7 +1099,7 @@ window.KJEL_NEWS = {
      "col": "weird",
      "title": "3,156-pound pumpkin grown in Rhode Island is inspected for possible world record",
      "source": "Nepal Samaj",
-     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMUszTG9WYk1RMlVWWUd6VWpwdHBTSFgzWEs1cGEybXFzUlV3SUsybzVRQ05vcktQUS1hV3pjVk51dnlNREFhbDFpbEhSN3Z0Qlh6b3ZHRWR5aFBLM3ZJMlNITldZenV1d1JxbjVyeVpHZnRJaTNpNmNKQkFqamU4aTJiNEVRR3Y0dTJqX2VBMTdiN2JJTHJKdEJYUV9pcGZoR1pvQnJkUS1aZw?oc=5",
+     "url": "https://nepalsamaj.com/en/3156-pound-pumpkin-grown-in-rhode-island-is-inspected-for-possible-world-record/",
      "gn_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMUszTG9WYk1RMlVWWUd6VWpwdHBTSFgzWEs1cGEybXFzUlV3SUsybzVRQ05vcktQUS1hV3pjVk51dnlNREFhbDFpbEhSN3Z0Qlh6b3ZHRWR5aFBLM3ZJMlNITldZenV1d1JxbjVyeVpHZnRJaTNpNmNKQkFqamU4aTJiNEVRR3Y0dTJqX2VBMTdiN2JJTHJKdEJYUV9pcGZoR1pvQnJkUS1aZw?oc=5",
      "desc": "",
      "outlets": 1,
@@ -1118,7 +1118,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-23T04:41:21+00:00",
-     "line": "A 3,156-pound pumpkin grown in Rhode Island is being inspected to see if it's a new world record.",
+     "line": "A 3,156-pound pumpkin grown in Rhode Island is being inspected as a possible world record. That's a lot of pie.",
      "city": "Rhode Island",
      "label": ""
     },
@@ -1127,7 +1127,7 @@ window.KJEL_NEWS = {
      "col": "weird",
      "title": "2,455-pound pumpkin sets new record at Ohio pumpkin show",
      "source": "WHIO TV",
-     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOaDRCWS1EOU9EcGpBUTJ0NnUwX3JMUnB3ZzZxNzd3cjNWWXN4QTFrdFpWLXlxeDVvS2RMUnctOUwwRUlMWTdjeTRKcDNKczc5bkZsMnVCT0l1LXhtYjVocmNQUGhfTUR6TlRjYXIwRkhDNTRwVmNhTlZCNHhtOFNlS3A2V3c5Q1Y1SEdyM1ctcngwUVNOQ1plTlBfVnVVVW9GelkycVRhRjAzczNpQjJKaE9SdkFyczQ?oc=5",
+     "url": "https://www.whio.com/news/2455-pound-pumpkin-sets-new-record-ohio-pumpkin-show/053dbff3-acca-4112-b2e1-c3d5fa4c6149/",
      "gn_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOaDRCWS1EOU9EcGpBUTJ0NnUwX3JMUnB3ZzZxNzd3cjNWWXN4QTFrdFpWLXlxeDVvS2RMUnctOUwwRUlMWTdjeTRKcDNKczc5bkZsMnVCT0l1LXhtYjVocmNQUGhfTUR6TlRjYXIwRkhDNTRwVmNhTlZCNHhtOFNlS3A2V3c5Q1Y1SEdyM1ctcngwUVNOQ1plTlBfVnVVVW9GelkycVRhRjAzczNpQjJKaE9SdkFyczQ?oc=5",
      "desc": "",
      "outlets": 1,
@@ -1146,7 +1146,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-23T11:17:58+00:00",
-     "line": "A 2,455-pound pumpkin just set a new record at an Ohio pumpkin show.",
+     "line": "A 2,455-pound pumpkin set a new record at an Ohio pumpkin show. Cinderella's ride just got an upgrade.",
      "city": "Ohio",
      "label": ""
     },
@@ -1155,7 +1155,7 @@ window.KJEL_NEWS = {
      "col": "weird",
      "title": "Aspinwall’s ‘pumpkin guy’ carves a record-breaking 1,906-pounder for charity",
      "source": "TribLIVE.com",
-     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQV2cwRHVCSURVTXJlbHA5NXI1U3Z4dkhTeTVsNjB4Qk9reFQtVkdTQ0JERXpMTWZsaElNR19UX24wTlRzZHA3ZDVXNXo3WlZYano5VXRmNVh3ci1tWE9TbERhUVIwNU1kZFJSOUNVTW9FRzMtTHNxRXY4TXR2TTNtVzhxbkJpbUs2cHA3dVVrckhJYW5fM29hZXp0b3VXVFBpWHp0ZW9WdVR1X0JrY1REcm9LWkpEOFhXVkp4UEhn?oc=5",
+     "url": "https://triblive.com/local/valley-news-dispatch/aspinwalls-pumpkin-guy-carves-a-record-breaking-1906-pounder-for-charity/",
      "gn_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQV2cwRHVCSURVTXJlbHA5NXI1U3Z4dkhTeTVsNjB4Qk9reFQtVkdTQ0JERXpMTWZsaElNR19UX24wTlRzZHA3ZDVXNXo3WlZYano5VXRmNVh3ci1tWE9TbERhUVIwNU1kZFJSOUNVTW9FRzMtTHNxRXY4TXR2TTNtVzhxbkJpbUs2cHA3dVVrckhJYW5fM29hZXp0b3VXVFBpWHp0ZW9WdVR1X0JrY1REcm9LWkpEOFhXVkp4UEhn?oc=5",
      "desc": "",
      "outlets": 1,
@@ -1174,7 +1174,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-22T11:02:53+00:00",
-     "line": "A man known as the pumpkin guy in Aspinwall, Pennsylvania, carved a record-breaking 1,906-pound pumpkin to raise money for charity.",
+     "line": "Aspinwall, Pennsylvania's pumpkin guy carved a record-breaking 1,906-pound pumpkin for charity. Bring a bigger knife.",
      "city": "Aspinwall, Pa.",
      "label": ""
     },
@@ -1202,7 +1202,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-23T13:15:21+00:00",
-     "line": "A California woman, Susan Burgos, set a Guinness World Record for the largest collection of frog stuff, with 13,201 pieces.",
+     "line": "Susan Burgos of California set a Guinness World Record with 13,201 frog collectibles. Her house must be ribbiting.",
      "city": "California",
      "label": ""
     },
@@ -1211,7 +1211,7 @@ window.KJEL_NEWS = {
      "col": "weird",
      "title": "After 35 years, Pennsylvania has a new state record channel catfish",
      "source": "Erie Times-News",
-     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYUhHUVFfZ2JPSElxQWF3NkxZRW1JSW8tYUhxQXJPbmdPcTBPOG0tdnRmeXV2bEFobWpyX2xVVklLaEhjb3ZKd2VNNThMbEdVS0MxRVQ2VDVoeWdRa0J0eUthejFtZy1MOTJhcUlWMkVQTG5jX21vdkpSWGtMSF9MNzRhMXdqVk5PeUpsa3NMQnJBUlR6YzNrMlEwcnd5M2FoQVJiMnlIaXVKV0N5SGEtc0ZaQkUxQ1BFeUktNW1R?oc=5",
+     "url": "https://www.goerie.com/story/sports/outdoors/2026/10/21/pennsylvania-channel-catfish-new-record-david-taylor/92366609007/",
      "gn_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYUhHUVFfZ2JPSElxQWF3NkxZRW1JSW8tYUhxQXJPbmdPcTBPOG0tdnRmeXV2bEFobWpyX2xVVklLaEhjb3ZKd2VNNThMbEdVS0MxRVQ2VDVoeWdRa0J0eUthejFtZy1MOTJhcUlWMkVQTG5jX21vdkpSWGtMSF9MNzRhMXdqVk5PeUpsa3NMQnJBUlR6YzNrMlEwcnd5M2FoQVJiMnlIaXVKV0N5SGEtc0ZaQkUxQ1BFeUktNW1R?oc=5",
      "desc": "",
      "outlets": 3,
@@ -1233,7 +1233,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-21T19:47:00+00:00",
-     "line": "Pennsylvania has a new state record channel catfish, the first time that record has been broken in 35 years.",
+     "line": "Pennsylvania has a new state record channel catfish, the first time that record has fallen in 35 years. The fish story finally came true.",
      "city": "Pennsylvania",
      "label": ""
     },
@@ -1263,7 +1263,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-22T11:24:44-04:00",
-     "line": "Neighbors in a Tennessee town are on the lookout for a pet kangaroo that escaped from a property.",
+     "line": "Neighbors in a Tennessee town are watching for a pet kangaroo that escaped. It's probably hopping mad.",
      "city": "Tennessee",
      "label": ""
     },
@@ -1272,7 +1272,7 @@ window.KJEL_NEWS = {
      "col": "weird",
      "title": "Sammy the pig who escaped during Gautier music festival found after days on the run",
      "source": "Darkhorse Press",
-     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQanB6M3Jwd29renl3c0l3OG5Hb3NrRDBtbW9LaWZyUE9WNEJUNTdRS2FXNkVBM1VGa1JXSkJsdk9GQW1qRzNEcFlONTdmZ0MyV245WmpzeWdpOUh4eFJPX0loYU9WQzdES2NHLVhINFpTRy1pdzE5RjJST2w4VXBRZDVydUFFYmxDZlJYdHNzTUZNSkQ3a0d3d0gtYVVFbzBhVlFCc1NvblRQZnRwSFY0NDNpN2UwaGl3bFdGUzFNM2E5N2k0U3dEZm93?oc=5",
+     "url": "https://darkhorsepressnow.com/news/2026-10-22/sammy-the-pig-who-escaped-during-gautier-music-festival-found-after-days-on-the-run/",
      "gn_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQanB6M3Jwd29renl3c0l3OG5Hb3NrRDBtbW9LaWZyUE9WNEJUNTdRS2FXNkVBM1VGa1JXSkJsdk9GQW1qRzNEcFlONTdmZ0MyV245WmpzeWdpOUh4eFJPX0loYU9WQzdES2NHLVhINFpTRy1pdzE5RjJST2w4VXBRZDVydUFFYmxDZlJYdHNzTUZNSkQ3a0d3d0gtYVVFbzBhVlFCc1NvblRQZnRwSFY0NDNpN2UwaGl3bFdGUzFNM2E5N2k0U3dEZm93?oc=5",
      "desc": "",
      "outlets": 1,
@@ -1291,7 +1291,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-22T17:51:55+00:00",
-     "line": "Sammy the pig, who escaped during a music festival in Gautier, has finally been found after days on the run.",
+     "line": "Sammy the pig, who escaped during a music festival in Gautier, Mississippi, was found after days on the run. Guess he wasn't a fan of the opener.",
      "city": "Gautier",
      "label": ""
     },
@@ -1300,7 +1300,7 @@ window.KJEL_NEWS = {
      "col": "weird",
      "title": "Cow on the loose on Maryland highway",
      "source": "Central Oregon Daily",
-     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNb1RadmZMdWFrS25HZ3VjVHFyNFp4Y29YVkl4cFNGLTh3czNCLXgzSkNIcmR0VjZuNFIyOXdqUmE3SXRmaERnOThyOFMwdkZIWkYzVUlEWXBXY0JRdDNtSkFlVXdHYmlhZURtbzlIMElxbTY1TUV6ZVl1ZDRPbDl6dEFqYWRrNjU1UVZHd29QS1BXbFhicjJHWHRORnBLemdYUXBYLXM0MTBhNFZBMTR1NUJsUGc2N1VhSmtOS3lVRS1TSWdKb2xlOFhTTlM4T3h3RHdUT0VOSV9LSXNT?oc=5",
+     "url": "https://www.centraloregondaily.com/news/pets-animals-nature/cow-on-the-loose-on-maryland-highway/video_e02334ac-379d-5e40-87bd-9bda5a32a9eb.html",
      "gn_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNb1RadmZMdWFrS25HZ3VjVHFyNFp4Y29YVkl4cFNGLTh3czNCLXgzSkNIcmR0VjZuNFIyOXdqUmE3SXRmaERnOThyOFMwdkZIWkYzVUlEWXBXY0JRdDNtSkFlVXdHYmlhZURtbzlIMElxbTY1TUV6ZVl1ZDRPbDl6dEFqYWRrNjU1UVZHd29QS1BXbFhicjJHWHRORnBLemdYUXBYLXM0MTBhNFZBMTR1NUJsUGc2N1VhSmtOS3lVRS1TSWdKb2xlOFhTTlM4T3h3RHdUT0VOSV9LSXNT?oc=5",
      "desc": "",
      "outlets": 2,
@@ -1321,7 +1321,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-22T22:12:00+00:00",
-     "line": "A cow got loose and went wandering on a Maryland highway.",
+     "line": "A cow got loose and went wandering on a Maryland highway. Moo-ving violation.",
      "city": "Maryland",
      "label": ""
     },
@@ -1349,7 +1349,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-22T12:58:33-04:00",
-     "line": "Firefighters in Georgia got called out for an unusual rescue, a chameleon that climbed up to a high branch and got stuck.",
+     "line": "Georgia firefighters rescued a chameleon stuck on a high branch. Hard to find a rescue that blends in.",
      "city": "Georgia",
      "label": ""
     },
@@ -1377,7 +1377,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-22T12:13:02-04:00",
-     "line": "An Oklahoma sheriff's office finally captured a caiman, a small cousin of the alligator, after months on the loose, and the body camera caught it all.",
+     "line": "An Oklahoma sheriff's office finally caught a caiman, a small alligator cousin, after months on the loose, and the body camera got it all. See you later, caiman.",
      "city": "Oklahoma",
      "label": ""
     },
@@ -1405,7 +1405,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-22T12:52:53-04:00",
-     "line": "A Maryland man tucked a Mega Millions ticket in his car's sun visor for weeks, then rediscovered it and found out it was a 30,000-dollar winner.",
+     "line": "A Maryland man left a Mega Millions ticket in his car's sun visor for weeks, then found out it won 30,000 dollars. Time to clean out the car.",
      "city": "Maryland",
      "label": ""
     },
@@ -1414,7 +1414,7 @@ window.KJEL_NEWS = {
      "col": "weird",
      "title": "Tecovas hat holds the world record for the largest hat",
      "source": "NewsBreak: Local News & Alerts",
-     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNY2l2Y2I0U2RCTi1jMW1qSEJVWnBNaUVYdllJbXNtOEZCX1VRUkpwbmxxYlJ2U0hhWHF2TjJ0TjE0M2RwY09SMXpzdU5xemtxWTI2b0hSaUc1dUlmLWM3SDBZeGtlb2xQWXNGNzlsVTB0bHo1TG9kQ0RxemV3ZUhlVGZxbE5ZZVhTcGZWYjhaRzZ2WGxQTENMSmdIbkJmbFE0aXRJVUdQVDF3UQ?oc=5",
+     "url": "https://www.newsbreak.com/wfaa-509901/4960591131947-tecovas-hat-holds-the-world-record-for-the-largest-hat",
      "gn_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNY2l2Y2I0U2RCTi1jMW1qSEJVWnBNaUVYdllJbXNtOEZCX1VRUkpwbmxxYlJ2U0hhWHF2TjJ0TjE0M2RwY09SMXpzdU5xemtxWTI2b0hSaUc1dUlmLWM3SDBZeGtlb2xQWXNGNzlsVTB0bHo1TG9kQ0RxemV3ZUhlVGZxbE5ZZVhTcGZWYjhaRzZ2WGxQTENMSmdIbkJmbFE0aXRJVUdQVDF3UQ?oc=5",
      "desc": "",
      "outlets": 2,
@@ -1435,7 +1435,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-22T11:55:16+00:00",
-     "line": "The western wear brand Tecovas now holds the world record for the largest hat.",
+     "line": "Western wear brand Tecovas now holds the world record for the largest hat. Hat hair for days.",
      "city": "",
      "label": ""
     },
@@ -1444,7 +1444,7 @@ window.KJEL_NEWS = {
      "col": "weird",
      "title": "In 2005, a meteorite hunter found a 1,430-pound space rock beneath a Kansas farm; the landowner was due a",
      "source": "The Times of India",
-     "url": "https://news.google.com/rss/articles/CBMi5wJBVV95cUxPeXVhbmpOeEVpVHdzcEMxWFZSeXZIeEdtdFJRcWZsS2RCdWdmTVdtZjJDeVF0dzBkRWFpcmdJNEcyNmZOamxUM0QxLTJ4OGRvazVQVS0tNzYxS1hib0R0Z0t4ZXRuVHFhVURNT2RFa3N1WjRGVDdfczgyRDhpMDl6ek9vY3ludW40MG1aaWRLZFMxenpMWU9hUnF1dVd5WFVNd2FkMlBSYVZMUm8xazk2YjBsb2JpTlR5eUVfQWN1VVhxTGJfZTRuVGRHZkx6bHE2cWRGQ2RXZU54S1FCc3k2N0lrZVdEbXJaVVUtMjFEYkpvQUNqQUNmekxLV1hSdlBYaWlyT09hT0xva0QxNVY3MU9iN25YVGJWWjRRUjYxNXlhWVhyZDM2OXZkTm5KMTdpaWhzNF91N3dvNmdKT3dJWjlQMjBzbjhad1NHemNHaTNwOVpTUjlDdHFOYm9TeVhoYjZlcHk1SdIB5wJBVV95cUxPeXVhbmpOeEVpVHdzcEMxWFZSeXZIeEdtdFJRcWZsS2RCdWdmTVdtZjJDeVF0dzBkRWFpcmdJNEcyNmZOamxUM0QxLTJ4OGRvazVQVS0tNzYxS1hib0R0Z0t4ZXRuVHFhVURNT2RFa3N1WjRGVDdfczgyRDhpMDl6ek9vY3ludW40MG1aaWRLZFMxenpMWU9hUnF1dVd5WFVNd2FkMlBSYVZMUm8xazk2YjBsb2JpTlR5eUVfQWN1VVhxTGJfZTRuVGRHZkx6bHE2cWRGQ2RXZU54S1FCc3k2N0lrZVdEbXJaVVUtMjFEYkpvQUNqQUNmekxLV1hSdlBYaWlyT09hT0xva0QxNVY3MU9iN25YVGJWWjRRUjYxNXlhWVhyZDM2OXZkTm5KMTdpaWhzNF91N3dvNmdKT3dJWjlQMjBzbjhad1NHemNHaTNwOVpTUjlDdHFOYm9TeVhoYjZlcHk1SQ?oc=5",
+     "url": "https://timesofindia.indiatimes.com/world/rest-of-world/in-2005-a-meteorite-hunter-found-a-1430-pound-space-rock-beneath-a-kansas-farm-the-landowner-was-due-a-share-of-a-find-experts-said-could-bring-at-least-1-million/amp_articleshow/135114130.cms",
      "gn_url": "https://news.google.com/rss/articles/CBMi5wJBVV95cUxPeXVhbmpOeEVpVHdzcEMxWFZSeXZIeEdtdFJRcWZsS2RCdWdmTVdtZjJDeVF0dzBkRWFpcmdJNEcyNmZOamxUM0QxLTJ4OGRvazVQVS0tNzYxS1hib0R0Z0t4ZXRuVHFhVURNT2RFa3N1WjRGVDdfczgyRDhpMDl6ek9vY3ludW40MG1aaWRLZFMxenpMWU9hUnF1dVd5WFVNd2FkMlBSYVZMUm8xazk2YjBsb2JpTlR5eUVfQWN1VVhxTGJfZTRuVGRHZkx6bHE2cWRGQ2RXZU54S1FCc3k2N0lrZVdEbXJaVVUtMjFEYkpvQUNqQUNmekxLV1hSdlBYaWlyT09hT0xva0QxNVY3MU9iN25YVGJWWjRRUjYxNXlhWVhyZDM2OXZkTm5KMTdpaWhzNF91N3dvNmdKT3dJWjlQMjBzbjhad1NHemNHaTNwOVpTUjlDdHFOYm9TeVhoYjZlcHk1SdIB5wJBVV95cUxPeXVhbmpOeEVpVHdzcEMxWFZSeXZIeEdtdFJRcWZsS2RCdWdmTVdtZjJDeVF0dzBkRWFpcmdJNEcyNmZOamxUM0QxLTJ4OGRvazVQVS0tNzYxS1hib0R0Z0t4ZXRuVHFhVURNT2RFa3N1WjRGVDdfczgyRDhpMDl6ek9vY3ludW40MG1aaWRLZFMxenpMWU9hUnF1dVd5WFVNd2FkMlBSYVZMUm8xazk2YjBsb2JpTlR5eUVfQWN1VVhxTGJfZTRuVGRHZkx6bHE2cWRGQ2RXZU54S1FCc3k2N0lrZVdEbXJaVVUtMjFEYkpvQUNqQUNmekxLV1hSdlBYaWlyT09hT0xva0QxNVY3MU9iN25YVGJWWjRRUjYxNXlhWVhyZDM2OXZkTm5KMTdpaWhzNF91N3dvNmdKT3dJWjlQMjBzbjhad1NHemNHaTNwOVpTUjlDdHFOYm9TeVhoYjZlcHk1SQ?oc=5",
      "desc": "",
      "outlets": 1,
@@ -1463,7 +1463,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-23T05:30:00+00:00",
-     "line": "In 2005, a meteorite hunter found a 1,430-pound space rock buried beneath a Kansas farm.",
+     "line": "A meteorite hunter found a 1,430-pound space rock buried under a Kansas farm in 2005. Best rock that farm ever grew.",
      "city": "Kansas",
      "label": ""
     },
@@ -1472,7 +1472,7 @@ window.KJEL_NEWS = {
      "col": "weird",
      "title": "Scientists discover new squid-like species in Wyoming that lived 160 million years ago",
      "source": "New York Post",
-     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNVnhEbWFQanZsbjFhb2cxWlQyWDJIb3hGRmM2ME85R3dxVGFrY1Ytb1dBY1dZZDViN0t2NEZZMjJsNUVoNTRmdmFvOHJPUGFRU2lvNnJEV08yYzRMdW1iZUsyS2FHdWJkTFFsQXR4U1U2NkZ3U0h2WXlBNFo0emhFS3pwZUpkSFlNZ0s4ak44OTh3QklCVkM5ZHFWaWE5czhVajBEMlR3NUhtdjlkUEFmTUFJd0VqZmhsajRZYVN3RDlCYzg?oc=5",
+     "url": "https://nypost.com/2026/10/23/science/scientists-discover-new-squid-like-species-in-wyoming-that-lived-160-million-years-ago/",
      "gn_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNVnhEbWFQanZsbjFhb2cxWlQyWDJIb3hGRmM2ME85R3dxVGFrY1Ytb1dBY1dZZDViN0t2NEZZMjJsNUVoNTRmdmFvOHJPUGFRU2lvNnJEV08yYzRMdW1iZUsyS2FHdWJkTFFsQXR4U1U2NkZ3U0h2WXlBNFo0emhFS3pwZUpkSFlNZ0s4ak44OTh3QklCVkM5ZHFWaWE5czhVajBEMlR3NUhtdjlkUEFmTUFJd0VqZmhsajRZYVN3RDlCYzg?oc=5",
      "desc": "",
      "outlets": 1,
@@ -1491,7 +1491,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-23T08:09:00+00:00",
-     "line": "Scientists discovered a new squid-like species in Wyoming that lived 160 million years ago.",
+     "line": "Scientists discovered a new squid-like species in Wyoming that lived 160 million years ago. Wyoming used to be beachfront.",
      "city": "Wyoming",
      "label": ""
     },
@@ -1500,7 +1500,7 @@ window.KJEL_NEWS = {
      "col": "weird",
      "title": "Four-year-old boy's adorable reaction to hearing his parents' voices for the first time goes viral",
      "source": "TAG24.COM",
-     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQUll3M3puRmY2X2wyYlJQMjkwOU5YM1k5M0E2YWRtem1RalBjR3BFZkRIR2JheGhlTEgyOThOaDlzZEVwZ3Zsd2NyLWd3V0JRNEMyb1dOdTFEekgzV3Y0YmlhTmp1OVpmRS1oaUp4VkpIcDE1NmlYS1B4YlVxVi1hekpaZWJSVTRQTFg3OGpHVGstNV9EWjg0Zk9UcHNjdEFMdVpPcndhSEdLdlBjdWpOaEpTcjh5cS1FNzBxZDJMWE1HZU4tS25rbVVUMTMyTXZqT2QwZVlna1Z3MG5VRktv?oc=5",
+     "url": "https://www.tag24.com/en/lifestyle/family/four-year-old-boys-adorable-reaction-to-hearing-his-parents-voices-for-the-first-time-goes-viral-3541936",
      "gn_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQUll3M3puRmY2X2wyYlJQMjkwOU5YM1k5M0E2YWRtem1RalBjR3BFZkRIR2JheGhlTEgyOThOaDlzZEVwZ3Zsd2NyLWd3V0JRNEMyb1dOdTFEekgzV3Y0YmlhTmp1OVpmRS1oaUp4VkpIcDE1NmlYS1B4YlVxVi1hekpaZWJSVTRQTFg3OGpHVGstNV9EWjg0Zk9UcHNjdEFMdVpPcndhSEdLdlBjdWpOaEpTcjh5cS1FNzBxZDJMWE1HZU4tS25rbVVUMTMyTXZqT2QwZVlna1Z3MG5VRktv?oc=5",
      "desc": "",
      "outlets": 1,
@@ -1519,7 +1519,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-22T15:58:35+00:00",
-     "line": "A four-year-old boy's adorable reaction to hearing his parents' voices for the very first time has gone viral.",
+     "line": "A 4-year-old boy's reaction to hearing his parents' voices for the very first time has gone viral. Grab the tissues.",
      "city": "",
      "label": ""
     },
@@ -1528,7 +1528,7 @@ window.KJEL_NEWS = {
      "col": "weird",
      "title": "Dogs have the funniest reactions as owner dresses up as a giant racoon in viral clip",
      "source": "TAG24.COM",
-     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZUcyYkhaLUJaNHNNZXdMbXdXZEVGM0lhc0dEQ0NLc2Z4clpzSERtMDZ2WHN6dHJzODk3dDdJU3N3a2xwOGtTc3NmenhCZ3hxUkgtYzJiNEd2ZnBrdjk1dnZzSGJYT2pkTHEwVDhqRXI3emg5eVdJVE1oZ0NBeEFnUzI2RXU1U3NFUDBVVjNPRHNGQVlKTkJPU0FmdlRyUldSUV93aHBYY3NlU3dhRzdqbi15T3RJMUVIRW1iVzFGOENxaEFmRjVRelNKeE1JMmdBWFE?oc=5",
+     "url": "https://www.tag24.com/en/topic/animals/dogs/dogs-have-the-funniest-reactions-as-owner-dresses-up-as-a-giant-racoon-in-viral-clip-3541875",
      "gn_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZUcyYkhaLUJaNHNNZXdMbXdXZEVGM0lhc0dEQ0NLc2Z4clpzSERtMDZ2WHN6dHJzODk3dDdJU3N3a2xwOGtTc3NmenhCZ3hxUkgtYzJiNEd2ZnBrdjk1dnZzSGJYT2pkTHEwVDhqRXI3emg5eVdJVE1oZ0NBeEFnUzI2RXU1U3NFUDBVVjNPRHNGQVlKTkJPU0FmdlRyUldSUV93aHBYY3NlU3dhRzdqbi15T3RJMUVIRW1iVzFGOENxaEFmRjVRelNKeE1JMmdBWFE?oc=5",
      "desc": "",
      "outlets": 1,
@@ -1547,7 +1547,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-22T00:55:28+00:00",
-     "line": "A dog owner dressed up as a giant raccoon, and the dogs' reactions in the viral clip are hilarious.",
+     "line": "A dog owner dressed up as a giant raccoon, and the dogs' reactions went viral. Those dogs need therapy now.",
      "city": "",
      "label": ""
     },
@@ -1575,7 +1575,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-23T11:36:29+00:00",
-     "line": "A YouTuber remixed Linkin Park's In the End with LinkedIn corporate jargon, turning it into a catchy workplace anthem called LinkedIn Park.",
+     "line": "A YouTuber turned Linkin Park's In the End into LinkedIn Park, a workplace anthem made of corporate jargon. Let's circle back on that.",
      "city": "",
      "label": ""
     },
@@ -1603,7 +1603,7 @@ window.KJEL_NEWS = {
      "date": null,
      "teaser": null,
      "ts": "2026-10-22T11:50:17+00:00",
-     "line": "A popular marble racing channel held a Halloween race where eight marbles had to escape a haunted castle course full of giant hungry spiders.",
+     "line": "A popular marble racing channel held a Halloween race through a haunted castle full of giant hungry spiders. Some of those marbles lost their marbles.",
      "city": "",
      "label": ""
     }
