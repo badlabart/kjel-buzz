@@ -61,7 +61,8 @@ def wireready_full(stamp):
 
 # Boss (2026-10-20): "Show Prep" = LOCAL PRIDE, National, Humor, Music, then every Event Board column
 # except KIM ONLY and Live Music.
-SHOW_PREP = ["pride", "national", "humor", "music", "timely", "johnsons"]
+SHOW_PREP = ["pride", "humor", "music", "timely", "johnsons"]
+SHOW_PREP_LAST = ["national"]  # Boss (2026-10-23): National sits at the far right, after the Event Board columns
 EXTRA_NAMES = {"timely": "Timely", "johnsons": "The Johnsons"}
 EVENTS_JS = Path.home() / "Documents/Claude/Projects/KJEL-event-board/data/events.js"
 EVENT_SKIP = {"kim only", "live music", "manual entries"}  # manual entries are filed under their own category (d["manual"])
@@ -286,8 +287,9 @@ def main():
             (news_out / "wireready" / "index.html").write_bytes((ROOT / "docs" / "news" / "wireready" / "index.html").read_bytes())
     # Boss (2026-10-21): Show Prep opens with a day / date search, and Wx (alerts + today's town forecasts) is its first column.
     wxcol = wx.column()
-    prep = {"updated": stamp, "columns": [wxcol] + [by_key[k] for k in SHOW_PREP if k in by_key] + event_columns(),
-            "lebanon": {k: v for k, v in lebanon.items() if k in SHOW_PREP}}
+    prep = {"updated": stamp,
+            "columns": [wxcol] + [by_key[k] for k in SHOW_PREP if k in by_key] + event_columns() + [by_key[k] for k in SHOW_PREP_LAST if k in by_key],
+            "lebanon": {k: v for k, v in lebanon.items() if k in SHOW_PREP + SHOW_PREP_LAST}}
     page.write(prep, title="Show Prep", doc_title="KJEL Show Prep", subdir="show-prep", day_search=True)
     # Boss (2026-10-20): Show Prep also lives at its own short address, badlabart.github.io/kjel-showprep
     out = Path.home() / "Documents/Claude/Projects/KJEL-showprep/docs"
