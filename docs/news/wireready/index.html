@@ -23,6 +23,7 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .name{font-weight:bold;font-size:15px;margin:3px 0 2px}
 .town{background:#0A2A50;color:#FFFFFF;font-size:11px;font-weight:bold;padding:1px 6px;border-radius:3px;margin-right:4px}
 .town.leb{background:#FDB913;color:#0A2A50}
+.pc{background:#0A2A50;color:#FFFFFF;font-weight:bold;padding:0 3px;border-radius:3px}.pc.leb{background:#FDB913;color:#0A2A50}
 .city{color:#33445C;white-space:nowrap}.city.leb{background:#FDB913;color:#0A2A50;padding:0 3px;border-radius:3px}
 .why{font-size:13px;margin-top:4px}
 .sig{font-size:12px;margin-top:4px;color:#33445C}
@@ -40,9 +41,18 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .dsearch{margin:0;padding:12px 18px 2px}
 .dsearch .dq{width:400px;max-width:60%;font-size:18px;padding:8px 10px;border:2px solid #FDB913;border-radius:8px}
 .dsearch .dgo{font-size:17px;font-weight:bold;padding:8px 18px;border:0;border-radius:8px;background:#D0101F;color:#FFFFFF;cursor:pointer}
-.dsearch .dgo2{background:#FDB913;color:#0A2A50}
+.dtabs{margin:0 0 8px}.dlab{color:#FFFFFF;font-weight:bold;font-size:16px;margin-right:10px}
+.dsearch .dtab{font-size:16px;font-weight:bold;padding:7px 14px;margin-right:6px;border:2px solid #FFFFFF;border-radius:8px;background:#0A2A50;color:#FFFFFF;cursor:pointer}
+.dsearch .dtab.on{background:#FDB913;border-color:#FDB913;color:#0A2A50}
+.dhelp{color:#FFFFFF;font-size:15px;padding:6px 0 0}
 .dsearch a{color:#FDB913;font-weight:bold;font-size:15px;margin-left:12px}
-.col.kjh,.card.kjh{display:none}
+.cityhd{background:#0A2A50;color:#FFFFFF;font-weight:bold;font-size:15px;letter-spacing:1px;text-transform:uppercase;padding:5px 10px;border-radius:6px;margin:8px 0 6px}
+.cityhd.leb{background:#FDB913;color:#0A2A50}
+.col.kjh,.card.kjh,.cg.kjh{display:none}
+.kjs .cg{display:none}.kjs .cg.kjm{display:block}
+.cg.kjz{display:none}.ctag{display:none}
+.cflat .ctag{display:inline-block;background:#0A2A50;color:#FFFFFF;font-size:11px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;padding:1px 7px;border-radius:3px;margin-bottom:4px}
+.cflat .ctag.leb{background:#FDB913;color:#0A2A50}
 .dnote{color:#FFFFFF;font-size:16px;font-weight:bold;padding:6px 18px 0}
 .dnote .dn{color:#FDB913}.dnote a{color:#FDB913}
 .kjs .col{display:none}.kjs .col.kjm{display:inline-block}.kjs .card{display:none}.kjs .card.kjm{display:block}.kjs .search{display:none}
@@ -72,10 +82,10 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .wrtool .wrlock{display:inline-block;margin:0 12px 0 0;vertical-align:middle}.wrtool .wrlock button{background:#FDB913;color:#0A2A50;font-weight:bold}.wrtool .empty{display:inline-block;color:#FFFFFF;font-size:14px;vertical-align:middle}
 .wrfp .col{max-height:calc(100vh - 140px);overflow-y:auto}
 </style></head>
-<body data-updated="1792769458000">
+<body data-updated="1792774035000">
 <div class="top"><div class="logo">103<span class="star">&#9733;</span>7 <span class="call">KJEL</span></div>
 <div class="hd"><div class="title">WireReady</div>
-<div class="meta">KJEL WireReady &middot; updated Fri Oct 23, 10:30 AM</div></div></div>
+<div class="meta">KJEL WireReady &middot; updated Fri Oct 23, 11:47 AM</div></div></div>
 <div class="stale" id="stale">This report is more than a day old. The 6 AM refresh did not run.</div>
 
 <div class="wrtool"><button class="wradd" type="button" id="wradd">+ Add Story</button><div class="wrlock" id="wrlock" style="display:none"><input type="password" id="wrpass" placeholder="Passcode"> <button type="button" id="wrunlock">Unlock</button></div><div class="empty" id="wrmsg">Loading...</div></div>
@@ -141,6 +151,13 @@ function kjSearch(){
     var nd=e.className.indexOf(' nd')>=0;  // Nat'l Day cards lead with the weekday, so the flag goes after it
     if(dd===today){ if(dl) dl.innerHTML=nd?dl.innerHTML+' &middot; TODAY':'TODAY &middot; '+dl.innerHTML; e.className=e.className+' new'; }
     else if(dd===tmr && dl){ dl.innerHTML=nd?dl.innerHTML+' &middot; TOMORROW':'TOMORROW &middot; '+dl.innerHTML; }
+  }
+  // A city group whose events have all passed goes too, so no heading stands over nothing.
+  for(var gi=0;gi<divs.length;gi++){
+    if(divs[gi].className!=='cg') continue;
+    var cs=divs[gi].getElementsByTagName('div'), live=0;
+    for(var ci=0;ci<cs.length;ci++){ if(cs[ci].className.indexOf('card')===0 && cs[ci].style.display!=='none') live++; }
+    if(!live) divs[gi].style.display='none';
   }
   var u=parseInt(document.body.getAttribute('data-updated'),10);
   if(u && now-u>30*3600000){var s=document.getElementById('stale'); if(s) s.style.display='block';}

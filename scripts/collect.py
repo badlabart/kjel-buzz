@@ -40,6 +40,8 @@ CONGRATS = re.compile(
     r"anniversar\w*|years in business|ribbon[- ]cutting|grand opening|opens|expands|milestone|retir\w*|"
     r"graduat\w*|promot\w*|selected|wins?|won|record|semifinalists?|finalists?|signs with|commits? to|"
     r"wall of honor|teacher of the year|outstanding|excellence|achiev\w*|celebrat\w*)\b", re.I)
+# Boss (2026-10-23): "we don't congratulate people for passing an inspection." Routine passes never get the CONGRATS? tag.
+ROUTINE_PASS = re.compile(r"\b(inspections?|inspected|audits?|audited|re-?certif\w*|re-?licens\w*|compliance)\b", re.I)
 PER_SOURCE = {"national": 3, "music": 4, "local": 10, "weird": 6}  # cap per outlet in the shortlist
 FAILED = []
 
@@ -818,7 +820,7 @@ def main():
                 dropped["outside core area"] = dropped.get("outside core area", 0) + 1
                 continue
         if it["col"] == "local":
-            it["congrats"] = bool(it.get("community") or CONGRATS.search(it["title"]))
+            it["congrats"] = bool((it.get("community") or CONGRATS.search(it["title"])) and not ROUTINE_PASS.search(it["title"]))
             base = LEBANON_FRESH_HOURS if it["tier"] == 0 else FRESH_HOURS["local"]
             if age_h > (CONGRATS_FRESH_HOURS[it["tier"]] if it["congrats"] else base):
                 continue

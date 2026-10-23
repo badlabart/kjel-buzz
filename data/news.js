@@ -1,5 +1,5 @@
 window.KJEL_NEWS = {
- "updated": "2026-10-23T15:30:58+00:00",
+ "updated": "2026-10-23T16:47:15+00:00",
  "columns": [
   {
    "key": "wireready",
@@ -390,34 +390,6 @@ window.KJEL_NEWS = {
      "label": "Tiger Spirit Trophy"
     },
     {
-     "id": "Le9ea26",
-     "col": "local",
-     "title": "Waynesville R-VI School buses receive 100% pass rating",
-     "source": "Waynesville R-VI Schools",
-     "url": "https://www.waynesville.k12.mo.us/live-feed",
-     "gn_url": null,
-     "desc": "Waynesville R-VI School buses receive 100% pass rating  The Missouri State Highway Patrol conducted an unannounced inspection of 10 randomly selected Waynesville R-VI school buses on Tuesday, Oct. 20, 2026. All 10 buses passed inspection, earning a 100% passing rate.  The district recognizes its transportation mechanics and bus drivers for their dedication to maintaining safe, reliable transportation for students. Their continued efforts help ensure student safety remains a top priority.",
-     "outlets": 1,
-     "also": [],
-     "signal": "",
-     "score": 18.4,
-     "town": "Waynesville",
-     "tier": 1,
-     "kind": null,
-     "punch": null,
-     "congrats": false,
-     "scope": null,
-     "near": null,
-     "body": "",
-     "prio": 1,
-     "date": null,
-     "teaser": null,
-     "ts": "2026-10-20T13:31:31.095000-05:00",
-     "line": "All 10 Waynesville R-6 school buses picked at random passed a surprise Missouri State Highway Patrol inspection Oct. 20. Even the squeaky seats passed.",
-     "city": "Waynesville",
-     "label": "Perfect Bus Inspection"
-    },
-    {
      "id": "L01c891",
      "col": "local",
      "title": "Community Recognition Plaque presented to Domino's",
@@ -500,34 +472,6 @@ window.KJEL_NEWS = {
      "line": "Lathan Martin and Boone Shockley of Grand Missouri Bank in Bolivar graduated from the Oklahoma Bankers Association Consumer Lending School in Oklahoma City in October. Loan officers with diplomas to prove it.",
      "city": "Bolivar",
      "label": "Banking School Grads"
-    },
-    {
-     "id": "Laa909f",
-     "col": "local",
-     "title": "Parkview Health Care Facility achieves deficiency-free state inspection",
-     "source": "Bolivar Herald-Free Press",
-     "url": "https://bolivarmonews.com/2026/10/20/parkview-health-care-facility-achieves-deficiency-free-state-inspection/",
-     "gn_url": null,
-     "desc": "Parkview Health Care Facility achieves deficiency-free state inspection Parkview Health Care Facility, a Citizens Memorial Health Care Foundation long-term care facility in Bolivar, recently completed its annual state inspection by […]",
-     "outlets": 1,
-     "also": [],
-     "signal": "",
-     "score": 18.2,
-     "town": "Bolivar",
-     "tier": 1,
-     "kind": null,
-     "punch": null,
-     "congrats": false,
-     "scope": null,
-     "near": null,
-     "body": "Parkview Health Care Facility, a Citizens Memorial Health Care Foundation long-term care facility in Bolivar, recently completed its annual state inspection by the Missouri Department of Health and Senior Services (DHSS) and was found to be deficiency-free. “We are incredibly proud of our entire team for achieving a deficiency-free survey,” said Ryan Skopec, Parkview Health Care Facility administrator. “This accomplishment reflects the dedication, teamwork and unwavering commitment our staff demonstrates every day in providing safe, high-quality care for our residents. It is a testament to our employees’ hard work and compassion and the culture of excellence we strive to maintain at Parkview.” DHSS conducts unannounced inspections of long-term care facilities to evaluate compliance with federal and state regulations. The inspection process includes observations, interviews and reviews of records and documentation. Inspectors may cite deficiencies when a facility does not meet regulatory requirements. “This accomplishment reflects exceptional teamwork and an unwavering commitment to resident safety, dignity and quality of care,” said Tim Francka, administrative director of long-term care at CMH. “A deficiency‑free survey affirms that the Parkview team is operating at a level that consistently meets or exceeds federal and state expectations.” For more information about Parkview Health Care Facility or to schedule a tour, call 417-326-3000.",
-     "prio": 1,
-     "date": null,
-     "teaser": null,
-     "ts": "2026-10-20T16:15:49+00:00",
-     "line": "Parkview Health Care Facility in Bolivar passed its annual state inspection with zero deficiencies. Not even a dust bunny.",
-     "city": "Bolivar",
-     "label": "Perfect Inspection"
     },
     {
      "id": "Lafb979",
@@ -1613,7 +1557,7 @@ window.KJEL_NEWS = {
  "lebanon": {
   "pride": {
    "count": 5,
-   "of": 17,
+   "of": 15,
    "goal": 0.5
   },
   "local": {
