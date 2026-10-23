@@ -1,45 +1,30 @@
 {
- "made": "2026-10-21",
+ "made": "2026-10-23",
  "light": [
   {
-   "id": "L82d64c",
-   "line": "Three Waynesville groups, Bathsheba Chapter 14, King Solomon Lodge 15 and UKHFI Temple 203, donated 50 headphones and clothing for elementary nurses' offices on Oct. 20.",
-   "city": "Waynesville"
-  },
-  {
-   "id": "Lcc7642",
-   "line": "BTC Bank surprised the City of Buffalo with a 50,000 dollar check to finish funding the first phase of repairs to the Buffalo Community Center.",
-   "city": "Buffalo"
-  },
-  {
-   "id": "Lc00021",
-   "line": "A Lebanon church built a wheelchair ramp for a disabled woman, according to the Laclede County Record.",
-   "city": "Lebanon"
-  },
-  {
    "id": "L1e6a22",
-   "line": "Marshfield nonprofit Shine Through Faith started by mowing yards and running groceries for older neighbors and now helps families, foster kids and teachers too.",
+   "line": "A Marshfield nonprofit called Shine Through Faith, founded by Heather Rodriguez, started by helping older neighbors stay in their homes and now helps families, foster kids and teachers too.",
    "city": "Marshfield"
   },
   {
-   "id": "L09817d",
-   "line": "A Lake of the Ozarks nonprofit is helping women start over with a safe place to sleep, a working phone, transportation and a fresh chance.",
-   "city": "Lake of the Ozarks"
+   "id": "L82d64c",
+   "line": "Three Waynesville lodges and chapters donated 50 headphones for elementary students and clothing for the school nurses' offices on Oct. 20.",
+   "city": "Waynesville"
   },
   {
-   "id": "L604b7b",
-   "line": "No, Patrick Mahomes does not have a Lake of the Ozarks home; his mom Randi shot down the rumor online, writing she wishes he did because she loves the Lake.",
-   "city": "Lake of the Ozarks"
-  },
-  {
-   "id": "L53d98a",
-   "line": "Nearly 2,300 boaters, 2,287 to be exact, turned out under sunny skies for the Fall Harbor Hop poker run to wrap up the Lake of the Ozarks boating season.",
-   "city": "Lake of the Ozarks"
+   "id": "L481775",
+   "line": "Waynesville bus drivers and aides celebrated School Bus Safety Week by handing out stickers and pencils to kids, and on Oct. 21 the drivers got treated to pizza.",
+   "city": "Waynesville"
   },
   {
    "id": "La7f2b5",
-   "line": "Rockin' Rogersville has grown from one night of live music into a full community festival, with all the money raised going back into Rogersville.",
+   "line": "Rockin' Rogersville started as one night of live music and has grown into a full community festival that raises money to give back to Rogersville.",
    "city": "Rogersville"
+  },
+  {
+   "id": "L09817d",
+   "line": "A Lake of the Ozarks nonprofit is helping women start over by offering them housing, support and hope.",
+   "city": "Lake of the Ozarks"
   }
  ]
 }

@@ -1,29 +1,32 @@
 {
- "made": "2026-10-22",
+ "made": "2026-10-23",
  "timely": [
-  {
-   "id": "T78849d"
-  },
   {
    "id": "Ta75ecc"
   },
   {
-   "id": "Te950db"
+   "id": "Ta9b3cb"
   },
   {
-   "id": "Ta7d631"
-  },
-  {
-   "id": "Tc173d4"
-  },
-  {
-   "id": "T70c2f4"
+   "id": "Taec67a"
   },
   {
    "id": "T5f14aa"
   },
   {
    "id": "T2f8a71"
+  },
+  {
+   "id": "Ta7d631"
+  },
+  {
+   "id": "T70c2f4"
+  },
+  {
+   "id": "Tc173d4"
+  },
+  {
+   "id": "T1997d6"
   },
   {
    "id": "T321560"
@@ -38,94 +41,108 @@
    "id": "Tc44f8a"
   },
   {
-   "id": "Tdce645",
-   "label": "20 Years Ago",
-   "line": "Twenty years ago this week, in 2006, Taylor Swift released her debut album, the record that made her a rising star in country music.",
-   "date": "2026-10-24"
-  },
-  {
    "id": "T51f384",
-   "label": "Reba's Back",
-   "line": "Reba McEntire's NBC sitcom Happy's Place, where she runs the Tennessee tavern she inherited from her dad, returns for season three on Friday night.",
+   "label": "TV Tonight",
+   "line": "Reba McEntire's NBC sitcom Happy's Place, where she inherits her father's Tennessee tavern, returns tonight for its third season with her old co-star Melissa Peterman.",
    "date": "2026-10-23"
   },
   {
-   "id": "Tace680",
+   "id": "Td16ce4",
    "label": "Family Movie",
-   "line": "Wildwood, a fantasy film based on an acclaimed children's novel about a girl saving her baby brother in a secret enchanted forest, stars Mahershala Ali and Angela Bassett.",
-   "date": "2026-10-22"
+   "line": "Wildwood, a fantasy movie from an acclaimed children's novel about a girl who heads into a secret enchanted forest to save her baby brother, is now in theaters.",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "Tdce645",
+   "label": "20 Years Ago",
+   "line": "Twenty years ago today, Taylor Swift released her debut album, Taylor Swift, which made her a rising star in country music.",
+   "date": "2026-10-24"
+  },
+  {
+   "id": "T4cc2fa",
+   "label": "25 Years Ago",
+   "line": "Twenty-five years ago today, Microsoft released Windows XP, which became one of its most successful operating systems ever.",
+   "date": "2026-10-25"
   }
  ],
  "johnsons": [
   {
-   "id": "J45b2d8",
+   "id": "J319c9a",
    "label": "Outdoors",
-   "line": "The Missouri Department of Conservation is asking Central Missouri deer hunters to get their deer tested for chronic wasting disease all season, at MDC offices, meat processors, taxidermists and freezer head drops."
+   "line": "Missouri's Share the Harvest program wants 6,500 donated deer this year and has dropped the fees to donate, so hunters can feed more Missourians.",
+   "city": ""
   },
   {
-   "id": "J787315",
+   "id": "J09b668",
    "label": "Outdoors",
-   "line": "Researchers sank 140 fallen and cut trees into a 92-acre Wisconsin lake, and fish production in that lake doubled."
+   "line": "Old-school deer hunters say getting out while a big storm is moving through may give you your best chance all season at a big buck.",
+   "city": ""
   },
   {
-   "id": "Jf3f0f3",
-   "label": "Life",
-   "line": "A Reddit poster's frugal Halloween tip: a four-pound bag of bulk saltwater taffy costs about ten dollars and holds roughly 300 pieces of candy."
+   "id": "J7f341d",
+   "label": "Outdoors",
+   "line": "After heavy rains, duck hunters should scout flooded fields that are holding ducks and hunt that shallow sheet water.",
+   "city": ""
   },
   {
-   "id": "J8235b3",
-   "label": "Life",
-   "line": "One tester ranked the most affordable new electric cars of 2026, and the Tesla Model 3 came out on top under $40,000, with the Nissan Leaf and Kia EV3 close behind."
-  },
-  {
-   "id": "Jd2df01",
-   "label": "Life",
-   "line": "Starbucks has new Halloween treats out now, including a Black Cat Frappuccino and a $15 Bearista charm, while the $30 glow-in-the-dark cold cup is the splurge."
-  },
-  {
-   "id": "J19d880",
-   "label": "Life",
-   "line": "Netflix's November lineup includes the drama series The Altruists, the thriller Heartland starring Jessica Chastain, and an NFL game on Thanksgiving Eve."
-  },
-  {
-   "id": "J93d768",
-   "label": "Cooking",
-   "line": "Budget Bytes says the secret to juicy baked chicken breasts is soaking them in a simple brine before you season them and bake them until golden."
-  },
-  {
-   "id": "J1b71d1",
-   "label": "Cooking",
-   "line": "Skinnytaste rounded up 13 easy weeknight meatloaf recipes, including turkey meatloaf, meatloaf with brown gravy, cheesy stuffed meatloaf, air fryer meatloaf and mini meatloaves."
-  },
-  {
-   "id": "J0c04c9",
-   "label": "Cooking",
-   "line": "A warm fall breakfast bowl of creamy coconut quinoa, roasted sweet potato, blueberries, pecans and coconut whipped cream tastes almost like dessert, according to Skinnytaste."
-  },
-  {
-   "id": "Jcea8a6",
-   "label": "Cooking",
-   "line": "Lay's has a new limited-edition potato chip flavor that tastes just like Thanksgiving dinner, out more than a month before the holiday."
-  },
-  {
-   "id": "J554566",
+   "id": "J560bc5",
    "label": "Family",
-   "line": "A Reddit dad says his 3-year-old has gotten into Paw Patrol and he can't take it, because Bluey tells real stories with soul while Paw Patrol is so generic."
+   "line": "CIYTI light-up princess costumes are being recalled because kids can easily get to the button batteries inside, which can cause serious injury if swallowed.",
+   "city": ""
   },
   {
-   "id": "Jd9e9b4",
+   "id": "J14d1ee",
    "label": "Family",
-   "line": "A Reddit dad who does bedtime every night says he daydreams about those moments in the middle of meetings, and tells other parents they're doing the best they can."
+   "line": "Costway convertible high chairs are being recalled because they have no built-in restraint, so a child can slip through between the tray and the seat.",
+   "city": ""
   },
   {
-   "id": "Jba94c6",
+   "id": "Jb6e02d",
    "label": "Family",
-   "line": "A Reddit mom says the internet is full of parents acting superior, and reminds everyone that a kid with a snotty nose does not make you a bad parent."
+   "line": "BAMAMON LED projecting finger light toys are being recalled because kids can easily open the button battery compartments, which is dangerous if a battery is swallowed.",
+   "city": ""
   },
   {
-   "id": "J77585f",
+   "id": "Jfd24cf",
    "label": "Family",
-   "line": "An only-child mom writes that a one-and-done family isn't a lesser family, and that parents of just one child deserve to feel stressed too."
+   "line": "A Reddit dad says his greatest joy is watching his wife parent their daughter, a little version of herself, and hearing her say Can you just relax, the same words he's told his wife many times.",
+   "city": ""
+  },
+  {
+   "id": "J75489c",
+   "label": "Family",
+   "line": "A Reddit mom says nobody warns you how awkward it is being the parent at a kid's birthday party, making small talk for a couple of hours with parents you don't know.",
+   "city": ""
+  },
+  {
+   "id": "Ja70103",
+   "label": "Family",
+   "line": "A Reddit mom says there are too many trunk-or-treats now, and they've turned into a boring fast candy grab on the to-do list instead of a fun social event.",
+   "city": ""
+  },
+  {
+   "id": "J308a1f",
+   "label": "Cooking",
+   "line": "Budget Bytes has an easy stuffed pepper soup with ground beef and bell peppers in a rich tomato broth, served over rice and ready in 45 minutes.",
+   "city": ""
+  },
+  {
+   "id": "J37b22b",
+   "label": "Cooking",
+   "line": "For a cozy, mostly hands-off dinner, Budget Bytes has a Crockpot chili with ground beef, beans, tomatoes and warm spices.",
+   "city": ""
+  },
+  {
+   "id": "J8792eb",
+   "label": "Life",
+   "line": "Mortgage rates took a substantial drop Friday, because trouble for tech stocks pushed bond yields and mortgage interest rates lower.",
+   "city": ""
+  },
+  {
+   "id": "J13fe2e",
+   "label": "Life",
+   "line": "A Reddit poster says one of the most underrated money-saving moves is living somewhere rural where nobody tries to keep up with the Joneses.",
+   "city": ""
   }
  ]
 }

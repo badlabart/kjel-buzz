@@ -1,15 +1,10 @@
 {
- "made": "2026-10-21",
+ "made": "2026-10-23",
  "national": [
   {
-   "id": "N004402",
-   "line": "A Harvard study that followed shy babies for years found shyness is inborn brain wiring, but most kids outgrow it: of 10 very shy one-year-olds, only 3 stay very shy as teens.",
-   "city": ""
-  },
-  {
-   "id": "N222f40",
-   "line": "A 10-year-old Jack Russell terrier named Luna was reunited with her owners after surviving more than a month on her own in Yellowstone National Park.",
-   "city": "Yellowstone National Park"
+   "id": "N0fdd5b",
+   "line": "A group of 184 witches set a Halloween world record by riding Orlando's 400-foot observation wheel together.",
+   "city": "Orlando"
   },
   {
    "id": "N4306ce",
@@ -17,37 +12,40 @@
    "city": "Massachusetts"
   },
   {
-   "id": "Nc3e2ba",
-   "line": "A tiny Yorkie has gone viral for barking a full-grown black bear right out of his family's backyard, a real David versus Goliath moment.",
+   "id": "N6c9a18",
+   "line": "A service dog named Forest spotted his favorite Disney character on a cruise and went absolutely bananas with joy, and the video has people smiling everywhere.",
    "city": ""
   },
   {
-   "id": "N4d87c8",
-   "line": "Christian McCaffrey swapped jerseys with his younger brother after the two played against each other in an NFL game for the very first time.",
+   "id": "N1b9c2a",
+   "line": "David Bowie didn't like the song Bing Crosby picked for their duet, so a last-minute rewrite created Peace on Earth, and that one became a Christmas classic.",
    "city": ""
   },
   {
-   "id": "Nf39324",
-   "line": "Knicks star Josh Hart showed up to the season opener with the NBA championship trophy braided right into his hair, and the video went viral.",
+   "id": "N2a4a5c",
+   "line": "Gladiator II, starring Denzel Washington and Pedro Pascal, underwhelmed in theaters with 462 million dollars, but it just became the number one movie on Netflix.",
    "city": ""
-  },
-  {
-   "id": "N3bedb0",
-   "line": "A Dolly Parton costume is among the most searched Halloween costumes in the United States this year.",
-   "city": ""
-  },
-  {
-   "id": "N885aab",
-   "line": "Elderly cats are being saved from being put down by moving into an adorable retirement village built just for senior cats.",
-   "city": ""
-  },
-  {
-   "id": "N34445e",
-   "line": "A California woman went viral admitting she actually prefers sleeping on airport floors over hotel beds, and she says she plans it on purpose.",
-   "city": "California"
   }
  ],
  "pride": [
+  {
+   "id": "L6d31e7",
+   "label": "Hall of Fame",
+   "line": "Congrats to Lebanon's Dean Long, a 2011 Lebanon High School graduate, for being inducted into the Emporia State University baseball Hall of Fame in Emporia, Kansas, on Oct. 10. As a senior there, he led the conference with 23 home runs.",
+   "city": "Lebanon"
+  },
+  {
+   "id": "La6f4f1",
+   "label": "National Budget Award",
+   "line": "Congrats to Lebanon's R-3 School District for earning the National Meritorious Budget Award.",
+   "city": "Lebanon"
+  },
+  {
+   "id": "L584d8b",
+   "label": "Grand Opening",
+   "line": "Congrats to Lebanon's R-3 School District on opening the new Robert W. Plaster Center for Student Success.",
+   "city": "Lebanon"
+  },
   {
    "id": "Lf3ee85",
    "label": "New Head Coach",
@@ -61,33 +59,15 @@
    "city": "Lebanon"
   },
   {
-   "id": "La6f4f1",
-   "label": "National Budget Award",
-   "line": "Congrats to Lebanon's school district for earning a National Meritorious Budget Award.",
-   "city": "Lebanon"
-  },
-  {
-   "id": "L584d8b",
-   "label": "Grand Opening",
-   "line": "Congrats to Lebanon's school district on the opening of the new Robert W. Plaster Center for Student Success.",
-   "city": "Lebanon"
-  },
-  {
-   "id": "L5817be",
-   "label": "Marching Festival",
-   "line": "Congrats to Lebanon's Yellowjackets marching band for placing at the Valhalla Marching Festival.",
-   "city": "Lebanon"
-  },
-  {
    "id": "L7873cc",
    "label": "World Food Champ Finalists",
-   "line": "Congrats to Waynesville's Molly McDermitt, Cycila Keeney and Samantha Etheridge for becoming finalists in the World Food Championships in Indianapolis on Oct. 18. Their winning dish - Bacon Lover's Christmas.",
+   "line": "Congrats to Waynesville's Molly McDermitt, Cycila Keeney and Samantha Etheridge for becoming finalists in the World Food Championships in Indianapolis on Oct. 18. Their dish - Bacon Lover's Christmas.",
    "city": "Waynesville"
   },
   {
    "id": "La79861",
-   "label": "Project Teach Award",
-   "line": "Congrats to Waynesville's Kyleen Oxendine, an East Elementary teacher, for winning the first quarter Project Teach Award on Oct. 19 for her Take Home Reading Success Kits.",
+   "label": "Teacher Award",
+   "line": "Congrats to Waynesville's Kyleen Oxendine, a teacher at East Elementary, for winning the 1st Quarter Project Teach Award on Oct. 19. Her Take Home Reading Success Kits help students practice reading at home.",
    "city": "Waynesville"
   },
   {
@@ -97,40 +77,34 @@
    "city": "Waynesville"
   },
   {
-   "id": "L01c891",
-   "label": "Community Recognition",
-   "line": "Congrats to Waynesville's Domino's for earning the school district's Community Recognition Plaque for October on Oct. 19 for supporting students.",
+   "id": "Le9ea26",
+   "label": "Perfect Bus Inspection",
+   "line": "Congrats to Waynesville's school bus mechanics and drivers, whose 10 randomly picked buses all passed a surprise Missouri State Highway Patrol inspection on Oct. 20.",
    "city": "Waynesville"
   },
   {
-   "id": "Le9ea26",
-   "label": "Perfect Bus Inspection",
-   "line": "Congrats to Waynesville's school bus drivers and mechanics: all 10 buses the Missouri State Highway Patrol randomly inspected on Oct. 20 passed, a 100 percent rating.",
+   "id": "L01c891",
+   "label": "Community Recognition",
+   "line": "Congrats to Waynesville's Domino's for receiving the school district's Community Recognition Plaque for October for its ongoing support of students.",
    "city": "Waynesville"
   },
   {
    "id": "La5d56d",
    "label": "Record Test Scores",
-   "line": "Congrats to Bolivar's school district for its strongest academic performance since Missouri testing began in 1998. Math proficiency hit 56.3 percent, 12.5 points above the state.",
+   "line": "Congrats to Bolivar's school district for its strongest test results since state testing began in 1998, with 56.3 percent of students proficient in math, well above the state average.",
    "city": "Bolivar"
   },
   {
    "id": "La4bfcb",
    "label": "Banking School Grads",
-   "line": "Congrats to Bolivar's Lathan Martin and Boone Shockley of Grand Missouri Bank for graduating from the Oklahoma Bankers Association Consumer Lending School in Oklahoma City, Oct. 5 through 9.",
+   "line": "Congrats to Bolivar's Lathan Martin and Boone Shockley of Grand Missouri Bank for graduating from the Oklahoma Bankers Association Consumer Lending School in Oklahoma City.",
    "city": "Bolivar"
   },
   {
    "id": "Laa909f",
    "label": "Perfect Inspection",
-   "line": "Congrats to Bolivar's Parkview Health Care Facility for being found deficiency-free in its annual Missouri state inspection.",
+   "line": "Congrats to Bolivar's Parkview Health Care Facility for passing its annual state inspection with zero deficiencies.",
    "city": "Bolivar"
-  },
-  {
-   "id": "Ld37900",
-   "label": "Marching Festival",
-   "line": "Congrats to Marshfield's high school marching band for taking fourth place at the Ozark Mountain Marching Festival in Reeds Spring.",
-   "city": "Marshfield"
   },
   {
    "id": "Lafb979",
@@ -139,317 +113,290 @@
    "city": "Marshfield"
   },
   {
-   "id": "Lf2fb5a",
-   "label": "New City Administrator",
-   "line": "Congrats to Osage Beach's new city administrator, Keith Klostermann, a 30-year educator appointed by Mayor Richard Ross.",
-   "city": "Osage Beach"
+   "id": "Ld37900",
+   "label": "Marching Band",
+   "line": "Congrats to Marshfield's High School marching band for taking fourth place at the Ozark Mountain Marching Festival.",
+   "city": "Marshfield"
+  },
+  {
+   "id": "Lfbb664",
+   "label": "Athlete of the Week",
+   "line": "Congrats to Crocker's Johnny Carriger, named KY3 Athlete of the Week after scoring a hat trick in Crocker's district championship soccer game, his second of the tournament.",
+   "city": "Crocker"
+  },
+  {
+   "id": "Lbed126",
+   "label": "Cross Country Title",
+   "line": "Congrats to Macks Creek's cross country teams for claiming the title and a runner-up finish at the Dixon Invitational.",
+   "city": "Dixon"
   }
  ],
  "local": [
   {
+   "id": "L57e8c4",
+   "line": "Lebanon's street, electric, water and wastewater crews teamed up with two neighboring cities on Oct. 21 for hands-on trench and confined space rescue training.",
+   "city": "Lebanon"
+  },
+  {
    "id": "Lb75d94",
-   "line": "Lebanon Schools' Hive Depot is providing students with essential resources and new learning opportunities.",
+   "line": "The Lebanon R-3 School District's Hive Depot is providing essential resources and learning opportunities for Lebanon students.",
    "city": "Lebanon"
   },
   {
-   "id": "La6e69f",
-   "line": "Another new logo has been proposed for the City of Lebanon, according to the Laclede County Record.",
-   "city": "Lebanon"
+   "id": "L92d80d",
+   "line": "A historic Route 66 gas station in Marshfield has been restored.",
+   "city": "Marshfield"
   },
   {
-   "id": "L9d9732",
-   "line": "A proposal for a high school at Joel E. Barber school was discussed, according to the Laclede County Record.",
-   "city": "Laclede County"
+   "id": "L0139cd",
+   "line": "A retro Route 66 diner in St. Robert is getting attention as the Missouri road-trip stop for chicken-fried steak and malts.",
+   "city": "St. Robert"
+  },
+  {
+   "id": "L3cdab0",
+   "line": "After a two-month pilot, the Webster County Health Unit has officially launched its Baby Bridge program to help families with babies and toddlers.",
+   "city": "Webster County"
   },
   {
    "id": "L423753",
-   "line": "Two new Missouri State Highway Patrol troopers from the 126th recruit class have been assigned to Camden and Miller counties at the Lake.",
-   "city": "Camden County"
+   "line": "Two new Missouri State Highway Patrol troopers have joined the Lake of the Ozarks area.",
+   "city": "Lake of the Ozarks"
+  },
+  {
+   "id": "L529d8c",
+   "line": "The Polk County Museum hosted a group of homeschoolers who came to learn about Cherokee history and customs.",
+   "city": "Polk County"
   },
   {
    "id": "Ld8400e",
-   "line": "Seymour's estimated population now stands at 2,247, according to the Webster County Citizen.",
+   "line": "Seymour's estimated population now stands at 2,247.",
    "city": "Seymour"
   }
  ],
  "music": [
   {
-   "id": "Mc65b87",
-   "line": "Ella Langley cast singer Kaitlin Butts as the mean girl in her Choosin' Texas video because she knew Butts would be good at it.",
-   "city": ""
-  },
-  {
-   "id": "M81f7b6",
-   "line": "Tim McGraw, Paul Overstreet and the Stanley Brothers are the newest members of the Country Music Hall of Fame.",
+   "id": "Maad5eb",
+   "line": "Ella Langley gave a fiery performance of Dolly Parton's 1974 hit Jolene at the CMA's I Will Always Love You tribute to Dolly.",
    "city": "Nashville"
   },
   {
-   "id": "Ma7c2de",
-   "line": "Kip Moore has released a new song, The Wolf, for the soundtrack of the Prime Video series The Terminal List.",
+   "id": "Md11935",
+   "line": "Reba McEntire honored her longtime friend Dolly Parton by singing He's Alive with the Belmont University choir, and earned a standing ovation.",
+   "city": "Nashville"
+  },
+  {
+   "id": "Mf1bd2d",
+   "line": "Zac Brown performed Butterfly alongside Dolly Parton's own vocals one more time at the CMA tribute to Dolly.",
+   "city": "Nashville"
+  },
+  {
+   "id": "Md97200",
+   "line": "Kelsea Ballerini sang Dolly Parton's Here You Come Again at the CMA tribute and closed by saying, We love you, Miss Dolly.",
+   "city": "Nashville"
+  },
+  {
+   "id": "M8e6786",
+   "line": "Brad Paisley and Sierra Hull honored Dolly Parton with an emotional performance of When I Get Where I'm Going at the CMA tribute.",
+   "city": "Nashville"
+  },
+  {
+   "id": "Mf6a6bc",
+   "line": "The Country Music Association is donating one million dollars to Dolly Parton's Imagination Library.",
    "city": ""
   },
   {
-   "id": "M389478",
-   "line": "John Osborne says a childhood bully inspired the Brothers Osborne song Tough Kid.",
+   "id": "M2a5616",
+   "line": "Zach Top is bringing his sold-out Red Rocks shows to drive-in theaters as a new concert film.",
    "city": ""
+  },
+  {
+   "id": "M879554",
+   "line": "Kacey Musgraves announced Middle of Nowhere Volume 2: Tex Mex Tapes and previewed it with two new songs, Weekend in Texas and Mi Tesoro.",
+   "city": ""
+  },
+  {
+   "id": "Ma86556",
+   "line": "Lainey Wilson joined Marty Stuart to unveil a mural called Wildflowers and Wild Horses in downtown Philadelphia, Mississippi.",
+   "city": "Philadelphia, Miss."
   }
  ],
- "music_drop": [],
+ "music_drop": [
+  "M01f0c8",
+  "Mf07f57",
+  "Mfedc50"
+ ],
  "weird": [
   {
-   "id": "W5cd73f",
-   "line": "An angler at Lake of the Ozarks set a new world record by snagging a 164-pound paddlefish.",
-   "city": "Lake of the Ozarks"
+   "id": "W3f0765",
+   "line": "Authorities in Santa Cruz, California, rounded up an escaped emu wandering city streets, just days after a different emu got loose there.",
+   "city": "Santa Cruz, Calif."
   },
   {
-   "id": "L52a877",
-   "line": "A Seymour man bagged a black bear right here in the Ozarks, according to the Webster County Citizen.",
-   "city": "Seymour"
+   "id": "Wb71900",
+   "line": "A ghostly white raccoon in Florida got caught on camera raiding a cat's dinner, and the internet can't get enough of it.",
+   "city": "Florida"
   },
   {
-   "id": "Wb99104",
-   "line": "A Rhode Island man grew the first pumpkin ever to top 3,000 pounds, making it the largest fruit ever recorded.",
+   "id": "W777fb0",
+   "line": "A black bear snuck into a family's backyard and swiped a drink right out of their fridge, and the homeowner said, I figured he was thirsty.",
+   "city": ""
+  },
+  {
+   "id": "Wfa130c",
+   "line": "A 3,156-pound pumpkin grown in Rhode Island is being inspected to see if it's a new world record.",
    "city": "Rhode Island"
   },
   {
-   "id": "W5c0eb4",
-   "line": "A Texas racetrack earned a Guinness World Record for the world's largest cowboy hat sculpture, unveiled for its upcoming Formula 1 race.",
-   "city": "Austin, Texas"
-  },
-  {
-   "id": "Wa134f8",
-   "line": "An Idaho sheriff's deputy rescued a moose that had its head and body tangled up in a roll of wire fencing.",
-   "city": "Latah County, Idaho"
-  },
-  {
-   "id": "W59189f",
-   "line": "A kangaroo was on the loose in Kansas, and the story is trending.",
-   "city": "Kansas"
-  },
-  {
-   "id": "Wb620b1",
-   "line": "An emu led police officers on a chase in California.",
-   "city": "California"
-  },
-  {
-   "id": "W2b9941",
-   "line": "Parks workers in Ohio found an escaped emu wandering down a mountain bike trail.",
+   "id": "W4bafd2",
+   "line": "A 2,455-pound pumpkin just set a new record at an Ohio pumpkin show.",
    "city": "Ohio"
   },
   {
-   "id": "W4955e7",
-   "line": "A security camera caught a bear breaking into a library in California.",
+   "id": "W668bc7",
+   "line": "A man known as the pumpkin guy in Aspinwall, Pennsylvania, carved a record-breaking 1,906-pound pumpkin to raise money for charity.",
+   "city": "Aspinwall, Pa."
+  },
+  {
+   "id": "W628586",
+   "line": "A California woman, Susan Burgos, set a Guinness World Record for the largest collection of frog stuff, with 13,201 pieces.",
    "city": "California"
   },
   {
-   "id": "W36cd8a",
-   "line": "Lemurs at the Oregon Zoo got Halloween jack-o'-lanterns with grapes hidden at the bottom, and they dug right in.",
-   "city": "Portland, Ore."
+   "id": "Wd386f2",
+   "line": "Pennsylvania has a new state record channel catfish, the first time that record has been broken in 35 years.",
+   "city": "Pennsylvania"
   },
   {
-   "id": "Wc845d9",
-   "line": "An Asian elephant named Samudra squished a 500-pound pumpkin at the Oregon Zoo's 28th annual Squishing of the Squash.",
-   "city": "Portland, Ore."
+   "id": "W9c7c80",
+   "line": "Neighbors in a Tennessee town are on the lookout for a pet kangaroo that escaped from a property.",
+   "city": "Tennessee"
   },
   {
-   "id": "W5c3226",
-   "line": "Texas firefighters rescued an escaped horse that got stuck in a drainage ditch beside a busy highway.",
-   "city": "Texas"
+   "id": "W7be28b",
+   "line": "Sammy the pig, who escaped during a music festival in Gautier, has finally been found after days on the run.",
+   "city": "Gautier"
   },
   {
-   "id": "W9a2df1",
-   "line": "Minnesota's Pumpkin King is back, winning a national giant pumpkin title for the fifth time.",
-   "city": "Minnesota"
+   "id": "W16aab6",
+   "line": "A cow got loose and went wandering on a Maryland highway.",
+   "city": "Maryland"
   },
   {
-   "id": "Wfb0832",
-   "line": "The biggest pumpkin ever entered at Iowa's Anamosa Pumpkinfest broke the festival's site record.",
-   "city": "Anamosa, Iowa"
+   "id": "W5a923b",
+   "line": "Firefighters in Georgia got called out for an unusual rescue, a chameleon that climbed up to a high branch and got stuck.",
+   "city": "Georgia"
   },
   {
-   "id": "Wc50f24",
-   "line": "A man from Anoka, Minnesota, won a pumpkin title at a competition in California.",
-   "city": "California"
+   "id": "W20517c",
+   "line": "An Oklahoma sheriff's office finally captured a caiman, a small cousin of the alligator, after months on the loose, and the body camera caught it all.",
+   "city": "Oklahoma"
   },
   {
-   "id": "Wfa127c",
-   "line": "Bidders flocked to Union County, Pennsylvania, for one of the largest pumpkin auctions in the nation.",
-   "city": "Union County, Pa."
+   "id": "Wfb1882",
+   "line": "A Maryland man tucked a Mega Millions ticket in his car's sun visor for weeks, then rediscovered it and found out it was a 30,000-dollar winner.",
+   "city": "Maryland"
   },
   {
-   "id": "W63e040",
-   "line": "A mystery kitten grew up and turned out to be a whole new species of cat, according to Guinness World Records.",
+   "id": "W7c21bb",
+   "line": "The western wear brand Tecovas now holds the world record for the largest hat.",
    "city": ""
   },
   {
-   "id": "W14f37c",
-   "line": "Long-drive golfer Kyle Berkshire broke his own world record for the longest drive.",
+   "id": "Wcb4d46",
+   "line": "In 2005, a meteorite hunter found a 1,430-pound space rock buried beneath a Kansas farm.",
+   "city": "Kansas"
+  },
+  {
+   "id": "We6ad82",
+   "line": "Scientists discovered a new squid-like species in Wyoming that lived 160 million years ago.",
+   "city": "Wyoming"
+  },
+  {
+   "id": "Wb52983",
+   "line": "A four-year-old boy's adorable reaction to hearing his parents' voices for the very first time has gone viral.",
    "city": ""
   },
   {
-   "id": "W3e0dd6",
-   "line": "An angler at Lake Cascade in Idaho set a new catch-and-release state record for a bullhead catfish.",
-   "city": "Lake Cascade, Idaho"
+   "id": "Wad4cdc",
+   "line": "A dog owner dressed up as a giant raccoon, and the dogs' reactions in the viral clip are hilarious.",
+   "city": ""
   },
   {
-   "id": "Wbfd094",
-   "line": "The San Diego Zoo celebrated International Sloth Day by announcing the birth of a baby two-toed sloth.",
-   "city": "San Diego"
+   "id": "W6e28e5",
+   "line": "A YouTuber remixed Linkin Park's In the End with LinkedIn corporate jargon, turning it into a catchy workplace anthem called LinkedIn Park.",
+   "city": ""
   },
   {
-   "id": "Wd7452c",
-   "line": "A massive moose was caught on video near the New York and Connecticut border.",
-   "city": "New York"
-  },
-  {
-   "id": "W633f60",
-   "line": "A bear was spotted hanging out on the front porch of a home in Blakely.",
-   "city": "Blakely"
+   "id": "W3e1de3",
+   "line": "A popular marble racing channel held a Halloween race where eight marbles had to escape a haunted castle course full of giant hungry spiders.",
+   "city": ""
   }
  ],
  "humor": [
   {
-   "id": "Hce83be",
-   "label": "",
-   "line": "At the very first celebration, the movies played in almost 2,000 theaters, and some events raised money for the Michael J. Fox Foundation.",
-   "city": ""
-  },
-  {
-   "id": "H2e8078",
-   "label": "",
-   "line": "Another name for someone who talks nonstop about nothing is a blatherskite, and today is their day.",
-   "city": ""
-  },
-  {
-   "id": "H0bbef3",
-   "label": "",
-   "line": "Hagfish have no bones, no jaws and no scales, and they can ooze enough slime to fill a two-gallon bucket in minutes.",
-   "city": ""
-  },
-  {
-   "id": "H681a43",
-   "label": "",
-   "line": "The word ragu comes from a French word meaning to revive the taste.",
-   "city": ""
-  },
-  {
-   "id": "Hf04a39",
-   "label": "",
-   "line": "Cheesecake goes all the way back to ancient Greece, but nobody knows who first thought to add pumpkin.",
-   "city": ""
-  },
-  {
-   "id": "H7c78d3",
-   "label": "",
-   "line": "It started in London in 1990, and fans celebrate with apple tasting, grafting, and even songs and poetry about apples.",
-   "city": ""
-  },
-  {
-   "id": "H679505",
-   "label": "",
-   "line": "People wear orange to show kids who are bullied that they are not alone, a tradition a bullying prevention center started in 2011.",
-   "city": ""
-  },
-  {
-   "id": "Hdfad3c",
-   "label": "",
-   "line": "A company that makes organic chickpea snacks launched it, so the garbanzo bean finally gets its spotlight.",
-   "city": ""
-  },
-  {
-   "id": "H348da3",
-   "label": "",
-   "line": "Legend says an Italian monk invented the soft pretzel in 610, shaping dough like children's arms folded in prayer as a reward for kids who learned their prayers.",
-   "city": ""
-  },
-  {
-   "id": "H540fa7",
-   "label": "",
-   "line": "Home Run Inn, which founded the day, got its name in 1947 after a baseball from a nearby park crashed through its front window.",
-   "city": ""
-  },
-  {
-   "id": "H5af674",
-   "label": "",
-   "line": "It falls exactly six months after Earth Day, a halfway check on how well we have kept the planet tidy.",
-   "city": ""
-  },
-  {
-   "id": "H88dd36",
-   "label": "",
-   "line": "The knee is the largest joint in the body, and it works like a hinge that can also rotate a little.",
-   "city": ""
-  },
-  {
-   "id": "Ha0fd12",
-   "label": "",
-   "line": "Many of the things we call nuts are not technically nuts at all, they are dried seeds.",
-   "city": ""
-  },
-  {
-   "id": "H751251",
-   "label": "",
-   "line": "It goes by other names too, including Hug a Wombie Day and Wombats of the World Unite Day.",
-   "city": ""
-  },
-  {
    "id": "H74f0c1",
    "label": "",
-   "line": "Boston cream pie is actually a cake, not a pie, and it was first whipped up at Boston's Parker House Hotel in 1856.",
-   "city": ""
-  },
-  {
-   "id": "Hbd0524",
-   "label": "",
-   "line": "It honors Nicolas Appert, the father of canning, who got to work after Napoleon's government offered a 12,000-franc prize in 1795 for a way to preserve food.",
-   "city": ""
-  },
-  {
-   "id": "Ha81421",
-   "label": "",
-   "line": "A fan made up the day, and in 2018 Crocs released a limited gold-foiled clog for it that sold out within hours.",
+   "line": "It isn't actually a pie but a cake, first whipped up in 1856 by a French chef at Boston's Parker House Hotel.",
    "city": ""
   },
   {
    "id": "H92b59c",
    "label": "",
-   "line": "It runs from 6:02 in the morning to 6:02 at night to honor a famous chemistry number, 6.02 times 10 to the 23rd.",
+   "line": "It's about chemistry, not the critter, and it runs from 6:02 in the morning to 6:02 at night to honor Avogadro's number, 6.02 times ten to the 23rd.",
+   "city": ""
+  },
+  {
+   "id": "Ha81421",
+   "label": "",
+   "line": "A fan made the day up, and in 2018 Crocs released a limited-edition gold-foiled clog for it that sold out within hours.",
+   "city": ""
+  },
+  {
+   "id": "Hbd0524",
+   "label": "",
+   "line": "In 1795, France offered a 12,000-franc prize for a way to preserve food, and chef Nicolas Appert came up with heating it and sealing it in airtight glass jars.",
    "city": ""
   },
   {
    "id": "H4dce4e",
    "label": "",
-   "line": "It falls on Johnny Carson's birthday, the King of Late Night who hosted The Tonight Show from 1962 to 1992.",
-   "city": ""
-  },
-  {
-   "id": "H7c6980",
-   "label": "",
-   "line": "Good and Plenty is the oldest candy brand made in the United States, first produced in Philadelphia in 1893.",
+   "line": "It falls on Johnny Carson's birthday, the King of Late Night who hosted The Tonight Show from 1962 until 1992.",
    "city": ""
   },
   {
    "id": "H259b14",
    "label": "",
-   "line": "One kind is actually called Lebanon bologna, made by the Pennsylvania Dutch around Lebanon, Pennsylvania.",
+   "line": "One famous kind is Lebanon bologna, though it comes from Lebanon, Pennsylvania, where two companies have made it since the late 1800s.",
+   "city": ""
+  },
+  {
+   "id": "H7c6980",
+   "label": "",
+   "line": "Those pink and white candy-coated licorice pieces are the oldest candy brand made in the United States, first produced in Philadelphia in 1893.",
    "city": ""
   },
   {
    "id": "H4f14a6",
    "label": "",
-   "line": "It is promoted by a tongue-in-cheek Tripe Marketing Board, and the date comes from a 1662 diary entry about a most excellent dish of tripe.",
+   "line": "It's promoted by a tongue-in-cheek website called the Tripe Marketing Board, and the date comes from a 1662 diary entry where Samuel Pepys raved about a dish of tripe.",
    "city": ""
   },
   {
    "id": "H885a80",
    "label": "",
-   "line": "The law behind the 40-hour work week took effect in 1938, and it set the very first minimum wage at 25 cents an hour.",
+   "line": "It marks the day in 1938 when the law creating the 40-hour work week took effect, and that same law set the minimum wage at 25 cents.",
    "city": ""
   },
   {
    "id": "H6b92e2",
    "label": "",
-   "line": "It started in 1975 to be like Earth Day for food, and when it came back in 2011 more than 2,300 events were held across the country.",
+   "line": "It started in 1975 as an Earth Day for food, and when it came back in 2011, more than 2,300 events were held across the country.",
+   "city": ""
+  },
+  {
+   "id": "H09cf44",
+   "label": "",
+   "line": "The whole idea is to break your normal routine and do things a little differently, and it counts as a success if you make somebody laugh.",
    "city": ""
   },
   {
@@ -459,39 +406,45 @@
    "city": ""
   },
   {
-   "id": "Hb2002b",
+   "id": "H87319b",
    "label": "",
-   "line": "Holidays for mothers-in-law go back to at least the early 1920s, but this one did not settle on the fourth Sunday in October until the mid-1970s.",
-   "city": ""
-  },
-  {
-   "id": "H3f7f97",
-   "label": "",
-   "line": "It grew out of the first World Pasta Congress in Rome in 1995, where countries met to figure out how to get everyone eating more pasta.",
+   "line": "The official advice for celebrating: when in doubt, just deep fry any food you have.",
    "city": ""
   },
   {
    "id": "H0d687f",
    "label": "",
-   "line": "Pizza making as a job started in Naples, where flatbread with toppings was cheap food for the working poor in the late 1700s.",
+   "line": "Pizza started in Naples in the late 1700s as cheap flatbread for working people, back when Naples was its own kingdom and not part of Italy.",
+   "city": ""
+  },
+  {
+   "id": "Hb2002b",
+   "label": "",
+   "line": "Holidays for mothers-in-law go back to at least the early 1920s, but it didn't land on the fourth Sunday in October until the mid-1970s.",
+   "city": ""
+  },
+  {
+   "id": "H3f7f97",
+   "label": "",
+   "line": "It started at the first World Pasta Congress in Rome in 1995, where countries agreed to team up and get the whole world eating more pasta.",
+   "city": ""
+  },
+  {
+   "id": "H5650cf",
+   "label": "",
+   "line": "You're supposed to dress up like a punk rocker and crank up punk music, the sound born in the 1970s with bands like the Ramones.",
    "city": ""
   },
   {
    "id": "H19fbb0",
    "label": "",
-   "line": "In 1785 the King of Spain sent two donkeys to Boston as a gift, and George Washington used them to breed America's first mules.",
+   "line": "It marks 1785, when the King of Spain sent two donkeys to the United States as a gift, and George Washington used them to breed the first mules of their kind in the country.",
    "city": ""
   },
   {
    "id": "H60e4bd",
    "label": "",
-   "line": "A Dallas public relations man got turned down by both the Texas agriculture department and the Texas Beef Council before pitching it to a state representative.",
-   "city": ""
-  },
-  {
-   "id": "H1b4b51",
-   "label": "",
-   "line": "It traces back to a 1769 entry in Samuel Johnson's biography about a newfangled machine that drove without any horses.",
+   "line": "A Dallas PR man got turned down by both the state agriculture department and the Texas Beef Council before a state lawmaker who was also in the restaurant business took up his cause.",
    "city": ""
   },
   {
@@ -501,27 +454,87 @@
    "city": ""
   },
   {
-   "id": "H934d20",
+   "id": "H327d81",
    "label": "",
-   "line": "Potatoes were first grown thousands of years ago in what is now Peru and Bolivia, and they came to North America through New Hampshire in 1719.",
+   "line": "Mincemeat traditionally mixes minced meat, fat and fruit, but many modern recipes leave the meat out entirely.",
    "city": ""
   },
   {
-   "id": "H9e55ca",
+   "id": "H1b4b51",
    "label": "",
-   "line": "Navy Day falls on Theodore Roosevelt's birthday and was started in 1922 by the Navy League.",
-   "city": ""
-  },
-  {
-   "id": "H9479b6",
-   "label": "",
-   "line": "Every wheel ages at least 12 months, and some sit for as long as 40 months before anyone gets a taste.",
+   "line": "The date comes from a 1769 diary entry about writer Samuel Johnson being told of a newly invented machine that drove without horses.",
    "city": ""
   },
   {
    "id": "H971611",
    "label": "",
-   "line": "The only rule is to let cranky co-workers complain all they want instead of trying to cheer them up.",
+   "line": "You're supposed to let your cranky co-workers complain all they want today instead of trying to cheer them up.",
+   "city": ""
+  },
+  {
+   "id": "H934d20",
+   "label": "",
+   "line": "Potatoes were first grown thousands of years ago in what is now Peru and Bolivia, and Scotch-Irish immigrants brought them to New Hampshire in 1719.",
+   "city": ""
+  },
+  {
+   "id": "H9e55ca",
+   "label": "",
+   "line": "It was set up in 1922 and falls on Teddy Roosevelt's birthday.",
+   "city": ""
+  },
+  {
+   "id": "H4b336a",
+   "label": "",
+   "line": "There are 22 types of black cats, and many places waive black cat adoption fees on Black Friday.",
+   "city": ""
+  },
+  {
+   "id": "H2214b7",
+   "label": "",
+   "line": "The word chocolate traces back to the Aztec word xocolatl, which means bitter water.",
+   "city": ""
+  },
+  {
+   "id": "H464590",
+   "label": "",
+   "line": "The statue arrived in New York in 1885 packed in 214 crates and had to be put back together before it was dedicated in 1886.",
+   "city": ""
+  },
+  {
+   "id": "H97da59",
+   "label": "",
+   "line": "It likely caught on thanks to Euell Gibbons, whose 1962 book was called Stalking the Wild Asparagus.",
+   "city": ""
+  },
+  {
+   "id": "H085258",
+   "label": "",
+   "line": "It honors the first public showing of projected moving pictures, Emile Reynaud's Theatre Optique, in 1892.",
+   "city": ""
+  },
+  {
+   "id": "H4b5187",
+   "label": "",
+   "line": "You're encouraged to take your stuffed animals out of storage and bring them everywhere you go for the day.",
+   "city": ""
+  },
+  {
+   "id": "H9fa8c2",
+   "label": "",
+   "line": "It was created by Colleen Paige, who also founded National Dog Day, and cats live in more than a third of American homes.",
+   "city": ""
+  },
+  {
+   "id": "Hd4ee0e",
+   "label": "",
+   "line": "It marks 1969, when the very first electronic message was sent from one computer to another over ARPANET, the network that came before the internet.",
+   "city": ""
+  },
+  {
+   "id": "Hb67a9e",
+   "label": "",
+   "line": "Oatmeal starts as hulled oats called groats, which get heated to give them their nutty flavor.",
    "city": ""
   }
  ]
