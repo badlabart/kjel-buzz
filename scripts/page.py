@@ -56,7 +56,10 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .dsearch .dtab.on{background:#FDB913;border-color:#FDB913;color:#0A2A50}
 .dhelp{color:#FFFFFF;font-size:15px;padding:6px 0 0}
 .dsearch a{color:#FDB913;font-weight:bold;font-size:15px;margin-left:12px}
-.col.kjh,.card.kjh{display:none}
+.cityhd{background:#0A2A50;color:#FFFFFF;font-weight:bold;font-size:15px;letter-spacing:1px;text-transform:uppercase;padding:5px 10px;border-radius:6px;margin:8px 0 6px}
+.cityhd.leb{background:#FDB913;color:#0A2A50}
+.col.kjh,.card.kjh,.cg.kjh{display:none}
+.kjs .cg{display:none}.kjs .cg.kjm{display:block}
 .dnote{color:#FFFFFF;font-size:16px;font-weight:bold;padding:6px 18px 0}
 .dnote .dn{color:#FDB913}.dnote a{color:#FDB913}
 .kjs .col{display:none}.kjs .col.kjm{display:inline-block}.kjs .card{display:none}.kjs .card.kjm{display:block}.kjs .search{display:none}
@@ -336,11 +339,12 @@ function kjGo(){
 }
 function kjDayGo(txt){document.getElementById('kjd').value=txt; return kjGo();}
 function kjFilter(fn){  // keep the cards fn() accepts, hide the rest; a column with no kept card hides too
-  var divs=document.getElementsByTagName('div'), i, c, col, sp, n=0, cols=0;
+  var divs=document.getElementsByTagName('div'), i, c, col, sp, g, n=0, cols=0;
   for(i=0;i<divs.length;i++){
     c=divs[i];
     if(!kjHas(c,'card') || c.style.display==='none' || !fn(c)) continue;
     kjAdd(c,'kjm'); n++;
+    g=c.parentNode; if(g && kjHas(g,'cg')) kjAdd(g,'kjm');  // a city heading stays with its kept cards
     col=kjColOf(c);
     if(col){ kjAdd(col,'kjm'); col.kjn=(col.kjn||0)+1; }
   }
@@ -394,6 +398,13 @@ function kjDay(v,mode){
       cards=c.getElementsByTagName('div'); m=0;
       for(k=0;k<cards.length;k++){ if(kjHas(cards[k],'card') && !kjHas(cards[k],'kjh') && cards[k].style.display!=='none') m++; }
       sp=kjBadge(c); if(sp){ if(typeof sp.kjo==='undefined') sp.kjo=sp.innerHTML; sp.innerHTML=m; }
+      if(!m) kjAdd(c,'kjh');
+    }
+    for(i=0;i<divs.length;i++){  // a city heading goes when every card under it has gone
+      c=divs[i];
+      if(!kjHas(c,'cg')) continue;
+      cards=c.getElementsByTagName('div'); m=0;
+      for(k=0;k<cards.length;k++){ if(kjHas(cards[k],'card') && !kjHas(cards[k],'kjh') && cards[k].style.display!=='none') m++; }
       if(!m) kjAdd(c,'kjh');
     }
     note.innerHTML='<span class="dn">FROM '+label+(t.wk?' (this week)':'')+' on</span> &middot; cards with no date stay. '+n+(n===1?' earlier card':' earlier cards')+' hidden.';
@@ -481,6 +492,13 @@ JS = """
     if(dd===today){ if(dl) dl.innerHTML=nd?dl.innerHTML+' &middot; TODAY':'TODAY &middot; '+dl.innerHTML; e.className=e.className+' new'; }
     else if(dd===tmr && dl){ dl.innerHTML=nd?dl.innerHTML+' &middot; TOMORROW':'TOMORROW &middot; '+dl.innerHTML; }
   }
+  // A city group whose events have all passed goes too, so no heading stands over nothing.
+  for(var gi=0;gi<divs.length;gi++){
+    if(divs[gi].className!=='cg') continue;
+    var cs=divs[gi].getElementsByTagName('div'), live=0;
+    for(var ci=0;ci<cs.length;ci++){ if(cs[ci].className.indexOf('card')===0 && cs[ci].style.display!=='none') live++; }
+    if(!live) divs[gi].style.display='none';
+  }
   var u=parseInt(document.body.getAttribute('data-updated'),10);
   if(u && now-u>30*3600000){var s=document.getElementById('stale'); if(s) s.style.display='block';}
 })();
@@ -520,8 +538,9 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_s
             wx_conf = col["conf"]
             cols.append(f'<div class="col wx"><h2>{esc(col["name"])} <span class="count" id="wxcount">{col["count"]}</span></h2>{col["html"]}</div>')
             continue
-        cards = []
+        cards, towns = [], []
         for c in col["cards"]:
+            towns.append(c.get("city") or "")
             # Boss (2026-10-23): the place goes inside the quick-read line, so no card shows "(Town)" after it any more.
             where = ""
             sig = f'<div class="sig"><b>BUZZ:</b> {esc(c["signal"])}</div>' if c.get("signal") else ""
@@ -537,7 +556,7 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_s
                 town = c.get("city") or c.get("town") or ""
                 if town:
                     main = main.replace(esc(town), f'<span class="pc{" leb" if town.lower() == "lebanon" else ""}">{esc(town)}</span>')
-            cong ='<span class="tag cong">CONGRATS</span>' if c.get("congrats") else ""
+            cong = '<span class="tag cong">CONGRATS</span>' if c.get("congrats") else ""
             names = ""
             # LOCAL PRIDE (Boss 2026-10-19): "World Food Champs - names, from place, what/when/where."
             label = f'<span class="label">{esc(c["label"])}</span> &ndash; ' if c.get("label") else ""
@@ -574,6 +593,13 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_s
                 ('</div>' if nolink else
                  f'<a class="link" href="{esc(c["url"])}" target="_blank" rel="noopener">'
                  f'{"Tickets / details" if c.get("kind") == "concert" else "Details" if c.get("kind") == "event" else "Source" if c.get("kind") == "timely" else "Read story"} &#8599;</a></div>'))
+        if col.get("by_city") and cards:  # Boss (2026-10-23): Holiday Events are listed by city, each under a highlighted heading
+            groups = {}
+            for card, town in zip(cards, towns):  # cards arrive in date order, so each city's list does too
+                groups.setdefault(town or "Other", []).append(card)
+            order = sorted(groups, key=lambda t: (t == "Other", t.lower() != "lebanon", t.lower()))  # Lebanon first, then A-Z
+            cards = [f'<div class="cg"><div class="cityhd{" leb" if t.lower() == "lebanon" else ""}">{esc(t)}</div>{"".join(groups[t])}</div>'
+                     for t in order]
         body = "".join(cards) or '<div class="empty">Nothing worth airing today.</div>'
         if col["key"] == "music":
             body = ('<form class="search" onsubmit="return kjSearch();">'
