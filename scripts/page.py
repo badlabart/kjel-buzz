@@ -50,7 +50,9 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .dsearch{margin:0;padding:12px 18px 2px}
 .dsearch .dq{width:400px;max-width:60%;font-size:18px;padding:8px 10px;border:2px solid #FDB913;border-radius:8px}
 .dsearch .dgo{font-size:17px;font-weight:bold;padding:8px 18px;border:0;border-radius:8px;background:#D0101F;color:#FFFFFF;cursor:pointer}
+.dsearch .dgo2{background:#FDB913;color:#0A2A50}
 .dsearch a{color:#FDB913;font-weight:bold;font-size:15px;margin-left:12px}
+.col.kjh,.card.kjh{display:none}
 .dnote{color:#FFFFFF;font-size:16px;font-weight:bold;padding:6px 18px 0}
 .dnote .dn{color:#FDB913}.dnote a{color:#FDB913}
 .kjs .col{display:none}.kjs .col.kjm{display:inline-block}.kjs .card{display:none}.kjs .card.kjm{display:block}.kjs .search{display:none}
@@ -239,9 +241,13 @@ function kjSearch(){
 # Day / date search at the top of Show Prep (Boss 2026-10-21). A day name means that day THIS WEEK (Monday through Sunday);
 # a date without a year means its next occurrence. It filters the board in place: cards with data-date equal to the
 # target stay, everything else (including undated news cards) is hidden until Clear. ES3 only, like the rest.
+# Second button (Boss 2026-10-23, for voice tracking days ahead): "From date on + undated" keeps every undated card and
+# hides only the dated cards BEFORE the date, so nothing earlier has to be scrolled past.
 DAY_FORM = ('<form class="dsearch" onsubmit="return kjDay();">'
             '<input class="dq" id="kjd" type="text" aria-label="Search by day or date" placeholder="Day or date: Friday, 10/24, Oct 24">'
-            ' <input class="dgo" type="submit" value="Search"><a href="#" onclick="return kjDayClear();">Clear</a></form>'
+            ' <input class="dgo" type="submit" value="Search">'
+            ' <input class="dgo dgo2" type="button" value="From date on + undated" onclick="return kjDay(\'from\');">'
+            '<a href="#" onclick="return kjDayClear();">Clear</a></form>'
             '<div class="dnote" id="kjdn"></div>')
 
 DAY_JS = r"""
@@ -282,15 +288,17 @@ function kjTarget(raw){
   if(!dt) return null;
   return {dt:dt, iso:kjIso(dt.getFullYear(),dt.getMonth()+1,dt.getDate()), wk:wk, todayIso:todayIso, y0:now.getFullYear()};
 }
+function kjColOf(c){var col=c.parentNode; while(col && !kjHas(col,'col')) col=col.parentNode; return col;}
+function kjBadge(col){var h=col.getElementsByTagName('h2')[0]; return h?h.getElementsByTagName('span')[0]:null;}
 function kjDayReset(){
   var divs=document.getElementsByTagName('div'), i, c, sp;
   for(i=0;i<divs.length;i++){
     c=divs[i];
-    if(!kjHas(c,'kjm')) continue;
-    kjDel(c,'kjm');
+    if(kjHas(c,'kjm')) kjDel(c,'kjm');
+    if(kjHas(c,'kjh')) kjDel(c,'kjh');
     if(kjHas(c,'col')){
-      c.kjn=0; sp=c.getElementsByTagName('h2')[0].getElementsByTagName('span')[0];
-      if(typeof sp.kjo!=='undefined') sp.innerHTML=sp.kjo;
+      c.kjn=0; c.kjx=0; sp=kjBadge(c);
+      if(sp && typeof sp.kjo!=='undefined') sp.innerHTML=sp.kjo;
     }
   }
   kjDel(document.body,'kjs');
@@ -298,9 +306,9 @@ function kjDayReset(){
 function kjDayClear(){
   document.getElementById('kjd').value=''; document.getElementById('kjdn').innerHTML=''; kjDayReset(); return false;
 }
-function kjDayGo(txt){document.getElementById('kjd').value=txt; return kjDay();}
-function kjDay(){
-  var inp=document.getElementById('kjd'), note=document.getElementById('kjdn'), t, label, divs, i, c, col, sp, n=0, cols=0, nx, r;
+function kjDayGo(txt,mode){document.getElementById('kjd').value=txt; return kjDay(mode);}
+function kjDay(mode){
+  var from=(mode==='from'), inp=document.getElementById('kjd'), note=document.getElementById('kjdn'), t, label, divs, i, k, m, d, c, col, sp, cards, n=0, cols=0, nx, r;
   if(!/\S/.test(inp.value)) return kjDayClear();
   kjDayReset();
   t=kjTarget(inp.value);
@@ -309,22 +317,42 @@ function kjDay(){
   if(t.iso<t.todayIso){
     note.innerHTML='<span class="dn">'+label+'</span> has passed.';
     if(t.wk){ nx=new Date(t.dt.getFullYear(),t.dt.getMonth(),t.dt.getDate()+7);
-      note.innerHTML='<span class="dn">'+label+'</span> has passed this week. <a href="#" onclick="return kjDayGo(\''+(nx.getMonth()+1)+'/'+nx.getDate()+'\');">Show '+KJ_DOW[nx.getDay()].substr(0,3)+' '+(nx.getMonth()+1)+'/'+nx.getDate()+'</a>'; }
+      note.innerHTML='<span class="dn">'+label+'</span> has passed this week. <a href="#" onclick="return kjDayGo(\''+(nx.getMonth()+1)+'/'+nx.getDate()+'\',\''+(from?'from':'day')+'\');">Show '+KJ_DOW[nx.getDay()].substr(0,3)+' '+(nx.getMonth()+1)+'/'+nx.getDate()+'</a>'; }
     return false;
   }
   r=document.getElementById('kjres'); if(r && r.style.display==='block') kjClear();
   divs=document.getElementsByTagName('div');
+  if(from){
+    // Undated cards stay. Dated cards before the date hide, and a column left with no cards goes too. Hiding instead of
+    // showing leaves anything the page adds later (live weather alerts) alone.
+    for(i=0;i<divs.length;i++){
+      c=divs[i];
+      if(!kjHas(c,'card') || c.style.display==='none') continue;
+      d=c.getAttribute('data-date');
+      if(d && d<t.iso){ kjAdd(c,'kjh'); n++; col=kjColOf(c); if(col) col.kjx=1; }
+    }
+    for(i=0;i<divs.length;i++){
+      c=divs[i];
+      if(!kjHas(c,'col') || !c.kjx) continue;
+      cards=c.getElementsByTagName('div'); m=0;
+      for(k=0;k<cards.length;k++){ if(kjHas(cards[k],'card') && !kjHas(cards[k],'kjh') && cards[k].style.display!=='none') m++; }
+      sp=kjBadge(c); if(sp){ if(typeof sp.kjo==='undefined') sp.kjo=sp.innerHTML; sp.innerHTML=m; }
+      if(!m) kjAdd(c,'kjh');
+    }
+    note.innerHTML='<span class="dn">FROM '+label+(t.wk?' (this week)':'')+' on</span> &middot; undated cards stay. '+n+(n===1?' earlier card':' earlier cards')+' hidden.';
+    return false;
+  }
   for(i=0;i<divs.length;i++){
     c=divs[i];
     if(!kjHas(c,'card') || c.getAttribute('data-date')!==t.iso || c.style.display==='none') continue;
     kjAdd(c,'kjm'); n++;
-    col=c.parentNode; while(col && !kjHas(col,'col')) col=col.parentNode;
+    col=kjColOf(c);
     if(col){ kjAdd(col,'kjm'); col.kjn=(col.kjn||0)+1; }
   }
   for(i=0;i<divs.length;i++){
     c=divs[i];
     if(kjHas(c,'col') && kjHas(c,'kjm')){
-      cols++; sp=c.getElementsByTagName('h2')[0].getElementsByTagName('span')[0];
+      cols++; sp=kjBadge(c);
       if(typeof sp.kjo==='undefined') sp.kjo=sp.innerHTML;
       sp.innerHTML=c.kjn;
     }
