@@ -1,174 +1,161 @@
 {
- "made": "2026-10-23",
+ "made": "2026-10-24",
  "timely": [
   {
-   "id": "Ta75ecc",
-   "line": "Today's Lebanon forecast: sunny, a high near 78, a low around 53. Shorts in late October, Missouri style.",
-   "label": "Weather"
-  },
-  {
    "id": "Ta9b3cb",
-   "line": "Tomorrow's Lebanon forecast: mostly sunny, a high near 79, a low around 53. Missouri forgot it's fall.",
-   "label": "Weather"
+   "label": "Weather",
+   "line": "Today's Lebanon forecast: mostly sunny, a high near 79 and a low around 54. Sweater in the morning, short sleeves by lunch."
   },
   {
-   "id": "Taec67a",
-   "line": "Missouri regular gas averages $3.95 today, down 23 cents from a month ago and up $1.24 from a year ago, according to AAA, and Springfield averages $4.00. Carpool, anyone?",
-   "label": "Gas Prices"
+   "id": "Tbe1a06",
+   "label": "Weather",
+   "line": "Tomorrow's Lebanon forecast: partly sunny, a high near 78 and a low around 54. Another one for the porch swing."
+  },
+  {
+   "id": "T7ec6bb",
+   "label": "Gas Prices",
+   "line": "Missouri's average for regular gas is $3.94 today, down 24 cents from a month ago and up $1.23 from a year ago, according to AAA, and Springfield averages $3.98. Your wallet says thanks, sort of."
   },
   {
    "id": "T5f14aa",
-   "line": "Youth firearms deer season opens tomorrow, Saturday, Oct. 24, and runs through Oct. 25. Bring the kids and the hand warmers.",
-   "label": "Hunting Season"
+   "label": "Youth Deer Season",
+   "line": "Youth firearms deer season ends Sunday, October 25, tomorrow. Last call, young hunters."
   },
   {
    "id": "T2f8a71",
-   "line": "Fall firearms turkey season ends Saturday, Oct. 31, in 8 days. The turkeys are counting too.",
-   "label": "Hunting Season"
+   "label": "Turkey Season",
+   "line": "Fall firearms turkey season ends Saturday, October 31, in 7 days. Gobble while you can."
   },
   {
    "id": "Ta7d631",
-   "line": "Archery deer season ends Friday, Nov. 13, in 21 days. Practice those shots now.",
-   "label": "Hunting Season"
+   "label": "Archery Season",
+   "line": "Archery deer season ends Friday, November 13, in 20 days. Better get up in that tree stand."
   },
   {
    "id": "T70c2f4",
-   "line": "The November portion of firearms deer season opens Saturday, Nov. 14, in 22 days, and runs through Nov. 24. Blaze orange is back in style.",
-   "label": "Hunting Season"
+   "label": "Firearms Deer",
+   "line": "The November portion of firearms deer season opens Saturday, November 14, in 21 days, and runs through November 24. Blaze orange is about to be in fashion."
   },
   {
    "id": "Tc173d4",
-   "line": "Archery deer season opens again Wednesday, Nov. 25, in 33 days, and runs through Jan. 15. Bows before pie.",
-   "label": "Hunting Season"
-  },
-  {
-   "id": "T1997d6",
-   "line": "Another youth firearms deer season opens Friday, Nov. 27, in 35 days, and runs through Nov. 29. Leftovers in the deer stand.",
-   "label": "Hunting Season"
+   "label": "Archery Season",
+   "line": "Archery deer season opens Wednesday, November 25, in 32 days, and runs through January 15. More time to blame the wind."
   },
   {
    "id": "T321560",
-   "line": "Halloween is Saturday, Oct. 31, in 8 days. Buy the candy you actually like.",
-   "label": "Halloween"
+   "label": "Halloween",
+   "line": "Halloween is Saturday, October 31, in 7 days. Time to buy candy you swear you won't eat."
   },
   {
    "id": "T851b71",
-   "line": "Daylight saving time ends Sunday, Nov. 1, in 9 days, so clocks fall back one hour and sunset comes an hour earlier. One more hour of sleep, kids permitting.",
-   "label": "Clocks Fall Back"
+   "label": "Clocks Fall Back",
+   "line": "Daylight saving time ends Sunday, November 1, in 8 days, so clocks fall back one hour and sunset comes an hour earlier. Extra sleep, unless you have kids."
   },
   {
    "id": "Ta76b3b",
-   "line": "Veterans Day is Wednesday, Nov. 11, in 19 days. Thank a vet, buy their coffee.",
-   "label": "Veterans Day"
+   "label": "Veterans Day",
+   "line": "Veterans Day is Wednesday, November 11, in 18 days. Start planning your thank-yous now."
   },
   {
    "id": "Tc44f8a",
-   "line": "Thanksgiving is Thursday, Nov. 26, in 34 days. Stretchy pants season is near.",
-   "label": "Thanksgiving"
-  },
-  {
-   "id": "T51f384",
-   "label": "TV Tonight",
-   "line": "Reba McEntire's NBC sitcom Happy's Place, where she inherits her father's Tennessee tavern, returns tonight for season three with old co-star Melissa Peterman. The tavern is open again.",
-   "date": "2026-10-23"
-  },
-  {
-   "id": "Td16ce4",
-   "label": "Family Movie",
-   "line": "Wildwood, a fantasy movie from an acclaimed children's novel about a girl who heads into an enchanted forest to save her baby brother, is now in theaters. Siblings everywhere are taking notes.",
-   "date": "2026-10-23"
+   "label": "Thanksgiving",
+   "line": "Thanksgiving is Thursday, November 26, in 33 days. Stretchy pants are on standby."
   },
   {
    "id": "Tdce645",
-   "label": "20 Years Ago",
-   "line": "Twenty years ago today, Taylor Swift released her debut album, Taylor Swift, and became a rising country star. Feeling old yet?",
+   "label": "Music Anniversary",
+   "line": "Taylor Swift released her debut album, Taylor Swift, 20 years ago today, in 2006, and it made her a rising star in country music. Twenty years, and we still know every word.",
    "date": "2026-10-24"
   },
   {
-   "id": "T4cc2fa",
-   "label": "25 Years Ago",
-   "line": "Twenty-five years ago today, Microsoft released Windows XP, one of its most successful operating systems ever. Somebody's grandpa still runs it.",
+   "id": "Tbd551a",
+   "label": "Music Anniversary",
+   "line": "Cyndi Lauper's True Colors hit number one on the Billboard Hot 100 40 years ago today, in 1986, her second and final chart-topper. Forty years and still shining through.",
    "date": "2026-10-25"
+  },
+  {
+   "id": "T5c8e31",
+   "label": "TV Return",
+   "line": "NBC's hospital comedy St. Denis Medical, starring Wendi McLendon-Covey and David Alan Grier, returns for season three on Monday, November 2. Laughter is still the best medicine.",
+   "date": "2026-11-02"
+  },
+  {
+   "id": "Te80432",
+   "label": "Movie Night",
+   "line": "The Cat in the Hat, an animated movie with Bill Hader voicing the Cat, hits theaters Friday, November 6. Finally, a hat the kids will fight over.",
+   "date": "2026-11-06"
   }
  ],
  "johnsons": [
   {
-   "id": "J319c9a",
+   "id": "J6b46b3",
    "label": "Outdoors",
-   "line": "Missouri's Share the Harvest program wants 6,500 donated deer this year and dropped the fees to donate. Freezer full? Share the venison.",
-   "city": ""
+   "line": "The Missouri Department of Conservation wants northeast Missouri hunters to get their deer sampled for chronic wasting disease all season, at MDC offices, meat processors, taxidermists and freezer head drops. Easy way to help the herd."
   },
   {
-   "id": "J09b668",
+   "id": "J5f06ac",
    "label": "Outdoors",
-   "line": "Old-school deer hunters say a big storm moving through may be your best shot all season at a big buck. Rain gear: the new lucky charm.",
-   "city": ""
+   "line": "Oklahoma hunter KW Adair set three alarms to beat shooting light and arrowed a 20-point buck he first spotted on a trail camera last year. Persistence pays, and so do alarms."
   },
   {
-   "id": "J7f341d",
+   "id": "J411291",
    "label": "Outdoors",
-   "line": "After heavy rains, duck hunters should scout flooded fields holding ducks and hunt that shallow sheet water. Puddles were never this exciting.",
-   "city": ""
+   "line": "Topwater season isn't over: Field and Stream says big fall pike will still slam a popper or surface fly. Don't put the poppers away yet."
   },
   {
-   "id": "J560bc5",
+   "id": "Jcebbcd",
+   "label": "Outdoors",
+   "line": "Outdoor Life says hunters sometimes miss easy shots on big game because they misunderstand their scope's reticle. Blame the crosshairs, not the coffee."
+  },
+  {
+   "id": "J72339f",
+   "label": "Outdoors",
+   "line": "Waterfowl hunting at Eagle Bluffs Conservation Area is suspended until the Missouri Department of Conservation finds enough water and habitat to support it. The ducks get a break, for now."
+  },
+  {
+   "id": "J582ba7",
+   "label": "Outdoors",
+   "line": "The Missouri Department of Conservation is holding a free prescribed burn workshop for landowners on Nov. 11 at Cuivre River State Park in Lincoln County. Fight fire with, well, fire."
+  },
+  {
+   "id": "Jcb5f38",
    "label": "Family",
-   "line": "CIYTI light-up princess costumes are recalled because kids can easily reach the button batteries inside, which can cause serious injury if swallowed. Check the costume bin before Halloween.",
-   "city": ""
+   "line": "Simmons Kozy and Nido baby nests and loungers have been recalled nationwide over new safety concerns. Worth a quick check of the nursery."
   },
   {
-   "id": "J14d1ee",
+   "id": "J4ff0f7",
    "label": "Family",
-   "line": "Costway convertible high chairs are recalled because they have no built-in restraint, so a child can slip through between the tray and the seat. Worth a look at mealtime.",
-   "city": ""
+   "line": "A Reddit mom says her 6-foot-3, 14-year-old son brushed her off all day, then stood over her bed at 2 a.m. saying he needed to talk. Teenagers keep vampire hours for feelings."
   },
   {
-   "id": "Jb6e02d",
+   "id": "J897a06",
    "label": "Family",
-   "line": "BAMAMON LED finger light toys are recalled because kids can easily open the button battery compartments. Time to check the toy box.",
-   "city": ""
+   "line": "A Reddit mom says her middle schooler ditched the lunch box for hot school lunch, then started ordering extra stuff on the side. The lunch account has entered the chat."
   },
   {
-   "id": "Jfd24cf",
+   "id": "Jb0c87a",
    "label": "Family",
-   "line": "A Reddit dad says his greatest joy is watching his wife parent their mini-me daughter and hearing her say, Can you just relax. What goes around comes around.",
-   "city": ""
+   "line": "A Reddit dad cooked steak and eggs with Portuguese-spiced potato wedges and a salad, and his toddler, who usually eats just one thing, ate everything. Frame that empty plate."
   },
   {
-   "id": "J75489c",
-   "label": "Family",
-   "line": "A Reddit mom says nobody warns you how awkward it is being a parent at a kid's birthday party, making small talk for hours. Bring snacks and an exit plan.",
-   "city": ""
-  },
-  {
-   "id": "Ja70103",
-   "label": "Family",
-   "line": "A Reddit mom says there are too many trunk-or-treats, and they've become a fast candy grab instead of a fun social event. The minivans are tired too.",
-   "city": ""
-  },
-  {
-   "id": "J308a1f",
+   "id": "Jfb2489",
    "label": "Cooking",
-   "line": "Budget Bytes has an easy stuffed pepper soup with ground beef, bell peppers and rice in a tomato broth, ready in 45 minutes. All the flavor, none of the stuffing.",
-   "city": ""
+   "line": "Skinnytaste posted a free seven-day healthy meal plan for Oct. 26 through Nov. 1, with breakfast, lunch, dinner and a shopping list. One less thing on the to-do list."
   },
   {
-   "id": "J37b22b",
+   "id": "J22e572",
    "label": "Cooking",
-   "line": "Budget Bytes has a mostly hands-off Crockpot chili with ground beef, beans, tomatoes and warm spices. The Crockpot does the work.",
-   "city": ""
+   "line": "Budget Bytes rounded up its best pumpkin recipes for fall, from savory soups and pastas to pumpkin pie and smoothies. Pumpkin for every meal, no judgment."
   },
   {
-   "id": "J8792eb",
+   "id": "Jfee862",
    "label": "Life",
-   "line": "Mortgage rates took a big drop Friday, Oct. 23, because trouble for tech stocks pushed bond yields lower. Somebody's house hunt just got cheaper.",
-   "city": ""
+   "line": "Americans lost more money to check fraud than to debit card or gift card scams in 2025, and thieves are going after bigger checks. Maybe it's time to retire the checkbook."
   },
   {
-   "id": "J13fe2e",
+   "id": "J40e554",
    "label": "Life",
-   "line": "A Reddit poster says one of the most underrated ways to save money is living rural, where nobody keeps up with the Joneses. The Joneses are broke anyway.",
-   "city": ""
+   "line": "Dollywood's new $124.99 Summer Fun Pass is the cheaper way in, and current passholders have until Nov. 1 to renew at $159.99 to $354.99. Summer plans, sorted early."
   }
  ]
 }

@@ -1,30 +1,40 @@
 {
- "made": "2026-10-23",
+ "made": "2026-10-24",
  "light": [
   {
+   "id": "Ld53beb",
+   "line": "LifePoint West Church projected a giant GO BUCKSKINS message on its building to cheer on Joel E. Barber's very first homecoming football game. Now that's a church sign with spirit.",
+   "city": "Laclede County"
+  },
+  {
    "id": "L1e6a22",
-   "line": "Heather Rodriguez's Marshfield nonprofit, Shine Through Faith, started by helping older neighbors stay in their homes and now helps families, foster kids and teachers too. Neighbors like that are worth their weight in casseroles.",
+   "line": "Heather Rodriguez founded Shine Through Faith in Marshfield to help older neighbors stay in their homes, and it has grown into a resource center for families, foster kids and teachers. Small kindness, big ripple.",
    "city": "Marshfield"
   },
   {
    "id": "L82d64c",
-   "line": "Bathsheba Chapter 14, King Solomon Lodge 15 and UKHFI Temple 203 donated 50 headphones and clothing for school nurses' offices to Waynesville elementary schools Oct. 20. Quiet classrooms, here we come.",
+   "line": "Bathsheba Chapter 14, King Solomon Lodge 15 and UKHFI Temple 203 donated 50 headphones and clothing for the school nurses' offices to Waynesville elementary students on Oct. 20. Big hearts, small ears covered.",
    "city": "Waynesville"
   },
   {
    "id": "L481775",
-   "line": "Waynesville bus drivers and aides handed out stickers and pencils for School Bus Safety Week, and on Oct. 21 the drivers got a pizza thank-you. Pizza: the universal thank-you note.",
+   "line": "Waynesville school bus drivers and aides celebrated School Bus Safety Week by handing out stickers and pencils to kids, and on Oct. 21 the drivers got a pizza thank-you. Wheels on the bus, pizza in the belly.",
    "city": "Waynesville"
   },
   {
    "id": "La7f2b5",
-   "line": "Rockin' Rogersville grew from one night of live music into a full community festival that raises money for Rogersville. Small town, big jam.",
+   "line": "The ninth annual Rockin' Rogersville grew from a night of live music into a full community festival with food, vendors and a kids' area, raising money for the Community Foundation of Rogersville. Rock on, Rogersville.",
    "city": "Rogersville"
   },
   {
    "id": "L09817d",
-   "line": "A Lake of the Ozarks nonprofit is helping women start over with housing, support and hope. That's the good stuff.",
+   "line": "A Lake of the Ozarks nonprofit is helping women start over with a safe place to sleep, a working phone, transportation and support. Fresh starts can start small.",
    "city": "Lake of the Ozarks"
+  },
+  {
+   "id": "L529d8c",
+   "line": "Homeschoolers learned Cherokee history and customs from Rita, known as Gentle Rain, and Jane at the Polk County Museum. Field trips beat worksheets every time.",
+   "city": "Polk County"
   }
  ]
 }
