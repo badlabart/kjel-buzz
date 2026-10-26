@@ -1,40 +1,30 @@
 {
- "made": "2026-10-24",
+ "made": "2026-10-26",
  "light": [
   {
+   "id": "Lfb0734",
+   "line": "Level Up Lebanon just wrapped its biggest season yet, with Wards 1 and 4 residents hauling off roughly 200 cars' worth of cleanup this fall. Neighborhood pride, measured by the truckload.",
+   "city": "Lebanon"
+  },
+  {
+   "id": "Lc00021",
+   "line": "A church in Lebanon built a wheelchair ramp for neighbor Tiffany Walker, who lives with a rare condition called Ehlers-Danlos Syndrome, to make her daily life easier. Love thy neighbor, with lumber.",
+   "city": "Lebanon"
+  },
+  {
    "id": "Ld53beb",
-   "line": "LifePoint West Church projected a giant GO BUCKSKINS message on its building to cheer on Joel E. Barber's very first homecoming football game. Now that's a church sign with spirit.",
+   "line": "LifePoint West Church projected a giant 'GO BUCKSKINS' message on its building to cheer on Joel E. Barber's very first homecoming football game. Talk about a church with spirit.",
    "city": "Laclede County"
   },
   {
    "id": "L1e6a22",
-   "line": "Heather Rodriguez founded Shine Through Faith in Marshfield to help older neighbors stay in their homes, and it has grown into a resource center for families, foster kids and teachers. Small kindness, big ripple.",
+   "line": "Shine Through Faith, a Marshfield nonprofit founded by Heather Rodriguez, started by mowing yards and grabbing groceries for older neighbors and has grown into a resource center for families, foster kids and teachers. Small favors, big ripple.",
    "city": "Marshfield"
   },
   {
    "id": "L82d64c",
-   "line": "Bathsheba Chapter 14, King Solomon Lodge 15 and UKHFI Temple 203 donated 50 headphones and clothing for the school nurses' offices to Waynesville elementary students on Oct. 20. Big hearts, small ears covered.",
+   "line": "Bathsheba Chapter 14, King Solomon Lodge 15 and UKHFI Temple 203 donated 50 headphones and clothing for school nurses' offices to Waynesville elementary students on Oct. 20. Quiet classrooms, happy teachers.",
    "city": "Waynesville"
-  },
-  {
-   "id": "L481775",
-   "line": "Waynesville school bus drivers and aides celebrated School Bus Safety Week by handing out stickers and pencils to kids, and on Oct. 21 the drivers got a pizza thank-you. Wheels on the bus, pizza in the belly.",
-   "city": "Waynesville"
-  },
-  {
-   "id": "La7f2b5",
-   "line": "The ninth annual Rockin' Rogersville grew from a night of live music into a full community festival with food, vendors and a kids' area, raising money for the Community Foundation of Rogersville. Rock on, Rogersville.",
-   "city": "Rogersville"
-  },
-  {
-   "id": "L09817d",
-   "line": "A Lake of the Ozarks nonprofit is helping women start over with a safe place to sleep, a working phone, transportation and support. Fresh starts can start small.",
-   "city": "Lake of the Ozarks"
-  },
-  {
-   "id": "L529d8c",
-   "line": "Homeschoolers learned Cherokee history and customs from Rita, known as Gentle Rain, and Jane at the Polk County Museum. Field trips beat worksheets every time.",
-   "city": "Polk County"
   }
  ]
 }

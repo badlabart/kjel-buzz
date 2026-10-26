@@ -1,161 +1,175 @@
 {
- "made": "2026-10-24",
+ "made": "2026-10-26",
  "timely": [
   {
-   "id": "Ta9b3cb",
+   "id": "T5163fc",
    "label": "Weather",
-   "line": "Today's Lebanon forecast: mostly sunny, a high near 79 and a low around 54. Sweater in the morning, short sleeves by lunch."
+   "line": "Today's Lebanon forecast: mostly sunny, a high near 75, a low around 54. Late October is showing off again.",
+   "date": "2026-10-26"
   },
   {
-   "id": "Tbe1a06",
+   "id": "T70e140",
    "label": "Weather",
-   "line": "Tomorrow's Lebanon forecast: partly sunny, a high near 78 and a low around 54. Another one for the porch swing."
+   "line": "Tomorrow's Lebanon forecast: mostly cloudy, a high near 74, a low around 56. Still shorts weather, technically.",
+   "date": "2026-10-27"
   },
   {
-   "id": "T7ec6bb",
+   "id": "Ta6f9f5",
    "label": "Gas Prices",
-   "line": "Missouri's average for regular gas is $3.94 today, down 24 cents from a month ago and up $1.23 from a year ago, according to AAA, and Springfield averages $3.98. Your wallet says thanks, sort of."
-  },
-  {
-   "id": "T5f14aa",
-   "label": "Youth Deer Season",
-   "line": "Youth firearms deer season ends Sunday, October 25, tomorrow. Last call, young hunters."
+   "line": "Missouri's average for regular gas is $3.92 today, down 26 cents from a month ago and up $1.23 from a year ago, according to Triple A, and Springfield averages $3.96. Your wallet will happily take the 26 cents.",
+   "date": "2026-10-26"
   },
   {
    "id": "T2f8a71",
-   "label": "Turkey Season",
-   "line": "Fall firearms turkey season ends Saturday, October 31, in 7 days. Gobble while you can."
+   "label": "Hunting Season",
+   "line": "Fall firearms turkey season ends Saturday, October 31, in 5 days. The turkeys have Halloween circled too.",
+   "date": "2026-10-26"
   },
   {
    "id": "Ta7d631",
-   "label": "Archery Season",
-   "line": "Archery deer season ends Friday, November 13, in 20 days. Better get up in that tree stand."
+   "label": "Hunting Season",
+   "line": "Archery deer season ends Friday, November 13, in 18 days. Bowhunters, the clock is ticking.",
+   "date": "2026-10-26"
   },
   {
    "id": "T70c2f4",
-   "label": "Firearms Deer",
-   "line": "The November portion of firearms deer season opens Saturday, November 14, in 21 days, and runs through November 24. Blaze orange is about to be in fashion."
+   "label": "Hunting Season",
+   "line": "The November portion of firearms deer season opens Saturday, November 14, in 19 days, and runs through November 24. Time to dig out the orange hat.",
+   "date": "2026-10-26"
   },
   {
    "id": "Tc173d4",
-   "label": "Archery Season",
-   "line": "Archery deer season opens Wednesday, November 25, in 32 days, and runs through January 15. More time to blame the wind."
+   "label": "Hunting Season",
+   "line": "Archery deer season opens Wednesday, November 25, in 30 days, and runs through January 15. The bows get a second shift.",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "T1997d6",
+   "label": "Hunting Season",
+   "line": "Youth firearms deer season opens Friday, November 27, in 32 days, and runs through November 29. Leftover turkey sandwiches in the deer stand.",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "Te62358",
+   "label": "Hunting Season",
+   "line": "Dove season ends Sunday, November 29, in 34 days. Last call for the dove crowd.",
+   "date": "2026-10-26"
   },
   {
    "id": "T321560",
    "label": "Halloween",
-   "line": "Halloween is Saturday, October 31, in 7 days. Time to buy candy you swear you won't eat."
+   "line": "Halloween is Saturday, October 31, in 5 days. Costume panic officially starts now.",
+   "date": "2026-10-26"
   },
   {
    "id": "T851b71",
    "label": "Clocks Fall Back",
-   "line": "Daylight saving time ends Sunday, November 1, in 8 days, so clocks fall back one hour and sunset comes an hour earlier. Extra sleep, unless you have kids."
+   "line": "Daylight saving time ends Sunday, November 1, in 6 days, so clocks fall back one hour and sunset comes an hour earlier. The oven clock will be wrong until spring.",
+   "date": "2026-10-26"
   },
   {
    "id": "Ta76b3b",
    "label": "Veterans Day",
-   "line": "Veterans Day is Wednesday, November 11, in 18 days. Start planning your thank-yous now."
+   "line": "Veterans Day is Wednesday, November 11, in 16 days. A good week to thank someone who served.",
+   "date": "2026-10-26"
   },
   {
    "id": "Tc44f8a",
    "label": "Thanksgiving",
-   "line": "Thanksgiving is Thursday, November 26, in 33 days. Stretchy pants are on standby."
+   "line": "Thanksgiving is Thursday, November 26, in 31 days. Start stretching now.",
+   "date": "2026-10-26"
   },
   {
-   "id": "Tdce645",
-   "label": "Music Anniversary",
-   "line": "Taylor Swift released her debut album, Taylor Swift, 20 years ago today, in 2006, and it made her a rising star in country music. Twenty years, and we still know every word.",
-   "date": "2026-10-24"
+   "id": "T7ea242",
+   "label": "70 Years Ago",
+   "line": "Elvis Presley made his second appearance on The Ed Sullivan Show on this day in 1956, singing 'Hound Dog' and 'Love Me Tender' to an audience share over 80 percent. Networks still dream about numbers like that.",
+   "date": "2026-10-28"
   },
   {
-   "id": "Tbd551a",
-   "label": "Music Anniversary",
-   "line": "Cyndi Lauper's True Colors hit number one on the Billboard Hot 100 40 years ago today, in 1986, her second and final chart-topper. Forty years and still shining through.",
-   "date": "2026-10-25"
+   "id": "T37661a",
+   "label": "Country Classic",
+   "line": "'Islands in the Stream' by Kenny Rogers and Dolly Parton hit No. 1 on the U.S. singles chart on this day in 1983. Go ahead, try not to sing it.",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "T3ec848",
+   "label": "On This Day",
+   "line": "LeBron James made his NBA debut on this day in 2003 with 25 points, nine assists and six rebounds, even in a loss. Not a bad first day at work.",
+   "date": "2026-10-29"
   },
   {
    "id": "T5c8e31",
    "label": "TV Return",
-   "line": "NBC's hospital comedy St. Denis Medical, starring Wendi McLendon-Covey and David Alan Grier, returns for season three on Monday, November 2. Laughter is still the best medicine.",
+   "line": "NBC's hospital comedy 'St. Denis Medical,' starring Wendi McLendon-Covey and David Alan Grier, returns for season three Monday, Nov. 2. Finally, a hospital visit nobody dreads.",
    "date": "2026-11-02"
   },
   {
    "id": "Te80432",
-   "label": "Movie Night",
-   "line": "The Cat in the Hat, an animated movie with Bill Hader voicing the Cat, hits theaters Friday, November 6. Finally, a hat the kids will fight over.",
+   "label": "Family Movie",
+   "line": "'The Cat in the Hat,' an animated movie based on the 1957 Dr. Seuss book with Bill Hader voicing the Cat, opens in theaters Friday, Nov. 6. Green eggs sold separately.",
    "date": "2026-11-06"
   }
  ],
  "johnsons": [
   {
-   "id": "J6b46b3",
+   "id": "J708ca1",
    "label": "Outdoors",
-   "line": "The Missouri Department of Conservation wants northeast Missouri hunters to get their deer sampled for chronic wasting disease all season, at MDC offices, meat processors, taxidermists and freezer head drops. Easy way to help the herd."
+   "line": "Young Missouri hunters harvested 11,878 deer during the early youth portion of firearms deer season, with Howell, Franklin and Texas counties leading, the Missouri Department of Conservation reported. The next generation is doing just fine."
   },
   {
-   "id": "J5f06ac",
+   "id": "Jd2cfe5",
    "label": "Outdoors",
-   "line": "Oklahoma hunter KW Adair set three alarms to beat shooting light and arrowed a 20-point buck he first spotted on a trail camera last year. Persistence pays, and so do alarms."
+   "line": "New research shows some whitetail bucks keep two separate home ranges, often miles apart, which is why a familiar buck can vanish from your hunting spot. He wasn't ghosting you, he was commuting."
   },
   {
-   "id": "J411291",
+   "id": "J8d3f46",
    "label": "Outdoors",
-   "line": "Topwater season isn't over: Field and Stream says big fall pike will still slam a popper or surface fly. Don't put the poppers away yet."
+   "line": "Outdoor Life named New York, Pittsburgh, Miami and Milwaukee the four best big cities for fishing, thanks to cleaner waterways holding stripers, catfish and trout. The Ozarks would like a recount."
   },
   {
-   "id": "Jcebbcd",
-   "label": "Outdoors",
-   "line": "Outdoor Life says hunters sometimes miss easy shots on big game because they misunderstand their scope's reticle. Blame the crosshairs, not the coffee."
-  },
-  {
-   "id": "J72339f",
-   "label": "Outdoors",
-   "line": "Waterfowl hunting at Eagle Bluffs Conservation Area is suspended until the Missouri Department of Conservation finds enough water and habitat to support it. The ducks get a break, for now."
-  },
-  {
-   "id": "J582ba7",
-   "label": "Outdoors",
-   "line": "The Missouri Department of Conservation is holding a free prescribed burn workshop for landowners on Nov. 11 at Cuivre River State Park in Lincoln County. Fight fire with, well, fire."
-  },
-  {
-   "id": "Jcb5f38",
-   "label": "Family",
-   "line": "Simmons Kozy and Nido baby nests and loungers have been recalled nationwide over new safety concerns. Worth a quick check of the nursery."
-  },
-  {
-   "id": "J4ff0f7",
-   "label": "Family",
-   "line": "A Reddit mom says her 6-foot-3, 14-year-old son brushed her off all day, then stood over her bed at 2 a.m. saying he needed to talk. Teenagers keep vampire hours for feelings."
-  },
-  {
-   "id": "J897a06",
-   "label": "Family",
-   "line": "A Reddit mom says her middle schooler ditched the lunch box for hot school lunch, then started ordering extra stuff on the side. The lunch account has entered the chat."
-  },
-  {
-   "id": "Jb0c87a",
-   "label": "Family",
-   "line": "A Reddit dad cooked steak and eggs with Portuguese-spiced potato wedges and a salad, and his toddler, who usually eats just one thing, ate everything. Frame that empty plate."
-  },
-  {
-   "id": "Jfb2489",
+   "id": "Jd81e4e",
    "label": "Cooking",
-   "line": "Skinnytaste posted a free seven-day healthy meal plan for Oct. 26 through Nov. 1, with breakfast, lunch, dinner and a shopping list. One less thing on the to-do list."
+   "line": "Budget Bytes' chicken and broccoli skillet lasagna makes six hearty servings in 50 minutes, all in one pan. Fewer dishes, happier sink."
   },
   {
-   "id": "J22e572",
+   "id": "J27bce2",
    "label": "Cooking",
-   "line": "Budget Bytes rounded up its best pumpkin recipes for fall, from savory soups and pastas to pumpkin pie and smoothies. Pumpkin for every meal, no judgment."
+   "line": "Budget Bytes rounded up 13 easy sheet pan dinners for busy weeknights, from chicken and roasted veggies to pizza and tacos, all with less cleanup. The sheet pan is the hardest worker in the kitchen."
   },
   {
-   "id": "Jfee862",
-   "label": "Life",
-   "line": "Americans lost more money to check fraud than to debit card or gift card scams in 2025, and thieves are going after bigger checks. Maybe it's time to retire the checkbook."
+   "id": "Je34ad8",
+   "label": "Cooking",
+   "line": "A company called Wasted makes store-bought pasta out of leftover bread that would otherwise get thrown out, and a writer at The Kitchn calls it the most delicious store-bought pasta ever. Carbs, recycled into carbs."
   },
   {
-   "id": "J40e554",
+   "id": "Jae7c0c",
+   "label": "Cooking",
+   "line": "A Reddit poster meal-prepped a whole week of lunches for two: steak salads with spring mix, corn, mushrooms and New York strip, plus a pot of avgolemono, a Greek lemon soup. Meanwhile, our lunch plan is the drive-through."
+  },
+  {
+   "id": "Jd6045f",
    "label": "Life",
-   "line": "Dollywood's new $124.99 Summer Fun Pass is the cheaper way in, and current passholders have until Nov. 1 to renew at $159.99 to $354.99. Summer plans, sorted early."
+   "line": "Signing up for student loan auto pay before Dec. 31 could cut the interest rate by 1 percent through June 2028, if the borrower meets every eligibility rule, according to Money Talks News. Savings for clicking one button."
+  },
+  {
+   "id": "J804ceb",
+   "label": "Life",
+   "line": "Over 68,000 Lexus NX vehicles from 2022 to 2024 are recalled, and owners can get a free software fix at the dealer, with letters expected by Dec. 7. A free fix is the best kind of fix."
+  },
+  {
+   "id": "J1599ba",
+   "label": "Life",
+   "line": "Amazon knocked $200 off the 65-inch Toshiba Z670R mini-LED TV, bringing it to $550. Football Sunday just got a bigger screen."
+  },
+  {
+   "id": "J11a8ad",
+   "label": "Family",
+   "line": "A Reddit dad says trunk-or-treat is worse than door-to-door: his kids got stepped on by the family behind them, and they spent more time waiting in line than getting candy. Somewhere, a front porch feels vindicated."
+  },
+  {
+   "id": "J25b140",
+   "label": "Family",
+   "line": "A Reddit parent says 10 is the best age so far, after a day of McDonald's, squishies from Five Below and frozen yogurt with their 10-year-old and her best friend. Old enough for fun, young enough to want you along."
   }
  ]
 }
