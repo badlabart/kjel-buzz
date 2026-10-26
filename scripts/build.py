@@ -154,6 +154,22 @@ def record_extra_shown(cols):
 SPLIT = ("pride", "local")  # columns that aim for 50% Lebanon
 LEBANON_GOAL = 0.50
 
+# Boss (2026-10-26): LOCAL PRIDE, Ozarks and Light show nothing older than 5 days, even when that leaves the column
+# short. A card with no date stays (its age is unknown). The "Lebanon X of Y" line is counted after the cut.
+LOCAL_MAX_AGE_DAYS = 5
+
+
+def drop_stale(cards, now=None):
+    """Return (kept, dropped_count): cards older than LOCAL_MAX_AGE_DAYS at build time are removed."""
+    now = now or datetime.now(timezone.utc)
+    kept = []
+    for c in cards:
+        ts = c.get("ts")
+        if ts and (now - datetime.fromisoformat(ts)).total_seconds() > LOCAL_MAX_AGE_DAYS * 86400:
+            continue
+        kept.append(c)
+    return kept, len(cards) - len(kept)
+
 
 def music_search():
     """Kept top-40 stories plus this run's other music stories, newest first, as one lazy-loaded script."""
@@ -241,6 +257,10 @@ def main():
 
     light, gone = light_column(pool, picks)
     missing += gone
+    stale = {}
+    for col in cols + [light]:
+        if col["key"] in ("pride", "local", "light"):
+            col["cards"], stale[col["key"]] = drop_stale(col["cards"])
     light_ids = {c["id"] for c in light["cards"]}
     for col in cols:  # a story sits in one column: Light wins over Ozarks
         if col["key"] == "local":
@@ -302,6 +322,7 @@ def main():
     humor.record_shown(collect, [c for c in next(c for c in cols if c["key"] == "humor")["cards"] if c.get("kind") == "joke"])
     print(f"Board: {' | '.join(f'{c[1]} {len(x["cards"])}' for c, x in zip(COLUMNS, cols))} | "
           f"Light {len(light['cards'])} | "
+          f"Over {LOCAL_MAX_AGE_DAYS} days, hidden: {' / '.join(f'{k} {n}' for k, n in stale.items())} | "
           f"Lebanon: {' / '.join(f'{k} {v["count"]} of {v["of"]}' for k, v in lebanon.items())} | "
           f"music search: {kept} kept + {recent} current | "
           f"Wx: {wxcol['count']} alerts{' | Wx failed: ' + '; '.join(wxcol['failed']) if wxcol['failed'] else ''} | "
