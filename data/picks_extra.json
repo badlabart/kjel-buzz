@@ -2,18 +2,6 @@
  "made": "2026-10-26",
  "timely": [
   {
-   "id": "T5163fc",
-   "label": "Weather",
-   "line": "Today's Lebanon forecast: mostly sunny, a high near 75, a low around 54. Late October is showing off again.",
-   "date": "2026-10-26"
-  },
-  {
-   "id": "T70e140",
-   "label": "Weather",
-   "line": "Tomorrow's Lebanon forecast: mostly cloudy, a high near 74, a low around 56. Still shorts weather, technically.",
-   "date": "2026-10-27"
-  },
-  {
    "id": "Ta6f9f5",
    "label": "Gas Prices",
    "line": "Missouri's average for regular gas is $3.92 today, down 26 cents from a month ago and up $1.23 from a year ago, according to Triple A, and Springfield averages $3.96. Your wallet will happily take the 26 cents.",

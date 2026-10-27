@@ -1,7 +1,8 @@
 """Candidates for Show Prep's TIMELY and THE JOHNSONS columns (Boss 2026-10-21).
 
-TIMELY = things to talk about on the date they are for: radio-prep daily sheet (IanGardner.com), NWS forecast,
-AAA gas prices, MDC season dates, and calendar countdowns. THE JOHNSONS = family, outdoors and life content
+TIMELY = things to talk about on the date they are for: radio-prep daily sheet (IanGardner.com), AAA gas prices,
+MDC season dates, and calendar countdowns. No weather here: it lives in the Wx column (Boss, 2026-10-27).
+THE JOHNSONS = family, outdoors and life content
 for Chris (37) and Jess (32): kid-safety recalls, parenting and cooking, Ozarks hunting and fishing, money and time.
 
 Writes data/extra_pool.json and prints the shortlist. Separate from collect.py so a failure here never blocks the Buzz.
@@ -28,8 +29,6 @@ CT = ZoneInfo("America/Chicago")
 NOW = datetime.now(timezone.utc)
 TODAY = datetime.now(CT).date()
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15"
-NWS_UA = "KJEL-showprep (badlabart on GitHub)"
-LEBANON = "37.6806,-92.6638"
 FAILED = []
 
 
@@ -93,51 +92,6 @@ def ian_gardner(days=5):
                 out.append({"id": uid("T", d.isoformat(), name, title, body[:40]), "kind": "timely", "section": name,
                             "date": d.isoformat(), "title": title, "desc": body[:420], "source": "IanGardner Daily Prep",
                             "url": url, "auto": False})
-    return out
-
-
-def weather():
-    """NWS Springfield point forecast for Lebanon. Today and tomorrow always; later days only when something is worth saying."""
-    out = []
-    try:
-        pt = json.loads(get(f"https://api.weather.gov/points/{LEBANON}", NWS_UA))["properties"]
-        fc = json.loads(get(pt["forecast"], NWS_UA))["properties"]["periods"]
-        alerts = json.loads(get(f"https://api.weather.gov/alerts/active?point={LEBANON}", NWS_UA))["features"]
-    except Exception as e:
-        FAILED.append(f"NWS forecast ({str(e)[:40]})")
-        return out
-    url = "https://forecast.weather.gov/MapClick.php?lat=37.6806&lon=-92.6638"
-    for a in alerts:
-        p = a["properties"]
-        out.append({"id": uid("T", "alert", p["id"]), "kind": "timely", "section": "Weather", "label": "Weather Alert",
-                    "date": TODAY.isoformat(), "line": f"The National Weather Service has a {p['event']} out for the Lebanon area: {collect.text(p.get('headline') or '')}.",
-                    "source": "National Weather Service", "url": url, "auto": True})
-    days = {}
-    for p in fc:
-        d = datetime.fromisoformat(p["startTime"]).date()
-        days.setdefault(d, {})["day" if p["isDaytime"] else "night"] = p
-    for d in sorted(days)[:5]:
-        day, night = days[d].get("day"), days[d].get("night")
-        if not day:  # tonight's period only
-            continue
-        hi, lo = day["temperature"], night["temperature"] if night else None
-        pop = max((x["probabilityOfPrecipitation"]["value"] or 0) for x in (day, night) if x)
-        wind = max(int(m) for m in re.findall(r"(\d+) mph", " ".join(x["windSpeed"] for x in (day, night) if x)) or [0])
-        notable = pop >= 40 or (lo is not None and lo <= 38) or hi >= 85 or hi <= 45 or wind >= 20
-        if d > TODAY + timedelta(days=1) and not notable:
-            continue
-        when = "Today" if d == TODAY else "Tomorrow" if d == TODAY + timedelta(days=1) else day_name(d)
-        bits = [f"{day['shortForecast'].lower()}, a high near {hi}"]
-        if lo is not None:
-            bits.append(f"a low around {lo}")
-        if pop >= 30:
-            bits.append(f"a {pop} percent chance of rain")
-        if wind >= 15:
-            bits.append(f"wind up to {wind} miles an hour")
-        line = f"{when}'s Lebanon forecast: " + ", ".join(bits[:1]) + "".join(f", {b}" for b in bits[1:]) + "."
-        out.append({"id": uid("T", "wx", d.isoformat()), "kind": "timely", "section": "Weather", "label": "Weather",
-                    "date": d.isoformat(), "line": line[0].upper() + line[1:], "source": "National Weather Service",
-                    "url": url, "auto": True})
     return out
 
 
@@ -372,7 +326,7 @@ def johnsons():
 
 def main():
     DATA.mkdir(exist_ok=True)
-    timely = ian_gardner() + weather() + gas() + seasons() + countdowns()
+    timely = ian_gardner() + gas() + seasons() + countdowns()
     jj = johnsons()
     cap = {"Family": 16, "Cooking": 6, "Outdoors": 16, "Life": 14}
     taken = {k: 0 for k in cap}

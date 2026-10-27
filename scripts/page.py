@@ -56,18 +56,15 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .dsearch .dtab.on{background:#FDB913;border-color:#FDB913;color:#0A2A50}
 .dhelp{color:#FFFFFF;font-size:15px;padding:6px 0 0}
 .dsearch a{color:#FDB913;font-weight:bold;font-size:15px;margin-left:12px}
-.cityhd{background:#0A2A50;color:#FFFFFF;font-weight:bold;font-size:15px;letter-spacing:1px;text-transform:uppercase;padding:5px 10px;border-radius:6px;margin:8px 0 6px}
-.cityhd.leb{background:#FDB913;color:#0A2A50}
-.col.kjh,.card.kjh,.cg.kjh{display:none}
-.kjs .cg{display:none}.kjs .cg.kjm{display:block}
-.cg.kjz{display:none}.ctag{display:none}
-.cflat .ctag{display:inline-block;background:#0A2A50;color:#FFFFFF;font-size:11px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;padding:1px 7px;border-radius:3px;margin-bottom:4px}
-.cflat .ctag.leb{background:#FDB913;color:#0A2A50}
+.col.kjh,.card.kjh{display:none}
+.ctag{display:inline-block;background:#0A2A50;color:#FFFFFF;font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;padding:1px 8px;border-radius:3px;margin-bottom:4px}
+.ctag.leb{background:#FDB913;color:#0A2A50}
 .dnote{color:#FFFFFF;font-size:16px;font-weight:bold;padding:6px 18px 0}
 .dnote .dn{color:#FDB913}.dnote a{color:#FDB913}
 .kjs .col{display:none}.kjs .col.kjm{display:inline-block}.kjs .card{display:none}.kjs .card.kjm{display:block}.kjs .search{display:none}
 .wxw{border-left:6px solid #D0101F}.wxt{border-left:6px solid #FDB913}.wxi{border-left:6px solid #33445C}
 .wxl{font-size:15px;font-weight:bold;margin:2px 0 6px}
+.wxd{font-size:14px;margin:6px 0}.wxd .dl{font-weight:bold;color:#D0101F}
 .wxok{font-size:13px;font-weight:bold;color:#33445C;padding:2px 4px 10px}
 .wradd{display:block;width:100%;background:#D0101F;color:#FFFFFF;border:0;border-radius:8px;padding:9px;font-weight:bold;font-size:15px;cursor:pointer;margin-bottom:8px}
 .wrt{white-space:pre-wrap;word-wrap:break-word}.wrh{font-weight:bold}.wrst{font-size:10px;color:#33445C;margin-right:4px}
@@ -304,40 +301,8 @@ function kjTarget(raw){
 }
 function kjColOf(c){var col=c.parentNode; while(col && !kjHas(col,'col')) col=col.parentNode; return col;}
 function kjBadge(col){var h=col.getElementsByTagName('h2')[0]; return h?h.getElementsByTagName('span')[0]:null;}
-function kjFlat(on){  // a date search lists Holiday Events by date, not under city headings; Clear puts the city groups back
-  var divs=document.getElementsByTagName('div'), cols=[], i, k, c, all, gs, cards, flat;
-  for(i=0;i<divs.length;i++){ if(kjHas(divs[i],'col')) cols.push(divs[i]); }
-  for(i=0;i<cols.length;i++){
-    c=cols[i]; all=c.getElementsByTagName('div'); gs=[]; cards=[];
-    for(k=0;k<all.length;k++){ if(kjHas(all[k],'cg')) gs.push(all[k]); else if(kjHas(all[k],'card')) cards.push(all[k]); }
-    if(!gs.length) continue;
-    if(on){
-      if(c.kjflat) continue;
-      for(k=0;k<cards.length;k++){ cards[k].kjg=cards[k].parentNode; cards[k].kji=k; }
-      cards.sort(function(a,b){
-        var da=a.getAttribute('data-date'), db=b.getAttribute('data-date'), ma, mb;
-        if(da!==db) return da<db?-1:1;
-        ma=parseInt(a.getAttribute('data-min'),10)||0; mb=parseInt(b.getAttribute('data-min'),10)||0;
-        return ma!==mb?ma-mb:a.kji-b.kji;
-      });
-      flat=document.createElement('div'); flat.className='cflat';
-      gs[0].parentNode.insertBefore(flat,gs[0]);
-      for(k=0;k<cards.length;k++) flat.appendChild(cards[k]);
-      for(k=0;k<gs.length;k++) kjAdd(gs[k],'kjz');
-      c.kjflat=flat;
-    } else if(c.kjflat){
-      flat=c.kjflat; all=flat.getElementsByTagName('div'); cards=[];
-      for(k=0;k<all.length;k++){ if(kjHas(all[k],'card')) cards.push(all[k]); }
-      for(k=0;k<cards.length;k++) cards[k].kjg.appendChild(cards[k]);  // already in date order, so each city's list comes back in date order
-      flat.parentNode.removeChild(flat); c.kjflat=null;
-      for(k=0;k<gs.length;k++) kjDel(gs[k],'kjz');
-    }
-  }
-}
 function kjDayReset(){
-  var divs, i, c, sp;
-  kjFlat(false);
-  divs=document.getElementsByTagName('div');
+  var divs=document.getElementsByTagName('div'), i, c, sp;
   for(i=0;i<divs.length;i++){
     c=divs[i];
     if(kjHas(c,'kjm')) kjDel(c,'kjm');
@@ -375,12 +340,11 @@ function kjGo(){
 }
 function kjDayGo(txt){document.getElementById('kjd').value=txt; return kjGo();}
 function kjFilter(fn){  // keep the cards fn() accepts, hide the rest; a column with no kept card hides too
-  var divs=document.getElementsByTagName('div'), i, c, col, sp, g, n=0, cols=0;
+  var divs=document.getElementsByTagName('div'), i, c, col, sp, n=0, cols=0;
   for(i=0;i<divs.length;i++){
     c=divs[i];
     if(!kjHas(c,'card') || c.style.display==='none' || !fn(c)) continue;
     kjAdd(c,'kjm'); n++;
-    g=c.parentNode; if(g && kjHas(g,'cg')) kjAdd(g,'kjm');  // a city heading stays with its kept cards
     col=kjColOf(c);
     if(col){ kjAdd(col,'kjm'); col.kjn=(col.kjn||0)+1; }
   }
@@ -418,7 +382,6 @@ function kjDay(v,mode){
       note.innerHTML='<span class="dn">'+label+'</span> has passed this week. <a href="#" onclick="return kjDayGo(\''+(nx.getMonth()+1)+'/'+nx.getDate()+'\');">Show '+KJ_DOW[nx.getDay()].substr(0,3)+' '+(nx.getMonth()+1)+'/'+nx.getDate()+'</a>'; }
     return false;
   }
-  kjFlat(true);
   divs=document.getElementsByTagName('div');
   if(from){
     // Undated cards stay. Dated cards before the date hide, and a column left with no cards goes too. Hiding instead of
@@ -435,13 +398,6 @@ function kjDay(v,mode){
       cards=c.getElementsByTagName('div'); m=0;
       for(k=0;k<cards.length;k++){ if(kjHas(cards[k],'card') && !kjHas(cards[k],'kjh') && cards[k].style.display!=='none') m++; }
       sp=kjBadge(c); if(sp){ if(typeof sp.kjo==='undefined') sp.kjo=sp.innerHTML; sp.innerHTML=m; }
-      if(!m) kjAdd(c,'kjh');
-    }
-    for(i=0;i<divs.length;i++){  // a city heading goes when every card under it has gone
-      c=divs[i];
-      if(!kjHas(c,'cg')) continue;
-      cards=c.getElementsByTagName('div'); m=0;
-      for(k=0;k<cards.length;k++){ if(kjHas(cards[k],'card') && !kjHas(cards[k],'kjh') && cards[k].style.display!=='none') m++; }
       if(!m) kjAdd(c,'kjh');
     }
     note.innerHTML='<span class="dn">FROM '+label+(t.wk?' (this week)':'')+' on</span> &middot; cards with no date stay. '+n+(n===1?' earlier card':' earlier cards')+' hidden.';
@@ -468,11 +424,11 @@ function kjWxTime(ms){  // "7 PM (Thu 10/22)": the date always follows the time
   var d=new Date(ms);
   return kjWxClock(d)+' ('+['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][d.getDay()]+' '+(d.getMonth()+1)+'/'+d.getDate()+')';
 }
-function kjWxCovers(hit){
-  var names=[], i;
+function kjWxCovers(hit){  // "Camden county (Camdenton, Osage Beach, Lake Ozark); Laclede county (Lebanon)"
+  var out=[], i;
   if(hit.length===KJ_WXC.length) return 'entire listening area';
-  for(i=0;i<hit.length;i++) names.push(kjEsc(hit[i].n));
-  return names.join(', ')+(hit.length===1?' county':' counties');
+  for(i=0;i<hit.length;i++) out.push(kjEsc(hit[i].n)+' county'+(hit[i].t.length?' ('+kjEsc(hit[i].t.join(', '))+')':''));
+  return out.join('; ');
 }
 function kjWxCard(p,hit){
   var ev=p.event||'Alert', cls=/Warning$/.test(ev)?'wxw':'wxt', ms=kjWxIso(p.ends||p.expires), ll=hit[0].ll.split(',');
@@ -529,13 +485,6 @@ JS = """
     if(dd===today){ if(dl) dl.innerHTML=nd?dl.innerHTML+' &middot; TODAY':'TODAY &middot; '+dl.innerHTML; e.className=e.className+' new'; }
     else if(dd===tmr && dl){ dl.innerHTML=nd?dl.innerHTML+' &middot; TOMORROW':'TOMORROW &middot; '+dl.innerHTML; }
   }
-  // A city group whose events have all passed goes too, so no heading stands over nothing.
-  for(var gi=0;gi<divs.length;gi++){
-    if(divs[gi].className!=='cg') continue;
-    var cs=divs[gi].getElementsByTagName('div'), live=0;
-    for(var ci=0;ci<cs.length;ci++){ if(cs[ci].className.indexOf('card')===0 && cs[ci].style.display!=='none') live++; }
-    if(!live) divs[gi].style.display='none';
-  }
   var u=parseInt(document.body.getAttribute('data-updated'),10);
   if(u && now-u>30*3600000){var s=document.getElementById('stale'); if(s) s.style.display='block';}
 })();
@@ -548,6 +497,20 @@ def ts_ms(iso):
 
 def static_when(iso):
     return datetime.fromisoformat(iso).astimezone(CT).strftime("%a %b %-d").upper()
+
+
+# City name colors for the Holiday Events chips (Boss 2026-10-27). Lebanon is always the station gold; the others keep one color each
+# so a city is easy to spot down the list. Towns not listed get a color from their name, the same every day.
+CITY_COLORS = {"waynesville": "#0A2A50", "saint robert": "#B3121F", "st. robert": "#B3121F", "fort leonard wood": "#8C2F5A",
+               "marshfield": "#1B6E3C", "osage beach": "#0B7285", "lake ozark": "#2F5DA8", "camdenton": "#6B3FA0",
+               "eldon": "#A24E00", "bolivar": "#4D5B2E", "buffalo": "#7A4A21", "richland": "#B0451E", "dixon": "#A12D6D",
+               "crocker": "#5C5C5C", "laurie": "#8A5A00", "hermitage": "#2E6F95", "hartville": "#7B2D26"}
+CITY_FALLBACK = ["#0A2A50", "#B3121F", "#1B6E3C", "#6B3FA0", "#A24E00", "#0B7285", "#8C2F5A", "#4D5B2E", "#2F5DA8", "#7A4A21"]
+
+
+def city_color(town):
+    key = town.strip().lower()
+    return CITY_COLORS.get(key) or CITY_FALLBACK[sum(ord(ch) for ch in key) % len(CITY_FALLBACK)]
 
 
 def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_search=False):
@@ -600,9 +563,12 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_s
             # The R-3 site gives no post dates, so its cards show a label instead of an age.
             if c.get("kind") == "event":
                 tm = f' &middot; {esc(c["time"])}' if c.get("time") else ""
-                # A city chip, hidden until a date search lists Holiday Events by date and the city headings are gone.
-                ct = (f'<div class="ctag{" leb" if c["city"].lower() == "lebanon" else ""}">{esc(c["city"])}</div>'
-                      if col.get("by_city") and c.get("city") else "")
+                # Boss (2026-10-27): Holiday Events run in date order, each card led by its city name in color.
+                ct = ""
+                if col.get("city_tags") and c.get("city"):
+                    town = c["city"]
+                    ct = (f'<div class="ctag leb">{esc(town)}</div>' if town.lower() == "lebanon"
+                          else f'<div class="ctag" style="background:{city_color(town)}">{esc(town)}</div>')
                 head = (f'<div class="card" data-date="{c["date"]}" data-min="{c.get("min", 0)}">{ct}<div class="when"><span class="dl">{c["when_label"]}</span>{tm} '
                         f'<span class="src">&middot; {esc(c["source"])}</span></div>')
                 names = (f'<div class="why">{esc(c["place"])}</div>' if c.get("place") else "") + \
@@ -633,13 +599,6 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_s
                 ('</div>' if nolink else
                  f'<a class="link" href="{esc(c["url"])}" target="_blank" rel="noopener">'
                  f'{"Tickets / details" if c.get("kind") == "concert" else "Details" if c.get("kind") == "event" else "Source" if c.get("kind") == "timely" else "Read story"} &#8599;</a></div>'))
-        if col.get("by_city") and cards:  # Boss (2026-10-23): Holiday Events are listed by city, each under a highlighted heading
-            groups = {}
-            for card, town in zip(cards, towns):  # cards arrive in date order, so each city's list does too
-                groups.setdefault(town or "Other", []).append(card)
-            order = sorted(groups, key=lambda t: (t == "Other", t.lower() != "lebanon", t.lower()))  # Lebanon first, then A-Z
-            cards = [f'<div class="cg"><div class="cityhd{" leb" if t.lower() == "lebanon" else ""}">{esc(t)}</div>{"".join(groups[t])}</div>'
-                     for t in order]
         body = "".join(cards) or '<div class="empty">Nothing worth airing today.</div>'
         if col["key"] == "music":
             body = ('<form class="search" onsubmit="return kjSearch();">'
