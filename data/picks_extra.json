@@ -1,163 +1,144 @@
 {
- "made": "2026-10-26",
+ "made": "2026-10-28",
  "timely": [
   {
-   "id": "Ta6f9f5",
+   "id": "T5b66a1",
    "label": "Gas Prices",
-   "line": "Missouri's average for regular gas is $3.92 today, down 26 cents from a month ago and up $1.23 from a year ago, according to Triple A, and Springfield averages $3.96. Your wallet will happily take the 26 cents.",
-   "date": "2026-10-26"
+   "line": "Missouri's average for regular gas is $3.91 today, down 26 cents from a month ago but up $1.22 from a year ago, according to AAA. Springfield averages $3.91 too. Your wallet remembers last year."
   },
   {
    "id": "T2f8a71",
-   "label": "Hunting Season",
-   "line": "Fall firearms turkey season ends Saturday, October 31, in 5 days. The turkeys have Halloween circled too.",
-   "date": "2026-10-26"
-  },
-  {
-   "id": "Ta7d631",
-   "label": "Hunting Season",
-   "line": "Archery deer season ends Friday, November 13, in 18 days. Bowhunters, the clock is ticking.",
-   "date": "2026-10-26"
-  },
-  {
-   "id": "T70c2f4",
-   "label": "Hunting Season",
-   "line": "The November portion of firearms deer season opens Saturday, November 14, in 19 days, and runs through November 24. Time to dig out the orange hat.",
-   "date": "2026-10-26"
-  },
-  {
-   "id": "Tc173d4",
-   "label": "Hunting Season",
-   "line": "Archery deer season opens Wednesday, November 25, in 30 days, and runs through January 15. The bows get a second shift.",
-   "date": "2026-10-26"
-  },
-  {
-   "id": "T1997d6",
-   "label": "Hunting Season",
-   "line": "Youth firearms deer season opens Friday, November 27, in 32 days, and runs through November 29. Leftover turkey sandwiches in the deer stand.",
-   "date": "2026-10-26"
-  },
-  {
-   "id": "Te62358",
-   "label": "Hunting Season",
-   "line": "Dove season ends Sunday, November 29, in 34 days. Last call for the dove crowd.",
-   "date": "2026-10-26"
+   "label": "Turkey Season",
+   "line": "Fall firearms turkey season ends Saturday, Oct. 31, in 3 days. Last call for gobblers."
   },
   {
    "id": "T321560",
    "label": "Halloween",
-   "line": "Halloween is Saturday, October 31, in 5 days. Costume panic officially starts now.",
-   "date": "2026-10-26"
+   "line": "Halloween is Saturday, Oct. 31, in 3 days. Somebody's already eating the candy bowl."
   },
   {
    "id": "T851b71",
-   "label": "Clocks Fall Back",
-   "line": "Daylight saving time ends Sunday, November 1, in 6 days, so clocks fall back one hour and sunset comes an hour earlier. The oven clock will be wrong until spring.",
-   "date": "2026-10-26"
+   "label": "Fall Back",
+   "line": "Daylight saving time ends Sunday, Nov. 1, in 4 days, so clocks fall back one hour and sunset comes an hour earlier. Spend that extra hour wisely, or just sleep.",
+   "date": "2026-10-29"
   },
   {
-   "id": "Ta76b3b",
-   "label": "Veterans Day",
-   "line": "Veterans Day is Wednesday, November 11, in 16 days. A good week to thank someone who served.",
-   "date": "2026-10-26"
+   "id": "Ta7d631",
+   "label": "Archery Season",
+   "line": "Archery deer season ends Friday, Nov. 13, in 16 days. Time's ticking, and so is your stand."
+  },
+  {
+   "id": "T70c2f4",
+   "label": "Firearms Season",
+   "line": "The November portion of firearms deer season opens Saturday, Nov. 14, in 17 days, and runs through Nov. 24. Time to dig out the blaze orange."
+  },
+  {
+   "id": "Tc173d4",
+   "label": "Archery Returns",
+   "line": "Archery deer season opens Wednesday, Nov. 25, in 28 days, and runs through Jan. 15. Bowhunters get a second chance."
+  },
+  {
+   "id": "T1997d6",
+   "label": "Youth Season",
+   "line": "Youth firearms deer season opens Friday, Nov. 27, in 30 days, and runs through Nov. 29. Better start shopping for kid-sized orange."
+  },
+  {
+   "id": "Te62358",
+   "label": "Dove Season",
+   "line": "Dove season ends Sunday, Nov. 29, in 32 days. Plenty of time to miss a few more."
   },
   {
    "id": "Tc44f8a",
    "label": "Thanksgiving",
-   "line": "Thanksgiving is Thursday, November 26, in 31 days. Start stretching now.",
-   "date": "2026-10-26"
+   "line": "Thanksgiving is Thursday, Nov. 26, in 29 days. Start stretching those stretchy pants."
   },
   {
-   "id": "T7ea242",
-   "label": "70 Years Ago",
-   "line": "Elvis Presley made his second appearance on The Ed Sullivan Show on this day in 1956, singing 'Hound Dog' and 'Love Me Tender' to an audience share over 80 percent. Networks still dream about numbers like that.",
-   "date": "2026-10-28"
+   "id": "Tda43d0",
+   "label": "Music Anniversary",
+   "line": "Queen released 'News of the World' in 1977, with 'We Will Rock You' and 'We Are the Champions,' now fixtures at sports events. Stomp, stomp, clap, repeat."
   },
   {
    "id": "T37661a",
-   "label": "Country Classic",
-   "line": "'Islands in the Stream' by Kenny Rogers and Dolly Parton hit No. 1 on the U.S. singles chart on this day in 1983. Go ahead, try not to sing it.",
-   "date": "2026-10-29"
+   "label": "Music Anniversary",
+   "line": "'Islands in the Stream' by Kenny Rogers and Dolly Parton hit No. 1 in 1983. Still the karaoke duet nobody sings well."
   },
   {
    "id": "T3ec848",
-   "label": "On This Day",
-   "line": "LeBron James made his NBA debut on this day in 2003 with 25 points, nine assists and six rebounds, even in a loss. Not a bad first day at work.",
-   "date": "2026-10-29"
+   "label": "Sports Anniversary",
+   "line": "LeBron James made his NBA debut in 2003 with 25 points, nine assists and six rebounds, even in a loss. Not a bad first day at work."
   },
   {
-   "id": "T5c8e31",
-   "label": "TV Return",
-   "line": "NBC's hospital comedy 'St. Denis Medical,' starring Wendi McLendon-Covey and David Alan Grier, returns for season three Monday, Nov. 2. Finally, a hospital visit nobody dreads.",
-   "date": "2026-11-02"
+   "id": "T336b83",
+   "label": "Music Anniversary",
+   "line": "Men at Work hit No. 1 on the Billboard Hot 100 with 'Who Can It Be Now?' in 1982. Sounds like your doorbell this Halloween."
   },
   {
-   "id": "Te80432",
-   "label": "Family Movie",
-   "line": "'The Cat in the Hat,' an animated movie based on the 1957 Dr. Seuss book with Bill Hader voicing the Cat, opens in theaters Friday, Nov. 6. Green eggs sold separately.",
+   "id": "T4c9d56",
+   "label": "Movie Night",
+   "line": "The Cat in the Hat, an animated movie with Bill Hader voicing the Cat, opens Friday, Nov. 6. Hats off to family movie night.",
    "date": "2026-11-06"
   }
  ],
  "johnsons": [
   {
-   "id": "J708ca1",
-   "label": "Outdoors",
-   "line": "Young Missouri hunters harvested 11,878 deer during the early youth portion of firearms deer season, with Howell, Franklin and Texas counties leading, the Missouri Department of Conservation reported. The next generation is doing just fine."
-  },
-  {
-   "id": "Jd2cfe5",
-   "label": "Outdoors",
-   "line": "New research shows some whitetail bucks keep two separate home ranges, often miles apart, which is why a familiar buck can vanish from your hunting spot. He wasn't ghosting you, he was commuting."
-  },
-  {
-   "id": "J8d3f46",
-   "label": "Outdoors",
-   "line": "Outdoor Life named New York, Pittsburgh, Miami and Milwaukee the four best big cities for fishing, thanks to cleaner waterways holding stripers, catfish and trout. The Ozarks would like a recount."
-  },
-  {
-   "id": "Jd81e4e",
-   "label": "Cooking",
-   "line": "Budget Bytes' chicken and broccoli skillet lasagna makes six hearty servings in 50 minutes, all in one pan. Fewer dishes, happier sink."
-  },
-  {
-   "id": "J27bce2",
-   "label": "Cooking",
-   "line": "Budget Bytes rounded up 13 easy sheet pan dinners for busy weeknights, from chicken and roasted veggies to pizza and tacos, all with less cleanup. The sheet pan is the hardest worker in the kitchen."
-  },
-  {
-   "id": "Je34ad8",
-   "label": "Cooking",
-   "line": "A company called Wasted makes store-bought pasta out of leftover bread that would otherwise get thrown out, and a writer at The Kitchn calls it the most delicious store-bought pasta ever. Carbs, recycled into carbs."
-  },
-  {
-   "id": "Jae7c0c",
-   "label": "Cooking",
-   "line": "A Reddit poster meal-prepped a whole week of lunches for two: steak salads with spring mix, corn, mushrooms and New York strip, plus a pot of avgolemono, a Greek lemon soup. Meanwhile, our lunch plan is the drive-through."
-  },
-  {
-   "id": "Jd6045f",
-   "label": "Life",
-   "line": "Signing up for student loan auto pay before Dec. 31 could cut the interest rate by 1 percent through June 2028, if the borrower meets every eligibility rule, according to Money Talks News. Savings for clicking one button."
-  },
-  {
-   "id": "J804ceb",
-   "label": "Life",
-   "line": "Over 68,000 Lexus NX vehicles from 2022 to 2024 are recalled, and owners can get a free software fix at the dealer, with letters expected by Dec. 7. A free fix is the best kind of fix."
-  },
-  {
-   "id": "J1599ba",
-   "label": "Life",
-   "line": "Amazon knocked $200 off the 65-inch Toshiba Z670R mini-LED TV, bringing it to $550. Football Sunday just got a bigger screen."
-  },
-  {
-   "id": "J11a8ad",
+   "id": "J0cee22",
    "label": "Family",
-   "line": "A Reddit dad says trunk-or-treat is worse than door-to-door: his kids got stepped on by the family behind them, and they spent more time waiting in line than getting candy. Somewhere, a front porch feels vindicated."
+   "line": "Hamax Buddy child bike seats sold at Décathlon are recalled over a choking hazard, so check the harness straps. Worth two minutes in the garage."
   },
   {
-   "id": "J25b140",
+   "id": "J0e3c5a",
    "label": "Family",
-   "line": "A Reddit parent says 10 is the best age so far, after a day of McDonald's, squishies from Five Below and frozen yogurt with their 10-year-old and her best friend. Old enough for fun, young enough to want you along."
+   "line": "Plastic Balloons balloon blowing kits are recalled because some contain hidden chemical risks. Skip the kit and keep the party."
+  },
+  {
+   "id": "Jcc174e",
+   "label": "Family",
+   "line": "Adults who took part in a supplemental Head Start program as preschoolers reported better mental health and social adjustment nearly two decades later. Sharing the crayons pays off."
+  },
+  {
+   "id": "J249e8f",
+   "label": "Family",
+   "line": "A Reddit dad asks parents to stop driving to the 'nice' neighborhoods to trick-or-treat, saying all three neighborhoods he has lived in were safe and walkable. Your own block has candy too."
+  },
+  {
+   "id": "J7194af",
+   "label": "Family",
+   "line": "Scary Mommy rounded up 10 make-ahead Thanksgiving sides that reheat well, so nobody's stuck in the kitchen while family hangs out in the living room. Kitchen jail avoided."
+  },
+  {
+   "id": "J928a9f",
+   "label": "Cooking",
+   "line": "Budget Bytes' ham and bean soup is chunky and easy, loaded with colorful vegetables, browned ham and plenty of white beans. Fall dinner, solved."
+  },
+  {
+   "id": "Jb8e195",
+   "label": "Cooking",
+   "line": "The Kitchn's apple cobbler cooks the apple filling on the stovetop first so it softens and releases juices, and the topping is super easy to whisk. Cobbler beats pie on effort."
+  },
+  {
+   "id": "J2718eb",
+   "label": "Cooking",
+   "line": "Skinnytaste's baked Southwest turkey meatballs use lean ground turkey, jalapeño, cilantro, garlic and cumin, and they're easy to make ahead for dipping. Meatball Monday, sorted."
+  },
+  {
+   "id": "J9039b7",
+   "label": "Outdoors",
+   "line": "Starting in March, camping on Missouri Department of Conservation areas takes a $5 permit, good for up to five days and 10 people, bought online. Five bucks for a campsite is still a deal."
+  },
+  {
+   "id": "Je3629f",
+   "label": "Outdoors",
+   "line": "Starting in March 2027, the Missouri Department of Conservation will require permits to use its unstaffed firearms shooting ranges because of increasing damage. Range etiquette, now with paperwork."
+  },
+  {
+   "id": "J2dbe81",
+   "label": "Life",
+   "line": "Bath & Body Works advent calendar signups open Nov. 4: $50 for more than $115 in products, seven of them sold only inside the box. Plan your stocking now."
+  },
+  {
+   "id": "Jb6740c",
+   "label": "Life",
+   "line": "Firehouse Subs is selling $9.95 plushies, each honoring a real rescue dog, with 100 percent of profits buying lifesaving equipment for first responders. Cuddly and useful."
   }
  ]
 }
