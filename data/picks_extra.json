@@ -1,144 +1,97 @@
 {
- "made": "2026-10-28",
+ "made": "2026-10-29",
  "timely": [
   {
-   "id": "T5b66a1",
+   "id": "T516b9a",
    "label": "Gas Prices",
-   "line": "Missouri's average for regular gas is $3.91 today, down 26 cents from a month ago but up $1.22 from a year ago, according to AAA. Springfield averages $3.91 too. Your wallet remembers last year."
+   "line": "Missouri's average for regular gas is $3.89 today, down 25 cents from a month ago and up $1.20 from a year ago, according to AAA, and Springfield averages $3.87. Your wallet finally caught a break.",
+   "date": "2026-10-29"
   },
   {
    "id": "T2f8a71",
-   "label": "Turkey Season",
-   "line": "Fall firearms turkey season ends Saturday, Oct. 31, in 3 days. Last call for gobblers."
+   "label": "Hunting Season",
+   "line": "Fall firearms turkey season ends Saturday, Oct. 31. Last call for the gobblers.",
+   "date": "2026-10-30"
   },
   {
    "id": "T321560",
    "label": "Halloween",
-   "line": "Halloween is Saturday, Oct. 31, in 3 days. Somebody's already eating the candy bowl."
+   "line": "Halloween is Saturday, Oct. 31. Time to hide the good candy.",
+   "date": "2026-10-31"
   },
   {
    "id": "T851b71",
-   "label": "Fall Back",
-   "line": "Daylight saving time ends Sunday, Nov. 1, in 4 days, so clocks fall back one hour and sunset comes an hour earlier. Spend that extra hour wisely, or just sleep.",
-   "date": "2026-10-29"
+   "label": "Clocks Fall Back",
+   "line": "Daylight saving time ends Sunday, Nov. 1, so clocks fall back one hour and sunset comes an hour earlier. Enjoy the extra hour of sleep, parents.",
+   "date": "2026-11-01"
+  },
+  {
+   "id": "Ta76b3b",
+   "label": "Veterans Day",
+   "line": "Veterans Day is Wednesday, Nov. 11. Time to say thank you.",
+   "date": "2026-11-11"
   },
   {
    "id": "Ta7d631",
-   "label": "Archery Season",
-   "line": "Archery deer season ends Friday, Nov. 13, in 16 days. Time's ticking, and so is your stand."
+   "label": "Hunting Season",
+   "line": "Archery deer season ends Friday, Nov. 13. Final days in the stand.",
+   "date": "2026-11-13"
   },
   {
    "id": "T70c2f4",
-   "label": "Firearms Season",
-   "line": "The November portion of firearms deer season opens Saturday, Nov. 14, in 17 days, and runs through Nov. 24. Time to dig out the blaze orange."
-  },
-  {
-   "id": "Tc173d4",
-   "label": "Archery Returns",
-   "line": "Archery deer season opens Wednesday, Nov. 25, in 28 days, and runs through Jan. 15. Bowhunters get a second chance."
-  },
-  {
-   "id": "T1997d6",
-   "label": "Youth Season",
-   "line": "Youth firearms deer season opens Friday, Nov. 27, in 30 days, and runs through Nov. 29. Better start shopping for kid-sized orange."
-  },
-  {
-   "id": "Te62358",
-   "label": "Dove Season",
-   "line": "Dove season ends Sunday, Nov. 29, in 32 days. Plenty of time to miss a few more."
+   "label": "Hunting Season",
+   "line": "The November portion of firearms deer season opens Saturday, Nov. 14, and runs through Nov. 24. Orange vests ready.",
+   "date": "2026-11-14"
   },
   {
    "id": "Tc44f8a",
    "label": "Thanksgiving",
-   "line": "Thanksgiving is Thursday, Nov. 26, in 29 days. Start stretching those stretchy pants."
+   "line": "Thanksgiving is Thursday, Nov. 26. Stretchy pants are officially on the list.",
+   "date": "2026-11-26"
   },
   {
-   "id": "Tda43d0",
-   "label": "Music Anniversary",
-   "line": "Queen released 'News of the World' in 1977, with 'We Will Rock You' and 'We Are the Champions,' now fixtures at sports events. Stomp, stomp, clap, repeat."
+   "id": "T1997d6",
+   "label": "Hunting Season",
+   "line": "Youth firearms deer season opens Friday, Nov. 27, and runs through Nov. 29. Perfect weekend for the next generation.",
+   "date": "2026-11-27"
   },
   {
-   "id": "T37661a",
-   "label": "Music Anniversary",
-   "line": "'Islands in the Stream' by Kenny Rogers and Dolly Parton hit No. 1 in 1983. Still the karaoke duet nobody sings well."
-  },
-  {
-   "id": "T3ec848",
-   "label": "Sports Anniversary",
-   "line": "LeBron James made his NBA debut in 2003 with 25 points, nine assists and six rebounds, even in a loss. Not a bad first day at work."
-  },
-  {
-   "id": "T336b83",
-   "label": "Music Anniversary",
-   "line": "Men at Work hit No. 1 on the Billboard Hot 100 with 'Who Can It Be Now?' in 1982. Sounds like your doorbell this Halloween."
-  },
-  {
-   "id": "T4c9d56",
-   "label": "Movie Night",
-   "line": "The Cat in the Hat, an animated movie with Bill Hader voicing the Cat, opens Friday, Nov. 6. Hats off to family movie night.",
-   "date": "2026-11-06"
+   "id": "Tbbbf08",
+   "label": "Black Friday",
+   "line": "Black Friday is Friday, Nov. 27. Pack snacks and patience.",
+   "date": "2026-11-27"
   }
  ],
  "johnsons": [
   {
-   "id": "J0cee22",
-   "label": "Family",
-   "line": "Hamax Buddy child bike seats sold at Décathlon are recalled over a choking hazard, so check the harness straps. Worth two minutes in the garage."
-  },
-  {
-   "id": "J0e3c5a",
-   "label": "Family",
-   "line": "Plastic Balloons balloon blowing kits are recalled because some contain hidden chemical risks. Skip the kit and keep the party."
-  },
-  {
-   "id": "Jcc174e",
-   "label": "Family",
-   "line": "Adults who took part in a supplemental Head Start program as preschoolers reported better mental health and social adjustment nearly two decades later. Sharing the crayons pays off."
-  },
-  {
-   "id": "J249e8f",
-   "label": "Family",
-   "line": "A Reddit dad asks parents to stop driving to the 'nice' neighborhoods to trick-or-treat, saying all three neighborhoods he has lived in were safe and walkable. Your own block has candy too."
-  },
-  {
-   "id": "J7194af",
-   "label": "Family",
-   "line": "Scary Mommy rounded up 10 make-ahead Thanksgiving sides that reheat well, so nobody's stuck in the kitchen while family hangs out in the living room. Kitchen jail avoided."
-  },
-  {
-   "id": "J928a9f",
-   "label": "Cooking",
-   "line": "Budget Bytes' ham and bean soup is chunky and easy, loaded with colorful vegetables, browned ham and plenty of white beans. Fall dinner, solved."
-  },
-  {
-   "id": "Jb8e195",
-   "label": "Cooking",
-   "line": "The Kitchn's apple cobbler cooks the apple filling on the stovetop first so it softens and releases juices, and the topping is super easy to whisk. Cobbler beats pie on effort."
-  },
-  {
-   "id": "J2718eb",
-   "label": "Cooking",
-   "line": "Skinnytaste's baked Southwest turkey meatballs use lean ground turkey, jalapeño, cilantro, garlic and cumin, and they're easy to make ahead for dipping. Meatball Monday, sorted."
-  },
-  {
-   "id": "J9039b7",
+   "id": "J693681",
    "label": "Outdoors",
-   "line": "Starting in March, camping on Missouri Department of Conservation areas takes a $5 permit, good for up to five days and 10 people, bought online. Five bucks for a campsite is still a deal."
+   "line": "Missouri will require a new Nonresident Public Land Deer Hunting Permit for out-of-state hunters starting in 2027, and it will cost $165. Out-of-towners will be paying to play."
   },
   {
-   "id": "Je3629f",
+   "id": "Jbe3e36",
+   "label": "Cooking",
+   "line": "A Budget Bytes guide shows how to feed eight people a complete holiday dinner for around $45 using smart grocery swaps. That's a Thanksgiving budget even Dad can love."
+  },
+  {
+   "id": "Jb997c2",
    "label": "Outdoors",
-   "line": "Starting in March 2027, the Missouri Department of Conservation will require permits to use its unstaffed firearms shooting ranges because of increasing damage. Range etiquette, now with paperwork."
+   "line": "Missouri hunters are encouraged to have deer sampled for chronic wasting disease all season at sites including Conservation Department offices, meat processors, taxidermists and freezer drops. Check before you stock the freezer."
   },
   {
-   "id": "J2dbe81",
-   "label": "Life",
-   "line": "Bath & Body Works advent calendar signups open Nov. 4: $50 for more than $115 in products, seven of them sold only inside the box. Plan your stocking now."
+   "id": "Ja7f44d",
+   "label": "Outdoors",
+   "line": "A Reddit poster caught her biggest fish on a solo camping trip, then filleted it that night and cooked it over the campfire. Dinner doesn't get fresher."
   },
   {
-   "id": "Jb6740c",
+   "id": "J3c53c1",
+   "label": "Family",
+   "line": "A Reddit dad says he got the kids up, made lunch, did drop-off, worked all day and even closed new business. All before the school bell rang twice."
+  },
+  {
+   "id": "Ja26a3e",
    "label": "Life",
-   "line": "Firehouse Subs is selling $9.95 plushies, each honoring a real rescue dog, with 100 percent of profits buying lifesaving equipment for first responders. Cuddly and useful."
+   "line": "A Reddit poster who is a vet says pet insurance \"saves lives\" for dogs, cats and exotic pets. Fur babies get health plans too."
   }
  ]
 }
