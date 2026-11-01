@@ -7,6 +7,7 @@ import html
 import json
 from datetime import date, datetime, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -56,9 +57,11 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .dsearch .dtab.on{background:#FDB913;border-color:#FDB913;color:#0A2A50}
 .dhelp{color:#FFFFFF;font-size:15px;padding:6px 0 0}
 .dsearch a{color:#FDB913;font-weight:bold;font-size:15px;margin-left:12px}
-.col.kjh,.card.kjh{display:none}
-.ctag{display:inline-block;background:#0A2A50;color:#FFFFFF;font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;padding:1px 8px;border-radius:3px;margin-bottom:4px}
+.col.kjh,.card.kjh,.wxd.kjh{display:none}
+.wxnone{display:none;font-size:13px;font-weight:bold;color:#33445C;margin:6px 0}.wxnone.kjm{display:block}
+.ctag{display:inline-block;background:#0A2A50;color:#FFFFFF;font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;padding:1px 8px;border-radius:3px;margin:0 2px 2px 0}
 .ctag.leb{background:#FDB913;color:#0A2A50}
+.site{font-size:13px;margin-top:6px}.site a{font-weight:bold;color:#0A2A50}.nosite{color:#D0101F;font-weight:bold}
 .dnote{color:#FFFFFF;font-size:16px;font-weight:bold;padding:6px 18px 0}
 .dnote .dn{color:#FDB913}.dnote a{color:#FDB913}
 .kjs .col{display:none}.kjs .col.kjm{display:inline-block}.kjs .card{display:none}.kjs .card.kjm{display:block}.kjs .search{display:none}
@@ -248,14 +251,14 @@ function kjSearch(){
 # Day / date search at the top of Show Prep (Boss 2026-10-21). A day name means that day THIS WEEK (Monday through Sunday);
 # a date without a year means its next occurrence. It filters the board in place: cards with data-date equal to the
 # target stay, everything else (including undated news cards) is hidden until Clear. ES3 only, like the rest.
-# Boss (2026-10-23): "Search by:" has three choices so it is clear what the box means. Word = cards holding every word
-# typed. One day = only cards dated that day. From a day on = every undated card stays and dated cards BEFORE the day
-# hide (for voice tracking days ahead). The choice sets what the box means; Search runs it.
+# Boss (2026-10-23, changed 2026-10-30): "Search by:" has two choices so it is clear what the box means. Word = cards holding
+# every word typed. Date = a date only touches DATED events: those before the date hide, the date and everything after stays,
+# and every card with no date (LOCAL PRIDE, The Johnsons, National, Music news, Wx) stays whole (for voice tracking days ahead).
+# The choice sets what the box means; Search runs it.
 DAY_FORM = ('<form class="dsearch" onsubmit="return kjGo();">'
             '<div class="dtabs"><span class="dlab">Search by:</span>'
             '<input class="dtab on" id="kjt-word" type="button" value="Word" onclick="return kjMode(\'word\');">'
-            '<input class="dtab" id="kjt-day" type="button" value="One day" onclick="return kjMode(\'day\');">'
-            '<input class="dtab" id="kjt-from" type="button" value="From a day on" onclick="return kjMode(\'from\');"></div>'
+            '<input class="dtab" id="kjt-date" type="button" value="Date" onclick="return kjMode(\'date\');"></div>'
             '<input class="dq" id="kjd" type="text" aria-label="Search" placeholder="Type a word, like Lebanon">'
             ' <input class="dgo" type="submit" value="Search"><a href="#" onclick="return kjDayClear();">Clear</a>'
             '<div class="dhelp" id="kjhelp">Shows every card that has the word.</div></form>'
@@ -317,12 +320,12 @@ function kjDayReset(){
 function kjDayClear(){
   document.getElementById('kjd').value=''; document.getElementById('kjdn').innerHTML=''; kjDayReset(); return false;
 }
-// Search by: Word | One day | From a day on. The tab picks what the box means; Search runs it.
+// Search by: Word | Date. The tab picks what the box means; Search runs it. Date = dated events from that day on; cards with no date stay.
 var KJ_MODE='word';
-var KJ_HINT={word:'Type a word, like Lebanon', day:'Type a day or date, like Friday or 10/26', from:'Type a day or date, like Monday or 10/26'};
-var KJ_HELP={word:'Shows every card that has the word.', day:'Shows only the cards dated that day.', from:'Hides cards dated before that day. Cards with no date stay.'};
+var KJ_HINT={word:'Type a word, like Lebanon', date:'Type a day or date, like Friday or 10/31'};
+var KJ_HELP={word:'Shows every card that has the word.', date:'Shows dated events and the weather forecast from that day on. LOCAL PRIDE, The Johnsons, National and other cards with no date all stay.'};
 function kjMode(m){
-  var ids=['word','day','from'], i, b;
+  var ids=['word','date'], i, b;
   KJ_MODE=m;
   for(i=0;i<ids.length;i++){ b=document.getElementById('kjt-'+ids[i]); if(ids[i]===m) kjAdd(b,'on'); else kjDel(b,'on'); }
   document.getElementById('kjd').placeholder=KJ_HINT[m];
@@ -336,7 +339,7 @@ function kjGo(){
   if(!/\S/.test(v)) return kjDayClear();
   kjDayReset();
   r=document.getElementById('kjres'); if(r && r.style.display==='block') kjClear();
-  return KJ_MODE==='word' ? kjWords(v) : kjDay(v,KJ_MODE);
+  return KJ_MODE==='word' ? kjWords(v) : kjDay(v);
 }
 function kjDayGo(txt){document.getElementById('kjd').value=txt; return kjGo();}
 function kjFilter(fn){  // keep the cards fn() accepts, hide the rest; a column with no kept card hides too
@@ -371,10 +374,10 @@ function kjWords(raw){  // cards holding EVERY word typed, in any order, anywher
   document.getElementById('kjdn').innerHTML='<span class="dn">&quot;'+kjEsc(words.join(' '))+'&quot;</span> &middot; '+res.n+(res.n===1?' card':' cards')+' in '+res.cols+(res.cols===1?' column':' columns')+'.'+(res.n?'':' Nothing on this page has all of those words.');
   return false;
 }
-function kjDay(v,mode){
-  var from=(mode==='from'), note=document.getElementById('kjdn'), t, label, divs, i, k, m, d, c, col, sp, cards, n=0, nx, res;
+function kjDay(v){  // the date and everything after it, for dated events only; a card with no date is never touched
+  var note=document.getElementById('kjdn'), t, label, divs, i, k, m, d, c, col, sp, cards, n=0, nx, wl=0, wr=0, nf;
   t=kjTarget(v);
-  if(!t){ note.innerHTML='Not a day or date. Try Friday or 10/26.'; return false; }
+  if(!t){ note.innerHTML='Not a day or date. Try Friday or 10/31.'; return false; }
   label=KJ_DOW[t.dt.getDay()]+' '+(t.dt.getMonth()+1)+'/'+t.dt.getDate()+(t.dt.getFullYear()!==t.y0?'/'+t.dt.getFullYear():'');
   if(t.iso<t.todayIso){
     note.innerHTML='<span class="dn">'+label+'</span> has passed.';
@@ -383,28 +386,30 @@ function kjDay(v,mode){
     return false;
   }
   divs=document.getElementsByTagName('div');
-  if(from){
-    // Undated cards stay. Dated cards before the date hide, and a column left with no cards goes too. Hiding instead of
-    // showing leaves anything the page adds later (live weather alerts) alone.
-    for(i=0;i<divs.length;i++){
-      c=divs[i];
-      if(!kjHas(c,'card') || c.style.display==='none') continue;
-      d=c.getAttribute('data-date');
-      if(d && d<t.iso){ kjAdd(c,'kjh'); n++; col=kjColOf(c); if(col) col.kjx=1; }
-    }
-    for(i=0;i<divs.length;i++){
-      c=divs[i];
-      if(!kjHas(c,'col') || !c.kjx) continue;
-      cards=c.getElementsByTagName('div'); m=0;
-      for(k=0;k<cards.length;k++){ if(kjHas(cards[k],'card') && !kjHas(cards[k],'kjh') && cards[k].style.display!=='none') m++; }
-      sp=kjBadge(c); if(sp){ if(typeof sp.kjo==='undefined') sp.kjo=sp.innerHTML; sp.innerHTML=m; }
-      if(!m) kjAdd(c,'kjh');
-    }
-    note.innerHTML='<span class="dn">FROM '+label+(t.wk?' (this week)':'')+' on</span> &middot; cards with no date stay. '+n+(n===1?' earlier card':' earlier cards')+' hidden.';
-    return false;
+  // Dated cards before the date hide, and a column left with no cards goes too. Hiding instead of showing leaves every
+  // undated card (LOCAL PRIDE, The Johnsons, National, Music news, Wx) and anything the page adds later (live alerts) alone.
+  for(i=0;i<divs.length;i++){
+    c=divs[i];
+    if(!kjHas(c,'card') || c.style.display==='none') continue;
+    d=c.getAttribute('data-date');
+    if(d && d<t.iso){ kjAdd(c,'kjh'); n++; col=kjColOf(c); if(col) col.kjx=1; }
   }
-  res=kjFilter(function(c){ return c.getAttribute('data-date')===t.iso; });
-  note.innerHTML='<span class="dn">'+label+(t.wk?' (this week)':'')+'</span> &middot; '+res.n+(res.n===1?' card':' cards')+' in '+res.cols+(res.cols===1?' column':' columns')+'. Cards with no date are hidden.';
+  for(i=0;i<divs.length;i++){
+    c=divs[i];
+    if(!kjHas(c,'col') || !c.kjx) continue;
+    cards=c.getElementsByTagName('div'); m=0;
+    for(k=0;k<cards.length;k++){ if(kjHas(cards[k],'card') && !kjHas(cards[k],'kjh') && cards[k].style.display!=='none') m++; }
+    sp=kjBadge(c); if(sp){ if(typeof sp.kjo==='undefined') sp.kjo=sp.innerHTML; sp.innerHTML=m; }
+    if(!m) kjAdd(c,'kjh');
+  }
+  for(i=0;i<divs.length;i++){  // the weather follows the date too: forecast days before it hide (Boss 2026-10-30)
+    c=divs[i];
+    if(!kjHas(c,'wxd') || c.style.display==='none') continue;
+    wl++;
+    if(c.getAttribute('data-date')<t.iso){ kjAdd(c,'kjh'); wr++; }
+  }
+  if(wl && wr===wl){ nf=document.getElementById('wxnone'); if(nf) kjAdd(nf,'kjm'); }  // the date is past the end of the forecast
+  note.innerHTML='<span class="dn">'+label+(t.wk?' (this week)':'')+' and later</span> &middot; '+n+(n===1?' earlier dated card':' earlier dated cards')+' hidden. Cards with no date all stay.';
   return false;
 }
 """
@@ -508,6 +513,12 @@ CITY_COLORS = {"waynesville": "#0A2A50", "saint robert": "#B3121F", "st. robert"
 CITY_FALLBACK = ["#0A2A50", "#B3121F", "#1B6E3C", "#6B3FA0", "#A24E00", "#0B7285", "#8C2F5A", "#4D5B2E", "#2F5DA8", "#7A4A21"]
 
 
+def root_site(url):
+    """"https://www.visitlebanonmo.org/events/2020/x?y=1" -> "visitlebanonmo.org": the root, short enough to say on air."""
+    host = urlparse(url).netloc.lower()
+    return host[4:] if host.startswith("www.") else host
+
+
 def city_color(town):
     key = town.strip().lower()
     return CITY_COLORS.get(key) or CITY_FALLBACK[sum(ord(ch) for ch in key) % len(CITY_FALLBACK)]
@@ -545,7 +556,7 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_s
             where = ""
             sig = f'<div class="sig"><b>BUZZ:</b> {esc(c["signal"])}</div>' if c.get("signal") else ""
             joke = c.get("kind") == "joke"
-            nolink = joke or col["key"] == "humor" or (c.get("kind") == "event" and not c.get("url"))  # Humor reads in one line; hand-entered events may have no link
+            nolink = joke or col["key"] == "humor" or c.get("kind") == "event"  # Humor reads in one line; an event card builds its own website line
             punch = ""
             # On-air sentence replaces the headline. Jokes and roundups keep their own text.
             if joke:  # one line: Claude's tightened version, or setup and punchline joined
@@ -563,16 +574,19 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_s
             # The R-3 site gives no post dates, so its cards show a label instead of an age.
             if c.get("kind") == "event":
                 tm = f' &middot; {esc(c["time"])}' if c.get("time") else ""
-                # Boss (2026-10-27): Holiday Events run in date order, each card led by its city name in color.
-                ct = ""
-                if col.get("city_tags") and c.get("city"):
-                    town = c["city"]
-                    ct = (f'<div class="ctag leb">{esc(town)}</div>' if town.lower() == "lebanon"
-                          else f'<div class="ctag" style="background:{city_color(town)}">{esc(town)}</div>')
-                head = (f'<div class="card" data-date="{c["date"]}" data-min="{c.get("min", 0)}">{ct}<div class="when"><span class="dl">{c["when_label"]}</span>{tm} '
+                # Boss (2026-10-30): every dated event carries its city name in the main text (in color) and a website for more
+                # information, shown as the site's root so it can be read on air; the link still opens the event's own page.
+                town = c.get("city") or ""
+                if town:
+                    main = (f'<span class="ctag leb">{esc(town)}</span> ' if town.lower() == "lebanon"
+                            else f'<span class="ctag" style="background:{city_color(town)}">{esc(town)}</span> ') + main
+                head = (f'<div class="card" data-date="{c["date"]}" data-min="{c.get("min", 0)}"><div class="when"><span class="dl">{c["when_label"]}</span>{tm} '
                         f'<span class="src">&middot; {esc(c["source"])}</span></div>')
+                site = root_site(c.get("url") or "")
                 names = (f'<div class="why">{esc(c["place"])}</div>' if c.get("place") else "") + \
-                        (f'<div class="why">{esc(c["why"])}</div>' if c.get("why") else "")
+                        (f'<div class="why">{esc(c["why"])}</div>' if c.get("why") else "") + \
+                        (f'<div class="site"><a href="{esc(c["url"])}" target="_blank" rel="noopener">More info: {esc(site)} &#8599;</a></div>' if site
+                         else '<div class="site nosite">More info: no website given</div>')
             elif c.get("kind") == "timely":  # Timely: a dated talking point; the date label turns into TODAY / TOMORROW in the browser
                 head = (f'<div class="card" data-date="{c["date"]}"><div class="when"><span class="dl">{esc(c["when_label"])}</span> '
                         f'<span class="src">&middot; {esc(c["source"])}</span></div>')

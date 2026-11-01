@@ -4,6 +4,7 @@ Also writes music_search.js (top-40 archive + current music stories) next to eac
 Run: python3 -I scripts/build.py
 """
 import json
+import re
 import sys
 from datetime import date, datetime, timezone
 from pathlib import Path
@@ -68,6 +69,25 @@ EVENTS_JS = Path.home() / "Documents/Claude/Projects/KJEL-event-board/data/event
 EVENT_SKIP = {"kim only", "live music", "manual entries"}  # manual entries are filed under their own category (d["manual"])
 
 
+# Boss (2026-10-30): every dated event shows a city name. Where the source gives only an area ("Lake Area", "Pulaski County"),
+# a city named in the place, title or description is used; if none is named the area label stays (the source gave no city).
+AREA_LABELS = {"lake area", "pulaski county", "laclede county", "camden county", "miller county", "lake of the ozarks"}
+EVENT_CITIES = ["Lebanon", "Lake Ozark", "Osage Beach", "Camdenton", "Waynesville", "Saint Robert", "St. Robert", "Fort Leonard Wood",
+                "Eldon", "Buffalo", "Bolivar", "Marshfield", "Dixon", "Fair Grove", "Sunrise Beach", "Linn Creek", "Crocker",
+                "Richland", "Laurie", "Laquey", "Versailles", "Hermitage", "Hartville", "Gravois Mills"]
+
+
+def event_city(e):
+    town = (e.get("town") or "").strip()
+    if town and town.lower() not in AREA_LABELS:
+        return town
+    hay = " ".join(e.get(k) or "" for k in ("place", "title", "why"))
+    for c in EVENT_CITIES:
+        if re.search(r"\b" + re.escape(c) + r"\b", hay, re.I):
+            return "Saint Robert" if c == "St. Robert" else c
+    return town
+
+
 def event_columns():
     """Event Board columns for Show Prep, upcoming only, soonest first."""
     if not EVENTS_JS.exists():
@@ -81,12 +101,11 @@ def event_columns():
         # Boss (2026-10-21): events she adds by hand go into the Show Prep category they belong in (d["manual"]).
         evs = sorted((e for e in d["events"] + d.get("manual", []) if e["type"] == typ and date.fromisoformat(e["date"]) >= today),
                      key=lambda e: (e["date"], e.get("min", 0)))
-        cards = [{"kind": "event", "title": e["title"], "line": e["title"], "city": e["town"], "source": e.get("source", ""),
+        cards = [{"kind": "event", "title": e["title"], "line": e["title"], "city": event_city(e), "source": e.get("source", ""),
                   "url": e["url"], "ts": None, "signal": "", "why": e.get("why", ""), "place": e.get("place", ""),
                   "date": e["date"], "time": e.get("time", ""), "min": e.get("min", 0),
                   "when_label": date.fromisoformat(e["date"]).strftime("%a, %b %-d").upper()} for e in evs]
-        # Boss (2026-10-27): Holiday Events run in date order with each city name in color (page.py city_tags).
-        cols.append({"key": "ev-" + typ.lower().replace(" ", "-"), "name": typ, "cards": cards, "city_tags": typ.lower() == "holiday events"})
+        cols.append({"key": "ev-" + typ.lower().replace(" ", "-"), "name": typ, "cards": cards})
     return cols
 
 def extra_columns():

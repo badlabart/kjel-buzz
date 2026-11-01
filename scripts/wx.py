@@ -140,7 +140,9 @@ def day_view(periods, day, now, sky_hours):
         s = sky_score(p) if h in sky_hours else None
         if s is not None:
             (wet if is_wet(p) else dry).append(s)
-    scores = dry or wet
+    # A slight chance of showers: clouds, but too little rain to name. Used only when nothing else scored, so such a day still gets a sky.
+    drizzle = [3 for h, p in hrs if h in sky_hours and is_wet(p)]
+    scores = dry or wet or drizzle
     highs = [p["temperature"] for h, p in hrs if 12 <= h < 18]
     rain = {}
     for name, rng in PARTS:
@@ -167,13 +169,17 @@ def summarize(views, now, ahead=False):
     labels = NIGHT_SKY if tonight else DAY_SKY
     avgs = [v["sky"] for _, v in views if v["sky"] is not None]
     line1 = ""
+    highs = [v["high"] for _, v in views if v["high"] is not None]
+    show_highs = bool(highs) and (ahead or now.hour < 13)
+    span = f"{min(highs)}" + (f"-{max(highs)}" if highs and max(highs) != min(highs) else "") if highs else ""
     if avgs:
         lo, hi = sky_label(min(avgs), labels), sky_label(max(avgs), labels)
         line1 = (lo if lo == hi else f"{lo} to {hi.lower()}") + (" tonight" if tonight else "")
-        highs = [v["high"] for _, v in views if v["high"] is not None]
-        if highs and (ahead or now.hour < 13):
-            line1 += f", highs {min(highs)}" + (f"-{max(highs)}" if max(highs) != min(highs) else "")
+        if show_highs:
+            line1 += f", highs {span}"
         line1 += "."
+    elif show_highs:  # no sky to describe, but the temperature still goes in
+        line1 = f"Highs {span}."
     return [l for l in (line1, rain_line(views)) if l]
 
 
@@ -231,6 +237,7 @@ def forecast_card(now, stamp):
     towns = ", ".join(c["town"] for c in COUNTIES if c["town"] in hourly)
     return (f'<div class="card wxf"><div class="when">AREA FORECAST <span class="src">&middot; Marshfield to Lake of the Ozarks</span></div>'
             f'{"".join(rows)}'
+            '<div class="wxnone" id="wxnone">No forecast that far out yet. The NWS forecast runs about a week.</div>'
             f'<div class="sig">Read at {html.escape(towns)}. NWS, {stamp} &middot; '
             f'<a class="link" href="{OFFICE}" target="_blank" rel="noopener">Full forecast &#8599;</a></div></div>'), failed
 

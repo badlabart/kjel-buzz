@@ -1,136 +1,163 @@
 {
- "made": "2026-10-30",
+ "made": "2026-11-01",
  "timely": [
   {
-   "id": "T15c9a0",
-   "label": "Gas Prices",
-   "line": "Missouri's average for regular gas is $3.88 today, down 24 cents from a month ago and up $1.19 from a year ago, according to AAA. Springfield averages $3.84. Your wallet is cheering quietly.",
-   "date": "2026-10-30"
-  },
-  {
-   "id": "T2f8a71",
-   "label": "Hunting Season",
-   "line": "Fall firearms turkey season ends Saturday, Oct. 31. Last call for gobblers.",
-   "date": "2026-10-30"
-  },
-  {
-   "id": "T321560",
-   "label": "Halloween",
-   "line": "Halloween is Saturday, Oct. 31, tomorrow. Hide the good candy now.",
-   "date": "2026-10-30"
+   "id": "Tfb7ab6",
+   "label": "Brush Day",
+   "line": "National Brush Day, promoted by the American Dental Association, encourages brushing twice a day, especially after Halloween's candy rush. The candy bucket won't tell on you.",
+   "date": "2026-11-01"
   },
   {
    "id": "T851b71",
    "label": "Clocks Fall Back",
-   "line": "Daylight saving time ends Sunday, Nov. 1, so clocks fall back one hour and sunset comes an hour earlier. Hug the extra hour while it lasts.",
-   "date": "2026-10-31"
+   "line": "Daylight saving time ends today, so clocks fall back one hour and sunset comes an hour earlier. Kids will still wake up at the old time.",
+   "date": "2026-11-01"
+  },
+  {
+   "id": "T156d61",
+   "label": "Gas Prices",
+   "line": "Missouri's average for regular gas is $3.85 today, down 25 cents from a month ago and up $1.17 from a year ago, according to AAA. Springfield averages $3.77. Your wallet will take the cheaper month.",
+   "date": "2026-11-01"
   },
   {
    "id": "Ta7d631",
    "label": "Hunting Season",
-   "line": "Archery deer season ends Friday, Nov. 13. Time to make every trip to the stand count.",
-   "date": "2026-10-30"
+   "line": "Archery deer season ends Friday, Nov. 13, in 12 days. Bucks, enjoy the breather.",
+   "date": "2026-11-01"
   },
   {
-   "id": "T242fbf",
-   "label": "TV Night",
-   "line": "Tracy Morgan's NBC sitcom 'The Fall and Rise of Reggie Dinkins' returns for season two on Monday, Nov. 2. Couch time just got funnier.",
-   "date": "2026-11-02"
+   "id": "T70c2f4",
+   "label": "Hunting Season",
+   "line": "The November portion of firearms deer season opens Saturday, Nov. 14, in 13 days, and runs through Nov. 24. Time to find the blaze orange.",
+   "date": "2026-11-01"
   },
   {
-   "id": "Tfb7ab6",
-   "label": "Brush Day",
-   "line": "The American Dental Association promotes National Brush Day on Sunday, Nov. 1, to get everyone brushing twice a day, especially after Halloween's candy rush. Your dentist just smiled.",
+   "id": "T1997d6",
+   "label": "Hunting Season",
+   "line": "Youth firearms deer season opens Friday, Nov. 27, in 26 days, and runs through Nov. 29. Little hunters are already counting down.",
    "date": "2026-11-01"
   },
   {
    "id": "Ta76b3b",
    "label": "Veterans Day",
-   "line": "Veterans Day is next Wednesday, Nov. 11. Time to plan how your family says thank you.",
+   "line": "Veterans Day is Wednesday, Nov. 11, in 10 days. Thank a veteran, no costume required.",
+   "date": "2026-11-01"
+  },
+  {
+   "id": "Tc44f8a",
+   "label": "Thanksgiving",
+   "line": "Thanksgiving is Thursday, Nov. 26, in 25 days. Time to start pretending you'll cook.",
+   "date": "2026-11-01"
+  },
+  {
+   "id": "Tbbbf08",
+   "label": "Black Friday",
+   "line": "Black Friday is Friday, Nov. 27, in 26 days. Start stretching your shopping legs.",
+   "date": "2026-11-01"
+  },
+  {
+   "id": "T9e50ee",
+   "label": "Movie Night",
+   "line": "The animated Cat in the Hat, with Bill Hader voicing the Cat, hits theaters Friday, Nov. 6. Bring a mop.",
+   "date": "2026-11-06"
+  },
+  {
+   "id": "T60cb98",
+   "label": "New on TV",
+   "line": "The Greatest, a Prime Video series on Muhammad Ali's life from his early fights to global icon, debuts Wednesday, Nov. 4. A perfect excuse to stay on the couch.",
    "date": "2026-11-04"
   },
   {
-   "id": "T70c2f4",
-   "label": "Hunting Season",
-   "line": "The November portion of firearms deer season opens Saturday, Nov. 14, and runs through Nov. 24. Fill the thermos now.",
-   "date": "2026-11-07"
+   "id": "Ta6323b",
+   "label": "New on TV",
+   "line": "NBC's comedy St. Denis Medical returns for its third season Monday, Nov. 2, with Wendi McLendon-Covey and David Alan Grier at an underfunded Oregon hospital. Laughter is the best medicine.",
+   "date": "2026-11-02"
+  },
+  {
+   "id": "T83179d",
+   "label": "Music Anniversary",
+   "line": "Shania Twain released \"Come On Over\" in 1997, which became the best-selling country album ever by a female artist in the U.S. Still gets the whole truck singing.",
+   "date": "2026-11-04"
+  },
+  {
+   "id": "Ta871c3",
+   "label": "Music Anniversary",
+   "line": "Faith Hill reached number one on the Billboard 200 with her album \"Cry\" in 2002. Breathe in, sing along.",
+   "date": "2026-11-02"
+  },
+  {
+   "id": "T308983",
+   "label": "On This Day",
+   "line": "The Wizard of Oz was shown on U.S. television for the first time on CBS in 1956. Still no place like the couch.",
+   "date": "2026-11-03"
+  },
+  {
+   "id": "Td95492",
+   "label": "On This Day",
+   "line": "Harry Potter and the Philosopher's Stone premiered in London in 2001, 25 years ago. Feeling old yet?",
+   "date": "2026-11-04"
   }
  ],
  "johnsons": [
   {
-   "id": "Jdd8f25",
+   "id": "J022ce7",
    "label": "Outdoors",
-   "line": "The Missouri Department of Conservation postponed winter trout stocking until the second week of November because of warm weather. Trout can wait for sweater weather."
+   "line": "MDC is hosting a free hunter education skills session Nov. 12 at Runge Nature Center in Jefferson City, a required step toward hunter certification. Bring the kid with the orange hat."
   },
   {
-   "id": "Ja58d2b",
+   "id": "J3d07b1",
    "label": "Outdoors",
-   "line": "The Missouri Department of Conservation is hosting a free mentored duck hunt in southeast Missouri this December for beginners, who will learn all aspects of duck hunting before a hunt of their own. Ducks, consider yourselves warned."
+   "line": "A Missouri fourth grader, Noah Baker, has already taken two giant whitetail bucks this season, including a 187-inch buck with his dad during youth season. Dad is now just the driver."
   },
   {
-   "id": "Jf0b18c",
+   "id": "Jcd084b",
    "label": "Outdoors",
-   "line": "The Missouri Department of Conservation is hosting a first-time youth antlerless deer hunt in Trenton on Dec. 12 for kids 11 to 15 who are hunter certified; register by Nov. 30. Dress the little hunters warm."
+   "line": "Field & Stream ranks Tuesday, Nov. 3 as the No. 3 best day of the rut for whitetail hunting. Plan your sick day now."
   },
   {
-   "id": "J31572b",
+   "id": "Jc059dd",
    "label": "Outdoors",
-   "line": "A free managed deer hunt Dec. 5 and 6 in Boone County is open to anyone 11 or older who has never harvested a deer. First deer, first bragging rights."
+   "line": "Roger George makes a 100-mile drive twice a week from Fresno, California, to San Luis Reservoir, where he landed a 48-pound landlocked striper 60 feet down in 15 minutes. That fish was worth the gas."
   },
   {
-   "id": "J28c1f8",
+   "id": "J724fc5",
    "label": "Family",
-   "line": "SOOWERY recalled its 8-drawer fabric dressers because they can tip over and trap a child if they are not anchored to the wall, and they violate the mandatory standard for clothing storage units. Anchor yours today."
+   "line": "PILLANI is recalling nursing pillows that violate mandatory safety standards and pose a risk of suffocation."
   },
   {
-   "id": "J0e1040",
+   "id": "Je2aba2",
    "label": "Family",
-   "line": "Fashion Brand Apparel recalled QZH.DUAO children's pajama sets because they violate mandatory sleepwear standards and pose a burn hazard. Check the pajama drawer tonight."
+   "line": "Yinklev is recalling Jocoevol 6-drawer dressers because they're unstable if not anchored to the wall, a tip-over and entrapment hazard."
   },
   {
-   "id": "Jf865b7",
+   "id": "Jc9ca93",
    "label": "Family",
-   "line": "RootStim recalled minoxidil hair regrowth treatment bottles because they lack child-resistant packaging, which is a child poisoning risk. Check your bathroom shelf."
+   "line": "Harkla is recalling children's sensory swings because the ceiling hook can separate from its plate, a fall hazard."
   },
   {
-   "id": "Jf94713",
+   "id": "J12fd4b",
    "label": "Family",
-   "line": "BabyCenter's 2026 list keeps Olivia, Noah and Emma in the top 10, while longer names and Greek myth names are climbing. Odysseus might need a nickname."
+   "line": "A Reddit parent gave out gently used books along with candy this Halloween, because their family ends up with more books than they can keep. Sweet for the tooth and the brain."
   },
   {
-   "id": "J0f5468",
+   "id": "J5540eb",
    "label": "Family",
-   "line": "A Reddit mom hosted her daughter's preschool classmates for a pumpkin painting play date, supplying art supplies, food and drinks, and another mom paid her for it. That's one way to fund the glitter."
+   "line": "Strawberry Shortcake is back with new three-minute animated episodes on YouTube for kids ages 4 to 8. Nostalgia served in tiny bites."
   },
   {
-   "id": "Jabd2b8",
+   "id": "J672193",
    "label": "Cooking",
-   "line": "Budget Bytes' creamy chicken and tortellini skillet cooks everything in one pan with garlicky Parmesan sauce and spinach, no boiling the pasta separately. One pan, one happy sink."
+   "line": "Skinnytaste's creamed corn uses fresh or frozen sweet corn with milk, reduced-fat cream cheese and a little butter, with no heavy cream or flour. Your arteries say thanks."
   },
   {
-   "id": "J9d56ed",
-   "label": "Cooking",
-   "line": "Skinnytaste's fall turkey burgers skip the bun and pile on caramelized apples, shallots and melted Gruyère. Fall on a plate."
-  },
-  {
-   "id": "J321be4",
-   "label": "Cooking",
-   "line": "Skinnytaste's Thanksgiving turkey meatballs pack ground turkey, stuffing mix, onions, celery and herbs into gravy, so Thanksgiving dinner fits in one bite. Leftovers solved before the holiday."
-  },
-  {
-   "id": "J2b3eae",
-   "label": "Cooking",
-   "line": "A Reddit poster meal-prepped chicken gyro bowls with a Greek salad that keeps well for several days. Lunch for the week, handled."
-  },
-  {
-   "id": "J44d7ae",
+   "id": "J1e4591",
    "label": "Life",
-   "line": "Two strength sessions a week can slow the muscle loss that usually begins in your 40s, and you don't need hours at the gym. Your couch will understand."
+   "line": "Nearly 90% of adults have had a cavity, and dry mouth, snoring and teeth grinding can raise the risk beyond sugar alone. Blame the snoring, not just the Snickers."
   },
   {
-   "id": "J19f15f",
+   "id": "J4c1955",
    "label": "Life",
-   "line": "A Reddit poster suggests hanging tapestries or heavy curtains along exterior walls as a renter-friendly way to improve insulation. Grandma's decor strikes again."
+   "line": "An HSBC survey says affluent investors now need $2.6 million to retire, up 26% in a year, yet savers have reached only about half of that. Better start the piggy bank early."
   }
  ]
 }
