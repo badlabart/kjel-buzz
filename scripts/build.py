@@ -325,6 +325,12 @@ def main():
         if news_out.parent.exists():
             (news_out / "wireready").mkdir(exist_ok=True)
             (news_out / "wireready" / "index.html").write_bytes((ROOT / "docs" / "news" / "wireready" / "index.html").read_bytes())
+    # Boss (2026-11-03): Story Editor, where J or R condenses a pasted story into KJEL broadcast copy (wireready/Condense.gs).
+    if wireready_url():
+        page.write_editor(wireready_url(), stamp)
+        if news_out.parent.exists():
+            (news_out / "editor").mkdir(exist_ok=True)
+            (news_out / "editor" / "index.html").write_bytes((ROOT / "docs" / "news" / "editor" / "index.html").read_bytes())
     # Boss (2026-10-21): Show Prep opens with a day / date search, and Wx (alerts + today's town forecasts) is its first column.
     wxcol = wx.column()
     prep = {"updated": stamp,

@@ -11,6 +11,16 @@ Boss 2026-10-22. LIVE: https://badlabart.github.io/kjel-news/ (column) and https
 - Every tap is logged by date in the Google Sheet (`Taps` tab) and emailed weekly.
 - NO PASSCODE (removed by Boss 2026-10-22): anyone with the page address can read, add and tap. WireReady menu in the Sheet > Set passcode brings it back; the pages then show an Unlock box by themselves.
 
+## Story Editor (Boss 2026-11-03)
+- Page: https://badlabart.github.io/kjel-news/editor/ (links: "Story Editor" on the News WireReady column and the WireReady full page).
+- J or R (required) pastes a story, taps "Condense story": Claude (`claude-opus-5-5`, effort medium) rewrites it as broadcast copy in Boss's style. Result shows under the button with read time, Copy, and "Add more detail" (longer, same source only, hidden at 45 sec).
+- Length: 20-45 sec (50 rare). Read time = words / 2.7. Under 20 sec shows SHORT.
+- Blocked stories (KJEL content rules) save with the reason and no copy.
+- Saved stories: 7 columns, today first, "Tuesday's Stories" etc., by the day entered. Older rows stay in the Sheet.
+- Files: `Condense.gs` (logic, public) + `Style.gs` (Boss's rules and before/after samples; GITIGNORED because the samples name real people). Both get pasted into the Apps Script project as their own files. Sheet tab `Condensed` (id, added, by, source, story, status, reason).
+- Key: WireReady menu > Set Claude API key (Script property CLAUDE_KEY). Never in the repo.
+- Style rules from Boss 2026-11-03: never clock times, phone numbers, tickets or "more info"; never name a city/government department behind an event; no gambling words; DUI/DV/incest only with a public figure; child sex crimes only when more than one family is affected; public figures never get an age.
+
 ## What lives where
 - `Code.gs`: Google Apps Script web app inside the private Google Sheet "WireReady" (Boss's Google account). `appsscript.json` is reference only.
 - Sheet tabs: `Stories` (id, added, text, by, link, kind), `Taps` (tapped, who, story added, story text, story id, story from).

@@ -91,6 +91,7 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .wrtool{padding:12px 18px 0}.wrtool .wradd{display:inline-block;width:auto;padding:9px 22px;margin:0 12px 0 0;vertical-align:middle}
 .wrtool .wrlock{display:inline-block;margin:0 12px 0 0;vertical-align:middle}.wrtool .wrlock button{background:#FDB913;color:#0A2A50;font-weight:bold}.wrtool .empty{display:inline-block;color:#FFFFFF;font-size:14px;vertical-align:middle}
 .wrfp .col{max-height:calc(100vh - 140px);overflow-y:auto}
+.wrtool .edlink{background:#FDB913;color:#0A2A50;text-decoration:none}
 """
 
 # WireReady (Boss 2026-10-22): three news people paste wire stories and tap B, J or R when they use one. The page talks to
@@ -101,7 +102,7 @@ WR_ADD = '<button class="wradd" type="button" id="wradd">+ Add Story</button>'
 WR_LOCK = ('<div class="wrlock" id="wrlock" style="display:none"><input type="password" id="wrpass" placeholder="Passcode"> '
            '<button type="button" id="wrunlock">Unlock</button></div>')
 WR_MSG = '<div class="empty" id="wrmsg">Loading...</div>'
-WR_TOOLBAR = f'<div class="wrtool">{WR_ADD}{WR_LOCK}{WR_MSG}</div>'
+WR_TOOLBAR = f'<div class="wrtool">{WR_ADD}<a class="wradd edlink" href="../editor/" target="_blank">Story Editor &#8599;</a>{WR_LOCK}{WR_MSG}</div>'
 WR_MODAL = ('<div class="wrmodal" id="wrmodal"><div class="wrwin"><div class="wrmt">Add story</div>'
             '<div class="wrby">Entered by: <label><input type="radio" name="wrby" value="B"> B</label> '
             '<label><input type="radio" name="wrby" value="J"> J</label> '
@@ -202,6 +203,127 @@ WR_JS = r"""
       if(d && d.ok){modal.style.display='none'; render(d.stories);}
       else if(d && d.error==='passcode') err.innerHTML='The passcode was not accepted. Close this window and unlock again.';
       else err.innerHTML=(d && d.error) || 'Could not save. Check the connection and submit again.';
+    });
+  };
+  refresh(); setInterval(refresh,60000);
+})();
+"""
+
+# Story Editor (Boss 2026-11-03): J or R pastes a story and taps "Condense story"; Claude (via the WireReady Apps Script,
+# wireready/Condense.gs) returns broadcast copy in Boss's style. Saved stories show for 7 days, one column per day entered.
+# Same look as the other KJEL pages. ES3 plus XMLHttpRequest, like WR_JS.
+ED_CSS = """
+.ed .col{max-height:calc(100vh - 110px);overflow-y:auto}
+.ed .col.new{width:30%;min-width:320px}
+.edwho{font-size:15px;font-weight:bold;margin:4px 0 8px}
+.edwho button{font-size:18px;font-weight:bold;width:48px;height:40px;margin-left:8px;border:2px solid #0A2A50;border-radius:8px;background:#FFFFFF;color:#0A2A50;cursor:pointer}
+.edwho button.on{background:#0A2A50;color:#FDB913}
+.ed textarea{width:100%;box-sizing:border-box;height:220px;font-size:15px;font-family:Arial,Helvetica,sans-serif;padding:8px;border:1px solid #C9CFD8;border-radius:6px}
+.edgo{display:block;width:100%;background:#D0101F;color:#FFFFFF;border:0;border-radius:8px;padding:11px;font-weight:bold;font-size:16px;cursor:pointer;margin:8px 0}
+.edgo.busy{background:#8C97A8;cursor:default}
+.edst{white-space:pre-wrap;word-wrap:break-word;font-size:15px;line-height:1.4}
+.edmeta{font-size:11px;color:#33445C;margin-bottom:4px}
+.edmeta b{display:inline-block;background:#0A2A50;color:#FDB913;border-radius:3px;padding:0 5px;margin-right:4px}
+.edsec{font-weight:bold;color:#0A2A50}.edsec.short{color:#D0101F}
+.edbtn{margin-top:6px}.edbtn button{font-size:13px;font-weight:bold;padding:5px 12px;margin:0 6px 0 0;border-radius:6px;border:1px solid #0A2A50;background:#FFFFFF;color:#0A2A50;cursor:pointer}
+.edbtn button.cp{background:#FDB913;border-color:#FDB913}
+.edbtn button.busy{color:#8C97A8;border-color:#8C97A8;cursor:default}
+.card.blk{background:#F3E1E1;border-color:#D0101F}.blkr{font-weight:bold;color:#D0101F;font-size:13px}.blks{font-size:12px;color:#33445C;margin-top:3px}
+.ederr{color:#D0101F;font-size:13px;font-weight:bold;min-height:16px}
+.edres .card{border:2px solid #FDB913}
+"""
+ED_JS = r"""
+(function(){
+  var URL=__WR_URL__, DAYS=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  var MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  var who='', busy=false, err=document.getElementById('ederr'), ta=document.getElementById('edtext');
+  var go=document.getElementById('edgo'), res=document.getElementById('edres'), days=document.getElementById('eddays');
+  var wb=document.getElementById('edwho').getElementsByTagName('button'), n;
+  function getKey(){try{return window.localStorage.getItem('wrkey')||'';}catch(e){return '';}}
+  function call(body,cb){
+    var x=new XMLHttpRequest();
+    x.open('POST',URL,true);
+    x.setRequestHeader('Content-Type','text/plain;charset=utf-8');  // keeps the request "simple", so no CORS preflight
+    x.onreadystatechange=function(){
+      if(x.readyState!==4) return;
+      var d=null; try{d=JSON.parse(x.responseText);}catch(e){}
+      cb(d);
+    };
+    body.key=getKey();
+    x.send(JSON.stringify(body));
+  }
+  function pickWho(b){return function(){who=b.innerHTML; for(var k=0;k<wb.length;k++) wb[k].className=(wb[k]===b?'on':''); err.innerHTML='';};}
+  for(n=0;n<wb.length;n++) wb[n].onclick=pickWho(wb[n]);
+  function el(tag,cls,txt){var e=document.createElement(tag); if(cls) e.className=cls; if(txt!==undefined) e.appendChild(document.createTextNode(txt)); return e;}
+  function copy(text,btn){
+    var t=document.createElement('textarea'); t.value=text; t.style.position='fixed'; t.style.left='-9999px';
+    document.body.appendChild(t); t.select(); var ok=false; try{ok=document.execCommand('copy');}catch(e){}
+    document.body.removeChild(t);
+    btn.innerHTML=ok?'Copied':'Select and copy by hand'; setTimeout(function(){btn.innerHTML='Copy';},2000);
+  }
+  function hm(s){var h=parseInt(s.slice(11,13),10), m=s.slice(14,16); return (h%12||12)+':'+m+(h<12?' AM':' PM');}
+  function card(s){
+    var c=el('div','card'+(s.status==='blocked'?' blk':'')), meta=el('div','edmeta');
+    var b=el('b','',s.by); meta.appendChild(b); meta.appendChild(document.createTextNode(hm(s.added)+' · '));
+    if(s.status==='blocked'){
+      meta.appendChild(document.createTextNode('not for air')); c.appendChild(meta);
+      c.appendChild(el('div','blkr','BLOCKED: '+s.reason));
+      c.appendChild(el('div','blks',s.source.length>160?s.source.slice(0,160)+'...':s.source));
+      return c;
+    }
+    var sec=el('span','edsec'+(s.secs<20?' short':''),s.secs+' sec'+(s.secs<20?' · SHORT':''));
+    meta.appendChild(sec); c.appendChild(meta);
+    c.appendChild(el('div','edst',s.story));
+    var row=el('div','edbtn'), cp=el('button','cp','Copy'), more=el('button','','Add more detail');
+    cp.onclick=function(){copy(s.story,cp);};
+    if(s.secs>=45) more.style.display='none';
+    more.onclick=function(){
+      if(busy) return; busy=true; more.className='busy'; more.innerHTML='Adding detail...';
+      call({action:'more',id:s.id},function(d){
+        busy=false;
+        if(d && d.ok){render(d.edited, res.getAttribute('data-id')===s.id?s.id:'');}
+        else{more.className=''; more.innerHTML='Add more detail'; alert((d && d.error) || 'Could not reach the Story Editor. Try again.');}
+      });
+    };
+    row.appendChild(cp); row.appendChild(more); c.appendChild(row);
+    return c;
+  }
+  function ymd(d){function p(v){return (v<10?'0':'')+v;} return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate());}
+  function render(list,showId){
+    var k, j;
+    res.innerHTML=''; res.setAttribute('data-id',showId||'');
+    for(j=0;j<list.length;j++){ if(showId && list[j].id===showId) res.appendChild(card(list[j])); }
+    days.innerHTML='';
+    var t=new Date();
+    for(k=0;k<7;k++){  // today first, then the 6 days before it
+      var d=new Date(t.getFullYear(),t.getMonth(),t.getDate()-k), key=ymd(d), items=[];
+      for(j=0;j<list.length;j++){ if(list[j].added.slice(0,10)===key) items.push(list[j]); }
+      var col=el('div','col'), h=el('h2','',DAYS[d.getDay()]+"'s Stories "), cnt=el('span','count',String(items.length));
+      h.appendChild(cnt); col.appendChild(h);
+      col.appendChild(el('div','sub',MON[d.getMonth()]+' '+d.getDate()+(k===0?' · today':'')));
+      for(j=0;j<items.length;j++) col.appendChild(card(items[j]));
+      if(!items.length) col.appendChild(el('div','empty','No stories.'));
+      days.appendChild(col);
+    }
+  }
+  function refresh(){
+    if(busy) return;
+    call({action:'edited'},function(d){
+      if(d && d.ok) render(d.edited, res.getAttribute('data-id'));
+      else if(!busy) err.innerHTML=(d && d.error==='passcode')?'Open WireReady once and enter the passcode, then come back.':'Could not load saved stories. It will try again in a minute.';
+    });
+  }
+  ta.onkeyup=function(){err.innerHTML='';};
+  go.onclick=function(){
+    var v=ta.value.replace(/^\s+|\s+$/g,'');
+    if(!who){err.innerHTML='Tap J or R first.';return;}
+    if(!v){err.innerHTML='Paste the story first.';return;}
+    if(busy) return;
+    busy=true; go.className='edgo busy'; go.innerHTML='Condensing... about 20 seconds'; err.innerHTML='';
+    call({action:'condense',text:v,by:who},function(d){
+      busy=false; go.className='edgo'; go.innerHTML='Condense story';
+      if(d && d.ok){ta.value=''; render(d.edited,d.id);}
+      else err.innerHTML=(d && d.error) || 'Could not reach the Story Editor. Check the connection and try again.';
     });
   };
   refresh(); setInterval(refresh,60000);
@@ -538,7 +660,8 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_s
             cid = "wrc-" + col["key"]
             if wr["by"] == "ALL":  # the compact column on News: controls live in the column, newest few stories, link to the full page
                 cols.append(f'<div class="col wr"><h2>{esc(col["name"])} <span class="count" id="{cid}">0</span>'
-                            f'<a class="wrfull" href="{wr["full"]}" target="_blank">Full page &#8599;</a></h2>'
+                            f'<a class="wrfull" href="{wr["full"]}" target="_blank">Full page &#8599;</a>'
+                            f'<a class="wrfull" href="editor/" target="_blank">Story Editor &#8599;</a></h2>'
                             f'{WR_ADD}{WR_LOCK}{WR_MSG}<div class="wrlist" data-by="ALL" data-limit="{wr["limit"]}" '
                             f'data-count="{cid}" data-full="{wr["full"]}"></div></div>')
             else:  # one column of the full page
@@ -648,6 +771,32 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_s
 </body></html>
 """
     (ROOT / "docs").mkdir(exist_ok=True)
+    for folder in (ROOT / "docs" / subdir, ROOT / subdir):
+        folder.mkdir(parents=True, exist_ok=True)
+        (folder / "index.html").write_text(page)
+
+
+def write_editor(url, stamp, subdir="news/editor"):
+    """The Story Editor page (Boss 2026-11-03): paste + J/R + Condense on the left, then one column per day for 7 days."""
+    updated = datetime.fromisoformat(stamp)
+    new_col = ('<div class="col new"><h2>New story</h2>'
+               '<div class="edwho" id="edwho">Who is editing? <button type="button">J</button><button type="button">R</button></div>'
+               '<textarea id="edtext" placeholder="Paste the story here"></textarea>'
+               '<button type="button" class="edgo" id="edgo">Condense story</button><div class="ederr" id="ederr"></div>'
+               '<div class="edres" id="edres"></div></div>')
+    page = f"""<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KJEL Story Editor</title><style>{CSS.replace("width:16.2%", "width:13%")}{ED_CSS}</style></head>
+<body class="ed" data-updated="{int(updated.timestamp() * 1000)}">
+<div class="top"><div class="logo">103<span class="star">&#9733;</span>7 <span class="call">KJEL</span></div>
+<div class="hd"><div class="title">Story Editor</div>
+<div class="meta">KJEL News &middot; paste a story, tap J or R, then Condense story</div></div></div>
+<div class="board">{new_col}<div id="eddays" style="display:inline"></div></div>
+<script>{ED_JS.replace("__WR_URL__", json.dumps(url))}</script>
+</body></html>
+"""
     for folder in (ROOT / "docs" / subdir, ROOT / subdir):
         folder.mkdir(parents=True, exist_ok=True)
         (folder / "index.html").write_text(page)
