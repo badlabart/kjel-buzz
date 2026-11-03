@@ -1,163 +1,140 @@
 {
- "made": "2026-11-01",
+ "made": "2026-11-02",
  "timely": [
   {
-   "id": "Tfb7ab6",
-   "label": "Brush Day",
-   "line": "National Brush Day, promoted by the American Dental Association, encourages brushing twice a day, especially after Halloween's candy rush. The candy bucket won't tell on you.",
-   "date": "2026-11-01"
-  },
-  {
-   "id": "T851b71",
-   "label": "Clocks Fall Back",
-   "line": "Daylight saving time ends today, so clocks fall back one hour and sunset comes an hour earlier. Kids will still wake up at the old time.",
-   "date": "2026-11-01"
-  },
-  {
-   "id": "T156d61",
+   "id": "T306bcb",
    "label": "Gas Prices",
-   "line": "Missouri's average for regular gas is $3.85 today, down 25 cents from a month ago and up $1.17 from a year ago, according to AAA. Springfield averages $3.77. Your wallet will take the cheaper month.",
-   "date": "2026-11-01"
-  },
-  {
-   "id": "Ta7d631",
-   "label": "Hunting Season",
-   "line": "Archery deer season ends Friday, Nov. 13, in 12 days. Bucks, enjoy the breather.",
-   "date": "2026-11-01"
-  },
-  {
-   "id": "T70c2f4",
-   "label": "Hunting Season",
-   "line": "The November portion of firearms deer season opens Saturday, Nov. 14, in 13 days, and runs through Nov. 24. Time to find the blaze orange.",
-   "date": "2026-11-01"
-  },
-  {
-   "id": "T1997d6",
-   "label": "Hunting Season",
-   "line": "Youth firearms deer season opens Friday, Nov. 27, in 26 days, and runs through Nov. 29. Little hunters are already counting down.",
-   "date": "2026-11-01"
-  },
-  {
-   "id": "Ta76b3b",
-   "label": "Veterans Day",
-   "line": "Veterans Day is Wednesday, Nov. 11, in 10 days. Thank a veteran, no costume required.",
-   "date": "2026-11-01"
-  },
-  {
-   "id": "Tc44f8a",
-   "label": "Thanksgiving",
-   "line": "Thanksgiving is Thursday, Nov. 26, in 25 days. Time to start pretending you'll cook.",
-   "date": "2026-11-01"
-  },
-  {
-   "id": "Tbbbf08",
-   "label": "Black Friday",
-   "line": "Black Friday is Friday, Nov. 27, in 26 days. Start stretching your shopping legs.",
-   "date": "2026-11-01"
-  },
-  {
-   "id": "T9e50ee",
-   "label": "Movie Night",
-   "line": "The animated Cat in the Hat, with Bill Hader voicing the Cat, hits theaters Friday, Nov. 6. Bring a mop.",
-   "date": "2026-11-06"
-  },
-  {
-   "id": "T60cb98",
-   "label": "New on TV",
-   "line": "The Greatest, a Prime Video series on Muhammad Ali's life from his early fights to global icon, debuts Wednesday, Nov. 4. A perfect excuse to stay on the couch.",
-   "date": "2026-11-04"
-  },
-  {
-   "id": "Ta6323b",
-   "label": "New on TV",
-   "line": "NBC's comedy St. Denis Medical returns for its third season Monday, Nov. 2, with Wendi McLendon-Covey and David Alan Grier at an underfunded Oregon hospital. Laughter is the best medicine.",
+   "line": "Missouri's average for regular gas is $3.83, down 24 cents from a month ago and up $1.16 from a year ago, according to AAA, and Springfield averages $3.75. Your tank noticed.",
    "date": "2026-11-02"
   },
   {
-   "id": "T83179d",
-   "label": "Music Anniversary",
-   "line": "Shania Twain released \"Come On Over\" in 1997, which became the best-selling country album ever by a female artist in the U.S. Still gets the whole truck singing.",
-   "date": "2026-11-04"
+   "id": "Ta871c3",
+   "label": "On This Day",
+   "line": "Faith Hill reached number one on the Billboard 200 with her album \"Cry\" in 2002. Still a crossover classic.",
+   "date": "2026-11-02"
   },
   {
-   "id": "Ta871c3",
-   "label": "Music Anniversary",
-   "line": "Faith Hill reached number one on the Billboard 200 with her album \"Cry\" in 2002. Breathe in, sing along.",
+   "id": "Ta6323b",
+   "label": "TV Tonight",
+   "line": "NBC's comedy St. Denis Medical returns for season three on Monday, Nov. 2, with Wendi McLendon-Covey and David Alan Grier. Hospital humor, no co-pay.",
    "date": "2026-11-02"
   },
   {
    "id": "T308983",
    "label": "On This Day",
-   "line": "The Wizard of Oz was shown on U.S. television for the first time on CBS in 1956. Still no place like the couch.",
+   "line": "CBS televised The Wizard of Oz for the first time in prime time in 1956. No ruby slippers required.",
    "date": "2026-11-03"
+  },
+  {
+   "id": "T83179d",
+   "label": "On This Day",
+   "line": "Shania Twain released \"Come On Over\" in 1997, the best-selling country album ever by a female artist in the U.S. Let's go, girls.",
+   "date": "2026-11-04"
   },
   {
    "id": "Td95492",
    "label": "On This Day",
-   "line": "Harry Potter and the Philosopher's Stone premiered in London in 2001, 25 years ago. Feeling old yet?",
+   "line": "Harry Potter and the Philosopher's Stone premiered in London in 2001. Time for a family movie night.",
    "date": "2026-11-04"
+  },
+  {
+   "id": "T82090a",
+   "label": "On This Day",
+   "line": "The Beach Boys hit No. 1 on the Billboard Hot 100 with \"Kokomo\" in 1988. Sing along, you know you will.",
+   "date": "2026-11-05"
+  },
+  {
+   "id": "T9e50ee",
+   "label": "Family Movie",
+   "line": "The animated Cat in the Hat, with Bill Hader voicing the Cat, hits theaters Friday, Nov. 6. Bring snacks, the Cat brings the chaos.",
+   "date": "2026-11-06"
+  },
+  {
+   "id": "Ta76b3b",
+   "label": "Veterans Day",
+   "line": "Veterans Day is Wednesday, Nov. 11, nine days away. Plan a thank-you now.",
+   "date": "2026-11-02"
+  },
+  {
+   "id": "Ta7d631",
+   "label": "Hunting Season",
+   "line": "Archery deer season ends Friday, Nov. 13, in 11 days. Last call for bowhunters.",
+   "date": "2026-11-02"
+  },
+  {
+   "id": "T70c2f4",
+   "label": "Hunting Season",
+   "line": "The November portion of firearms deer season opens Saturday, Nov. 14, in 12 days, and runs through Nov. 24. Dust off the orange vest.",
+   "date": "2026-11-02"
+  },
+  {
+   "id": "T1997d6",
+   "label": "Hunting Season",
+   "line": "Youth firearms deer season opens Friday, Nov. 27, in 25 days, and runs through Nov. 29. Kids, start practicing.",
+   "date": "2026-11-02"
+  },
+  {
+   "id": "Tc44f8a",
+   "label": "Thanksgiving",
+   "line": "Thanksgiving is Thursday, Nov. 26, in 24 days. Start the pie planning.",
+   "date": "2026-11-02"
   }
  ],
  "johnsons": [
   {
-   "id": "J022ce7",
+   "id": "J092982",
    "label": "Outdoors",
-   "line": "MDC is hosting a free hunter education skills session Nov. 12 at Runge Nature Center in Jefferson City, a required step toward hunter certification. Bring the kid with the orange hat."
+   "line": "Missouri hunters took 1,633 turkeys in the firearms portion of fall turkey season, and Laclede County tied for second with 42 birds, behind Greene County's 56. Laclede hunters know where the birds are."
   },
   {
-   "id": "J3d07b1",
+   "id": "J674b53",
    "label": "Outdoors",
-   "line": "A Missouri fourth grader, Noah Baker, has already taken two giant whitetail bucks this season, including a 187-inch buck with his dad during youth season. Dad is now just the driver."
+   "line": "Missouri hunters took 36 black bears this season out of a maximum of 60, during the Oct. 17 to 30 hunt. The bears had good manners."
   },
   {
-   "id": "Jcd084b",
+   "id": "Jeb0a60",
    "label": "Outdoors",
-   "line": "Field & Stream ranks Tuesday, Nov. 3 as the No. 3 best day of the rut for whitetail hunting. Plan your sick day now."
+   "line": "Water pumping has resumed at Eagle Bluffs Conservation Area, so waterfowl hunting will be possible on opening day of the Middle Zone duck and coot season, Nov. 7. The ducks hadn't heard."
   },
   {
-   "id": "Jc059dd",
+   "id": "J8fbdb0",
    "label": "Outdoors",
-   "line": "Roger George makes a 100-mile drive twice a week from Fresno, California, to San Luis Reservoir, where he landed a 48-pound landlocked striper 60 feet down in 15 minutes. That fish was worth the gas."
+   "line": "The Missouri Department of Conservation is hosting a free field-to-freezer mentored antlerless deer hunt for ages 10 to 35 in Randolph County, Dec. 4 and 5. A good first hunt."
   },
   {
-   "id": "J724fc5",
+   "id": "J8a9261",
+   "label": "Outdoors",
+   "line": "The Missouri Department of Conservation is offering free November programs in the Ozark Region, including campfire cooking and fly tying. Dinner and a hobby, no cost."
+  },
+  {
+   "id": "J22bc76",
    "label": "Family",
-   "line": "PILLANI is recalling nursing pillows that violate mandatory safety standards and pose a risk of suffocation."
+   "line": "A Reddit parent of a 10-year-old and a 13-year-old is considering a housewide YouTube ban because the son's feed is all Fortnite or AI slop. Plenty of parents know that struggle."
   },
   {
-   "id": "Je2aba2",
-   "label": "Family",
-   "line": "Yinklev is recalling Jocoevol 6-drawer dressers because they're unstable if not anchored to the wall, a tip-over and entrapment hazard."
-  },
-  {
-   "id": "Jc9ca93",
-   "label": "Family",
-   "line": "Harkla is recalling children's sensory swings because the ceiling hook can separate from its plate, a fall hazard."
-  },
-  {
-   "id": "J12fd4b",
-   "label": "Family",
-   "line": "A Reddit parent gave out gently used books along with candy this Halloween, because their family ends up with more books than they can keep. Sweet for the tooth and the brain."
-  },
-  {
-   "id": "J5540eb",
-   "label": "Family",
-   "line": "Strawberry Shortcake is back with new three-minute animated episodes on YouTube for kids ages 4 to 8. Nostalgia served in tiny bites."
-  },
-  {
-   "id": "J672193",
+   "id": "J86a09b",
    "label": "Cooking",
-   "line": "Skinnytaste's creamed corn uses fresh or frozen sweet corn with milk, reduced-fat cream cheese and a little butter, with no heavy cream or flour. Your arteries say thanks."
+   "line": "Budget Bytes has a chicken corn chowder that is creamy without cream, with smoky bacon, chicken, corn and potatoes, ready in 50 minutes and good for meal prep. Soup weather is here."
   },
   {
-   "id": "J1e4591",
-   "label": "Life",
-   "line": "Nearly 90% of adults have had a cavity, and dry mouth, snoring and teeth grinding can raise the risk beyond sugar alone. Blame the snoring, not just the Snickers."
+   "id": "Jc9a802",
+   "label": "Cooking",
+   "line": "The Kitchn has a cottage cheese pasta alla vodka that's ready in 30 minutes. Weeknight dinner, handled."
   },
   {
-   "id": "J4c1955",
+   "id": "Jfdf1e3",
+   "label": "Cooking",
+   "line": "Scary Mommy rounded up 19 easy, cheap Christmas baking recipes for families who can't afford 30-ingredient desserts. Holiday magic on a budget."
+  },
+  {
+   "id": "J7cb572",
+   "label": "Cooking",
+   "line": "Scary Mommy rounded up 16 easy Christmas recipes for feeding a crowd when the whole family descends on your house. Plan the menu before they arrive."
+  },
+  {
+   "id": "Jc1c274",
    "label": "Life",
-   "line": "An HSBC survey says affluent investors now need $2.6 million to retire, up 26% in a year, yet savers have reached only about half of that. Better start the piggy bank early."
+   "line": "NerdWallet says Americans are coordinating with friends and family to save money this holiday season. Teamwork makes the budget work."
   }
  ]
 }
