@@ -71,7 +71,7 @@ function doPost(e) {
     var p = JSON.parse(e.postData.contents);
     var pass = prop_('PASSCODE');  // no passcode set = open to anyone with the page address
     if (pass && String(p.key) !== pass) return json_({ ok: false, error: 'passcode' });
-    if (p.action === 'condense' || p.action === 'more' || p.action === 'edited') return json_(editorPost_(p));  // Story Editor (Condense.gs)
+    if (p.action === 'condense' || p.action === 'more' || p.action === 'edited' || p.action === 'queue' || p.action === 'done') return json_(editorPost_(p));  // Story Editor (Condense.gs)
     if (p.action === 'add' || p.action === 'tap' || p.action === 'summary' || p.action === 'rewrite') {
       var lock = LockService.getScriptLock();
       lock.waitLock(10000);
@@ -307,7 +307,6 @@ function onOpen() {
     .addItem('Set weekly email address', 'setReportTo')
     .addItem('Import Missourinet stories now', 'importMonetNow')
     .addItem('Send last week\'s log now', 'weeklyLog')
-    .addItem('Set Claude API key (Story Editor)', 'setClaudeKey')
     .addToUi();
 }
 

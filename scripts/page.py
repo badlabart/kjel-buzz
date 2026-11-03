@@ -230,6 +230,7 @@ ED_CSS = """
 .edbtn button.busy{color:#8C97A8;border-color:#8C97A8;cursor:default}
 .card.blk{background:#F3E1E1;border-color:#D0101F}.blkr{font-weight:bold;color:#D0101F;font-size:13px}.blks{font-size:12px;color:#33445C;margin-top:3px}
 .ederr{color:#D0101F;font-size:13px;font-weight:bold;min-height:16px}
+.edwait{font-weight:bold;color:#0A2A50;background:#FFF1C2;border-radius:4px;padding:4px 6px;margin:2px 0 4px}
 .edres .card{border:2px solid #FDB913}
 """
 ED_JS = r"""
@@ -266,6 +267,13 @@ ED_JS = r"""
   function card(s){
     var c=el('div','card'+(s.status==='blocked'?' blk':'')), meta=el('div','edmeta');
     var b=el('b','',s.by); meta.appendChild(b); meta.appendChild(document.createTextNode(hm(s.added)+' · '));
+    if(s.status==='queued' || s.status==='more'){
+      meta.appendChild(document.createTextNode(s.status==='more'?'adding detail':'in line')); c.appendChild(meta);
+      c.appendChild(el('div','edwait',s.status==='more'?'Adding more detail... usually 1 to 2 minutes.':'Condensing... usually 1 to 2 minutes.'));
+      if(s.story) c.appendChild(el('div','edst',s.story));
+      else c.appendChild(el('div','blks',s.source.length>160?s.source.slice(0,160)+'...':s.source));
+      return c;
+    }
     if(s.status==='blocked'){
       meta.appendChild(document.createTextNode('not for air')); c.appendChild(meta);
       c.appendChild(el('div','blkr','BLOCKED: '+s.reason));
@@ -282,7 +290,7 @@ ED_JS = r"""
       if(busy) return; busy=true; more.className='busy'; more.innerHTML='Adding detail...';
       call({action:'more',id:s.id},function(d){
         busy=false;
-        if(d && d.ok){render(d.edited, res.getAttribute('data-id')===s.id?s.id:'');}
+        if(d && d.ok){render(d.edited, res.getAttribute('data-id')===s.id?s.id:'', d.workerAgo);}
         else{more.className=''; more.innerHTML='Add more detail'; alert((d && d.error) || 'Could not reach the Story Editor. Try again.');}
       });
     };
@@ -290,8 +298,14 @@ ED_JS = r"""
     return c;
   }
   function ymd(d){function p(v){return (v<10?'0':'')+v;} return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate());}
-  function render(list,showId){
-    var k, j;
+  var waitTimer=null;
+  function render(list,showId,workerAgo){
+    var k, j, waiting=false;
+    for(j=0;j<list.length;j++){ if(list[j].status==='queued' || list[j].status==='more') waiting=true; }
+    // While a story waits for the Mac, check every 15 seconds; say so if the Mac has not asked for work in 3 minutes.
+    if(waitTimer){clearTimeout(waitTimer); waitTimer=null;}
+    if(waiting) waitTimer=setTimeout(refresh,15000);
+    err.innerHTML=(waiting && (workerAgo<0 || workerAgo>180))?'The news Mac is not answering, so stories are waiting in line. They will finish when it is back on.':'';
     res.innerHTML=''; res.setAttribute('data-id',showId||'');
     for(j=0;j<list.length;j++){ if(showId && list[j].id===showId) res.appendChild(card(list[j])); }
     days.innerHTML='';
@@ -310,7 +324,7 @@ ED_JS = r"""
   function refresh(){
     if(busy) return;
     call({action:'edited'},function(d){
-      if(d && d.ok) render(d.edited, res.getAttribute('data-id'));
+      if(d && d.ok) render(d.edited, res.getAttribute('data-id'), d.workerAgo);
       else if(!busy) err.innerHTML=(d && d.error==='passcode')?'Open WireReady once and enter the passcode, then come back.':(d && d.error) || 'Could not load saved stories. It will try again in a minute.';
     });
   }
@@ -320,10 +334,10 @@ ED_JS = r"""
     if(!who){err.innerHTML='Tap J or R first.';return;}
     if(!v){err.innerHTML='Paste the story first.';return;}
     if(busy) return;
-    busy=true; go.className='edgo busy'; go.innerHTML='Condensing... about 20 seconds'; err.innerHTML='';
+    busy=true; go.className='edgo busy'; go.innerHTML='Sending...'; err.innerHTML='';
     call({action:'condense',text:v,by:who},function(d){
       busy=false; go.className='edgo'; go.innerHTML='Condense story';
-      if(d && d.ok){ta.value=''; render(d.edited,d.id);}
+      if(d && d.ok){ta.value=''; render(d.edited,d.id,d.workerAgo);}
       else err.innerHTML=(d && d.error) || 'Could not reach the Story Editor. Check the connection and try again.';
     });
   };

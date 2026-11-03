@@ -13,12 +13,12 @@ Boss 2026-10-22. LIVE: https://badlabart.github.io/kjel-news/ (column) and https
 
 ## Story Editor (Boss 2026-11-03)
 - Page: https://badlabart.github.io/kjel-news/editor/ (links: "Story Editor" on the News WireReady column and the WireReady full page).
-- J or R (required) pastes a story, taps "Condense story": Claude (`claude-opus-5-5`, effort medium) rewrites it as broadcast copy in Boss's style. Result shows under the button with read time, Copy, and "Add more detail" (longer, same source only, hidden at 45 sec).
+- J or R (required) pastes a story, taps "Condense story": it saves as `queued`. Boss's Mac (scripts/editor_worker.py, launchd `com.bosslady.kjel-editor`, every minute) rewrites it with `claude -p` on her Claude plan (Boss 2026-11-03: no API, no extra bill) and sends it back. Usually 1-2 minutes. The page checks every 15 s while a story waits and says when the Mac has not checked in for 3 minutes.
+- "Add more detail" queues the story again as `more` (longer, same source only, hidden at 45 sec).
 - Length: 20-45 sec (50 rare). Read time = words / 2.7. Under 20 sec shows SHORT.
-- Blocked stories (KJEL content rules) save with the reason and no copy.
+- Blocked stories (KJEL content rules) save with the reason and no copy. A story Claude fails on 3 times is marked blocked with "Claude could not edit this story".
 - Saved stories: 7 columns, today first, "Tuesday's Stories" etc., by the day entered. Older rows stay in the Sheet.
-- Files: `Condense.gs` (logic, public) + `Style.gs` (Boss's rules and before/after samples; GITIGNORED because the samples name real people). In Apps Script they are pasted together as ONE file named `Editor` (`cat wireready/Condense.gs wireready/Style.gs | pbcopy`). Sheet tab `Condensed` (id, added, by, source, story, status, reason).
-- Key: WireReady menu > Set Claude API key (Script property CLAUDE_KEY). Never in the repo.
+- Files: `Condense.gs` (public; pasted into Apps Script as its own file), `scripts/editor_worker.py`, and `wireready/style_prompt.txt` (Boss's rules + before/after samples; GITIGNORED and Mac-only because the samples name real people). Sheet tab `Condensed` (id, added, by, source, story, status, reason). Log: ~/Library/Logs/kjel-editor.log.
 - Style rules from Boss 2026-11-03: never clock times, phone numbers, tickets or "more info"; never name a city/government department behind an event; no gambling words; DUI/DV/incest only with a public figure; child sex crimes only when more than one family is affected; public figures never get an age.
 
 ## What lives where
