@@ -1,237 +1,6 @@
 {
- "made": "2026-11-02",
+ "made": "2026-11-03",
  "timely": [
-  {
-   "id": "T0ca562",
-   "kind": "timely",
-   "section": "National Day",
-   "date": "2026-11-02",
-   "title": "National Deviled Egg Day (USA)",
-   "desc": "National Deviled Egg Day celebrates the party appetizer you hover near at potlucks and gatherings.",
-   "source": "IanGardner Daily Prep",
-   "url": "https://iangardner.com/daily-broadcast-prep-2026-11-02",
-   "auto": false
-  },
-  {
-   "id": "Te6e544",
-   "kind": "timely",
-   "section": "National Day",
-   "date": "2026-11-02",
-   "title": "National Ohio Day (USA)",
-   "desc": "National Ohio Day recognizes Ohio as the 17th state to join the United States.",
-   "source": "IanGardner Daily Prep",
-   "url": "https://iangardner.com/daily-broadcast-prep-2026-11-02",
-   "auto": false
-  },
-  {
-   "id": "T4d8c00",
-   "kind": "timely",
-   "section": "National Day",
-   "date": "2026-11-02",
-   "title": "National Broadcast Traffic Professional's Day (USA)",
-   "desc": "National Broadcast Traffic Professional's Day honors the people who schedule programs and ads so radio and TV run smoothly.",
-   "source": "IanGardner Daily Prep",
-   "url": "https://iangardner.com/daily-broadcast-prep-2026-11-02",
-   "auto": false
-  },
-  {
-   "id": "T724c5e",
-   "kind": "timely",
-   "section": "Birthdays",
-   "date": "2026-11-02",
-   "title": "Nelly (52)",
-   "desc": "Nelly is the rapper behind the hits \"Hot in Herre\" and \"Dilemma.\" He played a football player in the comedy film The Longest Yard.",
-   "source": "IanGardner Daily Prep",
-   "url": "https://iangardner.com/daily-broadcast-prep-2026-11-02",
-   "auto": false
-  },
-  {
-   "id": "Tc269c8",
-   "kind": "timely",
-   "section": "Birthdays",
-   "date": "2026-11-02",
-   "title": "Fieldy (57)",
-   "desc": "Fieldy was the bassist for the nu metal band Korn. His bass playing is known for its sharp, percussive sound.",
-   "source": "IanGardner Daily Prep",
-   "url": "https://iangardner.com/daily-broadcast-prep-2026-11-02",
-   "auto": false
-  },
-  {
-   "id": "Tfeac8a",
-   "kind": "timely",
-   "section": "Birthdays",
-   "date": "2026-11-02",
-   "title": "Maxine Nightingale (74)",
-   "desc": "British singer Maxine Nightingale is best known for the hit \"Right Back Where We Started From.\" She followed that success with another popular single, \"Lead Me On.\"",
-   "source": "IanGardner Daily Prep",
-   "url": "https://iangardner.com/daily-broadcast-prep-2026-11-02",
-   "auto": false
-  },
-  {
-   "id": "T999119",
-   "kind": "timely",
-   "section": "Birthdays",
-   "date": "2026-11-02",
-   "title": "k.d. lang (65)",
-   "desc": "The Canadian singer-songwriter is best known for the Grammy-winning hit 'Constant Craving.' She performed Leonard Cohen's 'Hallelujah' at the opening ceremony of the 2010 Winter Olympics in Vancouver.",
-   "source": "IanGardner Daily Prep",
-   "url": "https://iangardner.com/daily-broadcast-prep-2026-11-02",
-   "auto": false
-  },
-  {
-   "id": "T776c54",
-   "kind": "timely",
-   "section": "Birthdays",
-   "date": "2026-11-02",
-   "title": "David Schwimmer (60)",
-   "desc": "David Schwimmer is best known as Ross Geller on the sitcom Friends. He also directed episodes of Friends.",
-   "source": "IanGardner Daily Prep",
-   "url": "https://iangardner.com/daily-broadcast-prep-2026-11-02",
-   "auto": false
-  },
-  {
-   "id": "Tdfc87a",
-   "kind": "timely",
-   "section": "On This Day",
-   "date": "2026-11-02",
-   "title": "🎵 Music",
-   "desc": "Cream released their influential sophomore album 'Disraeli Gears' in 1967, which broadened their sound with psychedelic flair and included the hit 'Sunshine of Your Love'.",
-   "source": "IanGardner Daily Prep",
-   "url": "https://iangardner.com/daily-broadcast-prep-2026-11-02",
-   "auto": false
-  },
-  {
-   "id": "T7d3852",
-   "kind": "timely",
-   "section": "On This Day",
-   "date": "2026-11-02",
-   "title": "🎵 Music",
-   "desc": "Creedence Clearwater Revival released 'Willy and the Poor Boys' in 1969, their fourth studio album packed with classics like 'Fortunate Son'.",
-   "source": "IanGardner Daily Prep",
-   "url": "https://iangardner.com/daily-broadcast-prep-2026-11-02",
-   "auto": false
-  },
-  {
-   "id": "Ta871c3",
-   "kind": "timely",
-   "section": "On This Day",
-   "date": "2026-11-02",
-   "title": "🎵 Music",
-   "desc": "Faith Hill reached number one on the US Billboard 200 with her album 'Cry' in 2002, marking a major crossover success.",
-   "source": "IanGardner Daily Prep",
-   "url": "https://iangardner.com/daily-broadcast-prep-2026-11-02",
-   "auto": false
-  },
-  {
-   "id": "Tf81ff7",
-   "kind": "timely",
-   "section": "On This Day",
-   "date": "2026-11-02",
-   "title": "🎵 Music",
-   "desc": "Pearl Jam scored their fifth number one album in the United States with 'Lightning Bolt' in 2013, sealing their legacy in rock.",
-   "source": "IanGardner Daily Prep",
-   "url": "https://iangardner.com/daily-broadcast-prep-2026-11-02",
-   "auto": false
-  },
-  {
-   "id": "T0ff354",
-   "kind": "timely",
-   "section": "On This Day",
-   "date": "2026-11-02",
-   "title": "🌟 Pop Culture",
-   "desc": "The Howard Hughes-built Spruce Goose made its only flight in 1947 in a stunning feat of aviation engineering.",
-   "source": "IanGardner Daily Prep",
-   "url": "https://iangardner.com/daily-broadcast-prep-2026-11-02",
-   "auto": false
-  },
-  {
-   "id": "Tf17385",
-   "kind": "timely",
-   "section": "On This Day",
-   "date": "2026-11-02",
-   "title": "🌟 Pop Culture",
-   "desc": "The first residential crew arrived at the International Space Station in 2000, beginning continuous human habitation in orbit.",
-   "source": "IanGardner Daily Prep",
-   "url": "https://iangardner.com/daily-broadcast-prep-2026-11-02",
-   "auto": false
-  },
-  {
-   "id": "T680e91",
-   "kind": "timely",
-   "section": "On This Day",
-   "date": "2026-11-02",
-   "title": "🌟 Pop Culture",
-   "desc": "The BBC began the world's first regular high-definition television service from Alexandra Palace in London in 1936, alternating between John Logie Baird's 240-line system and the 405-line Marconi-EMI system.",
-   "source": "IanGardner Daily Prep",
-   "url": "https://iangardner.com/daily-broadcast-prep-2026-11-02",
-   "auto": false
-  },
-  {
-   "id": "T262f37",
-   "kind": "timely",
-   "section": "Movies & TV",
-   "date": "2026-11-02",
-   "title": "The Only Living Pickpocket in New York — 🎬 Cinema",
-   "desc": "Turturro and Esposito star in this crime drama about a master pickpocket navigating New York's underworld with moral ambiguity. Limited release: Friday Oct 23, 2026 Released: Friday Oct 30, 2026",
-   "source": "IanGardner Daily Prep",
-   "url": "https://iangardner.com/daily-broadcast-prep-2026-11-02",
-   "auto": false
-  },
-  {
-   "id": "T2e6869",
-   "kind": "timely",
-   "section": "Movies & TV",
-   "date": "2026-11-02",
-   "title": "Victorian Psycho — 🎬 Cinema",
-   "desc": "A chilling horror thriller tracks a woman's descent into madness amid the Victorian era's darkest secrets, featuring Maika Monroe and Ruth Wilson. Released: Friday Oct 30, 2026",
-   "source": "IanGardner Daily Prep",
-   "url": "https://iangardner.com/daily-broadcast-prep-2026-11-02",
-   "auto": false
-  },
-  {
-   "id": "T3ed5d2",
-   "kind": "timely",
-   "section": "Movies & TV",
-   "date": "2026-11-02",
-   "title": "The Mosquito Bowl — 🎬 Cinema",
-   "desc": "After Pearl Harbor, four star college football players enlist in the Marines and play the Mosquito Bowl during the brutal Battle of Okinawa in this war drama from Peter Berg. Limited release: Friday Oct 30, 2026",
-   "source": "IanGardner Daily Prep",
-   "url": "https://iangardner.com/daily-broadcast-prep-2026-11-02",
-   "auto": false
-  },
-  {
-   "id": "T9788f3",
-   "kind": "timely",
-   "section": "Movies & TV",
-   "date": "2026-11-02",
-   "title": "You Can See Everything — 🎬 Cinema",
-   "desc": "You Can See Everything is a documentary from Nathan Fielder and Lance Oppenheim, who filmed Theranos founder Elizabeth Holmes in the final weeks before she began her prison sentence. Fielder is best known for Nathan for You and The Rehearsal. Limited release: Friday Oct 16, 2026 Released: Friday Oct 23, 2026",
-   "source": "IanGardner Daily Prep",
-   "url": "https://iangardner.com/daily-broadcast-prep-2026-11-02",
-   "auto": false
-  },
-  {
-   "id": "Ta6323b",
-   "kind": "timely",
-   "section": "Movies & TV",
-   "date": "2026-11-02",
-   "title": "St. Denis Medical: Season 3 — 📡 TV (USA)",
-   "desc": "NBC's mockumentary comedy follows the overstretched staff of an underfunded Oregon hospital, led by Wendi McLendon-Covey and David Alan Grier. It returns for its third season on NBC, mixing workplace satire with heartfelt moments. Released: Monday Nov 2, 2026",
-   "source": "IanGardner Daily Prep",
-   "url": "https://iangardner.com/daily-broadcast-prep-2026-11-02",
-   "auto": false
-  },
-  {
-   "id": "T3f8740",
-   "kind": "timely",
-   "section": "Movies & TV",
-   "date": "2026-11-02",
-   "title": "The Assassin: Season 2 — 📺 Streaming",
-   "desc": "The Assassin season 2 is released exclusively on Prime Video with former assassin Julie Green and her journalist son Edward facing killers tied to her past. Released: Friday Nov 6, 2026",
-   "source": "IanGardner Daily Prep",
-   "url": "https://iangardner.com/daily-broadcast-prep-2026-11-02",
-   "auto": false
-  },
   {
    "id": "T983c6c",
    "kind": "timely",
@@ -904,12 +673,12 @@
    "auto": false
   },
   {
-   "id": "T306bcb",
+   "id": "T9ac9f0",
    "kind": "timely",
    "section": "Gas",
    "label": "Gas Prices",
-   "date": "2026-11-02",
-   "line": "Missouri's average for regular gas is $3.83 today, down 24 cents from a month ago and up $1.16 from a year ago, according to AAA. Springfield averages $3.75.",
+   "date": "2026-11-03",
+   "line": "Missouri's average for regular gas is $3.82 today, down 24 cents from a month ago and up $1.15 from a year ago, according to AAA. Springfield averages $3.70.",
    "source": "AAA",
    "url": "https://gasprices.aaa.com/?state=MO",
    "auto": true
@@ -919,8 +688,8 @@
    "kind": "timely",
    "section": "Season",
    "label": "Hunting Season",
-   "date": "2026-11-02",
-   "line": "Archery deer season ends Friday, November 13, in 11 days.",
+   "date": "2026-11-03",
+   "line": "Archery deer season ends Friday, November 13, in 10 days.",
    "source": "Missouri Department of Conservation",
    "url": "https://mdc.mo.gov/hunting-trapping/seasons/deer-archery",
    "auto": true
@@ -930,8 +699,8 @@
    "kind": "timely",
    "section": "Season",
    "label": "Hunting Season",
-   "date": "2026-11-02",
-   "line": "Archery deer season opens Wednesday, November 25, in 23 days, and runs through January 15.",
+   "date": "2026-11-03",
+   "line": "Archery deer season opens Wednesday, November 25, in 22 days, and runs through January 15.",
    "source": "Missouri Department of Conservation",
    "url": "https://mdc.mo.gov/hunting-trapping/seasons/deer-archery",
    "auto": true
@@ -941,8 +710,8 @@
    "kind": "timely",
    "section": "Season",
    "label": "Hunting Season",
-   "date": "2026-11-02",
-   "line": "The November portion of firearms deer season opens Saturday, November 14, in 12 days, and runs through November 24.",
+   "date": "2026-11-03",
+   "line": "The November portion of firearms deer season opens Saturday, November 14, in 11 days, and runs through November 24.",
    "source": "Missouri Department of Conservation",
    "url": "https://mdc.mo.gov/hunting-trapping/seasons/deer-firearms-november-portion",
    "auto": true
@@ -952,8 +721,8 @@
    "kind": "timely",
    "section": "Season",
    "label": "Hunting Season",
-   "date": "2026-11-02",
-   "line": "Youth firearms deer season opens Friday, November 27, in 25 days, and runs through November 29.",
+   "date": "2026-11-03",
+   "line": "Youth firearms deer season opens Friday, November 27, in 24 days, and runs through November 29.",
    "source": "Missouri Department of Conservation",
    "url": "https://mdc.mo.gov/hunting-trapping/seasons/deer-firearms-youth-portions",
    "auto": true
@@ -963,8 +732,8 @@
    "kind": "timely",
    "section": "Season",
    "label": "Hunting Season",
-   "date": "2026-11-02",
-   "line": "Dove season ends Sunday, November 29, in 27 days.",
+   "date": "2026-11-03",
+   "line": "Dove season ends Sunday, November 29, in 26 days.",
    "source": "Missouri Department of Conservation",
    "url": "https://mdc.mo.gov/hunting-trapping/seasons/dove-hunting",
    "auto": true
@@ -974,8 +743,8 @@
    "kind": "timely",
    "section": "Season",
    "label": "Veterans Day",
-   "date": "2026-11-02",
-   "line": "Veterans Day is Wednesday, November 11, in 9 days.",
+   "date": "2026-11-03",
+   "line": "Veterans Day is Wednesday, November 11, in 8 days.",
    "source": "Calendar",
    "url": "https://www.timeanddate.com/holidays/us/",
    "auto": true
@@ -985,8 +754,8 @@
    "kind": "timely",
    "section": "Season",
    "label": "Thanksgiving",
-   "date": "2026-11-02",
-   "line": "Thanksgiving is Thursday, November 26, in 24 days.",
+   "date": "2026-11-03",
+   "line": "Thanksgiving is Thursday, November 26, in 23 days.",
    "source": "Calendar",
    "url": "https://www.timeanddate.com/holidays/us/",
    "auto": true
@@ -996,54 +765,14 @@
    "kind": "timely",
    "section": "Season",
    "label": "Black Friday",
-   "date": "2026-11-02",
-   "line": "Black Friday is Friday, November 27, in 25 days.",
+   "date": "2026-11-03",
+   "line": "Black Friday is Friday, November 27, in 24 days.",
    "source": "Calendar",
    "url": "https://www.timeanddate.com/holidays/us/",
    "auto": true
   }
  ],
  "johnsons": [
-  {
-   "title": "MDC hosts field to freezer mentored antlerless deer hunt in Randolph County Dec. 4-5",
-   "url": "https://mdc.mo.gov/newsroom/mdc-hosts-field-freezer-mentored-antlerless-deer-hunt-randolph-county-dec-4-5",
-   "desc": "This free event is designed for hunters ages 10-35.",
-   "ts": "2026-11-02T06:00:00+00:00",
-   "pillar": "Outdoors",
-   "source": "Missouri Dept. of Conservation",
-   "id": "J8fbdb0",
-   "niche": true
-  },
-  {
-   "title": "Missouri hunters harvest 1,633 birds during firearms portion of fall turkey season",
-   "url": "https://mdc.mo.gov/newsroom/missouri-hunters-harvest-1633-birds-during-firearms-portion-fall-turkey-season",
-   "desc": "Top harvest counties were Greene with 56 birds harvested, Laclede with 42, and Perry with 42.",
-   "ts": "2026-11-02T06:00:00+00:00",
-   "pillar": "Outdoors",
-   "source": "Missouri Dept. of Conservation",
-   "id": "J092982",
-   "niche": true
-  },
-  {
-   "title": "MDC announces Eagle Bluffs Conservation Area water pumping has resumed",
-   "url": "https://mdc.mo.gov/newsroom/mdc-announces-eagle-bluffs-conservation-area-water-pumping-has-resumed",
-   "desc": "Waterfowl hunting will be possible on the opening day of the Middle Zone duck and coot season, Nov. 7.",
-   "ts": "2026-11-02T06:00:00+00:00",
-   "pillar": "Outdoors",
-   "source": "Missouri Dept. of Conservation",
-   "id": "Jeb0a60",
-   "niche": true
-  },
-  {
-   "title": "MDC reports Missouri hunters harvested 36 black bears this season",
-   "url": "https://mdc.mo.gov/newsroom/mdc-reports-missouri-hunters-harvested-36-black-bears-season",
-   "desc": "Missouri’s 2026 black bear hunting season ran Oct. 17-30 with 36 bears taken out of a maximum allowable harvest of 60.",
-   "ts": "2026-11-02T06:00:00+00:00",
-   "pillar": "Outdoors",
-   "source": "Missouri Dept. of Conservation",
-   "id": "J674b53",
-   "niche": true
-  },
   {
    "title": "Learn about fly tying, woodcarving, winter bird feeding and more with MDC in November",
    "url": "https://mdc.mo.gov/newsroom/learn-about-fly-tying-woodcarving-winter-bird-feeding-more-mdc-november",
@@ -1055,14 +784,55 @@
    "niche": true
   },
   {
-   "title": "Join MDC for variety of programs throughout November in the Ozark Region",
-   "url": "https://mdc.mo.gov/newsroom/join-mdc-variety-programs-throughout-november-ozark-region",
-   "desc": "Free events will teach attendees about campfire cooking, fly tying and more.",
-   "ts": "2026-11-02T06:00:00+00:00",
+   "title": "The Cheapest (and Most Expensive) Grocery Store in Every State",
+   "url": "https://www.moneytalksnews.com/the-cheapest-and-most-expensive-grocery-store-in-every-state/",
+   "desc": "In most states, the cheapest place to buy groceries isn't Walmart. Find yours — and the one store that beats them all.",
+   "ts": "2026-11-03T11:30:49+00:00",
+   "pillar": "Life",
+   "source": "Money Talks News",
+   "id": "J8d369a",
+   "niche": false
+  },
+  {
+   "title": "The Parenting Guilt You’re Carrying? Tanis Larson Says It’s Time To ‘Hand It Back’",
+   "url": "https://www.todaysparent.com/family/parenting/tanis-larson-hand-it-back/",
+   "desc": "At 38 weeks pregnant, Tanis Larson was feeling pretty good about becoming a mom again. Then a nurse wrote one word on her medical chart: geriatric. Not exactly the word an expectant mother wants to hear. For the Calgary mom of six, it was a reminder of just how quickly the world can put a […]",
+   "ts": "2026-11-03T11:30:06+00:00",
+   "pillar": "Family",
+   "source": "Today's Parent",
+   "id": "Ja7ae8c",
+   "niche": false
+  },
+  {
+   "title": "Ep. 08: The Truth About Wyatt Earp",
+   "url": "https://www.themeateater.com/listen/gunfighters/ep-08-the-truth-about-wyatt-earp",
+   "desc": "Join the best-selling author Bryan Burrough as he delves into the strange and humble origins of the storied frontier gunman Wyatt Earp. Thank you to our sponsor, Tecovas. Follow now on Apple, Spotify, iHeart, and YouTube. MeatEater on Instagram, Facebook, Twitter, Youtube, and Youtube Clips Check out more MeatEater's American History audio originals \"The Long Hunters\" and \"Mountain Men\" Subscribe to The MeatEater Podcast Network on YouTube Shop...",
+   "ts": "2026-11-03T10:00:00+00:00",
    "pillar": "Outdoors",
-   "source": "Missouri Dept. of Conservation",
-   "id": "J8a9261",
-   "niche": true
+   "source": "MeatEater",
+   "id": "Ja54375",
+   "niche": false
+  },
+  {
+   "title": "Six Fitness 'Rules' That Don't Actually Matter",
+   "url": "https://lifehacker.com/fitness-rules-that-are-okay-to-break?utm_medium=RSS",
+   "desc": "Few questions in fitness truly have a \"right\" or \"wrong\" answer.",
+   "ts": "2026-11-03T04:30:00+00:00",
+   "pillar": "Life",
+   "source": "Lifehacker",
+   "id": "Jac7ac5",
+   "niche": false
+  },
+  {
+   "title": "I posted about my daughter being iced out of Halloween plans. Something even crazier happened today.",
+   "url": "https://www.reddit.com/r/Mommit/comments/1xmfjg6/i_posted_about_my_daughter_being_iced_out_of/",
+   "desc": "If you didn't see my post on Halloween, the TLDR is that the neighborhood girls made plans to trick or treat together. When I finally heard from the host mom, I was told they had plans and there wasn't room for my daughter. Today has me wondering if I'm living in the Twilight Zone. My daughter asked if she could go over to a friend's house after school (not the same friend from Halloween). Their grandma was there and was going to drive them, so obviously it was ok with them. Right? Well, about 10 minutes later my daughter texted and asked me to pick her up. I said ok, and asked if everything w",
+   "ts": "2026-11-03T01:18:41+00:00",
+   "pillar": "Family",
+   "source": "r/Mommit",
+   "signal": "#6 this week on r/Mommit",
+   "id": "Jf9869c",
+   "niche": false
   },
   {
    "title": "Montana Man Banned From Hunting for 20 Years After Bowhunters Watch Him Poach a Trophy Bull",
@@ -1075,34 +845,14 @@
    "niche": false
   },
   {
-   "title": "Ask Stacy: Should I Pay Off My Mortgage Before I Retire?",
-   "url": "https://www.moneytalksnews.com/ask-stacy-should-i-pay-off-my-mortgage-before-i-retire/",
-   "desc": "The math says one thing. Your gut says another. Here are five questions that settle it.",
-   "ts": "2026-11-02T23:30:15+00:00",
-   "pillar": "Life",
-   "source": "Money Talks News",
-   "id": "Jaa50de",
-   "niche": false
-  },
-  {
    "title": "Genuinely struggling with the news of a young family being on board the Learjet 60 that crashed in Palm Beach",
    "url": "https://www.reddit.com/r/daddit/comments/1xmbzmp/genuinely_struggling_with_the_news_of_a_young/",
    "desc": "They had a 2 and a 4 year old. Same ages as my two. After hearing the terror filled yet brave in the face of certain death First Officers radio transmissions to ATC, I feel broken. To know that those two little ones spent their last 77 seconds on earth in abject terror, suspended in the cabin in near zero G free fall is absolutely fucking my whole day up. My heart breaks for all those lost on board yesterday of course but reading the ages of the two kids broke something inside me. Particularly with this last year being an absolute hellacious rollercoaster with my fiance getting stage 3 breast ",
    "ts": "2026-11-02T22:43:19+00:00",
    "pillar": "Family",
    "source": "r/daddit",
-   "signal": "#45 this week on r/daddit",
+   "signal": "#19 this week on r/daddit",
    "id": "J60d65b",
-   "niche": false
-  },
-  {
-   "title": "Walmart Will Have Three Major Shopping Events This Holiday Season",
-   "url": "https://lifehacker.com/tech/walmart-faq-early-black-friday-2026?utm_medium=RSS",
-   "desc": "It's not just about Black Friday anymore.",
-   "ts": "2026-11-02T22:30:00+00:00",
-   "pillar": "Life",
-   "source": "Lifehacker",
-   "id": "J9db17e",
    "niche": false
   },
   {
@@ -1136,16 +886,6 @@
    "niche": false
   },
   {
-   "title": "Chicken Corn Chowder",
-   "url": "https://www.budgetbytes.com/chicken-corn-chowder/",
-   "desc": "This easy Chicken Corn Chowder recipe is creamy without cream, with smoky bacon, tender chicken, sweet corn, and potatoes. Ready in 50 minutes and great for meal prep! The post Chicken Corn Chowder appeared first on Budget Bytes .",
-   "ts": "2026-11-02T14:30:00+00:00",
-   "pillar": "Cooking",
-   "source": "Budget Bytes",
-   "id": "J86a09b",
-   "niche": false
-  },
-  {
    "title": "Angler Borrows Friend’s Lure, Immediately Catches Record Smallmouth",
    "url": "https://www.wired2fish.com/news/angler-borrows-friends-lure-immediately-catches-record-smallmouth",
    "desc": "When Austin Schiefer borrowed a bait from his buddy as they fished Green Bay in Wisconsin, he had no idea the results would be so dramatic. Ted Johnson, his longtime fishing partner, had been using a Japanese-made soft plastic jerkbait to catch big smallmouth bass they spotted on Livescope, an electronics unit that shows real-time [...] Read More... from Angler Borrows Friend’s Lure, Immediately Catches Record Smallmouth The post Angler Borrows Friend’s Lure, Immediately Catches Record Smallmouth appeared first on Wired2Fish .",
@@ -1166,26 +906,6 @@
    "niche": false
   },
   {
-   "title": "The 2026 Toy Guide",
-   "url": "https://www.todaysparent.com/hub/the-2026-toy-guide/",
-   "desc": "Find the perfect gifts for the kids in your life. Our toy guide highlights the trendiest and most exciting stuffies, play sets and kid tech of the year.",
-   "ts": "2026-11-02T13:49:36+00:00",
-   "pillar": "Family",
-   "source": "Today's Parent",
-   "id": "J4b5e36",
-   "niche": false
-  },
-  {
-   "title": "Ep. 505: A Yellowstone Bribe, Power Lines in the Driftless Area, and the Biology of Halloween",
-   "url": "https://www.themeateater.com/listen/cals-week-in-review/ep-505-a-yellowstone-bribe-power-lines-in-the-driftless-area-and-the-biology-of-halloween",
-   "desc": "This week, Cal talks about a fishy \"donation\" to Yellowstone National Park, proposed energy infrastructure developments in a special part of the Midwest, and an evolutionary tactic known as \"predator inspection.\" Call to Action: Vote on Question 6 and Question 9 in Massachusetts: https://www.backcountryhunters.org/news/details/massachusetts-ballot-questions Call your Senators to amend the Bipartisan Affordability and Jobs Act: https://www...",
-   "ts": "2026-11-02T10:00:00+00:00",
-   "pillar": "Outdoors",
-   "source": "MeatEater",
-   "id": "J3d68f1",
-   "niche": false
-  },
-  {
    "title": "10 lb tube o' meat",
    "url": "https://www.reddit.com/r/MealPrepSunday/comments/1xli385/10_lb_tube_o_meat/",
    "desc": "What would you guys do with this 10lb tube? $3.99/lb. The sign in the picture is for something else. Butcher said it was about 80/20 ground beef",
@@ -1203,19 +923,8 @@
    "ts": "2026-11-01T15:33:24+00:00",
    "pillar": "Life",
    "source": "r/personalfinance",
-   "signal": "#24 this week on r/personalfinance",
+   "signal": "#26 this week on r/personalfinance",
    "id": "J7f0374",
-   "niche": false
-  },
-  {
-   "title": "My husband needs a *break* from our kids.",
-   "url": "https://www.reddit.com/r/Mommit/comments/1xl5sav/my_husband_needs_a_break_from_our_kids/",
-   "desc": "Ok, so I don't know if I'm the A-hole but I'm really, really fed up right now that I could cry. My husband said this morning that he needs a break from both kids. I want to preface this by saying, he works half days right now because he didn't take all of his parental leave at the same time, they allowed him to work half days. I am having a hard time adjusting to a newborn and a 3 year old. Our 3 year old just barely started dropping her nap, we are also all sick EXCEPT my husband. I guess I have been complaining too much about not being able to keep our 3 year old under control, but it's my f",
-   "ts": "2026-11-01T15:24:23+00:00",
-   "pillar": "Family",
-   "source": "r/Mommit",
-   "signal": "#58 this week on r/Mommit",
-   "id": "Jef55ab",
    "niche": false
   },
   {
@@ -1225,7 +934,7 @@
    "ts": "2026-11-01T04:20:18+00:00",
    "pillar": "Family",
    "source": "r/Parenting",
-   "signal": "#32 this week on r/Parenting",
+   "signal": "#35 this week on r/Parenting",
    "id": "Jc47640",
    "niche": false
   },
@@ -1236,7 +945,7 @@
    "ts": "2026-10-31T05:51:43+00:00",
    "pillar": "Outdoors",
    "source": "r/Fishing",
-   "signal": "#15 this week on r/Fishing",
+   "signal": "#18 this week on r/Fishing",
    "id": "J8309af",
    "niche": false
   },
@@ -1252,23 +961,33 @@
    "niche": false
   },
   {
-   "title": "Apple Is About to Release a Touchscreen MacBook Pro (Plus Four More Devices)",
-   "url": "https://lifehacker.com/tech/apple-is-releasing-these-five-new-products-on-friday?utm_medium=RSS",
-   "desc": "Its first touchscreen MacBook Pros are nearly here.",
-   "ts": "2026-11-02T21:44:11+00:00",
+   "title": "Get Early Access to Bath & Body Works’ Advent Calendar",
+   "url": "https://www.moneytalksnews.com/get-early-access-to-bath-body-works-advent-calendar/",
+   "desc": "Signups open Nov. 4 for a $50 calendar valued at over $115, and seven of its 12 surprises are exclusive to the box.",
+   "ts": "2026-11-03T11:10:51+00:00",
    "pillar": "Life",
-   "source": "Lifehacker",
-   "id": "Jc41452",
+   "source": "Money Talks News",
+   "id": "Je216bc",
    "niche": false
   },
   {
-   "title": "19 Easy, Cheap Christmas Baking Recipes Loaded With Holiday Magic",
-   "url": "https://www.scarymommy.com/lifestyle/easy-cheap-christmas-baking-recipes",
-   "desc": "Not everyone can afford to make an elaborate pavlova with like 30 ingredients. These easy, cheap Christmas baking recipes are big on magic but low in cost.",
-   "ts": "2026-11-02T21:23:48+00:00",
-   "pillar": "Family",
-   "source": "Scary Mommy",
-   "id": "Jfdf1e3",
+   "title": "Ep. 1090: Foundations - The Rut: Everything Some Place, All at Once",
+   "url": "https://www.themeateater.com/listen/wired-to-hunt/ep-1090-foundations-the-rut-everything-some-place-all-at-once",
+   "desc": "Deer hunters often think the rut will make up for a poor strategy, or low-effort sits, but it usually won't. Serious hunters learn to put in the time, and then pivot to new spots when their plans don't pan out. If you want to kill a mature buck right now, don't sleep on this episode. Connect with Tony Peterson and MeatEater Tony Peterson on Instagram and Facebook MeatEater on Instagram, Facebook, Twitter, Youtube, and Youtube Clips...",
+   "ts": "2026-11-03T10:00:00+00:00",
+   "pillar": "Outdoors",
+   "source": "MeatEater",
+   "id": "J196990",
+   "niche": false
+  },
+  {
+   "title": "Walmart Will Have Three Major Shopping Events This Holiday Season",
+   "url": "https://lifehacker.com/tech/walmart-faq-early-black-friday-2026?utm_medium=RSS",
+   "desc": "It's not just about Black Friday anymore.",
+   "ts": "2026-11-02T22:30:00+00:00",
+   "pillar": "Life",
+   "source": "Lifehacker",
+   "id": "J9db17e",
    "niche": false
   },
   {
@@ -1278,18 +997,8 @@
    "ts": "2026-11-02T21:21:55+00:00",
    "pillar": "Family",
    "source": "r/daddit",
-   "signal": "#10 this week on r/daddit",
+   "signal": "#9 this week on r/daddit",
    "id": "J484f9f",
-   "niche": false
-  },
-  {
-   "title": "8 Ways Thrift Stores Are Changing Fast, According to a Professional Reseller",
-   "url": "https://www.moneytalksnews.com/slideshows/ways-thrift-stores-are-changing/",
-   "desc": "These developments are reinventing how we shop secondhand.",
-   "ts": "2026-11-02T21:01:59+00:00",
-   "pillar": "Life",
-   "source": "Money Talks News",
-   "id": "J2f8955",
    "niche": false
   },
   {
@@ -1303,23 +1012,44 @@
    "niche": false
   },
   {
-   "title": "Cottage Cheese Pasta alla Vodka",
-   "url": "https://www.thekitchn.com/cottage-cheese-pasta-alla-vodka-recipe-23848130?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-   "desc": "It’s ready in 30 minutes. READ MORE...",
-   "ts": "2026-11-02T12:00:00-05:00",
-   "pillar": "Cooking",
-   "source": "The Kitchn",
-   "id": "Jc9a802",
+   "title": "A Change of Scenery Should Be Part of Your PPD Recovery",
+   "url": "https://www.scarymommy.com/lifestyle/why-a-change-of-scenery-should-be-a-part-of-your-postpartum-depression-recovery",
+   "desc": "When the walls start closing in, a shift in your surroundings can help your postpartum depression.",
+   "ts": "2026-11-02T20:15:57+00:00",
+   "pillar": "Family",
+   "source": "Scary Mommy",
+   "id": "J5f07a3",
    "niche": false
   },
   {
-   "title": "The Top Toys For Big Kids 9+ In 2026",
-   "url": "https://www.todaysparent.com/shopping/toy-guide-9-2026/",
-   "desc": "Big kids, big opinions. These toys will delight even the angstiest of tweens.",
-   "ts": "2026-11-02T13:49:12+00:00",
+   "title": "My mom took my 6-yo daughter doorknocking for Ken Paxton",
+   "url": "https://www.reddit.com/r/Mommit/comments/1xm33sk/my_mom_took_my_6yo_daughter_doorknocking_for_ken/",
+   "desc": "I am seeing red and I'm struggling to find an appropriate way to respond. Please help or tell me if I'm out of line here. For context, I was raised in a very conservative household (some of my earliest memories are also door-knocking, but for Bush). As an adult I moved considerably to the left; my husband and I are active Democrats (volunteer, donate, etc). My parents know this. We're all adults and still have familial love for each other, so we've managed to maintain a tenuous 'truce' by generally avoiding the subject. Because of my own upbringing, my husband and I have taken an intentionally",
+   "ts": "2026-11-02T17:14:08+00:00",
+   "pillar": "Family",
+   "source": "r/Mommit",
+   "signal": "#48 this week on r/Mommit",
+   "id": "J63ae0d",
+   "niche": false
+  },
+  {
+   "title": "Bye-Bye, Honeycrisp: Apple Farmers Agree These Varieties Have the Best Flavor",
+   "url": "https://www.thekitchn.com/best-apples-for-fall-farmers-23851951?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+   "desc": "\"Exceptionally juicy and aromatic.\" READ MORE...",
+   "ts": "2026-11-02T11:30:00-05:00",
+   "pillar": "Cooking",
+   "source": "The Kitchn",
+   "id": "J1b1b86",
+   "niche": false
+  },
+  {
+   "title": "The 2026 Toy Guide",
+   "url": "https://www.todaysparent.com/hub/the-2026-toy-guide/",
+   "desc": "Find the perfect gifts for the kids in your life. Our toy guide highlights the trendiest and most exciting stuffies, play sets and kid tech of the year.",
+   "ts": "2026-11-02T13:49:36+00:00",
    "pillar": "Family",
    "source": "Today's Parent",
-   "id": "J1f0523",
+   "id": "J4b5e36",
    "niche": false
   },
   {
@@ -1333,45 +1063,13 @@
    "niche": false
   },
   {
-   "title": "Ep. 954: A Public Land Warrior",
-   "url": "https://www.themeateater.com/listen/meateater/ep-954-a-public-land-warrior",
-   "desc": "Steven Rinella talks with journalist and activist Hal Herring about the past, present, and future of America’s public lands. Connect with Steve and The MeatEater Podcast Network Steve on Instagram and Twitter MeatEater on Instagram, Facebook, Twitter, and YouTube",
-   "ts": "2026-11-02T10:00:00+00:00",
-   "pillar": "Outdoors",
-   "source": "MeatEater",
-   "id": "Je96f4f",
-   "niche": false
-  },
-  {
-   "title": "Halloween disappointment",
-   "url": "https://www.reddit.com/r/Mommit/comments/1xkrzwv/halloween_disappointment/",
-   "desc": "My daughter made plans with friends at school this week to go trick or treating together. I was trying to find out where everyone was meeting up, and was told by another mom it was at a particular friend's house just down the road. I texted her mom, and didn't hear back until the time they were supposed to meet. Her response was that they had plans and the car was full (meaning my kid wasn't invited). I'm so angry and devastated for my kid. She's crushed. She spent so much time making her own costume and was so excited. Now she's on the couch crying and doesn't want to do anything. The mom has",
-   "ts": "2026-11-01T02:33:12+00:00",
-   "pillar": "Family",
-   "source": "r/Mommit",
-   "signal": "#28 this week on r/Mommit",
-   "id": "Je154e8",
-   "niche": false
-  },
-  {
-   "title": "The ‘Disappointing’ ‘Candy’ Bowl",
-   "url": "https://www.reddit.com/r/Parenting/comments/1xk7xke/the_disappointing_candy_bowl/",
-   "desc": "So we are going trick or treating obvs. I still want to leave a bowl out for kiddos but also the last time I left out a bowl of candy it got wiped and we’ll be out and about ourselves. Strongly considering bowls of fruit and/or some sort of capri sun or applesauce pouches. I know my kid would definitely grab and eat clementines and apples with no hesitation, I don’t even think she’d gripe about it. A capri sun would be a treat because we only do water or milk in our house. My kid would squeal over a capri sun. Great thing with these options is they’d also be mostly allergen safe and even the t",
-   "ts": "2026-10-31T11:35:28+00:00",
-   "pillar": "Family",
-   "source": "r/Parenting",
-   "signal": "#49 this week on r/Parenting",
-   "id": "Jfacf06",
-   "niche": false
-  },
-  {
-   "title": "Top 15 Anglers Set for Final Day of The Champions Tournament",
-   "url": "https://fieldandstream.com/stories/fishing/freshwater-fishing/bass-fishing/champions-tournament-day-two",
-   "desc": "The scoreboard resets to zero as the top 15 anglers prepare for the final day of World Bass Enterprises The Champions Tournament The post Top 15 Anglers Set for Final Day of The Champions Tournament appeared first on Field & Stream .",
-   "ts": "2026-10-31T01:09:33+00:00",
+   "title": "We Tested Survival Knives to Find the Best for Any Situation",
+   "url": "https://fieldandstream.com/outdoor-gear/survival/best-survival-knives",
+   "desc": "Whether you're lost in the wilderness or caught in the middle of a storm, the right survival knife could save your life The post We Tested Survival Knives to Find the Best for Any Situation appeared first on Field & Stream .",
+   "ts": "2026-11-02T10:06:10+00:00",
    "pillar": "Outdoors",
    "source": "Field & Stream",
-   "id": "Jb4ba02",
+   "id": "J03e56e",
    "niche": false
   },
   {
@@ -1391,38 +1089,38 @@
    "ts": "2026-10-29T23:30:22+00:00",
    "pillar": "Life",
    "source": "r/personalfinance",
-   "signal": "#26 this week on r/personalfinance",
+   "signal": "#29 this week on r/personalfinance",
    "id": "Jcdf465",
    "niche": false
   },
   {
-   "title": "16 Easy Christmas Recipes For A Crowd That'll Sleigh Their Appetites",
-   "url": "https://www.scarymommy.com/lifestyle/easy-christmas-recipes-for-a-crowd-potluck-party",
-   "desc": "If the whole fam is invading your house for the holidays, you'll need to figure out what to feed them. Try these easy Christmas recipes for a crowd.",
-   "ts": "2026-11-02T21:17:57+00:00",
-   "pillar": "Family",
-   "source": "Scary Mommy",
-   "id": "J7cb572",
-   "niche": false
-  },
-  {
-   "title": "Here’s What 20 Years as a Part-Time Expat in Southern Spain Looks Like",
-   "url": "https://www.moneytalksnews.com/heres-what-years-as-a-part-time-expat-in-southern-spain-looks-like/",
-   "desc": "From daily siestas to a healthy local cuisine, explore what one expat's life is like in Seville, Spain.",
-   "ts": "2026-11-02T21:01:47+00:00",
+   "title": "Your Tires Can Look Fine and Still Be Too Old. Check These 4 Digits",
+   "url": "https://www.moneytalksnews.com/your-tires-can-look-fine-and-still-be-too-old-check-these-digits/",
+   "desc": "Good tread doesn't mean a good tire. The number that matters is stamped on the sidewall, and almost nobody reads it.",
+   "ts": "2026-11-03T11:00:14+00:00",
    "pillar": "Life",
    "source": "Money Talks News",
-   "id": "J7b4a76",
+   "id": "Ja5ba78",
    "niche": false
   },
   {
-   "title": "You Can Get an iPhone 16e on Sale for As Low As $355 Right Now",
-   "url": "https://lifehacker.com/tech/iphone-16e-stacksocial-sale-november-2026?utm_medium=RSS",
-   "desc": "Apple's lower-cost iPhone has much of the same internals as the standard iPhone 16.",
-   "ts": "2026-11-02T18:30:00+00:00",
+   "title": "Apple Is About to Release a Touchscreen MacBook Pro (Plus Four More Devices)",
+   "url": "https://lifehacker.com/tech/apple-is-releasing-these-five-new-products-on-friday?utm_medium=RSS",
+   "desc": "Its first touchscreen MacBook Pros are nearly here.",
+   "ts": "2026-11-02T21:44:11+00:00",
    "pillar": "Life",
    "source": "Lifehacker",
-   "id": "Jb206d3",
+   "id": "Jc41452",
+   "niche": false
+  },
+  {
+   "title": "The Resentment of Being the Parent Who Can Never Clock Out",
+   "url": "https://www.scarymommy.com/lifestyle/the-resentment-of-being-the-parent-who-can-never-clock-out",
+   "desc": "Maybe it’s a lack of freedom, unequal responsibilities with a partner, or both, but you’re big mad.",
+   "ts": "2026-11-02T20:15:29+00:00",
+   "pillar": "Family",
+   "source": "Scary Mommy",
+   "id": "J3b39eb",
    "niche": false
   },
   {
@@ -1436,13 +1134,125 @@
    "niche": false
   },
   {
-   "title": "Bye-Bye, Honeycrisp: Apple Farmers Agree These Varieties Have the Best Flavor",
-   "url": "https://www.thekitchn.com/best-apples-for-fall-farmers-23851951?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-   "desc": "\"Exceptionally juicy and aromatic.\" READ MORE...",
-   "ts": "2026-11-02T11:30:00-05:00",
+   "title": "The Top Toys For Big Kids 9+ In 2026",
+   "url": "https://www.todaysparent.com/shopping/toy-guide-9-2026/",
+   "desc": "Big kids, big opinions. These toys will delight even the angstiest of tweens.",
+   "ts": "2026-11-02T13:49:12+00:00",
+   "pillar": "Family",
+   "source": "Today's Parent",
+   "id": "J1f0523",
+   "niche": false
+  },
+  {
+   "title": "This Award-Winning Wine Subscription Service Is Offering 6 Bottles for Just $36 (and I Got You an Exclusive Code)",
+   "url": "https://www.thekitchn.com/firstleaf-wine-club-23851885?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+   "desc": "The world of wine is vast and interesting, but it can also be a little overwhelming. Especially when you’re standing in front of rows of wine bottles at the store trying to decide which one to pair with cheese (or chocolate!) or bring as a host gift to your next holiday party. That’s where Firstleaf Wine Club comes in. You can sign up to get six or 12 bottles of wine shipped right to you, and they’re personalized to fit your preferences. READ MORE...",
+   "ts": "2026-11-02T08:30:00-05:00",
    "pillar": "Cooking",
    "source": "The Kitchn",
-   "id": "J1b1b86",
+   "id": "Jd41462",
+   "niche": false
+  },
+  {
+   "title": "Ep. 505: A Yellowstone Bribe, Power Lines in the Driftless Area, and the Biology of Halloween",
+   "url": "https://www.themeateater.com/listen/cals-week-in-review/ep-505-a-yellowstone-bribe-power-lines-in-the-driftless-area-and-the-biology-of-halloween",
+   "desc": "This week, Cal talks about a fishy \"donation\" to Yellowstone National Park, proposed energy infrastructure developments in a special part of the Midwest, and an evolutionary tactic known as \"predator inspection.\" Call to Action: Vote on Question 6 and Question 9 in Massachusetts: https://www.backcountryhunters.org/news/details/massachusetts-ballot-questions Call your Senators to amend the Bipartisan Affordability and Jobs Act: https://www...",
+   "ts": "2026-11-02T10:00:00+00:00",
+   "pillar": "Outdoors",
+   "source": "MeatEater",
+   "id": "J3d68f1",
+   "niche": false
+  },
+  {
+   "title": "New Best Friend",
+   "url": "https://www.reddit.com/r/daddit/comments/1xl6ir0/new_best_friend/",
+   "desc": "Hello fellow dads, new dad here. Just wanted to show you all my new best friend, Anna. She is our first and was born a few weeks ago and I have not been able to get enough of her. Words can’t express how proud I am of our new little girl and of my wife for dealing with everything she’s been through. That is all. Have a great Sunday dads!",
+   "ts": "2026-11-01T15:54:22+00:00",
+   "pillar": "Family",
+   "source": "r/daddit",
+   "signal": "#33 this week on r/daddit",
+   "id": "J11e6e0",
+   "niche": false
+  },
+  {
+   "title": "My husband needs a *break* from our kids.",
+   "url": "https://www.reddit.com/r/Mommit/comments/1xl5sav/my_husband_needs_a_break_from_our_kids/",
+   "desc": "Ok, so I don't know if I'm the A-hole but I'm really, really fed up right now that I could cry. My husband said this morning that he needs a break from both kids. I want to preface this by saying, he works half days right now because he didn't take all of his parental leave at the same time, they allowed him to work half days. I am having a hard time adjusting to a newborn and a 3 year old. Our 3 year old just barely started dropping her nap, we are also all sick EXCEPT my husband. I guess I have been complaining too much about not being able to keep our 3 year old under control, but it's my f",
+   "ts": "2026-11-01T15:24:23+00:00",
+   "pillar": "Family",
+   "source": "r/Mommit",
+   "signal": "#57 this week on r/Mommit",
+   "id": "Jef55ab",
+   "niche": false
+  },
+  {
+   "title": "We Put Survival Backpacks Through the Paces to Find the Toughest for Any Situation",
+   "url": "https://fieldandstream.com/outdoor-gear/survival/survival-gear/best-survival-backpacks",
+   "desc": "Stay prepared no matter the situation with a tough and durable survival backpack The post We Put Survival Backpacks Through the Paces to Find the Toughest for Any Situation appeared first on Field & Stream .",
+   "ts": "2026-11-01T10:46:28+00:00",
+   "pillar": "Outdoors",
+   "source": "Field & Stream",
+   "id": "Jefc7f6",
+   "niche": false
+  },
+  {
+   "title": "How to Make a $50 Holiday Gift Feel Like $100",
+   "url": "https://www.nerdwallet.com/finance/news/make-holiday-gift-feel-more-expensive",
+   "desc": "Trade time and a little extra thought to enhance gifts this holiday season.",
+   "ts": "2026-10-30T14:00:02+00:00",
+   "pillar": "Life",
+   "source": "NerdWallet",
+   "id": "J28fa14",
+   "niche": false
+  },
+  {
+   "title": "Angler Charged, Released On $10,000 Bail For Catching Great White Shark",
+   "url": "https://www.wired2fish.com/news/angler-charged-released-on-10000-bail-for-catching-great-white-shark",
+   "desc": "A fishing trip on Cape Cod has developed into a high-profile criminal case after Long Island angler and fishing-content creator Christopher Stefanou was indicted over the alleged capture of a great white shark known as “Aaron.” Prosecutors say Stefanou and his crew spent several days fishing along the eastern shore of Cape Cod in October [...] Read More... from Angler Charged, Released On $10,000 Bail For Catching Great White Shark The post Angler Charged, Released On $10,000 Bail For Catching Great White Shark appeared first on Wired2Fish .",
+   "ts": "2026-10-30T14:00:00+00:00",
+   "pillar": "Outdoors",
+   "source": "Wired2Fish",
+   "id": "J86481d",
+   "niche": false
+  },
+  {
+   "title": "Why New Cars Cost Over $50K, Plus the 6 Cheapest Brands",
+   "url": "https://www.moneytalksnews.com/why-new-cars-cost-over-k-plus-the-cheapest-brands/",
+   "desc": "Only six brands now average under $40,000, down from eight a month ago, and Mitsubishi leads the cheap end at $33,957.",
+   "ts": "2026-11-03T10:55:14+00:00",
+   "pillar": "Life",
+   "source": "Money Talks News",
+   "id": "Je6029d",
+   "niche": false
+  },
+  {
+   "title": "You Can Get an iPhone 16e on Sale for As Low As $355 Right Now",
+   "url": "https://lifehacker.com/tech/iphone-16e-stacksocial-sale-november-2026?utm_medium=RSS",
+   "desc": "Apple's lower-cost iPhone has much of the same internals as the standard iPhone 16.",
+   "ts": "2026-11-02T18:30:00+00:00",
+   "pillar": "Life",
+   "source": "Lifehacker",
+   "id": "Jb206d3",
+   "niche": false
+  },
+  {
+   "title": "How to Beat the Worst Case of Buck Fever, According to This Archery Pro",
+   "url": "https://www.outdoorlife.com/hunting/buck-fever-archery/",
+   "desc": "Archery instructor and veteran whitetail hunter John Dudley shares his tips for shooting well under pressure The post How to Beat the Worst Case of Buck Fever, According to This Archery Pro appeared first on Outdoor Life .",
+   "ts": "2026-11-02T11:29:16-05:00",
+   "pillar": "Outdoors",
+   "source": "Outdoor Life",
+   "id": "J6c6d12",
+   "niche": false
+  },
+  {
+   "title": "The Best Advent Calendars Of 2026 For Kids & Adults",
+   "url": "https://www.scarymommy.com/shopping/best-advent-calendars-2026",
+   "desc": "From mini storybooks and art supplies for the kids to wine, jewelry, and beauty hauls for you, these are the advent calendars worth buying before they sell out.",
+   "ts": "2026-11-02T15:52:51+00:00",
+   "pillar": "Family",
+   "source": "Scary Mommy",
+   "id": "J1d1913",
    "niche": false
   },
   {
@@ -1456,86 +1266,44 @@
    "niche": false
   },
   {
-   "title": "New Best Friend",
-   "url": "https://www.reddit.com/r/daddit/comments/1xl6ir0/new_best_friend/",
-   "desc": "Hello fellow dads, new dad here. Just wanted to show you all my new best friend, Anna. She is our first and was born a few weeks ago and I have not been able to get enough of her. Words can’t express how proud I am of our new little girl and of my wife for dealing with everything she’s been through. That is all. Have a great Sunday dads!",
-   "ts": "2026-11-01T15:54:22+00:00",
-   "pillar": "Family",
-   "source": "r/daddit",
-   "signal": "#30 this week on r/daddit",
-   "id": "J11e6e0",
-   "niche": false
-  },
-  {
-   "title": "I Don’t Buy With a Little Help From My Friends",
-   "url": "https://www.nerdwallet.com/finance/studies/money-saving-holiday-conversations",
-   "desc": "Americans are coordinating with friends and family to save money this holiday season.",
-   "ts": "2026-10-30T14:00:55+00:00",
-   "pillar": "Life",
-   "source": "NerdWallet",
-   "id": "Jc1c274",
-   "niche": false
-  },
-  {
-   "title": "My Son is Causing Me to Consider a Housewide YouTube Ban.",
-   "url": "https://www.reddit.com/r/Parenting/comments/1xjcm0r/my_son_is_causing_me_to_consider_a_housewide/",
-   "desc": "I have two kids, [10M] and [13F], and my son's YouTube usage is causing me to consider asking the whole house to quit YouTube. It's all either Fortnite or AI slop, my two co-parents don't want to monitor him, and I can't keep up with his voracious appetite for brain rot. He gets time alone to watch YouTube, which I already know is a mistake.. but again... I'm one of three parents. I keep his account on my phone and review what he's watching and block as needed, but lately there's nothing I approve of and his grades, behavior, and attention are absolutely suffering right now. I'm at a pivotal p",
-   "ts": "2026-10-30T11:18:59+00:00",
-   "pillar": "Family",
-   "source": "r/Parenting",
-   "signal": "#51 this week on r/Parenting",
-   "id": "J22bc76",
-   "niche": false
-  },
-  {
-   "title": "My husband isn't the father/partner I would have picked for my kids but I've made peace with that. Anyone else?",
-   "url": "https://www.reddit.com/r/Mommit/comments/1xinbik/my_husband_isnt_the_fatherpartner_i_would_have/",
-   "desc": "There's nothing aggregious (e.g., abuse) under the surface here but it took having two kids with him to realize that had I known what kind of partner / father he was going to be, I'd have picked differently. We both have high-stress jobs but somehow I am the default parent, have to work my schedule around every illness, drop off/pick up, etc. All the typical mental load mom-stuff. He can't tell you what size clothes the kids wear / what the baby is eating as she gets into solids, etc. Some days he's more checked-in, some days he's more checked-out, no indicator when that is going to be. And he",
-   "ts": "2026-10-29T15:36:07+00:00",
-   "pillar": "Family",
-   "source": "r/Mommit",
-   "signal": "#41 this week on r/Mommit",
-   "id": "J9148da",
-   "niche": false
-  },
-  {
-   "title": "13 Startling Truths About Getting Older",
-   "url": "https://www.moneytalksnews.com/slideshows/things-no-one-sees-coming-in-life/",
-   "desc": "If you're younger, prepare to be caught off guard by these facts of life. If you're older, well, join the club.",
-   "ts": "2026-11-02T21:01:40+00:00",
-   "pillar": "Life",
-   "source": "Money Talks News",
-   "id": "J4f7f49",
-   "niche": false
-  },
-  {
-   "title": "A Change of Scenery Should Be Part of Your PPD Recovery",
-   "url": "https://www.scarymommy.com/lifestyle/why-a-change-of-scenery-should-be-a-part-of-your-postpartum-depression-recovery",
-   "desc": "When the walls start closing in, a shift in your surroundings can help your postpartum depression.",
-   "ts": "2026-11-02T20:15:57+00:00",
-   "pillar": "Family",
-   "source": "Scary Mommy",
-   "id": "J5f07a3",
-   "niche": false
-  },
-  {
-   "title": "This Handheld Vacuum Fixed My Biggest Problem With Cleaning",
-   "url": "https://lifehacker.com/home/handheld-vacuum-upgrade-of-the-week?utm_medium=RSS",
-   "desc": "It's laziness. The problem is laziness.",
-   "ts": "2026-11-02T18:00:00+00:00",
-   "pillar": "Life",
-   "source": "Lifehacker",
-   "id": "Jb4c2d4",
-   "niche": false
-  },
-  {
-   "title": "This Award-Winning Wine Subscription Service Is Offering 6 Bottles for Just $36 (and I Got You an Exclusive Code)",
-   "url": "https://www.thekitchn.com/firstleaf-wine-club-23851885?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-   "desc": "The world of wine is vast and interesting, but it can also be a little overwhelming. Especially when you’re standing in front of rows of wine bottles at the store trying to decide which one to pair with cheese (or chocolate!) or bring as a host gift to your next holiday party. That’s where Firstleaf Wine Club comes in. You can sign up to get six or 12 bottles of wine shipped right to you, and they’re personalized to fit your preferences. READ MORE...",
-   "ts": "2026-11-02T08:30:00-05:00",
+   "title": "Our 10 Most Popular Dinner Recipes, According to Members",
+   "url": "https://www.thekitchn.com/most-popular-exclusive-dinner-recipes-23851988?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+   "desc": "Have you joined Kitchn+ yet? Subscribe and you’ll get our brand-new print magazine, exclusive recipes every week, and so much more. Join today.“What’s for dinner?” It’s the question that’s always on everyone’s mind and why we dedicated the entire issue of our first print magazine to answering it. READ MORE...",
+   "ts": "2026-11-02T07:00:00-05:00",
    "pillar": "Cooking",
    "source": "The Kitchn",
-   "id": "Jd41462",
+   "id": "J7d6c50",
+   "niche": false
+  },
+  {
+   "title": "Ep. 954: A Public Land Warrior",
+   "url": "https://www.themeateater.com/listen/meateater/ep-954-a-public-land-warrior",
+   "desc": "Steven Rinella talks with journalist and activist Hal Herring about the past, present, and future of America’s public lands. Connect with Steve and The MeatEater Podcast Network Steve on Instagram and Twitter MeatEater on Instagram, Facebook, Twitter, and YouTube",
+   "ts": "2026-11-02T10:00:00+00:00",
+   "pillar": "Outdoors",
+   "source": "MeatEater",
+   "id": "Je96f4f",
+   "niche": false
+  },
+  {
+   "title": "Wife has control issues, Halloween drama",
+   "url": "https://www.reddit.com/r/daddit/comments/1xl4v27/wife_has_control_issues_halloween_drama/",
+   "desc": "I feel like I've been putting out fires for the last 24hrs over Halloween. What my wife wants our son to do, vs what HE actually wants to do. It's a constant power struggle between my OCD/ADHD wife, and our 5yo son. Last night after we got home from Trick or Treating, I had to break up a huge fight because my wife wouldn't let my son sort through his Halloween candy to see what he got. He did great all night, but she wanted him to get to bed bc of the time change. This morning, same thing, he got up early to sort through his candy. My wife stopped him, caused a huge fight, because she wanted t",
+   "ts": "2026-11-01T14:46:42+00:00",
+   "pillar": "Family",
+   "source": "r/daddit",
+   "signal": "#1 this week on r/daddit",
+   "id": "J0847a8",
+   "niche": false
+  },
+  {
+   "title": "I Tried Gobble Meal Kits for 5 Weeks in a Row — Here’s My Honest Review",
+   "url": "https://www.thekitchn.com/gobble-review-23851697?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+   "desc": "See if it solved my dinner fatigue. READ MORE...",
+   "ts": "2026-11-01T14:30:00-05:00",
+   "pillar": "Cooking",
+   "source": "The Kitchn",
+   "id": "J96b697",
    "niche": false
   }
  ]

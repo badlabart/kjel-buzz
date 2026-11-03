@@ -1,406 +1,403 @@
 {
- "made": "2026-11-02",
+ "made": "2026-11-03",
  "national": [
   {
-   "id": "N99169e",
-   "line": "A 60-year-old Pennsylvania man broke a Guinness World Record by going to 1,207 movie screenings in one year, about 3.3 movies a day. His popcorn bill must be impressive.",
-   "city": "Pennsylvania"
-  },
-  {
    "id": "N6e486f",
-   "line": "Ariana Grande surprised a runner named Ellie at the New York City Marathon finish line with a kind note she wrote while watching the race. Now that's a medal.",
-   "city": "New York"
+   "line": "Ariana Grande wrote a kind note while watching the New York City Marathon, then surprised a runner named Ellie with it after she finished. Finish line, plus a pop star.",
+   "city": ""
   },
   {
-   "id": "N14030e",
-   "line": "Hundreds of New Jersey students collected over a quarter million pounds of food for food banks, filling the Howell High School football field with groceries. That's a touchdown for hunger.",
-   "city": "Howell, N.J."
+   "id": "N31ad96",
+   "line": "A 13-year-old contestant, Brianna Cameron, floored the coaches on The Voice Monday night with a sound compared to Whitney Houston. Those chairs never stood a chance.",
+   "city": ""
+  },
+  {
+   "id": "N92e741",
+   "line": "Seventy years ago today, The Wizard of Oz aired on TV for the first time, and 53 percent of U.S. television viewers tuned in. Talk about a ratings yellow brick road.",
+   "city": ""
+  },
+  {
+   "id": "N32d0df",
+   "line": "A rescued stray gray kitten, just 7 weeks old, has the most perfect little goatee. Already looks ready for a board meeting.",
+   "city": ""
   },
   {
    "id": "Nf8a40b",
-   "line": "Kelly Clarkson dressed as Meryl Streep and sang a ghoulish version of the Bee Gees' \"Stayin' Alive\" for Halloween. Staying in character, she was.",
+   "line": "Kelly Clarkson sang a ghoulish version of the Bee Gees' \"Stayin' Alive\" for Halloween, dressed as her favorite actress, Meryl Streep. Her Streep impression had range.",
+   "city": ""
+  },
+  {
+   "id": "N638cd6",
+   "line": "A clip shows Rowan Atkinson turning into Mr. Bean just by rolling his eyes, proof that acting can be that simple. One eye roll, whole new man.",
    "city": ""
   }
  ],
  "pride": [
   {
    "id": "L1cca41",
-   "line": "Victoria Moroski, a 17-year-old from Lake of the Ozarks, won the under-18 skim world title and Team USA gold at the World Wakesurf Championships in China in October. She's riding high.",
-   "city": "Lake of the Ozarks",
-   "label": "World Champ"
-  },
-  {
-   "id": "L00c22a",
-   "line": "Osage Beach pro angler Tyler Williams earned a spot in the 60-angler field for the $1.25 million Champions bass tournament in Tennessee, held Oct. 29 through 31. Fish fear him.",
-   "city": "Osage Beach",
-   "label": "Big Tournament"
+   "label": "World Champion",
+   "line": "Victoria Moroski, 17, of Lake of the Ozarks won gold in the under-18 skim division at the World Wakesurf Championships in Hangzhou, China, in October, and Team USA won team gold. That's one way to make a splash.",
+   "city": "Lake of the Ozarks"
   },
   {
    "id": "Lc7a33f",
-   "line": "Waynesville Career Center welding and manufacturing students built backdrop props for the Tiger Pride Marching Band this fall, saving the band about $10,000. Great work, and a great backdrop.",
-   "city": "Waynesville",
-   "label": "Student Project"
-  },
-  {
-   "id": "L128a50",
-   "line": "Ollie Sanders was named Lebanon High School's Yellowjacket of the Week for effort in athletics and the classroom. Favorite moment: winning best colorguard at Carthage. Sounds like a team player.",
-   "city": "Lebanon",
-   "label": "Yellowjacket of the Week"
+   "label": "Student Project",
+   "line": "Waynesville Career Center welding and manufacturing students, led by instructor Adam Rodden, built backdrop props for the Waynesville High School Tiger Pride Marching Band, saving the band about $10,000. Now that's a metal band.",
+   "city": "Waynesville"
   },
   {
    "id": "L0d0353",
-   "line": "Jacob Shurtz of Fair Grove soccer broke the school record for goals in a season, passing his older brother Andrew's 31, and KY3 named him Athlete of the Week. Sibling rivalry, scoreboard edition.",
-   "city": "Fair Grove",
-   "label": "School Record"
+   "label": "School Record",
+   "line": "Fair Grove striker Jacob Shurtz broke the school record for goals in a season in October, passing his older brother Andrew's 31. Family dinner just got competitive.",
+   "city": "Fair Grove"
   },
   {
    "id": "L89c83f",
-   "line": "Lebanon R-III Schools named Katie Cottongim its new director of communications. Now somebody's in charge of the good news.",
-   "city": "Lebanon",
-   "label": "New Leader"
+   "label": "New Leader",
+   "line": "Lebanon R-3 Schools named Katie Cottongim its new Director of Communications. She'll have plenty to communicate.",
+   "city": "Lebanon"
   }
  ],
  "local": [
   {
    "id": "L16d6db",
-   "line": "Chick-fil-A opens in Osage Beach on Thursday, Nov. 5, and customers dressed in cow-themed attire get a free entree. Time to moo-ve fast.",
+   "line": "Chick-fil-A opens its first Osage Beach location Thursday, Nov. 5, with a free entree for anyone who dresses in cow-themed attire. Cow costume, meet your biggest fan.",
    "city": "Osage Beach"
-  },
-  {
-   "id": "Ld962a9",
-   "line": "Heritage Bank of the Ozarks was the winning bidder at the Oct. 26 foreclosure sale of Lebanon's Ice Cream Factory property and is working with the city on its future. Let's hope for sprinkles.",
-   "city": "Lebanon"
-  },
-  {
-   "id": "L50ba17",
-   "line": "Marshfield High School's Marine Corps JROTC program is back after a four-year effort, giving students practical skills, career options and ways to get involved. Mission accomplished.",
-   "city": "Marshfield"
   }
  ],
  "music": [
   {
-   "id": "Mf2b391",
-   "line": "Morgan Wallen, Ella Langley and Kings of Leon will headline the 2027 Sand in My Boots Festival in Gulf Shores, Alabama, in May. Pack the sunscreen and the boots.",
-   "city": ""
-  },
-  {
-   "id": "Mfaf2ae",
-   "line": "Ella Langley's \"Choosin' Texas\" spent its 26th week at No. 1, extending her own record. That song has a lease on the top.",
-   "city": ""
-  },
-  {
-   "id": "M2f58b0",
-   "line": "Zach Top wrapped his Cold Beer & Country Music Tour with a sold-out show at Bridgestone Arena in Nashville. Nothing cold about that finale.",
-   "city": "Nashville"
-  },
-  {
-   "id": "M468b68",
-   "line": "Ella Langley and her band went as Toy Story characters for Halloween after the band and crew voted on a group costume. To infinity and beyond the stage.",
-   "city": ""
-  },
-  {
-   "id": "M3143eb",
-   "line": "Ella Langley loves Halloween, but she told fans to stop throwing candy onstage because it was a tripping hazard. Even stars watch their step.",
-   "city": ""
-  },
-  {
-   "id": "M914c3b",
-   "line": "Morgan Wallen now curates his own 24/7 SiriusXM channel, called Morgan Wallen Radio. Hard to argue with that playlist.",
-   "city": ""
-  },
-  {
-   "id": "M379a7c",
-   "line": "Lainey Wilson's husband, Devlin \"Duck\" Hodges, says his friends keep asking him to set them up with Ella Langley. Good luck, fellas.",
-   "city": ""
-  },
-  {
-   "id": "M685326",
-   "line": "Riley Green says his big dream is still to become a Grand Ole Opry member. The Opry should keep a seat warm.",
-   "city": ""
-  },
-  {
-   "id": "M9355e7",
-   "line": "HARDY and Blake Shelton released a carefree new duet called \"Hell.\" Hot new duet, no pun intended.",
+   "id": "Mc047b3",
+   "line": "Carly Pearce, Jennifer Nettles and Carter Faith are on the soundtrack to Netflix's upcoming Heartland. Country is headed to streaming.",
    "city": ""
   },
   {
    "id": "Mfdbd68",
-   "line": "Zach Bryan uploaded a new video covering \"Kentucky Hurricane\" by Ian Noe, a lesser-known Kentucky songwriter. Good taste travels.",
+   "line": "Zach Bryan covered \"Kentucky Hurricane\" by Kentucky songwriter Ian Noe and uploaded the video to YouTube. Nice way to share the spotlight.",
    "city": ""
   },
   {
-   "id": "M5c8408",
-   "line": "Ashley Cooke is releasing her first-ever Christmas EP, called WRAPPED. Early gift for country fans.",
+   "id": "M0f9a21",
+   "line": "Ty Myers is the first headliner announced for Musikfest 2027 in Bethlehem, Pennsylvania. Early bird gets the stage.",
+   "city": "Bethlehem, Pa."
+  },
+  {
+   "id": "Mac09d3",
+   "line": "Shania Twain will kick off her 2027 UK tour in North Yorkshire. She's bringing the man, and the feelings, overseas.",
    "city": ""
   },
   {
-   "id": "M7731f4",
-   "line": "Parker McCollum says he's raising his son to be respectful above all else, even if brains don't run in the family. Manners first, math later.",
+   "id": "M8d313c",
+   "line": "Two brothers Irish step danced to Beyonce's country hit \"Texas Hold 'Em\" in a video that's pure delight. Country with a jig.",
+   "city": ""
+  },
+  {
+   "id": "M4b0fb4",
+   "line": "Miranda Lambert says writing \"Over You\" with ex-husband Blake Shelton was magical, calling it a very special song to both of them. Some songs outlast everything.",
    "city": ""
   }
  ],
  "music_drop": [],
  "weird": [
   {
-   "id": "Wa73495",
-   "line": "Animal rescuers in Virginia solved the mystery of a hawk stuck in a driveway: it was too fat to fly. Even hawks overdo the holidays.",
-   "city": "Virginia"
-  },
-  {
    "id": "Wf906a5",
-   "line": "Firefighters in Texas rescued a raccoon spotted high in a tree with its head stuck in a hollow. He's really nosy.",
+   "line": "Texas firefighters rescued a raccoon spotted high up in a tree with its head stuck in a hollow. Nobody asked how it got that curious.",
    "city": "Texas"
   },
   {
+   "id": "W99169e",
+   "line": "A 60-year-old Pennsylvania man broke a Guinness World Record by attending 1,207 movie screenings in one year, about 3.3 a day. His popcorn budget must be wild.",
+   "city": "Pennsylvania"
+  },
+  {
+   "id": "Wa73495",
+   "line": "Animal rescuers in Virginia solved the mystery of a hawk stuck in a driveway: the bird was too darn fat to fly. Somebody skipped leg day, and ate everything else.",
+   "city": "Virginia"
+  },
+  {
+   "id": "W5f33de",
+   "line": "A car stolen 30 years ago led to a surprise lien on a South Florida woman's license tag. Talk about a long-lost getaway car.",
+   "city": "South Florida"
+  },
+  {
+   "id": "W6aa415",
+   "line": "A black bear spotted on a school campus in Craryville triggered a lockout. The bear skipped the permission slip.",
+   "city": "Craryville"
+  },
+  {
+   "id": "W4f4614",
+   "line": "A rescued beaver named Blossom showed off his bowling skills, nudging a bright blue ball and mini-pumpkins around a Mississippi sanctuary. Strike one for the beavers.",
+   "city": "Mississippi"
+  },
+  {
    "id": "W6ac76f",
-   "line": "A California officer was lifted to a hangar roof to save a baby raccoon and reunite it with its mom. Best lift of the day.",
+   "line": "A California officer was lifted to a hangar roof to save a baby raccoon and help reunite it with its mom. Best bucket ride ever.",
    "city": "California"
   },
   {
    "id": "W022bf0",
-   "line": "A Wisconsin angler shattered a decades-old state smallmouth bass record with a 9.7-pound fish caught in Green Bay. Biggest fish story is true.",
+   "line": "A Wisconsin angler's 9.7-pound smallmouth bass from Green Bay broke a state record that had stood for about 75 years. That one did not get away.",
    "city": "Green Bay, Wis."
   },
   {
    "id": "W0dfe33",
-   "line": "A Hayward DNR team netted a record 7-foot-4 lake sturgeon in Sawyer County, Wisconsin. That's taller than most basketball players.",
+   "line": "A Hayward DNR team netted a record 7-foot-4 lake sturgeon in Sawyer County, Wisconsin. That's longer than most couches.",
    "city": "Sawyer County, Wis."
   },
   {
-   "id": "W4f4614",
-   "line": "A rescued beaver named Blossom showed off his bowling skills at a Mississippi sanctuary, nudging a blue ball and mini pumpkins around. He's a natural.",
-   "city": "Mississippi"
-  },
-  {
-   "id": "W6aa415",
-   "line": "A black bear on a Craryville, New York, school campus triggered a lockout and a lot of jokes. Class was bear-ly in session.",
-   "city": "Craryville, N.Y."
-  },
-  {
-   "id": "W89d0a4",
-   "line": "A Florida man preparing to sell his $500,000 home discovered a $10 quitclaim deed affecting his ownership stake. Read the fine print.",
-   "city": "Florida"
-  },
-  {
    "id": "W9696eb",
-   "line": "A U.S. student's jet-powered drone hit 491 mph and claimed the world's fastest-flight record for drones. Homework with a boom.",
-   "city": ""
-  },
-  {
-   "id": "Wc6ae43",
-   "line": "A beaked \"hell chicken\" dinosaur is the first dinosaur found to have eaten fruit. Even dinosaurs got their five a day.",
-   "city": ""
-  },
-  {
-   "id": "W88c831",
-   "line": "Rescued bear cubs in Colorado are eating 2,000 pounds of fruit a week because drought wiped out their wild food. That's one big grocery bill.",
-   "city": "Colorado"
-  },
-  {
-   "id": "Wf80618",
-   "line": "Sam Trust posted that a friend's wedding gift came presented with a packing slip, calling it the best wedding gift format ever. Gift receipts, level up.",
-   "city": ""
-  },
-  {
-   "id": "Wf0c6c2",
-   "line": "Legend says that if you drive Route 351 near Koppel, Pennsylvania, at night, you might see a glowing green man haunting the highway. Roll up the windows.",
-   "city": "Koppel, Pa."
-  },
-  {
-   "id": "W12b918",
-   "line": "Scientists identified one of two 160-million-year-old squid fossils so fat they break every record. Even ancient squid skipped no meals.",
-   "city": ""
-  },
-  {
-   "id": "Wde3613",
-   "line": "Scientists detected dinosaur blood cells in a 115-million-year-old fossil. Talk about a long shelf life.",
+   "line": "A U.S. student's jet-powered drone hit 491 mph, claiming the world's fastest-flight record for a drone. Don't try catching that with a net.",
    "city": ""
   },
   {
    "id": "W35dd98",
-   "line": "Honda is trying to break a world record with a 150 mph lawn mower. Mow fast, Saturday chores.",
+   "line": "Honda is trying to break the world record with a 150-mph lawn mower. Saturday chores just got speedier.",
    "city": ""
+  },
+  {
+   "id": "Wf0c6c2",
+   "line": "Legend says that if you drive Route 351 near Koppel, Pennsylvania, at night, you might see a glowing green man. Check the headlights first.",
+   "city": "Koppel, Pa."
+  },
+  {
+   "id": "Wbe563f",
+   "line": "A meteorite found in the Sahara turns out to be a 4.1-billion-year-old piece of Mars. Not bad for a rock that hitched a ride.",
+   "city": ""
+  },
+  {
+   "id": "Wde3613",
+   "line": "Scientists detected dinosaur blood cells in a 115-million-year-old fossil. Old blood, brand new headline.",
+   "city": ""
+  },
+  {
+   "id": "We2b26b",
+   "line": "A beaked dinosaur nicknamed the hell chicken is the first dinosaur discovered to eat fruit. Even dinosaurs wanted their five a day.",
+   "city": ""
+  },
+  {
+   "id": "W12b918",
+   "line": "Scientists identified one of two 160-million-year-old squid fossils so fat they break every record. That squid never skipped dessert.",
+   "city": ""
+  },
+  {
+   "id": "W8fd92e",
+   "line": "An island fox from California's Channel Islands is only about the size of a house cat. Smallest fox, biggest cuteness.",
+   "city": "Channel Islands, Calif."
+  },
+  {
+   "id": "Wf80618",
+   "line": "A friend's wedding gift went viral on Nov. 2 because it came presented with a packing slip. Gift receipt included, apparently.",
+   "city": ""
+  },
+  {
+   "id": "W89d0a4",
+   "line": "A Florida man getting ready to sell his $500,000 home found a $10 quitclaim deed affecting his ownership stake. Ten bucks can complicate a lot.",
+   "city": "Florida"
   }
  ],
  "humor": [
   {
-   "id": "H588277",
-   "label": "",
-   "line": "Cookie Monster didn't have a name when he first appeared on Sesame Street in 1969, and his appetite covers everything, not just cookies. Me still want cookie.",
-   "city": ""
-  },
-  {
-   "id": "H3d2996",
-   "label": "",
-   "line": "Deviled eggs are also called eggs mimosa, stuffed eggs and dressed eggs. Same egg, four fancy names.",
-   "city": ""
-  },
-  {
-   "id": "Hd4ac17",
-   "label": "",
-   "line": "It started as a day for young kids learning shapes, but anyone can look up, down and every which way for circles. Circle back to this one later.",
-   "city": ""
-  },
-  {
-   "id": "Hf6c90d",
-   "label": "",
-   "line": "It marks the first commercial radio broadcast, on Pittsburgh's KDKA in 1920, which happened to be election night. Traffic has been busy ever since.",
-   "city": ""
-  },
-  {
-   "id": "H080710",
-   "label": "",
-   "line": "National Day Calendar started it in 2017 to honor Ohio as the 17th state. Seventeen shows up twice, which is hard to ignore.",
-   "city": ""
-  },
-  {
-   "id": "Hd99da1",
-   "label": "",
-   "line": "It lands on the birthday of John Montagu, the fourth Earl of Sandwich, who by legend came up with the sandwich in 1762. Lunch has been between bread ever since.",
-   "city": ""
-  },
-  {
    "id": "H73cc8e",
    "label": "",
-   "line": "It's the one day you're encouraged to use overused phrases as much as possible. Time to hit the ground running.",
+   "line": "People are asked to use cliché phrases as much as possible, and the day's website lists 681 of them to choose from. It's not rocket science.",
    "city": ""
   },
   {
    "id": "H98d6f2",
    "label": "",
-   "line": "The idea is to hand someone a dollar and tell them what day it is, so they pass one along too. Cheapest pay-it-forward around.",
+   "line": "People are encouraged to hand a dollar to someone they know or a total stranger, and to tell them what day it is so they pass one along. Inflation's loss is a neighbor's gain.",
+   "city": ""
+  },
+  {
+   "id": "Hd99da1",
+   "label": "",
+   "line": "It falls on the birthday of John Montagu, the Earl of Sandwich, born in 1718. Lunch with his name on it.",
    "city": ""
   },
   {
    "id": "H42d956",
    "label": "",
-   "line": "Jellyfish are about 95 percent water, have no bones, and are not actually fish. Talk about an identity crisis.",
+   "line": "A jellyfish is about 95 percent water, and the lion's mane can weigh over 440 pounds. That's a lot of jelly for one toast.",
    "city": ""
   },
   {
-   "id": "H3ce96c",
+   "id": "H197d0d",
    "label": "",
-   "line": "A woman who calls herself America's Premier Eventologist created it in 1996, and it lands on every Friday the 13th plus Election Day. Sure, why not.",
+   "line": "It kicks off Eat Smart Month and began in 2017 with the American Heart Association. Good luck holding that line through Thanksgiving.",
    "city": ""
   },
   {
    "id": "Hde10b1",
    "label": "",
-   "line": "Howard Carter found King Tut's tomb in 1922, and Tut became pharaoh at age nine. Most nine-year-olds just get a bike.",
+   "line": "King Tut became pharaoh at age nine, and Howard Carter found his tomb in 1922. Today's nine-year-olds can barely run the TV remote.",
    "city": ""
   },
   {
    "id": "Hdc6f8d",
    "label": "",
-   "line": "It's the one day you're officially allowed to ignore everyone who said to go easy on candy. Halloween leftovers, rejoice.",
+   "line": "Candy starts as sugar dissolved in water, and the hotter the water, the more sugar dissolves. Science has never tasted so good.",
    "city": ""
   },
   {
    "id": "H155483",
    "label": "",
-   "line": "Dr. Marthenia \"Tina\" Dupree spent twelve years as director of community relations and training at one of the largest chicken restaurants in the world. That's a lot of drumsticks.",
+   "line": "It honors Dr. Tina Dupree, who spent twelve years at one of the largest chicken restaurants in the world as Director of Community Relations and Training. Talk about a well-feathered career.",
    "city": ""
   },
   {
    "id": "H2b1973",
    "label": "",
-   "line": "Kenner's first Easy-Bake Oven in 1963 used an ordinary light bulb as its heat source. Talk about a bright idea.",
+   "line": "Kenner introduced the toy oven in 1963, and the original used an ordinary light bulb for heat. Cakes baked by lightbulb, that's a bright idea.",
    "city": ""
   },
   {
-   "id": "H323a26",
+   "id": "H3c3333",
    "label": "",
-   "line": "The first American doughnuts were little \"nuts\" of dough that the Pilgrims brought from Holland. The holes came much later.",
-   "city": ""
-  },
-  {
-   "id": "H4ac874",
-   "label": "",
-   "line": "Stephanie and Adrienne Vendetti, founders of the website How to be a Redhead, created it to help redheads love their hair. Compliment a redhead today.",
-   "city": ""
-  },
-  {
-   "id": "H17fb15",
-   "label": "",
-   "line": "Men who usually don't cook make dinner, while everyone who normally cooks has to stay out of the kitchen unless there's an emergency. Dinner is served, eventually.",
+   "line": "The old American Football League gave the game the scoreboard clock, two-point conversions and player names on jerseys. Finally, someone to blame for the two-point stress.",
    "city": ""
   },
   {
    "id": "Hd54856",
    "label": "",
-   "line": "It began after Bank of America announced a $5 monthly debit card fee in 2011, and about 40,000 people joined credit unions that first day. Five bucks can start a movement.",
+   "line": "After Bank of America announced a $5 monthly debit card fee in 2011, credit unions reported 440,000 new customers in about five weeks. Five bucks can start a stampede.",
+   "city": ""
+  },
+  {
+   "id": "H323a26",
+   "label": "",
+   "line": "The first American doughnuts were little nuts of dough the Pilgrims brought from Holland. Pilgrims were basically the first bakery.",
+   "city": ""
+  },
+  {
+   "id": "H4ac874",
+   "label": "",
+   "line": "Stephanie and Adrienne Vendetti of the website How to be a Redhead created it to help redheaded women love their hair. Ginger pride, officially.",
+   "city": ""
+  },
+  {
+   "id": "H17fb15",
+   "label": "",
+   "line": "Men who don't usually cook make dinner, while everyone who normally cooks stays out of the kitchen unless there's an emergency. A smoke alarm counts as an emergency.",
    "city": ""
   },
   {
    "id": "H30d637",
    "label": "",
-   "line": "James Naismith nailed peach baskets ten feet high in a YMCA gym, and the first game used a soccer ball. Nothing but peach.",
+   "line": "James Naismith's first basketball game used peach baskets nailed ten feet high, a soccer ball and nine players per team. Nobody dunked yet.",
    "city": ""
   },
   {
    "id": "H6e9d8c",
    "label": "",
-   "line": "Sal and Margarita Manriquez started selling ballpark nachos at the State Fair in Dallas in 1964. Cheese has been flying ever since.",
+   "line": "Ballpark nachos started as \"Margarita's State Fair Nachos,\" sold at the Dallas State Fair in 1964 by Sal Manriquez. Margarita deserves a seat at every game.",
    "city": ""
   },
   {
    "id": "H3eab4d",
    "label": "",
-   "line": "Adolphe Sax, a Belgian instrument maker, invented the saxophone, and the first ones were designed for military bands. Smooth jazz started somewhere.",
+   "line": "It falls on the birthday of its inventor, Adolphe Sax, born in Belgium in 1814. Elevator music owes him a thank-you.",
    "city": ""
   },
   {
    "id": "Ha09116",
    "label": "",
-   "line": "It asks what three things you'd bring if you were stranded somewhere with no way home. Snacks. Always bring snacks.",
+   "line": "Some people play it as a challenge, getting lost on purpose and finding their way back without a compass. Dad still won't ask for directions.",
+   "city": ""
+  },
+  {
+   "id": "H7d076b",
+   "label": "",
+   "line": "Florida attorney Nader Anise created it in 2001, and no lawyer jokes or lawyer bashing are allowed. Somebody tell the comedians.",
    "city": ""
   },
   {
    "id": "Hde25b1",
    "label": "",
-   "line": "The teddy bear exists because a 1902 cartoon showed President Theodore Roosevelt refusing to shoot a bear, which inspired a New York couple to make \"Teddy's bear.\" Best hunting trip ever for toy stores.",
+   "line": "The teddy bear was named after President Theodore Roosevelt after a 1902 cartoon showed him refusing to shoot a bear. Best thing a hunting trip ever produced.",
    "city": ""
   },
   {
    "id": "Heaab77",
    "label": "",
-   "line": "It marks 1973, when New Jersey became the first state to allow girls to play Little League baseball. Play ball, everybody.",
+   "line": "In 1973, New Jersey became the first state to allow girls in Little League, a year after 11-year-old Marcia Pepe of Hoboken played three games for her team. A big win for fairness.",
    "city": ""
   },
   {
    "id": "Hfab2e9",
    "label": "",
-   "line": "The word \"notary\" comes from a shorthand that Cicero's clerk invented to take down Cicero's speeches. The original stamp of approval.",
+   "line": "The word notary comes from nota, the shorthand Cicero's clerk Tiro used to take down Cicero's speeches. Fancy shorthand, serious stamp.",
+   "city": ""
+  },
+  {
+   "id": "H4a2366",
+   "label": "",
+   "line": "To count as dark chocolate it needs at least 35 percent cocoa solids, and chocolate-covered almonds are the classic pairing. Almonds make it practically health food.",
    "city": ""
   },
   {
    "id": "H767e10",
    "label": "",
-   "line": "Puns show up in Sumerian cuneiform and Egyptian and Mayan hieroglyphics, so the groaning is thousands of years old. Those groans are ancient history.",
+   "line": "Puns go back to Sumerian cuneiform and Egyptian and Mayan hieroglyphics, and today you're supposed to laugh instead of groan. Dad jokes are officially ancient.",
    "city": ""
   },
   {
    "id": "H7eb821",
    "label": "",
-   "line": "The suggested celebration is reading Dr. Seuss books like Fox in Socks, which are full of tongue twisters. Say it three times fast.",
+   "line": "Fans are told to read Dr. Seuss books like Fox in Socks and Oh Say Can You Say? out loud. Good luck on live radio.",
    "city": ""
   },
   {
    "id": "H73efb3",
    "label": "",
-   "line": "Cappuccino is named for the Capuchin friars, whose reddish-brown hooded robes matched the color of the drink. Coffee with a hood.",
+   "line": "Cappuccino is named for the hooded, reddish-brown robes of Capuchin friars, since cappuccio means hood in Italian. Your coffee is wearing a hood.",
    "city": ""
   },
   {
    "id": "H06e64f",
    "label": "",
-   "line": "The pupusa is El Salvador's national dish, a thick handmade tortilla stuffed with cheese, beans or pork and served with cabbage relish. Hard to beat a stuffed tortilla.",
+   "line": "Pupusas are El Salvador's national dish, and cooking tools were found at Joya de Cerén, a site buried by volcanic ash about 2,000 years ago. Ancient lunch, still delicious.",
+   "city": ""
+  },
+  {
+   "id": "H84646d",
+   "label": "",
+   "line": "The creators, Thomas and Ruth Roy, say don't forget the sauerkraut and garlic. Hope nobody has a date.",
    "city": ""
   },
   {
    "id": "Haaf7f1",
    "label": "",
-   "line": "A pianist from Belarus named Ivan Manko created it in 2014. It hits all the right keys.",
+   "line": "In Minsk, pianist Nikolai Panok once played for six hours without stopping to celebrate it. His fingers needed a vacation.",
+   "city": ""
+  },
+  {
+   "id": "H959112",
+   "label": "",
+   "line": "Early British puddings were savory and sometimes cooked in an animal stomach. Dessert has come a long way.",
+   "city": ""
+  },
+  {
+   "id": "Hb6681a",
+   "label": "",
+   "line": "Carl Sagan's 1980 series Cosmos was the most widely viewed PBS program of its time. Science never looked so good on TV.",
+   "city": ""
+  },
+  {
+   "id": "Hc911d5",
+   "label": "",
+   "line": "A fried chicken sandwich is handheld, so you can eat fried chicken and keep your hands clean. Napkins sold separately.",
+   "city": ""
+  },
+  {
+   "id": "Hc1a1c9",
+   "label": "",
+   "line": "The Pennsylvania Dutch created scrapple, and one of its old names, pawnhaus, means finely chopped. Nothing goes to waste.",
+   "city": ""
+  },
+  {
+   "id": "H4bc7fd",
+   "label": "",
+   "line": "Greek yogurt is regular yogurt with the whey strained out, making it thicker and creamier. It's yogurt that hit the gym.",
    "city": ""
   }
  ]

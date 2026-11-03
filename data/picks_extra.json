@@ -1,140 +1,129 @@
 {
- "made": "2026-11-02",
+ "made": "2026-11-03",
  "timely": [
   {
-   "id": "T306bcb",
+   "id": "T9ac9f0",
    "label": "Gas Prices",
-   "line": "Missouri's average for regular gas is $3.83, down 24 cents from a month ago and up $1.16 from a year ago, according to AAA, and Springfield averages $3.75. Your tank noticed.",
-   "date": "2026-11-02"
-  },
-  {
-   "id": "Ta871c3",
-   "label": "On This Day",
-   "line": "Faith Hill reached number one on the Billboard 200 with her album \"Cry\" in 2002. Still a crossover classic.",
-   "date": "2026-11-02"
-  },
-  {
-   "id": "Ta6323b",
-   "label": "TV Tonight",
-   "line": "NBC's comedy St. Denis Medical returns for season three on Monday, Nov. 2, with Wendi McLendon-Covey and David Alan Grier. Hospital humor, no co-pay.",
-   "date": "2026-11-02"
-  },
-  {
-   "id": "T308983",
-   "label": "On This Day",
-   "line": "CBS televised The Wizard of Oz for the first time in prime time in 1956. No ruby slippers required.",
+   "line": "Missouri's average for regular gas is $3.82 today, down 24 cents from a month ago and up $1.15 from a year ago, according to AAA. Springfield averages $3.70. Fill up before it changes its mind.",
    "date": "2026-11-03"
-  },
-  {
-   "id": "T83179d",
-   "label": "On This Day",
-   "line": "Shania Twain released \"Come On Over\" in 1997, the best-selling country album ever by a female artist in the U.S. Let's go, girls.",
-   "date": "2026-11-04"
-  },
-  {
-   "id": "Td95492",
-   "label": "On This Day",
-   "line": "Harry Potter and the Philosopher's Stone premiered in London in 2001. Time for a family movie night.",
-   "date": "2026-11-04"
-  },
-  {
-   "id": "T82090a",
-   "label": "On This Day",
-   "line": "The Beach Boys hit No. 1 on the Billboard Hot 100 with \"Kokomo\" in 1988. Sing along, you know you will.",
-   "date": "2026-11-05"
-  },
-  {
-   "id": "T9e50ee",
-   "label": "Family Movie",
-   "line": "The animated Cat in the Hat, with Bill Hader voicing the Cat, hits theaters Friday, Nov. 6. Bring snacks, the Cat brings the chaos.",
-   "date": "2026-11-06"
-  },
-  {
-   "id": "Ta76b3b",
-   "label": "Veterans Day",
-   "line": "Veterans Day is Wednesday, Nov. 11, nine days away. Plan a thank-you now.",
-   "date": "2026-11-02"
   },
   {
    "id": "Ta7d631",
    "label": "Hunting Season",
-   "line": "Archery deer season ends Friday, Nov. 13, in 11 days. Last call for bowhunters.",
-   "date": "2026-11-02"
+   "line": "Archery deer season ends Friday, Nov. 13, in 10 days. Time to make those last sits count.",
+   "date": "2026-11-03"
   },
   {
    "id": "T70c2f4",
    "label": "Hunting Season",
-   "line": "The November portion of firearms deer season opens Saturday, Nov. 14, in 12 days, and runs through Nov. 24. Dust off the orange vest.",
-   "date": "2026-11-02"
+   "line": "The November portion of firearms deer season opens Saturday, Nov. 14, in 11 days, and runs through Nov. 24. Alarm clocks will be set very early.",
+   "date": "2026-11-03"
   },
   {
    "id": "T1997d6",
    "label": "Hunting Season",
-   "line": "Youth firearms deer season opens Friday, Nov. 27, in 25 days, and runs through Nov. 29. Kids, start practicing.",
-   "date": "2026-11-02"
+   "line": "Youth firearms deer season opens Friday, Nov. 27, in 24 days, and runs through Nov. 29. Kids get first dibs.",
+   "date": "2026-11-03"
+  },
+  {
+   "id": "Ta76b3b",
+   "label": "Veterans Day",
+   "line": "Veterans Day is Wednesday, Nov. 11, in 8 days. A good week to thank a veteran.",
+   "date": "2026-11-03"
   },
   {
    "id": "Tc44f8a",
    "label": "Thanksgiving",
-   "line": "Thanksgiving is Thursday, Nov. 26, in 24 days. Start the pie planning.",
-   "date": "2026-11-02"
+   "line": "Thanksgiving is Thursday, Nov. 26, in 23 days. Start practicing your stretchy pants.",
+   "date": "2026-11-03"
+  },
+  {
+   "id": "Ta0ff31",
+   "label": "TV Anniversary",
+   "line": "The sitcom The Nanny premiered on CBS in 1993 with Fran Drescher as Fran Fine. That laugh still carries.",
+   "date": "2026-11-03"
+  },
+  {
+   "id": "T1801a3",
+   "label": "TV Anniversary",
+   "line": "Diff'rent Strokes premiered on NBC in 1978, starring Gary Coleman and Todd Bridge with Conrad Bain. Whatchu talkin' 'bout, 48 years?",
+   "date": "2026-11-03"
+  },
+  {
+   "id": "T83179d",
+   "label": "Country Anniversary",
+   "line": "Shania Twain released Come On Over in 1997, the best-selling country album ever by a female artist in the U.S. Still makes you feel like a woman.",
+   "date": "2026-11-04"
+  },
+  {
+   "id": "Td95492",
+   "label": "Movie Anniversary",
+   "line": "Harry Potter and the Philosopher's Stone premiered at Odeon Leicester Square in London in 2001, 25 years ago. Time to dust off the wands.",
+   "date": "2026-11-04"
+  },
+  {
+   "id": "T4f9566",
+   "label": "Country Anniversary",
+   "line": "Johnny Cash released American IV: The Man Comes Around in 2002, the album with his cover of \"Hurt\" and his last studio release in his lifetime. A country classic.",
+   "date": "2026-11-05"
+  },
+  {
+   "id": "T9e50ee",
+   "label": "Movie Night",
+   "line": "The animated Cat in the Hat, with Bill Hader voicing the Cat, opens Friday, Nov. 6, in theaters. Family movie night, sorted.",
+   "date": "2026-11-06"
   }
  ],
  "johnsons": [
   {
-   "id": "J092982",
+   "id": "Jf267fb",
    "label": "Outdoors",
-   "line": "Missouri hunters took 1,633 turkeys in the firearms portion of fall turkey season, and Laclede County tied for second with 42 birds, behind Greene County's 56. Laclede hunters know where the birds are."
+   "line": "The Missouri Department of Conservation is hosting November events across the Southwest Region on fly tying, woodcarving and winter bird feeding. Free skills, no gear shopping first."
   },
   {
-   "id": "J674b53",
+   "id": "J196990",
    "label": "Outdoors",
-   "line": "Missouri hunters took 36 black bears this season out of a maximum of 60, during the Oct. 17 to 30 hunt. The bears had good manners."
+   "line": "A MeatEater episode says the rut won't make up for low-effort sits: put in the time, then pivot to new spots when plans fail. Patience beats luck."
   },
   {
-   "id": "Jeb0a60",
+   "id": "Jd0b452",
    "label": "Outdoors",
-   "line": "Water pumping has resumed at Eagle Bluffs Conservation Area, so waterfowl hunting will be possible on opening day of the Middle Zone duck and coot season, Nov. 7. The ducks hadn't heard."
+   "line": "Counter-drone technology has reached deer hunting, and landowners are starting to fight back against unwanted drone activity on their property. Even deer want privacy."
   },
   {
-   "id": "J8fbdb0",
-   "label": "Outdoors",
-   "line": "The Missouri Department of Conservation is hosting a free field-to-freezer mentored antlerless deer hunt for ages 10 to 35 in Randolph County, Dec. 4 and 5. A good first hunt."
-  },
-  {
-   "id": "J8a9261",
-   "label": "Outdoors",
-   "line": "The Missouri Department of Conservation is offering free November programs in the Ozark Region, including campfire cooking and fly tying. Dinner and a hobby, no cost."
-  },
-  {
-   "id": "J22bc76",
-   "label": "Family",
-   "line": "A Reddit parent of a 10-year-old and a 13-year-old is considering a housewide YouTube ban because the son's feed is all Fortnite or AI slop. Plenty of parents know that struggle."
-  },
-  {
-   "id": "J86a09b",
-   "label": "Cooking",
-   "line": "Budget Bytes has a chicken corn chowder that is creamy without cream, with smoky bacon, chicken, corn and potatoes, ready in 50 minutes and good for meal prep. Soup weather is here."
-  },
-  {
-   "id": "Jc9a802",
-   "label": "Cooking",
-   "line": "The Kitchn has a cottage cheese pasta alla vodka that's ready in 30 minutes. Weeknight dinner, handled."
-  },
-  {
-   "id": "Jfdf1e3",
-   "label": "Cooking",
-   "line": "Scary Mommy rounded up 19 easy, cheap Christmas baking recipes for families who can't afford 30-ingredient desserts. Holiday magic on a budget."
-  },
-  {
-   "id": "J7cb572",
-   "label": "Cooking",
-   "line": "Scary Mommy rounded up 16 easy Christmas recipes for feeding a crowd when the whole family descends on your house. Plan the menu before they arrive."
-  },
-  {
-   "id": "Jc1c274",
+   "id": "Ja5ba78",
    "label": "Life",
-   "line": "NerdWallet says Americans are coordinating with friends and family to save money this holiday season. Teamwork makes the budget work."
+   "line": "A tire can have good tread and still be too old: the age is a four-digit number stamped on the sidewall that almost nobody reads. Time to check the fine print."
+  },
+  {
+   "id": "Jdfe78a",
+   "label": "Life",
+   "line": "Mortgage rates slid noticeably lower Monday, Nov. 2, enough to catch home buyers' attention. Good news for house hunters."
+  },
+  {
+   "id": "Je6029d",
+   "label": "Life",
+   "line": "New cars now average over $50,000, and only six brands average under $40,000, with Mitsubishi cheapest at $33,957. Maybe keep that old truck running."
+  },
+  {
+   "id": "J28fa14",
+   "label": "Life",
+   "line": "NerdWallet says to trade time and extra thought to make a $50 holiday gift feel like $100. Thoughtful beats expensive."
+  },
+  {
+   "id": "J9db17e",
+   "label": "Life",
+   "line": "Walmart will have three major shopping events this holiday season, not just Black Friday. More chances to save, or to overspend."
+  },
+  {
+   "id": "J484f9f",
+   "label": "Family",
+   "line": "A Reddit dad found a sweet note from his 9-year-old son in the lunch box at the end of the day, though nearly everything he packed came back home. Love note, lunch untouched."
+  },
+  {
+   "id": "Jc47640",
+   "label": "Family",
+   "line": "A Reddit mom says her 5-year-old knocked on doors, peeked in the candy bowls and said no thanks, he didn't like anything. Picky even about free candy."
   }
  ]
 }
