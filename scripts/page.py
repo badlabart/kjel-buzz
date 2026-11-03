@@ -247,6 +247,7 @@ ED_JS = r"""
     x.onreadystatechange=function(){
       if(x.readyState!==4) return;
       var d=null; try{d=JSON.parse(x.responseText);}catch(e){}
+      if(d && d.ok && !d.edited) d={ok:false,error:'The Story Editor is not switched on yet: the WireReady Google script needs its update.'};  // old script deployed
       cb(d);
     };
     body.key=getKey();
@@ -310,7 +311,7 @@ ED_JS = r"""
     if(busy) return;
     call({action:'edited'},function(d){
       if(d && d.ok) render(d.edited, res.getAttribute('data-id'));
-      else if(!busy) err.innerHTML=(d && d.error==='passcode')?'Open WireReady once and enter the passcode, then come back.':'Could not load saved stories. It will try again in a minute.';
+      else if(!busy) err.innerHTML=(d && d.error==='passcode')?'Open WireReady once and enter the passcode, then come back.':(d && d.error) || 'Could not load saved stories. It will try again in a minute.';
     });
   }
   ta.onkeyup=function(){err.innerHTML='';};
