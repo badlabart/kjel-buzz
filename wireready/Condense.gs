@@ -11,7 +11,7 @@
  *     status = queued | more | ok | blocked (a story the KJEL rules keep off the air; reason says why, story is empty)
  * Script property WORKER_SEEN: when the Mac last asked for work, so the page can say when the Mac is not answering.
  */
-var EDITORS = ['J', 'R'];
+var EDITORS = ['B', 'J', 'R'];
 var EDIT_KEEP_DAYS = 7;
 var WORDS_PER_SEC = 2.7;  // Boss's ideal 129-word sample reads at about 48 seconds
 
@@ -26,7 +26,7 @@ function seconds_(story) {
 }
 
 function condense_(text, by) {
-  if (EDITORS.indexOf(by) < 0) throw new Error('Tap J or R first: who is condensing this story?');
+  if (EDITORS.indexOf(by) < 0) throw new Error('Tap B, J or R first: who is condensing this story?');
   text = String(text || '').replace(/^\s+|\s+$/g, '');
   if (!text) throw new Error('Paste the story first.');
   if (text.length > MAX_TEXT) throw new Error('The story is too long');

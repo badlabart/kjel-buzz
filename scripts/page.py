@@ -102,7 +102,7 @@ WR_ADD = '<button class="wradd" type="button" id="wradd">+ Add Story</button>'
 WR_LOCK = ('<div class="wrlock" id="wrlock" style="display:none"><input type="password" id="wrpass" placeholder="Passcode"> '
            '<button type="button" id="wrunlock">Unlock</button></div>')
 WR_MSG = '<div class="empty" id="wrmsg">Loading...</div>'
-WR_TOOLBAR = f'<div class="wrtool">{WR_ADD}<a class="wradd edlink" href="../editor/" target="_blank">Story Editor &#8599;</a>{WR_LOCK}{WR_MSG}</div>'
+WR_TOOLBAR = f'<div class="wrtool">{WR_ADD}{WR_LOCK}{WR_MSG}</div>'
 WR_MODAL = ('<div class="wrmodal" id="wrmodal"><div class="wrwin"><div class="wrmt">Add story</div>'
             '<div class="wrby">Entered by: <label><input type="radio" name="wrby" value="B"> B</label> '
             '<label><input type="radio" name="wrby" value="J"> J</label> '
@@ -331,7 +331,7 @@ ED_JS = r"""
   ta.onkeyup=function(){err.innerHTML='';};
   go.onclick=function(){
     var v=ta.value.replace(/^\s+|\s+$/g,'');
-    if(!who){err.innerHTML='Tap J or R first.';return;}
+    if(!who){err.innerHTML='Tap B, J or R first.';return;}
     if(!v){err.innerHTML='Paste the story first.';return;}
     if(busy) return;
     busy=true; go.className='edgo busy'; go.innerHTML='Sending...'; err.innerHTML='';
@@ -675,8 +675,7 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_s
             cid = "wrc-" + col["key"]
             if wr["by"] == "ALL":  # the compact column on News: controls live in the column, newest few stories, link to the full page
                 cols.append(f'<div class="col wr"><h2>{esc(col["name"])} <span class="count" id="{cid}">0</span>'
-                            f'<a class="wrfull" href="{wr["full"]}" target="_blank">Full page &#8599;</a>'
-                            f'<a class="wrfull" href="editor/" target="_blank">Story Editor &#8599;</a></h2>'
+                            f'<a class="wrfull" href="{wr["full"]}" target="_blank">Full page &#8599;</a></h2>'
                             f'{WR_ADD}{WR_LOCK}{WR_MSG}<div class="wrlist" data-by="ALL" data-limit="{wr["limit"]}" '
                             f'data-count="{cid}" data-full="{wr["full"]}"></div></div>')
             else:  # one column of the full page
@@ -795,7 +794,7 @@ def write_editor(url, stamp, subdir="news/editor"):
     """The Story Editor page (Boss 2026-11-03): paste + J/R + Condense on the left, then one column per day for 7 days."""
     updated = datetime.fromisoformat(stamp)
     new_col = ('<div class="col new"><h2>New story</h2>'
-               '<div class="edwho" id="edwho">Who is editing? <button type="button">J</button><button type="button">R</button></div>'
+               '<div class="edwho" id="edwho">Who is editing? <button type="button">B</button><button type="button">J</button><button type="button">R</button></div>'
                '<textarea id="edtext" placeholder="Paste the story here"></textarea>'
                '<button type="button" class="edgo" id="edgo">Condense story</button><div class="ederr" id="ederr"></div>'
                '<div class="edres" id="edres"></div></div>')
@@ -807,7 +806,7 @@ def write_editor(url, stamp, subdir="news/editor"):
 <body class="ed" data-updated="{int(updated.timestamp() * 1000)}">
 <div class="top"><div class="logo">103<span class="star">&#9733;</span>7 <span class="call">KJEL</span></div>
 <div class="hd"><div class="title">Story Editor</div>
-<div class="meta">KJEL News &middot; paste a story, tap J or R, then Condense story</div></div></div>
+<div class="meta">KJEL News &middot; paste a story, tap B, J or R, then Condense story</div></div></div>
 <div class="board">{new_col}<div id="eddays" style="display:inline"></div></div>
 <script>{ED_JS.replace("__WR_URL__", json.dumps(url))}</script>
 </body></html>
