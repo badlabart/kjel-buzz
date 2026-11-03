@@ -17,7 +17,7 @@ Boss 2026-10-22. LIVE: https://badlabart.github.io/kjel-news/ (column) and https
 - Length: 20-45 sec (50 rare). Read time = words / 2.7. Under 20 sec shows SHORT.
 - Blocked stories (KJEL content rules) save with the reason and no copy.
 - Saved stories: 7 columns, today first, "Tuesday's Stories" etc., by the day entered. Older rows stay in the Sheet.
-- Files: `Condense.gs` (logic, public) + `Style.gs` (Boss's rules and before/after samples; GITIGNORED because the samples name real people). Both get pasted into the Apps Script project as their own files. Sheet tab `Condensed` (id, added, by, source, story, status, reason).
+- Files: `Condense.gs` (logic, public) + `Style.gs` (Boss's rules and before/after samples; GITIGNORED because the samples name real people). In Apps Script they are pasted together as ONE file named `Editor` (`cat wireready/Condense.gs wireready/Style.gs | pbcopy`). Sheet tab `Condensed` (id, added, by, source, story, status, reason).
 - Key: WireReady menu > Set Claude API key (Script property CLAUDE_KEY). Never in the repo.
 - Style rules from Boss 2026-11-03: never clock times, phone numbers, tickets or "more info"; never name a city/government department behind an event; no gambling words; DUI/DV/incest only with a public figure; child sex crimes only when more than one family is affected; public figures never get an age.
 
