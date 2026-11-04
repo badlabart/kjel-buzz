@@ -1,129 +1,96 @@
 {
- "made": "2026-11-03",
+ "made": "2026-11-04",
  "timely": [
   {
-   "id": "T9ac9f0",
+   "id": "Tc84c21",
    "label": "Gas Prices",
-   "line": "Missouri's average for regular gas is $3.82 today, down 24 cents from a month ago and up $1.15 from a year ago, according to AAA. Springfield averages $3.70. Fill up before it changes its mind.",
-   "date": "2026-11-03"
+   "line": "Missouri's average for regular gas is $3.80 today, down 24 cents from a month ago but up $1.12 from a year ago, according to AAA. Springfield averages $3.66. Cheaper than October, still pricey.",
+   "date": "2026-11-04"
   },
   {
    "id": "Ta7d631",
    "label": "Hunting Season",
-   "line": "Archery deer season ends Friday, Nov. 13, in 10 days. Time to make those last sits count.",
-   "date": "2026-11-03"
+   "line": "Archery deer season ends Friday, Nov. 13. Time to make those last sits count.",
+   "date": "2026-11-04"
   },
   {
    "id": "T70c2f4",
    "label": "Hunting Season",
-   "line": "The November portion of firearms deer season opens Saturday, Nov. 14, in 11 days, and runs through Nov. 24. Alarm clocks will be set very early.",
-   "date": "2026-11-03"
+   "line": "The November portion of firearms deer season opens Saturday, Nov. 14, and runs through Nov. 24. Set the alarm now, hunters.",
+   "date": "2026-11-04"
   },
   {
    "id": "T1997d6",
    "label": "Hunting Season",
-   "line": "Youth firearms deer season opens Friday, Nov. 27, in 24 days, and runs through Nov. 29. Kids get first dibs.",
-   "date": "2026-11-03"
+   "line": "Youth firearms deer season opens Friday, Nov. 27, and runs through Nov. 29. A perfect weekend for passing down the tradition.",
+   "date": "2026-11-04"
   },
   {
    "id": "Ta76b3b",
    "label": "Veterans Day",
-   "line": "Veterans Day is Wednesday, Nov. 11, in 8 days. A good week to thank a veteran.",
-   "date": "2026-11-03"
+   "line": "Veterans Day is Wednesday, Nov. 11, one week from today. Time to find a veteran to thank.",
+   "date": "2026-11-04"
   },
   {
    "id": "Tc44f8a",
    "label": "Thanksgiving",
-   "line": "Thanksgiving is Thursday, Nov. 26, in 23 days. Start practicing your stretchy pants.",
-   "date": "2026-11-03"
-  },
-  {
-   "id": "Ta0ff31",
-   "label": "TV Anniversary",
-   "line": "The sitcom The Nanny premiered on CBS in 1993 with Fran Drescher as Fran Fine. That laugh still carries.",
-   "date": "2026-11-03"
-  },
-  {
-   "id": "T1801a3",
-   "label": "TV Anniversary",
-   "line": "Diff'rent Strokes premiered on NBC in 1978, starring Gary Coleman and Todd Bridge with Conrad Bain. Whatchu talkin' 'bout, 48 years?",
-   "date": "2026-11-03"
+   "line": "Thanksgiving is Thursday, Nov. 26, in 22 days. Start clearing space in the freezer.",
+   "date": "2026-11-04"
   },
   {
    "id": "T83179d",
-   "label": "Country Anniversary",
-   "line": "Shania Twain released Come On Over in 1997, the best-selling country album ever by a female artist in the U.S. Still makes you feel like a woman.",
+   "label": "Music Anniversary",
+   "line": "Shania Twain released Come On Over in 1997, still the best-selling country album ever by a woman in the US. Still going strong after all these years.",
    "date": "2026-11-04"
   },
   {
-   "id": "Td95492",
-   "label": "Movie Anniversary",
-   "line": "Harry Potter and the Philosopher's Stone premiered at Odeon Leicester Square in London in 2001, 25 years ago. Time to dust off the wands.",
-   "date": "2026-11-04"
-  },
-  {
-   "id": "T4f9566",
-   "label": "Country Anniversary",
-   "line": "Johnny Cash released American IV: The Man Comes Around in 2002, the album with his cover of \"Hurt\" and his last studio release in his lifetime. A country classic.",
+   "id": "T82090a",
+   "label": "Music Anniversary",
+   "line": "The Beach Boys hit No. 1 on the Billboard Hot 100 with \"Kokomo\" in 1988, their first in over two decades. Time for a mental vacation.",
    "date": "2026-11-05"
   },
   {
    "id": "T9e50ee",
    "label": "Movie Night",
-   "line": "The animated Cat in the Hat, with Bill Hader voicing the Cat, opens Friday, Nov. 6, in theaters. Family movie night, sorted.",
-   "date": "2026-11-06"
+   "line": "The animated Cat in the Hat movie has Bill Hader voicing the Cat, who is sent to cheer up siblings Gabby and Sebastian in their new town. Hats off to family movie night.",
+   "date": "2026-11-04"
   }
  ],
  "johnsons": [
   {
-   "id": "Jf267fb",
+   "id": "Jc4db6e",
    "label": "Outdoors",
-   "line": "The Missouri Department of Conservation is hosting November events across the Southwest Region on fly tying, woodcarving and winter bird feeding. Free skills, no gear shopping first."
+   "line": "Fishing restrictions are lifted through Feb. 1, 2027, at Willmore Park's North Lake in St. Louis under a Missouri Department of Conservation fish salvage order. Free for all, so grab the pole."
   },
   {
-   "id": "J196990",
+   "id": "Jb81e9b",
    "label": "Outdoors",
-   "line": "A MeatEater episode says the rut won't make up for low-effort sits: put in the time, then pivot to new spots when plans fail. Patience beats luck."
+   "line": "Wisconsin angler Austin Schiefer borrowed a friend's lure on Green Bay and immediately caught a record smallmouth bass. Always borrow your buddy's best bait."
   },
   {
-   "id": "Jd0b452",
-   "label": "Outdoors",
-   "line": "Counter-drone technology has reached deer hunting, and landowners are starting to fight back against unwanted drone activity on their property. Even deer want privacy."
-  },
-  {
-   "id": "Ja5ba78",
+   "id": "J4b78cf",
    "label": "Life",
-   "line": "A tire can have good tread and still be too old: the age is a four-digit number stamped on the sidewall that almost nobody reads. Time to check the fine print."
+   "line": "Dollar General's CEO says even $100,000 earners are hunting for bargains, and a shelf full of low prices can still cost more per ounce. Do the math before the cart."
   },
   {
-   "id": "Jdfe78a",
+   "id": "Jad4dee",
    "label": "Life",
-   "line": "Mortgage rates slid noticeably lower Monday, Nov. 2, enough to catch home buyers' attention. Good news for house hunters."
+   "line": "Mortgage rates eased again Tuesday, giving buyers modest relief from rates above 7%. Slowly heading the right direction."
   },
   {
-   "id": "Je6029d",
-   "label": "Life",
-   "line": "New cars now average over $50,000, and only six brands average under $40,000, with Mitsubishi cheapest at $33,957. Maybe keep that old truck running."
+   "id": "J64a6a0",
+   "label": "Cooking",
+   "line": "A Reddit meal prepper says a case of Ball wide mouth jars from Target cost $14 and works as single-serve meal prep containers. Mason jars, the original lunchbox."
   },
   {
-   "id": "J28fa14",
-   "label": "Life",
-   "line": "NerdWallet says to trade time and extra thought to make a $50 holiday gift feel like $100. Thoughtful beats expensive."
+   "id": "J68a2c8",
+   "label": "Cooking",
+   "line": "A Skinnytaste slow cooker turkey breast recipe makes its own gravy, handy for a Thanksgiving with a smaller crowd. Gravy without the drama."
   },
   {
-   "id": "J9db17e",
-   "label": "Life",
-   "line": "Walmart will have three major shopping events this holiday season, not just Black Friday. More chances to save, or to overspend."
-  },
-  {
-   "id": "J484f9f",
-   "label": "Family",
-   "line": "A Reddit dad found a sweet note from his 9-year-old son in the lunch box at the end of the day, though nearly everything he packed came back home. Love note, lunch untouched."
-  },
-  {
-   "id": "Jc47640",
-   "label": "Family",
-   "line": "A Reddit mom says her 5-year-old knocked on doors, peeked in the candy bowls and said no thanks, he didn't like anything. Picky even about free candy."
+   "id": "J22ba7e",
+   "label": "Cooking",
+   "line": "The Kitchn's sheet pan pork chops take only an hour. One pan, one hour, dinner's done."
   }
  ]
 }

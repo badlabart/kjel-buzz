@@ -1,208 +1,208 @@
 {
- "pulled": "2026-11-03T11:52:57.407396+00:00",
+ "pulled": "2026-11-04T10:32:22.272094+00:00",
  "artists": {
-  "Ella Langley": 1,
-  "Morgan Wallen": 2,
+  "Morgan Wallen": 1,
+  "Ella Langley": 2,
   "Luke Bryan": 3,
-  "Lauren Alaina": 4,
-  "Chase Matthew": 4,
-  "Zach John King": 5,
-  "Dan + Shay": 6,
-  "Luke Combs": 7,
-  "Koe Wetzel": 8,
-  "John Morgan": 9,
-  "Stella Lefty": 10,
-  "Riley Green": 11,
-  "Lainey Wilson": 12,
-  "John Mayer": 12,
-  "Jelly Roll": 13,
-  "Hudson Westbrook": 14,
-  "Zach Top": 15,
-  "Russell Dickerson": 16,
-  "Jason Aldean": 17,
-  "Corey Kent": 18,
-  "Greylan James": 19,
-  "Megan Moroney": 20,
-  "Blake Shelton": 21,
-  "Cody Johnson": 22,
-  "Kevin Powers": 23,
-  "Shaboozey": 23,
-  "Blake Whiten": 26,
-  "Tucker Wetmore": 27,
-  "Kenny Chesney": 28,
-  "Flatland Cavalry": 29,
-  "Vincent Mason": 30,
-  "Parker McCollum": 31,
-  "Chris Young": 32,
-  "Gavin Adcock": 33,
-  "Jacob Hackworth": 34,
-  "Carly Pearce": 35,
-  "Brantley Gilbert": 36,
-  "Kacey Musgraves": 37,
-  "Tyler Hubbard": 38,
-  "Cole Swindell": 39,
-  "Mack Geiger": 40
+  "Zach John King": 4,
+  "Luke Combs": 5,
+  "Koe Wetzel": 6,
+  "Dan + Shay": 7,
+  "John Morgan": 8,
+  "Riley Green": 9,
+  "Jelly Roll": 10,
+  "Lainey Wilson": 11,
+  "John Mayer": 11,
+  "Zach Top": 12,
+  "Hudson Westbrook": 13,
+  "Russell Dickerson": 14,
+  "Jason Aldean": 15,
+  "Greylan James": 16,
+  "Corey Kent": 17,
+  "Megan Moroney": 18,
+  "Blake Shelton": 19,
+  "Cody Johnson": 20,
+  "Chase Matthew": 21,
+  "Kevin Powers": 22,
+  "Shaboozey": 22,
+  "Blake Whiten": 24,
+  "Kenny Chesney": 25,
+  "Tucker Wetmore": 26,
+  "Flatland Cavalry": 27,
+  "Stella Lefty": 28,
+  "Vincent Mason": 28,
+  "Parker McCollum": 29,
+  "Chris Young": 30,
+  "Gavin Adcock": 31,
+  "Jacob Hackworth": 32,
+  "Carly Pearce": 33,
+  "Brantley Gilbert": 34,
+  "Kacey Musgraves": 35,
+  "Tyler Hubbard": 36,
+  "Mack Geiger": 37,
+  "Cole Swindell": 38,
+  "Brothers Osborne": 40
  },
  "songs": {
-  "Loving Life Again": [
-   1,
-   "Ella Langley"
-  ],
   "Been By Now": [
-   2,
+   1,
    "Morgan Wallen"
+  ],
+  "Loving Life Again": [
+   2,
+   "Ella Langley"
   ],
   "Country And She Knows It": [
    3,
    "Luke Bryan"
   ],
-  "All My Exes": [
-   4,
-   "Lauren Alaina Featuring Chase Matthew"
-  ],
   "Get To Drinkin'": [
-   5,
+   4,
    "Zach John King"
   ],
-  "Say So": [
-   6,
-   "Dan + Shay"
-  ],
   "Rethink Some Things": [
-   7,
+   5,
    "Luke Combs"
   ],
   "Jaded": [
-   8,
+   6,
    "Koe Wetzel & Ella Langley"
   ],
+  "Say So": [
+   7,
+   "Dan + Shay"
+  ],
   "Kid Myself": [
-   9,
+   8,
    "John Morgan"
   ],
-  "Boston": [
-   10,
-   "Stella Lefty"
-  ],
   "Think As You Drunk": [
-   11,
+   9,
    "Riley Green"
   ],
-  "Phone, Keys, Wallet": [
-   12,
-   "Lainey Wilson & John Mayer"
-  ],
   "Hands Up": [
-   13,
+   10,
    "Jelly Roll"
   ],
-  "Painted You Pretty": [
-   14,
-   "Hudson Westbrook"
+  "Phone, Keys, Wallet": [
+   11,
+   "Lainey Wilson & John Mayer"
   ],
   "South Of Sanity": [
-   15,
+   12,
    "Zach Top"
   ],
+  "Painted You Pretty": [
+   13,
+   "Hudson Westbrook"
+  ],
   "Worth Your Wild": [
-   16,
+   14,
    "Russell Dickerson"
   ],
   "Anytime Soon": [
-   17,
+   15,
    "Jason Aldean"
   ],
-  "Empty Words": [
-   18,
-   "Corey Kent"
-  ],
   "Water At A Wedding": [
-   19,
+   16,
    "Greylan James"
   ],
+  "Empty Words": [
+   17,
+   "Corey Kent"
+  ],
   "Medicine": [
-   20,
+   18,
    "Megan Moroney"
   ],
   "Let Him In Anyway": [
-   21,
+   19,
    "Blake Shelton"
   ],
   "Horseback": [
-   22,
+   20,
    "Cody Johnson"
   ],
-  "Move On": [
-   23,
-   "Kevin Powers & Shaboozey"
-  ],
   "Holdin' It Down": [
-   24,
+   21,
    "Chase Matthew"
   ],
+  "Move On": [
+   22,
+   "Kevin Powers & Shaboozey"
+  ],
   "Cowgirl": [
-   25,
+   23,
    "Shaboozey"
   ],
   "Bet On That": [
-   26,
+   24,
    "Blake Whiten"
   ],
-  "Who Told You That": [
-   27,
-   "Tucker Wetmore"
-  ],
   "Remember Me That Way": [
-   28,
+   25,
    "Kenny Chesney"
   ],
+  "Who Told You That": [
+   26,
+   "Tucker Wetmore"
+  ],
   "Never Comin' Back": [
-   29,
+   27,
    "Flatland Cavalry"
   ],
   "Something To Lose": [
-   30,
+   28,
    "Stella Lefty With Vincent Mason"
   ],
   "Killin' Me": [
-   31,
+   29,
    "Parker McCollum"
   ],
   "I Didn't Come Here To Leave": [
-   32,
+   30,
    "Chris Young"
   ],
   "Wannabe": [
-   33,
+   31,
    "Gavin Adcock"
   ],
   "What Took You So Long": [
-   34,
+   32,
    "Jacob Hackworth"
   ],
   "If I Don't Leave I'm Gonna Stay": [
-   35,
+   33,
    "Carly Pearce & Riley Green"
   ],
   "Good Damn": [
-   36,
+   34,
    "Brantley Gilbert"
   ],
   "Dry Spell": [
-   37,
+   35,
    "Kacey Musgraves"
   ],
   "Land": [
-   38,
+   36,
    "Tyler Hubbard"
   ],
+  "String By": [
+   37,
+   "Mack Geiger"
+  ],
   "Girl Dad": [
-   39,
+   38,
    "Cole Swindell"
   ],
-  "String By": [
+  "Finders Keepers": [
+   39,
+   "Luke Bryan & Luke Combs"
+  ],
+  "Born And Raised Hell": [
    40,
-   "Mack Geiger"
+   "Brothers Osborne Featuring Cody Johnson"
   ]
  }
 }
