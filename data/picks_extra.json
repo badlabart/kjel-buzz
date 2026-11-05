@@ -1,96 +1,135 @@
 {
- "made": "2026-11-04",
+ "made": "2026-11-05",
  "timely": [
   {
-   "id": "Tc84c21",
+   "id": "Te49eb8",
    "label": "Gas Prices",
-   "line": "Missouri's average for regular gas is $3.80 today, down 24 cents from a month ago but up $1.12 from a year ago, according to AAA. Springfield averages $3.66. Cheaper than October, still pricey.",
-   "date": "2026-11-04"
+   "line": "Missouri's average for regular gas is $3.77 today, down 26 cents from a month ago and up $1.08 from a year ago, according to AAA. Springfield averages $3.62. Fill up and smile a little."
   },
   {
    "id": "Ta7d631",
    "label": "Hunting Season",
-   "line": "Archery deer season ends Friday, Nov. 13. Time to make those last sits count.",
-   "date": "2026-11-04"
+   "line": "Missouri's archery deer season ends Friday, Nov. 13. Time to make that last sit count."
   },
   {
    "id": "T70c2f4",
    "label": "Hunting Season",
-   "line": "The November portion of firearms deer season opens Saturday, Nov. 14, and runs through Nov. 24. Set the alarm now, hunters.",
-   "date": "2026-11-04"
+   "line": "The November portion of firearms deer season opens Saturday, Nov. 14, and runs through Nov. 24. Time to find the orange hat."
+  },
+  {
+   "id": "Tc173d4",
+   "label": "Hunting Season",
+   "line": "Archery deer season reopens Wednesday, Nov. 25, and runs through Jan. 15. Bowhunters get a second round."
   },
   {
    "id": "T1997d6",
    "label": "Hunting Season",
-   "line": "Youth firearms deer season opens Friday, Nov. 27, and runs through Nov. 29. A perfect weekend for passing down the tradition.",
-   "date": "2026-11-04"
+   "line": "Youth firearms deer season runs Friday, Nov. 27, through Nov. 29. A great weekend to take the kids."
   },
   {
    "id": "Ta76b3b",
    "label": "Veterans Day",
-   "line": "Veterans Day is Wednesday, Nov. 11, one week from today. Time to find a veteran to thank.",
-   "date": "2026-11-04"
+   "line": "Veterans Day is Wednesday, Nov. 11. Take a minute to thank a veteran."
   },
   {
    "id": "Tc44f8a",
    "label": "Thanksgiving",
-   "line": "Thanksgiving is Thursday, Nov. 26, in 22 days. Start clearing space in the freezer.",
-   "date": "2026-11-04"
+   "line": "Thanksgiving is Thursday, Nov. 26, three weeks away. Time to start the pie plan."
   },
   {
-   "id": "T83179d",
-   "label": "Music Anniversary",
-   "line": "Shania Twain released Come On Over in 1997, still the best-selling country album ever by a woman in the US. Still going strong after all these years.",
-   "date": "2026-11-04"
+   "id": "Tbbbf08",
+   "label": "Black Friday",
+   "line": "Black Friday is Friday, Nov. 27, 22 days out. Start stretching those shopping legs."
+  },
+  {
+   "id": "Te79cd6",
+   "label": "Movie Night",
+   "line": "The animated The Cat in the Hat, with Bill Hader as the Cat, opens in theaters Friday, Nov. 6. Bring the kids, leave the mess.",
+   "date": "2026-11-06"
   },
   {
    "id": "T82090a",
    "label": "Music Anniversary",
-   "line": "The Beach Boys hit No. 1 on the Billboard Hot 100 with \"Kokomo\" in 1988, their first in over two decades. Time for a mental vacation.",
-   "date": "2026-11-05"
+   "line": "The Beach Boys' 'Kokomo' hit No. 1 on the Billboard Hot 100 in 1988. Now try not to hum it."
   },
   {
-   "id": "T9e50ee",
-   "label": "Movie Night",
-   "line": "The animated Cat in the Hat movie has Bill Hader voicing the Cat, who is sent to cheer up siblings Gabby and Sebastian in their new town. Hats off to family movie night.",
-   "date": "2026-11-04"
+   "id": "T5ac686",
+   "label": "Music Anniversary",
+   "line": "Hall & Oates began two weeks at No. 1 with 'Private Eyes' in 1981. Hands clap, heads nod.",
+   "date": "2026-11-07"
+  },
+  {
+   "id": "Tf3cf5e",
+   "label": "Fun Fact",
+   "line": "The Pillsbury Dough Boy first appeared in TV commercials in 1965. Still giggling after all these years.",
+   "date": "2026-11-07"
   }
  ],
  "johnsons": [
   {
-   "id": "Jc4db6e",
-   "label": "Outdoors",
-   "line": "Fishing restrictions are lifted through Feb. 1, 2027, at Willmore Park's North Lake in St. Louis under a Missouri Department of Conservation fish salvage order. Free for all, so grab the pole."
-  },
-  {
-   "id": "Jb81e9b",
-   "label": "Outdoors",
-   "line": "Wisconsin angler Austin Schiefer borrowed a friend's lure on Green Bay and immediately caught a record smallmouth bass. Always borrow your buddy's best bait."
-  },
-  {
-   "id": "J4b78cf",
+   "id": "J944a12",
    "label": "Life",
-   "line": "Dollar General's CEO says even $100,000 earners are hunting for bargains, and a shelf full of low prices can still cost more per ounce. Do the math before the cart."
+   "line": "The IRS lets you stash up to $3,400 in a health FSA, but only $680 can roll over, so use the rest before Dec. 31. Spend it or lose it."
   },
   {
-   "id": "Jad4dee",
+   "id": "J7df586",
    "label": "Life",
-   "line": "Mortgage rates eased again Tuesday, giving buyers modest relief from rates above 7%. Slowly heading the right direction."
+   "line": "eBay's CEO estimates a household has $4,000 worth of stuff to sell online, but fees can swallow a small sale and an IRS rule catches many sellers off guard. Check the garage first."
   },
   {
-   "id": "J64a6a0",
-   "label": "Cooking",
-   "line": "A Reddit meal prepper says a case of Ball wide mouth jars from Target cost $14 and works as single-serve meal prep containers. Mason jars, the original lunchbox."
+   "id": "J1158ab",
+   "label": "Life",
+   "line": "Black Friday 2026 is starting much earlier than in previous years. Your wallet should start stretching now."
   },
   {
-   "id": "J68a2c8",
-   "label": "Cooking",
-   "line": "A Skinnytaste slow cooker turkey breast recipe makes its own gravy, handy for a Thanksgiving with a smaller crowd. Gravy without the drama."
+   "id": "J133e45",
+   "label": "Life",
+   "line": "A serving of beef jerky has 10 to 15 grams of protein, but sodium can reach 500 milligrams or more, dietitians say. Read the label before the second bag."
   },
   {
-   "id": "J22ba7e",
+   "id": "Jcbae47",
+   "label": "Life",
+   "line": "A Reddit poster who spent years at laundromats says to use the extended spin cycle to wring out water, then shake each wet item to unclump it before it goes in the dryer. Free tip, no quarters needed."
+  },
+  {
+   "id": "Jdd4f36",
+   "label": "Life",
+   "line": "A Reddit mom spent about $300 on her first Costco trip hoping it would last three weeks, and asked how seasoned shoppers actually save. Costco regulars, speak up."
+  },
+  {
+   "id": "J9cbc4a",
    "label": "Cooking",
-   "line": "The Kitchn's sheet pan pork chops take only an hour. One pan, one hour, dinner's done."
+   "line": "Budget Bytes' cheeseburger soup packs ground beef, bacon, potatoes and cheddar into a creamy one-pot family dinner. Dinner and cleanup in one pot."
+  },
+  {
+   "id": "Jed9ca4",
+   "label": "Cooking",
+   "line": "Skinnytaste's braised cabbage wedges simmer in a tomato and wine sauce until tender and taste like stuffed cabbage without the meat. Meatless Monday just got easy."
+  },
+  {
+   "id": "Jd11970",
+   "label": "Cooking",
+   "line": "The Kitchn's pear crisp tucks tender pear slices under a buttery brown sugar oat topping, with less peeling than apples. Apples can take a night off."
+  },
+  {
+   "id": "J53f365",
+   "label": "Cooking",
+   "line": "A Reddit meal prepper bought a 10-pound tube of 80/20 ground beef at $3.99 a pound and asked what to make. Hello, freezer meals."
+  },
+  {
+   "id": "J224b9e",
+   "label": "Outdoors",
+   "line": "First-timer Joe Bidinot landed a 57-inch muskie on Georgian Bay, Ontario, on the evening of Oct. 27. Beginner's luck, big time."
+  },
+  {
+   "id": "Jbeb67e",
+   "label": "Outdoors",
+   "line": "Max Wynn's bow blew up as he went to arrow his target buck, so he bought a starter setup, went back out for the same deer the next day and still got it. Persistence beats equipment failure."
+  },
+  {
+   "id": "J9d3b68",
+   "label": "Family",
+   "line": "A Reddit parent says their toddler's favorite old shows, like Little Bear and Dragon Tales, have almost no toys, party napkins or clothes in stores. Time to check Etsy."
   }
  ]
 }
