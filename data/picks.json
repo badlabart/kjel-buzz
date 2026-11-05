@@ -1,201 +1,6 @@
 {
  "made": "2026-11-05",
- "national": [
-  {
-   "id": "N6ed1bd",
-   "line": "A Missouri dog trainer's dog earned a Guinness World Record for hanging clothes pins on a line with her mouth. Now teach her to fold.",
-   "city": "Missouri"
-  },
-  {
-   "id": "Nc93ed1",
-   "line": "High school students in Houston's Fifth Ward opened an auto shop to the public, and every oil change helps the next generation of students. Straight-A oil changes.",
-   "city": "Houston"
-  },
-  {
-   "id": "N0ca4ae",
-   "line": "Michigan firefighters rescued a deer that fell into a partly drained backyard swimming pool and got trapped. That deer skipped the polar plunge.",
-   "city": "Michigan"
-  },
-  {
-   "id": "Nfdca73",
-   "line": "Comedian Husk asked his AI tutor how many E's are in 'seventeen,' and she answered S-E-V-E-E-N. Even robots need spelling bee practice.",
-   "city": ""
-  },
-  {
-   "id": "Wb9ae8c",
-   "line": "Missouri hospitals helped twin sisters begin a new chapter after a rare separation surgery. Now each one gets her own hug.",
-   "city": "Missouri"
-  }
- ],
- "pride": [
-  {
-   "id": "Lc84e8f",
-   "line": "The Lake of the Ozarks Idiots Club has passed $2 million in help for local kids in poverty, with the milestone dollar buying clothes for a Macks Creek School student. Turns out these idiots are geniuses.",
-   "city": "Lake of the Ozarks",
-   "label": "$2 Million Milestone"
-  },
-  {
-   "id": "L436fa7",
-   "line": "Julie Routh, a lifelong Bolivar resident and principal at Sherwood Elementary in Springfield, was named MOSHAPE Administrator of the Year for supporting health and physical education. Somebody earned an A in gym class.",
-   "city": "Bolivar",
-   "label": "Administrator of the Year"
-  },
-  {
-   "id": "Le366d4",
-   "line": "Jackson Snyder is Lebanon's Yellowjacket of the Week. Plenty to buzz about.",
-   "city": "Lebanon",
-   "label": "Yellowjacket of the Week"
-  },
-  {
-   "id": "La92c23",
-   "line": "The Gasconade C-4 Wildcats won their last game of the season against Success. Ending on a high note.",
-   "city": "Laclede County",
-   "label": "Season Finale Win"
-  },
-  {
-   "id": "L3c053c",
-   "line": "Eye of the Storm Massage celebrated its grand opening with a Bolivar Area Chamber of Commerce ribbon cutting at 290 E. Broadway in October. Stress relief is officially open for business.",
-   "city": "Bolivar",
-   "label": "Grand Opening"
-  }
- ],
- "local": [
-  {
-   "id": "L16d6db",
-   "line": "Chick-fil-A is opening its first location in Osage Beach. The Lake just got a lot more chicken.",
-   "city": "Osage Beach"
-  },
-  {
-   "id": "Lb60f66",
-   "line": "Osage Beach swore in a new city administrator. New boss, fresh start.",
-   "city": "Osage Beach"
-  }
- ],
- "music": [
-  {
-   "id": "M2c65cf",
-   "line": "Tim McGraw, Sam Barber and Riley Green will headline the 2027 Cavendish Beach Music Festival. Pack sunscreen and boots.",
-   "city": ""
-  },
-  {
-   "id": "M1bf8b4",
-   "line": "Tucker Wetmore moved in near lake neighbors Dustin Lynch and Gary Allan, and things got a lot more fun. Hope the dock holds up.",
-   "city": ""
-  },
-  {
-   "id": "M3faadd",
-   "line": "Lady A will host and perform at 'CMA Country Christmas' on Tuesday, Dec. 1, alongside Trisha Yearwood and Zach Top. Santa's getting a steel guitar.",
-   "city": ""
-  },
-  {
-   "id": "M9c2452",
-   "line": "Garth Brooks has announced 10 shows in Ireland for 2027. Ireland is about to get friends in low places.",
-   "city": ""
-  },
-  {
-   "id": "M53f093",
-   "line": "Tim McGraw, inducted into the Country Music Hall of Fame on Oct. 18, talked about his 30-year marriage to Faith Hill, saying 'people are so easy to walk away.' That's a song worth singing.",
-   "city": ""
-  },
-  {
-   "id": "M0a4d63",
-   "line": "Randy Travis' new album, 'Same Old Way,' comes out Nov. 13, and no, it's not AI. Some things stay real.",
-   "city": ""
-  },
-  {
-   "id": "Mf47247",
-   "line": "Stephen Wilson Jr. says he has no memory of his 'Stand By Me' CMA Awards performance and has never watched it. Hope somebody taped it.",
-   "city": ""
-  },
-  {
-   "id": "Meea28f",
-   "line": "Mickey Guyton is heading out on the 'Mickey Guyton & Friends Holiday Tour.' Jingle bells with a twang.",
-   "city": ""
-  }
- ],
  "music_drop": [],
- "weird": [
-  {
-   "id": "Wd6573c",
-   "line": "An emu on the loose in Connecticut was captured and reunited with its owner. Talk about a bird on the run.",
-   "city": ""
-  },
-  {
-   "id": "W483db0",
-   "line": "A black bear paid a surprise visit outside a home near Santa Barbara, California. No reservation needed.",
-   "city": ""
-  },
-  {
-   "id": "Wd012fb",
-   "line": "An alligator snuck into a North Carolina bagel shop and sent the owner scrambling, all caught on camera. Probably just wanted cream cheese.",
-   "city": "North Carolina"
-  },
-  {
-   "id": "W24ac9f",
-   "line": "A baby goat covered in cash was caught on video running between cars in Florida. Talk about a rich kid.",
-   "city": "Florida"
-  },
-  {
-   "id": "W659f1a",
-   "line": "The Las Vegas Reptile Zoo rescued an alligator that had been kept illegally in a home for seven years. That's a long time to hide a gator.",
-   "city": "Las Vegas"
-  },
-  {
-   "id": "W77a5ab",
-   "line": "Scientists cracked the code on a treasure ship's padlock, solving a 400-year-old maritime mystery. Somebody finally found the combination.",
-   "city": ""
-  },
-  {
-   "id": "Wc0af32",
-   "line": "A farmer grew the biggest pumpkin in Texas history. Pie for the whole state.",
-   "city": "Texas"
-  },
-  {
-   "id": "Wea9e7b",
-   "line": "A Florida man found out his SUV had been repossessed before he even made his first payment. That's a speedy repo.",
-   "city": "Florida"
-  },
-  {
-   "id": "W0c5fc9",
-   "line": "Backyard cameras in Austin, Texas, caught playful raccoons tugging on the tail of a skunk stopping for a drink. Somebody is braver than they look.",
-   "city": "Austin"
-  },
-  {
-   "id": "W29f0f5",
-   "line": "The Transformers-themed band the Cybertronic Spree performed a psychedelic cover of Black Sabbath's 'War Pigs.' Autobots, roll out the amps.",
-   "city": ""
-  },
-  {
-   "id": "Wf1e7f8",
-   "line": "A Kuttawa native won the record $1.25 million grand prize at the World Bass tournament. That's a big fish story.",
-   "city": "Kuttawa"
-  },
-  {
-   "id": "Wb7e7b8",
-   "line": "An IT worker was baffled when a customer refused to share her IP address so he could help her get onto her employer's website. Hard to help without an address.",
-   "city": ""
-  },
-  {
-   "id": "W846163",
-   "line": "A maintenance worker emptying trash cans at a California park found a ball python in the garbage and called animal control. Trash day just got interesting.",
-   "city": "California"
-  },
-  {
-   "id": "W8f2741",
-   "line": "Legolas archery sliding is now a sport, inspired by the scene in The Two Towers where he surfs a shield down stairs firing arrows. Don't try this on your stairs.",
-   "city": ""
-  },
-  {
-   "id": "Waa886e",
-   "line": "A video broke down the engineering behind the classic dial-up modem handshake sound, from the dial tone to the final burst of static. You just heard it in your head.",
-   "city": ""
-  },
-  {
-   "id": "W570bc4",
-   "line": "An angler has broken a 76-year-old smallmouth bass record, and he says he was targeting big bass. It's no fish story.",
-   "city": ""
-  }
- ],
  "humor": [
   {
    "id": "H3c3333",
@@ -406,6 +211,218 @@
    "line": "Air Day marks the start of commercial air service between the Hawaiian Islands in 1929. Island hopping just took off.",
    "city": "",
    "label": ""
+  }
+ ],
+ "national": [
+  {
+   "id": "N6ed1bd",
+   "line": "A Missouri dog trainer's dog earned a Guinness World Record for hanging clothes pins on a line with her mouth. Now teach her to fold.",
+   "city": "Missouri"
+  },
+  {
+   "id": "Wb9ae8c",
+   "line": "Missouri hospitals helped twin sisters begin a new chapter after a rare separation surgery. Now each one gets her own hug.",
+   "city": "Missouri"
+  },
+  {
+   "id": "W0ca4ae",
+   "line": "Michigan firefighters rescued a deer that fell into a partly drained backyard swimming pool and got trapped. That deer skipped the polar plunge.",
+   "city": "Michigan"
+  },
+  {
+   "id": "N2277d6",
+   "line": "A hairstylist says you can tell Gen Z from Millennial salon customers by the greeting: 'Hey girl' versus 'Hey queen.' Your generation is showing.",
+   "city": ""
+  }
+ ],
+ "pride": [
+  {
+   "id": "L1dcd07",
+   "label": "Life Saving Award",
+   "line": "Tyler Blattel of Missouri Cooperage, Lebanon Fire Lt. Joe Gerber, Firefighters Adam Moppin, Nick Davis and Paul Shomo, Capt. Terry Saltzman, Mercy paramedic Louis Corbeil and EMT Jeremy Vinson received Life Saving Awards in Lebanon in October for saving a Missouri Cooperage worker after a cardiac event. Now that's a team effort.",
+   "city": "Lebanon"
+  },
+  {
+   "id": "Le366d4",
+   "line": "Jackson Snyder is Lebanon's Yellowjacket of the Week. Plenty to buzz about.",
+   "city": "Lebanon",
+   "label": "Yellowjacket of the Week"
+  },
+  {
+   "id": "L0831be",
+   "label": "All-State Honors",
+   "line": "Bolivar freshman Brielyn Hines took seventh at state in golf for all-state honors, and tennis players Jillian Horner, Adelyn Seay and Kayla Goodman each finished fourth at state. Bolivar may need a bigger trophy case.",
+   "city": "Bolivar"
+  },
+  {
+   "id": "Lc84e8f",
+   "line": "The Lake of the Ozarks Idiots Club has passed $2 million in help for local kids in poverty, with the milestone dollar buying clothes for a Macks Creek School student. Turns out these idiots are geniuses.",
+   "city": "Lake of the Ozarks",
+   "label": "$2 Million Milestone"
+  },
+  {
+   "id": "L436fa7",
+   "line": "Julie Routh, a lifelong Bolivar resident and principal at Sherwood Elementary in Springfield, was named MOSHAPE Administrator of the Year for supporting health and physical education. Somebody earned an A in gym class.",
+   "city": "Bolivar",
+   "label": "Administrator of the Year"
+  },
+  {
+   "id": "La92c23",
+   "line": "The Gasconade C-4 Wildcats won their last game of the season against Success. Ending on a high note.",
+   "city": "Laclede County",
+   "label": "Season Finale Win"
+  },
+  {
+   "id": "L3c053c",
+   "line": "Eye of the Storm Massage celebrated its grand opening with a Bolivar Area Chamber of Commerce ribbon cutting at 290 E. Broadway in October. Stress relief is officially open for business.",
+   "city": "Bolivar",
+   "label": "Grand Opening"
+  }
+ ],
+ "local": [
+  {
+   "id": "L4918ed",
+   "line": "Heritage Bank of the Ozarks and the City of Lebanon are working together to find a new manufacturer for the Ice Cream Factory building. Here's hoping for a sweet ending.",
+   "city": "Lebanon"
+  },
+  {
+   "id": "L6c7080",
+   "line": "Lebanon High School students performed Shakespeare's 'Much Ado About Nothing' last week. Finally, a teenager explaining Shakespeare to adults.",
+   "city": "Lebanon"
+  },
+  {
+   "id": "L16d6db",
+   "line": "Chick-fil-A opens its first Osage Beach location today, Nov. 5. The Lake just got a lot more chicken.",
+   "city": "Osage Beach"
+  },
+  {
+   "id": "L4a85bc",
+   "line": "Ameren is warning people not to dump leaves into Lake of the Ozarks, to protect water quality. The Lake is not a salad bowl.",
+   "city": "Lake of the Ozarks"
+  },
+  {
+   "id": "Ld1a13c",
+   "line": "Retired Polk County school staff toured the Ozarks Coca-Cola plant in Springfield on Oct. 20 and heard it began in 1911 in a basement on the Bolivar square. Pop history, literally.",
+   "city": "Bolivar"
+  },
+  {
+   "id": "L1f4f85",
+   "line": "Season 3 of 'Ozark Law' premiered Nov. 4 on A&E, back at Lake of the Ozarks. The Lake's reality career keeps going.",
+   "city": "Lake of the Ozarks"
+  }
+ ],
+ "music": [
+  {
+   "id": "M67448a",
+   "line": "Ella Langley, Miranda Lambert and Cody Johnson are among the first performers named for the CMA Awards, live Nov. 18 on ABC with Lainey Wilson hosting solo. Set the DVR now.",
+   "city": ""
+  },
+  {
+   "id": "Mf21982",
+   "line": "Dolly Parton will get a special tribute at the 60th CMA Awards. Bring extra rhinestones.",
+   "city": ""
+  },
+  {
+   "id": "M168e51",
+   "line": "CMA host Lainey Wilson joked she has a bedazzled broom ready in case Ella Langley sweeps the awards. Cleanup on aisle country.",
+   "city": ""
+  },
+  {
+   "id": "Mcd1527",
+   "line": "Kaitlin Butts released a 34-minute mini-movie to spotlight her new album, 'Hello, Honky Tonk.' Popcorn pairs well with steel guitar.",
+   "city": ""
+  },
+  {
+   "id": "M7c810b",
+   "line": "Former NFL quarterback Duck Hodges says his buddies keep asking him to set them up with Ella Langley, thanks to his wife's friendship with her. Good luck, fellas.",
+   "city": ""
+  }
+ ],
+ "weird": [
+  {
+   "id": "Wd6573c",
+   "line": "An emu on the loose in Connecticut was captured and reunited with its owner. Talk about a bird on the run.",
+   "city": ""
+  },
+  {
+   "id": "W483db0",
+   "line": "A black bear paid a surprise visit outside a home near Santa Barbara, California. No reservation needed.",
+   "city": ""
+  },
+  {
+   "id": "Wd012fb",
+   "line": "An alligator snuck into a North Carolina bagel shop and sent the owner scrambling, all caught on camera. Probably just wanted cream cheese.",
+   "city": "North Carolina"
+  },
+  {
+   "id": "W24ac9f",
+   "line": "A baby goat covered in cash was caught on video running between cars in Florida. Talk about a rich kid.",
+   "city": "Florida"
+  },
+  {
+   "id": "W77a5ab",
+   "line": "Scientists cracked the code on a treasure ship's padlock, solving a 400-year-old maritime mystery. Somebody finally found the combination.",
+   "city": ""
+  },
+  {
+   "id": "Wc0af32",
+   "line": "A farmer grew the biggest pumpkin in Texas history. Pie for the whole state.",
+   "city": "Texas"
+  },
+  {
+   "id": "W0c5fc9",
+   "line": "Backyard cameras in Austin, Texas, caught playful raccoons tugging on the tail of a skunk stopping for a drink. Somebody is braver than they look.",
+   "city": "Austin"
+  },
+  {
+   "id": "W29f0f5",
+   "line": "The Transformers-themed band the Cybertronic Spree performed a psychedelic cover of Black Sabbath's 'War Pigs.' Autobots, roll out the amps.",
+   "city": ""
+  },
+  {
+   "id": "W8f2741",
+   "line": "Legolas archery sliding is now a sport, inspired by the scene in The Two Towers where he surfs a shield down stairs firing arrows. Don't try this on your stairs.",
+   "city": ""
+  },
+  {
+   "id": "W570bc4",
+   "line": "An angler has broken a 76-year-old smallmouth bass record, and he says he was targeting big bass. It's no fish story.",
+   "city": ""
+  },
+  {
+   "id": "W65916a",
+   "line": "A Florida man found out his SUV had been repossessed before he even made his first payment. That's a speedy repo.",
+   "city": "Florida"
+  },
+  {
+   "id": "W5ac1b3",
+   "line": "Claude Moore's rubber band ball weighs 11,578 pounds and beat a record from 2008. Don't ask to borrow one.",
+   "city": ""
+  },
+  {
+   "id": "W99332a",
+   "line": "A man with a hard childhood went viral building the tallest bicycle ever ridden, and now he holds a Guinness World Record. Getting off is the hard part.",
+   "city": ""
+  },
+  {
+   "id": "W80c63a",
+   "line": "Scientists say they discovered dinosaur blood in a 115-million-year-old fossil. Nobody tell Hollywood.",
+   "city": ""
+  },
+  {
+   "id": "W4a2c74",
+   "line": "A mammoth fossil found in Acadiana is revealing Louisiana's Ice Age past. Imagine the size of that crawfish boil.",
+   "city": "Louisiana"
+  },
+  {
+   "id": "Waa8cb5",
+   "line": "Fiji Airways set a new world record for the largest beach choir. Flight attendants finally got everyone's attention.",
+   "city": "Fiji"
+  },
+  {
+   "id": "We1a242",
+   "line": "Abu Dhabi's Natural History Museum broke a Guinness World Record using 748,000 LEGO bricks. Barefoot visitors, beware.",
+   "city": "Abu Dhabi"
   }
  ]
 }
