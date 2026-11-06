@@ -2,8 +2,8 @@
 
 TIMELY = things to talk about on the date they are for: radio-prep daily sheet (IanGardner.com), AAA gas prices,
 MDC season dates, and calendar countdowns. No weather here: it lives in the Wx column (Boss, 2026-10-27).
-THE JOHNSONS = family, outdoors and life content
-for Chris (37) and Jess (32): kid-safety recalls, parenting and cooking, Ozarks hunting and fishing, money and time.
+THE JOHNSONS = short "did you hear...?" blips for Chris (37) and Jess (32): worthy information and things to talk about at work
+(family, Ozarks hunting and fishing, money and time). No recalls (Boss, 2026-11-06).
 
 Writes data/extra_pool.json and prints the shortlist. Separate from collect.py so a failure here never blocks the Buzz.
 Run: python3 -I scripts/extra.py
@@ -178,7 +178,6 @@ def countdowns():
 # ======================= THE JOHNSONS =======================
 # (pillar, source label, feed url, max age in days). Pillar becomes the card's label.
 FEEDS = [
-    ("Family", "CPSC Recalls", "https://www.cpsc.gov/Newsroom/CPSC-RSS-Feed/Recalls-RSS", 14),
     ("Family", "Today's Parent", "https://www.todaysparent.com/feed/", 10),
     ("Family", "Scary Mommy", "https://www.scarymommy.com/feed", 7),
     ("Family", "Fatherly", "https://www.fatherly.com/feed", 21),
@@ -193,8 +192,8 @@ FEEDS = [
     ("Life", "NerdWallet", "https://www.nerdwallet.com/blog/feed/", 7),
     ("Life", "Lifehacker", "https://lifehacker.com/feed/rss", 7),
 ]
-KID = re.compile(r"\b(child|children|kid|kids|baby|babies|infant|toddler|crib|stroller|car seat|high ?chair|toys?|bassinet|youth|"
-                 r"pajamas?|sleepwear|playpen|bunk bed|teether|pacifier|backpack|halloween|costume)\b", re.I)
+# Boss (2026-11-06): no recalls in The Johnsons, from any feed. Only short "did you hear...?" blips.
+RECALL = re.compile(r"\brecall(s|ed|ing)?\b", re.I)
 # Things the Johnsons turn off (their outline): politics and polarizing topics, plus ads and shopping lists.
 OFFTOPIC = re.compile(r"\b(trump|biden|harris|democrat\w*|republican\w*|gop|congress|senate|election|ballot|immigra\w*|abortion|"
                       r"gun control|transgender|woke|israel|gaza|ukraine|best deals?|prime day|black friday deals?|coupon code|sale alert|"
@@ -214,7 +213,7 @@ def parse(body, pillar, source, max_days):
             ts = parsedate_to_datetime(raw_date)
         except Exception:
             try:
-                ts = datetime.strptime(raw_date, "%B %d, %Y")  # CPSC: "October 15, 2026"
+                ts = datetime.strptime(raw_date, "%B %d, %Y")  # a long-form date, e.g. "October 15, 2026"
             except ValueError:
                 continue
         ts = ts if ts.tzinfo else ts.replace(tzinfo=timezone.utc)
@@ -303,7 +302,7 @@ def johnsons():
         blob = f'{it["title"]} {it["desc"][:200]}'
         if OFFTOPIC.search(blob) or collect.JUNK.search(it["title"]) or collect.SPAM.search(it["title"]):
             continue
-        if it["source"] == "CPSC Recalls" and not KID.search(blob):
+        if RECALL.search(blob):
             continue
         w = collect.words(it["title"])
         if any(len(w & b) / max(1, len(w | b)) >= 0.5 for b in busy):
@@ -311,7 +310,7 @@ def johnsons():
         it["id"] = uid("J", it["title"], it["source"])
         if it["id"] in seen:
             continue
-        it["niche"] = bool(NICHE.search(blob)) or it["source"] in ("Missouri Dept. of Conservation", "CPSC Recalls")
+        it["niche"] = bool(NICHE.search(blob)) or it["source"] == "Missouri Dept. of Conservation"
         out.append(it)
     # Ozarks items first, then newest. At most 3 per source, sources interleaved so no one site fills a pillar.
     out.sort(key=lambda i: (not i["niche"], -i["ts"].timestamp()))

@@ -1,5 +1,5 @@
 window.KJEL_NEWS = {
- "updated": "2026-11-06T15:01:59+00:00",
+ "updated": "2026-11-06T18:04:58+00:00",
  "columns": [
   {
    "key": "wireready",
@@ -50,50 +50,6 @@ window.KJEL_NEWS = {
      "signal": ""
     },
     {
-     "id": "J0dea15",
-     "title": "Arlopu Recalls Slide Playsets Due to Risk of Serious Injury and Death from Head and Neck Entrapment Hazards",
-     "line": "Arlopu is recalling slide playsets because a child's torso can fit through openings a head can't, creating a head and neck entrapment risk. Worth a quick look in the backyard.",
-     "label": "Family",
-     "city": "",
-     "source": "CPSC Recalls",
-     "url": "https://www.cpsc.gov/Recalls/2027/Arlopu-Recalls-Slide-Playsets-Due-to-Risk-of-Serious-Injury-and-Death-from-Head-and-Neck-Entrapment-Hazards",
-     "ts": "2026-11-05T00:00:00+00:00",
-     "signal": ""
-    },
-    {
-     "id": "J839490",
-     "title": "Jiastfeng Recalls HAUOMS Eight-drawer Dressers Due to Risk of Serious Injury or Death from Tip-Over and Entrapment Hazards; Violate Mandatory Standard for Clothing Storage Units",
-     "line": "Jiastfeng is recalling HAUOMS eight-drawer dressers that can tip over if they aren't anchored to the wall. Anchor those dressers, folks.",
-     "label": "Family",
-     "city": "",
-     "source": "CPSC Recalls",
-     "url": "https://www.cpsc.gov/Recalls/2027/Jiastfeng-Recalls-HAUOMS-Eight-drawer-Dressers-Due-to-Risk-of-Serious-Injury-or-Death-from-Tip-Over-and-Entrapment-Hazards-Violate-Mandatory-Standard-for-Clothing-Storage-Units",
-     "ts": "2026-11-05T00:00:00+00:00",
-     "signal": ""
-    },
-    {
-     "id": "J4b6f5d",
-     "title": "Kikea Store Recalls X-VESOLJE Nursing Pillows Due to Risk of Serious Injury or Death from Suffocation; Violate Mandatory Standards for Nursing Pillows",
-     "line": "Kikea Store is recalling X-VESOLJE nursing pillows because they can block an infant's breathing. Check the nursery.",
-     "label": "Family",
-     "city": "",
-     "source": "CPSC Recalls",
-     "url": "https://www.cpsc.gov/Recalls/2027/Kikea-Store-Recalls-X-VESOLJE-Nursing-Pillows-Due-to-Risk-of-Serious-Injury-or-Death-from-Suffocation-Violate-Mandatory-Standards-for-Nursing-Pillows",
-     "ts": "2026-11-05T00:00:00+00:00",
-     "signal": ""
-    },
-    {
-     "id": "J3bf05b",
-     "title": "Baby Brezza Enterprises Recalls SuperFast Sterilizer Dryers Due to Overheating and Burn Hazards",
-     "line": "Baby Brezza is recalling its SuperFast Sterilizer Dryers because they can overheat and burn skin. Check the kitchen counter.",
-     "label": "Family",
-     "city": "",
-     "source": "CPSC Recalls",
-     "url": "https://www.cpsc.gov/Recalls/2027/Baby-Brezza-Enterprises-Recalls-SuperFast-Sterilizer-Dryers-Due-to-Overheating-and-Burn-Hazards",
-     "ts": "2026-11-05T00:00:00+00:00",
-     "signal": ""
-    },
-    {
      "id": "J5b4970",
      "title": "Shopping for a new car? Be a man. Embrace the minivan.",
      "line": "A Reddit dad says car-shopping dads should embrace the minivan, which handles carpool, the dog, the stroller, groceries and plywood sheets. Not cool, but it hauls.",
@@ -103,39 +59,6 @@ window.KJEL_NEWS = {
      "url": "https://www.reddit.com/r/daddit/comments/1xorrab/shopping_for_a_new_car_be_a_man_embrace_the/",
      "ts": "2026-11-05T19:25:16+00:00",
      "signal": "#60 this week on r/daddit"
-    },
-    {
-     "id": "Jffbedb",
-     "title": "These Crispy Lemon Pepper Wings Are Made in the Air Fryer",
-     "line": "Skinnytaste's crispy lemon pepper wings are made in the air fryer with lemon pepper, garlic, lemon zest and parsley. Game day, minus the fryer mess.",
-     "label": "Cooking",
-     "city": "",
-     "source": "Skinnytaste",
-     "url": "https://www.skinnytaste.com/lemon-pepper-chicken-wings/?adt_ei=*|EMAIL|*",
-     "ts": "2026-11-05T17:18:04+00:00",
-     "signal": ""
-    },
-    {
-     "id": "J53ed35",
-     "title": "15 Dump-and-Bake Dinners to Make on Busy Weeknights",
-     "line": "The Kitchn rounded up 15 dump-and-bake dinners for busy weeknights when you can't put in much effort. Dump, bake, done.",
-     "label": "Cooking",
-     "city": "",
-     "source": "The Kitchn",
-     "url": "https://www.thekitchn.com/dump-and-bake-dinner-recipes-23852431?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-     "ts": "2026-11-05T11:00:00-05:00",
-     "signal": ""
-    },
-    {
-     "id": "Jeff946",
-     "title": "Instant Pot Mac and Cheese",
-     "line": "The Kitchn has an Instant Pot mac and cheese that skips the roux. Fewer pans, more cheese.",
-     "label": "Cooking",
-     "city": "",
-     "source": "The Kitchn",
-     "url": "https://www.thekitchn.com/instant-pot-mac-and-cheese-recipe-23851506?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-     "ts": "2026-11-05T14:00:00-05:00",
-     "signal": ""
     },
     {
      "id": "J12f50e",
@@ -169,17 +92,6 @@ window.KJEL_NEWS = {
      "url": "https://www.moneytalksnews.com/starbucks-releases-its-first-ever-holiday-themed-pup-cup-design/",
      "ts": "2026-11-05T22:55:58+00:00",
      "signal": ""
-    },
-    {
-     "id": "J4c8615",
-     "title": "How do you keep Christmas meaningful when nobody in the family needs more stuff?",
-     "line": "A Reddit poster asks how to keep Christmas meaningful when the adults don't need anything and the kids already have enough toys. Gift cards again?",
-     "label": "Life",
-     "city": "",
-     "source": "r/simpleliving",
-     "url": "https://www.reddit.com/r/simpleliving/comments/1xmtddi/how_do_you_keep_christmas_meaningful_when_nobody/",
-     "ts": "2026-11-03T13:47:54+00:00",
-     "signal": "#57 this week on r/simpleliving"
     }
    ]
   },

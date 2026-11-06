@@ -48,7 +48,7 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .search .go{background:#D0101F;color:#FFFFFF;border-color:#D0101F;font-weight:bold;cursor:pointer}
 .results{display:none}
 .tag{font-size:10px;font-weight:bold;padding:1px 5px;border-radius:3px;margin-right:4px;vertical-align:middle}
-.tag.keep{background:#FDB913;color:#0A2A50}.label{color:#D0101F;text-transform:uppercase}.nd .when{color:#0A2A50;font-size:13px}.ndn{color:#D0101F;font-weight:bold}.ndt{font-weight:normal}.card.concert{border-left:5px solid #D0101F}.tag.cong{background:#0A2A50;color:#FDB913}.tag.off{background:#D0101F;color:#FFFFFF}
+.tag.lead{background:#D0101F;color:#FFFFFF}.tag.keep{background:#FDB913;color:#0A2A50}.label{color:#D0101F;text-transform:uppercase}.nd .when{color:#0A2A50;font-size:13px}.ndn{color:#D0101F;font-weight:bold}.ndt{font-weight:normal}.card.concert{border-left:5px solid #D0101F}.tag.cong{background:#0A2A50;color:#FDB913}.tag.off{background:#D0101F;color:#FFFFFF}
 .dsearch{margin:0;padding:12px 18px 2px}
 .dsearch .dq{width:400px;max-width:60%;font-size:18px;padding:8px 10px;border:2px solid #FDB913;border-radius:8px}
 .dsearch .dgo{font-size:17px;font-weight:bold;padding:8px 18px;border:0;border-radius:8px;background:#D0101F;color:#FFFFFF;cursor:pointer}
@@ -704,7 +704,8 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_s
                 town = c.get("city") or c.get("town") or ""
                 if town:
                     main = main.replace(esc(town), f'<span class="pc{" leb" if town.lower() == "lebanon" else ""}">{esc(town)}</span>')
-            cong = '<span class="tag cong">CONGRATS</span>' if c.get("congrats") else ""
+            cong = ('<span class="tag cong">CONGRATS</span>' if c.get("congrats")
+                    else '<span class="tag lead">LEAD</span> ' if c.get("kind") == "lead" else "")  # a LEAD is a headline only: open it for the facts
             names = ""
             # LOCAL PRIDE (Boss 2026-10-19): "World Food Champs - names, from place, what/when/where."
             label = f'<span class="label">{esc(c["label"])}</span> &ndash; ' if c.get("label") else ""

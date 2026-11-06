@@ -13,6 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import collect  # noqa: E402  (reuses the Google News link lookup)
 import concerts  # noqa: E402
 import humor  # noqa: E402
+import leads  # noqa: E402
 import page  # noqa: E402
 import wx  # noqa: E402
 
@@ -62,7 +63,7 @@ def wireready_full(stamp):
 
 # Boss (2026-10-20): "Show Prep" = LOCAL PRIDE, National, Humor, Music, then every Event Board column
 # except KIM ONLY and Live Music.
-SHOW_PREP = ["pride", "humor", "music", "timely", "johnsons"]
+SHOW_PREP = ["pride", "humor", "music", "timely", "johnsons", "leads"]  # leads = Missouri record leads (Boss 2026-11-06)
 SHOW_PREP_LAST = ["national"]  # Boss (2026-10-23): National sits at the far right, after the Event Board columns
 EXTRA_NAMES = {"timely": "Timely", "johnsons": "The Johnsons"}
 EVENTS_JS = Path.home() / "Documents/Claude/Projects/KJEL-event-board/data/events.js"
@@ -123,6 +124,8 @@ def extra_columns():
         for p in picks.get(key, []):
             it = items.get(p["id"])
             if not it or it.get("section") == "Weather":  # Boss (2026-10-27): no weather in Timely; the Wx column has it
+                continue
+            if key == "johnsons" and re.search(r"\brecall(s|ed|ing)?\b", f'{it.get("title", "")} {p.get("line", "")}', re.I):  # Boss (2026-11-06): no recalls
                 continue
             line = p.get("line") or it.get("line", "")
             if key == "timely":
@@ -276,6 +279,7 @@ def main():
 
     light, gone = light_column(pool, picks)
     missing += gone
+    leads_col = leads.column()  # Boss (2026-11-06): Missouri record leads, headline only, for Show Prep
     stale = {}
     for col in cols + [light]:
         if col["key"] in ("pride", "local", "light"):
@@ -285,7 +289,7 @@ def main():
         if col["key"] == "local":
             col["cards"] = [c for c in col["cards"] if c.get("id") not in light_ids]
 
-    every = [c for col in cols + [light] for c in col["cards"] if c.get("kind") != "concert"]
+    every = [c for col in cols + [light, leads_col] for c in col["cards"] if c.get("kind") != "concert"]
     collect.resolve_all(every, budget_s=120)
     unresolved = sum(1 for c in every if c["url"].startswith("https://news.google.com"))
 
@@ -298,6 +302,7 @@ def main():
     stamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
     by_key = {c["key"]: c for c in cols}
     by_key["light"] = light
+    by_key["leads"] = leads_col
     extras = extra_columns()
     by_key.update(extras)
     wrcol = wireready_column()
