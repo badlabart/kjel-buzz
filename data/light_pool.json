@@ -1,33 +1,47 @@
 {
- "collected": "2026-11-06T10:55:10.820737+00:00",
+ "collected": "2026-11-07T13:36:17.489924+00:00",
  "items": [
   {
-   "id": "L828f85",
-   "title": "Osage Beach Veteran's Day Parade 2026",
-   "source": "LakeExpo.com",
-   "url": "https://www.lakeexpo.com/calendar/family_friendly/osage-beach-veterans-day-parade-2026/event_def1d170-f46e-48db-9f1b-f666f5a8341a.html",
-   "gn_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQY2ZTRG9DbExWMDRQdHhSc2JwZ0xwMlNGcnc1dHUweHZmYTFRZ1lIX2dBcWp1WFFsMGhDSW5vTGM4ZVNCeC1GQUdUY2lCQVBiVXk2Y2hkc0pZZzMyVTFyTUU4ZUwzNnJ4U1lWM2E4V1BHMExZajVLWHhiQVZ5UEszVm16RUE3VVM1Y2JGUGpaaGVoTFdmbk9PWDJKV21GWEpERW1tTDBjNXFqUFFFS2FmQnMxUW84My1oM2ZwTG5UTWFqSzgyaFYwNnUwZmpUbDA?oc=5",
-   "desc": "Saturday, November 7, 2026, 1 p.m.",
+   "id": "L3fb02e",
+   "title": "Stoutland Baptist Church to host Veteran Soup & Chili Dinner",
+   "source": "My Ozarks Online",
+   "url": "https://www.myozarksonline.com/stoutland-baptist-church-to-host-veteran-soup-chili-dinner/",
+   "gn_url": null,
+   "desc": "LACLEDE COUNTY, Mo. — The public is invited to attend an upcoming event at the Stoutland Baptist...",
    "outlets": 1,
-   "town": "Osage Beach",
+   "town": "Stoutland",
    "tier": 1,
-   "body": "Saturday, November 7, 2026, 1 p.m. Starting at Osage Beach City Hall traveling down Osage Beach Parkway and ending at The Lake of the Ozarks Elks Lodge. There will be free food for everyone after the parade at the Elks Lodge. Times of sun and clouds. Highs in the mid 50s and lows in the mid 30s.",
+   "body": "LACLEDE COUNTY, Mo. — The public is invited to attend an upcoming event at the Stoutland Baptist Church.",
    "col": "local",
-   "ts": "2026-11-06T02:18:30+00:00"
+   "ts": "2026-11-07T12:38:39+00:00"
   },
   {
-   "id": "L1da776",
-   "title": "Body of boater found at Lake of the Ozarks",
-   "source": "Newstalk KZRG",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQVFBxdzFLZkJSaFgtWG9SS252N0dEbGlrTnZYX3ZkelFPVUNYdEdYdlhlWU8yTjV3TmhmYW4xUXZvTVVHZ0RXMEJkREp3WTMtVzI3ckdvZjEwOHZQT0N0YmJKS3VCckFzTWs5STlwWkJYOFJ2LXJTbGpGNDczM2k5WHY1cUdYc3RqM1NZ?oc=5",
-   "gn_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQVFBxdzFLZkJSaFgtWG9SS252N0dEbGlrTnZYX3ZkelFPVUNYdEdYdlhlWU8yTjV3TmhmYW4xUXZvTVVHZ0RXMEJkREp3WTMtVzI3ckdvZjEwOHZQT0N0YmJKS3VCckFzTWs5STlwWkJYOFJ2LXJTbGpGNDczM2k5WHY1cUdYc3RqM1NZ?oc=5",
-   "desc": "",
+   "id": "L967b1a",
+   "title": "Freeze Warning Issued For Lake Of The Ozarks Friday Night",
+   "source": "LakeExpo.com",
+   "url": "https://www.lakeexpo.com/weather/freeze-warning-issued-for-lake-of-the-ozarks-friday-night/article_c7c93e8a-9217-4a14-a4a3-07e506462510.html",
+   "gn_url": null,
+   "desc": "LAKE OF THE OZARKS, Mo. — Residents may want to protect plants and outdoor plumbing Friday night as the first widespread freeze of the season settles into central Missouri.",
    "outlets": 1,
    "town": "Lake",
    "tier": 1,
-   "body": "",
+   "body": "LAKE OF THE OZARKS, Mo. — Residents may want to protect plants and outdoor plumbing Friday night as the first widespread freeze of the season settles into central Missouri. The National Weather Service has issued a Freeze Warning for Camden, Miller, and Morgan counties from midnight Friday through 8 a.m. Saturday. The warning also covers several surrounding counties across central and southern Missouri. Temperatures are expected to fall into the upper 20s and lower 30s across the area, including Camdenton, Osage Beach, Lake Ozark, Eldon, Versailles, Laurie, and the Village of Four Seasons. The NWS says frost and freezing temperatures could kill sensitive plants and crops, and may damage unprotected outdoor plumbing. After a chilly start to the weekend, temperatures will warm to around 70 by Monday, with overnight lows generally in the 40s next week.",
    "col": "local",
-   "ts": "2026-11-05T20:19:57+00:00"
+   "ts": "2026-11-06T12:30:00-06:00"
+  },
+  {
+   "id": "L1f4f85",
+   "title": "Ozark Law Is Back! Season 3 Premieres Tonight With More Lake Of The Ozarks Action",
+   "source": "LakeExpo.com",
+   "url": "https://www.lakeexpo.com/news/crime/ozark-law-is-back-season-3-premieres-tonight-with-more-lake-of-the-ozarks-action/article_1cedb8b3-1fd1-410e-9895-5ff2cd4cf2d3.html",
+   "gn_url": null,
+   "desc": "A new season of Ozark Law premieres tonight at 8 p.m. Central on A&E, bringing viewers back to Lake of the Ozarks, where days on the water and late nights can turn into bad decisions.",
+   "outlets": 1,
+   "town": "Lake",
+   "tier": 1,
+   "body": "A new season of Ozark Law premieres tonight at 8 p.m. Central on A&E, bringing viewers back to Lake of the Ozarks, where days on the water and late nights can turn into bad decisions. The documentary series returns for its third season on Nov. 4, following officers in Lake Ozark, Osage Beach, and Sunrise Beach as the small departments handle a surge in calls from the influx of summer tourists. This season looks especially busy as America celebrates its 250th birthday. From drug busts and unruly crowds on the Strip to officers chasing a black bear, the series follows local law enforcement as they work to keep the peace. If the season premiere leaves you wanting more, the previous 22 episodes are also available to watch. For most of the year, Missouri’s Lake of the Ozarks is a quiet haven of small towns and a few thousand residents but every summer, millions of tourists flood in for all-day fun on the water and rowdy nights at the bars. The influx of visitors turns this quiet oasis into a ‘round-the-clock job for the police. Following the small forces in Lake Ozark, Osage Beach and Sunrise Beach, “Ozark Law” spotlights what it takes to protect the peace in this midwestern paradise as well as the people who come to party. Stay up to date on all of A&E's premieres at http://aetv.com/schedule . A&E leads the cultural conversation through high-quality, thought provoking original programming with a unique point of view. Whether it’s the network’s distinctive brand of award-winning disruptive reality, groundbreaking documentary, or premium scripted drama, A&E’s brave storytelling always makes entertainment an art. Visit us at aetv.com for more info.",
+   "col": "local",
+   "ts": "2026-11-04T10:45:00-06:00"
   },
   {
    "id": "L30f672",
@@ -42,6 +56,20 @@
    "body": "Fall leaves may look harmless, but piles of them pushed into Lake of the Ozarks can create real problems for water quality. Residents, property owners, and lawn crews are being encouraged not to blow, dump, or push leaves and other yard waste into the Lake. Instead, Ameren Missouri recommends mulching, composting, or using an approved disposal service. Leaves that fall naturally into the Lake are part of its ecosystem. Problems can arise, however, when concentrated piles are intentionally pushed into the water. As that material decomposes, it can release nutrients, contribute to algae growth, and use oxygen needed by fish and other aquatic life. \"When leaves are blown into a cove, they don't just disappear,\" said Bryan Vance, manager of shoreline management at Ameren Missouri. \"As those leaves break down, they can affect water quality and create issues along the shoreline. Taking a few extra minutes to mulch, compost or properly dispose of leaves can make a real difference.\" - Mulch leaves. Run over leaves with a mower and use them around trees, shrubs, and garden beds to help retain moisture and suppress weeds. - Start or add to a compost pile. Combine leaves with grass clippings and food scraps to create nutrient-rich compost. - Bag and dispose of leaves properly. Check with local waste services, municipalities or landscaping companies for collection and composting options. If you hire a lawn service, ask how it disposes of collected leaves. Commercial landscaping and lawn care companies are prohibited from disposing of leaves and other yard waste in Missouri's public waters. - Burn only where permitted. Follow local regulations, burn bans, and safety precautions. Keep fires and ash away from the shoreline so residue cannot wash into the Lake. Composting, mulching, an",
    "col": "local",
    "ts": "2026-11-03T10:30:00-06:00"
+  },
+  {
+   "id": "Le2a6ee",
+   "title": "Turbulence At City Hall: Who Will Run The Camdenton Airport?",
+   "source": "LakeExpo.com",
+   "url": "https://www.lakeexpo.com/news/politics/turbulence-at-city-hall-who-will-run-the-camdenton-airport/article_10e070d6-bf2f-40ff-b640-6446f9769e4c.html",
+   "gn_url": null,
+   "desc": "CAMDENTON, Mo. — The battle for control over the Camdenton airport continues, and elected officials and city staff are taking sides.",
+   "outlets": 1,
+   "town": "Camdenton",
+   "tier": 1,
+   "body": "CAMDENTON, Mo. — The battle for control over the Camdenton airport continues, and elected officials and city staff are taking sides. The City has been considering bringing management of the airport in-house, after contracting with Lake Aviation Center for nearly two decades. The City Board of Aldermen was split 3-3 in a vote over the issue on Tuesday, Sept. 1. The motion on the table was to continue contracting Lake Aviation Services. Aldermen Don Neuharth, Daniel Ousley and Eric Faes voted in favor. Aldermen Brenda Weir, Sandy Gentry and Mark Anderson voted against. With the board deadlocked, Mayor John McNabb broke the tie by voting against the motion. At that meeting there were multiple citizens that questioned whether the city had employees with the specialized aviation experience and training required. They also praised Lake Aviation Center's Corey Leuwerke, who has managed the airport for 19 years. They credited Leuwerke's aviation knowledge, work ethic, ability to obtain grants and industry contacts with contributing to the airport's growth and success. But Camdenton City Administrator Jeff Hooker said the reason for bringing airport operations under city management was financial. According to Hooker, the city has been supplementing work at the airport annually through another city department's budget while not receiving most of the profits generated by airport operations. “The city needs to run the airport to assume the profits for the purpose of being self-sustaining,” Hooker stated. Under city management, revenue generated through airport operations could be used to offset the costs of operating and maintaining the facility. Then on Oct. 6, Alderman Ousley raised concerns that an allegedly “unauthorized” committee had quietly been formed to renegotiate terms w",
+   "col": "local",
+   "ts": "2026-11-02T11:30:00-06:00"
   },
   {
    "id": "Lc90371",
@@ -100,46 +128,32 @@
    "ts": "2026-10-30T15:48:44+00:00"
   },
   {
-   "id": "Lca4cf6",
-   "title": "Skip The Groundwork! This Linn Creek Cove Lot Has 137 Feet Of Waterfront & Plans In Place",
-   "source": "LakeExpo.com",
-   "url": "https://www.lakeexpo.com/real_estate/skip-the-groundwork-this-linn-creek-cove-lot-has-137-feet-of-waterfront-plans-in/article_ef34666e-dd5b-4667-9d38-d28d07d56cb7.html",
-   "gn_url": null,
-   "desc": "At this Linn Creek Cove lot, the advantage goes beyond the setting and deep water — buyers can skip years of early planning.",
-   "outlets": 1,
-   "town": "Linn Creek",
-   "tier": 1,
-   "body": "At this Linn Creek Cove lot, the advantage goes beyond the setting and deep water — buyers can skip years of early planning. TBD Canvasback Lane offers 137 feet of shoreline, with much of the groundwork already completed: a new seawall, riprap, survey, house plans, dock plans, and site plans. The lot has also been cleared. View The Price & All The Photos . Interested in TBD Canvasback Lane ? Contact LakeExpo Real Estate Agent Laura Nicole Dorrell at 573-375-8876. The proposed custom home includes approximately 4,506 square feet of living space, expansive Lake-facing decks, and an attached two-car garage. Buyers can use the existing design as a starting point or take the property in a different direction without beginning the process from square one. The lot sits inside Linn Creek Cove, offering calmer water at the dock while still opening to Four Corners views and quick boat access to Fish & Co, The Cave, and Pier 31. Community water and electricity are available, helping simplify the next phase of development even further. To review the plans, walk the lot , or learn more about the work that's already been completed, call Laura Nicole Dorrell at 573-375-8876.",
-   "col": "local",
-   "ts": "2026-10-29T16:00:00-05:00"
-  },
-  {
-   "id": "Lc4520e",
-   "title": "The Moo-ment We've Been Waiting For! Osage Beach Chick-fil-A To Open Nov. 5",
-   "source": "LakeExpo.com",
-   "url": "https://www.lakeexpo.com/news/business/the-moo-ment-weve-been-waiting-for-osage-beach-chick-fil-a-to-open-nov/article_75c375a7-3d1b-49c3-9fc4-8026ac295649.html",
-   "gn_url": null,
-   "desc": "The much anticipated Chick-fil-A in Osage Beach has officially set an open date: Thursday, Nov. 5.",
-   "outlets": 1,
-   "town": "Osage Beach",
-   "tier": 1,
-   "body": "The much anticipated Chick-fil-A in Osage Beach has officially set an open date: Thursday, Nov. 5. Located at 3923 Osage Beach Pkwy, the restaurant will begin welcoming customers at 6:30 a.m., and anyone who dresses in cow spots will receive one free entrée on opening day! - Lunch/dinner: Chicken sandwich, spicy chicken sandwich, 8-count nuggets (fried or grilled), or a 5-count nugget kid's meal. Chick-fil-A said they are \"counting down the moo-ments until we celebrate together!\" Owner/Operator Jim Hernandez and his wife Teddi said in a Facebook post that they want to create meaningful connections and make a positive difference in the community, all while serving great food. Hernandez is a Texas native with roots in Kansas City. They have five children and moved from Leawood to Osage Beach. In one week, Lake-area customers will finally get their first “my pleasure” from the new Osage Beach Chick-fil-A. Was the lack of a Chick-fil-A keeping you from buying the Lake house? No longer! Shop for Lake of the Ozarks homes and condos at LakeExpoRealEstate.com .",
-   "col": "local",
-   "ts": "2026-10-29T11:35:00-05:00"
-  },
-  {
-   "id": "L50ba17",
-   "title": "MHS Brings Back JROTC, Builds Tomorrow’s Leaders",
+   "id": "L965b9e",
+   "title": "Free Alpha-Gal Testing Event Planned in Webster County",
    "source": "Marshfield Mail",
-   "url": "https://marshfieldmail.com/2026/10/28/mhs-brings-back-jrotc-builds-tomorrows-leaders/",
+   "url": "https://marshfieldmail.com/2026/10/30/free-alpha-gal-testing-event-planned-in-webster-county/",
    "gn_url": null,
-   "desc": "Marshfield High School’s Marine Corps JROTC program returns after a four-year effort, giving students a chance to learn practical skills, explore career options, and get involved in their community. The […]",
+   "desc": "Webster County residents can receive free alpha-gal testing and learn more about tick-borne diseases at an upcoming event in Fordland. Fordland Clinic and the Webster County Health Unit are partnering […]",
+   "outlets": 1,
+   "town": "Fordland",
+   "tier": 1,
+   "body": "Webster County residents can receive free alpha-gal testing and learn more about tick-borne diseases at an upcoming event in Fordland. Fordland Clinic and the Webster County Health Unit are partnering to offer the event on Tuesday, Nov. 3, from 9 a.m. to 2 p.m. at Fordland Clinic, 1059 Barton Drive. No appointment is needed. Testing will be available on a first-come, first-served basis, and residents are encouraged to arrive early because supplies may be limited. Alpha-gal syndrome is a potentially serious allergic condition caused by bites from certain ticks, including the Lone Star tick, which is common in Missouri. The condition can trigger allergic reactions after eating red meat or consuming certain products made from mammals. Symptoms may include hives, swelling, stomach pain, nausea, and difficulty breathing. Reactions sometimes occur several hours after eating. “Tick bites are more than just an outdoor nuisance. In some cases, they can have lasting health consequences,” said Debby Carl, nurse practitioner at Fordland Clinic. Carl said the event will give residents an opportunity to learn about prevention and receive testing at no cost. Webster County Health Unit staff will also provide tick prevention information and distribute prevention kits. Health officials recommend using tick repellent, wearing protective clothing, and checking for ticks after spending time outdoors. Residents experiencing possible symptoms of alpha-gal syndrome or another tick-borne illness are encouraged to contact a healthcare provider. Fordland Clinic offers follow-up care and accepts most private insurance plans, Medicaid, and Medicare. A sliding fee scale is available for qualifying patients. The Nov. 3 testing event is free for Webster County residents, with no appointment required.",
+   "col": "local",
+   "ts": "2026-10-30T15:41:00+00:00"
+  },
+  {
+   "id": "La34c97",
+   "title": "Marshfield Blood Drive Highlights Community Generosity and Dedicated Donors",
+   "source": "Marshfield Mail",
+   "url": "https://marshfieldmail.com/2026/10/30/marshfield-blood-drive-highlights-community-generosity-and-dedicated-donors/",
+   "gn_url": null,
+   "desc": "Marshfield residents came close to reaching their donation goal during the Oct. 15 community blood drive at the Marshfield Senior Center. The drive, held in partnership with Community Blood Center […]",
    "outlets": 1,
    "town": "Marshfield",
    "tier": 1,
-   "body": "Staff Sergeant Matthew Baker and Cayleb Cook (Photo provided by Breanne Rost) 2/2 Swipe or click to see more Screenshot_20261023_102810_Gmail%20(1).jpg (Photo provided by Breanne Rost) Getting your Trinity Audio player ready... Marshfield High School’s Marine Corps JROTC program returns after a four-year effort, giving students a chance to learn practical skills, explore career options, and get involved in their community. The Junior Reserve Officers’ Training Corps, better known as JROTC, combines classroom instruction with military traditions, physical fitness, and community service. But joining the program doesn’t mean students have to pursue a military career. The goal is to help prepare them for whatever comes after high school. For Marshfield R-1 Superintendent Garrett Lowder, bringing the program back has been a priority for both the district and the community. “We had identified through our community feedback and our board that bringing JROTC back to Marshfield School District was something that was a high priority for us,” Lowder said. Marshfield previously offered JROTC, and school leaders spent roughly four years working to bring it back. The district even included space for the program in a new facility while waiting for approval. Now, two former Marines are helping get things started. Staff Sergeant Matthew Barker, who served nine years in the Marine Corps, and First Sergeant Joseph Bednarik, who retired in July after 23 years of active duty, are leading the program. While uniforms, marching, and military drills are part of JROTC, Barker says students can take much more from the experience. “Our entire curriculum is titled Leadership Education,” Barker explained. Students will learn public speaking, teamwork, and personal responsibility. A typical week incl",
+   "body": "Group shot of the several donors donating at the Marshfield Community Blood Drive (Photo provided by CBCO) 2/5 Swipe or click to see more Marshfield Senior Center October 15, 2026, with the CBCO Blood Drive sign The Marshfield Community Blood Drive, hosted in partnership with Community Blood Center of the Ozarks (CBCO), was held Thursday, Oct. 15 at the Marshfield Senior Center, collecting 37 donations toward a goal of 40, achieving 93% of its goal. (Photo provided by CBCO) 3/5 Swipe or click to see more Donor Kelly Radar (Photo provided by CBCO) 4/5 Swipe or click to see more Blood drive Chairperson Vickie Brooks with donor Jerry Luna in the Canteen following Jerry’s donation (Photo provided by CBCO) 5/5 Swipe or click to see more Donor Wayne Burnett with Angela Dixon, Collections Supervisor with Community Blood Center of the Ozarks (Photo provided by CBCO) Getting your Trinity Audio player ready... Marshfield residents came close to reaching their donation goal during the Oct. 15 community blood drive at the Marshfield Senior Center. The drive, held in partnership with Community Blood Center of the Ozarks (CBCO), collected 37 donations toward a goal of 40, reaching 93 percent of its target. Among the regular donors making a difference is Wayne Burnett, who has given blood an impressive 329 times. According to CBCO, one blood donation can help save up to three lives. That means Burnett’s lifetime donations have the potential to help as many as 987 people. Another familiar face behind Marshfield’s blood drives is Vickie Brooks, who has supported CBCO for more than 30 years. Brooks began volunteering Sept. 18, 1995, and has spent decades recruiting donors and promoting six community blood drives each year. She even made her own sandwich board signs to place around town, ",
    "col": "local",
-   "ts": "2026-10-28T15:40:15+00:00"
+   "ts": "2026-10-30T15:02:38+00:00"
   },
   {
    "id": "Le8ff8b",
@@ -168,20 +182,6 @@
    "body": "",
    "col": "local",
    "ts": "2026-10-25T16:28:03+00:00"
-  },
-  {
-   "id": "L3cb671",
-   "title": "Marshfield Community Theatre Presents: Carrie: The Musical This Halloween",
-   "source": "Marshfield Mail",
-   "url": "https://marshfieldmail.com/2026/10/23/marshfield-community-theatre-presents-carrie-the-musical-this-halloween/",
-   "gn_url": null,
-   "desc": "This Halloween season, the Marshfield Community Theatre is bringing you something old and something new. “We are currently producing Carrie: The Musical, based on the iconic story by Stephen King,” […]",
-   "outlets": 1,
-   "town": "Marshfield",
-   "tier": 1,
-   "body": "This Halloween season, the Marshfield Community Theatre is bringing you something old and something new. “We are currently producing Carrie: The Musical, based on the iconic story by Stephen King,” shared an excited Kelby Lorenz, Director of Carrie and Director of Outreach for Marshfield Community Theatre. “We chose this show because it’s October; we are doing it Halloween weekend. It seemed like a really good spooky show, but when I read the script, it tells a really incredible story,” reflected Lorenz. “One of the things that I love about this show and the way that it’s interpreted is that it’s a closed loop-we end where we start. We got to really play with the idea of how long have we been stuck in this loop…and how long have we been trying to stop the destruction.” “It’s a cool concept to play with-around the idea of trauma, how it stays with us…and how traumatic moments can really impact the way we interact with each other,” expressed Lorenz. “It really centers on that theme-what does it cost to be kind?” The cast includes around 16, with most actors new to MCT, including a mix of MSU students and brand-new actors. The production team includes Lorenz as Director, Nico Jenkins as Assistant Director, Linley Wilson as Music Director, Miliani Kloster as Choreographer, and Toni Lorenz as Production Manager. “It’s been super fun,” shared Lauren Knight, a Missouri State student playing Carrie White. “I haven’t done a lot of roles where I’m a lead- it’s been a bit of a change. It’s been fun to get to know this character. She’s been a bit of a challenge…I’ve learned to be more vulnerable on stage. (This show) tells a really good story for our time and how bullying really impacts people.” As a director, Lornez expressed excitement about the opportunity to direct this show an",
-   "col": "local",
-   "ts": "2026-10-23T16:06:37+00:00"
   }
  ]
 }

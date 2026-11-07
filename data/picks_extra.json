@@ -1,144 +1,128 @@
 {
- "made": "2026-11-06",
+ "made": "2026-11-07",
  "timely": [
   {
-   "id": "T21f898",
+   "id": "Tc70d96",
    "label": "Gas Prices",
-   "line": "Missouri's average for regular gas is $3.74 today, down 29 cents from a month ago and up $1.03 from a year ago, according to AAA. Springfield averages $3.58. Cheaper than last month, still ouch.",
-   "date": "2026-11-06"
+   "line": "Missouri's average for regular gas is $3.72 today, down 32 cents from a month ago and up $1.00 from a year ago, according to AAA. Springfield averages $3.53. Fill-ups feel a little lighter."
   },
   {
    "id": "Ta7d631",
    "label": "Hunting Season",
-   "line": "Archery deer season ends Friday, November 13, in 7 days. Time to fill that tag.",
-   "date": "2026-11-06"
+   "line": "Archery deer season ends Friday, November 13, in 6 days. Last call for the bow hunters."
   },
   {
    "id": "T70c2f4",
    "label": "Hunting Season",
-   "line": "The November portion of firearms deer season opens Saturday, November 14, in 8 days, and runs through November 24. Time to sight in that rifle.",
-   "date": "2026-11-06"
+   "line": "The November portion of firearms deer season opens Saturday, November 14, in 7 days, and runs through November 24. Orange vests are the new fall fashion."
   },
   {
    "id": "Tc173d4",
    "label": "Hunting Season",
-   "line": "Archery deer season opens again Wednesday, November 25, in 19 days, and runs through January 15. Round two is coming.",
-   "date": "2026-11-06"
+   "line": "Archery deer season opens Wednesday, November 25, in 18 days, and runs through January 15. Bow hunters get a second round."
   },
   {
    "id": "T1997d6",
    "label": "Hunting Season",
-   "line": "Youth firearms deer season opens Friday, November 27, in 21 days, and runs through November 29. Get the kids ready.",
-   "date": "2026-11-06"
-  },
-  {
-   "id": "Te62358",
-   "label": "Hunting Season",
-   "line": "Dove season ends Sunday, November 29, in 23 days. Last call for dove hunters.",
-   "date": "2026-11-06"
+   "line": "Youth firearms deer season opens Friday, November 27, in 20 days, and runs through November 29. Tag-along season for the next generation."
   },
   {
    "id": "Ta76b3b",
    "label": "Veterans Day",
-   "line": "Veterans Day is Wednesday, November 11, in 5 days. Take a moment to thank a veteran.",
-   "date": "2026-11-06"
+   "line": "Veterans Day is Wednesday, November 11, in 4 days. A good week to say thank you."
   },
   {
    "id": "Tc44f8a",
    "label": "Thanksgiving",
-   "line": "Thanksgiving is Thursday, November 26, in 20 days. Start stretching those stretchy pants.",
-   "date": "2026-11-06"
+   "line": "Thanksgiving is Thursday, November 26, in 19 days. Start planning the pie lineup."
   },
   {
    "id": "Tbbbf08",
    "label": "Black Friday",
-   "line": "Black Friday is Friday, November 27, in 21 days. Start hiding the credit card.",
-   "date": "2026-11-06"
+   "line": "Black Friday is Friday, November 27, in 20 days. Start training for the checkout line."
   },
   {
-   "id": "Tcaf820",
-   "label": "Movie Night",
-   "line": "The Cat in the Hat, an animated movie with Bill Hader as the Cat, opened in theaters Nov. 6. Hope the kids don't copy the mess.",
-   "date": "2026-11-06"
-  },
-  {
-   "id": "T9e894e",
-   "label": "Music Anniversary",
-   "line": "Meat Loaf scored his first No. 1 on the Billboard Hot 100 with 'I'd Do Anything for Love (But I Won't Do That)' in 1993. We still don't know what 'that' is.",
-   "date": "2026-11-06"
+   "id": "Ta4e40e",
+   "label": "New on Netflix",
+   "line": "Jessica Chastain stars as a former country music legend searching for her missing niece in Nashville in \"Heartland,\" a Netflix original out Friday, Nov. 13. Friday night movie, sorted.",
+   "date": "2026-11-13"
   },
   {
    "id": "T5ac686",
    "label": "Music Anniversary",
-   "line": "Hall & Oates began a two-week run at No. 1 with 'Private Eyes' in 1981. Still stuck in your head, isn't it?",
-   "date": "2026-11-07"
-  },
-  {
-   "id": "T2cf41d",
-   "label": "Music Anniversary",
-   "line": "Pentatonix became the first a cappella group with a No. 1 US album in 2015. No instruments needed.",
-   "date": "2026-11-07"
-  },
-  {
-   "id": "Tf3cf5e",
-   "label": "Fun Fact",
-   "line": "The Pillsbury Doughboy debuted in TV commercials in 1965. Still giggling after all these years.",
-   "date": "2026-11-07"
+   "line": "Hall & Oates started a two-week run at No. 1 with \"Private Eyes\" in 1981, 45 years ago. Clap, clap, clap, clap your hands."
   },
   {
    "id": "T6a3500",
    "label": "Music Anniversary",
-   "line": "Led Zeppelin released its fourth album, with 'Stairway to Heaven,' in 1971. That's 55 years of air guitar.",
+   "line": "Led Zeppelin released their fourth album, with \"Stairway to Heaven,\" in 1971, 55 years ago. Still the song every guitar store bans.",
    "date": "2026-11-08"
   },
   {
    "id": "T6e9e41",
-   "label": "Movie Night",
-   "line": "Disney's animated 'Robin Hood' premiered in 1973, with animal characters including Little John and Maid Marian. A fine family movie night idea.",
+   "label": "Disney Anniversary",
+   "line": "Disney's animated \"Robin Hood,\" with Little John and Maid Marian as animal characters, premiered in 1973, 53 years ago. Foxes in tights, a family favorite.",
    "date": "2026-11-08"
   },
   {
-   "id": "Ta4e40e",
-   "label": "Streaming",
-   "line": "Jessica Chastain plays a former country music legend searching for her missing niece in the Netflix crime thriller 'Heartland,' out Nov. 13. Set Friday night aside.",
-   "date": "2026-11-13"
+   "id": "T1491ec",
+   "label": "TV Anniversary",
+   "line": "\"Gone with the Wind\" made its network TV debut on NBC in 1976 and became the highest-rated single broadcast at that time. Frankly, we still give a darn.",
+   "date": "2026-11-07"
+  },
+  {
+   "id": "Tf3cf5e",
+   "label": "Pop Culture Anniversary",
+   "line": "The Pillsbury Dough Boy debuted in TV commercials in 1965. Still giggling after 61 years.",
+   "date": "2026-11-07"
+  },
+  {
+   "id": "Tf65bd2",
+   "label": "Music Anniversary",
+   "line": "Rolling Stone published its first issue in 1967 with John Lennon on the cover, 59 years ago. Rock news got its home.",
+   "date": "2026-11-09"
   }
  ],
  "johnsons": [
   {
-   "id": "Jc67c1f",
+   "id": "Jf5aed7",
    "label": "Outdoors",
-   "line": "The Missouri Department of Conservation is hosting a mentored rabbit hunt Dec. 12 in Dent County for first-time hunters ages 18 to 34. Rabbit stew, anyone?"
+   "line": "The Missouri Department of Conservation is asking hunters in northwest Missouri to have their deer sampled for chronic wasting disease all season. Quick stop, big help."
   },
   {
-   "id": "Jb5d30f",
+   "id": "J9185f4",
    "label": "Outdoors",
-   "line": "The Missouri Department of Conservation added four Share the Harvest deer drop-off sites in Carroll, Macon, Putnam and Randolph counties, open 6 a.m. to 10 p.m. daily. Donating venison just got easier."
+   "line": "Virginia hunter Nick Dean hiked 2.5 miles up a rugged public-land mountain to chase the same massive buck for four years. Patience pays, eventually."
   },
   {
-   "id": "Jbe4f2b",
-   "label": "Outdoors",
-   "line": "Field & Stream calls Sunday, Nov. 8, the fourth best day of the rut, when the chasing phase breaks wide open. Sunday sermon: get in the stand."
+   "id": "J550f69",
+   "label": "Life",
+   "line": "Flu season is starting early, with wastewater data showing the earliest onset in at least four years, driven by a mutated H1N1 strain. Stock the tissues now."
   },
   {
-   "id": "J5b4970",
+   "id": "Jda6422",
+   "label": "Life",
+   "line": "The priciest cars to insure cost up to $4,445 more a year than the cheapest. Check the quote before the test drive."
+  },
+  {
+   "id": "Jbbcfd4",
    "label": "Family",
-   "line": "A Reddit dad says car-shopping dads should embrace the minivan, which handles carpool, the dog, the stroller, groceries and plywood sheets. Not cool, but it hauls."
+   "line": "New York's new AI law bars chatbots from pretending to be a person or acting dangerously with minors. Parents everywhere are watching."
   },
   {
-   "id": "J12f50e",
+   "id": "J686a16",
    "label": "Life",
-   "line": "Best Buy has sales running all the way to Christmas. Your wallet can breathe."
+   "line": "A company called Enough Phone is making a mini phone for people who want a smaller screen since Apple won't. Small phones, big comeback."
   },
   {
-   "id": "J329135",
-   "label": "Life",
-   "line": "Sony is reaching out to some customers offering up to $400 for their PS5. Check your email before eBay."
+   "id": "J87d260",
+   "label": "Family",
+   "line": "A Reddit dad of 12-year-old triplets requires 20 minutes of reading and a quick summary before they can use their iPad or Switch. Screens wait for the chapter."
   },
   {
-   "id": "J306e17",
+   "id": "Jda5e70",
    "label": "Life",
-   "line": "Starbucks released its first holiday-themed Pup Cup, a 3.5-ounce whipped cream treat with a beagle design, sold in stores while supplies last. Fido's turn at the drive-through."
+   "line": "A Reddit poster says an air fryer they nearly wrote off now gets used most evenings after barely being touched for months. Sometimes it's worth a second try."
   }
  ]
 }

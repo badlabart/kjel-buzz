@@ -10,6 +10,8 @@ from pathlib import Path
 from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
 
+import holiday_cal  # scripts/ is on the path when build.py imports this
+
 ROOT = Path(__file__).resolve().parent.parent
 CT = ZoneInfo("America/Chicago")
 
@@ -64,6 +66,9 @@ body{margin:0;background:#0A2A50;color:#0A2A50;font-family:Arial,Helvetica,sans-
 .site{font-size:13px;margin-top:6px}.site a{font-weight:bold;color:#0A2A50}.nosite{color:#D0101F;font-weight:bold}
 .dnote{color:#FFFFFF;font-size:16px;font-weight:bold;padding:6px 18px 0}
 .dnote .dn{color:#FDB913}.dnote a{color:#FDB913}
+.hol{color:#D0101F;font-weight:bold;text-transform:uppercase;background:#FDE3E5;padding:0 5px;border-radius:3px;font-size:12px;letter-spacing:.5px}
+.when.hh .dl{color:#D0101F}.card.hday{border-left:5px solid #D0101F}.card.hday .ndn{font-size:17px}
+.dnote .dhol{display:block;background:#D0101F;color:#FFFFFF;font-size:19px;padding:7px 12px;border-radius:6px;margin:0 0 6px}
 .kjs .col{display:none}.kjs .col.kjm{display:inline-block}.kjs .card{display:none}.kjs .card.kjm{display:block}.kjs .search{display:none}
 .wxw{border-left:6px solid #D0101F}.wxt{border-left:6px solid #FDB913}.wxi{border-left:6px solid #33445C}
 .wxl{font-size:15px;font-weight:bold;margin:2px 0 6px}
@@ -460,7 +465,7 @@ function kjDayClear(){
 // Search by: Word | Date. The tab picks what the box means; Search runs it. Date = dated events from that day on; cards with no date stay.
 var KJ_MODE='word';
 var KJ_HINT={word:'Type a word, like Lebanon', date:'Type a day or date, like Friday or 10/31'};
-var KJ_HELP={word:'Shows every card that has the word.', date:'Shows dated events and the weather forecast from that day on. LOCAL PRIDE, The Johnsons, National and other cards with no date all stay.'};
+var KJ_HELP={word:'Shows every card that has the word.', date:'Shows dated events and the weather forecast from that day on. LOCAL PRIDE, The Johnsons, National and other cards with no date all stay. A holiday shows in red.'};
 function kjMode(m){
   var ids=['word','date'], i, b;
   KJ_MODE=m;
@@ -546,7 +551,7 @@ function kjDay(v){  // the date and everything after it, for dated events only; 
     if(c.getAttribute('data-date')<t.iso){ kjAdd(c,'kjh'); wr++; }
   }
   if(wl && wr===wl){ nf=document.getElementById('wxnone'); if(nf) kjAdd(nf,'kjm'); }  // the date is past the end of the forecast
-  note.innerHTML='<span class="dn">'+label+(t.wk?' (this week)':'')+' and later</span> &middot; '+n+(n===1?' earlier dated card':' earlier dated cards')+' hidden. Cards with no date all stay.';
+  note.innerHTML=(KJ_HOL.hasOwnProperty(t.iso)?'<span class="dhol">'+label+' IS '+KJ_HOL[t.iso]+'</span>':'')+'<span class="dn">'+label+(t.wk?' (this week)':'')+' and later</span> &middot; '+n+(n===1?' earlier dated card':' earlier dated cards')+' hidden. Cards with no date all stay.';
   return false;
 }
 """
@@ -628,7 +633,10 @@ JS = """
     else if(dd===tmr && dl){ dl.innerHTML=nd?dl.innerHTML+' &middot; TOMORROW':'TOMORROW &middot; '+dl.innerHTML; }
   }
   var u=parseInt(document.body.getAttribute('data-updated'),10);
-  if(u && now-u>30*3600000){var s=document.getElementById('stale'); if(s) s.style.display='block';}
+  // Boss (2026-11-07): News and Show Prep refresh Monday to Friday only, so a weekend page is not stale. No warning Saturday or Sunday,
+  // nor Monday before 7 AM (the Monday refresh is not due yet); every other time it still warns after 30 hours.
+  var dw=new Date().getDay(), hr=new Date().getHours();
+  if(u && now-u>30*3600000 && dw!==0 && dw!==6 && !(dw===1 && hr<7)){var s=document.getElementById('stale'); if(s) s.style.display='block';}
 })();
 """
 
@@ -693,7 +701,11 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_s
             where = ""
             sig = f'<div class="sig"><b>BUZZ:</b> {esc(c["signal"])}</div>' if c.get("signal") else ""
             joke = c.get("kind") == "joke"
-            nolink = joke or col["key"] == "humor" or c.get("kind") == "event"  # Humor reads in one line; an event card builds its own website line
+            # Boss (2026-11-06): on Show Prep a card whose date is a holiday shows the holiday in red beside the date.
+            hol = holiday_cal.names_on(c["date"]) if day_search and c.get("date") and c.get("kind") not in ("holiday", "holnews") else ""
+            hh = " hh" if hol else ""
+            hs = f'<span class="hol">{esc(hol)}</span>' if hol else ""
+            nolink = joke or col["key"] == "humor" or c.get("kind") in ("event", "holiday")  # Humor reads in one line; an event card builds its own website line
             punch = ""
             # On-air sentence replaces the headline. Jokes and roundups keep their own text.
             if joke:  # one line: Claude's tightened version, or setup and punchline joined
@@ -705,7 +717,7 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_s
                 if town:
                     main = main.replace(esc(town), f'<span class="pc{" leb" if town.lower() == "lebanon" else ""}">{esc(town)}</span>')
             cong = ('<span class="tag cong">CONGRATS</span>' if c.get("congrats")
-                    else '<span class="tag lead">LEAD</span> ' if c.get("kind") == "lead" else "")  # a LEAD is a headline only: open it for the facts
+                    else '<span class="tag lead">LEAD</span> ' if c.get("kind") in ("lead", "holnews") else "")  # a LEAD is a headline only: open it for the facts
             names = ""
             # LOCAL PRIDE (Boss 2026-10-19): "World Food Champs - names, from place, what/when/where."
             label = f'<span class="label">{esc(c["label"])}</span> &ndash; ' if c.get("label") else ""
@@ -718,7 +730,7 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_s
                 if town:
                     main = (f'<span class="ctag leb">{esc(town)}</span> ' if town.lower() == "lebanon"
                             else f'<span class="ctag" style="background:{city_color(town)}">{esc(town)}</span> ') + main
-                head = (f'<div class="card" data-date="{c["date"]}" data-min="{c.get("min", 0)}"><div class="when"><span class="dl">{c["when_label"]}</span>{tm} '
+                head = (f'<div class="card" data-date="{c["date"]}" data-min="{c.get("min", 0)}"><div class="when{hh}"><span class="dl">{c["when_label"]}</span>{hs}{tm} '
                         f'<span class="src">&middot; {esc(c["source"])}</span></div>')
                 site = root_site(c.get("url") or "")
                 names = (f'<div class="why">{esc(c["place"])}</div>' if c.get("place") else "") + \
@@ -726,17 +738,26 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_s
                         (f'<div class="site"><a href="{esc(c["url"])}" target="_blank" rel="noopener">More info: {esc(site)} &#8599;</a></div>' if site
                          else '<div class="site nosite">More info: no website given</div>')
             elif c.get("kind") == "timely":  # Timely: a dated talking point; the date label turns into TODAY / TOMORROW in the browser
-                head = (f'<div class="card" data-date="{c["date"]}"><div class="when"><span class="dl">{esc(c["when_label"])}</span> '
+                head = (f'<div class="card" data-date="{c["date"]}"><div class="when{hh}"><span class="dl">{esc(c["when_label"])}</span> {hs}'
                         f'<span class="src">&middot; {esc(c["source"])}</span></div>')
+            elif c.get("kind") == "holiday":  # Boss (2026-11-06): the holiday itself, in red, with whether the government is closed
+                d = date.fromisoformat(c["date"])
+                head = (f'<div class="card hday" data-date="{c["date"]}"><div class="when hh">'
+                        f'<span class="dl">{d.strftime("%A").upper()} {d.month}/{d.day}</span></div>')
+                label = ""
+                main = f'<span class="ndn">{esc(c["title"])}</span>' + (f' <span class="ndt">{esc(c["badge"])}</span>' if c.get("badge") else "")
+            elif c.get("kind") == "holnews":  # local news about a holiday: a LEAD, headline only
+                head = (f'<div class="card" data-date="{c["date"]}"><div class="when hh"><span class="dl">{esc(c["when_label"])}</span> '
+                        f'<span class="hol">{esc(c["hol"])}</span> <span class="src">&middot; {esc(c["source"])} &middot; {static_when(c["ts"])}</span></div>')
             elif c.get("kind") == "concert":
-                head = (f'<div class="card concert" data-date="{c["date"]}"><div class="when">CONCERT &middot; <span class="dl">{esc(c["when_label"])}</span> '
+                head = (f'<div class="card concert" data-date="{c["date"]}"><div class="when{hh}">CONCERT &middot; <span class="dl">{esc(c["when_label"])}</span> {hs}'
                         f'<span class="src">&middot; {esc(c["source"])}</span></div>')
             elif c.get("kind") == "day" and c.get("date"):
                 # Boss (2026-10-21): "Nat'l Day" cards = WEEKDAY 10/22, the day's name in bold color, then one
                 # entertaining sentence in plain text. Jocks voice track a week ahead, so the weekday leads.
                 d = date.fromisoformat(c["date"])
-                head = (f'<div class="card nd" data-date="{c["date"]}"><div class="when">'
-                        f'<span class="dl">{d.strftime("%A").upper()} {d.month}/{d.day}</span></div>')
+                head = (f'<div class="card nd" data-date="{c["date"]}"><div class="when{hh}">'
+                        f'<span class="dl">{d.strftime("%A").upper()} {d.month}/{d.day}</span> {hs}</div>')
                 label = ""
                 # Boss (2026-10-21): the title is the day's exact name ("National Bubble Blowing Day"), never shortened.
                 main = f'<span class="ndn">{esc(c["title"].strip())}</span> <span class="ndt">{esc(c.get("line", ""))}</span>'
@@ -777,12 +798,12 @@ def write(data, title="The Buzz", doc_title="KJEL Buzz Report", subdir="", day_s
 <div class="top"><div class="logo">103<span class="star">&#9733;</span>7 <span class="call">KJEL</span></div>
 <div class="hd"><div class="title">{esc(title)}</div>
 <div class="meta">{esc(doc_title)} &middot; updated {esc(stamp)}</div></div></div>
-<div class="stale" id="stale">This report is more than a day old. The 6 AM refresh did not run.</div>
+<div class="stale" id="stale">This report is more than a day old. The morning refresh did not run.</div>
 {DAY_FORM if day_search else ""}
 {WR_TOOLBAR if data.get("wr_toolbar") else ""}
 <div class="board{" wrfp" if data.get("wr_toolbar") else ""}">{"".join(cols)}</div>
 {WR_MODAL if wr_url else ""}
-<script>{SEARCH_JS}{DAY_JS if day_search else ""}{f"var KJ_WXC={wx_conf};" + WX_JS if wx_conf else ""}{JS}{WR_JS.replace("__WR_URL__", json.dumps(wr_url)) if wr_url else ""}</script>
+<script>{SEARCH_JS}{f"var KJ_HOL={json.dumps(holiday_cal.table())};" if day_search else ""}{DAY_JS if day_search else ""}{f"var KJ_WXC={wx_conf};" + WX_JS if wx_conf else ""}{JS}{WR_JS.replace("__WR_URL__", json.dumps(wr_url)) if wr_url else ""}</script>
 </body></html>
 """
     (ROOT / "docs").mkdir(exist_ok=True)

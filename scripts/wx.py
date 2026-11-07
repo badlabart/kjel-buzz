@@ -16,6 +16,8 @@ import urllib.request
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
+import holiday_cal  # scripts/ is on the path when build.py imports this
+
 CT = ZoneInfo("America/Chicago")
 UA = "KJEL-showprep (badlabart on GitHub)"
 NWS = "https://api.weather.gov"
@@ -230,8 +232,10 @@ def forecast_card(now, stamp):
         views = [(t, v) for t, v in views if v["sky"] is not None or v["rain"] or v["high"] is not None]
         text = " ".join(summarize(views, now, ahead)) if views else ""
         if text:
+            hol = holiday_cal.names_on(day.isoformat())  # Boss (2026-11-06): a holiday shows in red beside its date
+            hol = f'<span class="hol">{html.escape(hol)}</span> ' if hol else ""
             rows.append(f'<div class="wxd" data-date="{day.isoformat()}"><span class="dl">{day.strftime("%a").upper()} {day.month}/{day.day}</span> '
-                        f'{html.escape(text)}</div>')
+                        f'{hol}{html.escape(text)}</div>')
     if not rows:
         rows = ['<div class="wxl">Forecast unavailable. Use the link below.</div>']
     towns = ", ".join(c["town"] for c in COUNTIES if c["town"] in hourly)

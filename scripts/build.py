@@ -12,6 +12,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import collect  # noqa: E402  (reuses the Google News link lookup)
 import concerts  # noqa: E402
+import holiday_cal  # noqa: E402
 import humor  # noqa: E402
 import leads  # noqa: E402
 import page  # noqa: E402
@@ -63,7 +64,7 @@ def wireready_full(stamp):
 
 # Boss (2026-10-20): "Show Prep" = LOCAL PRIDE, National, Humor, Music, then every Event Board column
 # except KIM ONLY and Live Music.
-SHOW_PREP = ["pride", "humor", "music", "timely", "johnsons", "leads"]  # leads = Missouri record leads (Boss 2026-11-06)
+SHOW_PREP = ["pride", "humor", "music", "timely", "holidays", "johnsons", "leads"]  # leads = Missouri record leads, holidays = US / Missouri holidays + local news (Boss 2026-11-06)
 SHOW_PREP_LAST = ["national"]  # Boss (2026-10-23): National sits at the far right, after the Event Board columns
 EXTRA_NAMES = {"timely": "Timely", "johnsons": "The Johnsons"}
 EVENTS_JS = Path.home() / "Documents/Claude/Projects/KJEL-event-board/data/events.js"
@@ -280,6 +281,7 @@ def main():
     light, gone = light_column(pool, picks)
     missing += gone
     leads_col = leads.column()  # Boss (2026-11-06): Missouri record leads, headline only, for Show Prep
+    hol_col = holiday_cal.column()  # Boss (2026-11-06): US / Missouri holidays and the local news about them, for Show Prep
     stale = {}
     for col in cols + [light]:
         if col["key"] in ("pride", "local", "light"):
@@ -289,7 +291,7 @@ def main():
         if col["key"] == "local":
             col["cards"] = [c for c in col["cards"] if c.get("id") not in light_ids]
 
-    every = [c for col in cols + [light, leads_col] for c in col["cards"] if c.get("kind") != "concert"]
+    every = [c for col in cols + [light, leads_col, hol_col] for c in col["cards"] if c.get("kind") not in ("concert", "holiday")]
     collect.resolve_all(every, budget_s=120)
     unresolved = sum(1 for c in every if c["url"].startswith("https://news.google.com"))
 
@@ -303,6 +305,8 @@ def main():
     by_key = {c["key"]: c for c in cols}
     by_key["light"] = light
     by_key["leads"] = leads_col
+    if holiday_cal.live():  # Boss (2026-11-07): the Holidays column starts at the Monday 11/9 refresh
+        by_key["holidays"] = hol_col
     extras = extra_columns()
     by_key.update(extras)
     wrcol = wireready_column()
